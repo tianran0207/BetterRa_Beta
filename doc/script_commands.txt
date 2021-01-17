@@ -9933,6 +9933,12 @@ current invoking character.
 
 ---------------------------------------
 
+*sethomintimacy <amount>{,<char_id>};
+
+Increase or decrease a homunculi's intimacy value. 100000 is fully loyalty.
+
+---------------------------------------
+
 ==========================
 |12.- Mercenary commands.|
 ==========================
