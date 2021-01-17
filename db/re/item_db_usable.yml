@@ -47383,7 +47383,8 @@ Body:
     Delay:
       Duration: 180000
     Script: |
-      setmadogear 1;
+       specialeffect2 EF_CLAYMORE;
+       setmadogear 1,MADO_ROBOT;
   - Id: 23280
     AegisName: N_Fly_Wing_
     Name: "新手专用苍蝇翅膀"
