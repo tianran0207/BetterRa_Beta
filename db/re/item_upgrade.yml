@@ -22,13 +22,13 @@
 # Item Upgrade Settings
 #
 ###########################################################################
-# - Item                  # Item name of Upgrade Box
+# - Item(ItemID)          # Item name of Upgrade Box
 #   NeedRefineMin         # Minimum refine level needed for target item (Default: 0)
 #   NeedRefineMax         # Maximum refine level needed for target item (Default: MAX_REFINE)
 #   NeedOptionNumMin      # Minimum random option that target item has (Default: 0)
 #   NotSocketEnchantItem  # Target item must not have enchant stone (Default: true)
 #   TargetItem            # List of possible item to be upgraded
-#     - Item              # Target item name
+#     - Item(ItemID)      # Target item name
 #       Remove            # Remove this item from the list while importing (Default: false) (optional)
 #   Result                # Script executed on successful upgrade
 #   ClearTargetItem       # Used to clear TargetItem list while importing (Default: false) (optional)

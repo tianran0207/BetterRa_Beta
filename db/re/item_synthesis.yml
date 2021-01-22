@@ -22,12 +22,12 @@
 # Item Synthesis Settings
 #
 ###########################################################################
-# - Item                # Item name of Synthesis Box
+# - Item(ItemID)        # Item name of Synthesis Box
 #   NeedRefineMin       # Minimum refine level needed for source item (Default: 0)
 #   NeedRefineMax       # Maximum refine level needed for source item (Default: MAX_REFINE)
 #   SourceNeeded        # Number of item sets (in SourceItem) that must be selected (Default: 1)
 #   SourceItem          # List of required items
-#     - Item            # Source item name
+#     - Item(ItemID)    # Source item name
 #       Amount          # Item amount that will be consumed (Default: 1)
 #       Remove          # Remove this item from the list while importing (Default: false) (optional)
 #   Reward              # Script executed on successful synthesis
