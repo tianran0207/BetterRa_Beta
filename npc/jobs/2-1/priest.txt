@@ -1373,7 +1373,7 @@ OnTouch_:
 		mes "[Deviruchi]";
 		mes "But how about this...? Now, isn't this an attractive sight? A nice, shiny new card. Mint condition. Not too many people have this you know. But I happen to have soooo many, my pockets hurt.";
 		next;
-		cutin "¹Ì½ºÆ®·¹½ºÄ«µå.bmp",4; // Mistress Card
+		cutin "©T½¦ÄÆ¶º½¦¾¥ÀQ.bmp",4; // Mistress Card
 		mes "[Deviruchi]";
 		mes "Isn't it everyone's dream to have one of these? Think about it, being a Priest can only bring you suffering...";
 		next;
@@ -1383,7 +1383,7 @@ OnTouch_:
 			mes "This card can";
 			mes "can be yours...";
 			next;
-			cutin "¹Ì½ºÆ®·¹½ºÄ«µå.bmp",255; // Mistress Card
+			cutin "©T½¦ÄÆ¶º½¦¾¥ÀQ.bmp",255; // Mistress Card
 			mes "[Deviruchi]";
 			mes "Theoretically!";
 			mes "BWAHAHAHAHAHAHAHA!";
@@ -1392,7 +1392,7 @@ OnTouch_:
 			warp "mjolnir_05",200,200;
 			end;
 		}
-		cutin "¹Ì½ºÆ®·¹½ºÄ«µå.bmp",255; // Mistress Card
+		cutin "©T½¦ÄÆ¶º½¦¾¥ÀQ.bmp",255; // Mistress Card
 		mes "[Deviruchi]";
 		mes "Did...";
 		mes "Did you just tell";

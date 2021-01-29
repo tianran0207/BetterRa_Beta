@@ -32,47 +32,47 @@
 //= 1.8 Fixed Occurances of PcName. [L0ne_W0lf]
 //============================================================
 
-einbroch,218,198,5	script	马克#ein	4_M_EINMAN,{
+einbroch,218,198,5	script	皑#ein	4_M_EINMAN,{
 	.@npc_name$ = strnpcinfo(1);
 	mes "["+ .@npc_name$ +"]";
-	mes "美好的一天~";
-	mes "我是了望台服务人员 " + .@npc_name$ + ",";
-	mes "我的工作是在了望台协助顾客";
-	mes "将美景一览无遗的提供给顾客之服务.";
+	mes "ぱ~";
+	mes "и琌辨狝叭 " + .@npc_name$ + ",";
+	mes "и琌辨臮";
+	mes "盢春凝礚框矗ㄑ倒臮ぇ狝叭.";
 	next;
 	mes "[" + .@npc_name$ + "]";
-	mes "艾音布罗克塔提供了";
-	mes "最佳观赏的地方";
-	mes "可以将四周的美景";
-	mes "尽收眼底所以变成朋友";
-	mes "和情侣们的热门约会地点.";
-	mes "使用了望台的费用是 10 Zeny.";
+	mes "︺ガ霉娥矗ㄑ";
+	mes "程ㄎ芠洁よ";
+	mes "盢㏄春";
+	mes "荷Μ泊┏┮跑Θ狟ね";
+	mes "㎝薄玅荐穦翴.";
+	mes "ㄏノ辨禣ノ琌 10 Zeny.";
 	next;
 	mes "[" + .@npc_name$ + "]";
-	mes "现在, 我们正在举办";
-	mes "一个特别的促销活动";
-	mes "苹果套餐";
-	mes "仅需 20 Zeny.";
-	mes "将可以利用了望台和";
-	mes "获得新鲜苹果的双重享受呢.";
+	mes "瞷, иタ羭快";
+	mes "疭玃綪笆";
+	mes "衜狦甅繺";
+	mes "度惠 20 Zeny.";
+	mes "盢ノ辨㎝";
+	mes "莉眔穝翧衜狦蛮ㄉ㎡.";
 	next;
-	switch(select("我要了望台门票:我要苹果套餐:取消")) {
+	switch(select("и璶辨布:и璶衜狦甅繺:")) {
 	case 1:
 		if (Zeny < 10) {
 			mes "[" + .@npc_name$ + "]";
-			mes "抱歉,";
-			mes "你没有带够 Zeny.";
-			mes "艾音布罗克";
-			mes "的了望台入场费";
-			mes "是 10 Zeny.";
+			mes "╆簆,";
+			mes "⊿Τ盿镑 Zeny.";
+			mes "︺ガ霉";
+			mes "辨初禣";
+			mes "琌 10 Zeny.";
 			close;
 		}
 		else {
 			mes "[" + .@npc_name$ + "]";
-			mes "谢谢您";
-			mes "使用服务.";
-			mes "那么我就直接";
-			mes "带您到了望台啰.";
+			mes "谅谅眤";
+			mes "ㄏノ狝叭.";
+			mes "êи碞钡";
+			mes "盿眤辨.";
 			set Zeny,Zeny-10;
 			close2;
 			warp "einbroch",181,196;
@@ -81,25 +81,25 @@ einbroch,218,198,5	script	马克#ein	4_M_EINMAN,{
 	case 2:
 		if (Zeny < 20) {
 			mes "[" + .@npc_name$ + "]";
-			mes "抱歉,";
-			mes "你没有带够 zeny.";
-			mes "苹果套餐是 20 zeny.";
+			mes "╆簆,";
+			mes "⊿Τ盿镑 zeny.";
+			mes "衜狦甅繺琌 20 zeny.";
 			close;
 		}
 		else {
 			mes "[" + .@npc_name$ + "]";
-			mes "在引导你进了望台之前";
-			mes "为了旅客的安全,";
-			mes "先进行安全检查";
-			mes "确认你的状态,";
-			mes "才会给你苹果套餐.";
+			mes "ま旧秈辨ぇ玡";
+			mes ",";
+			mes "秈︽浪琩";
+			mes "谔粄篈,";
+			mes "穦倒衜狦甅繺.";
 			next;
 			if (checkweight(512,1)) {
 				mes "[" + .@npc_name$ + "]";
-				mes "谢谢您";
-				mes "使用服务.";
-				mes "那么我就直接";
-				mes "带您到了望台啰.";
+				mes "谅谅眤";
+				mes "ㄏノ狝叭.";
+				mes "êи碞钡";
+				mes "盿眤辨.";
 				set Zeny,Zeny-20;
 				getitem 512,1; //Apple
 				close2;
@@ -108,41 +108,41 @@ einbroch,218,198,5	script	马克#ein	4_M_EINMAN,{
 			}
 			else {
 				mes "[" + .@npc_name$ + "]";
-				mes "很抱歉, 你携带了太多物品.";
-				mes "在购买苹果套餐前,";
-				mes "请利用卡普拉仓库服务存放过多的物品.";
+				mes "╆簆, 拟盿び珇.";
+				mes "潦禦衜狦甅繺玡,";
+				mes "叫ノ炊┰畐狝叭筁珇.";
 				close;
 			}
 		}
 	case 3:
 		mes "[" + .@npc_name$ + "]";
-		mes "我知道了.";
-		mes "欢迎您";
-		mes "随时过来";
-		mes "谢谢您.";
+		mes "и笵.";
+		mes "舧眤";
+		mes "繦筁ㄓ";
+		mes "谅谅眤.";
 		close;
 	}	end;
 }
 
-einbroch,175,196,5	script	莫里#ein	4_M_EINMAN2,{
-	mes "[莫里]";
-	mes "您好吗~";
-	mes "我是了望台的管理服务员莫里,";
+einbroch,175,196,5	script	馋ń#ein	4_M_EINMAN2,{
+	mes "[馋ń]";
+	mes "眤盾~";
+	mes "и琌辨恨瞶狝叭馋ń,";
 	next;
-	mes "[莫里]";
-	mes "想要再下去的话";
-	mes "就可以来找我啰";
-	mes "请问你结束了望台的参观,";
-	mes "要准备下去了吗?";
+	mes "[馋ń]";
+	mes "稱璶杠";
+	mes "碞ㄓти";
+	mes "叫拜挡辨把芠,";
+	mes "璶称盾?";
 	next;
-	switch(select("是的,我要下去了.:不是,我还要留在这参观.")) {
+	switch(select("琌,и璶.:ぃ琌,и临璶痙硂把芠.")) {
 	case 1:
-	mes "[莫里]";
-	mes "是的!!我知道了";
-	mes "我现在马上把您";
-	mes "移动到下面去";
-	mes "那么欢迎您";
-	mes "下次再利用啰";
+	mes "[馋ń]";
+	mes "琌!!и笵";
+	mes "и瞷皑р眤";
+	mes "簿笆";
+	mes "ê舧眤";
+	mes "Ωノ";
 		close2;
 		switch(rand(1,3)) {
 		case 1:
@@ -156,670 +156,670 @@ einbroch,175,196,5	script	莫里#ein	4_M_EINMAN2,{
 			end;
 		}
 	case 2:
-		mes "[莫里]";
-		mes "是的!!我知道了,";
-		mes "祝您玩的愉快";
+		mes "[馋ń]";
+		mes "琌!!и笵,";
+		mes "眤磖е";
 		close;
 	}
 }
 
-einbroch,173,229,5	duplicate(马克#ein)	欧贝卢#ein	855
-einbroch,176,172,5	duplicate(马克#ein)	肯科#ein	855
+einbroch,173,229,5	duplicate(皑#ein)	稼ī縞#ein	855
+einbroch,176,172,5	duplicate(皑#ein)	#ein	855
 
-einbroch,232,272,3	script	火车站职员#ein1::EinbrochTrain	4_M_EIN_SOLDIER,{
-	mes "[职员]";
-	mes "欢迎来到";
-	mes "火车站.";
-	mes "通往艾音贝赫";
-	mes "的火车运作中";
-	mes "所以你即使错过了,";
-	mes "上一班车也不用着急.";
+einbroch,232,272,3	script	ó戮#ein1::EinbrochTrain	4_M_EIN_SOLDIER,{
+	mes "[戮]";
+	mes "舧ㄓ";
+	mes "ó.";
+	mes "硄┕︺ī划";
+	mes "ó笲い";
+	mes "┮ㄏ岿筁,";
+	mes "痁óぃノ帝.";
 	next;
-	mes "[职员]";
-	mes "登上前往";
-	mes "艾音贝赫列车";
-	mes "的车票价是 200 Zeny.";
-	mes "你需要购买车票吗?";
+	mes "[戮]";
+	mes "祅玡┕";
+	mes "︺ī划ó";
+	mes "ó布刹琌 200 Zeny.";
+	mes "惠璶潦禦ó布盾?";
 	next;
-	switch(select("我要买.:不,我还不用走.:关于这里的环境...")) {
+	switch(select("и璶禦.:ぃ,и临ぃノǐ.:闽硂ń吏挂...")) {
 	case 1:
 		if (Zeny > 199) {
-			mes "[职员]";
-			mes "谢谢";
-			mes "光临.";
-			mes "祝你旅途愉快.";
-			mes "^333333*咳咳*^000000 All aboard!";
+			mes "[戮]";
+			mes "谅谅";
+			mes "羬.";
+			mes "硚磖е.";
+			mes "^333333*珁珁*^000000 All aboard!";
 			close2;
 			set Zeny,Zeny-200;
 			warp "einbech",43,215;
 			end;
 		}
 		else {
-			mes "[职员]";
-			mes "抱歉,";
-			mes "你没足够的 Zeny";
-			mes "购买车票.";
+			mes "[戮]";
+			mes "╆簆,";
+			mes "⊿ì镑 Zeny";
+			mes "潦禦ó布.";
 			close;
 		}
 	case 2:
-		mes "[职员]";
-		mes "好的, 我知道了.";
-		mes "希望你在";
-		mes "艾音布罗克过得开心.";
+		mes "[戮]";
+		mes ", и笵.";
+		mes "辨";
+		mes "︺ガ霉筁眔秨み.";
 		close;
 	case 3:
-		mes "[职员]";
-		mes "艾音布罗克的空气污染是有名的";
-		mes "毫无疑问,";
-		mes "是那些无耻的工厂所造成的";
-		mes "工业设在这里.";
-		mes "真是太可怕了...";
+		mes "[戮]";
+		mes "︺ガ霉蒩γ琕琌Τ";
+		mes "睝礚好拜,";
+		mes "琌êㄇ礚蒁┮硑Θ";
+		mes "穨砞硂ń.";
+		mes "痷琌び┤...";
 		next;
-		mes "[职员]";
-		mes "有时空气污染";
-		mes "会很严重";
-		mes "如果你感到呼吸困难.";
-		mes "在艾音布罗克听到烟雾警报,";
-		mes "你最好马上找个地方避难!";
+		mes "[戮]";
+		mes "Τ蒩γ琕";
+		mes "穦腨";
+		mes "狦稰㊣螟.";
+		mes "︺ガ霉废铭牡厨,";
+		mes "程皑тよ磷螟!";
 		close;
 	}
 }
 	
-einbroch,252,301,3	duplicate(EinbrochTrain)	火车站职员#ein2	4_M_EIN_SOLDIER
+einbroch,252,301,3	duplicate(EinbrochTrain)	ó戮#ein2	4_M_EIN_SOLDIER
 
-einbroch,259,326,3	script	莱斯利#ein_1	4_F_EINOLD,{
-	mes "[莱斯利]";
-	mes "^666666*咳嗽咳!*^000000";
+einbroch,259,326,3	script	弟吹#ein_1	4_F_EINOLD,{
+	mes "[弟吹]";
+	mes "^666666*珁孤珁!*^000000";
 	mes "Laaaand sakes!";
 	next;
-	mes "[莱斯利]";
-	mes "像我这样的老人家";
-	mes "无法呼吸这种空气!";
-	mes "居民怎么能生活在这种空污之中?";
-	mes "虽然,艾音贝赫的空气没有很好";
-	mes "但艾音布罗克这里的空气更糟! ^333333*咳~!*^000000";
+	mes "[弟吹]";
+	mes "钩и硂妓ρ產";
+	mes "礚猭㊣硂销蒩!";
+	mes "﹡チネ硂销γぇい?";
+	mes "瘤礛,︺ī划蒩⊿Τ";
+	mes "︺ガ霉硂ń蒩罺! ^333333*珁~!*^000000";
 	next;
-	mes "[莱斯利]";
-	mes "我讨厌来这里";
-	mes "空气被污染的很严重";
-	mes "而且这个城市";
-	mes "充满了";
-	mes "傲慢和自大";
-	mes "我不敢买这里卖的东西...";
+	mes "[弟吹]";
+	mes "и癚菇ㄓ硂ń";
+	mes "蒩砆γ琕腨";
+	mes "τ硂カ";
+	mes "骸";
+	mes "镀篊㎝";
+	mes "иぃ幢禦硂ń芥狥﹁...";
 	close;
 }
 
-einbroch,236,191,3	script	村落青年#ein	4_M_EINMAN,{
-	mes "[村落青年]";
-	mes "由于所有工厂";
-	mes "都集中在艾音布罗克";
-	mes "所以才会造成";
-	mes "严重的空污问题.";
+einbroch,236,191,3	script	辅獵#ein	4_M_EINMAN,{
+	mes "[辅獵]";
+	mes "パ┮Τ蒁";
+	mes "常栋い︺ガ霉";
+	mes "┮穦硑Θ";
+	mes "腨γ拜肈.";
 	next;
-	mes "[村落青年]";
-	mes "我是飞空艇的修理工";
-	mes "每天, 处理各种油渍";
-	mes "被油墨折磨忙翻了";
-	mes "下班后又要忍受烟雾的煎熬";
-	mes "一整天让我头疼欲裂啊...";
+	mes "[辅獵]";
+	mes "и琌弗瞶";
+	mes "–ぱ, 矪瞶销猳簕";
+	mes "砆猳茎ч縤Γ陆";
+	mes "痁璶г废铭肺减";
+	mes "俱ぱ琵и繷痥饼吊摆...";
 	next;
-	mes "[村落青年]";
-	mes "但是, 我尽量小心";
-	mes "每当我外出";
-	mes "身处城市中弥漫的红色烟雾,";
-	mes "我总是带着口罩.";
-	mes "如果你会在这呆一段时间,";
-	mes "最好随身携带一个吧.";
+	mes "[辅獵]";
+	mes "琌, и荷秖み";
+	mes "–讽и";
+	mes "ō矪カい辣憨︹废铭,";
+	mes "и羆琌盿帝竛.";
+	mes "狦穦硂琿丁,";
+	mes "程繦ō拟盿.";
 	close;
 }
 	
-einbroch,228,121,5	script	村落青年#ein-1	4_M_EINMAN,{
-	mes "[村落青年]";
-	mes "抱歉 我...";
-	mes "迷路了!";
-	mes "我找不到";
-	mes "爸爸和妈妈!";
+einbroch,228,121,5	script	辅獵#ein-1	4_M_EINMAN,{
+	mes "[辅獵]";
+	mes "╆簆 и...";
+	mes "癵隔!";
+	mes "итぃ";
+	mes "㎝洱洱!";
 	next;
-	mes "[村落青年]";
-	mes "呃-我在机场没错吧?!";
-	mes "父母应该来接我回家的";
-	mes "但是还没看见他们";
-	mes "我刚抵达这里";
-	mes "对于这里";
-	mes "还不是很清楚!";
+	mes "[辅獵]";
+	mes "-и审初⊿岿?!";
+	mes "ダ莱赣ㄓ钡и產";
+	mes "琌临⊿ǎ";
+	mes "и╄笷硂ń";
+	mes "癸硂ń";
+	mes "临ぃ琌睲贰!";
 	next;
-	mes "[村落青年]";
-	mes "什么!";
-	mes "你要去哪?!";
-	mes "别离开";
-	mes "留我独自一人...!";
+	mes "[辅獵]";
+	mes "ぐ!";
+	mes "璶?!";
+	mes "置秨";
+	mes "痙и縒...!";
 	close;
 }
 
-einbroch,40,116,1	script	飞空艇 修理工#ein-1	4_M_EINMAN,{
-	mes "[飞空艇 修理工]";
-	mes "阿! 不要";
-	mes "触碰我宝贵的";
-	mes "巴列艾儿! ";
-	mes "我刚刚才调整完";
-	mes "正在休眠中! 只差一点了!";
+einbroch,40,116,1	script	弗 瞶#ein-1	4_M_EINMAN,{
+	mes "[弗 瞶]";
+	mes "! ぃ璶";
+	mes "郉窱и腳禥";
+	mes "ぺ︺! ";
+	mes "и秸俱Ч";
+	mes "タヰ痸い! 畉翴!";
 	next;
-	switch(select("谁是 巴列艾儿?:很抱歉.")) {
+	switch(select("街琌 ぺ︺?:╆簆.")) {
 	case 1:
-		mes "[飞空艇 修理工]";
-		mes "巴列艾儿";
-		mes "在过去十年是所有飞空艇中";
-		mes "最漂亮的机型!";
-		mes "虽然它现在闲置着";
-		mes "但经过我的巧手维护";
-		mes "它会再次征服天空!";
+		mes "[弗 瞶]";
+		mes "ぺ︺";
+		mes "筁琌┮Τ弗い";
+		mes "程簘獹审!";
+		mes "瘤礛ウ瞷秪竚帝";
+		mes "竒筁иォも蝴臔";
+		mes "ウ穦Ω┖狝ぱ!";
 		next;
-		switch(select("啊~:呃 呵呵...")) {
+		switch(select("摆~: ...")) {
 		case 1:
 			mes "["+strcharinfo(0)+"]";
-			mes "阿~";
-			mes "我明白了,";
-			mes "因此你正在处理";
-			mes "修复这出色的飞艇";
-			mes "祝你好运~";
+			mes "~";
+			mes "иフ,";
+			mes "タ矪瞶";
+			mes "蝋硂︹弗";
+			mes "笲~";
 			next;
-			mes "[飞空艇 修理工]";
-			mes "是的.";
-			mes "如果你很谨慎小心.";
-			mes "我会很感激";
-			mes "我将所有的爱都投入在巴列艾儿身上...";
+			mes "[弗 瞶]";
+			mes "琌.";
+			mes "狦略稸み.";
+			mes "и穦稰縀";
+			mes "и盢┮Τ稲常щぺ︺ō...";
 			close;
 		case 2:
 			mes "["+strcharinfo(0)+"]";
-			mes "呃 呵呵...";
-			mes "是的.";
-			mes "有那么几秒钟时间";
-			mes "我以为你说的是人";
-			mes "好疯狂";
-			mes "你知道吗, 你是一个疯子.";
+			mes " ...";
+			mes "琌.";
+			mes "Τê牧丁";
+			mes "и弧琌";
+			mes "浩╣";
+			mes "笵盾, 琌浩.";
 			next;
 			mes "["+strcharinfo(0)+"]";
-			mes "喔, 你说,";
-			mes "''最漂亮的机型?''";
-			mes "在我看来";
-			mes "所有飞空艇都是一样的";
-			mes "这个并没多特别";
-			mes "你是疯子.";
+			mes "翅, 弧,";
+			mes "''程簘獹审?''";
+			mes "иㄓ";
+			mes "┮Τ弗常琌妓";
+			mes "硂⊿疭";
+			mes "琌浩.";
 			next;
 			emotion ET_FRET;
-			mes "[飞空艇 修理工]";
-			mes "什-什么...?!";
+			mes "[弗 瞶]";
+			mes "ぐ-ぐ...?!";
 			close;
 		}
 	case 2:
-		mes "[飞空艇 修理工]";
-		mes "嗯, ";
-		mes "至少你知道做错了什么";
-		mes "请离开不要再打扰它!";
+		mes "[弗 瞶]";
+		mes "垛, ";
+		mes "ぶ笵暗岿ぐ";
+		mes "叫置秨ぃ璶ゴ署ウ!";
 		close;
 	}
 }
 
-einbroch,294,312,3	script	咸慈#ein	4_M_EINMAN2,{
-	mes "[咸慈]";
-	mes "我已经住在这里";
-	mes "有很长的一段时间";
-	mes "这城市";
-	mes "越来越繁荣.";
+einbroch,294,312,3	script	玾稯#ein	4_M_EINMAN2,{
+	mes "[玾稯]";
+	mes "и竒硂ń";
+	mes "Τ琿丁";
+	mes "硂カ";
+	mes "禫ㄓ禫羉篴.";
 	next;
-	mes "[咸慈]";
-	mes "艾音布罗克究竟";
-	mes "是如何发展这么迅速的?";
-	mes "我仍然无法相信";
-	mes "发展的这么快";
-	mes "这应该不是我该担心的";
-	mes "我做什么都不重要... ";
+	mes "[玾稯]";
+	mes "︺ガ霉╯澈";
+	mes "琌祇甶硂ǔ硉?";
+	mes "иご礛礚猭獺";
+	mes "祇甶硂е";
+	mes "硂莱赣ぃ琌и赣踞み";
+	mes "и暗ぐ常ぃ璶... ";
 	next;
-	mes "[咸慈]";
-	mes "如此迅速";
-	mes "的工业化";
-	mes "对人或环境不一定就是好的";
-	mes "我继续观看,";
-	mes "看看会发生什么变化";
-	mes "尽情享受生活...";
+	mes "[玾稯]";
+	mes "ǔ硉";
+	mes "穨て";
+	mes "癸┪吏挂ぃ﹚碞琌";
+	mes "и膥尿芠,";
+	mes "穦祇ネぐ跑て";
+	mes "荷薄ㄉネ...";
 	close;
 }
 
-einbroch,232,255,5	script	卡吾罗波#ein	4_M_EINOLD,{
-	mes "[卡吾罗波]";
-	mes "^666666*咳咳*^000000";
-	mes "这里的空气";
-	mes "污染的太严重了!";
-	mes "像我这样的老人家连呼吸都有困难";
-	mes "更何况是这么糟的空气";
-	mes "^333333*咳咳!*^000000";
+einbroch,232,255,5	script	霉猧#ein	4_M_EINOLD,{
+	mes "[霉猧]";
+	mes "^666666*珁珁*^000000";
+	mes "硂ń蒩";
+	mes "γ琕び腨!";
+	mes "钩и硂妓ρ產硈㊣常Τ螟";
+	mes "猵琌硂罺蒩";
+	mes "^333333*珁珁!*^000000";
 	next;
-	mes "[卡吾罗波]";
-	mes "我才不管什么发展之类的";
-	mes "建筑越来越多的";
-	mes "工厂与居所在这城镇";
-	mes "我只想";
-	mes "能在空气好的又幽静地地方";
-	mes "安渡余生...";
+	mes "[霉猧]";
+	mes "иぃ恨ぐ祇甶ぇ摸";
+	mes "诞禫ㄓ禫";
+	mes "蒁蒓﹡┮硂马";
+	mes "и稱";
+	mes "蒩繰よ";
+	mes "寸ネ...";
 	next;
-	mes "[卡吾罗波]";
-	mes "再说, 艾音布罗克是我的故乡";
-	mes "更何况没有搬迁的条件";
-	mes "我也只能在这里";
-	mes "忍受着呼吸困难的痛苦等待归西罢了. ^666666*叹息...*^000000";
+	mes "[霉猧]";
+	mes "弧, ︺ガ霉琌и珿秏";
+	mes "猵⊿Τ穐綞兵ン";
+	mes "и硂ń";
+	mes "г帝㊣螟礹璚单耴﹁絵. ^666666*鼓...*^000000";
 	close;
 }
 
-einbroch,143,109,5	script	凯廷#ein	4_M_EINMAN,{
-	mes "[凯廷]";
-	mes "最近,";
-	mes "有谣传";
-	mes "市中心的建筑物";
-	mes "已经转换成";
-	mes "某种神秘设施.";
+einbroch,143,109,5	script	惩#ein	4_M_EINMAN,{
+	mes "[惩]";
+	mes "程,";
+	mes "Τ亮肚";
+	mes "カいみ诞";
+	mes "竒锣传Θ";
+	mes "琘销砞琁.";
 	next;
-	mes "[凯廷]";
-	mes "这似乎很黑暗";
-	mes "我想它与我的工作";
-	mes "应该无直接关联";
-	mes "我的意思是";
-	mes "如果它不影响我";
-	mes "我为何要担忧?";
+	mes "[惩]";
+	mes "硂堵穞";
+	mes "и稱ウ蒓и";
+	mes "莱赣礚钡闽羛";
+	mes "и種琌";
+	mes "狦ウぃ紇臫и";
+	mes "и璶踞紐?";
 	close;
 }
 
-einbroch,229,149,3	script	斯力克#ein	4_M_EINMAN2,{
-	mes "[斯力克]";
-	mes "令人惊讶,";
-	mes "我们村落也有火车站";
-	mes "科学的胜利.";
-	mes "我的意思是";
-	mes "我们不是应该对飞艇更惊讶吗?";
+einbroch,229,149,3	script	吹#ein	4_M_EINMAN2,{
+	mes "[吹]";
+	mes "誥砓,";
+	mes "и辅Τó";
+	mes "厩衊.";
+	mes "и種琌";
+	mes "иぃ琌莱赣癸弗誥砓盾?";
 	next;
-	mes "[斯力克]";
-	mes "如果, 你问我它在哪里";
-	mes "我也不太清楚,";
-	mes "我还没有搭乘过啊.";
-	mes "不过.";
-	mes "我们能有自己的火车站";
-	mes "这是很棒的事情.";
+	mes "[吹]";
+	mes "狦, 拜иウń";
+	mes "иぃび睲贰,";
+	mes "и临⊿Τ穎筁摆.";
+	mes "ぃ筁.";
+	mes "иΤó";
+	mes "硂琌次ㄆ薄.";
 	close;
 }
 
-airport,174,41,6	script	青年#air	4W_M_03,{
-	mes "[青年]";
-	mes "我的老板";
-	mes "对异国物品";
-	mes "有非常敏锐的眼光";
-	mes "因此我周游世界";
-	mes "收购它门";
-	mes "往来递送.";
+airport,174,41,6	script	獵#air	4W_M_03,{
+	mes "[獵]";
+	mes "иρ狾";
+	mes "癸奢瓣珇";
+	mes "Τ獶盽庇綰泊";
+	mes "и㏄村";
+	mes "Μ潦ウ";
+	mes "┕ㄓ患癳.";
 	next;
-	mes "[青年]";
-	mes "有段时间";
-	mes "要我去收集";
-	mes "杰勒比结晶";
-	mes "虽然这东西现在很常见.";
-	mes "但是我一直在想";
-	mes "为何需要这么多?";
+	mes "[獵]";
+	mes "Τ琿丁";
+	mes "璶иΜ栋";
+	mes "狽扒ゑ挡垂";
+	mes "瘤礛硂狥﹁瞷盽ǎ.";
+	mes "琌и稱";
+	mes "惠璶硂?";
 	close;
 }
 
-airport,176,41,4	script	先生#air	4_M_ORIENT01,{
-	mes "[先生]";
-	mes "听说,";
-	mes "在这边的一些魔物,";
-	mes "各个都身怀矿石,";
-	mes "那些矿石耀眼绚丽,";
-	mes "有的纯净如白纸一样. 如何, 很棒是吧?";
+airport,176,41,4	script	ネ#air	4_M_ORIENT01,{
+	mes "[ネ]";
+	mes "弧,";
+	mes "硂娩ㄇ臸,";
+	mes "常ō输膓ホ,";
+	mes "êㄇ膓ホ模泊岛腞,";
+	mes "Τ瞓フ妓. , 次琌?";
 	next;
-	mes "[先生]";
-	mes "这些矿石,";
-	mes "在制造花瓶时,";
-	mes "是非常棒的原料,";
-	mes "碰巧我的朋友是娃娃制造商,";
-	mes "他也使用这些原料来制造娃娃.";
+	mes "[ネ]";
+	mes "硂ㄇ膓ホ,";
+	mes "硑瞺,";
+	mes "琌獶盽次,";
+	mes "窱ォи狟ね琌硑坝,";
+	mes "ㄏノ硂ㄇㄓ硑.";
 	next;
-	mes "[先生]";
-	mes "他用晒干的皮革,";
-	mes "制成衣服,";
-	mes "用鸟类羽毛装填娃娃,";
-	mes "使用赛依伐或刹勒空结晶制作眼睛,";
-	mes "他甚至在底部用杰勒比结晶平衡娃娃.";
+	mes "[ネ]";
+	mes "ノブ,";
+	mes "Θ︾狝,";
+	mes "ノ尘摸πを杆恶,";
+	mes "ㄏノ辽ㄌワ┪玝扒挡垂泊氟,";
+	mes "┏场ノ狽扒ゑ挡垂キ颗.";
 	next;
-	mes "[先生]";
-	mes "我觉得原本被认为是无用,";
-	mes "的东西其实在某些方面是很有用的.";
-	mes "所以别去担忧或想太多,";
-	mes "正所谓, 天生我材必有用!不是吗.";
+	mes "[ネ]";
+	mes "и谋眔セ砆粄琌礚ノ,";
+	mes "狥﹁ㄤ龟琘ㄇよ琌Τノ.";
+	mes "┮踞紐┪稱び,";
+	mes "タ┮孔, ぱネиゲΤノ!ぃ琌盾.";
 	close;
 }
 
-ein_in01,113,211,3	script	塔因斯#ein	4_M_REPAIR,{
-	mes "[塔因斯]";
-	mes "只要你给我钱,";
-	mes "我就帮你做任何事情,";
-	mes "没有什么我不会做的!";
-	mes "生活就是这样....";
+ein_in01,113,211,3	script	娥吹#ein	4_M_REPAIR,{
+	mes "[娥吹]";
+	mes "璶倒и窥,";
+	mes "и碞腊暗ヴㄆ薄,";
+	mes "⊿Τぐиぃ穦暗!";
+	mes "ネ碞琌硂妓....";
 	next;
-	mes "[塔因斯]";
-	mes "如果你付出的酬劳很好,";
-	mes "我会努力工作,";
-	mes "完成你所交代的任何事情.";
-	mes "虽然采矿很粗重, ";
-	mes "但只要有钱我就很高兴, ";
-	mes "呵 呵 呵~";
+	mes "[娥吹]";
+	mes "狦筍骋,";
+	mes "и穦,";
+	mes "ЧΘ┮ユヴㄆ薄.";
+	mes "瘤礛膓彩, ";
+	mes "璶Τ窥и碞蔼砍, ";
+	mes "  ~";
 	close;
 }
 
-ein_in01,48,220,5	script	罗武#ein	4_M_REPAIR,{
-	mes "[罗武]";
+ein_in01,48,220,5	script	霉猌#ein	4_M_REPAIR,{
+	mes "[霉猌]";
 	mes "...";
 	mes "......";
 	next;
-	mes "[罗武]";
+	mes "[霉猌]";
 	mes "...";
 	mes "......";
 	mes ".........";
 	next;
-	mes "[罗武]";
-	mes "呃.";
-	mes "你怎么那么喜欢, ";
-	mes "这样看着我呢?";
-	mes "工作中可不允许闲聊呢.";
-	mes "如果被逮到, ";
-	mes "你会受被骂啦...";
+	mes "[霉猌]";
+	mes ".";
+	mes "ê尺舧, ";
+	mes "硂妓帝и㎡?";
+	mes "いぃす砛秪册㎡.";
+	mes "狦砆秂, ";
+	mes "穦砆絴罢...";
 	next;
-	mes "[罗武]";
-	mes "疑 等等...";
-	mes "你不在这里工作.";
-	mes "很抱歉冒险家,";
-	mes "这是我一个旧习惯, ";
-	mes "原谅我的无礼.";
+	mes "[霉猌]";
+	mes "好 单单...";
+	mes "ぃ硂ń.";
+	mes "╆簆玙繧產,";
+	mes "硂琌и侣策篋, ";
+	mes "教и礚搂.";
 	close;
 }
 
-ein_in01,87,237,5	script	娣洁#ein	4_F_EINWOMAN,{
-	mes "[娣洁]";
-	mes "你知道像我如此有口碑的人, ";
-	mes "为何会在这里工作吗?";
-	mes "我告诉你怎么回事... ";
+ein_in01,87,237,5	script	甔稀#ein	4_F_EINWOMAN,{
+	mes "[甔稀]";
+	mes "笵钩иΤ窸, ";
+	mes "穦硂ń盾?";
+	mes "и禗ㄆ... ";
 	next;
-	mes "[娣洁]";
-	mes "我那好吃懒做的丈夫, ";
-	mes "只是一直躺着不想动, ";
-	mes "所以我很努力, ";
-	mes "以维持我们的生活!";
+	mes "[甔稀]";
+	mes "иê胕暗ひ, ";
+	mes "琌仅帝ぃ稱笆, ";
+	mes "┮и, ";
+	mes "蝴иネ!";
 	next;
-	mes "[娣洁]";
-	mes "即使那么一秒钟, ";
-	mes "我也绝不能休息, ";
-	mes "看着存款都没增多, ";
-	mes "怎么样都无法安心";
-	mes "你能体会这种感觉吗?";
+	mes "[甔稀]";
+	mes "ㄏê牧, ";
+	mes "и荡ぃヰ, ";
+	mes "帝蹿常⊿糤, ";
+	mes "妓常礚猭み";
+	mes "蔨穦硂销稰谋盾?";
 	next;
-	mes "[娣洁]";
-	mes "我的丈夫, ";
-	mes "显然是不切实际的.";
-	mes "他完全无法体会现实的重要?!";
-	mes "如果他在不起床, ";
-	mes "我会踹他的屁股!";
+	mes "[甔稀]";
+	mes "иひ, ";
+	mes "陪礛琌ぃち龟悔.";
+	mes "Ч礚猭蔨穦瞷龟璶?!";
+	mes "狦ぃ癬, ";
+	mes "и穦垮Ь!";
 	close;
 }
 
-ein_in01,84,218,3	script	慈恩#ein	4_M_REPAIR,{
-	mes "[慈恩]";
-	mes "曾经有段时间";
-	mes "我的梦想是";
-	mes "当个冒险家,";
-	mes "就像你一样";
-	mes "但那是很久以前的梦想...";
+ein_in01,84,218,3	script	稯#ein	4_M_REPAIR,{
+	mes "[稯]";
+	mes "纯竒Τ琿丁";
+	mes "и冠稱琌";
+	mes "讽玙繧產,";
+	mes "碞钩妓";
+	mes "ê琌玡冠稱...";
 	next;
-	mes "[慈恩]";
-	mes "现在,";
-	mes "我只是一间工厂经理,";
-	mes "虽然我的职位没有很大, ";
-	mes "我已经很满意了.";
-	mes "我敢肯定, ";
-	mes "我所负责的产品人们都很喜欢...";
+	mes "[稯]";
+	mes "瞷,";
+	mes "и琌丁蒁竒瞶,";
+	mes "瘤礛и戮⊿Τ, ";
+	mes "и竒骸種.";
+	mes "и幢﹚, ";
+	mes "и┮璽砫玻珇常尺舧...";
 	next;
-	mes "[慈恩]";
-	mes "虽然这是不是我原先所计划的, ";
-	mes "也许这就是我的生活, ";
-	mes "但是!";
-	mes "一旦有那样的机会来临, ";
-	mes "我会离开这里, ";
-	mes "到世界各地旅行!";
+	mes "[稯]";
+	mes "瘤礛硂琌ぃ琌и┮璸, ";
+	mes "砛硂碞琌иネ, ";
+	mes "琌!";
+	mes "スΤê妓审穦ㄓ羬, ";
+	mes "и穦置秨硂ń, ";
+	mes "︽!";
 	next;
-	mes "[慈恩]";
-	mes "我希望, ";
-	mes "有那么一天, ";
-	mes "能在其他国家, ";
-	mes "对着你说, ";
-	mes "又见面!冒险家.";
+	mes "[稯]";
+	mes "и辨, ";
+	mes "Τêぱ, ";
+	mes "ㄤ瓣產, ";
+	mes "癸帝弧, ";
+	mes "ǎ!玙繧產.";
 	close;
 }
 
-ein_in01,103,239,1	script	葛新#ein	4_M_DIEMAN,{
-	mes "[葛新]";
-	mes "雪特!";
-	mes "让我死吧!";
-	mes "为什么我那么穷?";
-	mes "每一天都很节省, ";
-	mes "我到底做错什么了?";
+ein_in01,103,239,1	script	腐穝#ein	4_M_DIEMAN,{
+	mes "[腐穝]";
+	mes "撤疭!";
+	mes "琵и!";
+	mes "ぐиê絘?";
+	mes "–ぱ常竊, ";
+	mes "и┏暗岿ぐ?";
 	next;
-	mes "[葛新]";
-	mes "我觉得我的生活没问题, ";
-	mes "但老裘和涟, ";
-	mes "他们不认同我, ";
-	mes "目前的生活方式.";
-	mes "她为何会如此的, ";
-	mes "痴迷于财富、权力呢?";
+	mes "[腐穝]";
+	mes "и谋眔иネ⊿拜肈, ";
+	mes "ρ甘㎝骇, ";
+	mes "ぃ粄и, ";
+	mes "ヘ玡ネよΑ.";
+	mes "穦, ";
+	mes "扶癵癩碔舦㎡?";
 	next;
-	mes "[葛新]";
-	mes "无论什么情况, ";
-	mes "我都很想帮她, ";
-	mes "但我筋疲力尽起不了床, ";
-	mes "我的身体不堪负荷了.";
-	mes "我连力气都没有了.";
+	mes "[腐穝]";
+	mes "礚阶ぐ薄猵, ";
+	mes "и常稱腊, ";
+	mes "и惮痟荷癬ぃ, ";
+	mes "иō蔨ぃ臭璽颤.";
+	mes "и硈蒩常⊿Τ.";
 	next;
-	mes "[葛新]";
-	mes "这是可怕的~";
-	mes "我应该休息";
-	mes "而不是担心";
-	mes "赚钱...";
+	mes "[腐穝]";
+	mes "硂琌┤~";
+	mes "и莱赣ヰ";
+	mes "τぃ琌踞み";
+	mes "寥窥...";
 	close;
 }
 
-ein_in01,33,275,1	script	裴达廷#ein	4_M_EINMINER,{
-	mes "[裴达廷]";
-	mes "天啊!";
-	mes "好累!";
-	mes "我马不停蹄的, ";
-	mes "搬迁到这里!";
+ein_in01,33,275,1	script	籶笷#ein	4_M_EINMINER,{
+	mes "[籶笷]";
+	mes "ぱ摆!";
+	mes "仓!";
+	mes "и皑ぃ氨酷, ";
+	mes "穐綞硂ń!";
 	next;
-	mes "[裴达廷]";
-	mes "这工作很辛苦, ";
-	mes "老板恨不得我能早点, ";
-	mes "搬来这里阿!";
-	mes "不过, ";
-	mes "工资还不错, ";
-	mes "我想我还能忍耐一段时间.";
+	mes "[籶笷]";
+	mes "硂ǒ璚, ";
+	mes "ρ狾ぃ眔иΝ翴, ";
+	mes "穐ㄓ硂ń!";
+	mes "ぃ筁, ";
+	mes "戈临ぃ岿, ";
+	mes "и稱и临г瑻琿丁.";
 	next;
-	mes "[裴达廷]";
-	mes "这里的云...!";
-	mes "哟-啼-菏!";
-	mes "哟-啼-菏~!";
+	mes "[籶笷]";
+	mes "硂ńお...!";
+	mes "抽-弛-踋!";
+	mes "抽-弛-踋~!";
 	close;
 }
 
-ein_in01,36,204,3	script	伦培#ein	4_M_REPAIR,{
-	mes "[伦培]";
-	mes "这工厂非常赚钱, ";
-	mes "拥有优秀的业务, ";
-	mes "和优良的蓝图, ";
-	mes "赚取了大量利润, ";
-	mes "但有一点仍然要注意.";
+ein_in01,36,204,3	script	蚌#ein	4_M_REPAIR,{
+	mes "[蚌]";
+	mes "硂蒁獶盽寥窥, ";
+	mes "局Τ涩╭穨叭, ";
+	mes "㎝涩▆屡瓜, ";
+	mes "寥秖柬, ";
+	mes "Τ翴ご礛璶猔種.";
 	next;
-	mes "[伦培]";
-	mes "测量了一下, ";
-	mes "这地方的污染很可怕, ";
-	mes "我们整天, ";
-	mes "都身处在这, ";
-	mes "由机器制造出来的有毒气体, ";
-	mes "连呼吸空气都不安全...";
+	mes "[蚌]";
+	mes "代秖, ";
+	mes "硂よγ琕┤, ";
+	mes "и俱ぱ, ";
+	mes "常ō矪硂, ";
+	mes "パ审竟硑ㄓΤ瑀蒩蔨, ";
+	mes "硈㊣蒩常ぃ...";
 	next;
-	mes "[伦培]";
-	mes "我的意思是, ";
-	mes "我们的空气, ";
-	mes "呼吸到都是臭的, ";
-	mes "很刺鼻难闻, ";
-	mes "我们该如何, ";
-	mes "解决这问题?";
+	mes "[蚌]";
+	mes "и種琌, ";
+	mes "и蒩, ";
+	mes "㊣常琌, ";
+	mes "惑螟籇, ";
+	mes "и赣, ";
+	mes "秆∕硂拜肈?";
 	close;
 }
 
-ein_in01,64,271,3	script	潘斯达仁#ein	4_M_EINMAN,{
-	mes "[潘斯达仁]";
-	mes "看着热到冒泡, ";
-	mes "的液态金属液体, ";
-	mes "让我有一种感觉, ";
-	mes "仿佛就像是能够, ";
-	mes "融化任何东西一样!";
+ein_in01,64,271,3	script	硷吹笷く#ein	4_M_EINMAN,{
+	mes "[硷吹笷く]";
+	mes "帝荐玙獁, ";
+	mes "睪篈妮睪蔨, ";
+	mes "琵иΤ销稰谋, ";
+	mes "ラ︱碞钩琌镑, ";
+	mes "磕てヴ狥﹁妓!";
 	next;
-	mes "[潘斯达仁]";
-	mes "想像一下, ";
-	mes "冒泡的金属液体, ";
-	mes "覆盖整个街道上的人与所有东西--";
-	mes "喔, 抱歉我在说疯话, ";
-	mes "我在开玩笑~";
+	mes "[硷吹笷く]";
+	mes "稱钩, ";
+	mes "玙獁妮睪蔨, ";
+	mes "滦籠俱刁笵蒓┮Τ狥﹁--";
+	mes "翅, ╆簆и弧浩杠, ";
+	mes "и秨~";
 	close;
 }
 
-ein_in01,49,202,3	script	杜普#ein	4_M_REPAIR,{
-	mes "[杜普]";
-	mes "机器果然很方便";
-	mes "人类做起来很幸苦的工作";
-	mes "机器就轻轻松松的完成了";
-	mes "太厉害了";
-	mes "这不就是所谓先进文明的好处吗.";
+ein_in01,49,202,3	script	炊#ein	4_M_REPAIR,{
+	mes "[炊]";
+	mes "审竟狦礛よ獽";
+	mes "摸暗癬ㄓ┋璚";
+	mes "审竟碞淮淮猀猀ЧΘ";
+	mes "び糉甡";
+	mes "硂ぃ碞琌┮孔秈ゅ矪盾.";
 	next;
-	mes "[杜普]";
-	mes "这是什么?";
-	mes "这就是技术!";
-	mes "不过想要制造一台这样的机械,";
-	mes "需要投入很多的资金和心血吧";
-	mes "其实这也不关我的事情啦.";
+	mes "[炊]";
+	mes "硂琌ぐ?";
+	mes "硂碞琌м砃!";
+	mes "ぃ筁稱璶硑硂妓审瘪,";
+	mes "惠璶щ戈㎝み﹀";
+	mes "ㄤ龟硂ぃ闽иㄆ薄罢.";
 	next;
-	mes "[杜普]";
-	mes "我的想要的只是希望,";
-	mes "那机器能够";
-	mes "一直顺利的运转";
-	mes "我想要的只是这样!";
+	mes "[炊]";
+	mes "и稱璶琌辨,";
+	mes "ê审竟镑";
+	mes "抖笲锣";
+	mes "и稱璶琌硂妓!";
 	close;
 }
 
-ein_in01,68,209,5	script	卡休蓝切#ein	4_M_EIN_SOLDIER,{
-	mes "[卡休蓝切]";
-	mes "很抱歉,";
-	mes "你需要特殊权限";
-	mes "才能进入这个地方";
-	mes "请你马上离开.";
+ein_in01,68,209,5	script	ヰ屡ち#ein	4_M_EIN_SOLDIER,{
+	mes "[ヰ屡ち]";
+	mes "╆簆,";
+	mes "惠璶疭舦";
+	mes "秈硂よ";
+	mes "叫皑置秨.";
 	close2;
 	warp "einbroch",179,63;
 	end;
 }
 
-ein_in01,85,261,3	script	森霖#ein	851,{
-	mes "[森霖]";
-	mes "我是负责管理这里";
-	mes "熔岩炉中岩浆状况的工作";
-	mes "虽然工作不算很忙碌, 但需要多费心思";
-	mes "所以精神颇疲惫的工作.";
+ein_in01,85,261,3	script	此繫#ein	851,{
+	mes "[此繫]";
+	mes "и琌璽砫恨瞶硂ń";
+	mes "翰━膌い━歼猵";
+	mes "瘤礛ぃ衡Γ窵, 惠璶禣み";
+	mes "┮弘会痟疚.";
 	next;
-	mes "[森霖]";
-	mes "不过这份工作还不错啦, ";
-	mes "托坎培堤的福,我们工厂里的劳工同事们";
-	mes "可以平平安安的工作, ";
-	mes "每次想起会让我";
-	mes "倍感温馨又自豪呢.";
+	mes "[此繫]";
+	mes "ぃ筁硂临ぃ岿罢, ";
+	mes "ΛБ蚌出褐,и蒁ń骋ㄆ";
+	mes "キキ, ";
+	mes "–Ω稱癬穦琵и";
+	mes "稰放纳花㎡.";
 	next;
-	mes "[森霖]";
-	mes "来来, ";
-	mes "让一下离它远一点!";
-	mes "万一靠近.";
-	mes "被滚烫的岩浆溅到";
-	mes "烫伤的话, ";
-	mes "我可不负责喔!";
+	mes "[此繫]";
+	mes "ㄓㄓ, ";
+	mes "琵置ウ环翴!";
+	mes "蒃綼.";
+	mes "砆簎縎━歼聁";
+	mes "縎端杠, ";
+	mes "иぃ璽砫翅!";
 	close;
 }
 
-ein_in01,43,252,3	script	坎培堤#ein	4_M_EIN_SOLDIER,{
-	mes "[坎培堤]";
-	mes "动起来, 动起来!";
-	mes "动作快点!";
-	mes "工作速度过慢的人";
-	mes "将受到处罚!";
+ein_in01,43,252,3	script	Б蚌出#ein	4_M_EIN_SOLDIER,{
+	mes "[Б蚌出]";
+	mes "笆癬ㄓ, 笆癬ㄓ!";
+	mes "笆е翴!";
+	mes "硉筁篊";
+	mes "盢矪籃!";
 	next;
-	mes "[坎培堤]";
-	mes "你不懂吗?";
-	mes "回去你的工作站工作";
-	mes "等等!!";
-	mes "你是工作人员吗?";
-	mes "如果不是";
-	mes "请别到处游荡!";
+	mes "[Б蚌出]";
+	mes "ぃ来盾?";
+	mes "";
+	mes "单单!!";
+	mes "琌盾?";
+	mes "狦ぃ琌";
+	mes "叫矪村亢!";
 	next;
-	mes "[坎培堤]";
-	mes "你不能在这里!";
-	mes "我简直不敢相信!";
-	mes "他们竟然让你在";
-	mes "绝对需要给他们";
-	mes "一个极端的纪律处分!";
+	mes "[Б蚌出]";
+	mes "ぃ硂ń!";
+	mes "и虏ぃ幢獺!";
+	mes "澈礛琵";
+	mes "荡癸惠璶倒";
+	mes "体狠矪だ!";
 	close;
 }
 
-ein_in01,206,224,3	script	饭店 职员#ein	855,{
-	mes "[饭店 职员]";
-	mes "您好";
-	mes "欢迎来到艾音布罗克酒店";
-	mes "我们总是秉持";
-	mes "以最高标准";
-	mes "不停努力的,";
-	mes "服务客人~";
+ein_in01,206,224,3	script	逗┍ 戮#ein	855,{
+	mes "[逗┍ 戮]";
+	mes "眤";
+	mes "舧ㄓ︺ガ霉皊┍";
+	mes "и羆琌";
+	mes "程蔼夹";
+	mes "ぃ氨,";
+	mes "狝叭~";
 	next;
 	if (kain_ticket == 5) {
-		mes "[饭店 职员]";
-		mes "你在寻找";
-		mes "Defru Ark 先生吗?";
-		mes "喔是的,";
-		mes "他确实提到正在等候";
-		mes "从机场来的包裹";
-		mes "我找一下资料...";
+		mes "[逗┍ 戮]";
+		mes "碝т";
+		mes "Defru Ark ネ盾?";
+		mes "翅琌,";
+		mes "谔龟矗タ单";
+		mes "眖审初ㄓ籷";
+		mes "ит戈...";
 		next;
-		mes "[饭店 职员]";
-		mes "阿, 在这里.";
-		mes "Defru Ark 先生";
-		mes "住在 201 号房.";
+		mes "[逗┍ 戮]";
+		mes ", 硂ń.";
+		mes "Defru Ark ネ";
+		mes " 201 腹┬.";
 		next;
 	}
 	else {
-		switch(select("储存重生点:休息 - 5,000 zeny:取消")) {
+		switch(select("纗ネ翴:ヰ - 5,000 zeny:")) {
 		case 1:
-			mes "[饭店 职员]";
-			mes "重生点已储存";
-			mes "在艾音布罗克";
-			mes "旅馆这里.";
-			mes "谢谢您";
-			mes "欢迎再来.";
+			mes "[逗┍ 戮]";
+			mes "ネ翴纗";
+			mes "︺ガ霉";
+			mes "繻硂ń.";
+			mes "谅谅眤";
+			mes "舧ㄓ.";
 			close2;
 			savepoint "ein_in01",200,224;
 			end;
 		case 2:
 			if (Zeny > 4999) {
-				mes "[饭店 职员]";
-				mes "谢谢您.";
-				mes "希望您能";
-				mes "好好休息~";
+				mes "[逗┍ 戮]";
+				mes "谅谅眤.";
+				mes "辨眤";
+				mes "ヰ~";
 				close2;
 				set Zeny, Zeny - 5000;
 				percentheal 100,100;
@@ -827,141 +827,141 @@ ein_in01,206,224,3	script	饭店 职员#ein	855,{
 				end;
 			}
 			else {
-				mes "[饭店 职员]";
-				mes "很抱歉,";
-				mes "住宿费用为";
+				mes "[逗┍ 戮]";
+				mes "╆簆,";
+				mes "盝禣ノ";
 				mes "5,000 zeny.";
-				mes "请确定";
-				mes "你带来足够的 zeny, 好吗?";
+				mes "叫谔﹚";
+				mes "盿ㄓì镑 zeny, 盾?";
 				close;
 			}
 		case 3:
-			mes "[饭店 职员]";
-			mes "感谢您";
-			mes "欢迎在来~";
+			mes "[逗┍ 戮]";
+			mes "稰谅眤";
+			mes "舧ㄓ~";
 			close;
 		}
 	}
-	mes "[饭店 职员]";
-	mes "祝您有个美好一天.";
+	mes "[逗┍ 戮]";
+	mes "眤Τぱ.";
 	close;
 }
 
-einbroch,244,255,5	script	标示牌#ein1	4_BULLETIN_BOARD2,{
+einbroch,244,255,5	script	夹ボ礟#ein1	4_BULLETIN_BOARD2,{
 	mes " ";
-	mes " 火车站 ";
-	mes " ";
-	close;
-}
-
-einbroch,253,203,5	script	标示牌#ein2	4_BULLETIN_BOARD2,{
-	mes " ";
-	mes " 旅馆 ";
+	mes " ó ";
 	mes " ";
 	close;
 }
 
-einbroch,68,206,5	script	标示牌#ein3	4_BULLETIN_BOARD2,{
+einbroch,253,203,5	script	夹ボ礟#ein2	4_BULLETIN_BOARD2,{
 	mes " ";
-	mes " 飞空艇 机场 ";
-	mes " ";
-	close;
-}
-
-einbroch,90,84,5	script	标示牌#ein4	4_BULLETIN_BOARD2,{
-	mes " ";
-	mes " 实验室 ";
+	mes " 繻 ";
 	mes " ";
 	close;
 }
 
-einbroch,101,106,5	script	标示牌#ein5	4_BULLETIN_BOARD2,{
+einbroch,68,206,5	script	夹ボ礟#ein3	4_BULLETIN_BOARD2,{
 	mes " ";
-	mes " 飞空艇 维修厂 ";
-	mes " ";
-	close;
-}
-
-einbroch,220,208,5	script	标示牌#ein6	4_BULLETIN_BOARD2,{
-	mes " ";
-	mes " 武器店 ";
+	mes " 弗 审初 ";
 	mes " ";
 	close;
 }
 
-einbroch,132,76,5	script	标示牌#ein7	4_BULLETIN_BOARD2,{
+einbroch,90,84,5	script	夹ボ礟#ein4	4_BULLETIN_BOARD2,{
 	mes " ";
-	mes " 工厂 ";
+	mes " 龟喷 ";
 	mes " ";
 	close;
 }
 
-einbroch,152,46,5	script	标示牌#ein11	4_BULLETIN_BOARD2,{
-	mes "西  边 - 实验室, 飞空艇 维修厂";
-	mes "南  边 - 艾音布罗克接待门";
-	mes "北  边 - 机场";
-	mes "东北边 - 火车站, 旅馆, 武器店";
+einbroch,101,106,5	script	夹ボ礟#ein5	4_BULLETIN_BOARD2,{
+	mes " ";
+	mes " 弗 蝴蒁 ";
+	mes " ";
 	close;
 }
 
-einbroch,235,141,5	script	标示牌#ein22	4_BULLETIN_BOARD2,{
-	mes "西南边 - 飞空艇 维修厂, 实验室";
-	mes "西北边 - 机场";
-	mes "北  边 - 武器店, 旅馆, 火车站";
+einbroch,220,208,5	script	夹ボ礟#ein6	4_BULLETIN_BOARD2,{
+	mes " ";
+	mes " 猌竟┍ ";
+	mes " ";
 	close;
 }
 
-einbroch,162,256,5	script	标示牌#ein33	4_BULLETIN_BOARD2,{
-	mes "东  边 - 火车站";
-	mes "东南边 - 旅馆";
-	mes "南  边 - 武器店,工厂";
-	mes "西南边 - 机场, 飞空艇维修厂, 实验室";
+einbroch,132,76,5	script	夹ボ礟#ein7	4_BULLETIN_BOARD2,{
+	mes " ";
+	mes " 蒁 ";
+	mes " ";
 	close;
 }
 
-einbroch,183,174,5	script	标示牌#ein44	4_BULLETIN_BOARD2,{
-	mes "东  边 - 武器店, 旅馆";
-	mes "南  边 - 工厂";
-	mes "西南边 - 飞空艇 维修厂, 实验室";
-	mes "西北边 - 机场";
+einbroch,152,46,5	script	夹ボ礟#ein11	4_BULLETIN_BOARD2,{
+	mes "﹁  娩 - 龟喷, 弗 蝴蒁";
+	mes "玭  娩 - ︺ガ霉钡";
+	mes "  娩 - 审初";
+	mes "狥娩 - ó, 繻, 猌竟┍";
 	close;
 }
 
-einbroch,104,202,5	script	标示牌#ein55	4_BULLETIN_BOARD2,{
-	mes "东北边 - 火车站";
-	mes "东  边 - 武器店,旅馆";
-	mes "南  边 - 飞空艇 维修厂, 实验室";
+einbroch,235,141,5	script	夹ボ礟#ein22	4_BULLETIN_BOARD2,{
+	mes "﹁玭娩 - 弗 蝴蒁, 龟喷";
+	mes "﹁娩 - 审初";
+	mes "  娩 - 猌竟┍, 繻, ó";
 	close;
 }
 
-ein_in01,31,217,3	script	善达特#ein	4_M_REPAIR,{
-	mes "[善达特]";
-	mes "本工厂的物资";
-	mes "确实很缺乏,";
-	mes "目前还能正常运转";
-	mes "已经是奇迹了!";
+einbroch,162,256,5	script	夹ボ礟#ein33	4_BULLETIN_BOARD2,{
+	mes "狥  娩 - ó";
+	mes "狥玭娩 - 繻";
+	mes "玭  娩 - 猌竟┍,蒁";
+	mes "﹁玭娩 - 审初, 弗蝴蒁, 龟喷";
+	close;
+}
+
+einbroch,183,174,5	script	夹ボ礟#ein44	4_BULLETIN_BOARD2,{
+	mes "狥  娩 - 猌竟┍, 繻";
+	mes "玭  娩 - 蒁";
+	mes "﹁玭娩 - 弗 蝴蒁, 龟喷";
+	mes "﹁娩 - 审初";
+	close;
+}
+
+einbroch,104,202,5	script	夹ボ礟#ein55	4_BULLETIN_BOARD2,{
+	mes "狥娩 - ó";
+	mes "狥  娩 - 猌竟┍,繻";
+	mes "玭  娩 - 弗 蝴蒁, 龟喷";
+	close;
+}
+
+ein_in01,31,217,3	script	到笷疭#ein	4_M_REPAIR,{
+	mes "[到笷疭]";
+	mes "セ蒁戈";
+	mes "谔龟,";
+	mes "ヘ玡临タ盽笲锣";
+	mes "竒琌格!";
 	next;
-	mes "[善达特]";
-	mes "幸运的是,";
-	mes "我听到";
-	mes "以前有人把击败魔物所得到的战利品";
-	mes "捐赠为工厂物资";
-	mes "来帮助工厂....";
-	mes "但只是听说而已.";
+	mes "[到笷疭]";
+	mes "┋笲琌,";
+	mes "и";
+	mes "玡Τр阑毖臸┮眔驹珇";
+	mes "秘蒁戈";
+	mes "ㄓ腊蒁....";
+	mes "琌弧τ.";
 	next;
-	mes "[善达特]";
-	mes "^666666*叹息*^000000";
-	mes "即使这是真的,";
-	mes "也莫可奈何啊";
-	mes "我们工厂也没有";
-	mes "可以对抗魔物的强人";
-	mes "你知道吗?";
+	mes "[到笷疭]";
+	mes "^666666*鼓*^000000";
+	mes "ㄏ硂琌痷,";
+	mes "馋ー摆";
+	mes "и蒁⊿Τ";
+	mes "癸к臸眏";
+	mes "笵盾?";
 	next;
-	mes "[善达特]";
-	mes "我...";
-	mes "我还是";
-	mes "赶快乖乖的";
-	mes "回去工作";
-	mes "不然我会有麻烦...";
+	mes "[到笷疭]";
+	mes "и...";
+	mes "и临琌";
+	mes "鱼е";
+	mes "";
+	mes "ぃ礛и穦Τ陈沸...";
 	close;
 }

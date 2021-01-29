@@ -1,81 +1,81 @@
-//===== BetterRa 文档 =======================================
-//= BetterRa 事件标签说明文件
-//===== 作者: ================================================
-//= BetterRa 开发团队
-//===== 最后更新: ============================================
+//===== BetterRa ゅ郎 =======================================
+//= BetterRa ㄆン夹帽弧ゅン
+//===== : ================================================
+//= BetterRa 秨祇刮钉
+//===== 程穝: ============================================
 //= 20170831
-//===== 文档简介: ============================================
-//= BetterRa 是基于 rAthena 进行二次开发的, 在 rAthena 官方支
-//= 持的物品附加效果基础上, BetterRa 也拓展了一些物品附加效果, 请参阅
-//= 下面的说明, 它会介绍这些物品附加效果的使用方法.
+//===== ゅ郎虏ざ: ============================================
+//= BetterRa 琌膀 rAthena 秈︽Ω秨祇,  rAthena ﹛よや
+//= 珇狦膀娄, BetterRa ┹甶ㄇ珇狦, 叫把綷
+//= 弧, ウ穦ざ残硂ㄇ珇狦ㄏノよ猭.
 //============================================================
 
-bonus4 bSkillForAOE,sk,range,n,r;		使用sk技能时, 有r(千分率)的几率对range范围内的n个目标使用同样的技能.
-bonus bWeaponAddDamage,n;				普通攻击或武器技能攻击时增加 n 的固定伤害
-bonus bMagicAddDamage,n;				魔法技能攻击时增加 n 的固定伤害
-bonus bMiscAddDamage,n;					混合技能攻击时增加 n 的固定伤害
-bonus bAddMastery,n; 					增加掌控伤害 n, 例斧修炼额外增加等级 * 5伤害 bonus bAddMastery,5*getskilllv(NC_TRAININGAXE);
-bonus3 bSkillDamage,sk,lv,n;			为lv等级的sk技能增加n的固定伤害.
-											等级为-1时 每无论多少级都会增加固定伤害值
-											等级为 0时 按照技能等级倍数增加固定伤害
-											等级为>0时 只对该技能等级增加伤害
+bonus4 bSkillForAOE,sk,range,n,r;		ㄏノskм, Τr(だ瞯)瞯癸range璖瞅ずnヘ夹ㄏノ妓м.
+bonus bWeaponAddDamage,n;				炊硄ю阑┪猌竟мю阑糤 n ㏕﹚端甡
+bonus bMagicAddDamage,n;				臸猭мю阑糤 n ㏕﹚端甡
+bonus bMiscAddDamage,n;					睼мю阑糤 n ㏕﹚端甡
+bonus bAddMastery,n; 					糤磝北端甡 n, ㄒ芬肂糤单 * 5端甡 bonus bAddMastery,5*getskilllv(NC_TRAININGAXE);
+bonus3 bSkillDamage,sk,lv,n;			lv单skм糤n㏕﹚端甡.
+											单-1 –礚阶ぶ常穦糤㏕﹚端甡
+											单 0 酚м单计糤㏕﹚端甡
+											单>0 癸赣м单糤端甡
 	
-bonus2 bSkillTreeCooldownRate,jobid,n;	职业技能公共技能延迟按百分比调整
-bonus2 bSkillTreeCooldown,jobid,n;		职业技能公共技能延迟调整
-bonus2 bSkillTreeDelayRate,jobid,n;		职业技能独立技能延迟按百分比调整
-bonus2 bSkillTreeDelay,jobid,n;			职业技能独立技能延迟调整
+bonus2 bSkillTreeCooldownRate,jobid,n;	戮穨мそм┑筐κだゑ秸俱
+bonus2 bSkillTreeCooldown,jobid,n;		戮穨мそм┑筐秸俱
+bonus2 bSkillTreeDelayRate,jobid,n;		戮穨м縒ミм┑筐κだゑ秸俱
+bonus2 bSkillTreeDelay,jobid,n;			戮穨м縒ミм┑筐秸俱
 
-bonus2 bReborn,r,n;						当玩家死亡时有 r% 的概率复活并恢复 n% 的血量
-bonus2 bBlockStatus,x,n;				固定玩家属性 x 为 n
-										x 支持	STATUS_MAXHP STATUS_MAXSP 
+bonus2 bReborn,r,n;						讽產Τ r% 阀瞯蝋蝋 n% ﹀秖
+bonus2 bBlockStatus,x,n;				㏕﹚產妮┦ x  n
+										x や	STATUS_MAXHP STATUS_MAXSP 
 												STATUS_STR STATUS_AGI STATUS_VIT STATUS_INT STATUS_DEX STATUS_LUK
 												STATUS_ATK_L STATUS_ATK_R STATUS_MATK_L STATUS_MATK_R
 												STATUS_HIT STATUS_SPEED STATUS_FLEE_L STATUS_FLEE_R STATUS_CRI
 												STATUS_DEF_L STATUS_DEF_R STATUS_MDEF_L STATUS_MDEF_R
 												STATUS_ATK_ELE STATUS_DEF_ELE STATUS_ATK_RANGE STATUS_ASPD
 
-bonus bCooldownrate,n;					技能独立延迟时间 + n%
-bonus bMaxASPD,n;						修改ASPD上限(无视CONF中的配置)
-bonus bDefSize,s;						修改体型大小为 s
-bonus bDefRace,r;						修改种族为 r
-bonus bDefEleLevel,n;					修改防御属性等级为 n
-bonus3 bSkillItemFix,sk,iid,n;			技能 sk 消耗的物品ID iid 增加 n 个(n可以为负数)
-bonus3 bRegen,hp,sp,t;					每隔 t 毫秒, 恢复 HP 和 SP (不覆盖, 独立运算)
-bonus3 bRegenPercent,hp,sp,t;			每隔 t 毫秒, 按百分比恢复 HP 和 SP(不覆盖, 独立运算)
+bonus bCooldownrate,n;					м縒ミ┑筐丁 + n%
+bonus bMaxASPD,n;						эASPD(礚跌CONFい皌竚)
+bonus bDefSize,s;						э蔨 s
+bonus bDefRace,r;						э销壁 r
+bonus bDefEleLevel,n;					эň眘妮┦单 n
+bonus3 bSkillItemFix,sk,iid,n;			м sk 珇ID iid 糤 n (n璽计)
+bonus3 bRegen,hp,sp,t;					–筳 t 睝, 蝋 HP ㎝ SP (ぃ滦籠, 縒ミ笲衡)
+bonus3 bRegenPercent,hp,sp,t;			–筳 t 睝, κだゑ蝋 HP ㎝ SP(ぃ滦籠, 縒ミ笲衡)
 
-bonus bFixedCastAddRate,n;				固定咏唱时间 + n%(可累加)
-bonus3 bMultiDamageRate,bf,r,n;			当玩家使用 bf 攻击时, 有 r/10% 的概率使伤害变为原来的 n% 倍
-bonus3 bSkillCritical,sk,r,n;			当玩家使用 sk 攻击时, 有 r/10% 的概率使伤害变为原来的 n% 倍
-										sk 为 -1 时所有技能暴击
-bonus bSkillCritAtkRate,n;				技能暴击伤害 + n%
-bonus3 bSkillAddDiv,sk,div,n;			技能 sk 打击段数增加 div, 伤害 + n%
-bonus2 bSkillChangeType,sk,bf;          修改技能 sk 攻击类型为 bf
+bonus bFixedCastAddRate,n;				㏕﹚碟佰丁 + n%(仓)
+bonus3 bMultiDamageRate,bf,r,n;			讽產ㄏノ bf ю阑, Τ r/10% 阀瞯ㄏ端甡跑ㄓ n% 
+bonus3 bSkillCritical,sk,r,n;			讽產ㄏノ sk ю阑, Τ r/10% 阀瞯ㄏ端甡跑ㄓ n% 
+										sk  -1 ┮Τм忌阑
+bonus bSkillCritAtkRate,n;				м忌阑端甡 + n%
+bonus3 bSkillAddDiv,sk,div,n;			м sk ゴ阑琿计糤 div, 端甡 + n%
+bonus2 bSkillChangeType,sk,bf;          эм sk ю阑摸 bf
 
-bonus2 bIgnoreMdefRaceVal,r,n;			无视 r 种族 n 点魔法防御力
-bonus2 bIgnoreMdefClassVal,c,n;			无视 c 类别魔物 n 点魔法防御力
-bonus2 bIgnoreDefRaceVal,r,n;			无视 r 种族 n 点魔法防御力
-bonus2 bIgnoreDefClassVal,c,n;			无视 c 类别魔物 n 点魔法防御力
+bonus2 bIgnoreMdefRaceVal,r,n;			礚跌 r 销壁 n 翴臸猭ň眘
+bonus2 bIgnoreMdefClassVal,c,n;			礚跌 c 摸臸 n 翴臸猭ň眘
+bonus2 bIgnoreDefRaceVal,r,n;			礚跌 r 销壁 n 翴臸猭ň眘
+bonus2 bIgnoreDefClassVal,c,n;			礚跌 c 摸臸 n 翴臸猭ň眘
 
-bonus bIgnoreWhiteImprison,n;			无视白色监狱, n无意义
+bonus bIgnoreWhiteImprison,n;			礚跌フ︹菏夯, n礚種竡
 
-bonus3 bFinalAddRace,r,x,bf;			使用 bf 攻击时, 增加 r 种族 x% 的伤害(在最终伤害上全段修正)
-bonus3 bFinalAddClass,c,n,bf;			使用 bf 攻击时, 增加 c 类别魔物 x% 的伤害(在最终伤害上全段修正)
+bonus3 bFinalAddRace,r,x,bf;			ㄏノ bf ю阑, 糤 r 销壁 x% 端甡(程沧端甡琿タ)
+bonus3 bFinalAddClass,c,n,bf;			ㄏノ bf ю阑, 糤 c 摸臸 x% 端甡(程沧端甡琿タ)
 
-bonus2 bAddSkillArea,sk,n;				增加 sk 技能 n 格范围, 可用于溅射或范围技能
-bonus2 bAddSkillRange,sk,n;				增加 sk 技能 n 格攻击距离
+bonus2 bAddSkillArea,sk,n;				糤 sk м n 璖瞅, ノ聁甮┪璖瞅м
+bonus2 bAddSkillRange,sk,n;				糤 sk м n ю阑禯置
 
-bonus2 bSkillToAround,sk,n;				技能 sk 变为群体技能, 自动选择自身 n 格范围内的敌对目标进行攻击
-bonus2 bSkillToGround,sk,n;				技能 sk 变为地面技能, 并攻击 n 格范围内的敌对目标
+bonus2 bSkillToAround,sk,n;				м sk 跑竤蔨м, 笆匡拒ō n 璖瞅ず寄癸ヘ夹秈︽ю阑
+bonus2 bSkillToGround,sk,n;				м sk 跑м, ю阑 n 璖瞅ず寄癸ヘ夹
 
-bonus2 bSkillNoSpecial,sk,bitmask;		移除技能 sk 的特殊条件, bitmask 为 掩码类型(可叠加),  
-										转生术/十字驱魔 (bitmask=1 移除对方为不死或恶魔限制)
-										水球术/天使之泪 (bitmask=1 移除地面为水面限制)
-										背刺(bitmask=1 移除背对限制)
-										阿修罗霸皇拳(bitmask=4 移除SP消耗)
-										(其他技能, 可联系作者添加)
+bonus2 bSkillNoSpecial,sk,bitmask;		簿埃м sk 疭兵ン, bitmask  被絏摸(舼),  
+										锣ネ砃/臱臸 (bitmask=1 簿埃癸よぃ┪碿臸)
+										瞴砃/ぱㄏぇ瞈 (bitmask=1 簿埃)
+										璉(bitmask=1 簿埃璉癸)
+										霉臦(bitmask=4 簿埃SP)
+										(ㄤм, 羛╰睰)
 										
-bonus2 bSkillNoRequire,sk,bitmask;		移除技能 sk 的需求条件, bitmask 为 掩码类型(可叠加),  
-										移除 'skill_require_db.txt' 中技能的指定需求.
+bonus2 bSkillNoRequire,sk,bitmask;		簿埃м sk 惠―兵ン, bitmask  被絏摸(舼),  
+										簿埃 'skill_require_db.txt' いм﹚惠―.
 										   1 = hp
 										   2 = maxhptrigger
 										   4 = sp
@@ -90,24 +90,24 @@ bonus2 bSkillNoRequire,sk,bitmask;		移除技能 sk 的需求条件, bitmask 为 掩码类型(
 										2048 = items (with the amount)
 										4096 = equipments
 										
-bonus3 bSkillAttribute,sk,ele,n;		技能 sk 变为 ele 属性(为避免带宽消耗过大或特效卡客户端, 每个技能最多显示一次温暖风特效)
-										 sk 为  0 时为普通攻击(n 为是否显示温暖的风特效)
-										 sk 为 -1 时为所有技能(n 为是否显示温暖的风特效)
-										ele 为 -1 时变为最克制属性(n 为是否显示温暖的风特效), 
-										ele 为 -2 时变为最接近属性(n 为是否显示温暖的风特效), 
-										ele 为 -3 时无视属性克制(伤害倍率修正为 n%, 优先度最高),
+bonus3 bSkillAttribute,sk,ele,n;		м sk 跑 ele 妮┦(磷盿糴筁┪疭め狠, –м程陪ボΩ放穢疭)
+										 sk   0 炊硄ю阑(n 琌陪ボ放穢疭)
+										 sk  -1 ┮Τм(n 琌陪ボ放穢疭)
+										ele  -1 跑程妮┦(n 琌陪ボ放穢疭), 
+										ele  -2 跑程钡妮┦(n 琌陪ボ放穢疭), 
+										ele  -3 礚跌妮┦(端甡瞯タ n%, 涩程蔼),
 
-bonus bWeaponReturnDefRate,n;			受到物理反射伤害时, 伤害减少原来的 n%
-bonus bMagicReturnDefRate,n;			受到魔法反射伤害时, 伤害减少原来的 n%
+bonus bWeaponReturnDefRate,n;			瞶は甮端甡, 端甡搭ぶㄓ n%
+bonus bMagicReturnDefRate,n;			臸猭は甮端甡, 端甡搭ぶㄓ n%
 
-bonus3 bStatusAddBonus,sc,bonus,n;		当自己拥有 sc 状态的时候, 会增加 bonus 参数为 n 
-										例: bonus3 bStatusAddBonus,SC_BLESSING,bStr,20;
-										说明: 天使赐福额外增加 20点 STR
-bonus4 bStatusAddBonus,sc,bonus,r,n;	当自己拥有 sc 状态的时候, 会增加 bonus 参数为 r,n
-										例: bonus4 bStatusAddBonus,SC_BLESSING,bSkillHeal,AL_HEAL,100;
-										说明: 天使赐福额外增加 治愈术回复量 100%
+bonus3 bStatusAddBonus,sc,bonus,n;		讽局Τ sc 篈, 穦糤 bonus 把计 n 
+										ㄒ: bonus3 bStatusAddBonus,SC_BLESSING,bStr,20;
+										弧: ぱㄏ界褐肂糤 20翴 STR
+bonus4 bStatusAddBonus,sc,bonus,r,n;	讽局Τ sc 篈, 穦糤 bonus 把计 r,n
+										ㄒ: bonus4 bStatusAddBonus,SC_BLESSING,bSkillHeal,AL_HEAL,100;
+										弧: ぱㄏ界褐肂糤 獀稶砃蝋秖 100%
 										
-bonus5 bAddStatusVal,sc,val1,val2,val3,val4;	赋予状态时, 参数分别累加 val1, val2, val3, val4
-												例: bonus5 bAddStatusVal,SC_BLESSING,10,10,0,0;
-												说明: 赋予天使赐福状态时 STR DEX INT 分别加 20 点
+bonus5 bAddStatusVal,sc,val1,val2,val3,val4;	结ぉ篈, 把计だ仓 val1, val2, val3, val4
+												ㄒ: bonus5 bAddStatusVal,SC_BLESSING,10,10,0,0;
+												弧: 结ぉぱㄏ界褐篈 STR DEX INT だ 20 翴
 

@@ -19,112 +19,112 @@
 // Port Malaya Transportation
 //============================================================
 // Old coordinates: alberta (237,71)
-alberta,196,202,3	script	奥塔玛拉号 船员#alberta	100,{
-	mes "[奥塔玛拉号 船员]";
-	mes "嘿~这儿~";
-	mes "10,000 Zeny就能去马来西亚港口,有兴趣么?";
+alberta,196,202,3	script	而娥嚎┰腹 差#alberta	100,{
+	mes "[而娥嚎┰腹 差]";
+	mes "糑~硂~";
+	mes "10,000 Zeny碞皑ㄓ﹁ㄈ翠,Τ砍届?";
 	next;
-	switch(select("有关马来西亚港口.:去往马来西亚港口.:取消.")) {
+	switch(select("Τ闽皑ㄓ﹁ㄈ翠.:┕皑ㄓ﹁ㄈ翠.:.")) {
 	case 1:
-		mes "[奥塔玛拉号 船员]";
-		mes "马来西亚是一个小村庄,从艾尔贝塔坐船向西南方向航行便能到达.";
+		mes "[而娥嚎┰腹 差]";
+		mes "皑ㄓ﹁ㄈ琌绍,眖︺焊ī娥Г差﹁玭よ︽獽笷.";
 		next;
-		mes "[奥塔玛拉号 船员]";
-		mes "之前一阵我都不去马来西亚,因为那里有些问题,不过似乎现在都已经解决了.";
+		mes "[而娥嚎┰腹 差]";
+		mes "ぇ玡皚и常ぃ皑ㄓ﹁ㄈ,êńΤㄇ拜肈,ぃ筁瞷常竒秆∕.";
 		next;
-		mes "[奥塔玛拉号 船员]";
-		mes "我不是很确定啦,不过那里就像是一个舒适又安逸的公园~";
+		mes "[而娥嚎┰腹 差]";
+		mes "иぃ琌谔﹚罢,ぃ筁êń碞钩琌滴屿秇そ堕~";
 		next;
-		mes "[奥塔玛拉号 船员]";
-		mes "我差点儿就待在那里再也不回艾尔贝塔了!";
+		mes "[而娥嚎┰腹 差]";
+		mes "и畉翴碞êńぃ︺焊ī娥!";
 		next;
-		mes "[奥塔玛拉号 船员]";
-		mes "我相信,等你到了那里也会有同样感受的.";
+		mes "[而娥嚎┰腹 差]";
+		mes "и獺,单êń穦Τ妓稰.";
 		close;
 	case 2:
 		if (Zeny < 10000) {
-			mes "[奥塔玛拉号 船员]";
-			mes "噢!天哪!";
-			mes "这不能免费啦,你不知道去马来西亚有多远!等你有了10,000 Zeny的时候再来找我吧!";
+			mes "[而娥嚎┰腹 差]";
+			mes "揪!ぱ!";
+			mes "硂ぃ禣罢,ぃ笵皑ㄓ﹁ㄈΤ环!单Τ10,000 Zenyㄓти!";
 			close;
 		}
-		mes "[奥塔玛拉号 船员]";
-		mes "太好了!";
-		mes "方向马来西亚港口~走起!~";
+		mes "[而娥嚎┰腹 差]";
+		mes "び!";
+		mes "よ皑ㄓ﹁ㄈ翠~ǐ癬!~";
 		set Zeny, Zeny - 10000;
 		close2;
 		warp "malaya",271,55;
 		end;
 	case 3:
-		mes "[奥塔玛拉号 船员]";
-		mes "冒险家们最近似乎都很忙的样子.好吧,等你有时间的时候再回来找我一起去马来西亚港口吧.";
+		mes "[而娥嚎┰腹 差]";
+		mes "玙繧產程常Γ妓.,单Τ丁ㄓти癬皑ㄓ﹁ㄈ翠.";
 		close;
 	}
 }
 
-malaya,276,55,4	script	奥塔玛拉号 船员#malaya	100,{
+malaya,276,55,4	script	而娥嚎┰腹 差#malaya	100,{
 	if (malaya_hi < 10) {
-		mes "[奥塔玛拉号 船员]";
-		mes "这个小村庄现在依旧繁忙.你已经参观完毕了吗?这儿一直有返回艾尔贝塔的船只.";
+		mes "[而娥嚎┰腹 差]";
+		mes "硂绍瞷ㄌ侣羉Γ.竒把芠Ч拨盾?硂Τ︺焊ī娥差.";
 		next;
 	} else if (malaya_hi < 20) {
-		mes "[奥塔玛拉号 船员]";
-		mes "我记得一位无名的冒险家帮助了村民,使他们放下心来.好了~你想回艾尔贝塔吗?";
+		mes "[而娥嚎┰腹 差]";
+		mes "и癘眔礚玙繧產腊チ,ㄏみㄓ.~稱︺焊ī娥盾?";
 		next;
 	} else {
-		mes "[奥塔玛拉号 船员]";
-		mes "你想和我一起返回艾尔贝塔吗?";
+		mes "[而娥嚎┰腹 差]";
+		mes "稱㎝и癬︺焊ī娥盾?";
 		next;
 	}
-	switch(select("回去.:不回.")) {
+	switch(select(".:ぃ.")) {
 	case 1:
-		mes "[奥塔玛拉号 船员]";
-		mes "好了!~我们起航返回艾尔贝塔!";
+		mes "[而娥嚎┰腹 差]";
+		mes "!~и癬︺焊ī娥!";
 		close2;
 		warp "alberta",239,68;
 		end;
 	case 2:
-		mes "[奥塔玛拉号 船员]";
-		mes "没关系,等你想回去的时候再来找我吧.";
+		mes "[而娥嚎┰腹 差]";
+		mes "⊿闽╰,单稱ㄓти.";
 		close;
 	}
 }
 
 // Generic Port Malaya NPCs
 //============================================================
-ma_in01,30,94,4	script	旅店老板#ma	583,{
+ma_in01,30,94,4	script	┍ρ狾#ma	583,{
 	if (malaya_hi < 10) {
-		mes "[旅店老板]";
-		mes "俄..你是来旅行的?";
-		mes "你来得真不是时候..目前这个村庄还有些混乱,我的旅馆一直没有营业.";
+		mes "[┍ρ狾]";
+		mes "玐..琌ㄓ︽?";
+		mes "ㄓ眔痷ぃ琌..ヘ玡硂绍临Τㄇ睼睹,и繻⊿Τ犁穨.";
 		close;
 	} else if (malaya_hi < 20) {
-		mes "[旅店老板]";
-		mes "你就是那个村民们正在谈论的冒险家?!为了表示感谢,我的旅馆为您马上开业!";
+		mes "[┍ρ狾]";
+		mes "碞琌êチタ酵阶玙繧產?!ボ稰谅,и繻眤皑秨穨!";
 		next;
 	} else {
-		mes "[旅店老板]";
-		mes "欢迎光临.";
-		mes "这儿是马来西亚最棒的旅店---城中小屋~";
+		mes "[┍ρ狾]";
+		mes "舧羬.";
+		mes "硂琌皑ㄓ﹁ㄈ程次┍---い~";
 		next;
 	}
-	mes "[旅店老板]";
-	mes "需要在这里休息吗?住宿费用为 5,000 Zeny.";
+	mes "[┍ρ狾]";
+	mes "惠璶硂ńヰ盾?盝禣ノ 5,000 Zeny.";
 	next;
-	switch(select("储存服务.:住宿--5,000 Zeny.:取消.")) {
+	switch(select("纗狝叭.:盝--5,000 Zeny.:.")) {
 	case 1:
-		mes "[旅店老板]";
-		mes "已经成功储存.下次再见~";
+		mes "[┍ρ狾]";
+		mes "竒Θ纗.Ωǎ~";
 		savepoint "ma_in01",43,98,1,1;
 		close;
 	case 2:
 		if (Zeny < 5000) {
-			mes "[旅店老板]";
-			mes "不好意思,您的钱不够.";
+			mes "[┍ρ狾]";
+			mes "ぃ種,眤窥ぃ镑.";
 			close;
 		}
-		mes "[旅店老板]";
-		mes "住宿愉快~!";
+		mes "[┍ρ狾]";
+		mes "盝磖е~!";
 		close2;
 		set Zeny, Zeny - 5000;
 		percentheal 100,100;
@@ -135,7 +135,7 @@ ma_in01,30,94,4	script	旅店老板#ma	583,{
 	}
 }
 
--	script	不明生物#i	-1,{
+-	script	ぃネ#i	-1,{
 	end;
 OnInit:
 	switch(atoi(strnpcinfo(2))) {
@@ -147,7 +147,7 @@ OnInit:
 	set .@size, getarraysize(.@npc$);
 	set .@rand, rand(.@size);
 	for(set .@i,0; .@i<.@size; set .@i,.@i+1)
-		donpcevent "不明生物#"+.@npc$[.@i]+"::"+((.@i == .@rand)?"OnEnable":"OnDisable");
+		donpcevent "ぃネ#"+.@npc$[.@i]+"::"+((.@i == .@rand)?"OnEnable":"OnDisable");
 	end;
 OnEnable:
 	enablenpc strnpcinfo(0);
@@ -164,14 +164,14 @@ OnBingx2:
 	set .@size, getarraysize(.@npc$);
 	set .@rand, rand(.@size);
 	for(set .@i,0; .@i<.@size; set .@i,.@i+1)
-		donpcevent "不明生物#"+.@npc$[.@i]+"::"+((.@i == .@rand)?"OnEnable":"OnDisable");
+		donpcevent "ぃネ#"+.@npc$[.@i]+"::"+((.@i == .@rand)?"OnEnable":"OnDisable");
 	donpcevent strnpcinfo(0)+"::OnDisable";
 	end;
 OnTouch:
 	if (getcharid(1)) {
 		if ($ma_name04$ == strcharinfo(0) || $ma_name05$ == strcharinfo(0) || $ma_name06$ == strcharinfo(0)) {
 			donpcevent strnpcinfo(0)+"::OnBingx2";
-			mes "不明生物瞥了你一眼,脸红了下后消失了.";
+			mes "ぃネ縣泊,羪ア.";
 			close;
 		}
 		if (rand(1,5)%2) {
@@ -182,18 +182,18 @@ OnTouch:
 			}
 		}
 		donpcevent strnpcinfo(0)+"::OnBingx2";
-		mes "不明生物瞥了你一眼后消失了.";
+		mes "ぃネ縣泊ア.";
 		close;
 	}
 	donpcevent strnpcinfo(0)+"::OnBingx2";
-	mes "不明生物朝你看看,然后跑开了.";
+	mes "ぃネ绰,礛禲秨.";
 	close;
 }
-ma_fild01,74,367,6	duplicate(不明生物#i)	不明生物#01	572,2,2
-ma_fild02,282,41,4	duplicate(不明生物#i)	不明生物#05	572,2,2
-ma_scene01,195,92,4	duplicate(不明生物#i)	不明生物#09	572,2,2
+ma_fild01,74,367,6	duplicate(ぃネ#i)	ぃネ#01	572,2,2
+ma_fild02,282,41,4	duplicate(ぃネ#i)	ぃネ#05	572,2,2
+ma_scene01,195,92,4	duplicate(ぃネ#i)	ぃネ#09	572,2,2
 
--	script	不明生物#j	-1,{
+-	script	ぃネ#j	-1,{
 	end;
 OnEnable:
 	enablenpc strnpcinfo(0);
@@ -215,7 +215,7 @@ OnBingx2:
 	set .@size, getarraysize(.@npc$);
 	set .@rand, rand(.@size);
 	for(set .@i,0; .@i<.@size; set .@i,.@i+1)
-		donpcevent "不明生物#"+.@npc$[.@i]+"::"+((.@i == .@rand)?"OnEnable":"OnDisable");
+		donpcevent "ぃネ#"+.@npc$[.@i]+"::"+((.@i == .@rand)?"OnEnable":"OnDisable");
 	donpcevent strnpcinfo(0)+"::OnDisable";
 	end;
 OnTouch_:
@@ -233,7 +233,7 @@ OnTouch_:
 	if (.@pass) {
 		if ($ma_name04$ == strcharinfo(0) || $ma_name05$ == strcharinfo(0) || $ma_name06$ == strcharinfo(0)) {
 			donpcevent strnpcinfo(0)+"::OnBingx2";
-			mes "不明生物瞥了你一眼,脸红了下后消失了.";
+			mes "ぃネ縣泊,羪ア.";
 			close;
 		}
 		if (rand(1,5)%2) {
@@ -255,433 +255,433 @@ OnTouch_:
 			}
 		}
 		donpcevent strnpcinfo(0)+"::OnBingx2";
-		mes "不明生物瞥了你一眼后消失了.";
+		mes "ぃネ縣泊ア.";
 		close;
 	}
 	donpcevent strnpcinfo(0)+"::OnBingx2";
-	mes "不明生物朝你看看,然后跑开了.";
+	mes "ぃネ绰,礛禲秨.";
 	close;
 }
-ma_fild01,109,116,4	duplicate(不明生物#j)	不明生物#02	572,2,2
-ma_fild01,280,150,6	duplicate(不明生物#j)	不明生物#03	572,2,2
-ma_fild01,309,221,6	duplicate(不明生物#j)	不明生物#04	572,2,2
-ma_fild02,246,324,4	duplicate(不明生物#j)	不明生物#06	572,2,2
-ma_fild02,71,296,6	duplicate(不明生物#j)	不明生物#07	572,2,2
-ma_fild02,32,263,4	duplicate(不明生物#j)	不明生物#08	572,2,2
-ma_scene01,158,139,4	duplicate(不明生物#j)	不明生物#10	572,2,2
-ma_scene01,167,112,6	duplicate(不明生物#j)	不明生物#11	572,2,2
+ma_fild01,109,116,4	duplicate(ぃネ#j)	ぃネ#02	572,2,2
+ma_fild01,280,150,6	duplicate(ぃネ#j)	ぃネ#03	572,2,2
+ma_fild01,309,221,6	duplicate(ぃネ#j)	ぃネ#04	572,2,2
+ma_fild02,246,324,4	duplicate(ぃネ#j)	ぃネ#06	572,2,2
+ma_fild02,71,296,6	duplicate(ぃネ#j)	ぃネ#07	572,2,2
+ma_fild02,32,263,4	duplicate(ぃネ#j)	ぃネ#08	572,2,2
+ma_scene01,158,139,4	duplicate(ぃネ#j)	ぃネ#10	572,2,2
+ma_scene01,167,112,6	duplicate(ぃネ#j)	ぃネ#11	572,2,2
 
-malaya,227,311,4	script	婆婆#ma01	575,{
+malaya,227,311,4	script	盋盋#ma01	575,{
 	if (malaya_hi < 10) {
-		mes "[婆婆]";
-		mes "你不是这儿附近的人吧?自己小心点~!";
+		mes "[盋盋]";
+		mes "ぃ琌硂?み翴~!";
 		next;
-		mes "[婆婆]";
-		mes "我的媳妇儿怀孕了,我有点担心,希望别出什么岔子.";
+		mes "[盋盋]";
+		mes "и稝包输ゥ,иΤ翴踞み,辨ぐ.";
 		close;
 	} else if (malaya_hi < 20) {
-		mes "[婆婆]";
-		mes "我听说一个外族人正在帮助我们的村庄.";
+		mes "[盋盋]";
+		mes "и弧壁タ腊и绍.";
 		next;
-		mes "[婆婆]";
-		mes "我想我的媳妇儿会平安的!";
+		mes "[盋盋]";
+		mes "и稱и稝包穦キ!";
 		close;
 	}
 	if (rand(1,3) == 2) {
-		mes "[婆婆]";
-		mes "听说"+getd("$ma_name0"+rand(1,6)+"$")+"一直跟随在噩梦护士左右.";
+		mes "[盋盋]";
+		mes "弧"+getd("$ma_name0"+rand(1,6)+"$")+"蛤繦镜冠臔オ.";
 		next;
-		mes "[婆婆]";
-		mes "我会祝福他们这种禁忌爱恋的.";
+		mes "[盋盋]";
+		mes "и穦褐硂销窽б稲攀.";
 		close;
 	}
-	mes "[婆婆]";
-	mes "我很担心我怀孕的媳妇儿.希望噩梦护士不会来伤害她.";
+	mes "[盋盋]";
+	mes "и踞みи输ゥ稝包.辨镜冠臔ぃ穦ㄓ端甡.";
 	next;
-	select("噩梦护士?");
-	mes "[婆婆]";
-	mes "你不是附近的村民?即使你是外乡人,在这里也得小心.";
+	select("镜冠臔?");
+	mes "[盋盋]";
+	mes "ぃ琌チ?ㄏ琌秏,硂ń眔み.";
 	next;
-	mes "[婆婆]";
-	mes "噩梦护士在很久以前是一个居住在马来西亚港口的女人,她嫁给了一个体面的男人后不久便怀孕了.";
+	mes "[盋盋]";
+	mes "镜冠臔玡琌﹡皑ㄓ﹁ㄈ翠,儿倒蔨╧ぃ獽输ゥ.";
 	next;
-	mes "[婆婆]";
-	mes "可是,快乐总是短暂的.在一次意外中,她流产了..";
+	mes "[盋盋]";
+	mes "琌,е贾羆琌祏既.Ω種い,瑈玻..";
 	next;
-	mes "[婆婆]";
-	mes "她失去孩子后无比悲伤,没过几天便离开了人世.";
+	mes "[盋盋]";
+	mes "ア礚ゑ磀端,⊿筁ぱ獽置秨.";
 	next;
-	select("这真是个悲伤的故事.");
-	mes "[婆婆]";
-	mes "之后,噩梦护士的灵魂一直在村子里徘徊,带走村庄里所有怀孕女人腹中的孩子.";
+	select("硂痷琌磀端珿ㄆ.");
+	mes "[盋盋]";
+	mes "ぇ,镜冠臔艶活ń眗,盿ǐ绍ń┮Τ输ゥ浮い.";
 	next;
-	mes "[婆婆]";
-	mes "如果夜晚你还在马来西亚港口行走..";
+	mes "[盋盋]";
+	mes "狦边临皑ㄓ﹁ㄈ翠︽ǐ..";
 	next;
-	mes "[婆婆]";
-	mes "听见tik-tik或者wak-wak的声音,那你得小心了,那是噩梦护士在煽动翅膀.";
+	mes "[盋盋]";
+	mes "ǎtik-tik┪wak-wak羘,ê眔み,ê琌镜冠臔捍笆籋.";
 	close;
 }
 
-malaya,189,263,4	script	击鼓的 年轻人#ma02	578,{
+malaya,189,263,4	script	阑躬 淮#ma02	578,{
 	if (malaya_hi < 10) {
 		emotion ET_HUK;
-		mes "[击鼓的 年轻人]";
-		mes "呃..这就和以前那时候一样...";
+		mes "[阑躬 淮]";
+		mes "..硂碞㎝玡ê妓...";
 		next;
 		emotion ET_HUK;
-		mes "[击鼓的 年轻人]";
-		mes "当月亮被吞掉的时候..呃!!";
+		mes "[阑躬 淮]";
+		mes "讽る獹砆奔..!!";
 		close;
 	} else if (malaya_hi < 20) {
-		mes "[击鼓的 年轻人]";
-		mes "我记得当时村庄被一位无名的英雄所拯救.";
+		mes "[阑躬 淮]";
+		mes "и癘眔讽绍砆礚璣动┮珸毕.";
 		next;
 		emotion ET_OHNO;
-		mes "[击鼓的 年轻人]";
-		mes "唔..我觉得食月暴龙又出现了!!";
+		mes "[阑躬 淮]";
+		mes "..и谋眔る忌纒瞷!!";
 		close;
 	}
 	if (rand(1,3) == 2) {
-		mes "[击鼓的 年轻人]";
-		mes getd("$ma_name0"+rand(1,6)+"$")+"据说曾经阻止了食月暴龙吞下月亮.是不是很可怕?不过我不担心~ ";
+		mes "[阑躬 淮]";
+		mes getd("$ma_name0"+rand(1,6)+"$")+"誹弧纯竒ゎる忌纒る獹.琌ぃ琌┤?ぃ筁иぃ踞み~ ";
 		close;
 	}
-	mes "[击鼓的 年轻人]";
-	mes "在马来西亚港口,传说食月暴龙是一只能吞下月亮的怪物!";
+	mes "[阑躬 淮]";
+	mes "皑ㄓ﹁ㄈ翠,肚弧る忌纒琌る獹┣!";
 	next;
-	mes "[击鼓的 年轻人]";
-	mes "不过我还知道,食月暴龙还会吞食人类!!";
+	mes "[阑躬 淮]";
+	mes "ぃ筁и临笵,る忌纒临穦摸!!";
 	next;
-	select("靠!那不是很危险?!");
+	select("綼!êぃ琌繧?!");
 	emotion ET_KIK;
-	mes "[击鼓的 年轻人]";
-	mes "哈哈哈,不过还是有办法阻止食月暴龙吞食人类的~";
+	mes "[阑躬 淮]";
+	mes ",ぃ筁临琌Τ快猭ゎる忌纒摸~";
 	next;
-	mes "[击鼓的 年轻人]";
-	mes "即使是已经吞掉了6个月亮的怪物也是有弱点的嘛!~";
+	mes "[阑躬 淮]";
+	mes "ㄏ琌竒奔6る獹┣琌Τ畓翴估!~";
 	next;
-	select("哦?那弱点是什么?");
-	mes "[击鼓的 年轻人]";
-	mes "当它要吞食月亮的时候,对外界的噪音相当敏感.";
+	select("瓳?ê畓翴琌ぐ?");
+	mes "[阑躬 淮]";
+	mes "讽ウ璶る獹,癸靖讽庇稰.";
 	next;
-	mes "[击鼓的 年轻人]";
-	mes "这时候你的机会就来了!!不管是锅碗瓢盆还是鼓~无论哪种噪音都可以!!";
+	mes "[阑躬 淮]";
+	mes "硂审穦碞ㄓ!!ぃ恨琌羚窲縘临琌躬~礚阶销靖常!!";
 	next;
-	mes "[击鼓的 年轻人]";
-	mes "食月暴龙受到惊吓后便会吐出月亮随即逃走!~";
+	mes "[阑躬 淮]";
+	mes "る忌纒誥纞獽穦る獹繦発ǐ!~";
 	next;
-	mes "[击鼓的 年轻人]";
-	mes "随身带一个鼓吧,很方便的~!";
+	mes "[阑躬 淮]";
+	mes "繦ō盿躬,よ獽~!";
 	close;
 }
 
-malaya,270,59,4	script	港口 守卫#ma03	570,{
+malaya,270,59,4	script	翠 矫#ma03	570,{
 	if (malaya_hi < 10) {
 		emotion ET_PROFUSELY_SWEAT;
-		mes "[港口 守卫]";
-		mes "村子里最近不怎么太平.我就这么离开不好吧?";
+		mes "[翠 矫]";
+		mes "ń程ぃびキ.и碞硂置秨ぃ?";
 		close;
 	} else if (malaya_hi < 20) {
 		emotion ET_STARE_ABOUT;
-		mes "[港口 守卫]";
-		mes "现在,村庄里已经安定多了,不过即使这样,夜晚出门的时候也请小心.";
+		mes "[翠 矫]";
+		mes "瞷,绍ń竒﹚,ぃ筁ㄏ硂妓,边叫み.";
 		close;
 	}
 	if (rand(1,3) == 2) {
-		mes "[港口 守卫]";
-		mes getd("$ma_name0"+rand(1,6)+"$")+"据说曾经被宝箱巨鳄俘获过,不过他逃脱了.他肯定是个厉害角色!";
+		mes "[翠 矫]";
+		mes getd("$ma_name0"+rand(1,6)+"$")+"誹弧纯竒砆腳絚エ苨玆莉筁,ぃ筁発叉.﹚琌糉甡à︹!";
 		close;
 	}
 	emotion ET_HUK;
-	mes "[港口 守卫]";
-	mes "什么?!港口解除警报!!";
+	mes "[翠 矫]";
+	mes "ぐ?!翠秆埃牡厨!!";
 	next;
-	mes "[港口 守卫]";
-	mes "咦?你不是队长?靠!吓死我了..好了,我接到了一份有关游客的官方文件.";
+	mes "[翠 矫]";
+	mes "玿?ぃ琌钉?綼!纞и..,и钡Τ闽村﹛よゅン.";
 	next;
-	select("什么文件?");
-	mes "[港口 守卫]";
-	mes "文件上说,游客夜晚在村庄里活动的时候一定要小心这里的怪物出没.";
+	select("ぐゅン?");
+	mes "[翠 矫]";
+	mes "ゅン弧,村边绍ń笆﹚璶み硂ń┣⊿.";
 	next;
-	mes "[港口 守卫]";
-	mes "宝箱巨鳄并不会经常在村子里出没,不过它们会将人诱拐进箱子并在夜晚带走他们.";
+	mes "[翠 矫]";
+	mes "腳絚エ苨ぃ穦竒盽ń⊿,ぃ筁ウ穦盢护╀秈絚边盿ǐ.";
 	next;
-	mes "[港口 守卫]";
-	mes "俄..还有一种叫食尸鬼的怪物经常会在晚上出现,一定要小心别碰见.";
+	mes "[翠 矫]";
+	mes "玐..临Τ销碍┣竒盽穦边瞷,﹚璶み窱ǎ.";
 	next;
-	switch(select("我知道了.:有什么办法阻止它们进村么?")) {
+	switch(select("и笵.:Τぐ快猭ゎウ秈?")) {
 	case 1:
-		mes "[港口 守卫]";
-		mes "晚上的时候要小心!";
+		mes "[翠 矫]";
+		mes "边璶み!";
 		close;
 	case 2:
-		mes "[港口 守卫]";
-		mes "听说,如果你被关在宝箱巨鳄背着的箱子里时,可以趁机在箱子里攻击它的弱点!";
+		mes "[翠 矫]";
+		mes "弧,狦砆闽腳絚エ苨璉帝絚ń,禭审絚ńю阑ウ畓翴!";
 		next;
-		mes "[港口 守卫]";
-		mes "如果你听见食尸鬼从远处飞翔而来的声音,一定要立刻躲进最近的建筑里去.";
+		mes "[翠 矫]";
+		mes "狦ǎ碍眖环矪稻τㄓ羘,﹚璶ミㄨ跟秈程诞ń.";
 		next;
 		emotion ET_SCRATCH;
-		mes "[港口 守卫]";
-		mes "不过要是听不见声音或者煽动翅膀的声音并不是很大,那你就自求多福,随时保持警惕吧!";
+		mes "[翠 矫]";
+		mes "ぃ筁璶琌ぃǎ羘┪捍笆籋羘ぃ琌,ê碞―褐,繦玂牡抱!";
 		close;
 	}
 }
 
-malaya,88,252,4	script	小女孩#ma04	576,{
+malaya,88,252,4	script	#ma04	576,{
 	if (malaya_hi < 10) {
-		mes "[小女孩]";
-		mes "我很害怕,不过我还是要去拜访森林里的精灵.";
+		mes "[]";
+		mes "и甡┤,ぃ筁и临琌璶砐此狶ń弘艶.";
 		close;
 	} else if (malaya_hi < 20) {
-		mes "[小女孩]";
-		mes "呵呵.爸爸说只要村子恢复平静了我就能去森林拜访精灵.";
+		mes "[]";
+		mes ".弧璶蝋キ繰и碞此狶砐弘艶.";
 		close;
 	}
 	if (rand(1,3) == 2) {
 		set .@name$, getd("$ma_name0"+rand(1,6)+"$");
-		mes "[小女孩]";
-		mes "不久以前,"+.@name$+"来到这里说了一句有趣的话~";
+		mes "[]";
+		mes "ぃ玡,"+.@name$+"ㄓ硂ń弧Τ届杠~";
 		next;
-		mes "[小女孩]";
-		mes "'我在院子里种了一对梨树~'";
-		mes " 呵呵,这真有趣~不是么?"+.@name$+"看起来是个很有趣的人~!";
+		mes "[]";
+		mes "'и皘ń销癸冰攫~'";
+		mes " ,硂痷Τ届~ぃ琌?"+.@name$+"癬ㄓ琌Τ届~!";
 		close;
 	}
-	mes "[小女孩]";
-	mes "爸爸说,只要和森林里的精灵成为朋友就不会得皮肤病了!";
+	mes "[]";
+	mes "弧,璶㎝此狶ń弘艶Θ狟ね碞ぃ穦眔ブ涧痜!";
 	next;
-	select("这是什么精灵?");
-	mes "[小女孩]";
-	mes "他们是仙女!他们住在森林里的大树或岩石里.仙女有女的,也有男的...";
+	select("硂琌ぐ弘艶?");
+	mes "[]";
+	mes "琌!此狶ń攫┪━ホń.Τ,Τ╧...";
 	next;
-	mes "[小女孩]";
-	mes "不过,男仙女比较好看哦...为什么呢...";
+	mes "[]";
+	mes "ぃ筁,╧ゑ耕瓳...ぐ㎡...";
 	close;
 }
 
-malaya,219,92,6	script	小孩#ma05	577,{
+malaya,219,92,6	script	#ma05	577,{
 	if (malaya_hi < 10) {
-		mes "[小孩]";
-		mes "妈妈说外面太危险了,不让我出去玩.为什么呢?";
+		mes "[]";
+		mes "洱洱弧び繧,ぃ琵и.ぐ㎡?";
 		close;
 	} else if (malaya_hi < 20) {
-		mes "[小孩]";
-		mes "妈妈只让我在马来西亚港口玩耍.";
+		mes "[]";
+		mes "洱洱琵и皑ㄓ﹁ㄈ翠瑼.";
 		next;
-		mes "[小孩]";
-		mes "呵呵,不过我从来没想过去马来西亚港口以外的世界玩呢.";
+		mes "[]";
+		mes ",ぃ筁и眖ㄓ⊿稱筁皑ㄓ﹁ㄈ翠㎡.";
 		close;
 	}
 	if (rand(1,3) == 2) {
-		mes "[小孩]";
-		mes "我听说哦,有人在神秘的村庄里面拿走了食人波利的帽子..";
+		mes "[]";
+		mes "и弧瓳,Τ绍ńǐ猧碪..";
 		next;
-		mes "[小孩]";
-		mes "为什么会有人要偷怪物的帽子呢?"+getd("$ma_name0"+rand(1,6)+"$")+"肯定要绝望了.";
+		mes "[]";
+		mes "ぐ穦Τ璶敖┣碪㎡?"+getd("$ma_name0"+rand(1,6)+"$")+"﹚璶荡辨.";
 		next;
-		mes "[小孩]";
-		mes "哦!!等等.. 这应该是个秘密的.嘘~~~~~你什么都没有听见哦!";
+		mes "[]";
+		mes "瓳!!单单.. 硂莱赣琌盞.糔~~~~~ぐ常⊿Τǎ瓳!";
 		close;
 	}
-	mes "[小孩]";
-	mes "我想有人偷走了村子里所有的帽子!";
+	mes "[]";
+	mes "и稱Τ敖ǐń┮Τ碪!";
 	next;
-	mes "[小孩]";
-	mes "邻居们的帽子在几天前就已经消失了,我妈昨天刚洗好的帽子也不见了.";
+	mes "[]";
+	mes "綟﹡碪ぱ玡碞竒ア,и洱琎ぱ瑍碪ぃǎ.";
 	next;
-	mes "[小孩]";
-	mes "唔...你觉得会不会是被食人波利拿走了?";
+	mes "[]";
+	mes "...谋眔穦ぃ穦琌砆猧ǐ?";
 	next;
-	mes "[小孩]";
-	mes "我的朋友说,他曾经看见食人波利戴着这些消失的帽子...";
+	mes "[]";
+	mes "и狟ね弧,纯竒ǎ猧拦帝硂ㄇア碪...";
 	close;
 }
 
-malaya,363,283,4	script	当地居民#ma06	4_M_MALAYA,{
+malaya,363,283,4	script	讽﹡チ#ma06	4_M_MALAYA,{
 	if (malaya_hi < 10) {
-		mes "[当地居民]";
-		mes "唔...女巫的诅咒又来了!";
+		mes "[讽﹡チ]";
+		mes "...禔〨ㄓ!";
 		next;
-		mes "[当地居民]";
-		mes "外乡人,一定要小心噩梦巫师手里的针!";
+		mes "[讽﹡チ]";
+		mes "秏,﹚璶み镜冠畍もń皐!";
 		close;
 	} else if (malaya_hi < 20) {
-		mes "[当地居民]";
-		mes "欢迎来到马来西亚!";
+		mes "[讽﹡チ]";
+		mes "舧ㄓ皑ㄓ﹁ㄈ!";
 		next;
-		mes "[当地居民]";
-		mes "村子里最近有些不安全,如果你见到有谁的眼睛是红色的,切忌不要盯着他们的眼睛看!!";
+		mes "[讽﹡チ]";
+		mes "ń程Τㄇぃ,狦ǎΤ街泊氟琌︹,ちбぃ璶╪帝泊氟!!";
 		close;
 	}
 	set .@name$, getd("$ma_name0"+rand(1,6)+"$");
 	switch(rand(1,6)) {
 	case 1:
-		mes "[当地居民]";
-		mes "夜晚出门的时候一定要小心,听说"+.@name$+"被食尸鬼带走了.";
+		mes "[讽﹡チ]";
+		mes "边﹚璶み,弧"+.@name$+"砆碍盿ǐ.";
 		close;
 	case 2:
-		mes "[当地居民]";
-		mes .@name$+"据说成功地驯服了一只邪魔马.这家伙一定很勇敢!!真希望我能亲眼见到这只邪魔马呢!";
+		mes "[讽﹡チ]";
+		mes .@name$+"誹弧Θ攻狝ǜ臸皑.硂產ル﹚玦幢!!痷辨и克泊ǎ硂ǜ臸皑㎡!";
 		close;
 	case 3:
-		mes "[当地居民]";
-		mes "你有见过独眼怪么?听说"+.@name$+"抓捕到了一只.";
+		mes "[讽﹡チ]";
+		mes "Τǎ筁縒泊┣?弧"+.@name$+"ъ.";
 		close;
 	case 4:
-		mes "[当地居民]";
-		mes "如果你想去村庄的外面走走,一定要小心恶魔婴儿."+.@name$+"住院了,听说他被恶魔婴儿骗了.";
+		mes "[讽﹡チ]";
+		mes "狦稱绍ǐǐ,﹚璶み碿臸捆."+.@name$+"皘,弧砆碿臸捆腇.";
 		close;
 	case 5:
 	case 6:
 		break;
 	}
-	mes "[当地居民]";
-	mes "最近村子里很混乱,看起来噩梦巫师又回来了..";
+	mes "[讽﹡チ]";
+	mes "程ń睼睹,癬ㄓ镜冠畍ㄓ..";
 	next;
-	select("噩梦巫师?");
-	mes "[当地居民]";
-	mes "那怪物是巫师,它们也穿着衣服,看起来就和人一样.";
+	select("镜冠畍?");
+	mes "[讽﹡チ]";
+	mes "ê┣琌畍,ウ帝︾狝,癬ㄓ碞㎝妓.";
 	next;
-	mes "[当地居民]";
-	mes "噩梦巫师会把它看见的人制做成娃娃并用针来诅咒.";
+	mes "[讽﹡チ]";
+	mes "镜冠畍穦рウǎ暗Θノ皐ㄓ禔〨.";
 	next;
-	select("有没有办法可以辨认出这种怪物?");
-	mes "[当地居民]";
-	mes "有一种办法,所有的噩梦巫师都是红色的眼睛.";
+	select("Τ⊿Τ快猭侩粄硂销┣?");
+	mes "[讽﹡チ]";
+	mes "Τ销快猭,┮Τ镜冠畍常琌︹泊氟.";
 	next;
-	mes "[当地居民]";
-	mes "你可以通过它们的眼睛颜色辨别出,不过一定要切记一点!";
+	mes "[讽﹡チ]";
+	mes "硄筁ウ泊氟肅︹侩,ぃ筁﹚璶ち癘翴!";
 	next;
-	mes "[当地居民]";
-	mes "别盯着它们的眼睛看太久!不然你会被噩梦巫师俘获的.";
+	mes "[讽﹡チ]";
+	mes "╪帝ウ泊氟び!ぃ礛穦砆镜冠畍玆莉.";
 	next;
-	mes "[当地居民]";
-	mes "记着!别盯着它们的眼睛看!!";
+	mes "[讽﹡チ]";
+	mes "癘帝!╪帝ウ泊氟!!";
 	close;
 }
 
-malaya,41,127,6	script	老人 #ma07	574,{
+malaya,41,127,6	script	ρ #ma07	574,{
 	if (malaya_hi < 10) {
-		mes "[老人]";
-		mes "我们并不希望有外乡人来,因为这里最近不安全.";
+		mes "[ρ]";
+		mes "иぃ辨Τ秏ㄓ,硂ń程ぃ.";
 		close;
 	} else if (malaya_hi < 20) {
-		mes "[老人]";
-		mes "现在真不是来我们村庄旅游的时候,我们不希望您前来.";
+		mes "[ρ]";
+		mes "瞷痷ぃ琌ㄓи绍村,иぃ辨眤玡ㄓ.";
 		close;
 	}
 	if (rand(1,3) == 2) {
-		mes "[老人]";
-		mes getd("$ma_name0"+rand(1,6)+"$")+"听说在村子里丢掉了杰勒比结晶. ";
+		mes "[ρ]";
+		mes getd("$ma_name0"+rand(1,6)+"$")+"弧ńメ奔狽扒ゑ挡垂. ";
 		next;
-		mes "[老人]";
-		mes "啧,啧..肯定是个不值得拥有杰勒比结晶的人!";
+		mes "[ρ]";
+		mes "股,股..﹚琌ぃ眔局Τ狽扒ゑ挡垂!";
 		close;
 	}
-	mes "[老人]";
-	mes "如果你要砍树的话还必须注意是不是有噩梦死神住在那棵树上.";
+	mes "[ρ]";
+	mes "狦璶攫杠临ゲ斗猔種琌ぃ琌Τ镜冠ê词攫.";
 	next;
-	mes "[老人]";
-	mes "要是使用了噩梦死神居住过的树木上的木头建造房子,会发生奇怪的事情!";
+	mes "[ρ]";
+	mes "璶琌ㄏノ镜冠﹡筁攫れれ繷硑┬,穦祇ネ┣ㄆ薄!";
 	next;
-	select("会发生什么?");
-	mes "[老人]";
-	mes "对噩梦死神来说,这意味着它们失去了自己的家,你就等着被报复吧!";
+	select("穦祇ネぐ?");
+	mes "[ρ]";
+	mes "癸镜冠ㄓ弧,硂種帝ウア產,碞单帝砆厨蝋!";
 	next;
-	mes "[老人]";
-	mes "当你在屋子里想要入睡的时候,它们会对你恶作剧,让你无法睡着.";
+	mes "[ρ]";
+	mes "讽ń稱璶何,ウ穦癸碿粿,琵礚猭何帝.";
 	next;
-	mes "[老人]";
-	mes "随着时间的推移,复仇升级,他们会坐在你身上直到你没气了.";
+	mes "[ρ]";
+	mes "繦帝丁崩簿,蝋こど,穦Гō⊿蒩.";
 	next;
-	select("俄..天哪..");
-	mes "[老人]";
-	mes "哈哈哈!不过通常房梁里面没有噩梦死神的,别担心会失眠.";
+	select("玐..ぱ..");
+	mes "[ρ]";
+	mes "!ぃ筁硄盽┬辩ń⊿Τ镜冠,踞み穦ア痸.";
 	close;
 }
 
-malaya,63,185,4	script	女人#ma08	583,{
+malaya,63,185,4	script	#ma08	583,{
 	if (malaya_hi < 10) {
-		mes "[女人]";
-		mes "我没什么可以和你说的.";
+		mes "[]";
+		mes "и⊿ぐ㎝弧.";
 		close;
 	} else if (malaya_hi < 20) {
-		mes "[女人]";
-		mes "我很担心那些孩子们.希望村子里发生的可怕事件别给他们留下阴影.";
+		mes "[]";
+		mes "и踞みêㄇ.辨ń祇ネ┤ㄆン倒痙潮紇.";
 		close;
 	}
 	if (rand(1,3) == 2) {
 		set .@name$, getd("$ma_name0"+rand(1,6)+"$");
 		set .@rand, rand(1,10);
 		if (.@rand < 5) {
-			mes "[女人]";
-			mes "我喜欢有趣的语句.不久之前,"+.@name$+"来到这里告诉了我一个有趣的段子.";
+			mes "[]";
+			mes "и尺舧Τ届粂.ぃぇ玡,"+.@name$+"ㄓ硂ń禗иΤ届琿.";
 			next;
 		}
 		switch(.@rand) {
 		case 1:
-			mes "[女人]";
-			mes "'我的阿姨踩到了一只蚂蚁.'";
+			mes "[]";
+			mes "'и津柯闷.'";
 			next;
 			break;
 		case 2:
-			mes "[女人]";
-			mes "'你在一个寒冷的日子吃辣椒.'";
+			mes "[]";
+			mes "'碒ら欢丛.'";
 			next;
 			break;
 		case 3:
-			mes "[女人]";
-			mes "'你为什么往花上撒面粉?'";
+			mes "[]";
+			mes "'ぐ┕蓟?'";
 			next;
 			break;
 		case 4:
-			mes "[女人]";
-			mes "在工具店里, '我想去买针线,你却买了干草把针都藏了进去.'";
+			mes "[]";
+			mes "ㄣ┍ń, 'и稱禦皐絬,玱禦р皐常旅秈.'";
 			next;
-			mes "[女人]";
-			mes .@name$+"说完后被扔出了工具店.";
+			mes "[]";
+			mes .@name$+"弧Ч砆サㄣ┍.";
 			next;
 			break;
 		case 5:
-			mes "[女人]";
-			mes "我的一个卡普拉服务员朋友告诉了我有关一位客人的故事.";
+			mes "[]";
+			mes "и炊┰狝叭狟ね禗иΤ闽珿ㄆ.";
 			next;
-			mes "[女人]";
-			mes "'聪明如卡普拉,她们从不结婚,一旦他们结婚了,就再也不是卡普拉了.'";
+			mes "[]";
+			mes "'羙炊┰,眖ぃ挡盉,ス挡盉,碞ぃ琌炊┰.'";
 			next;
-			mes "[女人]";
-			mes "呵呵~~我喜欢有趣的故事~不过要合我的口味有点困难~";
+			mes "[]";
+			mes "~~и尺舧Τ届珿ㄆ~ぃ筁璶иΤ翴螟~";
 			close;
 		default:
-			mes "[女人]";
-			mes "我喜欢有趣的语句,等一下~还有一个~ "+.@name$+", 爱情就像照片,你同意么?";
+			mes "[]";
+			mes "и尺舧Τ届粂,单~临Τ~ "+.@name$+", 稲薄碞钩酚,種?";
 			next;
-			mes "[女人]";
-			mes "爱情就像照片,需要黑暗来显影感光.";
+			mes "[]";
+			mes "稲薄碞钩酚,惠璶堵穞ㄓ陪紇稰.";
 			next;
 		}
-		mes "[女人]";
-		mes "呵呵~这不是很有趣嘛~?";
+		mes "[]";
+		mes "~硂ぃ琌Τ届估~?";
 		close;
 	}
-	mes "[女人]";
-	mes "如果你听见从村外的树林传来婴儿的哭声,千万不要靠近那里.";
+	mes "[]";
+	mes "狦ǎ眖攫狶肚ㄓ捆羘,蒃ぃ璶綼êń.";
 	next;
-	select("为什么?");
-	mes "[女人]";
-	mes "有一种叫恶魔婴儿的怪物会在村外游荡,它们将自己变身成为啼哭的婴儿吸引行人的注意.";
+	select("ぐ?");
+	mes "[]";
+	mes "Τ销碿臸捆┣穦村亢,ウ盢跑ōΘ弛捆ま︽猔種.";
 	next;
-	mes "[女人]";
-	mes "一旦你抱起了婴儿,它就会立刻现出原形攻击你.";
+	mes "[]";
+	mes "ス╆癬捆,ウ碞穦ミㄨ瞷ю阑.";
 	next;
-	select("听起来真是个卑鄙的怪物.");
-	mes "[女人]";
-	mes "是的,这种怪物利用旅行者的好心真是太无耻了..但是..";
+	select("癬ㄓ痷琌焕┣.");
+	mes "[]";
+	mes "琌,硂销┣ノ︽み痷琌び礚..琌..";
 	next;
-	mes "[女人]";
-	mes "但是..传闻这种怪物是一个未出生孩子的灵魂转变的..哎..真是太悲伤了..";
+	mes "[]";
+	mes "琌..肚籇硂销┣琌ゼネ艶活锣跑..玼..痷琌び磀端..";
 	close;
 }
 

@@ -114,17 +114,17 @@ function	script	F_Invest_Status	{
 //callfunc "F_Invest_Abyss","<variable>","<NPC name>"{,"<addon message>"};
 function	script	F_Invest_Abyss	{
 	.@npc_name$ = getarg(1);
-	mes "有2种方式投资, 使用 Zeny 或者 由本商会投资部门发行的 猫手顶级投资证书.";
-	mes "请问您想选择哪种方式?";
+	mes "Τ2销よΑщ戈, ㄏノ Zeny ┪ パセ坝穦щ戈场祇︽ 窟も郴щ戈谍.";
+	mes "叫拜眤稱匡拒销よΑ?";
 	next;
-	switch(select("- 用Zeny投资.:- 猫手顶级投资证书.:- 取消")) {
+	switch(select("- ノZenyщ戈.:- 窟も郴щ戈谍.:- ")) {
 	case 1:
 		mes .@npc_name$;
-		mes "您决定使用Zeny来投资.";
-		mes "最小投资单位是 ^4d4dff10,000 Zeny^000000.";
-		mes "最大的投资单位是50倍 ^4d4dff500,000 Zeny^000000.";
+		mes "眤∕﹚ㄏノZenyㄓщ戈.";
+		mes "程щ戈虫琌 ^4d4dff10,000 Zeny^000000.";
+		mes "程щ戈虫琌50 ^4d4dff500,000 Zeny^000000.";
 		next;
-		switch(select("- 1倍~100,000 Zeny:- 10倍 100,000 Zeny:- 50倍 500,000 Zeny:- 输入金额:- 取消")) {
+		switch(select("- 1~100,000 Zeny:- 10 100,000 Zeny:- 50 500,000 Zeny:- 块肂:- ")) {
 		case 1:
 			set .@units,1;
 			break;
@@ -136,19 +136,19 @@ function	script	F_Invest_Abyss	{
 			break;
 		case 4:
 			mes .@npc_name$;
-			mes "请输入您需要投资的金额(倍数).";
-			mes "请选择 1 ~ 200 之间的数字.";
-			mes "或输入 0 退出.";
+			mes "叫块眤惠璶щ戈肂(计).";
+			mes "叫匡拒 1 ~ 200 ぇ丁计.";
+			mes "┪块 0 癶.";
 			next;
 			input .@units;
 			if (.@units < 0 || .@units > 200) {
 				mes .@npc_name$;
-				mes "您输入的数字有误.";
-				mes "请重试.";
+				mes "眤块计Τ粇.";
+				mes "叫刚.";
 				close;
 			} else if (.@units == 0) {
 				mes .@npc_name$;
-				mes "已取消.";
+				mes ".";
 				close;
 			} else
 				break;
@@ -160,22 +160,22 @@ function	script	F_Invest_Abyss	{
 		set .@zeny, .@units * 10000;
 		if (Zeny < .@zeny) {
 			mes .@npc_name$;
-			mes "您的 Zeny 不够.";
+			mes "眤 Zeny ぃ镑.";
 			close;
 		}
 		mes .@npc_name$;
-		mes "您投资了 "+callfunc("F_InsertPlural",.@units,"单位")+" "+callfunc("F_InsertComma",.@zeny)+" Zeny"+getarg(2,"")+".";
-		mes "虽然不多, 但这是一个投资感谢券. 您可以用它到绵绵岛兑换一些有用的东西.";
+		mes "眤щ戈 "+callfunc("F_InsertPlural",.@units,"虫")+" "+callfunc("F_InsertComma",.@zeny)+" Zeny"+getarg(2,"")+".";
+		mes "瘤礛ぃ, 硂琌щ戈稰谅ㄩ. 眤ノウ壶壶畄传ㄇΤノ狥﹁.";
 		set Zeny, Zeny-.@zeny;
 		setd getarg(0), getd(getarg(0)) + .@units;
 		getitem 6488,.@units; //Thanks_Invest_Ticket
 		close;
 	case 2:
 		mes .@npc_name$;
-		mes "哇哦, 您带来了猫手顶级投资证书.";
-		mes "您想投资多少份?";
+		mes "珃瓳, 眤盿ㄓ窟も郴щ戈谍.";
+		mes "眤稱щ戈ぶ?";
 		next;
-		switch(select("- 1份 猫手顶级投资证书:- 5份 猫手顶级投资证书:- 输入数字:- 取消")) {
+		switch(select("- 1 窟も郴щ戈谍:- 5 窟も郴щ戈谍:- 块计:- ")) {
 		case 1:
 			set .@tickets,1;
 			break;
@@ -184,43 +184,43 @@ function	script	F_Invest_Abyss	{
 			break;
 		case 3:
 			mes .@npc_name$;
-			mes "请输入您需要使用猫手顶级投资证书的具体份数.";
-			mes "请选择 1 ~ 20 之间的数字.";
-			mes "或按 0 退出.";
+			mes "叫块眤惠璶ㄏノ窟も郴щ戈谍ㄣ蔨计.";
+			mes "叫匡拒 1 ~ 20 ぇ丁计.";
+			mes "┪ 0 癶.";
 			next;
 			input .@tickets;
 			if (.@tickets < 0 || .@tickets > 20) {
 				mes .@npc_name$;
-				mes "您输入的数字有误.";
-				mes "请重新输入.";
+				mes "眤块计Τ粇.";
+				mes "叫穝块.";
 				close;
 			} else if (.@tickets == 0) {
 				mes .@npc_name$;
-				mes "已取消.";
+				mes ".";
 				close;
 			} else
 				break;
 		case 4:
 			mes .@npc_name$;
-			mes "已取消.";
+			mes ".";
 			close;
 		}
 		if (countitem(6489) < .@tickets) {
 			mes .@npc_name$;
-			mes "您想提交的证书数量比您携带的要多.";
+			mes "眤稱矗ユ谍计秖ゑ眤拟盿璶.";
 			close;
 		}
 		set .@units, .@tickets * 10;
 		mes .@npc_name$;
-		mes .@tickets+" 猫手顶级投资证书"+((.@tickets == 1)?" 确认":"是")+" 相同想过的投资方式 "+.@units+" 倍数 ("+((.@units < 100)?.@units:insertchar(""+.@units,",",1))+"0,000z)"+getarg(2,"")+".";
-		mes "虽然你的投资金额不高, 但这是一个投资感谢券. 您可以用它到绵绵岛兑换一些有用的东西.";
+		mes .@tickets+" 窟も郴щ戈谍"+((.@tickets == 1)?" 谔粄":"琌")+" 稱筁щ戈よΑ "+.@units+" 计 ("+((.@units < 100)?.@units:insertchar(""+.@units,",",1))+"0,000z)"+getarg(2,"")+".";
+		mes "瘤礛щ戈肂ぃ蔼, 硂琌щ戈稰谅ㄩ. 眤ノウ壶壶畄传ㄇΤノ狥﹁.";
 		delitem 6489,.@tickets; //Cats_Invest_Certif
 		setd getarg(0), getd(getarg(0)) + .@units;
 		getitem 6488,.@units; //Thanks_Invest_Ticket
 		close;
 	case 3:
 		mes .@npc_name$;
-		mes "已取消.";
+		mes ".";
 		close;
 	}
 }
@@ -316,7 +316,7 @@ OnCalculate:
 			case 15: set $2011_agit_invest,21; break; //Prontera|Payon|Al De Baran|Geffen
 		}
 		if ($2011_agit_invest >= 11)
-			donpcevent "附加投票管理员#Invest1::OnStart";
+			donpcevent "щ布恨瞶#Invest1::OnStart";
 		end;
 	} else {
 		setd "$"+.@cas$[.@ele]+"_invest_result",3;
@@ -325,7 +325,7 @@ OnCalculate:
 	}
 	end;
 OnInvest_start:
-	announce "从现在起, 我们计划通过投资方式来快速打通'深渊回廊'的通道. 通过回廊我们将连通公会战区域: 普隆德拉-战士之路, 斐扬-远古之风, 吉芬-亡者之丘, 艾-英雄之泪.",bc_all,0xFF0000; //FW_NORMAL 10
+	announce "眖瞷癬, и璸硄筁щ戈よΑㄓе硉ゴ硄'瞏瞁碮'硄笵. 硄筁碮и盢硈硄そ穦驹跋办: 炊订紈┰-驹ぇ隔, 创喘-环ぇ, -ぇ, ︺-璣动ぇ瞈.",bc_all,0xFF0000; //FW_NORMAL 10
 	set $fund_prt01,0;
 	set $fund_prt02,0;
 	set $fund_prt03,0;
@@ -349,12 +349,12 @@ OnInvest_start:
 	donpcevent "Investment_total#fund00::OnEnable";
 	end;
 OnInvest_stop:
-	announce "我们完成了整个投资项目, 成功的连接上了'深渊回廊'.",bc_all,0xFF0000; //FW_NORMAL 10
+	announce "иЧΘ俱щ戈兜ヘ, Θ硈钡'瞏瞁碮'.",bc_all,0xFF0000; //FW_NORMAL 10
 	donpcevent "Investment_total#fund00::OnReset";
 	donpcevent "#fund_master::OnCalculate_Election";
 	end;
 OnResult:
-	announce "我们已经得到了投资的回报 '深渊回廊'. 您可以通过公会战区域的猫手董事会公告牌进行投资状态查询.",bc_all,0xFF0000; //FW_NORMAL 10
+	announce "и竒眔щ戈厨 '瞏瞁碮'. 眤硄筁そ穦驹跋办窟も赋ㄆ穦そ礟秈︽щ戈篈琩高.",bc_all,0xFF0000; //FW_NORMAL 10
 	if ($2011_agit_invest == 4) {
 		set $fund_prt01,0;
 		set $fund_prt02,0;
@@ -391,22 +391,22 @@ OnReset:
 
 prt_gld,2,2,0	script	Investment_total#fund00	844,{
 	callfunc "F_GM_NPC";
-	mes "这个不能正常工作?";
+	mes "硂ぃタ盽?";
 	next;
 	if (callfunc("F_GM_NPC",1854,0) == 1) {
-		mes "如果您认为投资计时器已经当机的话, 您可以进行调试.";
+		mes "狦眤粄щ戈璸竟竒讽审杠, 眤秈︽秸刚.";
 		next;
-		switch(select("- 重启计时器:- 取消")) {
+		switch(select("- 币璸竟:- ")) {
 		case 1:
 			donpcevent "Investment_total#fund00::OnTimerReset";
-			mes "您已启动计时器.";
+			mes "眤币笆璸竟.";
 			close;
 		case 2:
-			mes "已取消.";
+			mes ".";
 			close;
 		}
 	} else {
-		mes "现在不需要调试.";
+		mes "瞷ぃ惠璶秸刚.";
 		close;
 	}
 
@@ -452,7 +452,7 @@ OnTimer3600000:
 			if ($agit_result_timer % 10 == 5 || $agit_result_timer % 10 == 0 || $agit_result_timer == 58) {
 				set $agit_result_notice, $agit_result_notice+1;
 				donpcevent "Investment_total#fund00::OnVarInit";
-				announce "No."+$agit_result_notice+"号深渊之门传送设备已近完成连接. 您可以通过公会区域的猫手董事会公告牌进行投资进度查询.",bc_all,0xFF0000; //FW_NORMAL 10
+				announce "No."+$agit_result_notice+"腹瞏瞁ぇ肚癳砞称ЧΘ硈钡. 眤硄筁そ穦跋办窟も赋ㄆ穦そ礟秈︽щ戈秈琩高.",bc_all,0xFF0000; //FW_NORMAL 10
 			}
 
 			donpcevent "Investment_total#fund00::OnTimerReset";
@@ -465,19 +465,19 @@ OnTimer3600000:
 	}
 }
 
-prt_gld,164,98,3	script	附加投票管理员#Invest1	421,{
-	mes "[附加投票管理员]";
-	mes "我们不接受额外的投票.";
-	mes "请等待我们公布结果.";
+prt_gld,164,98,3	script	щ布恨瞶#Invest1	421,{
+	mes "[щ布恨瞶]";
+	mes "иぃ钡肂щ布.";
+	mes "叫单иそガ挡狦.";
 	close;
 OnInit:
 	set .@invest_status, callfunc("F_Invest_Status");
 	if (.@invest_status == 2 && $2011_agit_invest >= 11 && $agit_revoting_timer < 30) {
-		donpcevent "附加投票管理员#Invest2::OnEnable";
+		donpcevent "щ布恨瞶#Invest2::OnEnable";
 		initnpctimer;
 	} else if (.@invest_status == 3 && $2011_agit_invest >= 11)
-		donpcevent "附加投票管理员#Invest1::OnCalculate";
-	donpcevent "附加投票管理员#Invest1::OnDisable";
+		donpcevent "щ布恨瞶#Invest1::OnCalculate";
+	donpcevent "щ布恨瞶#Invest1::OnDisable";
 	end;
 OnCalculate:
 	switch($2011_agit_invest) {
@@ -516,18 +516,18 @@ OnCalculate:
 	set $agit_revoting_timer,0;
 	end;
 OnEnable:
-	enablenpc "附加投票管理员#Invest1";
+	enablenpc "щ布恨瞶#Invest1";
 	end;
 OnDisable:
-	disablenpc "附加投票管理员#Invest1";
+	disablenpc "щ布恨瞶#Invest1";
 	end;
 OnStart:
 	initnpctimer;
-	donpcevent "附加投票管理员#Invest2::OnNotice_on";
+	donpcevent "щ布恨瞶#Invest2::OnNotice_on";
 	end;
 OnEnd:
 	stopnpctimer;
-	disablenpc "附加投票管理员#Invest1";
+	disablenpc "щ布恨瞶#Invest1";
 	end;
 OnTimerReset:
 	initnpctimer;
@@ -536,72 +536,72 @@ OnTimer60000:
 	set .@revote, $agit_revoting_timer;
 	if (.@revote < 30) {
 		set $agit_revoting_timer, $agit_revoting_timer+1;
-		donpcevent "附加投票管理员#Invest1::OnTimerReset";
+		donpcevent "щ布恨瞶#Invest1::OnTimerReset";
 	} else if (.@revote == 30) {
-		announce "猫手商会: 附加投票时间即将结束. 我们将尽快公布结果.",bc_all,0xFF0000; //FW_NORMAL 10
-		donpcevent "附加投票管理员#Invest2::OnDisable";
-		donpcevent "附加投票管理员#Invest1::OnEnable";
+		announce "窟も坝穦: щ布丁盢挡. и盢荷еそガ挡狦.",bc_all,0xFF0000; //FW_NORMAL 10
+		donpcevent "щ布恨瞶#Invest2::OnDisable";
+		donpcevent "щ布恨瞶#Invest1::OnEnable";
 		set $agit_revoting_timer, $agit_revoting_timer+1;
-		donpcevent "附加投票管理员#Invest1::OnTimerReset";
+		donpcevent "щ布恨瞶#Invest1::OnTimerReset";
 	} else if (.@revote == 31) {
-		donpcevent "附加投票管理员#Invest1::OnCalculate";
-		donpcevent "附加投票管理员#Invest1::OnDisable";
+		donpcevent "щ布恨瞶#Invest1::OnCalculate";
+		donpcevent "щ布恨瞶#Invest1::OnDisable";
 		stopnpctimer;
 		end;
 	} else {
-		donpcevent "附加投票管理员#Invest1::OnDisable";
+		donpcevent "щ布恨瞶#Invest1::OnDisable";
 		stopnpctimer;
 	}
 	end;
 }
 
-prt_gld,164,98,3	script	附加投票管理员#Invest2	421,{
+prt_gld,164,98,3	script	щ布恨瞶#Invest2	421,{
 	set .@invest, $2011_agit_invest;
 	if (.@invest < 11) {
-		mes "[附加投票管理员]";
-		mes "不! 还没到公布结果的时候.";
+		mes "[щ布恨瞶]";
+		mes "ぃ! 临⊿そガ挡狦.";
 		close2;
-		disablenpc "附加投票管理员#Invest2";
+		disablenpc "щ布恨瞶#Invest2";
 		end;
 	}
 	set .@playtime, checkquest(7349,PLAYTIME);
 	if (.@playtime == 0 || .@playtime == 1) {
-		mes "[附加投票管理员]";
-		mes "你已经参与了投票.";
-		mes "请放松并等待结果.";
+		mes "[щ布恨瞶]";
+		mes "竒把蒓щ布.";
+		mes "叫猀单挡狦.";
 		close;
 	} else if (.@playtime == 2)
 		erasequest 7349;
-	mes "[附加投票管理员]";
-	mes "您想参与投票, 选择在哪里与'深渊回廊'连接?";
+	mes "[щ布恨瞶]";
+	mes "眤稱把蒓щ布, 匡拒ń蒓'瞏瞁碮'硈钡?";
 	next;
-	if(select("- 参与投票.:- 取消.") == 2) {
-		mes "[附加投票管理员]";
-		mes "您已取消投票.";
+	if(select("- 把蒓щ布.:- .") == 2) {
+		mes "[щ布恨瞶]";
+		mes "眤щ布.";
 		close;
 	}
-	mes "[附加投票管理员]";
-	mes "你只能投票一次, 不会有额外的选项供您选择.";
-	mes "请选择一个公会战区域.";
+	mes "[щ布恨瞶]";
+	mes "щ布Ω, ぃ穦Τ肂匡兜ㄑ眤匡拒.";
+	mes "叫匡拒そ穦驹跋办.";
 	next;
 
 	// Create menu.
 	explode(.@candidates$, callsub(OnGetCandidates, .@invest),"|");
 	for(set .@i,0; .@i<getarraysize(.@candidates$); set .@i,.@i+1) {
 		if (.@candidates$[.@i] == "alde")
-			set .@menu$[.@i],"英雄之泪";
+			set .@menu$[.@i],"璣动ぇ瞈";
 		else if (.@candidates$[.@i] == "gef")
-			set .@menu$[.@i],"亡者之丘";
+			set .@menu$[.@i],"ぇ";
 		else if (.@candidates$[.@i] == "pay")
-			set .@menu$[.@i],"远古之风";
+			set .@menu$[.@i],"环ぇ";
 		else if (.@candidates$[.@i] == "prt")
-			set .@menu$[.@i],"战士之路";
+			set .@menu$[.@i],"驹ぇ隔";
 	}
 	set .@vote, select(implode(.@menu$,":"))-1;
 
-	mes "[附加投票管理员]";
-	mes "您把票投给了 "+.@menu$[.@vote]+".";
-	mes "感谢您的参与.";
+	mes "[щ布恨瞶]";
+	mes "眤р布щ倒 "+.@menu$[.@vote]+".";
+	mes "稰谅眤把蒓.";
 	setquest 7349;
 	setd "$fund_"+.@candidates$[.@vote]+"_extra", getd("$fund_"+.@candidates$[.@vote]+"_extra") + 1;
 	close;
@@ -621,56 +621,56 @@ OnGetCandidates:
 	}
 	return "";
 OnInit:
-	disablenpc "附加投票管理员#Invest2";
+	disablenpc "щ布恨瞶#Invest2";
 	end;
 OnEnable:
-	enablenpc "附加投票管理员#Invest2";
+	enablenpc "щ布恨瞶#Invest2";
 	end;
 OnDisable:
-	disablenpc "附加投票管理员#Invest2";
+	disablenpc "щ布恨瞶#Invest2";
 	stopnpctimer;
 	end;
 OnNotice_on:
 	initnpctimer;
 	end;
 OnTimer5000:
-	announce "猫手商会: 没有区域达到连接'深渊回廊'的基础投票要求...",bc_all,0xFF0000; //FW_NORMAL 10
+	announce "窟も坝穦: ⊿Τ跋办笷硈钡'瞏瞁碮'膀娄щ布璶―...",bc_all,0xFF0000; //FW_NORMAL 10
 	end;
 OnTimer8000:
-	announce "猫手商会: 我们将在投资最多的区域连接'深渊回廊'.",bc_all,0xFF0000; //FW_NORMAL 10
+	announce "窟も坝穦: и盢щ戈程跋办硈钡'瞏瞁碮'.",bc_all,0xFF0000; //FW_NORMAL 10
 	end;
 OnTimer11000:
-	announce "猫手商会: 然而, 可能会碰到不同区域的投资金额相同. 因此, 我们将会采取投票方式.",bc_all,0xFF0000; //FW_NORMAL 10
+	announce "窟も坝穦: 礛τ, 穦窱ぃ跋办щ戈肂. , и盢穦щ布よΑ.",bc_all,0xFF0000; //FW_NORMAL 10
 	end;
 OnTimer14000:
-	announce "猫手商会: 需要进行额外30分钟的附加投票. 您可以投票给战士之路.",bc_all,0xFF0000; //FW_NORMAL 10
+	announce "窟も坝穦: 惠璶秈︽肂30だ牧щ布. 眤щ布倒驹ぇ隔.",bc_all,0xFF0000; //FW_NORMAL 10
 	end;
 OnTimer20000:
 	explode(.@candidates$, callsub(OnGetCandidates, $2011_agit_invest),"|");
 	for(set .@i,0; .@i<getarraysize(.@candidates$); set .@i,.@i+1) {
 		if (.@candidates$[.@i] == "alde")
-			set .@choices$[.@i],"英雄之泪";
+			set .@choices$[.@i],"璣动ぇ瞈";
 		else if (.@candidates$[.@i] == "gef")
-			set .@choices$[.@i],"亡者之丘";
+			set .@choices$[.@i],"ぇ";
 		else if (.@candidates$[.@i] == "pay")
-			set .@choices$[.@i],"远古之风";
+			set .@choices$[.@i],"环ぇ";
 		else if (.@candidates$[.@i] == "prt")
-			set .@choices$[.@i],"战士之路";
+			set .@choices$[.@i],"驹ぇ隔";
 	}
-	announce "猫手商会: 附加投票的胜出者为... "+implode(.@choices$," vs. ")+".",bc_all,0xFF0000; //FW_NORMAL 10
+	announce "窟も坝穦: щ布衊... "+implode(.@choices$," vs. ")+".",bc_all,0xFF0000; //FW_NORMAL 10
 	set $fund_prt_extra,0;
 	set $fund_pay_extra,0;
 	set $fund_gef_extra,0;
 	set $fund_alde_extra,0;
 	set $agit_revoting_timer,0;
-	donpcevent "附加投票管理员#Invest2::OnEnable";
+	donpcevent "щ布恨瞶#Invest2::OnEnable";
 	stopnpctimer;
 	end;
 }
 
 /*
-prtg_cas01,2,2,0	script	阿伯莱	55,{
-	mes "我应该辞去我的管家工作.";
+prtg_cas01,2,2,0	script	弟	55,{
+	mes "и莱赣勉и恨產.";
 	close;
 OnAgitInvest:
 	switch(callfunc("F_Invest_Status")) {
@@ -700,195 +700,195 @@ OnAgitInvest:
 
 	if (compare(strnpcinfo(4),"alde")) {
 		set .@npc$,"alde";
-		set .@name$,"格鲁兹";
-		set .@realm$,"英雄之泪";
-		set .@intro$,"艾-英雄之泪管理员";
+		set .@name$,"緗";
+		set .@realm$,"璣动ぇ瞈";
+		set .@intro$,"︺-璣动ぇ瞈恨瞶";
 	} else if (compare(strnpcinfo(4),"gef")) {
 		set .@npc$,"gef";
-		set .@name$,"蒙尔克";
-		set .@realm$,"亡者之丘";
-		set .@intro$,"吉芬-亡者之丘管理员";
+		set .@name$,"籜焊";
+		set .@realm$,"ぇ";
+		set .@intro$,"-ぇ恨瞶";
 	} else if (compare(strnpcinfo(4),"pay")) {
 		set .@npc$,"pay";
-		set .@name$,"菲克达";
-		set .@realm$,"远古之风";
-		set .@intro$,"斐扬-远古之风管理员";
+		set .@name$,"滇笷";
+		set .@realm$,"环ぇ";
+		set .@intro$,"创喘-环ぇ恨瞶";
 	} else if (compare(strnpcinfo(4),"prt")) {
 		set .@npc$,"prt";
-		set .@name$,"杜巴依";
-		set .@realm$,"战士之路";
-		set .@intro$,"普隆德拉-战士之路管理员";
+		set .@name$,"ぺㄌ";
+		set .@realm$,"驹ぇ隔";
+		set .@intro$,"炊订紈┰-驹ぇ隔恨瞶";
 	}
 	set .@n$,"["+.@name$+"]";
 
 	mes .@n$;
-	mes "我是 "+.@name$+", 猫手商会派驻 "+.@intro$+".";
-	mes "我能提供关于深渊回廊开发进展的情报.";
-	mes "需要帮忙吗?";
+	mes "и琌 "+.@name$+", 窟も坝穦緉 "+.@intro$+".";
+	mes "и矗ㄑ闽瞏瞁碮秨祇秈甶薄厨.";
+	mes "惠璶腊Γ盾?";
 	next;
-	switch(select("- 什么是深渊回廊?:- 投资开发深渊回廊?:- 我想进入这个区域.:- 取消")) {
+	switch(select("- ぐ琌瞏瞁碮?:- щ戈秨祇瞏瞁碮?:- и稱秈硂跋办.:- ")) {
 	case 1:
 		mes .@n$;
-		mes "我们称之为深渊回廊, 是因为他是^4d4dff一个通道, 用以连接另外一个位面空间^000000.";
+		mes "и嘿ぇ瞏瞁碮, 琌琌^4d4dff硄笵, ノ硈钡丁^000000.";
 		next;
 		mes .@n$;
-		mes "我们发现在梦罗克出现了无数裂缝, 然后同样的裂缝开始在这里陆续出现.";
-		mes "我个人认为深渊之门很大可能是过去或者未来的一个破碎空间.";
+		mes "и祇瞷冠霉瞷礚计吊羅, 礛妓吊羅秨﹍硂ń嘲尿瞷.";
+		mes "и粄瞏瞁ぇ琌筁┪ゼㄓ瘆窰丁.";
 		next;
 		mes .@n$;
-		mes "意思就是说深渊之门强行连通了我们与另一个空间.";
-		mes "我想这里面有可能是因为华丽金属的强大能量, 而造成了深渊之门的活跃变化.";
+		mes "種碞琌弧瞏瞁ぇ眏︽硈硄и蒓丁.";
+		mes "и稱硂ńΤ琌地腞妮眏秖, τ硑Θ瞏瞁ぇ臘跑て.";
 		next;
 		mes .@n$;
-		mes "迄今为止总共发现了4条深渊回廊. 他们不约而同的连接到散发着华丽金属气息得地方.";
+		mes "ùさゎ羆祇瞷4兵瞏瞁碮. ぃτ硈钡床祇帝地腞妮蒩眔よ.";
 		next;
 		mes .@n$;
-		mes "我们对4个不同位面的区域进行了命名.";
-		mes "^4d4dff战士之路, 亡者之丘, 远古之风, 英雄之泪.^000000";
-		mes "所有这些位面我们一起统称为 ^4d4dff深渊回廊^000000.";
+		mes "и癸4ぃ跋办秈︽㏑.";
+		mes "^4d4dff驹ぇ隔, ぇ, 环ぇ, 璣动ぇ瞈.^000000";
+		mes "┮Τ硂ㄇи癬参嘿 ^4d4dff瞏瞁碮^000000.";
 		next;
 		mes .@n$;
-		mes "这些缝隙可能连接着过去和未来, 也有可能连着一些未知的世界.";
-		mes "深渊之门所包含的力量是强大却又可怕的.";
+		mes "硂ㄇ羅回硈钡帝筁㎝ゼㄓ, Τ硈帝ㄇゼ.";
+		mes "瞏瞁ぇ┮秖琌眏玱┤.";
 		next;
 		mes .@n$;
-		mes "您也有兴趣探索深渊之门?";
-		mes "哈哈. 探索之前您还有些准备工作需要做.";
+		mes "眤Τ砍届贝瞏瞁ぇ?";
+		mes ". 贝ぇ玡眤临Τㄇ称惠璶暗.";
 		next;
 		mes .@n$;
-		mes "如果您感兴趣的话,";
-		mes "先让我们聊聊投资的事情吧?";
+		mes "狦眤稰砍届杠,";
+		mes "琵и册册щ戈ㄆ薄?";
 		close;
 	case 2:
 		mes .@n$;
-		mes "您是不是很好奇为什么要投资开发深渊之门?";
-		mes "您想了解些什么?";
+		mes "眤琌ぃ琌ぐ璶щ戈秨祇瞏瞁ぇ?";
+		mes "眤稱秆ㄇぐ?";
 		next;
-		switch(select("- 关于深渊之门?:- 关于投资?:- 怎么投资?:- 投资有何回报?")) {
+		switch(select("- 闽瞏瞁ぇ?:- 闽щ戈?:- щ戈?:- щ戈Τ厨?")) {
 		case 1:
 			mes .@n$;
-			mes "之前我们已经命名了深渊回廊.";
-			mes "深渊之门是贯穿我们的世界与另一空间的出入口.";
+			mes "ぇ玡и竒㏑瞏瞁碮.";
+			mes "瞏瞁ぇ琌砮и蒓丁.";
 			next;
 			mes .@n$;
-			mes "深渊回廊所建立的通道充满无数的三维裂缝, 非常的不稳定.";
-			mes "因此通过深渊之门旅行需要大量的人力来进行维护, 才能够保持通道的稳定.";
+			mes "瞏瞁碮┮ミ硄笵骸礚计蝴吊羅, 獶盽ぃ铆﹚.";
+			mes "硄筁瞏瞁ぇ︽惠璶秖ㄓ秈︽蝴臔, 镑玂硄笵铆﹚.";
 			next;
 			mes .@n$;
-			mes "人类拥有先进的科学技术.";
-			mes "但是对于我们猫手商会来说, 我们握有更加尖端的核心技术, 对于稳定通道来说, 这非常必要.";
+			mes "摸局Τ秈厩м砃.";
+			mes "琌癸и窟も坝穦ㄓ弧, и搐Τ狠みм砃, 癸铆﹚硄笵ㄓ弧, 硂獶盽ゲ璶.";
 			next;
 			mes .@n$;
-			mes "因此, 我们提出了一个方案.";
-			mes "以我们的尖端技术, 并且动用猫手商会所有的能量来维持住通道. 这将花费商会的巨大人力物力.";
-			mes "我们商会立誓不惜代价维系通道稳定.";
+			mes ", и矗よ.";
+			mes "и狠м砃, 笆ノ窟も坝穦┮Τ秖ㄓ蝴硄笵. 硂盢禣坝穦エ.";
+			mes "и坝穦ミ粆ぃ堡刹蝴╰硄笵铆﹚.";
 			next;
 			mes .@n$;
-			mes "当然这可不是一个简单的工作, 不仅耗资巨大而且还随时面临生命危险.";
-			mes "已经发生了数起失踪事件了.";
+			mes "讽礛硂ぃ琌虏虫, ぃ度戈エτ临繦羬ネ㏑繧.";
+			mes "竒祇ネ计癬ア萝ㄆン.";
 			next;
 			mes .@n$;
-			mes "我们按以往的经验判断, 隧道的稳定期在4天左右.";
-			mes "你的投资将会被用到深渊之门的开发上, 这样也是对你自己的生命安全是一种保障.";
+			mes "и┕竒喷耞, 繥笵铆﹚戳4ぱオ.";
+			mes "щ戈盢穦砆ノ瞏瞁ぇ秨祇, 硂妓琌癸ネ㏑琌销玂毁.";
 			next;
 			mes .@n$;
-			mes "感觉如何, 是不是觉得投资是一种双赢的模式?";
+			mes "稰谋, 琌ぃ琌谋眔щ戈琌销蛮墓家Α?";
 			close;
 		case 2:
 			mes .@n$;
-			mes "通过强行撕裂空间建立隧道, 这是非常危险的.";
-			mes "我们撇开巨额投入不说.";
+			mes "硄筁眏︽脊吊丁ミ繥笵, 硂琌獶盽繧.";
+			mes "и篔秨エ肂щぃ弧.";
 			next;
 			mes .@n$;
-			mes "你不会为了钱, 命都不要了吧.";
-			mes "由我们建立的传送通道, 几乎没有任何风险.";
+			mes "ぃ穦窥, ㏑常ぃ璶.";
+			mes "パиミ肚癳硄笵, ⊿Τヴ繧.";
 			next;
 			mes .@n$;
-			mes "但是, 维持深渊之门的支出是非?植赖?";
-			mes "不过如果你能够找到更多的投资者来分摊稀释成本的话. 就没什么压力了.";
+			mes "琌, 蝴瞏瞁ぇや琌獶?从苦?";
+			mes "ぃ筁狦镑тщ戈ㄓだ舥祡睦Θセ杠. 碞⊿ぐ溃.";
 			next;
 			mes .@n$;
-			mes "这里有个基础的连接装置.";
-			mes "至于是否能够进行连接改造工作, 就需要看投资者的力度了.";
+			mes "硂ńΤ膀娄硈钡杆竚.";
+			mes "琌镑秈︽硈钡э硑, 碞惠璶щ戈.";
 			next;
 			mes .@n$;
-			mes "深渊回廊覆盖着整个公会战区.";
-			mes "可能你无法想象, 我们整个猫手商会停止所有的业务, 将所有的人力物力投入到回廊的工作上来?";
+			mes "瞏瞁碮滦籠帝俱そ穦驹跋.";
+			mes "礚猭稱禜, и俱窟も坝穦氨ゎ┮Τ穨叭, 盢┮Τщ碮ㄓ?";
 			next;
 			mes .@n$;
-			mes "这也就是各大区的负责人拼命拉投资的原因了.";
-			mes "如果能够获得足够的投资, 将本区的深渊之门稳定好, 这对本区所有人都是非常有利的.";
+			mes "硂碞琌跋璽砫㏑┰щ戈.";
+			mes "狦镑莉眔ì镑щ戈, 盢セ跋瞏瞁ぇ铆﹚, 硂癸セ跋┮Τ常琌獶盽Τ.";
 			next;
 			mes .@n$;
-			mes "如果 ^4d4dff能够与一个怪物聚集的地下城相连的话";
-			mes "就会开放该区域的使用权给所有人, 而非公会专属区域^000000 这将是非常有吸引力的投资.";
+			mes "狦 ^4d4dff镑蒓┣籈栋硈杠";
+			mes "碞穦秨赣跋办ㄏノ舦倒┮Τ, τ獶そ穦盡妮跋办^000000 硂盢琌獶盽Τまщ戈.";
 			next;
 			mes .@n$;
-			mes "一起的前提都是基于回廊开启, 而开启就需要投资, 这是个因果关系.";
+			mes "癬玡矗常琌膀碮秨币, τ秨币碞惠璶щ戈, 硂琌狦闽╰.";
 			close;
 		case 3:
 			mes .@n$;
-			mes "这很简单.";
-			mes "访问分区经理 ^4d4dff告诉他你想在他的区域那里投资^000000 然后交钱完成投资.";
+			mes "硂虏虫.";
+			mes "砐拜だ跋竒瞶 ^4d4dff禗稱跋办êńщ戈^000000 礛ユ窥ЧΘщ戈.";
 			next;
 			mes .@n$;
-			mes "我们一般收取 ^4d4dff的标准货币是 Zeny^000000.";
-			mes "不过作为您对我们猫手商会所提供的支持, 我们会给您一张投资感谢票, 可以用来兑换绵绵岛的一些物品.";
+			mes "иΜ ^4d4dff夹砯刽琌 Zeny^000000.";
+			mes "ぃ筁眤癸и窟も坝穦┮矗ㄑや, и穦倒眤眎щ戈稰谅布, ノㄓ传壶壶畄ㄇ珇.";
 			next;
 			mes .@n$;
-			mes "至于物品兑换的话, 你可以到绵绵岛找纳米斯, 他是我们在那里的分管经理.";
-			mes "记得带回来的猫手顶级投资证书, 可以继续用来投资.";
+			mes "珇传杠, 壶壶畄тμ吹, 琌иêńだ恨竒瞶.";
+			mes "癘眔盿ㄓ窟も郴щ戈谍, 膥尿ノㄓщ戈.";
 			next;
 			mes .@n$;
-			mes "最后你必须考虑好你想投资的区域.";
+			mes "程ゲ斗σ納稱щ戈跋办.";
 			close;
 		case 4:
 			mes .@n$;
-			mes "深渊回廊覆盖了几乎所有的公会战区域;";
-			mes "因此, 经过我们核算一次最基础的投资额度可以让我们勉强保本.";
+			mes "瞏瞁碮滦籠┮Τそ穦驹跋办;";
+			mes ", 竒筁и衡Ω程膀娄щ戈肂琵и玧眏玂セ.";
 			next;
 			mes .@n$;
-			mes "整个工程预算部分,做了保底金额和最大金额.";
-			mes "如果总的投资额度 ^4d4dff低于保底预算金额^000000的话, 我们就无法完成与 ^4d4dff回廊后的地下城^000000对接.";
+			mes "俱祘箇衡场だ,暗玂┏肂㎝程肂.";
+			mes "狦羆щ戈肂 ^4d4dff玂┏箇衡肂^000000杠, и碞礚猭ЧΘ蒓 ^4d4dff碮^000000癸钡.";
 			next;
 			mes .@n$;
-			mes "如果收到的投资款达到最大金额, 该区域将被连接到";
-			mes "^4d4dff深渊回廊^000000 并且无须在关注投资等级, 即可连接到任意一个地方, 当然包括回廊的最深处.";
+			mes "狦Μщ戈蹿笷程肂, 赣跋办盢砆硈钡";
+			mes "^4d4dff瞏瞁碮^000000 礚斗闽猔щ戈单, 硈钡ヴ種よ, 讽礛珹碮程瞏矪.";
 			next;
 			mes .@n$;
-			mes "^ff0000如果没有达到最大的投资限额的话, 那对于该地区来说";
-			mes "只有投资最多的人才可以被传送到回廊的任意一个地方.^000000";
+			mes "^ff0000狦⊿Τ笷程щ戈肂杠, ê癸赣跋ㄓ弧";
+			mes "Τщ戈程砆肚癳碮ヴ種よ.^000000";
 			next;
 			mes .@n$;
-			mes "深渊之门开启后, 目前最深的(2F)地下城";
-			mes "将开放给所有在这一地区投资过的冒险者们.";
+			mes "瞏瞁ぇ秨币, ヘ玡程瞏(2F)";
+			mes "盢秨倒┮Τ硂跋щ戈筁玙繧.";
 			next;
 			mes .@n$;
-			mes "进入地下城会被计算一次投资, 并被计入到下一次的总投资内.";
-			mes "这无论对于个人或者公会来说都是一次不错的小奖励.";
+			mes "秈穦砆璸衡Ωщ戈, 砆璸Ω羆щ戈ず.";
+			mes "硂礚阶癸┪そ穦ㄓ弧常琌Ωぃ岿贱纘.";
 			next;
 			mes .@n$;
-			mes "与深渊回廊建立连接是非常困难的, 约为每周一次. 因此我们会尽量延长连接的时间. ";
-			mes "为了应对未知的力量, 请保持持续投资.";
+			mes "蒓瞏瞁碮ミ硈钡琌獶盽螟, –㏄Ω. и穦荷秖┑硈钡丁. ";
+			mes "莱癸ゼ秖, 叫玂尿щ戈.";
 			close;
 		}
 	case 3:
 		if (checkweight(1201,1) == 0 || MaxWeight - Weight < 1000) {
-			mes "- 您携带的物品数量过多 -";
-			mes "- 请处理后再来找我. -";
+			mes "- 眤拟盿珇计秖筁 -";
+			mes "- 叫矪瞶ㄓти. -";
 			close;
 		}
 		if (countitem(6488) >= 4800) {
 			mes .@n$;
-			mes "您所持的投资感谢票数量已经到了极限.";
-			mes "无法再发给您给多的感谢票了. 请先兑换物品后再来.";
-			mes "投资感谢票可以在绵绵岛兑换物品.";
+			mes "眤┮щ戈稰谅布计秖竒体.";
+			mes "礚猭祇倒眤倒稰谅布. 叫传珇ㄓ.";
+			mes "щ戈稰谅布壶壶畄传珇.";
 			close;
 		}
 		if (callfunc("F_Invest_Status") != 1) {
 			mes .@n$;
-			mes "我们暂不接受投资.";
-			mes "请在投资期内再来.";
+			mes "и既ぃ钡щ戈.";
+			mes "叫щ戈戳ずㄓ.";
 			close;
 		}
 		set .@guild, getcharid(2);
@@ -897,41 +897,41 @@ OnAgitInvest:
 			set .@owner_id[.@i], getcastledata(.@npc$+"g_cas0"+.@i,CD_GUILD_ID);
 			set .@owner_name$[.@i], getguildname(.@owner_id[.@i]);
 			if (.@guild == .@owner_id[.@i]) {
-				set .@menu$, .@menu$+.@castle_name$[.@i]+" ["+.@owner_name$[.@i]+"] 公会:";
+				set .@menu$, .@menu$+.@castle_name$[.@i]+" ["+.@owner_name$[.@i]+"] そ穦:";
 				set .@castles_owned, .@castles_owned | (1<<.@i);
 			} else
-				set .@menu$, .@menu$+"^aaaaaa不像是公会 "+.@castle_name$[.@i]+"^000000:";
+				set .@menu$, .@menu$+"^aaaaaaぃ钩琌そ穦 "+.@castle_name$[.@i]+"^000000:";
 		}
 		mes .@n$;
-		mes "您想投资在 ^4d4dff"+.@realm$+"^000000 区域?";
-		mes "如果你的公会占有公会城堡的话, 你的投资也会对所占城堡生效.";
+		mes "眤稱щ戈 ^4d4dff"+.@realm$+"^000000 跋办?";
+		mes "狦そ穦Τそ穦躇杠, щ戈穦癸┮躇ネ.";
 		next;
 		if (.@castles_owned) {
 			set .@i, select(.@menu$+"Cancel");
 			if (.@i == 6) {
 				mes .@n$;
-				mes "- 已取消.";
+				mes "- .";
 				close;
 			}
 			if (.@guild != .@owner_id[.@i]) {
 				mes .@n$;
-				mes "公会所有权 "+.@castle_name$[.@i]+" 是 "+.@owner_name$[.@i]+".";
-				mes "这看上去不是你的公会.";
+				mes "そ穦┮Τ舦 "+.@castle_name$[.@i]+" 琌 "+.@owner_name$[.@i]+".";
+				mes "硂ぃ琌そ穦.";
 				close;
 			}
 			mes .@n$;
-			mes "投资于 "+.@castle_name$[.@i]+"的"+.@owner_name$[.@i]+" 公会.";
+			mes "щ戈 "+.@castle_name$[.@i]+""+.@owner_name$[.@i]+" そ穦.";
 			callfunc "F_Invest_Abyss","$fund_"+.@npc$+"0"+.@i,.@n$;
 			end;
 		} else {
 			mes .@n$;
-			callfunc "F_Invest_Abyss","$fund_"+.@npc$+"_extra",.@n$," 的 "+.@realm$;
+			callfunc "F_Invest_Abyss","$fund_"+.@npc$+"_extra",.@n$,"  "+.@realm$;
 			end;
 		}
 	case 4:
 		mes .@n$;
-		mes "是这样的吗?";
-		mes "如果您有兴趣投资深渊回廊的话, 请记得来找我.";
+		mes "琌硂妓盾?";
+		mes "狦眤Τ砍届щ戈瞏瞁碮杠, 叫癘眔ㄓти.";
 		close;
 	}
 }
@@ -940,57 +940,57 @@ OnAgitInvest:
 
 	if (compare(strnpcinfo(4),"alde")) {
 		set .@npc$,"alde";
-		set .@name$,"奥孔";
-		set .@gate$,"英雄之泪";
-		set .@realm$,"艾尔帕兰";
+		set .@name$,"而ふ";
+		set .@gate$,"璣动ぇ瞈";
+		set .@realm$,"︺焊┈孽";
 	} else if (compare(strnpcinfo(4),"gef")) {
 		set .@npc$,"gef";
-		set .@name$,"米扎尔";
-		set .@gate$,"亡者之丘";
-		set .@realm$,"吉芬";
+		set .@name$,"μゃ焊";
+		set .@gate$,"ぇ";
+		set .@realm$,"";
 	} else if (compare(strnpcinfo(4),"pay")) {
 		set .@npc$,"pay";
-		set .@name$,"阿尔卡伊德";
-		set .@gate$,"远古之风";
-		set .@realm$,"斐扬";
+		set .@name$,"焊レ紈";
+		set .@gate$,"环ぇ";
+		set .@realm$,"创喘";
 	} else if (compare(strnpcinfo(4),"prt")) {
 		set .@npc$,"prt";
-		set .@name$,"阿里奥斯";
-		set .@gate$,"战士之路";
-		set .@realm$,"普隆德拉";
+		set .@name$,"ń而吹";
+		set .@gate$,"驹ぇ隔";
+		set .@realm$,"炊订紈┰";
 	}
 	set .@n$,"["+.@name$+"]";
 
 	if (callfunc("F_Invest_Status") != 3) {
 		mes .@n$;
-		mes "目前没有任何通道与公会地下城连接.";
+		mes "ヘ玡⊿Τヴ硄笵蒓そ穦硈钡.";
 		close;
 	}
 	set .@status, getd("$"+.@npc$+"_invest_result");
 	if (.@status == 3) {
 		mes .@n$;
-		mes "在您和各位投资者的积极投资下, 我们已经成功的连接上了'深渊回廊'的 ["+.@gate$+"] .";
-		mes ""+.@realm$+"公会地下城将向各位开放, 各位仅需要支付很少的一些入场费即可.";
+		mes "眤㎝щ戈縩体щ戈, и竒Θ硈钡'瞏瞁碮' ["+.@gate$+"] .";
+		mes ""+.@realm$+"そ穦盢秨, 度惠璶やぶㄇ初禣.";
 		next;
 		mes .@n$;
-		mes "您所经常访问并缴纳入场费的区域, 入场费也会被计算入该地区的投资收益.";
-		mes "您想现在就进入公会地下城吗?";
+		mes "眤┮竒盽砐拜煤初禣跋办, 初禣穦砆璸衡赣跋щ戈Μ痲.";
+		mes "眤稱瞷碞秈そ穦盾?";
 		next;
-		set .@i, select(.@realm$+" 地下城 1F - 10000z:"+.@realm$+" 地下城 2F - 10000z:取消");
+		set .@i, select(.@realm$+"  1F - 10000z:"+.@realm$+"  2F - 10000z:");
 		if (.@i == 3) {
 			mes .@n$;
-			mes "已取消.";
+			mes ".";
 			close;
 		}
 		if (Zeny < 10000) {
 			mes .@n$;
-			mes "我负责收取小额入场费.";
-			mes "您所支付的入场费会计算到下一次的回廊投资中.";
-			mes "入场费是 10000z.";
+			mes "и璽砫Μ肂初禣.";
+			mes "眤┮や初禣穦璸衡Ω碮щ戈い.";
+			mes "初禣琌 10000z.";
 			close;
 		}
 		mes .@n$;
-		mes "我将传送你到 "+.@realm$+" 公会地下城 "+.@i+"F.";
+		mes "и盢肚癳 "+.@realm$+" そ穦 "+.@i+"F.";
 		set Zeny, Zeny-10000;
 		setd "$fund_"+.@npc$+"_extra", getd("$fund_"+.@npc$+"_extra") + 1;
 		close2;
@@ -1005,13 +1005,13 @@ OnAgitInvest:
 		end;
 	} else if (.@status == 2) {
 		mes .@n$;
-		mes ""+.@realm$+" 公会地下城 2F 现在虽然现在处于激活状态, 但是还没有连接上深渊回廊,";
-		mes "现在仅能到达默认的公会地下城.";
+		mes ""+.@realm$+" そ穦 2F 瞷瘤礛瞷矪縀篈, 琌临⊿Τ硈钡瞏瞁碮,";
+		mes "瞷度笷纐粄そ穦.";
 		close;
 	} else {
 		mes .@n$;
-		mes .@realm$+" 区域这次没有被选中作为回廊的接入点.";
-		mes "请等下一个投资期.";
+		mes .@realm$+" 跋办硂Ω⊿Τ砆匡い碮钡翴.";
+		mes "叫单щ戈戳.";
 		close;
 	}
 	end;
@@ -1022,127 +1022,127 @@ OnAgitInvest:
 	if (.@invest_status == 1) {
 		if (compare(strnpcinfo(4),"alde")) {
 			set .@npc$,"alde";
-			set .@realm$,"艾尔帕兰";
+			set .@realm$,"︺焊┈孽";
 		} else if (compare(strnpcinfo(4),"gef")) {
 			set .@npc$,"gef";
-			set .@realm$,"吉芬";
+			set .@realm$,"";
 		} else if (compare(strnpcinfo(4),"pay")) {
 			set .@npc$,"pay";
-			set .@realm$,"斐扬";
+			set .@realm$,"创喘";
 		} else if (compare(strnpcinfo(4),"prt")) {
 			set .@npc$,"prt";
-			set .@realm$,"普隆德拉";
+			set .@realm$,"炊订紈┰";
 		}
 		set .@notice, $agit_result_notice;
 		if (.@notice < 1 || .@notice > 12) {
 			mes "There are currently no investment sums available.";
 			close;
 		}
-		mes callfunc("F_GetNumSuffix",.@notice)+" 合计 (金额单位: 10,000z)";
+		mes callfunc("F_GetNumSuffix",.@notice)+" 璸 (肂虫: 10,000z)";
 		for(set .@i,1; .@i<=5; set .@i,.@i+1) {
 			set .@map$, .@npc$+"g_cas0"+.@i;
 			set .@fund[.@i], getd("$@vfund_"+.@npc$+"0"+.@i);
-			mes getcastlename(.@map$)+" "+getguildname(getcastledata(.@map$,CD_GUILD_ID))+" 公会: "+.@fund[.@i];
+			mes getcastlename(.@map$)+" "+getguildname(getcastledata(.@map$,CD_GUILD_ID))+" そ穦: "+.@fund[.@i];
 		}
 		set .@fund[0], getd("$@vfund_"+.@npc$+"_extra");
-		mes .@realm$+" 普通: "+.@fund[0];
-		mes .@realm$+" 投资总计: "+(.@fund[0]+.@fund[1]+.@fund[2]+.@fund[3]+.@fund[4]+.@fund[5]);
+		mes .@realm$+" 炊硄: "+.@fund[0];
+		mes .@realm$+" щ戈羆璸: "+(.@fund[0]+.@fund[1]+.@fund[2]+.@fund[3]+.@fund[4]+.@fund[5]);
 		close;
 	} else if (.@invest_status == 2) {
 		mes "!- Notice -!";
-		mes "目前总投资金额正在计算中, 暂时还未得出总是.";
-		mes "请等待结果公布.";
+		mes "ヘ玡羆щ戈肂タ璸衡い, 既临ゼ眔羆琌.";
+		mes "叫单挡狦そガ.";
 		close;
 	} else if (.@invest_status == 3) {
 		setarray .@invest_result[0], $prt_invest_result,$pay_invest_result,$gef_invest_result,$alde_invest_result;
-		setarray .@invest_region$[0],  "普隆德拉区域",  "斐扬区域",       "吉芬区域",            "艾区域";
-		mes "!- 所有区域的投资结果 -!";
+		setarray .@invest_region$[0],  "炊订紈┰跋办",  "创喘跋办",       "跋办",            "︺跋办";
+		mes "!- ┮Τ跋办щ戈挡狦 -!";
 		for(set .@i,0; .@i<4; set .@i,.@i+1) {
 			if (.@invest_result[.@i] == 1)
-				mes "^aaaaaa["+.@invest_region$[.@i]+"] 未达到最低要求^000000";
+				mes "^aaaaaa["+.@invest_region$[.@i]+"] ゼ笷程璶―^000000";
 			else if (.@invest_result[.@i] == 2) {
-				mes "["+.@invest_region$[.@i]+"] 达到基本要求";
-				mes "-> 公会地下城 (2F) 可用";
+				mes "["+.@invest_region$[.@i]+"] 笷膀セ璶―";
+				mes "-> そ穦 (2F) ノ";
 			} else if (.@invest_result[.@i] == 3) {
-				mes "^4d4dff["+.@invest_region$[.@i]+"] 达到最高投资要求^000000";
-				mes "-> 深渊回廊 可用";
+				mes "^4d4dff["+.@invest_region$[.@i]+"] 笷程蔼щ戈璶―^000000";
+				mes "-> 瞏瞁碮 ノ";
 			} else
-				mes "没有相关 ["+.@invest_region$[.@i]+"].的数据";
+				mes "⊿Τ闽 ["+.@invest_region$[.@i]+"].计誹";
 		}
 		close;
 	} else {
-		mes "!- 公告 -!";
-		mes "现在没有任何投资信息.";
+		mes "!- そ -!";
+		mes "瞷⊿Τヴщ戈獺.";
 		close;
 	}
 }
 
 // Inside Castles - Gate Managers
 //============================================================
--	script	深渊之门管理员#castle	-1,{
+-	script	瞏瞁ぇ恨瞶#castle	-1,{
 
 	set .@id, atoi(charat(strnpcinfo(2),getstrlen(strnpcinfo(2))-1));
 	if (compare(strnpcinfo(2),"alde")) {
 		set .@npc$,"alde";
-		set .@realm$,"艾而帕兰";
+		set .@realm$,"︺τ┈孽";
 	} else if (compare(strnpcinfo(2),"gef")) {
 		set .@npc$,"gef";
-		set .@realm$,"吉芬";
+		set .@realm$,"";
 	} else if (compare(strnpcinfo(2),"pay")) {
 		set .@npc$,"pay";
-		set .@realm$,"斐扬";
+		set .@realm$,"创喘";
 	} else if (compare(strnpcinfo(2),"prt")) {
 		set .@npc$,"prt";
-		set .@realm$,"普隆德拉";
+		set .@realm$,"炊订紈┰";
 	}
 
 	set .@GID, getcastledata(strnpcinfo(4),CD_GUILD_ID);
 	if (getcharid(2) != .@GID) {
-		mes "[深渊之门管理员]";
-		mes "你似乎并不是拥有这座城堡的公会成员.";
-		mes "如果您需要任何帮助,请访问我们在 "+.@realm$+" 广场的公会成员.";
+		mes "[瞏瞁ぇ恨瞶]";
+		mes "ぃ琌局Τ硂畒躇そ穦Θ.";
+		mes "狦眤惠璶ヴ腊,叫砐拜и "+.@realm$+" 約初そ穦Θ.";
 		close;
 	}
-	mes "[深渊之门管理员]";
-	mes "你好, 我是来自猫手商会传送部门的深渊之门管理员.";
-	mes "需要帮忙吗?";
+	mes "[瞏瞁ぇ恨瞶]";
+	mes ", и琌ㄓ窟も坝穦肚癳场瞏瞁ぇ恨瞶.";
+	mes "惠璶腊Γ盾?";
 	next;
-	switch(select("- 进行大门连接投资:- 地下城最深处:- 深渊回廊数据:- 取消")) {
+	switch(select("- 秈︽硈钡щ戈:- 程瞏矪:- 瞏瞁碮计誹:- ")) {
 	case 1:
 		if (checkweight(1201,1) == 0 || MaxWeight - Weight < 1000) {
-			mes "[深渊之门管理员]";
-			mes "您身上携带了太多的物品种类.";
-			mes "请稍做处理后再来找我.";
+			mes "[瞏瞁ぇ恨瞶]";
+			mes "眤ō拟盿び珇销摸.";
+			mes "叫祔暗矪瞶ㄓти.";
 			close;
 		}
 		if (countitem(6488) >= 4800) {
-			mes "[深渊之门管理员]";
-			mes "您所持的投资感谢票已经达到上限.";
-			mes "无法再给您发放. 请使用部分后再来找我.";
-			mes "投资感谢票可以在绵绵岛兑换物品.";
+			mes "[瞏瞁ぇ恨瞶]";
+			mes "眤┮щ戈稰谅布竒笷.";
+			mes "礚猭倒眤祇. 叫ㄏノ场だㄓти.";
+			mes "щ戈稰谅布壶壶畄传珇.";
 			close;
 		}
 		if (callfunc("F_Invest_Status") != 1) {
-			mes "[深渊之门管理员]";
-			mes "现在不是投资期.";
-			mes "请等我们开启下一轮投资时再来.";
+			mes "[瞏瞁ぇ恨瞶]";
+			mes "瞷ぃ琌щ戈戳.";
+			mes "叫单и秨币近щ戈ㄓ.";
 			close;
 		}
 		if (getcharid(2) != .@GID) {
-			mes "[深渊之门管理员]";
-			mes "你似乎并不是拥有这座城堡的公会成员.";
-			mes "如果您需要任何帮助,请访问我们在 "+.@realm$+" 广场的公会成员.";
+			mes "[瞏瞁ぇ恨瞶]";
+			mes "ぃ琌局Τ硂畒躇そ穦Θ.";
+			mes "狦眤惠璶ヴ腊,叫砐拜и "+.@realm$+" 約初そ穦Θ.";
 			close;
 		}
-		mes "[深渊之门管理员]";
-		mes "继续投资在你的公会名下.";
-		callfunc "F_Invest_Abyss","$fund_"+.@npc$+"0"+.@id,"[深渊之门管理员]";
+		mes "[瞏瞁ぇ恨瞶]";
+		mes "膥尿щ戈そ穦.";
+		callfunc "F_Invest_Abyss","$fund_"+.@npc$+"0"+.@id,"[瞏瞁ぇ恨瞶]";
 		end;
 	case 2:
 		callsub L_Enter,1,.@realm$,.@npc$;
-		mes "[深渊之门管理员]";
-		mes "您对 "+.@realm$+" 公会地下城 (2F)感兴趣.";
-		mes "让我来引导你. 祝您好运.";
+		mes "[瞏瞁ぇ恨瞶]";
+		mes "眤癸 "+.@realm$+" そ穦 (2F)稰砍届.";
+		mes "琵иㄓま旧. 眤笲.";
 		close2;
 		if (compare(strnpcinfo(2),"alde")) {
 			switch(.@id) {
@@ -1180,8 +1180,8 @@ OnAgitInvest:
 		end;
 	case 3:
 		callsub L_Enter,2,.@realm$,.@npc$;
-		mes "[深渊之门管理员]";
-		mes "让我来引导你进入深渊回廊所连接的 "+.@realm$+" 所属的 '战士之路'.";
+		mes "[瞏瞁ぇ恨瞶]";
+		mes "琵иㄓま旧秈瞏瞁碮┮硈钡 "+.@realm$+" ┮妮 '驹ぇ隔'.";
 		close2;
 		if (compare(strnpcinfo(2),"alde")) {
 			switch(.@id) {
@@ -1218,8 +1218,8 @@ OnAgitInvest:
 		}
 		end;
 	case 4:
-		mes "[深渊之门管理员]";
-		mes "已取消.";
+		mes "[瞏瞁ぇ恨瞶]";
+		mes ".";
 		close;
 	}
 	end;
@@ -1231,50 +1231,50 @@ L_Enter:
 		if ((getarg(0) == 1 && .@status == 2) || .@status == 3)
 			return;
 		else {
-			mes "[深渊之门管理员]";
-			mes getarg(1)+" 没有被选择为这次的连接点.";
-			mes "请等下一次投资期.";
+			mes "[瞏瞁ぇ恨瞶]";
+			mes getarg(1)+" ⊿Τ砆匡拒硂Ω硈钡翴.";
+			mes "叫单Ωщ戈戳.";
 			close;
 		}
 	} else if (.@invest_status < 3) {
-		mes "[深渊之门管理员]";
-		mes "目前没有开启任何连接点.";
-		mes "等待本轮投资结果公布后就能够使用了.";
-		mes "请耐心等待.";
+		mes "[瞏瞁ぇ恨瞶]";
+		mes "ヘ玡⊿Τ秨币ヴ硈钡翴.";
+		mes "单セ近щ戈挡狦そガ碞镑ㄏノ.";
+		mes "叫瑻み单.";
 		close;
 	} else {
-		mes "[深渊之门管理员]";
-		mes "深渊之门即将消失.";
-		mes "地下城访问暂时被关闭.";
-		mes "请等下一次机会.";
+		mes "[瞏瞁ぇ恨瞶]";
+		mes "瞏瞁ぇ盢ア.";
+		mes "砐拜既砆闽超.";
+		mes "叫单Ω审穦.";
 		close;
 	}
 }
 
 // Item Investments :: tooja_namis
 //============================================================
-malangdo,218,126,4	script	猫手商会公告	857,{
-	mes "<< 猫手商会公告 >>";
-	mes "'^C379CE投资闲置道具获得奖励!^000000'";
+malangdo,218,126,4	script	窟も坝穦そ	857,{
+	mes "<< 窟も坝穦そ >>";
+	mes "'^C379CEщ戈秪竚笵ㄣ莉眔贱纘!^000000'";
 	next;
-	switch(select("- 阅读公告内容:- 事件1 查询:- 事件2 查询")) {
+	switch(select("- 綷弄そず甧:- ㄆン1 琩高:- ㄆン2 琩高")) {
 	case 1:
-		mes "- 公告 -";
-		mes "您好尊贵的商会会员们! 再你们的厚爱之下, 我们猫手商会每天都在进步. 所有的经理和工作人员承诺竭尽所能, 使我们能够始终站在技术的前沿.";
+		mes "- そ -";
+		mes "眤碙禥坝穦穦! 玴稲ぇ, и窟も坝穦–ぱ常秈˙. ┮Τ竒瞶㎝┯空很荷┮, ㄏи镑﹍沧м砃玡猽.";
 		next;
-		mes "- 事件公告! -";
-		mes " 名为 '^C379CE投资闲置道具获得奖励!^000000' 的活动正在进行, 您可以把您仓库中闲置的装备或道具作为投资换取猫手顶级投资证书.";
+		mes "- ㄆンそ! -";
+		mes "  '^C379CEщ戈秪竚笵ㄣ莉眔贱纘!^000000' 笆タ秈︽, 眤р眤畐い秪竚杆称┪笵ㄣщ戈传窟も郴щ戈谍.";
 		next;
-		mes "您可以通过查询物品回收清单, 来获知那些闲置物品可以和我们交换. 感谢您的耐心观看, 谢谢!";
-		mes "- 全体猫手员工敬上 -";
+		mes "眤硄筁琩高珇Μ睲虫, ㄓ莉êㄇ秪竚珇㎝иユ传. 稰谅眤瑻み芠, 谅谅!";
+		mes "- 蔨窟も穛 -";
 		next;
-		mes "底部有一个小的警告标识.";
+		mes "┏场Τ牡夹醚.";
 		mes " ";
-		mes "^FF0000视活动具体执行情况, 相关内容可能会有调整.^000000";
+		mes "^FF0000跌笆ㄣ蔨磅︽薄猵, 闽ず甧穦Τ秸俱.^000000";
 		close;
 	case 2:
-		mes "'^C379CE投资闲置道具获得奖励!^000000'";
-		mes "事件1 详情.";
+		mes "'^C379CEщ戈秪竚笵ㄣ莉眔贱纘!^000000'";
+		mes "ㄆン1 冈薄.";
 		next;
 		setarray .@event1$[0],
 			"Wings of the Insect Queen","Crown of the Fly King","I hear Dragon Scales are tough 01","The Meaning of the Mother's Nightmare",
@@ -1282,7 +1282,7 @@ malangdo,218,126,4	script	猫手商会公告	857,{
 			"Planting trees on Mellow Island","Ancient language research","Weapons made of sharp teeth","Toy boss doll 01",
 			"A tiger is just a cat after all","The shattered spear and shield?","Toy boss doll 02","Best in summer! Cold scales",
 			"Piece of Thanatos' armor","I hear Dragon Scales are tough 02","The identity of the creepy eye","If only I could see!";
-		set .@menu$, "离开:"+implode(.@event1$[0],":");
+		set .@menu$, "置秨:"+implode(.@event1$[0],":");
 		while(1) {
 			set .@i, select(.@menu$)-1;
 			switch(.@i) {
@@ -1310,70 +1310,70 @@ malangdo,218,126,4	script	猫手商会公告	857,{
 				case 21: set .@str$,"2 Foolishness of the Blind"; break;
 			}
 			mes "["+.@event1$[.@i-1]+"]";
-			mes .@str$+" 猫手顶级投资证书.";
+			mes .@str$+" 窟も郴щ戈谍.";
 			next;
 		}
 	case 3:
-		mes "下一个 '^C379CE投资闲置道具获得奖励!^000000' 事件2!! 很快即将开放!";
+		mes " '^C379CEщ戈秪竚笵ㄣ莉眔贱纘!^000000' ㄆン2!! е盢秨!";
 		close;
 	}
 }
 
-malangdo,218,123,1	script	纳米斯#invest	545,4,4,{
+malangdo,218,123,1	script	μ吹#invest	545,4,4,{
 	if (checkweight(1201,1) == 0 || MaxWeight - Weight < 1000) {
-		mes "- 您携带了太多的物品 -";
-		mes "- 请稍做整理后我们再谈. -";
+		mes "- 眤拟盿び珇 -";
+		mes "- 叫祔暗俱瞶и酵. -";
 		close;
 	}
 	emotion ET_HUK;
 	emotion ET_FRET;
 	emotion ET_ANGER;
-	mes "[纳米斯]";
+	mes "[μ吹]";
 	mes "Purr-Purr-Purrr-Purrrr-Pur~ Meow!!";
-	mes "什-- 什么? 呢么粗鲁. 吓死我了.";
+	mes "ぐ-- ぐ? ㎡彩緗. 纞и.";
 	next;
-	switch(select("- 你想要什么? 我要投资!:- 本次活动的目的是什么?:- 你不会睡着了吧?")) {
+	switch(select("- 稱璶ぐ? и璶щ戈!:- セΩ笆ヘ琌ぐ?:- ぃ穦何帝?")) {
 	case 1:
 		break;
 	case 2:
-		mes "[纳米斯]";
-		mes "呃, 又有人被'推倒', 让猫手商会给忽悠来了?";
+		mes "[μ吹]";
+		mes ", Τ砆'崩', 琵窟も坝穦倒┛眣ㄓ?";
 		next;
-		select("呃? 什么! 我说我被'推倒'?");
-		mes "[纳米斯]";
-		mes "我只说一次, 你听好了!";
-		mes "我们, 猫手商会为了我们忠实的客户推出了这个活动.";
+		select("? ぐ! и弧и砆'崩'?");
+		mes "[μ吹]";
+		mes "и弧Ω, !";
+		mes "и, 窟も坝穦и┚龟め崩硂笆.";
 		next;
-		mes "[纳米斯]";
-		mes "回收你们仓库里面那些快要发霉的老古董, 可以兑换'猫手顶级投资证书'. 这对我们商会来说是吃力不讨好的事情.";
+		mes "[μ吹]";
+		mes "Μ畐ńêㄇе璶祇綻ρ赋, 传'窟も郴щ戈谍'. 硂癸и坝穦ㄓ弧琌ぃ癚ㄆ薄.";
 		next;
-		mes "[纳米斯]";
-		mes "但是对你来说却非常划算, 明显我们是亏本赚吆喝!";
+		mes "[μ吹]";
+		mes "琌癸ㄓ弧玱獶盽衡, 陪и琌莲セ寥耻!";
 		next;
-		mes "[纳米斯]";
-		mes "想知道更多的就去看公告吧.";
+		mes "[μ吹]";
+		mes "稱笵碞そ.";
 		close;
 	case 3:
-		mes "[纳米斯]";
-		mes "乡巴佬- 傻蛋-";
-		mes "记住, 人类! 没有任何一只猫比我做事更卖力了.";
+		mes "[μ吹]";
+		mes "秏ぺㄐ- 短矹-";
+		mes "癘, 摸! ⊿Τヴ窟ゑи暗ㄆ芥.";
 		close;
 	}
-	mes "[纳米斯]";
-	mes "你一定是想参加猫手商会举办的 '^C379CE投资闲置道具获得奖励!^000000' 活动吧.";
+	mes "[μ吹]";
+	mes "﹚琌稱把窟も坝穦羭快 '^C379CEщ戈秪竚笵ㄣ莉眔贱纘!^000000' 笆.";
 	next;
-	mes "[纳米斯]";
-	mes "呢么, 你想参与哪个活动?";
+	mes "[μ吹]";
+	mes "㎡, 稱把蒓笆?";
 	next;
-	switch(select("- 没兴趣:- 事件1 物品:- 事件2 物品")) {
+	switch(select("- ⊿砍届:- ㄆン1 珇:- ㄆン2 珇")) {
 	case 1:
-		mes "[纳米斯]";
-		mes "我很忙, 没事别来瞎折腾!";
+		mes "[μ吹]";
+		mes "иΓ, ⊿ㄆㄓ組ч乃!";
 		close;
 	case 2:
-		mes "[纳米斯]";
-		mes "进入事件1.";
-		mes "从显示列表中选择.";
+		mes "[μ吹]";
+		mes "秈ㄆン1.";
+		mes "眖陪ボい匡拒.";
 		next;
 		setarray .@event1$[0],
 			"Wings of the Insect Queen","Crown of the Fly King","I hear Dragon Scales are tough 01","The Meaning of the Mother's Nightmare",
@@ -1406,9 +1406,9 @@ malangdo,218,123,1	script	纳米斯#invest	545,4,4,{
 			case 21: callsub L_Check,"2 Foolishness of the Blind",7021,2,"This blind man is foolish in not knowing that gathering 300 cats cures blindness...",.@event1$[.@i];
 		}
 	case 3:
-		mes "[纳米斯]";
-		mes "参与活动2?";
-		mes "这活动还没开搞. 过段时间再说吧!";
+		mes "[μ吹]";
+		mes "把蒓笆2?";
+		mes "硂笆临⊿秨穌. 筁琿丁弧!";
 		close;
 	}
 	end;
@@ -1421,31 +1421,31 @@ L_Check:
 			set .@items,2; //complete
 	}
 	if (countitem(getarg(1)) < getarg(2) || .@items == 1) {
-		mes "[纳米斯]";
-		mes "你没有的物品?";
-		mes getarg(0)+" 来兑换一张猫手顶级投资证书.";
+		mes "[μ吹]";
+		mes "⊿Τ珇?";
+		mes getarg(0)+" ㄓ传眎窟も郴щ戈谍.";
 		next;
-		mes "[纳米斯]";
-		mes "不要打扰我, 自己去看那边在公告上的细节!";
+		mes "[μ吹]";
+		mes "ぃ璶ゴ署и, ê娩そ灿竊!";
 		close;
 	}
-	mes "[纳米斯]";
-	mes "'^8E5601"+getarg(4)+" 事件^000000'";
-	mes "看上去东西对了.";
+	mes "[μ吹]";
+	mes "'^8E5601"+getarg(4)+" ㄆン^000000'";
+	mes "狥﹁癸.";
 	mes getarg(3);
-	mes "呃! 差点忘记了. 你要不要投资?";
+	mes "! 畉翴а癘. 璶ぃ璶щ戈?";
 	next;
-	if(select("- 投资:- 不投资") == 2) {
-		mes "[纳米斯]";
-		mes "我很忙, 没事别来瞎折腾!";
+	if(select("- щ戈:- ぃщ戈") == 2) {
+		mes "[μ吹]";
+		mes "иΓ, ⊿ㄆㄓ組ч乃!";
 		close;
 	}
 	delitem getarg(1),getarg(2);
 	if (.@items == 2)
 		delitem getarg(5),getarg(6);
 	getitem 6489,1; //Cats_Invest_Certif
-	mes "[纳米斯]";
-	mes "这是你的证书. 非常感谢您的参与!";
+	mes "[μ吹]";
+	mes "硂琌谍. 獶盽稰谅眤把蒓!";
 	close;
 OnTouch:
 	if (rand(2))
@@ -1457,26 +1457,26 @@ OnTouch:
 
 // Investment Rewards :: tooja_japanki
 //============================================================
-malangdo,215,119,4	script	感谢票兑换机	564,{
+malangdo,215,119,4	script	稰谅布传审	564,{
 	if (MaxWeight - Weight < 4500 || checkweight(1201,1) == 0) {
-		mes "- 您携带了太多的物品 -";
-		mes "- 请整理背包后再尝试. -";
+		mes "- 眤拟盿び珇 -";
+		mes "- 叫俱瞶璉沽刚. -";
 		close;
 	}
-	mes "[感谢票兑换机]";
-	mes "^6815EA1. 请不要踢兑换机. @_@";
-	mes "2. 您只能使用投资感谢票.";
-	mes "3. 关于果冻盒, 开启时会得到一件随机物品.";
-	mes "4. 希望您能喜欢~^000000";
-	mes "          - 机主 Mr. Cat -";
+	mes "[稰谅布传审]";
+	mes "^6815EA1. 叫ぃ璶金传审. @_@";
+	mes "2. 眤ㄏノщ戈稰谅布.";
+	mes "3. 闽狦舶, 秨币穦眔ン繦审珇.";
+	mes "4. 辨眤尺舧~^000000";
+	mes "          - 审 Mr. Cat -";
 	next;
-	switch(select("- 结束:- 物品兑换:- 红色爪子果冻袋(5张):- 黑色爪子果冻袋(50张)")) {
+	switch(select("- 挡:- 珇传:- ︹狦砋(5眎):- 堵︹狦砋(50眎)")) {
 	case 1:
 		close;
 	case 2:
-		mes "自动售货机兑换的物品清单如下.";
+		mes "笆扳砯审传珇睲虫.";
 		next;
-		switch(select("- 结束:- 1个攻城箭矢筒A(2张):- 1个攻城箭矢筒S(2张):- 1个攻城白色药水箱子(12张):- 1个攻城蓝色药水箱子(14张):- 10个暗水(20张):20 Siege_Violet_Potion (30 Tickets):10 Coldproof Potion (30 Tickets):10 Thunderproof Potion (30 Tickets):10 Earthproof Potion (30 Tickets):10 Fireproof Potion (30 Tickets):10 Elemental Converter[Fire] (30 Tickets)")) {
+		switch(select("- 挡:- 1ю絙ペ旦A(2眎):- 1ю絙ペ旦S(2眎):- 1юフ︹媚絚(12眎):- 1ю屡︹媚絚(14眎):- 10穞(20眎):20 Siege_Violet_Potion (30 Tickets):10 Coldproof Potion (30 Tickets):10 Thunderproof Potion (30 Tickets):10 Earthproof Potion (30 Tickets):10 Fireproof Potion (30 Tickets):10 Elemental Converter[Fire] (30 Tickets)")) {
 			case 1: close;
 			case 2: callsub L_Purchase,2,12678,1; //Siege_Arrow_Quiver_A
 			case 3: callsub L_Purchase,2,12677,1; //Siege_Arrow_Quiver_S
@@ -1495,10 +1495,10 @@ malangdo,215,119,4	script	感谢票兑换机	564,{
 		}
 		end;
 	case 3:
-		mes "选择了红色爪子果冻袋. 需要输入5张 ^FF0000投资感谢票^000000 会随机赠送一个物品.";
+		mes "匡拒︹狦砋. 惠璶块5眎 ^FF0000щ戈稰谅布^000000 穦繦审秘癳珇.";
 		next;
 		if (countitem(6488) < 5) {
-			mes "您没有足够的 ^FF0000投资感谢票^000000 进行兑换.";
+			mes "眤⊿Τì镑 ^FF0000щ戈稰谅布^000000 秈︽传.";
 			close;
 		}
 		delitem 6488,5; //Thanks_Invest_Ticket
@@ -1564,10 +1564,10 @@ malangdo,215,119,4	script	感谢票兑换机	564,{
 		else callsub L_Bag,12016,10; //Speed_Up_Potion
 		end;
 	case 4:
-		mes "选择了黑色爪子果冻袋. 需要输入50张^FF0000投资感谢票^000000 会随机赠送一个物品.";
+		mes "匡拒堵︹狦砋. 惠璶块50眎^FF0000щ戈稰谅布^000000 穦繦审秘癳珇.";
 		next;
 		if (countitem(6488) < 50) {
-			mes "您没有足够的 ^FF0000投资感谢票^000000 进行兑换.";
+			mes "眤⊿Τì镑 ^FF0000щ戈稰谅布^000000 秈︽传.";
 			close;
 		}
 		delitem 6488,50; //Thanks_Invest_Ticket
@@ -1646,21 +1646,21 @@ malangdo,215,119,4	script	感谢票兑换机	564,{
 //callsub L_Purchase,<ticket cost>,<reward ID>,<reward amount>{,<reward name>};
 L_Purchase:
 	if (countitem(6488) < getarg(0)) {
-		mes "您没有足够的 ^FF0000投资感谢票^000000 用来兑换.";
+		mes "眤⊿Τì镑 ^FF0000щ戈稰谅布^000000 ノㄓ传.";
 		close;
 	}
 	delitem 6488,getarg(0); //Thanks_Invest_Ticket
 	getitem getarg(1),getarg(2);
-	mes "- 投资完成! -";
+	mes "- щ戈ЧΘ! -";
 	next;
-	mes "获得奖励物品 ^0000FF"+((getargcount() > 3)?getarg(3,""):getitemname(getarg(1)))+"^000000.";
+	mes "莉眔贱纘珇 ^0000FF"+((getargcount() > 3)?getarg(3,""):getitemname(getarg(1)))+"^000000.";
 	close;
 
 //callsub L_Bag,<reward ID>,<reward amount>{,<reward name>};
 L_Bag:
 	getitem getarg(0),getarg(1);
-	mes "- 兑换完成! -";
+	mes "- 传ЧΘ! -";
 	next;
-	mes "获得奖励物品 ^0000FF"+((getargcount() > 2)?getarg(2,""):getitemname(getarg(0)))+"^000000.";
+	mes "莉眔贱纘珇 ^0000FF"+((getargcount() > 2)?getarg(2,""):getitemname(getarg(0)))+"^000000.";
 	close;
 }

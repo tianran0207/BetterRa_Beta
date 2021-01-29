@@ -1,6 +1,6 @@
-prontera,132,125,3	script	机器人测试	123,{
+prontera,132,125,3	script	审竟代刚	123,{
 	bot_addmode BOT_WEAPON_ATK;
 	bot_addmode BOT_RANDOM_WALK;
 	bot_run;
-	monster "prontera",0,0,"测试机器人用波利",1002,500;
+	monster "prontera",0,0,"代刚审竟ノ猧",1002,500;
 }

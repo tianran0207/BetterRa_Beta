@@ -14,57 +14,57 @@
 //	Changed @BUNYBAN back to BUNYBND, it should be this way.
 //	Removed duplicates. NPC is ALberta-only.
 //= 1.6 Cleaning. [Euphy]
-//= 2016.03.03 英文直译汉化文字部分 [杨梅]
+//= 2016.03.03 璣ゅ亩簙てゅ场だ [法宾]
 //============================================================ 
 
-alberta,26,229,0	script	卡普拉服务人员#bunny	83,{
+alberta,26,229,0	script	炊┰狝叭#bunny	83,{
 	if (BUNYBND == 1) {
-		mes "[卡普拉服务人员]";
-		mes "Hello 你好啊~!";
-		mes "看来你已经参加了";
-		mes "^529DFF帮助顾客将拿来的物品加工制作^FF0000'兔耳发圈'^529DFF的特别活动^000000 了呢";
+		mes "[炊┰狝叭]";
+		mes "Hello 摆~!";
+		mes "ㄓ竒把";
+		mes "^529DFF腊臮盢ㄓ珇^FF0000'ㄟφ祇伴'^529DFF疭笆^000000 ㎡";
 		next;
-		switch(select("没错，我已经拿来了需要的材料:活动信息:取消")) {
+		switch(select("⊿岿и竒ㄓ惠璶:笆獺:")) {
 		case 1:
-			mes "[卡普拉服务人员]";
-			mes "现在开始检查客人拿来的物品";
+			mes "[炊┰狝叭]";
+			mes "瞷秨﹍浪琩ㄓ珇";
 			next;
 			setarray .@Items[0],949,100,706,1,722,1,2213,1;
 			for(set .@i,0; .@i<8; set .@i,.@i+2)
 				if (countitem(.@Items[.@i]) < .@Items[.@i+1]) {
-					mes "[卡普拉服务人员]";
-		            mes "至少也要从:";
+					mes "[炊┰狝叭]";
+		            mes "ぶ璶眖:";
 					mes "^FF0000"+callfunc("F_InsertPlural2",.@Items[.@i+1],getitemname(.@Items[.@i]),0 ,"%s x %d")+"^000000";
-		            mes "开始收集吧";
+		            mes "秨﹍Μ栋";
 					close;
 				}
-			mes "[卡普拉服务人员]";
-			mes "哇!!太好了，太好了你把需要的材料都带来了!!";
-			mes "卡普拉服务人员将为你制作兔耳发圈";
-			mes "请稍等一下";
+			mes "[炊┰狝叭]";
+			mes "珃!!びびр惠璶常盿ㄓ!!";
+			mes "炊┰狝叭盢ㄟφ祇伴";
+			mes "叫祔单";
 			next;
 			for(set .@i,0; .@i<8; set .@i,.@i+2)
 				if (countitem(.@Items[.@i]) < .@Items[.@i+1]) {
-					mes "[卡普拉服务人员]";
-					mes "很抱歉,";
-		            		mes "至少也要从:";
+					mes "[炊┰狝叭]";
+					mes "╆簆,";
+		            		mes "ぶ璶眖:";
 					mes "^FF0000"+callfunc("F_InsertPlural2",.@Items[.@i+1],getitemname(.@Items[.@i]), 0, "%s x %d")+"^000000";
-		            		mes "开始收集，";
-					mes "这样我才能帮你制作...";
+		            		mes "秨﹍Μ栋";
+					mes "硂妓и腊...";
 					close;
 				}
-			delitem 949,100; //Feather柔毛
-			delitem 706,1; //Four_Leaf_Clover幸运四叶草
-			delitem 722,1; //Scarlet_Jewel珍珠
-			delitem 2213,1; //Cat_Hairband猫耳发圈
-			mes "[卡普拉服务人员]";
-			mes "^FF0000兔耳发圈^000000制作完成...!";
+			delitem 949,100; //Feather琗を
+			delitem 706,1; //Four_Leaf_Clover┋笲腑
+			delitem 722,1; //Scarlet_Jewel痌
+			delitem 2213,1; //Cat_Hairband窟φ祇伴
+			mes "[炊┰狝叭]";
+			mes "^FF0000ㄟφ祇伴^000000ЧΘ...!";
 			getitem 2214,1; //Bunny_Band
 			set BUNYBND,0;
 			next;
-			mes "[卡普拉服务人员]";
-			mes "我们非常感谢您参加本活动，";
-			mes "卡普拉将永远为您服务";
+			mes "[炊┰狝叭]";
+			mes "и獶盽稰谅眤把セ笆";
+			mes "炊┰盢ッ环眤狝叭";
 			close;
 		case 2:
 			goto L_Info;
@@ -72,23 +72,23 @@ alberta,26,229,0	script	卡普拉服务人员#bunny	83,{
 			close;
 		}
 	}
-	mes "[卡普拉服务人员]";
-	mes "你希望参加卡普拉与商人公会一同举办的";
-	mes "^529DFF帮助顾客将拿来的物品加工制作^FF0000'兔耳发圈'^529DFF的特别活动^000000 吗？";
+	mes "[炊┰狝叭]";
+	mes "辨把炊┰蒓坝そ穦羭快";
+	mes "^529DFF腊臮盢ㄓ珇^FF0000'ㄟφ祇伴'^529DFF疭笆^000000 盾";
 	next;
-	switch(select("参加活动:活动信息:没兴趣")) {
+	switch(select("把笆:笆獺:⊿砍届")) {
 	case 1:
 		set BUNYBND,1;
-		mes "[卡普拉服务人员]";
-		mes "感谢您们参加这次的特别活动!";
-		mes "请将所需要的物品搜集齐全后在过来这里就可以了";
+		mes "[炊┰狝叭]";
+		mes "稰谅眤把硂Ω疭笆!";
+		mes "叫盢┮惠璶珇穓栋霍筁ㄓ硂ń碞";
 		next;
-		mes "[卡普拉服务人员]";
-		mes "制作兔耳发圈所需要的物品如下:";
-		mes "柔毛 100 根";
-		mes "四叶幸运草 1 个";
-		mes "珍珠 1 颗";
-		mes "猫耳发圈 1 个";
+		mes "[炊┰狝叭]";
+		mes "ㄟφ祇伴┮惠璶珇:";
+		mes "琗を 100 ";
+		mes "腑┋笲 1 ";
+		mes "痌 1 聋";
+		mes "窟φ祇伴 1 ";
 		close;
 	case 2:
 		break;
@@ -96,22 +96,22 @@ alberta,26,229,0	script	卡普拉服务人员#bunny	83,{
 		close;
 	}
 L_Info:
-	mes "[卡普拉服务人员]";
-	mes "感谢您们参加这次的特别活动!";
-	mes "请将所需要的物品搜集齐全后在过来这里就可以了";
+	mes "[炊┰狝叭]";
+	mes "稰谅眤把硂Ω疭笆!";
+	mes "叫盢┮惠璶珇穓栋霍筁ㄓ硂ń碞";
 	next;
-	mes "[卡普拉服务人员]";
-	mes "制作兔耳发圈所需要的物品如下:";
-	mes "柔毛 100 根";
-	mes "四叶幸运草 1 个";
-	mes "珍珠 1 颗";
-	mes "猫耳发圈 1 个";
+	mes "[炊┰狝叭]";
+	mes "ㄟφ祇伴┮惠璶珇:";
+	mes "琗を 100 ";
+	mes "腑┋笲 1 ";
+	mes "痌 1 聋";
+	mes "窟φ祇伴 1 ";
 	next;
-	mes "[卡普拉服务人员]";
-	mes "以上这些物品全部收集好了在过来这里就可以了";
-	mes "我会帮你制作兔耳发圈.";
-	mes "特别感谢本次活动的赞助方:";
-	mes "(艾尔贝塔商人协会)";
+	mes "[炊┰狝叭]";
+	mes "硂ㄇ珇场Μ栋筁ㄓ硂ń碞";
+	mes "и穦腊ㄟφ祇伴.";
+	mes "疭稰谅セΩ笆觅よ:";
+	mes "(︺焊ī娥坝穦)";
 	close;
 }
 

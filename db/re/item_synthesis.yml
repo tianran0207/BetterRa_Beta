@@ -149,7 +149,7 @@ Body:
         Amount: 10
       - Item: Token_of_OrcGeneral
         Amount: 150
-    Reward: getitem(5375,1); # Orc Hero Heaï»¿ddress
+    Reward: getitem(5375,1); # Orc Hero Hea¡@êĞdress
   - Item: Bs_Item_M_S_8
     SourceNeeded: 2
     SourceItem:
@@ -157,7 +157,7 @@ Body:
         Amount: 10
       - Item: Token_of_OrcGeneral
         Amount: 150
-    Reward: getitem(5548,1); # Crimson Roseï»¿
+    Reward: getitem(5548,1); # Crimson Rose¡@¿
   - Item: Bs_Item_M_S_10
     SourceNeeded: 2
     SourceItem:
@@ -165,7 +165,7 @@ Body:
         Amount: 10
       - Item: Broken_Crown
         Amount: 150
-    Reward: getitem(5476,1); # Grand Pecoï»¿ Headdressï»¿
+    Reward: getitem(5476,1); # Grand Peco¡@¿ Headdress¡@¿
   - Item: Bs_Item_M_S_11
     SourceNeeded: 2
     SourceItem:
@@ -189,7 +189,7 @@ Body:
         Amount: 10
       - Item: Mother's_Nightmare
         Amount: 150
-    Reward: getitem(18528,1); # Tare Neko Cru [1]ï»¿
+    Reward: getitem(18528,1); # Tare Neko Cru [1]¡@¿
   - Item: Bs_Item_M_S_42
     SourceNeeded: 2
     SourceItem:
@@ -197,7 +197,7 @@ Body:
         Amount: 10
       - Item: Solid_Peeling
         Amount: 50
-    Reward: getitem(5859,1); # Worldcupï»¿ Hat of Honorï»¿ [1]ï»¿
+    Reward: getitem(5859,1); # Worldcup¡@¿ Hat of Honor¡@¿ [1]¡@¿
   - Item: Bs_Item_M_S_43
     SourceNeeded: 2
     SourceItem:
@@ -205,7 +205,7 @@ Body:
         Amount: 10
       - Item: Osiris_Doll
         Amount: 30
-    Reward: getitem(18522,1); # Evil Marching Hat [1ï»¿]
+    Reward: getitem(18522,1); # Evil Marching Hat [1¡@¡@
   - Item: Bs_Item_M_S_44
     SourceNeeded: 2
     SourceItem:
@@ -213,7 +213,7 @@ Body:
         Amount: 10
       - Item: Fang_Of_Garm
         Amount: 120
-    Reward: getitem(5498,1); # Vagabond Wolfï»¿ï»¿ Hat [1]
+    Reward: getitem(5498,1); # Vagabond Wolf¡@¦J¸æ Hat [1]
   - Item: Bs_Sha_M_S_1
     SourceNeeded: 2
     SourceItem:
@@ -261,7 +261,7 @@ Body:
         Amount: 20
       - Item: Baphomet_Doll
         Amount: 30
-    Reward: getitem(19827,1); # ì•„ë¯¸ìŠ¤íŠ¸ë¥´ìº¡(1)
+    Reward: getitem(19827,1); # è²¡@¡@äÃ¡@ÎjÙå®ÀÀe(1)
   - Item: Bs_Item_M_S_6
     SourceNeeded: 2
     SourceItem:
@@ -269,7 +269,7 @@ Body:
         Amount: 20
       - Item: Tiger_Footskin
         Amount: 150
-    Reward: getitem(5497,1); # í˜¸ë‘ì´ ì™• ì¸í˜•ëª¨ì(1)
+    Reward: getitem(5497,1); # ¶¶ÂFÄiîü´ ¡@• îüª¸â\ò[¡@¡@(1)
   - Item: Bs_Item_M_S_7
     SourceNeeded: 2
     SourceItem:
@@ -277,7 +277,7 @@ Body:
         Amount: 20
       - Item: White_Snake_Tear
         Amount: 150
-    Reward: getitem(5464,1); # ë°±ì†Œì§„ ì¸í˜•ëª¨ì(1)
+    Reward: getitem(5464,1); # ËJ½¨¡@İõ„ îüª¸â\ò[¡@¡@(1)
   - Item: Bs_Item_M_S_12
     SourceNeeded: 2
     SourceItem:
@@ -285,7 +285,7 @@ Body:
         Amount: 20
       - Item: Gemstone
         Amount: 150
-    Reward: getgroupitem(IG_Bs_Item_M_S_12); # íšë“ ê°€ëŠ¥í•œ ì•„ì´í…œ
+    Reward: getgroupitem(IG_Bs_Item_M_S_12); # ¶·¡@ºQ »N€ëÎl³¼œ è²¾±¡@ìWœ
   - Item: Bs_Item_M_S_13
     SourceNeeded: 2
     SourceItem:
@@ -293,7 +293,7 @@ Body:
         Amount: 20
       - Item: Young_Twig
         Amount: 150
-    Reward: getitem(19264,1); # í™©ê¸ˆ ë¬¼ê³ ê¸° ë¨¸ë¦¬ ëª¨ì(1)
+    Reward: getitem(19264,1); # Ü¬¡@ĞB öç½pŞíÉî° Ş@ÂF£O ò[¡@¡@(1)
   - Item: Bs_Item_M_S_15
     SourceNeeded: 2
     SourceItem:
@@ -309,7 +309,7 @@ Body:
         Amount: 20
       - Item: Ice_Scale
         Amount: 150
-    Reward: getitem(19240,1); # ì¥ë‚œê° ì£¼ì‚¬ê¸°
+    Reward: getitem(19240,1); # ¡@¡@¡@»N ÂjÀËÔQÉî°
   - Item: Bs_Item_M_S_29
     SourceNeeded: 2
     SourceItem:
@@ -317,7 +317,7 @@ Body:
         Amount: 20
       - Item: Gemstone
         Amount: 150
-    Reward: getitem(19243,1); # ìª½ë¹› ë¦¬ì–´ ë¦¬ë³¸
+    Reward: getitem(19243,1); # »ã»|æØ ··¡@ÏS ··¡@´w
   - Item: Bs_Item_M_S_31
     SourceNeeded: 2
     SourceItem:
@@ -325,7 +325,7 @@ Body:
         Amount: 20
       - Item: Dark_Red_Scale
         Amount: 150
-    Reward: getitem(19241,1); # ë§¤ì§€ì»¬ ë¶€ìŠ¤í„°(1)
+    Reward: getitem(19241,1); # å÷¡@¡@±İ¬ ¡@€ì¡@¡@°(1)
   - Item: Bs_Item_M_S_32
     SourceNeeded: 2
     SourceItem:
@@ -333,7 +333,7 @@ Body:
         Amount: 20
       - Item: Mother's_Nightmare
         Amount: 150
-    Reward: getitem(19244,1); # ë¡œìë¦¬ì˜¤ì˜ ëª©ê±¸ì´
+    Reward: getitem(19244,1); # áîº°¡@··¡@ååîü˜ ò[¡@³Æîü´
   - Item: Bs_Item_M_S_33
     SourceNeeded: 2
     SourceItem:
@@ -341,7 +341,7 @@ Body:
         Amount: 20
       - Item: Broken_Crown
         Amount: 150
-    Reward: getitem(19177,1); # ì •ë ¹ì˜ ì™•ê´€
+    Reward: getitem(19177,1); # ïAôR¬»îü˜ ¡@ôQ¡@
   - Item: Bs_Item_M_S_36
     SourceNeeded: 2
     SourceItem:
@@ -349,7 +349,7 @@ Body:
         Amount: 20
       - Item: Tiger_Footskin
         Amount: 150
-    Reward: getitem(18878,1); # ê·¼ìœ„ë³‘ì˜ ëª¨ì(1)
+    Reward: getitem(18878,1); # ¡@ÀËÙí®ôáÖæ^ ò[¡@¡@(1)
   - Item: Bs_Item_M_S_37
     SourceNeeded: 2
     SourceItem:
@@ -357,7 +357,7 @@ Body:
         Amount: 20
       - Item: Loki's_Whispers
         Amount: 150
-    Reward: getitem(5944,1); # ë„ì ì˜ ë‘ê±´(1)
+    Reward: getitem(5944,1); # ¡@¾±¡@îü˜ ¡@¡@¨©(1)
   - Item: Bs_Item_M_S_38
     SourceNeeded: 2
     SourceItem:
@@ -365,7 +365,7 @@ Body:
         Amount: 20
       - Item: Pocket_Watch__
         Amount: 150
-    Reward: getitem(19031,1); # íƒ€ì²œì‚¬ì˜ ì¶•ë³µ(1)
+    Reward: getitem(19031,1); # ¡@€ìÚÃàÛ¡@æ^ ©óôR¨®(1)
   - Item: Bs_Item_M_S_39
     SourceNeeded: 2
     SourceItem:
@@ -373,7 +373,7 @@ Body:
         Amount: 20
       - Item: Tutankhamen's_Mask
         Amount: 150
-    Reward: getitem(19179,1); # í† ë¼ ë§ˆìˆ  ëª¨ì(1)
+    Reward: getitem(19179,1); # ïDËb¡@ å÷Ø¥ÑW ò[¡@¡@(1)
   - Item: Bs_Item_M_S_40
     SourceNeeded: 2
     SourceItem:
@@ -381,7 +381,7 @@ Body:
         Amount: 20
       - Item: Broken_Pharaoh_Symbol
         Amount: 150
-    Reward: getitem(19180,1); # ì•„ëˆ„ë¹„ìŠ¤ íˆ¬êµ¬(1)
+    Reward: getitem(19180,1); # è²¡@¡@Ã|¾±¡@ ¡@¡@¼ª(1)
   - Item: Bs_Item_M_S_45
     SourceNeeded: 2
     SourceItem:
@@ -389,7 +389,7 @@ Body:
         Amount: 20
       - Item: Dark_Red_Scale
         Amount: 150
-    Reward: getitem(5658,1); # ì„í”„ ëª¨ì(1)
+    Reward: getitem(5658,1); # ¡@ì¿¡@ ò[¡@¡@(1)
   - Item: Bs_Item_M_S_46
     SourceNeeded: 2
     SourceItem:
@@ -397,7 +397,7 @@ Body:
         Amount: 20
       - Item: Scale_Of_Red_Dragon
         Amount: 150
-    Reward: getitem(5654,1); # ë¹¨ê°„ ë§ˆì¹­í–‡(1)
+    Reward: getitem(5654,1); # Ã|¡@¡@ å÷Ø¥¤}ØN‡(1)
   - Item: Bs_Item_M_S_47
     SourceNeeded: 2
     SourceItem:
@@ -405,7 +405,7 @@ Body:
         Amount: 20
       - Item: Konts_Letter
         Amount: 150
-    Reward: getitem(5420, 1); # ì´í”„ë¦¬íŠ¸ ê°€ë©´(1)
+    Reward: getitem(5420, 1); # îü¿ù¡@··¡@Îj »N€ë¢{(1)
   - Item: Bs_Item_M_S_48
     SourceNeeded: 2
     SourceItem:
@@ -413,7 +413,7 @@ Body:
         Amount: 20
       - Item: Osiris_Doll
         Amount: 30
-    Reward: getitem(5671,1); # ëŠ˜ì–´ì§„ ëª¨ë¡œí¬ì˜ í˜„ì‹ (1)
+    Reward: getitem(5671,1); # ¹q¡@ÏSİõ„ ò[¡@¡@øÒ¡@æ^ ¶¶¾±áp(1)
   - Item: Bs_Item_M_S_49
     SourceNeeded: 2
     SourceItem:
@@ -421,7 +421,7 @@ Body:
         Amount: 20
       - Item: Token_of_OrcGeneral
         Amount: 150
-    Reward: getitem(5511,1); # ì‚¬ë§Œë°”ì´ì•„(1)
+    Reward: getitem(5511,1); # àÛ¡@¡@ËJÕ¨¡@è²„(1)
   - Item: Bs_Item_M_S_50
     SourceNeeded: 2
     SourceItem:
@@ -429,7 +429,7 @@ Body:
         Amount: 20
       - Item: Young_Twig
         Amount: 150
-    Reward: getitem(19129,1); # ë³‘ì•„ë¦¬ ëª¨ì
+    Reward: getitem(19129,1); # ®ôáÖ±ã··¬ ò[¡@¡@
   - Item: Bs_Item_M_S_51
     SourceNeeded: 2
     SourceItem:
@@ -437,7 +437,7 @@ Body:
         Amount: 20
       - Item: Queen_Wing_Piece
         Amount: 150
-    Reward: getitem(19134,1); # íœ˜ì¼€ë°”ì¸ì˜ ê²€ì€ ê³ ì–‘ì´ê·€
+    Reward: getitem(19134,1); # ¹z¡@ÓRËJÕ¨¡@îü˜ Ò¾€ìâ­ ŞÀ¡@ÌÖîü·bÃ­
   - Item: Bs_Sha_M_S_2
     SourceNeeded: 2
     SourceItem:
@@ -525,7 +525,7 @@ Body:
         Amount: 25
       - Item: Token_of_OrcGeneral
         Amount: 150
-    Reward: getitem(2573,1); # ëŒ€ì²œì‚¬ì˜ ë‚ ê°œ(1)
+    Reward: getitem(2573,1); # à×€ìÚÃàÛ¡@æ^ ¡@¡@ğR(1)
   - Item: Bs_Item_M_S_14
     SourceNeeded: 2
     SourceItem:
@@ -533,7 +533,7 @@ Body:
         Amount: 25
       - Item: Dark_Red_Scale
         Amount: 150
-    Reward: getitem(19265,1); # ìŠ¤ëª¨í‚¤ì˜ ë³€ì‹  ë‚˜ë­‡ì(1)
+    Reward: getitem(19265,1); # äÃ¡@¡@¡@¡@æ^ ®ô€ìáp ¡@¡@Än¡@(1)
   - Item: Bs_Item_M_S_16
     SourceNeeded: 2
     SourceItem:
@@ -541,7 +541,7 @@ Body:
         Amount: 25
       - Item: Will_Of_Darkness_
         Amount: 150
-    Reward: getitem(19128,1); # ì´í”„ë¦¬íŠ¸ì˜ ê·€
+    Reward: getitem(19128,1); # îü¿ù¡@··¡@Îjîü˜ ¡@€
   - Item: Bs_Item_M_S_17
     SourceNeeded: 2
     SourceItem:
@@ -549,7 +549,7 @@ Body:
         Amount: 25
       - Item: Mother's_Nightmare
         Amount: 150
-    Reward: getitem(18563,1); # í•˜íŠ¸ë‚ ê°œ í—¤ì–´ë°´ë“œ(1)
+    Reward: getitem(18563,1); # ³¼¡@Îj¡@¡@ğR ¶µ¡@ÏSËJ±¹áì(1)
   - Item: Bs_Item_M_S_19
     SourceNeeded: 2
     SourceItem:
@@ -557,7 +557,7 @@ Body:
         Amount: 25
       - Item: Ice_Scale
         Amount: 150
-    Reward: getitem(19085,1); # ì‚¬ì´ê·¸ë£¬ì˜ ë‚ ê°œ
+    Reward: getitem(19085,1); # àÛ¡@¡@¡@ÂF¡Aîü˜ ¡@¡@ğR
   - Item: Bs_Item_M_S_27
     SourceNeeded: 2
     SourceItem:
@@ -565,7 +565,7 @@ Body:
         Amount: 25
       - Item: Broken_Crown
         Amount: 150
-    Reward: getitem(19242,1); # ìƒˆë¼ ê³ ì–‘ì´ í—¤ë“œë“œë ˆìŠ¤(1)
+    Reward: getitem(19242,1); # àÜØ£¡@ ŞÀ¡@ÌÖîü´ ¶µ¡@áì¡@Şg¡@äÃ¤(1)
   - Item: Bs_Item_M_S_35
     SourceNeeded: 2
     SourceItem:
@@ -573,7 +573,7 @@ Body:
         Amount: 25
       - Item: Will_Of_Darkness_
         Amount: 150
-    Reward: getitem(5985,1); # ê·€ì¡±ì˜ ê°€ë©´
+    Reward: getitem(5985,1); # ¡@€ì¡¨îü˜ »N€ë¢{
   - Item: Bs_Sha_M_S_9
     SourceNeeded: 2
     SourceItem:
@@ -621,7 +621,7 @@ Body:
         Amount: 30
       - Item: Token_of_OrcGeneral
         Amount: 300
-    Reward: getitem(2589,1); # íƒ€ë½ì²œì‚¬ì˜ ë‚ ê°œ(1)
+    Reward: getitem(2589,1); # ¡@€ëæGî}º°ÔQîü˜ ¡@¡@ğR(1)
   - Item: Bs_Item_M_S_3
     SourceNeeded: 2
     SourceItem:
@@ -629,7 +629,7 @@ Body:
         Amount: 30
       - Item: Broken_Crown
         Amount: 150
-    Reward: getitem(2576,1); # ëª¨í—˜ê°€ ë°°ë‚­(1)
+    Reward: getitem(2576,1); # ò[¡@¡@»N€ ËJ¥b¡@(1)
   - Item: Bs_Item_M_S_18
     SourceNeeded: 2
     SourceItem:
@@ -637,7 +637,7 @@ Body:
         Amount: 30
       - Item: Rojerta_Piece
         Amount: 150
-    Reward: getitem(19249,1); # ìŠ¤í  ì„œí‚·(1)
+    Reward: getitem(19249,1); # äÃ¡@¡@ ¡@ŞVÔN(1)
   - Item: Bs_Item_M_S_20
     SourceNeeded: 2
     SourceItem:
@@ -645,7 +645,7 @@ Body:
         Amount: 30
       - Item: Loki's_Whispers
         Amount: 200
-    Reward: getitem(19181,1); # ë‰´ì›¨ì´ë¸Œ ì„ ê¸€ë¼ìŠ¤
+    Reward: getitem(19181,1); # àÖ®À¡@îü±¹¡@ ¡@¡@¡@¡@ÀË¡@
   - Item: Bs_Item_M_S_21
     SourceNeeded: 2
     SourceItem:
@@ -653,7 +653,7 @@ Body:
         Amount: 30
       - Item: Broken_Horn
         Amount: 150
-    Reward: getitem(19268,1); # ê±°ì‹ ë±€ì˜ ìˆ¨ê²°
+    Reward: getitem(19268,1); # ¿^¿ìápÏl€ìæ^ äÁ¡@²í
   - Item: Bs_Item_M_S_22
     SourceNeeded: 2
     SourceItem:
@@ -661,7 +661,7 @@ Body:
         Amount: 30
       - Item: Taegeuk_Plate
         Amount: 150
-    Reward: getitem(5371,1); # íŒê´€ëª¨ì(1)
+    Reward: getitem(5371,1); # ñ§¡@¡@ò[¡@¡@(1)
   - Item: Bs_Item_M_S_23
     SourceNeeded: 2
     SourceItem:
@@ -669,7 +669,7 @@ Body:
         Amount: 30
       - Item: Fang_Of_Garm
         Amount: 150
-    Reward: getitem(19300,1); # ë©ë©ì¥êµ(1)
+    Reward: getitem(19300,1); # ¾û¡@¡@¡@¡@Şó(1)
   - Item: Bs_Item_M_S_24
     SourceNeeded: 2
     SourceItem:
@@ -677,7 +677,7 @@ Body:
         Amount: 30
       - Item: Gemstone
         Amount: 150
-    Reward: getitem(19296,1); # ë©‹ì§„ íŒ¨ë” í–‡(1)
+    Reward: getitem(19296,1); # ¾û¡@¡@ ñ§¡@Ôö ØN‡(1)
   - Item: Bs_Item_M_S_25
     SourceNeeded: 2
     SourceItem:
@@ -685,7 +685,7 @@ Body:
         Amount: 30
       - Item: Young_Twig
         Amount: 150
-    Reward: getitem(19308,1); # ì•„ë¯¸ìŠ¤íŠ¸ë¥´ ë² ë ˆëª¨(1)
+    Reward: getitem(19308,1); # è²¡@¡@äÃ¡@ÎjÙå´ ´ãËb¡@ò[¨(1)
   - Item: Bs_Item_M_S_26
     SourceNeeded: 2
     SourceItem:
@@ -693,7 +693,7 @@ Body:
         Amount: 30
       - Item: Boroken_Shiled_Piece
         Amount: 150
-    Reward: getitem(19263,1); # ì¥êµ°ì˜ íˆ¬êµ¬(1)
+    Reward: getitem(19263,1); # ¡@¡@³Jîü˜ ¡@¡@¼ª(1)
   - Item: Bs_Item_M_S_30
     SourceNeeded: 2
     SourceItem:
@@ -701,7 +701,7 @@ Body:
         Amount: 30
       - Item: Solid_Peeling
         Amount: 50
-    Reward: getitem(28942,1); # ì €ì£¼ë°›ì€ ê¸°ì‚¬ì˜ ë°©íŒ¨(1)
+    Reward: getitem(28942,1); # ïA€ì¡ÕËJ¡@â­ Éî¿ìÔQîü˜ ËJ¡@É\(1)
   - Item: Bs_Sha_M_S_3
     SourceNeeded: 2
     SourceItem:
@@ -768,7 +768,7 @@ Body:
       - Item: S_Immune_Armor
       - Item: S_Athena_Shield
       - Item: S_Athena_Earring
-    Reward: getitem(24399,1); # ì´ë®¨ë“œ ì•„í…Œë‚˜ ì‰´ë“œ ì‰ë„ìš°
+    Reward: getitem(24399,1); # îü±¹¡@¡@œ è²ì¿¡@¡@˜ äÈ±¹áì äÈİkÑz¡@°
   - Item: HardChamption_Mix
     SourceNeeded: 2
     NeedRefineMin: 7
@@ -776,14 +776,14 @@ Body:
       - Item: S_Hard_Armor
       - Item: S_Hard_Earring
       - Item: S_Champion_Shoes
-    Reward: getitem(24400,1); # í•˜ë“œ ì±”í”¼ì–¸ ìŠˆì¦ˆ ì‰ë„ìš°
+    Reward: getitem(24400,1); # ³¼¡@áì ÁÔÙ}é°¾d¸ äÃØ¥¡@ äÈİkÑz¡@°
   - Item: KingbirdAncient_Mix
     SourceNeeded: 2
     NeedRefineMin: 7
     SourceItem:
       - Item: S_Kingbird_Weapon
       - Item: S_Ancient_Armor
-    Reward: getitem(24401,1); # í‚¹ë²„ë“œ ì—ì´ì…˜íŠ¸ ì•„ë¨¸ ì‰ë„ìš°
+    Reward: getitem(24401,1); # ¡@»ÓğT¡@œ ¡@¡@¡@äÀ¡@Îj è²¡@¡@ äÈİkÑz¡@°
   - Item: CriticalHit_Mix
     SourceNeeded: 2
     NeedRefineMin: 7
@@ -792,7 +792,7 @@ Body:
       - Item: S_Critical_Shield
       - Item: S_Cri_Hit_Weapon
       - Item: S_Critical_Armor
-    Reward: getitem(15280,1); # í¬ë¦¬í‹°ì»¬ íˆíŠ¸ ì•„ë¨¸ ì‰ë„ìš°
+    Reward: getitem(15280,1); # øÒ¡@£OÃA¿ì·Æ ¹|Ø}Îj è²¡@¡@ äÈİkÑz¡@°
   - Item: Silver_Statue
     SourceItem:
       - Item: Bloody_Knight_Shield
@@ -803,7 +803,7 @@ Body:
     SourceItem:
       - Item: S_Infinity_Earring
       - Item: S_Infinity_Pendant
-    Reward: getitem(24386,1); # ì¸í”¼ë‹ˆí‹° ì›¨í° ì‰ë„ìš°
+    Reward: getitem(24386,1); # îüª¸é°¡@Ø}¡@ ìU¡@Éß äÈİkÑz¡@°
   - Item: Bs_Sha_M_S_8
     SourceNeeded: 3
     NeedRefineMin: 5
@@ -902,7 +902,7 @@ Body:
       - Item: S_FireBolt_Armor
       - Item: S_LightingBolt_Armor
       - Item: S_EarthSpike_Armor
-    Reward: getitem(24334,1); # ë§¤ì§ ì»´í¬ì¦ˆ ì•„ë¨¸ ì‰ë„ìš°
+    Reward: getitem(24334,1); # å÷¡@¡@ ±İ¿ù±nİ÷ˆ è²¡@¡@ äÈİkÑz¡@°
   - Item: BearersShadow_Mix
     SourceNeeded: 3
     NeedRefineMin: 7

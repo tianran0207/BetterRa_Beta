@@ -33,49 +33,49 @@
 -	script	Seiyablem#dummy::SocketEnchant	-1,{
 	if (checkweight(1201,1) == 0)
 	{
-		mes "- 等一下!! -";
-		mes "- 目前您携带的物品已经太多了 -";
-		mes "- 请减少一下负重之后 -";
-		mes "- 再来找我吧 -";
+		mes "- 单!! -";
+		mes "- ヘ玡眤拟盿珇竒び -";
+		mes "- 叫搭ぶ璽ぇ -";
+		mes "- ㄓти -";
 		close;
 	}
-	mes "[世雅布莲]";
-	mes "我是一位专业打孔工程师.";
-	mes "打孔能为普通武器和防具增加拓展卡槽.";
-	mes "我的收费以及打孔所需的材料和成功率, 根据装备的不同也会有所不同.";
+	mes "[懂ガ浆]";
+	mes "и琌盡穨ゴふ祘畍.";
+	mes "ゴふ炊硄猌竟㎝ňㄣ糤┹甶佳.";
+	mes "иΜ禣のゴふ┮惠㎝Θ瞯, 誹杆称ぃ穦Τ┮ぃ.";
 	next;
-	mes "[世雅布莲]";
-	mes "打孔看起来好像很简单, 但实际操作却比看起来复杂很多.";
-	mes "如果您对打孔感兴趣, 就来找我吧.";
+	mes "[懂ガ浆]";
+	mes "ゴふ癬ㄓ钩虏虫, 龟悔巨玱ゑ癬ㄓ蝋馒.";
+	mes "狦眤癸ゴふ稰砍届, 碞ㄓти.";
 	next;
-	switch(select("为武器打孔:为防具打孔:再听听打孔说明:取消"))
+	switch(select("猌竟ゴふ:ňㄣゴふ:ゴふ弧:"))
 	{
 		case 1:
-			mes "[世雅布莲]";
-			mes "您想为武器打孔吗?";
-			mes "我按照武器的打孔难易度进行了归类, C级是最容易的, S级是最困难的.";
-			mes "您想尝试哪个分类?";
+			mes "[懂ガ浆]";
+			mes "眤稱猌竟ゴふ盾?";
+			mes "и酚猌竟ゴふ螟秈︽耴摸, C琌程甧, S琌程螟.";
+			mes "眤稱沽刚だ摸?";
 			next;
-			switch(select("C级:B级:A级:S级"))
+			switch(select("C:B:A:S"))
 			{
 				case 1:
-					mes "[世雅布莲]";
-					mes "嗯? C级?";
-					mes "您希望我为哪一种C级武器打孔呢?";
+					mes "[懂ガ浆]";
+					mes "垛? C?";
+					mes "眤辨и销C猌竟ゴふ㎡?";
 					next;
-					switch(select("德瑞尹长戟:鞭子:小提琴"))
+					switch(select("紈风え磚:聾:矗礮"))
 					{
 						case 1: callfunc "Func_Socket",1460,1461,40,66,200,1010,10;
 						case 2: callfunc "Func_Socket",1950,1951,40,66,200,1010,10;
 						case 3: callfunc "Func_Socket",1901,1902,40,66,200,1010,10;
 					}
 				case 2:
-					mes "[世雅布莲]";
-					mes "B级难度?";
-					mes "好的, 这是难易度适中的装备类型.";
-					mes "您希望我为哪一种B级武器打孔呢?";
+					mes "[懂ガ浆]";
+					mes "B螟?";
+					mes ", 硂琌螟屿い杆称摸.";
+					mes "眤辨и销B猌竟ゴふ㎡?";
 					next;
-					switch(select("链锤:长柄短剑:角弓:步兵长矛:海东剑:鲁特琴:钢铁鞭子:虎爪拳套:埃布尔雷弓"))
+					switch(select("渺凌:琡祏糃:à:˙ベ:狥糃:緗疭礮:葵臟聾:甅:甁ガ焊筽"))
 					{
 						case 1: callfunc "Func_Socket",1519,1520,40,61,300,1010,10;
 						case 2: callfunc "Func_Socket",1219,1220,40,61,300, 984, 1,999,5;
@@ -88,12 +88,12 @@
 						case 9: callfunc "Func_Socket",1713,1715,40,61,300, 984, 2,999,5;
 					}
 				case 3:
-					mes "[世雅布莲]";
-					mes "哇, A级难度.";
-					mes "这个类别的风险可是会有点高哟!";
-					mes "您希望我为哪一种A级武器打孔呢?";
+					mes "[懂ガ浆]";
+					mes "珃, A螟.";
+					mes "硂摸繧琌穦Τ翴蔼抽!";
+					mes "眤辨и销A猌竟ゴふ㎡?";
 					next;
-					switch(select("猎人之弓:高等生存的魔杖(INT):巨大双手剑:水纹之剑:刺杀拳刃:贝利斯塔强弩:昏迷之锤:秘拳套 闪光:十字巨剑"))
+					switch(select("聐ぇ:蔼单ネ臸(INT):エ蛮も糃:ぇ糃:炳:ī吹娥眏└:癵ぇ凌:甅 皗:エ糃"))
 					{
 						case 1: callfunc "Func_Socket",1718,1726,40,61,500,984,2,999,10;
 						case 2: callfunc "Func_Socket",1619,1620,40,61,500,984,5,999,10;
@@ -106,13 +106,13 @@
 						case 9: callfunc "Func_Socket",1163,1172,40,61,500,984,2,999,10; // NPC says "5 Oridecon" (Aegis) but takes only 2
 					}
 				case 4:
-					mes "[世雅布莲]";
-					mes "哇, 哇, 哇...";
-					mes "S级难度? 您确定?...";
-					mes "如果我真的能做成这件事, 这将是一个奇迹.";
-					mes "您希望我为哪一种S级武器打孔呢?";
+					mes "[懂ガ浆]";
+					mes "珃, 珃, 珃...";
+					mes "S螟? 眤谔﹚?...";
+					mes "狦и痷暗Θ硂ンㄆ, 硂盢琌格.";
+					mes "眤辨и销S猌竟ゴふ㎡?";
 					next;
-					switch(select("刚尼尔长矛:巨毒短剑:破甲短锥:砂尘短剑:卡卡普剑:狂击之剑:死神之镰:生存的魔杖(DEX)"))
+					switch(select("ェ焊ベ:エ瑀祏糃:瘆ヒ祏繞:剐祏糃:炊糃:╣阑ぇ糃:ぇ臝:ネ臸(DEX)"))
 					{
 						case 1: callfunc "Func_Socket", 1413, 1418,40,51,1000,984,5,999,10;
 						case 2: callfunc "Func_Socket", 1239,13016,40,51,1000,984,5,999,10;
@@ -125,22 +125,22 @@
 					}
 			}
 		case 2:
-			mes "[世雅布莲]";
-			mes "防具嘛?";
-			mes "可以, 当然没问题.";
-			mes "防具根据打孔难度的不同, 我将防具被分为四个不同等级.";
-			mes "C级是最简单的, S级是最困难的.";
-			mes "您想尝试哪个分类?";
+			mes "[懂ガ浆]";
+			mes "ňㄣ估?";
+			mes ", 讽礛⊿拜肈.";
+			mes "ňㄣ誹ゴふ螟ぃ, и盢ňㄣ砆だぃ单.";
+			mes "C琌程虏虫, S琌程螟.";
+			mes "眤稱沽刚だ摸?";
 			next;
-			switch(select("C级:B级:A级:S级"))
+			switch(select("C:B:A:S"))
 			{
 				case 1:
-					mes "[世雅布莲]";
-					mes "C级防具, 对么?";
-					mes "听起来很合理的嘛.";
-					mes "您想尝试给什么防具打孔呢?";
+					mes "[懂ガ浆]";
+					mes "Cňㄣ, 癸?";
+					mes "癬ㄓ瞶估.";
+					mes "眤稱沽刚倒ぐňㄣゴふ㎡?";
 					next;
-					switch(select("大衣:长大衣:头箍:圣职之帽"))
+					switch(select("︾:︾:繷鉚:蒾戮ぇ碪"))
 					{
 						case 1: callfunc "Func_Socket",2307,2308,40,66,200,999,3;
 						case 2: callfunc "Func_Socket",2309,2310,40,66,200,999,3;
@@ -148,11 +148,11 @@
 						case 4: callfunc "Func_Socket",2216,2217,40,66,200,999,3;
 					}
 				case 2:
-					mes "[世雅布莲]";
-					mes "您选择了难易度适中的B级防具.";
-					mes "那么, 想尝试给什么防具打孔呢?";
+					mes "[懂ガ浆]";
+					mes "眤匡拒螟屿いBňㄣ.";
+					mes "ê, 稱沽刚倒ぐňㄣゴふ㎡?";
 					next;
-					switch(select("镜盾:钢铁锁子甲:圣职之衣:丝质外袍:战士长靴:长靴:披肩:铁盾:圆盾:钢盾:妖道帽"))
+					switch(select("描:葵臟玛ヒ:蒾戮ぇ︾:捣借砊:驹箄:箄:┸:臟:蛾:葵:Н笵碪"))
 					{
 						case 1:  callfunc "Func_Socket",2107,2108,40,61,250,999,5;
 						case 2:  callfunc "Func_Socket",2314,2315,40,61,250,999,5;
@@ -167,12 +167,12 @@
 						case 11: callfunc "Func_Socket",5046,5168,40,61,250,999,5;
 					}
 				case 3:
-					mes "[世雅布莲]";
-					mes "哇, A级防具.";
-					mes "这个类别的风险可是会有点高哟!";
-					mes "好吧, 您想尝试给什么防具打孔呢?";
+					mes "[懂ガ浆]";
+					mes "珃, Aňㄣ.";
+					mes "硂摸繧琌穦Τ翴蔼抽!";
+					mes ", 眤稱沽刚倒ぐňㄣゴふ㎡?";
 					next;
-					switch(select("宝石头盔:软呢帽:谎言纪录本:紧身便衣:秘银金属铠甲:钢铁铠甲:盗贼之衣:重靴:修女的帽子:斗篷:金属头盔:忍服 血樱:兽人头盔:伯爵斗篷:神圣之帽:黄金帽:敏捷别针:僵尸帽"))
+					switch(select("腳ホ繷帛:硁㎡碪:晾ē魁セ:候ō獽︾:蝗妮馴ヒ:葵臟馴ヒ:祍搁ぇ︾:箄:碪:ゆ罯:妮繷帛:г狝 ﹀腻:脋繷帛:里ゆ罯:蒾ぇ碪:独碪:庇倍皐:圾碪"))
 					{
 						case 1:  callfunc "Func_Socket",2230,2231,40,61,400,985,1;
 						case 2:  callfunc "Func_Socket",5114,5120,40,61,400,985,1;
@@ -194,11 +194,11 @@
 						case 18: callfunc "Func_Socket",2264,5167,40,61,300,985,1;
 					}
 				case 4:
-					mes "[世雅布莲]";
-					mes "呃... S级防具? 您确定?";
-					mes "好吧... 您想尝试给什么防具打孔呢? 我会告诉您需要什么材料.";
+					mes "[懂ガ浆]";
+					mes "... Sňㄣ? 眤谔﹚?";
+					mes "... 眤稱沽刚倒ぐňㄣゴふ㎡? и穦禗眤惠璶ぐ.";
 					next;
-					switch(select("山羊头盔:尖角发圈:骨制头盔:海盗船长帽:王冠:后冠:人面狮身帽:创作者外袍:智力耳环:力量戒指:神射手套"))
+					switch(select("ο繷帛:à祇伴:癌繷帛:祍差碪:玜:玜:粪ō碪:承砊:醇φ吏:秖з:甮も甅"))
 					{
 						case 1:  callfunc "Func_Socket",2256,5160,40,51,2000,985,2;
 						case 2:  callfunc "Func_Socket",2258,5161,40,51,2000,985,2;
@@ -214,33 +214,33 @@
 					}
 			}
 		case 3:
-			mes "[世雅布莲]";
-			mes "我的打孔技术还达不到艺术家级别.";
-			mes "它非常复杂, 如果我想说谎的话, 那么我会说“我知道打孔过程中每一个因素带来的后果”, 但我是个诚实的人.";
-			mes "不过, 我倒是留意到几个趋势...";
+			mes "[懂ガ浆]";
+			mes "иゴふм砃临笷ぃ美砃產.";
+			mes "ウ獶盽蝋馒, 狦и稱弧晾杠, êи穦弧¨и笵ゴふ筁祘い–盿ㄓ狦〃, и琌港龟.";
+			mes "ぃ筁, и琌痙種镣墩...";
 			next;
-			mes "[世雅布莲]";
-			mes "在某些城镇中, 装备精炼值越低则打孔成功率越高.";
-			mes "而在另外一些城镇, 则恰恰相反.";
-			mes "你不觉得这件事很奇怪么?";
+			mes "[懂ガ浆]";
+			mes "琘ㄇ马い, 杆称弘芬禫玥ゴふΘ瞯禫蔼.";
+			mes "τㄇ马, 玥は.";
+			mes "ぃ谋眔硂ンㄆ┣?";
 			next;
-			mes "[世雅布莲]";
-			mes "噢, 还真有些重要的事情得让您知道.";
-			mes "如果您请求我给某种装备打孔的话, 请确保您的背包中没有与它同名的装备.";
+			mes "[懂ガ浆]";
+			mes "揪, 临痷Τㄇ璶ㄆ薄眔琵眤笵.";
+			mes "狦眤叫―и倒琘销杆称ゴふ杠, 叫谔玂眤璉い⊿Τ蒓ウ杆称.";
 			next;
-			mes "[世雅布莲]";
-			mes "例如: 您背包中携带着一件 +7 的斗篷和一件没精炼的斗篷. 那么我将随机选取一个斗篷来打孔.";
-			mes "请记住一定要非常小心.";
+			mes "[懂ガ浆]";
+			mes "ㄒ: 眤璉い拟盿帝ン +7 ゆ罯㎝ン⊿弘芬ゆ罯. êи盢繦审匡ゆ罯ㄓゴふ.";
+			mes "叫癘﹚璶獶盽み.";
 			next;
-			mes "[世雅布莲]";
-			mes "记住, ^FF0000只带一个要打孔的装备在身上^000000.";
-			mes "其他同名的装备都请先放在卡普拉仓库, 明白了吗?";
+			mes "[懂ガ浆]";
+			mes "癘, ^FF0000盿璶ゴふ杆称ō^000000.";
+			mes "ㄤ杆称常叫炊┰畐, フ盾?";
 			close;
 		case 4:
-			mes "[世雅布莲]";
-			mes "放轻松, 冒险家. ";
-			mes "如果您想要尝试给装备打孔, 那么请将您的装备穿回来给我看看.";
-			mes "再见~";
+			mes "[懂ガ浆]";
+			mes "淮猀, 玙繧產. ";
+			mes "狦眤稱璶沽刚倒杆称ゴふ, ê叫盢眤杆称ㄓ倒и.";
+			mes "ǎ~";
 			close;
 	}
 }
@@ -252,47 +252,47 @@ function	script	Func_Socket	{
 	setarray .@req_amount[0], getarg(6), getarg(8,0);
 
 	disable_items;
-	mes "[世雅布莲]";
-	mes "您想要尝试为 "+ getitemname(.@item_id)+ " 打孔对么?";
-	mes "好吧, 那么请带给我";
-	mes "^FF0000"+ .@req_amount[0] +" "+ getitemname(.@item_req[0]) + (.@req_amount[0] > 1 && .@item_req[0] != 999 ? "":"") +"^000000, "+ (.@item_req[1] != 0 && .@req_amount[1] != 0 ? ("^FF0000"+ .@req_amount[1] +" "+ getitemname(.@item_req[1]) + (.@req_amount[1] > 1 && .@item_req[1] != 999 ? "":"") + "^000000 ") : "") + "和我 ^FF0000" + (.@zeny_req >= 1000 ? (.@zeny_req /1000 +",000") : .@zeny_req) +",000 zeny^000000 服务费.";
-	mes "对了, 别忘记带上要打孔的 " + getitemname(.@item_id) + "!";
+	mes "[懂ガ浆]";
+	mes "眤稱璶沽刚 "+ getitemname(.@item_id)+ " ゴふ癸?";
+	mes ", ê叫盿倒и";
+	mes "^FF0000"+ .@req_amount[0] +" "+ getitemname(.@item_req[0]) + (.@req_amount[0] > 1 && .@item_req[0] != 999 ? "":"") +"^000000, "+ (.@item_req[1] != 0 && .@req_amount[1] != 0 ? ("^FF0000"+ .@req_amount[1] +" "+ getitemname(.@item_req[1]) + (.@req_amount[1] > 1 && .@item_req[1] != 999 ? "":"") + "^000000 ") : "") + "㎝и ^FF0000" + (.@zeny_req >= 1000 ? (.@zeny_req /1000 +",000") : .@zeny_req) +",000 zeny^000000 狝叭禣.";
+	mes "癸, а癘盿璶ゴふ " + getitemname(.@item_id) + "!";
 	next;
-	mes "[世雅布莲]";
+	mes "[懂ガ浆]";
 	if (getiteminfo(.@item_id,5) & EQP_HAND_R) // weapon
 	{
-		mes "如果您准备了我需要的物品和费用, 我会尝试在您的武器上打孔.";
-		mes "在那之前, 我必须告诉您相关的风险.";
+		mes "狦眤称и惠璶珇㎝禣ノ, и穦沽刚眤猌竟ゴふ.";
+		mes "êぇ玡, иゲ斗禗眤闽繧.";
 		next;
-		mes "[世雅布莲]";
-		mes "如果尝试打孔到您的武器时失败了, 那么^FF0000武器^000000及^FF0000上面的卡片^000000, 都将被^FF0000摧毁^000000.";
+		mes "[懂ガ浆]";
+		mes "狦沽刚ゴふ眤猌竟ア毖, ê^FF0000猌竟^000000の^FF0000^000000, 常盢砆^FF0000篟反^000000.";
 	}
 	else // armor
 	{
-		mes "如果您准备了我需要的物品和费用, 我会尝试在您的防具上打孔. ";
-		mes "在那之前, 我必须告诉您相关的风险.";
+		mes "狦眤称и惠璶珇㎝禣ノ, и穦沽刚眤ňㄣゴふ. ";
+		mes "êぇ玡, иゲ斗禗眤闽繧.";
 		next;
-		mes "[世雅布莲]";
-		mes "如果尝试打孔到您的防具时失败了, 那么^FF0000防具^000000及^FF0000上面的卡片^000000, 都将被^FF0000摧毁^000000.";
+		mes "[懂ガ浆]";
+		mes "狦沽刚ゴふ眤ňㄣア毖, ê^FF0000ňㄣ^000000の^FF0000^000000, 常盢砆^FF0000篟反^000000.";
 	}
-	mes "您还想继续尝试打孔吗?";
+	mes "眤临稱膥尿沽刚ゴふ盾?";
 	next;
-	switch(select("继续尝试打孔:取消"))
+	switch(select("膥尿沽刚ゴふ:"))
 	{
 		case 1:
 			if ((Zeny >= .@zeny_req*1000) && countitem(.@item_req[0]) >= .@req_amount[0] && countitem(getarg(7,512)) >= .@req_amount[1] && countitem(.@item_id) > 0)// if there's no getarg(7) and getarg(8) provided, check itemcount against 0 (we still need a valid item ID though)
 			{
-				mes "[世雅布莲]";
-				mes "好吧, 我开始工作了!";
-				mes "请您祈祷我的工作一帆风顺吧.";
+				mes "[懂ガ浆]";
+				mes ", и秨﹍!";
+				mes "叫眤毛и抖.";
 				next;
 				set .@a, rand(1,100);
 				if ((.@a > getarg(2)) && (.@a < getarg(3)))
 				{
 					specialeffect getarg(3) == 51 ? EF_LORD : EF_SANCTUARY; // only S Class items have Lord of Vermillion effect
-					mes "[世雅布莲]";
-					mes "太好了, 成功了.";
-					mes "它看起来非常完美. 恭喜您!";
+					mes "[懂ガ浆]";
+					mes "び, Θ.";
+					mes "ウ癬ㄓ獶盽Ч. 尺眤!";
 					delitem .@item_id,1;
 					delitem .@item_req[0],.@req_amount[0];
 					if (.@item_req[1] != 0 && .@req_amount[1] != 0)
@@ -300,68 +300,68 @@ function	script	Func_Socket	{
 					Zeny = Zeny - .@zeny_req *1000;
 					getitem getarg(1),1;
 					next;
-					mes "[世雅布莲]";
-					mes "希望下次还能再见到您!";
+					mes "[懂ガ浆]";
+					mes "辨Ω临ǎ眤!";
 					close;
 				}
 				else
 				{
 					specialeffect EF_SUI_EXPLOSION;
-					mes "[世雅布莲]";
-					mes "哇! ...很抱歉, 打孔失败了.";
-					mes "不过, 我是完全无辜的.";
-					mes "这是您的运气, 以及上帝的安排, 明白吗?";
-					mes "别那么失望, 下次再来试试吧.";
+					mes "[懂ガ浆]";
+					mes "珃! ...╆簆, ゴふア毖.";
+					mes "ぃ筁, и琌Ч礚禿.";
+					mes "硂琌眤笲蒩, の逼, フ盾?";
+					mes "êア辨, Ωㄓ刚刚.";
 					delitem .@item_id,1;
 					delitem .@item_req[0],.@req_amount[0];
 					if (.@item_req[1] != 0 && .@req_amount[1] != 0)
 						delitem .@item_req[1],.@req_amount[1];
 					Zeny = Zeny - .@zeny_req *1000;
 					next;
-					mes "[世雅布莲]";
-					mes "我祝您下次能有好运气!";
+					mes "[懂ガ浆]";
+					mes "и眤ΩΤ笲蒩!";
 					close;
 				}
 			}
 			else
 			{
-				mes "[世雅布莲]";
-				mes "你好像缺少一些东西吧.";
-				mes "你确信你有需要打孔的装备, 以及所需的材料和足够的费用吗?";
+				mes "[懂ガ浆]";
+				mes "钩ぶㄇ狥﹁.";
+				mes "谔獺Τ惠璶ゴふ杆称, の┮惠㎝ì镑禣ノ盾?";
 				close;
 			}
 		case 2:
-			mes "[世雅布莲]";
-			mes "需要一些时间来想想嘛, 嗯?";
-			mes "好吧, 我可以完全明白.";
-			mes "记住, 如果人生在世不冒险的话, 生活是不会有乐趣的~";
+			mes "[懂ガ浆]";
+			mes "惠璶ㄇ丁ㄓ稱稱估, 垛?";
+			mes ", иЧフ.";
+			mes "癘, 狦ネぃ玙繧杠, ネ琌ぃ穦Τ贾届~";
 			close;
 	}
 }
 
-payon,140,151,5	duplicate(SocketEnchant)	世雅布莲#pay	84
-lhz_in02,281,35,5	duplicate(SocketEnchant)	世雅布莲#lhz	84
-prt_in,33,70,5	duplicate(SocketEnchant)	世雅布莲#prt	84
-morocc,51,41,4	duplicate(SocketEnchant)	世雅布莲#moc	84
+payon,140,151,5	duplicate(SocketEnchant)	懂ガ浆#pay	84
+lhz_in02,281,35,5	duplicate(SocketEnchant)	懂ガ浆#lhz	84
+prt_in,33,70,5	duplicate(SocketEnchant)	懂ガ浆#prt	84
+morocc,51,41,4	duplicate(SocketEnchant)	懂ガ浆#moc	84
 
 -	script	Young Man#dummy::SocketMan	-1,{
-	mes "[年轻人]";
-	mes "我在考虑成为一个打孔工程师.";
-	mes "它可以帮您的装备添加新的拓展卡槽, 如果我能掌握这种有利可图的能力, 那真是帅到家了.";
+	mes "[淮]";
+	mes "иσ納Θゴふ祘畍.";
+	mes "ウ腊眤杆称睰穝┹甶佳, 狦и磝搐硂销Τ瓜, ê痷琌產.";
 	next;
-	mes "[年轻人]";
-	mes "根据我的理解, 想要成功给装备打孔, 您的个人运气是非常重要的因素.";
-	mes "有时虽然会失败, 但是幸运的话, 有时一次性能给装备打上两个拓展卡槽.";
-	mes "很疯狂. 不是么?";
+	mes "[淮]";
+	mes "誹и瞶秆, 稱璶Θ倒杆称ゴふ, 眤笲蒩琌獶盽璶.";
+	mes "Τ瘤礛穦ア毖, 琌┋笲杠, ΤΩ┦倒杆称ゴㄢ┹甶佳.";
+	mes "浩╣. ぃ琌?";
 	next;
-	mes "[年轻人]";
-	mes "不过不要太激动.";
-	mes "只有部分特定类型的装备, 才有机会同时打上两个拓展卡槽.";
-	mes "在我成为学徒之前, 我不得不学习这么多关于打孔的知识...";
+	mes "[淮]";
+	mes "ぃ筁ぃ璶び縀笆.";
+	mes "Τ场だ疭﹚摸杆称, Τ审穦ゴㄢ┹甶佳.";
+	mes "иΘ厩畕ぇ玡, иぃ眔ぃ厩策硂闽ゴふ醚...";
 	close;
 }
 
-prt_in,31,57,1	duplicate(SocketMan)	年轻人#prt	97
-payon,143,143,7	duplicate(SocketMan)	年轻人#pay	97
-morocc,60,42,3	duplicate(SocketMan)	年轻人#moc	97
-lhz_in02,269,33,5	duplicate(SocketMan)	年轻人#lhz	97
+prt_in,31,57,1	duplicate(SocketMan)	淮#prt	97
+payon,143,143,7	duplicate(SocketMan)	淮#pay	97
+morocc,60,42,3	duplicate(SocketMan)	淮#moc	97
+lhz_in02,269,33,5	duplicate(SocketMan)	淮#lhz	97

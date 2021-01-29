@@ -28,185 +28,185 @@
 
 // PecoPeco Breeder (for Knights) :: breeder
 //============================================================
-prontera,55,350,5	script	大嘴鸟饲养员(骑士)#knt	105,{
+prontera,55,350,5	script	糒尘箎緄(肕)#knt	105,{
 	if(Upper==0) set .@price,2500; //Normal Peco - default price
 	if(Upper==1) set .@price,2500; //Armored Peco
 	if(Upper==2) set .@price,2500; //Baby Peco
 
-	mes "[大嘴鸟饲养员]";
+	mes "[糒尘箎緄]";
 	if (BaseJob == Job_Knight && Class < Job_Rune_Knight) {
-		mes "你好, 荣耀的骑士呀, 欢迎光临.";
-		mes "你想要租用一只可爱的大嘴鸟吗?";
-		mes "租赁费用是 ^FF0000"+.@price+"^000000 金币.";
+		mes ", 篴模肕, 舧羬.";
+		mes "稱璶ノ稲糒尘盾?";
+		mes "割禣ノ琌 ^FF0000"+.@price+"^000000 刽.";
 		next;
-		switch(select("是的, 我想租一只大嘴鸟:取消")) {
+		switch(select("琌, и稱糒尘:")) {
 		case 1:
 			if (Zeny < .@price) {
-				mes "[大嘴鸟饲养员]";
-				mes "可是你没有足够的金钱哟.";
-				mes "难道...你破产了?";
+				mes "[糒尘箎緄]";
+				mes "琌⊿Τì镑窥抽.";
+				mes "螟笵...瘆玻?";
 				close;
 			}
 			else if(getskilllv("KN_RIDING") == 0) {
-				mes "[大嘴鸟饲养员]";
-				mes "很抱歉, 你无法使用本服务, 因为你根本控制不了大嘴鸟.";
-				mes "请你先学习技能列表中的^0000FF骑乘术^000000, 然后再来找我吧.";
+				mes "[糒尘箎緄]";
+				mes "╆簆, 礚猭ㄏノセ狝叭, セ北ぃ糒尘.";
+				mes "叫厩策мい^0000FF肕砃^000000, 礛ㄓти.";
 				close;
 			}
 			else if(checkriding()) {
-				mes "[大嘴鸟饲养员]";
-				mes "你已经租用了一只可爱的大嘴鸟了哟.";
-				mes "暂时不能租第二只啦 ^-^";
+				mes "[糒尘箎緄]";
+				mes "竒ノ稲糒尘抽.";
+				mes "既ぃ材罢 ^-^";
 				close;
 			}
 			else if(ismounting()) {
-				mes "[大嘴鸟饲养员]";
-				mes "哟, 你还乘坐着商城坐骑呢! 请先从商城坐骑身上下来吧, 不然你租了大嘴鸟也没用的呀.";
+				mes "[糒尘箎緄]";
+				mes "抽, 临Г帝坝Г肕㎡! 叫眖坝Г肕ōㄓ, ぃ礛糒尘⊿ノ.";
 				close;
 			}
 			set Zeny, Zeny-.@price;
 			setriding;
-			mes "[大嘴鸟饲养员]";
-			mes "好滴, 这是你的大嘴鸟, 请善待它哟.";
+			mes "[糒尘箎緄]";
+			mes "簑, 硂琌糒尘, 叫到ウ抽.";
 			close;
 		case 2:
-			mes "[大嘴鸟饲养员]";
-			mes "噢..我明白了.";
-			mes "祝你有个好心情, 再见啦.";
+			mes "[糒尘箎緄]";
+			mes "揪..иフ.";
+			mes "Τみ薄, ǎ罢.";
 			close;
 		}
 	} else {
-		mes "你好, 噢...? 很抱歉哈.";
-		mes "大嘴鸟只能租给^0000FF骑士^000000或^0000FF骑士领主^000000.";
+		mes ", 揪...? ╆簆.";
+		mes "糒尘倒^0000FF肕^000000┪^0000FF肕烩^000000.";
 		close;
 	}
 }
 
 // Grand PecoPeco Breeder (for Crusaders)
 //============================================================
-prontera,232,318,3	script	大嘴鸟饲养员(十字军)#cru	105,{
+prontera,232,318,3	script	糒尘箎緄(瓁)#cru	105,{
 	if(Upper==0) set .@price,3500; //Normal Peco - default price
 	if(Upper==1) set .@price,3500; //Armored Peco
 	if(Upper==2) set .@price,3500; //Baby Peco
 
-	mes "[大嘴鸟饲养员]";
+	mes "[糒尘箎緄]";
 	if (BaseJob == Job_Crusader && Class < Job_Rune_Knight) {
-		if(Upper != 1 ) mes "欢迎光临, 十字军.";
-		else mes "欢迎光临, 圣殿十字军.";
-		mes "我们为你准备了特殊的大嘴鸟.";
-		mes "租用一只需要 ^FF0000"+.@price+"^000000 金币.";
+		if(Upper != 1 ) mes "舧羬, 瓁.";
+		else mes "舧羬, 蒾返瓁.";
+		mes "и称疭糒尘.";
+		mes "ノ惠璶 ^FF0000"+.@price+"^000000 刽.";
 		next;
-		switch(select("太好了, 租给我一只大嘴鸟吧:取消")) {
+		switch(select("び, 倒и糒尘:")) {
 		case 1:
 			if (Zeny < .@price) {
-				mes "[大嘴鸟饲养员]";
-				mes "你没有足够的金钱来支付租金呢.";
-				mes "如果你想要租一只可爱的大嘴鸟的话, 请带来 ^FF0000"+.@price+"^000000 金币...";
+				mes "[糒尘箎緄]";
+				mes "⊿Τì镑窥ㄓや㎡.";
+				mes "狦稱璶稲糒尘杠, 叫盿ㄓ ^FF0000"+.@price+"^000000 刽...";
 				close;
 			}
 			else if(getskilllv("KN_RIDING") == 0) {
-				mes "[大嘴鸟饲养员]";
-				mes "你必须先学会^0000FF骑乘术^000000, 然后我才能租给你大嘴鸟.";
+				mes "[糒尘箎緄]";
+				mes "ゲ斗厩穦^0000FF肕砃^000000, 礛и倒糒尘.";
 				close;
 			}
 			else if(checkriding()) {
-				mes "[大嘴鸟饲养员]";
-				mes "你已经租用了一只可爱的大嘴鸟了哟.";
-				mes "暂时不能租第二只啦 ^-^";
+				mes "[糒尘箎緄]";
+				mes "竒ノ稲糒尘抽.";
+				mes "既ぃ材罢 ^-^";
 				close;
 			}
 			else if(ismounting()) {
-				mes "[大嘴鸟饲养员]";
-				mes "哟, 你还乘坐着商城坐骑呢! 请先从商城坐骑身上下来吧, 不然你租了大嘴鸟也没用的呀.";
+				mes "[糒尘箎緄]";
+				mes "抽, 临Г帝坝Г肕㎡! 叫眖坝Г肕ōㄓ, ぃ礛糒尘⊿ノ.";
 				close;
 			}
 			set Zeny, Zeny-.@price;
 			setriding;
-			mes "[大嘴鸟饲养员]";
-			mes "好滴, 这是你的大嘴鸟, 请善待它哟.";
+			mes "[糒尘箎緄]";
+			mes "簑, 硂琌糒尘, 叫到ウ抽.";
 			close;
 		case 2:
-			mes "[大嘴鸟饲养员]";
-			mes "那么...回见 ^-^";
+			mes "[糒尘箎緄]";
+			mes "ê...ǎ ^-^";
 			close;
 		}
 	} else {
-		mes "我能为您做些什么呢?";
-		mes "大嘴鸟的租赁要求是十分严格的, 必须是^0000FF十字军^000000或者^0000FF圣殿十字军^000000才能租赁.";
+		mes "и眤暗ㄇぐ㎡?";
+		mes "糒尘割璶―琌だ腨, ゲ斗琌^0000FF瓁^000000┪^0000FF蒾返瓁^000000割.";
 		close;
 	}
 }
 
 // Falcon Master :: breeder
 //============================================================
-hu_in01,381,304,5	script	猎鹰饲养员#hnt	105,{
+hu_in01,381,304,5	script	聐芅箎緄#hnt	105,{
 	if(Upper==0) set .@price,2500; //Normal Falcon - default price
 	if(Upper==1) set .@price,2500; //Scarf Falcon
 	if(Upper==2) set .@price,2500; //Baby Falcon
 
-	mes "[猎鹰饲养员]";
+	mes "[聐芅箎緄]";
 	if (BaseJob == Job_Hunter) {
 		if (checkwug()) {
-				mes "呃.. (⊙o⊙)...";
-				mes "在解散你召唤的野狼之前,";
-				mes "你不能租赁猎鹰!";
-				mes "因为她们说不定会打起来.";
+				mes ".. (◇o◇)...";
+				mes "秆床酬偿疶ぇ玡,";
+				mes "ぃ割聐芅!";
+				mes "弧ぃ﹚穦ゴ癬ㄓ.";
 			close;
 		}
-		mes "你好, 冒险家, 想租赁猎鹰吗?";
-		mes "只需 "+.@price+" 金币,";
-		mes "就可以租到值得信赖的猛禽哟~";
+		mes ", 玙繧產, 稱割聐芅盾?";
+		mes "惠 "+.@price+" 刽,";
+		mes "碞眔獺苦瞨竀抽~";
 		next;
-		switch(select("太棒了, 我刚好想租一只:取消")) {
+		switch(select("び次, и稱:")) {
 		case 1:
 			if (checkwug()) {
-				mes "[猎鹰饲养员]";
-				mes "呃.. (⊙o⊙)...";
-				mes "在解散你召唤的野狼之前,";
-				mes "你不能租赁猎鹰!";
-				mes "因为她们说不定会打起来.";
+				mes "[聐芅箎緄]";
+				mes ".. (◇o◇)...";
+				mes "秆床酬偿疶ぇ玡,";
+				mes "ぃ割聐芅!";
+				mes "弧ぃ﹚穦ゴ癬ㄓ.";
 				close;
 			}
 			if (Zeny < .@price) {
-				mes "[猎鹰饲养员]";
-				mes "这是什么情况?";
-				mes "你没有足够的钱哇?!";
-				mes "赶快开始狩猎魔物赚钱吧~";
+				mes "[聐芅箎緄]";
+				mes "硂琌ぐ薄猵?";
+				mes "⊿Τì镑窥珃?!";
+				mes "鱼е秨﹍聐臸寥窥~";
 				close;
 			}
 			else if(getskilllv("HT_FALCON") == 0) {
-				mes "[猎鹰饲养员]";
-				mes "我的天哪~";
-				mes "你必须先学会^0000ff驯鹰术^000000才行!";
-				mes "如果你控制不了猎鹰,";
-				mes "我是不放心把她们租给你的,";
-				mes "明白我的意思了吧?";
+				mes "[聐芅箎緄]";
+				mes "иぱ~";
+				mes "ゲ斗厩穦^0000ff攻芅砃^000000︽!";
+				mes "狦北ぃ聐芅,";
+				mes "и琌ぃみр倒,";
+				mes "フи種?";
 				close;
 			}
 			else if(checkfalcon()) {
-				mes "[猎鹰饲养员]";
-				mes "呃.. (⊙o⊙)...";
-				mes "你已经有一只猎鹰了.";
-				mes "往你的头上看,";
-				mes "她在你的头上盘旋飞翔哟...";
+				mes "[聐芅箎緄]";
+				mes ".. (◇o◇)...";
+				mes "竒Τ聐芅.";
+				mes "┕繷,";
+				mes "繷絃臂稻抽...";
 				close;
 			}
 			set Zeny, Zeny-.@price;
 			setfalcon;
-			mes "[猎鹰饲养员]";
-			mes "好的, 这是你的猎鹰, 请善待它哟.";
+			mes "[聐芅箎緄]";
+			mes ", 硂琌聐芅, 叫到ウ抽.";
 			close;
 		case 2:
-			mes "[猎鹰饲养员]";
-			mes "等、等一下, 你想去哪?";
-			mes "我用人格担保, 这些都是一流的猎鹰!";
-			mes "来吧, 哟~";
+			mes "[聐芅箎緄]";
+			mes "单单, 稱?";
+			mes "иノ踞玂, 硂ㄇ常琌瑈聐芅!";
+			mes "ㄓ, 抽~";
 			close;
 		}
 	} else {
-		mes "年轻的傻瓜!";
-		mes "猎鹰只有猎人、游侠系列职业能使用,";
-		mes "明白了吗? ...嘿嘿, 很羡慕吧?";
+		mes "淮短ナ!";
+		mes "聐芅Τ聐村獿╰戮穨ㄏノ,";
+		mes "フ盾? ...糑糑, 跜紏?";
 		close;
 	}
 }

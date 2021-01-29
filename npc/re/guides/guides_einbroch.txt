@@ -14,24 +14,24 @@
 //= 1.1 Navigation system update. [Euphy]
 //============================================================ 
 
-einbroch,72,202,4	script	解说员#ein01::GuideEinbroch	852,{
+einbroch,72,202,4	script	秆弧#ein01::GuideEinbroch	852,{
 	cutin "ein_soldier",2;
-	mes "[艾音布罗克 解说员]";
-	mes "您好! 这里是秀发兹发德的";
-	mes "钢铁之都 ^8B4513艾音布罗克^000000，";
-	mes "诚挚地欢迎大家的光临，";
-	mes "需要为您介绍吗?";
-	F_Navi("[艾音布罗克 解说员]");
+	mes "[︺ガ霉 秆弧]";
+	mes "眤! 硂ń琌╭祇祇紈";
+	mes "葵臟ぇ常 ^8B4513︺ガ霉^000000";
+	mes "港及舧產羬";
+	mes "惠璶眤ざ残盾?";
+	F_Navi("[︺ガ霉 秆弧]");
 	next;
 	while (1) {
-		switch(select("[ 主要设施 ]:[ 商人&小帮手 ]:删除小地图的标记:结束对话")) {
+		switch(select("[ 璶砞琁 ]:[ 坝&腊も ]:埃瓜夹癘:挡癸杠")) {
 		case 1:
 			set .@loop,1;
 			while (.@loop) {
-				switch(select("[ 机场 ]:[ Factory ]:[ Plaza ]:[ Hotel ]:[ 火车站 ]:[ 武器商人 ]:[ Laboratory ]:[ Monument ]:[ Blacksmith Guild ]:[ Gunslinger Guild ]:返回上一选单")) {
+				switch(select("[ 审初 ]:[ Factory ]:[ Plaza ]:[ Hotel ]:[ ó ]:[ 猌竟坝 ]:[ Laboratory ]:[ Monument ]:[ Blacksmith Guild ]:[ Gunslinger Guild ]:匡虫")) {
 				case 1:
-					mes "[艾音布罗克 解说员]";
-					mes "The "+F_Navi("机场","einbroch,64,204","^FF0000")+" is located";
+					mes "[︺ガ霉 秆弧]";
+					mes "The "+F_Navi("审初","einbroch,64,204","^FF0000")+" is located";
 					mes "in the northwestern part";
 					mes "of the city. There you can";
 					mes "see our city's pride and joy, the Airship. Remember that you must pay admission to board the Airship.";
@@ -39,7 +39,7 @@ einbroch,72,202,4	script	解说员#ein01::GuideEinbroch	852,{
 					next;
 					break;
 				case 2:
-					mes "[艾音布罗克 解说员]";
+					mes "[︺ガ霉 秆弧]";
 					mes "The "+F_Navi("Factory","einbroch,129,79")+", perhaps the";
 					mes "most important facility in";
 					mes "Einbroch, is located in the";
@@ -48,7 +48,7 @@ einbroch,72,202,4	script	解说员#ein01::GuideEinbroch	852,{
 					next;
 					break;
 				case 3:
-					mes "[艾音布罗克 解说员]";
+					mes "[︺ガ霉 秆弧]";
 					mes "The "+F_Navi("Plaza","einbroch,129,79")+", our biggest";
 					mes "shopping district, can be";
 					mes "found just east from the";
@@ -57,7 +57,7 @@ einbroch,72,202,4	script	解说员#ein01::GuideEinbroch	852,{
 					next;
 					break;
 				case 4:
-					mes "[艾音布罗克 解说员]";
+					mes "[︺ガ霉 秆弧]";
 					mes "The "+F_Navi("Hotel","einbroch,254,199")+" is east of";
 					mes "the Plaza and offers top";
 					mes "caliber accomodations.";
@@ -67,8 +67,8 @@ einbroch,72,202,4	script	解说员#ein01::GuideEinbroch	852,{
 					next;
 					break;
 				case 5:
-					mes "[艾音布罗克 解说员]";
-					mes "The "+F_Navi("火车站","einbroch,232,272")+" is";
+					mes "[︺ガ霉 秆弧]";
+					mes "The "+F_Navi("ó","einbroch,232,272")+" is";
 					mes "located in the northeast";
 					mes "part of Einbroch. Trains";
 					mes "running between here";
@@ -78,8 +78,8 @@ einbroch,72,202,4	script	解说员#ein01::GuideEinbroch	852,{
 					next;
 					break;
 				case 6:
-					mes "[艾音布罗克 解说员]";
-					mes "The "+F_Navi("武器商人","einbroch,216,211")+" is";
+					mes "[︺ガ霉 秆弧]";
+					mes "The "+F_Navi("猌竟坝","einbroch,216,211")+" is";
 					mes "located north from the";
 					mes "Plaza. There you can";
 					mes "purchase weapons for";
@@ -88,7 +88,7 @@ einbroch,72,202,4	script	解说员#ein01::GuideEinbroch	852,{
 					next;
 					break;
 				case 7:
-					mes "[艾音布罗克 解说员]";
+					mes "[︺ガ霉 秆弧]";
 					mes "The "+F_Navi("Laboratory","einbroch,55,52")+" is an";
 					mes "annex of the Factory and";
 					mes "is located in the southwest";
@@ -97,16 +97,16 @@ einbroch,72,202,4	script	解说员#ein01::GuideEinbroch	852,{
 					next;
 					break;
 				case 8:
-					mes "[艾音布罗克 解说员]";
+					mes "[︺ガ霉 秆弧]";
 					mes "I will mark the location";
 					mes "of the "+F_Navi("Monument","einbroch,178,173","^808080");
-					mes "小地图上了，";
-					mes "还需要其它服务吗?";
+					mes "瓜";
+					mes "临惠璶ㄤウ狝叭盾?";
 					viewpoint 1,178,173,7,0x808080;
 					next;
 					break;
 				case 9:
-					mes "[艾音布罗克 解说员]";
+					mes "[︺ガ霉 秆弧]";
 					mes "The "+F_Navi("Blacksmith Guild","einbroch,255,110")+" is";
 					mes "located in the southeast";
 					mes "part of Einbroch. You can";
@@ -116,11 +116,11 @@ einbroch,72,202,4	script	解说员#ein01::GuideEinbroch	852,{
 					next;
 					break;
 				case 10:
-					mes "[艾音布罗克 解说员]";
+					mes "[︺ガ霉 秆弧]";
 					mes "I will mark the location";
 					mes "of the "+F_Navi("Gunslinger Guild","einbroch,130,197","^008080");
-					mes "小地图上了，";
-					mes "还需要其它服务吗?";
+					mes "瓜";
+					mes "临惠璶ㄤウ狝叭盾?";
 					viewpoint 1,130,197,9,0x008080;
 					next;
 					break;
@@ -133,43 +133,43 @@ einbroch,72,202,4	script	解说员#ein01::GuideEinbroch	852,{
 		case 2:
 			set .@loop,1;
 			while (.@loop) {
-				switch(select("[ Armsmith ]:[ 卡普拉职员s ]:[ 乐园团传送师 ]:返回上一选单")) {
+				switch(select("[ Armsmith ]:[ 炊┰戮s ]:[ 贾堕刮肚癳畍 ]:匡虫")) {
 				case 1:
-					mes "[艾音布罗克 解说员]";
+					mes "[︺ガ霉 秆弧]";
 					mes "You may go to ^FF1493Manthasman^000000,";
 					mes "the ^FF1493Armsmith^000000";
 					mes "on the 1st basement floor in the Blacksmith Guild.";
 					viewpoint 1,255,110,10,0xFF1493;
 					next;
-					mes "[艾音布罗克 解说员]";
+					mes "[︺ガ霉 秆弧]";
 					mes "I will mark the location";
 					mes "of the "+F_Navi("Armsmith","einbroch,255,110","^FF1493");
-					mes "小地图上了，";
-					mes "还需要其它服务吗?";
+					mes "瓜";
+					mes "临惠璶ㄤウ狝叭盾?";
 					next;
 					break;
 				case 2:
-					mes "[艾音布罗克 解说员]";
+					mes "[︺ガ霉 秆弧]";
 					mes "I will mark the locations";
-					mes "of the ^DA70D6卡普拉职员s^000000";
-					mes "小地图上了，";
-					mes "还需要其它服务吗?";
+					mes "of the ^DA70D6炊┰戮s^000000";
+					mes "瓜";
+					mes "临惠璶ㄤウ狝叭盾?";
 					viewpoint 1,242,205,11,0xDA70D6;
 					viewpoint 1,59,203,12,0xDA70D6;
 					next;
 					break;
 				case 3:
-					mes "[艾音布罗克 解说员]";
+					mes "[︺ガ霉 秆弧]";
 					mes "You can find";
-					mes "the ^CD1039乐园团传送师^000000";
+					mes "the ^CD1039贾堕刮肚癳畍^000000";
 					mes "on the 1st floor of the Gunslinger Guild.";
 					viewpoint 1,130,197,13,0xCD1039;
 					next;
-					mes "[艾音布罗克 解说员]";
+					mes "[︺ガ霉 秆弧]";
 					mes "I will mark the location";
-					mes "of the "+F_Navi("乐园团传送师","einbroch,130,197","^CD1039");
-					mes "小地图上了，";
-					mes "还需要其它服务吗?";
+					mes "of the "+F_Navi("贾堕刮肚癳畍","einbroch,130,197","^CD1039");
+					mes "瓜";
+					mes "临惠璶ㄤウ狝叭盾?";
 					next;
 					break;
 				case 4:
@@ -179,7 +179,7 @@ einbroch,72,202,4	script	解说员#ein01::GuideEinbroch	852,{
 			}
 			break;
 		case 3:
-			mes "[艾音布罗克 解说员]";
+			mes "[︺ガ霉 秆弧]";
 			mes "I'll remove the marks from your mini-map.";
 			mes "Do you need any other help?";
 			viewpoint 2,64,204,0,0xFFFFFF;
@@ -199,7 +199,7 @@ einbroch,72,202,4	script	解说员#ein01::GuideEinbroch	852,{
 			next;
 			break;
 		case 4:
-			mes "[艾音布罗克 解说员]";
+			mes "[︺ガ霉 秆弧]";
 			mes "Have a safe journey!";
 			close2;
 			cutin "ein_soldier",255;
@@ -207,25 +207,25 @@ einbroch,72,202,4	script	解说员#ein01::GuideEinbroch	852,{
 		}
 	}
 }
-einbroch,155,43,4	duplicate(GuideEinbroch)	解说员#ein02	852
-einbroch,162,317,4	duplicate(GuideEinbroch)	解说员#ein03	852
-einbroch,252,320,3	duplicate(GuideEinbroch)	解说员#ein04	852
+einbroch,155,43,4	duplicate(GuideEinbroch)	秆弧#ein02	852
+einbroch,162,317,4	duplicate(GuideEinbroch)	秆弧#ein03	852
+einbroch,252,320,3	duplicate(GuideEinbroch)	秆弧#ein04	852
 
-einbech,67,37,4	script	解说员#einbech01::GuideEinbech	852,{
+einbech,67,37,4	script	秆弧#einbech01::GuideEinbech	852,{
 	cutin "ein_soldier",2;
-	mes "[艾因贝赫 解说员]";
+	mes "[︺ī划 秆弧]";
 	mes "Welcome to ^8B4513Einbech^000000,";
 	mes "the Mining Town. We're";
 	mes "here to assist tourists,";
 	mes "so if you have any questions,";
 	mes "please feel free to ask us.";
-	F_Navi("[艾因贝赫 Guide]");
+	F_Navi("[︺ī划 Guide]");
 	next;
 	while (1) {
-		switch(select("[ 酒店 ]:[ 道具店 ]:[ 火车站 ]:[ Mine ]:[ 卡普拉职员 ]:删除小地图的标记:结束对话")) {
+		switch(select("[ 皊┍ ]:[ 笵ㄣ┍ ]:[ ó ]:[ Mine ]:[ 炊┰戮 ]:埃瓜夹癘:挡癸杠")) {
 		case 1:
-			mes "[艾因贝赫 解说员]";
-			mes "The "+F_Navi("酒店","einbech,157,106")+" is located";
+			mes "[︺ī划 秆弧]";
+			mes "The "+F_Navi("皊┍","einbech,157,106")+" is located";
 			mes "in the southern part of";
 			mes "Einbech. It's a nice place";
 			mes "to relax after a long day.";
@@ -233,8 +233,8 @@ einbech,67,37,4	script	解说员#einbech01::GuideEinbech	852,{
 			next;
 			break;
 		case 2:
-			mes "[艾因贝赫 解说员]";
-			mes "You can find the "+F_Navi("道具店","einbech,177,133")+" in the center of";
+			mes "[︺ī划 秆弧]";
+			mes "You can find the "+F_Navi("笵ㄣ┍","einbech,177,133")+" in the center of";
 			mes "Einbech. There, you can";
 			mes "purchase any tools you";
 			mes "might need for your travels.";
@@ -242,8 +242,8 @@ einbech,67,37,4	script	解说员#einbech01::GuideEinbech	852,{
 			next;
 			break;
 		case 3:
-			mes "[艾因贝赫 解说员]";
-			mes "The "+F_Navi("火车站s","einbech,39,215")+" are";
+			mes "[︺ī划 秆弧]";
+			mes "The "+F_Navi("ós","einbech,39,215")+" are";
 			mes "located in the northwest";
 			mes "and northeast parts of";
 			mes "Einbech. There, you can";
@@ -252,7 +252,7 @@ einbech,67,37,4	script	解说员#einbech01::GuideEinbech	852,{
 			next;
 			break;
 		case 4:
-			mes "[艾因贝赫 解说员]";
+			mes "[︺ī划 秆弧]";
 			mes "The "+F_Navi("Mine","einbech,137,248")+", which is";
 			mes "Einbech's major industry,";
 			mes "is located in the northern";
@@ -262,16 +262,16 @@ einbech,67,37,4	script	解说员#einbech01::GuideEinbech	852,{
 			next;
 			break;
 		case 5:
-			mes "[艾因贝赫 解说员]";
+			mes "[︺ī划 秆弧]";
 			mes "I will mark the location";
-			mes "of the ^FF1493卡普拉职员^000000";
-			mes "小地图上了，";
-			mes "还需要其它服务吗?";
+			mes "of the ^FF1493炊┰戮^000000";
+			mes "瓜";
+			mes "临惠璶ㄤウ狝叭盾?";
 			viewpoint 1,181,132,4,0xFF1493;
 			next;
 			break;
 		case 6:
-			mes "[艾因贝赫 解说员]";
+			mes "[︺ī划 秆弧]";
 			mes "I'll remove the marks from your mini-map.";
 			mes "Do you need any other help?";
 			viewpoint 2,157,106,0,0xFFFFFF;
@@ -282,7 +282,7 @@ einbech,67,37,4	script	解说员#einbech01::GuideEinbech	852,{
 			next;
 			break;
 		case 7:
-			mes "[艾因贝赫 解说员]";
+			mes "[︺ī划 秆弧]";
 			mes "Have a safe journey!";
 			close2;
 			cutin "ein_soldier",255;
@@ -290,4 +290,4 @@ einbech,67,37,4	script	解说员#einbech01::GuideEinbech	852,{
 		}
 	}
 }
-einbech,48,214,4	duplicate(GuideEinbech)	解说员#einbech02	852
+einbech,48,214,4	duplicate(GuideEinbech)	秆弧#einbech02	852

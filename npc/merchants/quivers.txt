@@ -24,31 +24,31 @@
 //=     Removed "Holy Arrows" from the list.
 //============================================================
 
-payon_in01,5,134,5	script	发明家 钦斯	89,{
+payon_in01,5,134,5	script	祇產 窜吹	89,{
 	if (checkweight(1201,1) == 0 || MaxWeight - Weight < 2000) {
-		mes "[发明家 钦斯]";
-		mes "嘿, 你现在的负重太重了";
-		mes "你为什么不储存些到卡普拉那? 你把东西去整理一下再来,我们可以谈一谈,好吗?";
+		mes "[祇產 窜吹]";
+		mes "糑, 瞷璽び";
+		mes "ぐぃ纗ㄇ炊┰ê? р狥﹁俱瞶ㄓ,и酵酵,盾?";
 		close;
 	}
-	mes "[发明家 钦斯]";
-	mes "我是天才发明家 钦斯";
-	mes "毫不夸张的说，我绝对是";
-	mes "^663300本世纪最伟大的发明家^000000.";
-	mes "=. = 别用这么怀疑的眼神看着我";
+	mes "[祇產 窜吹]";
+	mes "и琌ぱ祇產 窜吹";
+	mes "睝ぃ眎弧и荡癸琌";
+	mes "^663300セ程岸祇產^000000.";
+	mes "=. = ノ硂输好泊帝и";
 	next;
-	mes "[发明家 钦斯]";
-	mes "我这一次发明了一个名留千史的物品！";
-	mes "那就是... ^663300魔法箭矢筒^000000 !! ";
+	mes "[祇產 窜吹]";
+	mes "и硂Ω祇痙珇";
+	mes "ê碞琌... ^663300臸猭絙ペ旦^000000 !! ";
 	emotion ET_BEST;
 	next;
-	mes "[发明家 钦斯]";
-	mes "我已经对这个神奇的魔法箭矢筒进行了多年的研究,日夜工作,现在我终于知道了如何浓缩魔法箭矢筒的秘诀,神奇的魔法箭矢筒能让你减轻身上的负重，可以携带更多的箭矢!";
+	mes "[祇產 窜吹]";
+	mes "и竒癸硂臸猭絙ペ旦秈︽╯,ら,瞷и沧笵緻罽臸猭絙ペ旦砕,臸猭絙ペ旦琵搭淮ō璽拟盿絙ペ!";
 	next;
-	mes "[发明家 钦斯]";
-	mes "你想要尝试一下我的魔法箭矢筒吗?我毫不怀疑，像你这样的人能欣赏我的天才！";
+	mes "[祇產 窜吹]";
+	mes "稱璶沽刚и臸猭絙ペ旦盾?и睝ぃ输好钩硂妓猋洁иぱ";
 	next;
-	switch(select("箭矢筒:铁箭矢筒:钢铁箭矢筒:神之金属箭矢筒:火箭矢筒:银箭矢筒:风灵箭矢筒:地灵箭矢筒:水灵箭矢筒:影子箭矢筒:无形箭矢筒:铁锈箭矢筒")) {
+	switch(select("絙ペ旦:臟絙ペ旦:葵臟絙ペ旦:ぇ妮絙ペ旦:絙ペ旦:蝗絙ペ旦:艶絙ペ旦:艶絙ペ旦:艶絙ペ旦:紇絙ペ旦:礚絙ペ旦:臟拿絙ペ旦")) {
 	case 1: callsub S_BuyQuiver,1750,500,500,12004;
 	case 2: callsub S_BuyQuiver,1770,500,500,12005;
 	case 3: callsub S_BuyQuiver,1753,500,500,12006;
@@ -63,7 +63,7 @@ payon_in01,5,134,5	script	发明家 钦斯	89,{
 	case 12: callsub S_BuyQuiver,1762,500,500,12015;
 	}
 	//This doesn't seem to be accessable...
-	//mes "[发明家 钦斯]";
+	//mes "[祇產 窜吹]";
 	//mes "Is there";
 	//mes "anything you want?";
 	//close;
@@ -74,84 +74,84 @@ S_BuyQuiver:
 	.@zeny_req = getarg(2);
 
 	if (countitem(.@item_id) >= .@amount) {
-		mes "[发明家 钦斯]";
-		mes "好极了!";
-		mes "你携带了什么箭矢? 我会给你一个箭矢筒，可以携带 "+.@amount+" 个 "+getitemname(.@item_id)+"！";
-		mes "不过需要手续费 ^FF3131"+.@zeny_req+" Zeny^000000.";
+		mes "[祇產 窜吹]";
+		mes "体!";
+		mes "拟盿ぐ絙ペ? и穦倒絙ペ旦拟盿 "+.@amount+"  "+getitemname(.@item_id)+"";
+		mes "ぃ筁惠璶も尿禣 ^FF3131"+.@zeny_req+" Zeny^000000.";
 		next;
-		switch(select("我想尽可能多的换成箭矢筒:只换一个箭矢筒:取消")) {
+		switch(select("и稱荷传Θ絙ペ旦:传絙ペ旦:")) {
 		case 1:
 			.@arrows = countitem(.@item_id);
 			set .@quiver,.@arrows / .@amount;
 			set .@arrows_used,.@quiver * .@amount;
 			.@arrow_zeny01 = .@quiver * .@zeny_req;
-			mes "你一共拥有 ^3131FF"+.@arrows+"^000000 个箭矢";
-			mes "最多可以换 ^3131FF"+.@quiver+"^000000 个箭矢筒";
-			mes "总共需要手续费: ^3131FF"+.@arrow_zeny01+" Zeny^000000";
+			mes "局Τ ^3131FF"+.@arrows+"^000000 絙ペ";
+			mes "程传 ^3131FF"+.@quiver+"^000000 絙ペ旦";
+			mes "羆惠璶も尿禣: ^3131FF"+.@arrow_zeny01+" Zeny^000000";
 			next;
-			mes "[发明家 钦斯]";
-			mes "确定要将身上的所有箭矢换成箭矢筒吗？";
+			mes "[祇產 窜吹]";
+			mes "谔﹚璶盢ō┮Τ絙ペ传Θ絙ペ旦盾";
 			next;
-			if (select("是的:取消") == 1) {
+			if (select("琌:") == 1) {
 				if (.@arrow_zeny01 < Zeny) {
-					mes "[发明家 钦斯]";
-					mes "这是你的箭矢筒，请收好！";
-					mes "另外请记住  ^FF0000你身上的负重量超过最大负重限额达到90%的话，就不能使用箭矢筒^000000.";
+					mes "[祇產 窜吹]";
+					mes "硂琌絙ペ旦叫Μ";
+					mes "叫癘  ^FF0000ō璽秖禬筁程璽肂笷90%杠碞ぃㄏノ絙ペ旦^000000.";
 					set Zeny, Zeny-.@arrow_zeny01;
 					delitem .@item_id,.@arrows_used;// Arrow
 					getitem getarg(3),.@quiver; //Quiver
 					next;
-					mes "[发明家 钦斯]";
-					mes "所以...";
-					mes "只要保持自己的背包不要太满，就应该不会有问题！";
+					mes "[祇產 窜吹]";
+					mes "┮...";
+					mes "璶玂璉ぃ璶び骸碞莱赣ぃ穦Τ拜肈";
 					close;
 				}
 				else {
-					mes "[发明家 钦斯]";
-					mes "很抱歉，你没有足够的金钱来完成交易！";
-					mes "为了发明箭矢筒，我倾尽了所有......";
+					mes "[祇產 窜吹]";
+					mes "╆簆⊿Τì镑窥ㄓЧΘユ";
+					mes "祇絙ペ旦и渡荷┮Τ......";
 					close;
 				}
 			}
-			mes "[发明家 钦斯]";
-			mes "你居然改变注意了！";
-			mes "就差一步，你就能享受这世上最犀利的发明给你带来的便利...";
+			mes "[祇產 窜吹]";
+			mes "﹡礛э跑猔種";
+			mes "碞畉˙碞ㄉ硂程礡祇倒盿ㄓ獽...";
 			close;
 		case 2:
 			if (Zeny > .@zeny_req) {
-				mes "[发明家 钦斯]";
-				mes "这是你的箭矢筒，请收好！";
-				mes "另外请记住 ^FF0000你身上的负重量超过最大负重限额达到90%的话，就不能使用箭矢筒^000000.";
+				mes "[祇產 窜吹]";
+				mes "硂琌絙ペ旦叫Μ";
+				mes "叫癘 ^FF0000ō璽秖禬筁程璽肂笷90%杠碞ぃㄏノ絙ペ旦^000000.";
 				Zeny = Zeny -.@zeny_req;
 				delitem .@item_id,.@amount;// Arrow
 				getitem getarg(3),1; //Quiver
 				next;
-				mes "[发明家 钦斯]";
-				mes "所以...";
-				mes "只要保持自己的背包不要太满，就应该不会有问题！";
+				mes "[祇產 窜吹]";
+				mes "┮...";
+				mes "璶玂璉ぃ璶び骸碞莱赣ぃ穦Τ拜肈";
 				close;
 			}
 			else {
-				mes "[发明家 钦斯]";
-				mes "你甚至连" + .@zeny_req +" Zeny 都没有?";
-				mes "很抱歉，我没有想到你会那么...";
-				mes "^333333贫困^000000.";
+				mes "[祇產 窜吹]";
+				mes "硈" + .@zeny_req +" Zeny 常⊿Τ?";
+				mes "╆簆и⊿Τ稱穦ê...";
+				mes "^333333砲^000000.";
 				close;
 			}
 		case 3:
-			mes "[发明家 钦斯]";
-			mes "什么...?";
-			mes "你看不出来这个发明可以永远改变箭矢的历史?! 未来就是现在!";
+			mes "[祇產 窜吹]";
+			mes "ぐ...?";
+			mes "ぃㄓ硂祇ッ环э跑絙ペ菌?! ゼㄓ碞琌瞷!";
 			close;
 		}
 	}
 	else {
-		mes "[发明家 钦斯]";
-		mes "你可以可以最多放"+.@amount+"支箭在箭筒里. 这是我用特殊秘方制作的,";
-		mes "所以使用箭矢筒的重量要比直接拿箭矢轻的多.";
+		mes "[祇產 窜吹]";
+		mes "程"+.@amount+"や絙絙旦ń. 硂琌иノ疭よ,";
+		mes "┮ㄏノ絙ペ旦秖璶ゑ钡絙ペ淮.";
 		next;
-		mes "[发明家 钦斯]";
-		mes "这是一个科学的奇迹! 你可以带"+.@amount+"支箭和"+.@zeny_req+"Zeny 来和我交换一个箭矢筒，来体验一下吧";
+		mes "[祇產 窜吹]";
+		mes "硂琌厩格! 盿"+.@amount+"や絙㎝"+.@zeny_req+"Zeny ㄓ㎝иユ传絙ペ旦ㄓ蔨喷";
 		close;
 	}
 }

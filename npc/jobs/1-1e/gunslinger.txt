@@ -28,156 +28,156 @@
 //= 2.2 Updated to match AEGIS script and Added Quest Log commands. [Kisuka]
 //============================================================ 
 
-que_ng,152,167,3	script	米勒大师	4_M_HUOLDARMY,{
+que_ng,152,167,3	script	μ扒畍	4_M_HUOLDARMY,{
 	if (Upper == 2) {
-		mes "[米勒大师]";
-		mes "好吧, 你是个很";
-		mes "可爱的熊孩子啊~";
-		mes "你的母亲在哪里?";
-		mes "这地方很危险的, 所以";
-		mes "请快点回家, 好么?";
+		mes "[μ扒畍]";
+		mes ", 琌";
+		mes "稲旱摆~";
+		mes "ダ克ń?";
+		mes "硂よ繧, ┮";
+		mes "叫е翴產, ?";
 		close;
 	}
 	if (Class == Job_Novice) {
 		if (!callfunc("F_CanChangeJob")) {
-			mes "[米勒大师]";
-			mes "能成为一个神枪手很有趣";
-			mes "对吧? ";
-			mes "你很有潜力";
-			mes "不过你还欠缺经验.";
-			mes "请在多多训练一些,";
-			mes "然后回来找我, 知道么?";
+			mes "[μ扒畍]";
+			mes "Θ簀もΤ届";
+			mes "癸? ";
+			mes "Τ肩";
+			mes "ぃ筁临ろ竒喷.";
+			mes "叫癡絤ㄇ,";
+			mes "礛ㄓти, 笵?";
 			close;
 		}
 		if (GUNS_Q == 0) {
-			mes "[米勒大师]";
-			mes "我是米勒, 我为自己代言";
-			mes "一位全职神枪手教官, 以及";
-			mes "一位全职守护在萨琳娜小姐身边的";
-			mes "保护者, 现在, 你需要什么?";
-			mes "如果并不重要, 不要打扰我的好么.";
+			mes "[μ扒畍]";
+			mes "и琌μ扒, иē";
+			mes "戮簀も毙﹛, の";
+			mes "戮臔履礩甊﹋ō娩";
+			mes "玂臔, 瞷, 惠璶ぐ?";
+			mes "狦ぃ璶, ぃ璶ゴ署и.";
 			next;
-			if(select("- 没啥.:- 我想成为一位神枪手.") == 1) {
-				mes "[米勒大师]";
-				mes "别浪费我的时间好么.";
-				mes "如果你想成为一位";
-				mes "神枪手, 那么再";
-				mes "回来并告诉我吧.";
+			if(select("- ⊿裕.:- и稱Θ簀も.") == 1) {
+				mes "[μ扒畍]";
+				mes "禣и丁.";
+				mes "狦稱Θ";
+				mes "簀も, ê";
+				mes "ㄓ禗и.";
 				close;
 			}
-			mes "[米勒大师]";
-			mes "唔. 你很年轻嘛";
-			mes "不过你的眼睛告诉了我你很";
-			mes "富有野心.你需要通过我们的面试和教育";
-			mes "才能成为一位神枪手.你确定了么?";
+			mes "[μ扒畍]";
+			mes ". 淮估";
+			mes "ぃ筁泊氟禗и";
+			mes "碔Τ偿み.惠璶硄筁и刚㎝毙▅";
+			mes "Θ簀も.谔﹚?";
 			next;
-			if(select("- 给我点时间让我想想.:- 没问题!") == 1) {
-				mes "[米勒大师]";
-				mes "我能理解.";
-				mes "如果你什么时候";
-				mes "决定了你想成为";
-				mes "一位神枪手";
-				mes "请立刻让我知道.";
-				mes "我会带领你开始的.";
+			if(select("- 倒и翴丁琵и稱稱.:- ⊿拜肈!") == 1) {
+				mes "[μ扒畍]";
+				mes "и瞶秆.";
+				mes "狦ぐ";
+				mes "∕﹚稱Θ";
+				mes "簀も";
+				mes "叫ミㄨ琵и笵.";
+				mes "и穦盿烩秨﹍.";
 				close;
 			}
-			mes "[米勒大师]";
-			mes "很好, 很好. 好吧,";
-			mes "那我们开始吧. ";
-			mes "带着这封信去找 聪明的野牛先生 吧";
-			mes "啊哈. 他是一个巫师";
-			mes "他会判断你";
-			mes "是否够格成为一个神枪手.";
+			mes "[μ扒畍]";
+			mes ", . ,";
+			mes "êи秨﹍. ";
+			mes "盿帝硂獺т 羙偿ネ ";
+			mes "摆. 琌畍";
+			mes "穦耞";
+			mes "琌镑Θ簀も.";
 			set GUNS_Q,1;
 			setquest 6020;
 			close;
 		}
 		else if (GUNS_Q == 1) {
-			mes "[米勒大师]";
-			mes "带着这份我";
-			mes "给你写的介绍信去";
-			mes "找聪明的野牛先生吧";
-			mes "呀哈～. 他将要测试你";
-			mes "是否能够称得上是不是块";
-			mes "当枪手的料.";
+			mes "[μ扒畍]";
+			mes "盿帝硂и";
+			mes "倒糶ざ残獺";
+			mes "т羙偿ネ";
+			mes "°. 盢璶代刚";
+			mes "琌镑嘿眔琌ぃ琌遏";
+			mes "讽簀も.";
 			close;
 		}
 		else if (GUNS_Q == 2) {
-			mes "[米勒大师]";
-			mes "唔... 聪明的野牛桑";
-			mes "叫你收集";
-			mes "你需要的证明?";
-			mes " 唔. 我猜那是";
-			mes "他的测试的一部分吧.";
+			mes "[μ扒畍]";
+			mes "... 羙偿";
+			mes "Μ栋";
+			mes "惠璶谍?";
+			mes " . и瞦ê琌";
+			mes "代刚场だ.";
 			close;
 		}
 		else if (GUNS_Q == 3) {
-			mes "[米勒大师]";
-			mes "聪明的野牛桑 ";
-			mes "叫你带给他一些牛奶?";
-			mes "如果他已经开始问你喜好了";
-			mes "那么他一定是非常喜欢你了";
-			mes "祝你好运, 我的朋友.";
+			mes "[μ扒畍]";
+			mes "羙偿 ";
+			mes "盿倒ㄇイ?";
+			mes "狦竒秨﹍拜尺";
+			mes "ê﹚琌獶盽尺舧";
+			mes "笲, и狟ね.";
 			close;
 		}
 		else if (GUNS_Q == 4) {
-			mes "[米勒大师]";
-			mes "我期待不久就能";
-			mes "听见你的好消息. ";
-			mes "你知道的,我非常";
-			mes "确定你能成为一位神枪手.";
+			mes "[μ扒畍]";
+			mes "и戳ぃ碞";
+			mes "ǎ. ";
+			mes "笵,и獶盽";
+			mes "谔﹚Θ簀も.";
 			close;
 		}
 		else if (GUNS_Q == 5) {
 			if (SkillPoint != 0) {
-				mes "[米勒大师]";
-				mes "嘿,你还有剩余的";
-				mes "技能点.你最好";
-				mes "把他们全部点了";
-				mes "然后再来找我.";
+				mes "[μ扒畍]";
+				mes "糑,临Τ逞";
+				mes "м翴.程";
+				mes "р场翴";
+				mes "礛ㄓти.";
 				close;
 			}
-			mes "[米勒大师]";
-			mes "喔, 你带来了";
-			mes "聪明的野牛先生的证书?";
-			mes "他已经很久给过";
-			mes "别人认证了, 所以";
-			mes "我非常对你感到自豪!";
+			mes "[μ扒畍]";
+			mes "翅, 盿ㄓ";
+			mes "羙偿ネ谍?";
+			mes "竒倒筁";
+			mes "粄谍, ┮";
+			mes "и獶盽癸稰花!";
 			next;
-			mes "[米勒大师]";
-			mes "如果聪明的野牛先生认可了,";
-			mes "那我也没什么理由拒绝你了";
-			mes "好吧,我将要";
-			mes "帮助你成为一位神枪手.";
-			mes "不过最初,让我给你介绍";
-			mes "神枪手的更多的细节.";
+			mes "[μ扒畍]";
+			mes "狦羙偿ネ粄,";
+			mes "êи⊿ぐ瞶パ┶荡";
+			mes ",и盢璶";
+			mes "腊Θ簀も.";
+			mes "ぃ筁程,琵и倒ざ残";
+			mes "簀も灿竊.";
 			next;
-			mes "[米勒大师]";
-			mes "作为一个神枪手, ";
-			mes "你必须随时带着你的枪";
-			mes "枪手工会";
-			mes "追踪着每一发子弹和每一支枪";
-			mes "所以你只能从我们的会员";
-			mes "那里买到武器.";
+			mes "[μ扒畍]";
+			mes "簀も, ";
+			mes "ゲ斗繦盿帝簀";
+			mes "簀も穦";
+			mes "發萝帝–祇紆㎝–や簀";
+			mes "┮眖и穦";
+			mes "êń禦猌竟.";
 			next;
-			mes "[米勒大师]";
-			mes "不过别担心, 枪手工会的员工";
-			mes "现在可以在到处找到了";
-			mes "不管怎样,";
-			mes "现在是时候给你介绍我们的工会会长, 萨琳娜女士 了.";
+			mes "[μ扒畍]";
+			mes "ぃ筁踞み, 簀も穦";
+			mes "瞷矪т";
+			mes "ぃ恨妓,";
+			mes "瞷琌倒ざ残и穦穦, 履礩甊 .";
 			next;
-			mes "[米勒大师]";
-			mes "你这几天说不定";
-			mes "有机会能遇见她.";
-			mes "总而言之, 现在我们必须";
-			mes "控制枪与子弹的销售,保证他们不会落入邪恶之手";
-			mes "或者不可靠的人手中.";
+			mes "[μ扒畍]";
+			mes "硂ぱ弧ぃ﹚";
+			mes "Τ审穦笿ǎ.";
+			mes "羆τēぇ, 瞷иゲ斗";
+			mes "北簀蒓紆綪扳,玂谍ぃ穦辅ǜ碿ぇも";
+			mes "┪ぃ綼もい.";
 			next;
-			mes "[米勒大师]";
-			mes "无论如何, 与一位神枪手";
-			mes "聊天总是很愉快的";
-			mes "所以,让我们保持联系吧";
-			mes "大地母亲忽悠着您.";
+			mes "[μ扒畍]";
+			mes "礚阶, 蒓簀も";
+			mes "册ぱ羆琌磖е";
+			mes "┮,琵и玂羛╰";
+			mes "ダ克┛眣帝眤.";
 			callfunc "Job_Change",Job_Gunslinger;
 			set GUNS_Q,6;
 			completequest 6024;
@@ -190,95 +190,95 @@ que_ng,152,167,3	script	米勒大师	4_M_HUOLDARMY,{
 		}
 	} else {
 		if (Class == Job_Gunslinger) {
-			mes "[米勒大师]";
-			mes "喔! 好久不见,";
-			mes "我的朋友,近来可好?";
-			mes "我希望你一直都有";
-			mes "好好的保养你的枪.";
-			mes "你如何对待你的枪,你的枪就如何待你 ";
-			mes "记住这点.";
+			mes "[μ扒畍]";
+			mes "翅! ぃǎ,";
+			mes "и狟ね,ㄓ?";
+			mes "и辨常Τ";
+			mes "玂緄簀.";
+			mes "癸簀,簀碞 ";
+			mes "癘硂翴.";
 			close;
 		} else {
-			mes "[米勒大师]";
-			mes "如果你没什么事的话";
-			mes "请继续你的路吧";
+			mes "[μ扒畍]";
+			mes "狦⊿ぐㄆ杠";
+			mes "叫膥尿隔";
 			close;
 		}
 	}
 }
 
-payon,184,65,3	script	聪明的野牛大师	4_M_LGTGRAND,{
+payon,184,65,3	script	羙偿畍	4_M_LGTGRAND,{
 	if (GUNS_Q == 1) {
-		mes "[聪明的野牛大师]";
-		mes "你好啊, 年轻的独狼.";
-		mes "什么风把你";
-		mes "吹到我的面前了?";
+		mes "[羙偿畍]";
+		mes "摆, 淮縒疶.";
+		mes "ぐр";
+		mes "и玡?";
 		next;
 		mes "["+strcharinfo(0)+"]";
-		mes "米勒先生给了我这封信";
-		mes "让我给你.";
-		mes "事实上, 我对如何成为";
-		mes "一个枪手很感兴趣...";
+		mes "μ扒ネ倒и硂獺";
+		mes "琵и倒.";
+		mes "ㄆ龟, и癸Θ";
+		mes "簀も稰砍届...";
 		next;
-		mes "[聪明的野牛大师]";
-		mes "你说的是米勒?";
-		mes "唔,黑狐从来都没有";
-		mes "给过那些他认为";
-		mes "成为不了好枪手的人介绍信";
-		mes "是的,";
-		mes "我想我知道为什么他要介绍你了.";
+		mes "[羙偿畍]";
+		mes "弧琌μ扒?";
+		mes ",堵眖ㄓ常⊿Τ";
+		mes "倒筁êㄇ粄";
+		mes "Θぃ簀もざ残獺";
+		mes "琌,";
+		mes "и稱и笵ぐ璶ざ残.";
 		next;
-		mes "[聪明的野牛大师]";
-		mes "我可以从你的眼神中看出来:";
-		mes "你有着热心肠和";
-		mes "极强的责任心.";
-		mes "你所需要的只是大地母亲的";
-		mes "的忽悠";
+		mes "[羙偿畍]";
+		mes "и眖泊いㄓ:";
+		mes "Τ帝荐み竮㎝";
+		mes "体眏砫ヴみ.";
+		mes "┮惠璶琌ダ克";
+		mes "┛眣";
 		next;
-		mes "[聪明的野牛大师]";
-		mes "我可以制作一张凭证";
-		mes "以证明你渴望";
-		mes "成为一名保地球的神枪手";
-		mes "我需要以下这些东西...";
+		mes "[羙偿畍]";
+		mes "и眎咎谍";
+		mes "谍戴辨";
+		mes "Θ玂瞴簀も";
+		mes "и惠璶硂ㄇ狥﹁...";
 		next;
-		mes "[聪明的野牛大师]";
-		mes "^3355FF 1个 玛哪树枝^000000,";
-		mes "^3355FF 3个 毛^000000,";
-		mes "^3355FF 3个 刹勒空结晶^000000,";
-		mes "^3355FF10个 坚硬外壳^000000,";
-		mes "^3355FF 3个 绿色草药^000000,";
-		mes "^3355FF 3个 彩色昆虫外壳^000000.";
+		mes "[羙偿畍]";
+		mes "^3355FF 1 嚎攫狵^000000,";
+		mes "^3355FF 3 を^000000,";
+		mes "^3355FF 3 玝扒挡垂^000000,";
+		mes "^3355FF10 绊祑催^000000,";
+		mes "^3355FF 3 厚︹媚^000000,";
+		mes "^3355FF 3 眒︹︿催^000000.";
 		next;
-		mes "[聪明的野牛大师]";
-		mes "在我制作好这个证明之后";
-		mes "你可以把这个证明带回给";
-		mes "黑狐, 然后他";
-		mes "将帮你成为神枪手";
+		mes "[羙偿畍]";
+		mes "и硂谍ぇ";
+		mes "р硂谍盿倒";
+		mes "堵, 礛";
+		mes "盢腊Θ簀も";
 		set GUNS_Q,2;
 		changequest 6020,6021;
 		close;
 	}
 	else if (GUNS_Q == 2) {
 		if (countitem(912) < 3 || countitem(914) < 3 || countitem(1019) < 1 || countitem(935) < 10 || countitem(511) < 3 || countitem(1013) < 3) {
-			mes "[聪明的野牛大师]";
-			mes "我可以制作一张凭证";
-		        mes "以证明你渴望";
-		        mes "成为一名保地球的神枪手";
-		        mes "我需要以下这些东西...";
+			mes "[羙偿畍]";
+			mes "и眎咎谍";
+		        mes "谍戴辨";
+		        mes "Θ玂瞴簀も";
+		        mes "и惠璶硂ㄇ狥﹁...";
 			next;
-			mes "[聪明的野牛大师]";
-			mes "^3355FF1 玛哪树枝^000000,";
-			mes "^3355FF3 毛^000000,";
-			mes "^3355FF3 刹勒空结晶 ^000000,";
-			mes "^3355FF10 坚硬外壳^000000,";
-			mes "^3355FF3 绿色草药^000000,";
-			mes "^3355FF3 彩色昆虫外壳^000000.";
+			mes "[羙偿畍]";
+			mes "^3355FF1 嚎攫狵^000000,";
+			mes "^3355FF3 を^000000,";
+			mes "^3355FF3 玝扒挡垂 ^000000,";
+			mes "^3355FF10 绊祑催^000000,";
+			mes "^3355FF3 厚︹媚^000000,";
+			mes "^3355FF3 眒︹︿催^000000.";
 			next;
-			mes "[聪明的野牛大师]";
-			mes "在我制作好这个证明之后";
-			mes "你可以把这个证明带回给";
-			mes "黑狐, 然后他";
-			mes "将帮你成为神枪手";
+			mes "[羙偿畍]";
+			mes "и硂谍ぇ";
+			mes "р硂谍盿倒";
+			mes "堵, 礛";
+			mes "盢腊Θ簀も";
 			close;
 		}
 		delitem 912,3; // Zargon
@@ -289,86 +289,86 @@ payon,184,65,3	script	聪明的野牛大师	4_M_LGTGRAND,{
 		delitem 1013,3; // Colorful_Shell
 		set GUNS_Q,3;
 		changequest 6021,6022;
-		mes "[聪明的野牛大师]";
-		mes "哈,你把我需要的东西都";
-		mes "带来了.";
-		mes "请给我点时间来制作";
-		mes "你需要的证明. ";
-		mes "如果你过一会再过来的话,";
-		mes "我就能做完了.";
+		mes "[羙偿畍]";
+		mes ",ри惠璶狥﹁常";
+		mes "盿ㄓ.";
+		mes "叫倒и翴丁ㄓ";
+		mes "惠璶谍. ";
+		mes "狦筁穦筁ㄓ杠,";
+		mes "и碞暗Ч.";
 		close;
 	}
 	else if (GUNS_Q == 3) {
-		mes "[聪明的野牛大师]";
-		mes "喔,你来的正好";
-		mes "这个证明";
-		mes "我已经做好了有一会了,人老了,不中用了";
-		mes "这使我会想起了我年轻的那些日子.";
+		mes "[羙偿畍]";
+		mes "翅,ㄓタ";
+		mes "硂谍";
+		mes "и竒暗Τ穦,ρ,ぃいノ";
+		mes "硂ㄏи穦稱癬и淮êㄇら.";
 		next;
-		mes "[聪明的野牛大师]";
-		mes "我已经为枪手协会";
-		mes "服务了有些年头了";
-		mes "我的主要职责就是";
-		mes "挑选出那些值得得到证明的家伙们";
-		mes "不过在那之前";
-		mes "我也是一个像你一样的冒险家(直到我的膝盖中了一键).";
+		mes "[羙偿畍]";
+		mes "и竒簀も穦";
+		mes "狝叭Τㄇ繷";
+		mes "и璶戮砫碞琌";
+		mes "珼匡êㄇ眔眔谍產ル";
+		mes "ぃ筁êぇ玡";
+		mes "и琌钩妓玙繧產(и渐籠い龄).";
 		next;
-		mes "[聪明的野牛大师]";
-		mes "这就如同昨天发生的一样";
-		mes "当我拿到我自己的";
-		mes "枪手证明时,";
-		mes "同样的一天我也遇见了";
-		mes "赛琳娜的父亲...";
-		mes "时间怎么过的这么快?";
+		mes "[羙偿畍]";
+		mes "硂碞琎ぱ祇ネ妓";
+		mes "讽ии";
+		mes "簀も谍,";
+		mes "妓ぱи笿ǎ";
+		mes "辽礩甊克...";
+		mes "丁筁硂е?";
 		next;
-		mes "[聪明的野牛大师]";
-		mes "呵... 我真的很欣赏";
-		mes "赛琳娜和黑狐为了枪手协会";
-		mes "招收新人所做的努力";
-		mes "我已经老了";
-		mes "不能什么事都亲历亲为了. *Sigh...* 这就是人生啊.";
+		mes "[羙偿畍]";
+		mes "... и痷猋洁";
+		mes "辽礩甊㎝堵簀も穦";
+		mes "┷Μ穝┮暗";
+		mes "и竒ρ";
+		mes "ぃぐㄆ常克菌克. *Sigh...* 硂碞琌ネ摆.";
 		next;
-		mes "[聪明的野牛大师]";
-		mes "在你离开之前,";
-		mes "能帮我个小忙么?";
-		mes "我渴了, 我非常喜欢";
-		mes "在渴的时候来以小瓶牛奶. ";
-		mes "你能可以给我带一瓶来么?";
+		mes "[羙偿畍]";
+		mes "置秨ぇ玡,";
+		mes "腊иΓ?";
+		mes "и戴, и獶盽尺舧";
+		mes "戴ㄓ瞺イ. ";
+		mes "倒и盿瞺ㄓ?";
 		set GUNS_Q,4;
 		changequest 6022,6023;
 		close;
 	}
 	else if (GUNS_Q == 4) {
 		if (countitem(519) < 1) {
-			mes "[聪明的野牛大师]";
-			mes "我是一个就要入土为安的老人了";
-			mes "你能帮我这个可怜老人个忙";
-			mes "帮我带一瓶鲜美的牛奶来么,";
-			mes "拜托了";
+			mes "[羙偿畍]";
+			mes "и琌碞璶ρ";
+			mes "腊и硂贪ρΓ";
+			mes "腊и盿瞺翧イㄓ,";
+			mes "Λ";
 			close;
 		}
 		delitem 519,1; // Milk
 		set GUNS_Q,5;
 		changequest 6023,6024;
-		mes "[聪明的野牛大师]";
-		mes "喔, 谢谢你!";
-		mes "我看到了你";
-		mes "给我带来的牛奶";
-		mes "呜呜呜呜,美味啊~";
+		mes "[羙偿畍]";
+		mes "翅, 谅谅!";
+		mes "и";
+		mes "倒и盿ㄓイ";
+		mes "躲躲躲躲,摆~";
 		next;
-		mes "[聪明的野牛大师]";
-		mes "我能从你给我带的这瓶牛奶中,";
-		mes "看出你的耐心 温柔 和善良";
-		mes "是的!这就是我们想要一个神枪手所拥有的全部特质.";
+		mes "[羙偿畍]";
+		mes "и眖倒и盿硂瞺イい,";
+		mes "瑻み 放琗 ㎝到▆";
+		mes "琌!硂碞琌и稱璶簀も┮局Τ场疭借.";
 		next;
-		mes "[聪明的野牛大师]";
-		mes "现在,请把这个证明给米勒吧";
-		mes "带着我的全心全意的认同";
-		mes "我希望你能善用你手中的枪";
-		mes "去惩恶扬善,当一个";
-		mes "高尚的骑士.";
+		mes "[羙偿畍]";
+		mes "瞷,叫р硂谍倒μ扒";
+		mes "盿帝иみ種粄";
+		mes "и辨到ノもい簀";
+		mes "胓碿喘到,讽";
+		mes "蔼﹟肕.";
 		next;
-		mes "[聪明的野牛大师]";
+		mes "[羙偿畍]";
 		mes "Eeh~Yeah~Eeh~Hooom";
 		mes "Eeh~Yeah~Eeh~Hooom";
 		mes "Maaaaarrraaa Neeey~";
@@ -376,14 +376,14 @@ payon,184,65,3	script	聪明的野牛大师	4_M_LGTGRAND,{
 		close;
 	}
 	else if (GUNS_Q == 5) {
-		mes "[聪明的野牛大师]";
-		mes "现在,请把这个证明给米勒吧";
-		mes "带着我的全心全意的认同";
-		mes "我希望你能善用你手中的枪";
-		mes "去惩恶扬善,当一个";
-		mes "高尚的骑士.";
+		mes "[羙偿畍]";
+		mes "瞷,叫р硂谍倒μ扒";
+		mes "盿帝иみ種粄";
+		mes "и辨到ノもい簀";
+		mes "胓碿喘到,讽";
+		mes "蔼﹟肕.";
 		next;
-		mes "[聪明的野牛大师]";
+		mes "[羙偿畍]";
 		mes "Eeh~Yeah~Eeh~Hooom";
 		mes "Eeh~Yeah~Eeh~Hooom";
 		mes "Maaaaarrraaa Neeey~";
@@ -391,14 +391,14 @@ payon,184,65,3	script	聪明的野牛大师	4_M_LGTGRAND,{
 		close;
 	}
 	else if (GUNS_Q == 6) {
-		mes "[聪明的野牛大师]";
-		mes "啊哈, 好久不见.";
-		mes "我希望你成为了一个聪明的野兽";
-		mes "并且运用你的神枪手的力量来保护正义";
+		mes "[羙偿畍]";
+		mes "摆, ぃǎ.";
+		mes "и辨Θ羙偿脋";
+		mes "笲ノ簀も秖ㄓ玂臔タ竡";
 		close;
 	}
 	else {
-		mes "[聪明的野牛大师]";
+		mes "[羙偿畍]";
 		mes "Zzzzzz~";
 		mes "^333333*Phew*^000000";
 		close;

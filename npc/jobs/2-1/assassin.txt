@@ -53,48 +53,48 @@
 //= 3.8 Another 'unofficial fix'. Player can't change job if time out after the necklace is deleted.
 //============================================================ 
 
-in_moc_16,19,33,1	script	工会人员#asn	1_M_JOBTESTER,{
+in_moc_16,19,33,1	script	穦#asn	1_M_JOBTESTER,{
 	if (Upper == 1) {
-		mes "[看起来很凶的人]";
-		mes "嗯? 你是....?";
-		mes "我能感觉到你和其它人不一样...";
+		mes "[癬ㄓた]";
+		mes "垛? 琌....?";
+		mes "и稰谋㎝ㄤウぃ妓...";
 		next;
-		mes "[看起来很凶的人]";
-		mes "我从没有见过比你还要吓人的! 这么说吧, 我不喜欢你. 我想你该离开了!";
+		mes "[癬ㄓた]";
+		mes "и眖⊿Τǎ筁ゑ临璶纞! 硂弧, иぃ尺舧. и稱赣置秨!";
 		close;
 	}
 	if (SkillPoint) {
-		mes "[看起来很凶的人]";
-		mes "如果还有未设置的技能点的话, 是不能转职的. 你最好先将技能点分配完毕.";
+		mes "[癬ㄓた]";
+		mes "狦临Τゼ砞竚м翴杠, 琌ぃ锣戮. 程盢м翴だ皌Ч拨.";
 		close;
 	}
 	if (ASSIN_Q == 4) {
-		mes "[看起来很凶的人]";
-		mes "噢, 别摆那张臭脸了. 你真有那么痛苦吗?";
+		mes "[癬ㄓた]";
+		mes "揪, 耚ê眎羪. 痷Τê礹璚盾?";
 		next;
-		mes "[看起来很凶的人]";
-		mes "哇噢哇噢, 你受伤了, 我看出来了. 这样吧, 我会为你恢复SP和HP. 爽了吗?";
+		mes "[癬ㄓた]";
+		mes "珃揪珃揪, 端, иㄓ. 硂妓, и穦蝋SP㎝HP. 瞡盾?";
 		percentheal 100,100;
 		next;
-		mes "[看起来很凶的人]";
-		mes "活下来有那么难吗?";
-		mes "下次再努力点儿, 不行吗? 不行的话, 就不要勉强自己成为一名刺客了...";
+		mes "[癬ㄓた]";
+		mes "ㄓΤê螟盾?";
+		mes "Ω翴, ぃ︽盾? ぃ︽杠, 碞ぃ璶玧眏Θ...";
 		next;
-		if (select("无论如何我也要成为一名刺客!:算了吧, 我不玩了.") == 1) {
-			mes "[看起来很凶的人]";
-			mes "噢...";
-			mes "那就好,";
-			mes "去吧!";
+		if (select("礚阶и璶Θ!:衡, иぃ.") == 1) {
+			mes "[癬ㄓた]";
+			mes "揪...";
+			mes "ê碞,";
+			mes "!";
 			close2;
 			set ASSIN_Q,0;
 			warp "in_moc_16",19,76;
 			end;
 		}
-		mes "[看起来很凶的人]";
-		mes "放弃了? 行吧, 走你自己的路去吧. 当你想成为一名刺客的时候, 再来找我吧.";
+		mes "[癬ㄓた]";
+		mes "斌? ︽, ǐ隔. 讽稱Θ, ㄓти.";
 		next;
-		mes "[看起来很凶的人]";
-		mes "想要回城的话只有走回去了. 噢, 不要忘了储存你的出生点了, 记住了吗?";
+		mes "[癬ㄓた]";
+		mes "稱璶杠Τǐ. 揪, ぃ璶а纗ネ翴, 癘盾?";
 		close2;
 		set ASSIN_Q,0;
 		set ASSIN_Q2,0;
@@ -104,158 +104,158 @@ in_moc_16,19,33,1	script	工会人员#asn	1_M_JOBTESTER,{
 		end;
 	}
 	if (BaseJob == Job_Thief && countitem(1008) == 0 && ASSIN_Q > 7) {
-		mes "[刺客专家 '修伊']";
-		mes "嘿, 发生什么事情了...? 你怎么没有带来^006699泯灭之心^000000呢? 告诉过你要带来的嘛, 在哪儿呢?";
+		mes "[盡產 'レ']";
+		mes "糑, 祇ネぐㄆ薄...? ⊿Τ盿ㄓ^006699獅防ぇみ^000000㎡? 禗筁璶盿ㄓ估, ㎡?";
 		next;
-		mes "[刺客专家 '修伊']";
-		mes "在会长发现之前, 快点儿把^006699泯灭之心^000000弄来! 快点儿的, 尽最大努力!";
+		mes "[盡產 'レ']";
+		mes "穦祇瞷ぇ玡, е翴р^006699獅防ぇみ^000000ㄓ! е翴, 荷程!";
 		next;
-		mes "[刺客专家 '修伊']";
-		mes "拿到了快点儿带给我! ^666666*唉...*^000000";
+		mes "[盡產 'レ']";
+		mes "е翴盿倒и! ^666666*...*^000000";
 		close;
 	}
 	if (BaseJob == Job_Thief && countitem(1008) > 0 && ASSIN_Q > 7) {
-		mes "[刺客专家 '修伊']";
-		mes "不错, 你拿来了啊. 祝贺! 不过因为这一块太脏了, 我不能接受. 你永远不可能成为一名刺客了!";
+		mes "[盡產 'レ']";
+		mes "ぃ岿, ㄓ摆. 禤! ぃ筁硂遏び纽, иぃ钡. ッ环ぃΘ!";
 		next;
-		mes "[刺客专家 '修伊']";
-		mes "哈哈哈! 开个玩笑了, 别生气哈. 但是我要先和会长检查一下.";
+		mes "[盡產 'レ']";
+		mes "! 秨, ネ蒩. 琌и璶㎝穦浪琩.";
 		next;
-		mes "[刺客专家 '修伊']";
+		mes "[盡產 'レ']";
 		mes "...";
 		next;
-		mes "[刺客专家 '修伊']";
+		mes "[盡產 'レ']";
 		mes "...";
 		mes "......";
 		next;
 		delitem 1008,1; //Frozen_Heart
 		changequest 8007,8008;
-		mes "[刺客专家 '修伊']";
-		mes "好吧!";
-		mes "你通过认可了!";
+		mes "[盡產 'レ']";
+		mes "!";
+		mes "硄筁粄!";
 		next;
 		completequest 8008;
 		callfunc "Job_Change",Job_Assassin;
 		callfunc "F_ClearJobVar";		// clears all job variables for the current player
-		mes "[刺客专家 '修伊']";
-		mes "现在! 努力做一位伟大的刺客! 怀着信仰出发吧. 别忘了常来看看我们. 再一次祝贺你!";
+		mes "[盡產 'レ']";
+		mes "瞷! 暗岸! 输帝獺ヵ祇. а盽ㄓи. Ω禤!";
 		close;
 	}
 	else if (countitem(1008) > 0 && BaseJob == Job_Thief && ASSIN_Q < 7) {
-		mes "[看起来很凶的人]";
-		mes "嗯?";
-		mes "你想干什么呢?";
+		mes "[癬ㄓた]";
+		mes "垛?";
+		mes "稱ぐ㎡?";
 		next;
-		mes "[看起来很凶的人]";
-		mes "我看你拿来了一个^006699泯灭之心^000000... 你想成为一名刺客, 是吗? 让我看看...";
+		mes "[癬ㄓた]";
+		mes "иㄓ^006699獅防ぇみ^000000... 稱Θ, 琌盾? 琵и...";
 		next;
-		mes "[看起来很凶的人]";
+		mes "[癬ㄓた]";
 		mes "...";
 		next;
-		mes "[看起来很凶的人]";
+		mes "[癬ㄓた]";
 		mes "...";
 		mes "......";
 		next;
-		mes "[看起来很凶的人]";
-		mes "等一下...";
-		mes "我了个去! 这是个假货!";
+		mes "[癬ㄓた]";
+		mes "单...";
+		mes "и! 硂琌安砯!";
 		next;
-		mes "[看起来很凶的人]";
-		mes "你怎么敢拿假货来糊弄我! 难道我长的像一个SB吗!? ...";
+		mes "[癬ㄓた]";
+		mes "幢安砯ㄓ絢и! 螟笵и钩SB盾!? ...";
 		close2;
 		warp "moc_fild16",206,229;
 		end;
 	}
 	else {
-		mes "[看起来很凶的人]";
-		mes "是什么原因让你来到这里?";
-		mes "我不喜欢你看着我的表情... 渣渣.";
+		mes "[癬ㄓた]";
+		mes "琌ぐ琵ㄓ硂ń?";
+		mes "иぃ尺舧帝и薄... 错错.";
 		next;
 		if (BaseClass == Job_Novice) {
-			mes "[看起来很凶的人]";
-			mes "嘿, 菜鸟. 你最好马上离开这里. 我可不能保证你的生命安全.";
+			mes "[癬ㄓた]";
+			mes "糑, 垫尘. 程皑置秨硂ń. иぃ玂谍ネ㏑.";
 			close;
 		}
 		else if (BaseClass == Job_Swordman) {
-			mes "[看起来很凶的人]";
-			mes "是什么原因让一位剑士来到了这里呢? 用你的剑削苹果去吧, 渣渣.";
+			mes "[癬ㄓた]";
+			mes "琌ぐ琵糃ㄓ硂ń㎡? ノ糃玠衜狦, 错错.";
 			close;
 		}
 		else if (BaseClass == Job_Mage) {
-			mes "[看起来很凶的人]";
-			mes "是什么原因让一位法师来到了这里呢?";
+			mes "[癬ㄓた]";
+			mes "琌ぐ琵猭畍ㄓ硂ń㎡?";
 			next;
-			mes "[看起来很凶的人]";
-			mes "普隆德拉和朱诺的图书馆会欢迎你的, 为什么不露个小把戏然后从我的视线里消失呢?";
+			mes "[癬ㄓた]";
+			mes "炊订紈┰㎝Χ空瓜繻穦舧, ぐぃ臩р栏礛眖и跌絬ńア㎡?";
 			close;
 		}
 		else if (BaseClass == Job_Archer) {
-			mes "[看起来很凶的人]";
-			mes "哎哟, 不错噢.";
-			mes "看到那把弓了吗?";
+			mes "[癬ㄓた]";
+			mes "玼抽, ぃ岿揪.";
+			mes "êр盾?";
 			next;
-			mes "[看起来很凶的人]";
-			mes "没有几个弓箭手会来到这里啊. 那么, 你来这儿有什么目的吗?!";
+			mes "[癬ㄓた]";
+			mes "⊿Τ絙も穦ㄓ硂ń摆. ê, ㄓ硂Τぐヘ盾?!";
 			close;
 		}
 		else if (BaseClass == Job_Acolyte) {
-			mes "[看起来很凶的人]";
-			mes "我感到了一丝不一样的气息. 上帝的仆人来这里干什么呢? 你不属于这里的.";
+			mes "[癬ㄓた]";
+			mes "и稰捣ぃ妓蒩. げㄓ硂ńぐ㎡? ぃ妮硂ń.";
 			close;
 		}
 		else if (BaseClass == Job_Merchant) {
-			mes "[看起来很凶的人]";
-			mes "我们可不喜欢贪婪的人. 去其它地方做生意吧, 奸商.";
+			mes "[癬ㄓた]";
+			mes "иぃ尺舧砱褒. ㄤウよ暗ネ種, 坝.";
 			close;
 		}
 		else if (BaseJob == Job_Rogue) {
-			mes "[看起来很凶的人]";
-			mes "看起来你并不是很有心机的样子. 好吧, 我希望你享受在这里的休息时光.";
+			mes "[癬ㄓた]";
+			mes "癬ㄓぃ琌Τみ审妓. , и辨ㄉ硂ńヰ.";
 			next;
-			mes "[看起来很凶的人]";
-			mes "顺便问一句...";
-			mes "你看到过一名女孩吗?";
-			mes "她的名字叫做玛琪.";
+			mes "[癬ㄓた]";
+			mes "抖獽拜...";
+			mes "筁盾?";
+			mes "暗嚎礨.";
 			next;
-			mes "[看起来很凶的人]";
-			mes "玛琪...";
-			mes "我发誓我们会永远在一起的. ^666666*唉...*^000000, 我想她早已经忘了吧. 还好, 我们还年青...";
+			mes "[癬ㄓた]";
+			mes "嚎礨...";
+			mes "и祇粆и穦ッ环癬. ^666666*...*^000000, и稱Ν竒а. 临, и临獵...";
 			close;
 		}
 		else if (BaseJob == Job_Assassin) {
-			mes "[刺客专家 '修伊']";
-			mes "嘿, 我还记得你~";
-			mes "你不是叫做...嗯, 我之所以记得你的名字是因为它很搞笑...";
+			mes "[盡產 'レ']";
+			mes "糑, и临癘眔~";
+			mes "ぃ琌暗...垛, иぇ┮癘眔琌ウ穌...";
 			next;
-			mes "[刺客专家 '修伊']";
-			mes ":+:" + strcharinfo(0) + ":+:, 对吗? 不对, 只是"+ strcharinfo(0) +". 哈哈, 近来如何啊?";
+			mes "[盡產 'レ']";
+			mes ":+:" + strcharinfo(0) + ":+:, 癸盾? ぃ癸, 琌"+ strcharinfo(0) +". , ㄓ摆?";
 			next;
-			mes "[刺客专家 '修伊']";
-			mes "呵呵, 公会里现在还没有什么任务呢. 专心于修练吧. 那么, 再见了.";
+			mes "[盡產 'レ']";
+			mes ", そ穦ń瞷临⊿Τぐヴ叭㎡. 盡み絤. ê, ǎ.";
 			close;
 		}
 		else if (BaseJob == Job_Thief && JobLevel > 39) {
 			if (SkillPoint) {
-				mes "[看起来很凶的人]";
-				mes "如果你的技能点数没有设置完的话, 是不能参加转职的. 去把点数分配完成再说吧.";
+				mes "[癬ㄓた]";
+				mes "狦м翴计⊿Τ砞竚Ч杠, 琌ぃ把锣戮. р翴计だ皌ЧΘ弧.";
 				close;
 			}
 			else {
-				mes "[看起来很凶的人]";
-				mes "嗯...";
-				mes "一名盗贼...?";
+				mes "[癬ㄓた]";
+				mes "垛...";
+				mes "祍搁...?";
 				next;
-				mes "[看起来很凶的人]";
-				mes "经验还很丰富的盗贼, 我的钱包在你路过我时就不见了嘿. 我喜欢你.";
+				mes "[癬ㄓた]";
+				mes "竒喷临ぅ碔祍搁, и窥隔筁и碞ぃǎ糑. и尺舧.";
 				next;
-				mes "[看起来很凶的人]";
-				mes "那么, 准备成为一名刺客了吗?";
+				mes "[癬ㄓた]";
+				mes "ê, 称Θ盾?";
 				next;
-				switch(select("是的, 来吧.:需要什么条件吗?:没准备好.")) {
+				switch(select("琌, ㄓ.:惠璶ぐ兵ン盾?:⊿称.")) {
 				case 1:
-					mes "[看起来很凶的人]";
-					mes "那么准备好了吗?";
-					mes "我会把你传送到办公室去的.";
+					mes "[癬ㄓた]";
+					mes "ê称盾?";
+					mes "и穦р肚癳快そ.";
 					close2;
 					set ASSIN_Q,0;
 					if(checkquest(8000) != -1) {
@@ -266,261 +266,261 @@ in_moc_16,19,33,1	script	工会人员#asn	1_M_JOBTESTER,{
 					warp "in_moc_16",19,76;
 					end;
 				case 2:
-					mes "[看起来很凶的人]";
-					mes "条件? 首先你的职业要是盗贼, 其次, 你的职业技能最少要达到40级.";
+					mes "[癬ㄓた]";
+					mes "兵ン? 戮穨璶琌祍搁, ㄤΩ, 戮穨м程ぶ璶笷40.";
 					next;
-					mes "[看起来很凶的人]";
-					mes "最后, 你要接受一次考试.";
-					mes "记住了吗? 如果你对自己很有信心的话, 这些都不是问题.";
+					mes "[癬ㄓた]";
+					mes "程, 璶钡Ωσ刚.";
+					mes "癘盾? 狦癸Τ獺み杠, 硂ㄇ常ぃ琌拜肈.";
 					close;
 				case 3:
-					mes "[看起来很凶的人]";
-					mes "嗯...";
-					mes "好吧.";
-					mes "如果你准备好了,";
-					mes "再来找我吧.";
+					mes "[癬ㄓた]";
+					mes "垛...";
+					mes ".";
+					mes "狦称,";
+					mes "ㄓти.";
 					close;
 				}
 			}
 		}
 		else {
-			mes "[看起来很凶的人]";
-			mes "嗯, 你还没准备好成为一名刺客啊. 你要先满足一些条件的.";
+			mes "[癬ㄓた]";
+			mes "垛, 临⊿称Θ摆. 璶骸ìㄇ兵ン.";
 			next;
-			mes "[看起来很凶的人]";
-			mes "继续修练吧, 职业技能最少要达到40级, 记住了吗? 当然了, 如果超过40级的话, 也是没问题的.";
+			mes "[癬ㄓた]";
+			mes "膥尿絤, 戮穨м程ぶ璶笷40, 癘盾? 讽礛, 狦禬筁40杠, 琌⊿拜肈.";
 			close;
 		}
 	}
 }
 
-in_moc_16,25,90,1	script	暗杀者 凯伊#ASN2	4_M_JOB_ASSASSIN,2,2,{
-	mes "[凯伊]";
-	mes "嗯?!";
+in_moc_16,25,90,1	script	穞炳 惩レ#ASN2	4_M_JOB_ASSASSIN,2,2,{
+	mes "[惩レ]";
+	mes "垛?!";
 	emotion ET_SURPRISE;
 	next;
-	mes "[凯伊]";
-	mes "站近点儿. 我喜欢和人很近的交谈. 提高嗓门才能让人听见说话, 那就太烦燥了.";
-	mes "不要站在我后面, 我的菊花会比较紧张...";
+	mes "[惩レ]";
+	mes "翴. и尺舧㎝ユ酵. 矗蔼囤琵ǎ弧杠, ê碞び沸狸.";
+	mes "ぃ璶и, и碘穦ゑ耕候眎...";
 	close;
 
 OnTouch_:
 	if (ASSIN_Q2 == 4) {
-		mes "[凯伊]";
-		mes "嗯?";
-		mes "一分钟前,";
-		mes "你不是刚从我面前走过吗?";
+		mes "[惩レ]";
+		mes "垛?";
+		mes "だ牧玡,";
+		mes "ぃ琌眖и玡ǐ筁盾?";
 		next;
-		mes "[凯伊]";
-		mes "嗯...?!";
-		mes "跪了?";
-		mes "还只是在笔试阶段吗?";
-		mes "这么弱?";
-		mes "咦嘿嘿啊哈哈!";
+		mes "[惩レ]";
+		mes "垛...?!";
+		mes "各?";
+		mes "临琌掸刚顶琿盾?";
+		mes "硂畓?";
+		mes "玿糑糑摆!";
 		next;
-		mes "[凯伊]";
-		mes "好吧...";
-		mes "好久没有遇到你这么失败的人了...";
-		mes "让我再笑一会儿吧.";
+		mes "[惩レ]";
+		mes "...";
+		mes "⊿Τ笿硂ア毖...";
+		mes "琵и穦.";
 		next;
-		mes "[凯伊]";
-		mes "哈哈!";
-		mes "嘿嘿哈哈啊啊~!";
-		mes "笑尿了啊....";
+		mes "[惩レ]";
+		mes "!";
+		mes "糑糑摆摆~!";
+		mes "Э摆....";
 		next;
-		mes "[凯伊]";
-		mes "实在对不起, 不过我还是想笑啊, 哈哈... 这么说, 要我给你一点儿提示吗?";
+		mes "[惩レ]";
+		mes "龟癸ぃ癬, ぃ筁и临琌稱摆, ... 硂弧, 璶и倒翴矗ボ盾?";
 		next;
-		switch(select("- 求求你给我一些提示吧.:- 够了啊, 说你的提示吧!:- ...玩儿蛋去!")) {
+		switch(select("- ――倒иㄇ矗ボ.:- 镑摆, 弧矗ボ!:- ...矹!")) {
 		case 1:
-			mes "[凯伊]";
-			mes "哈哈哈哈!!!";
-			mes "哇哇哇, 你还没有成为一名刺客, 笑死我了, 笑死我了!";
+			mes "[惩レ]";
+			mes "!!!";
+			mes "珃珃珃, 临⊿ΤΘ, и, и!";
 			next;
-			mes "[无名者]";
-			mes "哇噢噢...";
+			mes "[礚]";
+			mes "珃揪揪...";
 			next;
-			mes "[凯伊]";
-			mes "你听到无名者的声音了吗?! '求求你, 给我提示吧.' 哈哈哈哈!";
+			mes "[惩レ]";
+			mes "礚羘盾?! '――, 倒и矗ボ.' !";
 			next;
-			mes "[无名者]";
-			mes "是的.";
-			mes "这个渣渣又可笑,";
-			mes "又可怜.";
+			mes "[礚]";
+			mes "琌.";
+			mes "硂错错,";
+			mes "贪.";
 			next;
-			mes "[凯伊]";
-			mes "哈哈哈哈!";
-			mes "这么说,";
-			mes "你求我给你一些提示, 是吗?";
+			mes "[惩レ]";
+			mes "!";
+			mes "硂弧,";
+			mes "―и倒ㄇ矗ボ, 琌盾?";
 			next;
-			mes "[凯伊]";
+			mes "[惩レ]";
 			mes "...";
 			next;
-			mes "[凯伊]";
+			mes "[惩レ]";
 			mes "...";
 			mes "......";
 			next;
-			mes "[凯伊]";
+			mes "[惩レ]";
 			mes "...";
 			mes "......";
 			mes ".........";
 			next;
-			mes "[凯伊]";
+			mes "[惩レ]";
 			mes "...";
 			mes "......";
 			mes ".........";
 			mes "............";
 			next;
-			mes "[凯伊]";
+			mes "[惩レ]";
 			mes "...";
 			mes "......";
 			mes ".........";
 			mes "............";
 			mes "...............";
 			next;
-			mes "[凯伊]";
-			mes "算了.";
-			mes "我改变主意了!";
-			mes "不准备给你任何提示了, 哈哈哈哈~";
+			mes "[惩レ]";
+			mes "衡.";
+			mes "иэ跑種!";
+			mes "ぃ称倒ヴ矗ボ, ~";
 			close;
 		case 2:
-			mes "[凯伊]";
+			mes "[惩レ]";
 			if (Sex == SEX_MALE) {
-				mes "呼, 看来你非常有信心成为一名刺客啊.";
+				mes "㊣, ㄓ獶盽Τ獺みΘ摆.";
 				next;
-				mes "[凯伊]";
-				mes "我懂的我懂的, 人们总有陷入困境的时候. 抱歉嘲笑了你.";
+				mes "[惩レ]";
+				mes "и来и来, 羆Τ炒挂. ╆簆糐.";
 			}
 			else
-				mes "我喜欢你的态度. 你应该保持做盗贼的尊严. 抱歉, 我刚才笑你了. 我相信你下次会做的更好的.";
+				mes "и尺舧篈. 莱赣玂暗祍搁碙腨. ╆簆, и. и獺Ω穦暗.";
 			next;
-			mes "[凯伊]";
-			mes "按规定, 是不能给你提示的, 但是关于刺客我会再说一些...";
+			mes "[惩レ]";
+			mes "砏﹚, 琌ぃ倒矗ボ, 琌闽и穦弧ㄇ...";
 			next;
-			mes "[凯伊]";
-			mes "不论如何, 我们珍视我们的尊严. 因为我们是刺客...";
+			mes "[惩レ]";
+			mes "ぃ阶, и跌и碙腨. и琌...";
 			next;
-			mes "[凯伊]";
-			mes "如果人们以某种方式靠近你, 他们不会明白我说的是什么. 由于职业本性, 我们天生就是孤独者.";
+			mes "[惩レ]";
+			mes "狦琘销よΑ綼, ぃ穦フи弧琌ぐ. パ戮穨セ┦, иぱネ碞琌﹖縒.";
 			next;
-			mes "[凯伊]";
-			mes "当爱人或朋友看到你手中血迹的时候, 不会给你解释的机会, 他们就会离开你了.";
+			mes "[惩レ]";
+			mes "讽稲┪狟ねもい﹀格, ぃ穦倒秆睦审穦, 碞穦置秨.";
 			next;
-			mes "[凯伊]";
-			mes "有时会很寂寞, 但是这并不是坏事. 至少我可以按我的方式来做事, 你懂的, 任何方式.";
+			mes "[惩レ]";
+			mes "Τ穦盜规, 琌硂ぃ琌Дㄆ. ぶииよΑㄓ暗ㄆ, 来, ヴよΑ.";
 			next;
-			mes "[凯伊]";
-			mes "那么, 这些就是我能告诉你的了.";
-			mes "是否成为一名刺客, 取决于你的选择.";
+			mes "[惩レ]";
+			mes "ê, 硂ㄇ碞琌и禗.";
+			mes "琌Θ, ∕匡拒.";
 			close;
 		case 3:
-			mes "[凯伊]";
-			mes "...嗯.";
+			mes "[惩レ]";
+			mes "...垛.";
 			next;
-			mes "[凯伊]";
-			mes "对嘛, 就是这种精神. 不要让人看扁了!";
-			mes "记住, 我们是刺客...";
+			mes "[惩レ]";
+			mes "癸估, 碞琌硂销弘. ぃ璶琵!";
+			mes "癘, и琌...";
 			next;
-			mes "[凯伊]";
-			mes "对于之前的嘲笑, 我说一声对不起. 我想让你记住, 要保持我们的尊严.";
+			mes "[惩レ]";
+			mes "癸ぇ玡糐, и弧羘癸ぃ癬. и稱琵癘, 璶玂и碙腨.";
 			next;
-			mes "[凯伊]";
-			mes "保持你的尊严,";
-			mes "对于拳刃和短剑上血染的痕迹, 你也要保持一种敬仰的态度.";
+			mes "[惩レ]";
+			mes "玂碙腨,";
+			mes "癸㎝祏糃﹀琕勃格, 璶玂销穛ヵ篈.";
 			next;
-			if (select("- ...明白了.:- ...我很迷惑.") == 1) {
-				mes "[凯伊]";
-				mes "好的, 我相信你. 让我给你一些衷告吧.";
+			if (select("- ...フ.:- ...и癵碽.") == 1) {
+				mes "[惩レ]";
+				mes ", и獺. 琵и倒ㄇ癑.";
 				next;
 				switch(rand(1,3)) {
 				case 1:
-					mes "[凯伊]";
-					mes "首先, '无影之牙'...专门为拳刃而设计的技能. 所以, 它不需要任何和短剑相关的技能支持.";
+					mes "[惩レ]";
+					mes ", '礚紇ぇ'...盡τ砞璸м. ┮, ウぃ惠璶ヴ㎝祏糃闽мや.";
 					next;
-					mes "[凯伊]";
-					mes "'二刀连击' ...试过了吗? 它能让你一下对敌人造成两次伤害.";
+					mes "[惩レ]";
+					mes "'硈阑' ...刚筁盾? ウ琵癸寄硑ΘㄢΩ端甡.";
 					next;
-					mes "[凯伊]";
-					mes "火灵矿石是一种元素石头, 而蓝色魔力矿石和我们的职业没有任何关联!";
+					mes "[惩レ]";
+					mes "艶膓ホ琌销じホ繷, τ屡︹臸膓ホ㎝и戮穨⊿Τヴ闽羛!";
 					next;
-					mes "[凯伊]";
-					mes "你看到过魔法师用冰箭术打击长老树精了吗? 水属性克制火属性. 而风属性克制水属性.";
+					mes "[惩レ]";
+					mes "筁臸猭畍ノ絙砃ゴ阑ρ攫弘盾? 妮┦妮┦. τ妮┦妮┦.";
 					next;
-					mes "[凯伊]";
-					mes "当你靠近墙壁或类似的地方的话, '伪装'会让你完美的消失! 除非有些小贱人用反隐的技能, 你懂的.";
+					mes "[惩レ]";
+					mes "讽綼鲤纠┪摸よ杠, '鞍杆'穦琵Чア! 埃獶Τㄇ解ノは留м, 来.";
 					next;
 					break;
 				case 2:
-					mes "[凯伊]";
-					mes "'骸灵拳刃是不死属性的.";
+					mes "[惩レ]";
+					mes "'纄艶琌ぃ妮┦.";
 					next;
-					mes "[凯伊]";
-					mes "你目前都用过了什么武器? 大马士革? 长柄短剑? 双刃短剑? 或者笨拙短剑? 你手上现在用的是什么?";
+					mes "[惩レ]";
+					mes "ヘ玡常ノ筁ぐ猌竟? 皑? 琡祏糃? 蛮祏糃? ┪猜╁祏糃? も瞷ノ琌ぐ?";
 					next;
-					mes "[凯伊]";
-					mes "可以从沙漠之狼身上得到有洞的卡塔勒拳刃. 要记住了. 你会有用到它的时候的.";
+					mes "[惩レ]";
+					mes "眖‵簔ぇ疶ō眔Τ瑌娥扒. 璶癘. 穦Τノウ.";
 					next;
-					mes "[凯伊]";
-					mes "你可以从土拨鼠那儿得到有洞的拳刃. 嗯, 我不知道它们为什么会有那种武器... 或许它们用来打洞?";
+					mes "[惩レ]";
+					mes "眖挤公ê眔Τ瑌. 垛, иぃ笵ウぐ穦Τê销猌竟... ┪砛ウノㄓゴ瑌?";
 					next;
-					mes "[凯伊]";
-					mes "还有...";
-					mes "我一只想要一只罗达蛙做宠物. 但那是不可能的!";
+					mes "[惩レ]";
+					mes "临Τ...";
+					mes "и稱璶霉笷奠暗胐. ê琌ぃ!";
 					next;
-					mes "[凯伊]";
-					mes "据我所知, 榔头哥布灵是地属性的. 而火属性是克地属性的.";
+					mes "[惩レ]";
+					mes "誹и┮, 穧繷ガ艶琌妮┦. τ妮┦琌妮┦.";
 					next;
-					mes "[凯伊]";
-					mes "你听说过属性武器吗? 只有铁匠可以打造属性武器...";
+					mes "[惩レ]";
+					mes "弧筁妮┦猌竟盾? Τ臟ゴ硑妮┦猌竟...";
 					next;
 					break;
 				case 3:
-					mes "[凯伊]";
-					mes "打到长老树精卡片了就卖给魔法师. 他们会疯狂的抢购的. 它不是增加 INT 的吗? 嗯...";
+					mes "[惩レ]";
+					mes "ゴρ攫弘碞芥倒臸猭畍. 穦浩╣穖潦. ウぃ琌糤 INT 盾? 垛...";
 					next;
-					mes "[凯伊]";
-					mes "对于我们来说, 闪避和攻击比防御更重要. 不要想着去穿一件头盔. 太重了, 会很不舒适并会挡住你的视线.";
+					mes "[惩レ]";
+					mes "癸иㄓ弧, 皗磷㎝ю阑ゑň眘璶. ぃ璶稱帝ン繷帛. び, 穦ぃ滴屿穦咀跌絬.";
 					next;
-					mes "[凯伊]";
-					mes "残影每升一级会增加3%的闪避.";
+					mes "[惩レ]";
+					mes "摧紇–ど穦糤3%皗磷.";
 					next;
-					mes "[凯伊]";
-					mes "正如我所告诉你的, 拳刃系列的武器都是双手持有的!";
+					mes "[惩レ]";
+					mes "タи┮禗, ╰猌竟常琌蛮もΤ!";
 					next;
-					mes "[凯伊]";
-					mes "沙漠都市... 我想念我的家乡, 梦罗克. 我很久没有回去了. 恍如隔世的感觉啊. 时光飞逝...";
+					mes "[惩レ]";
+					mes "‵簔常カ... и稱├и產秏, 冠霉. и⊿Τ. 筳稰谋摆. 硊...";
 					next;
-					mes "[凯伊]";
-					mes "咳咳. 我想起来了我的盗贼转职任务. 我太紧张了, 哈哈, 闯进农场去拿食用蘑菇...";
+					mes "[惩レ]";
+					mes "珁珁. и稱癬ㄓи祍搁锣戮ヴ叭. иび候眎, , 卖秈笰初ノ抹郏...";
 					next;
-					mes "[凯伊]";
-					mes "学会了隐匿和伪装, 再没人能找得到你.";
+					mes "[惩レ]";
+					mes "厩穦留拔㎝鞍杆, ⊿т眔.";
 					next;
-					mes "[凯伊]";
-					mes "我听说小巴风特卡片增加3点AGI, 并且增加1点必杀攻击率...";
+					mes "[惩レ]";
+					mes "и弧ぺ疭糤3翴AGI, 糤1翴ゲ炳ю阑瞯...";
 					next;
-					mes "[凯伊]";
-					mes "是的, 我们特别需要强化AGI. 通过一定的素质点数可以增加我们的AGI, 问题是素质点不会永远增加, 是吗?";
+					mes "[惩レ]";
+					mes "琌, и疭惠璶眏てAGI. 硄筁﹚借翴计糤иAGI, 拜肈琌借翴ぃ穦ッ环糤, 琌盾?";
 					next;
 				}
-				mes "[凯伊]";
-				mes "^666666*唷*^000000 这就是我所能告诉你的了, 尽管提示并不是很多. 但我几乎告诉了你所有了...";
+				mes "[惩レ]";
+				mes "^666666**^000000 硂碞琌и┮禗, 荷恨矗ボぃ琌. и禗┮Τ...";
 				next;
-				mes "[凯伊]";
-				mes "再试去接受'无名者'的考试吧.";
+				mes "[惩レ]";
+				mes "刚钡'礚'σ刚.";
 				close2;
 				warp "in_moc_16",19,144;
 				end;
 			}
-			mes "[凯伊]";
-			mes "^666666*唉...*^000000";
-			mes "你怎么不明白尊严的概念? 你刚才就对我表现出来了啊!";
+			mes "[惩レ]";
+			mes "^666666*...*^000000";
+			mes "ぃフ碙腨阀├? 碞癸и瞷ㄓ摆!";
 			next;
-			mes "[凯伊]";
-			mes "噢, 我知道了, 你刚才表现出来的并不是尊严, 而是粗鲁!";
+			mes "[惩レ]";
+			mes "揪, и笵, 瞷ㄓぃ琌碙腨, τ琌彩緗!";
 			next;
-			mes "[凯伊]";
-			mes "啊...";
+			mes "[惩レ]";
+			mes "摆...";
 			mes "WARP PORTAL!";
 			close2;
 			warp "c_tower4",64,76;
@@ -528,30 +528,30 @@ OnTouch_:
 		}
 	}
 	else {
-		mes "[凯伊]";
-		mes "你一定是见习刺客.";
-		mes "你来这里是为了成为一名真正的刺客的, 不是吗?";
+		mes "[惩レ]";
+		mes "﹚琌ǎ策.";
+		mes "ㄓ硂ń琌Θ痷タ, ぃ琌盾?";
 		next;
-		if (select("- 是的, 我要成为真正的刺客. :- ...不, 我就是来玩的.") == 1) {
-			mes "[凯伊]";
-			mes "好的, 先来填写一下申请表格. 请写下你的名字和职业技能等级.";
+		if (select("- 琌, и璶Θ痷タ. :- ...ぃ, и碞琌ㄓ.") == 1) {
+			mes "[惩レ]";
+			mes ", ㄓ恶糶ビ叫. 叫糶㎝戮穨м单.";
 			next;
-			mes "[凯伊]";
-			mes "我看看...";
-			mes "你的名字是";
+			mes "[惩レ]";
+			mes "и...";
+			mes "琌";
 			mes "" + strcharinfo(0) + "...";
-			mes "职业等级" + JobLevel + "...";
+			mes "戮穨单" + JobLevel + "...";
 			next;
 			if (JobLevel > 48) {
-				mes "[凯伊]";
-				mes "等等, 职业技能等级是" + JobLevel + "?! 你训练的很刻苦啊! 我的上司会喜欢你的~";
+				mes "[惩レ]";
+				mes "单单, 戮穨м单琌" + JobLevel + "?! 癡絤ㄨ璚摆! и穦尺舧~";
 				next;
-				mes "[凯伊]";
-				mes "填完表格了吗? 好了, 来给我看看. 等一下, 我会把你送到考试场地.";
+				mes "[惩レ]";
+				mes "恶Ч盾? , ㄓ倒и. 单, и穦р癳σ刚初.";
 				next;
-				mes "[凯伊]";
-				mes "那么,";
-				mes "祝你好运了!";
+				mes "[惩レ]";
+				mes "ê,";
+				mes "笲!";
 				close2;
 				set ASSIN_Q3,1;
 				set ASSIN_Q,1;
@@ -560,21 +560,21 @@ OnTouch_:
 				end;
 			}
 			else if (JobLevel < 49) {
-				mes "[凯伊]";
-				mes "好吧,";
-				mes "你具备了基本条件.";
-				mes "还算不错.";
+				mes "[惩レ]";
+				mes ",";
+				mes "ㄣ称膀セ兵ン.";
+				mes "临衡ぃ岿.";
 				next;
-				mes "[凯伊]";
-				mes "当你填写完表格的时候,";
-				mes "走过来,";
-				mes "把它交给我.";
-				mes "嗯, 谢谢.";
+				mes "[惩レ]";
+				mes "讽恶糶Ч,";
+				mes "ǐ筁ㄓ,";
+				mes "рウユ倒и.";
+				mes "垛, 谅谅.";
 				next;
-				mes "[凯伊]";
-				mes "我会把你送到考试场地,";
-				mes "那么,";
-				mes "祝你好运了~";
+				mes "[惩レ]";
+				mes "и穦р癳σ刚初,";
+				mes "ê,";
+				mes "笲~";
 				close2;
 				set ASSIN_Q3,2;
 				set ASSIN_Q,1;
@@ -583,24 +583,24 @@ OnTouch_:
 				end;
 			}
 			else {
-				mes "[凯伊]";
-				mes "你这个渣渣, 到底是谁? ";
-				mes "信不信我叫人来?";
-				mes "...城管!";
+				mes "[惩レ]";
+				mes "硂错错, ┏琌街? ";
+				mes "獺ぃ獺иㄓ?";
+				mes "...恨!";
 				close2;
 				warp "moc_fild16",206,229;
 				end;
 			}
 		}
 		else {
-			mes "[凯伊]";
-			mes "呼...?";
-			mes "你是想耍我还是怎么的? 不想成为一名刺客了吗?";
+			mes "[惩レ]";
+			mes "㊣...?";
+			mes "琌稱瑼и临琌? ぃ稱Θ盾?";
 			next;
-			if (select("耍你怎么了.:我想成为一名刺客.") == 1) {
-				mes "[凯伊]";
-				mes "赶紧滚出这个地方.";
-				mes "趁我还没有发脾气...";
+			if (select("瑼.:и稱Θ.") == 1) {
+				mes "[惩レ]";
+				mes "鱼候簎硂よ.";
+				mes "禭и临⊿Τ祇凳蒩...";
 				close2;
 				set ASSIN_Q,0;
 				set ASSIN_Q3,0;
@@ -609,26 +609,26 @@ OnTouch_:
 				warp "moc_fild16",206,229;
 				end;
 			}
-			mes "[凯伊]";
+			mes "[惩レ]";
 			mes "...";
-			mes "闹哪样啊?";
-			mes "好吧.";
+			mes "緓妓摆?";
+			mes ".";
 			next;
-			mes "[凯伊]";
-			mes "将你的名字和职业技能等级填写到这个表格中.";
+			mes "[惩レ]";
+			mes "盢㎝戮穨м单恶糶硂い.";
 			next;
-			mes "[凯伊]";
+			mes "[惩レ]";
 			mes "" + strcharinfo(0) + "?";
-			mes "这就是你的名字?";
-			mes "听起来很有趣啊.";
-			mes "让我看看... 职业技能等级是" + JobLevel + "...";
+			mes "硂碞琌?";
+			mes "癬ㄓΤ届摆.";
+			mes "琵и... 戮穨м单琌" + JobLevel + "...";
 			next;
 			if (JobLevel > 48) {
-				mes "[凯伊]";
-				mes "噢? 职业技能等级是" + JobLevel + "?! 你一定训练的很刻苦吧. 我想我的上司会喜欢你的...";
+				mes "[惩レ]";
+				mes "揪? 戮穨м单琌" + JobLevel + "?! ﹚癡絤ㄨ璚. и稱и穦尺舧...";
 				next;
-				mes "[凯伊]";
-				mes "表格填写完了吗? 好了, 交给我吧. 我会把你送到考试场地的, 祝你好运~";
+				mes "[惩レ]";
+				mes "恶糶Ч盾? , ユ倒и. и穦р癳σ刚初, 笲~";
 				next;
 				set ASSIN_Q3,1;
 				set ASSIN_Q,1;
@@ -637,12 +637,12 @@ OnTouch_:
 				end;
 			}
 			else if (JobLevel < 49) {
-				mes "[凯伊]";
-				mes "还不错, 你达到了基本要求, 表格填写完了吗?";
+				mes "[惩レ]";
+				mes "临ぃ岿, 笷膀セ璶―, 恶糶Ч盾?";
 				next;
-				mes "[凯伊]";
-				mes "把它交给我吧, 我会送你到考试场地, 好吗?";
-				mes "祝你好运...";
+				mes "[惩レ]";
+				mes "рウユ倒и, и穦癳σ刚初, 盾?";
+				mes "笲...";
 				next;
 				set ASSIN_Q3,2;
 				set ASSIN_Q,1;
@@ -651,10 +651,10 @@ OnTouch_:
 				end;
 			}
 			else {
-				mes "[凯伊]";
-				mes "你这个渣渣是怎么进来的?";
-				mes "听到没?";
-				mes "滚出去!";
+				mes "[惩レ]";
+				mes "硂错错琌秈ㄓ?";
+				mes "⊿?";
+				mes "簎!";
 				close2;
 				warp "moc_fild16",206,229;
 				end;
@@ -663,339 +663,339 @@ OnTouch_:
 	}
 }
 
-in_moc_16,19,154,0	script	无名者	-1,8,2,{
+in_moc_16,19,154,0	script	礚	-1,8,2,{
 OnTouch_:
 	if (ASSIN_Q2 < 5) {
 		if (ASSIN_Q2 < 3) {
-			mes "[无名者]";
-			mes "欢迎你, 骚年.";
-			mes "咦哈哈哈哈.";
-			mes "你根本找不到我的...";
+			mes "[礚]";
+			mes "舧, 奶.";
+			mes "玿.";
+			mes "セтぃи...";
 			next;
-			mes "[无名者]";
-			mes "我隐藏的很完美!";
-			mes "要想像我这样, 只有成为一名伟大的刺客!";
+			mes "[礚]";
+			mes "и留旅Ч!";
+			mes "璶稱钩и硂妓, ΤΘ岸!";
 			next;
-			mes "[无名者]";
-			mes "怕了吗? 只要我想, 杀死你是一件很简单的事情...";
+			mes "[礚]";
+			mes "┤盾? 璶и稱, 炳琌ン虏虫ㄆ薄...";
 			next;
-			if (select("吓尿了...:我要和你单挑!") == 1) {
-				mes "[无名者]";
-				mes "现在我看出来了,";
-				mes "你只不过是";
-				mes "一个懦夫.";
+			if (select("纞Э...:и璶㎝虫珼!") == 1) {
+				mes "[礚]";
+				mes "瞷иㄓ,";
+				mes "ぃ筁琌";
+				mes "蓝ひ.";
 				next;
-				mes "[无名者]";
-				mes "哈哈哈哈!";
-				mes "只能在畏惧中卷缩!";
-				mes "太可笑了!";
+				mes "[礚]";
+				mes "!";
+				mes "倪い罽!";
+				mes "び!";
 				close;
 			}
-			mes "[无名者]";
-			mes "那么...";
-			mes "你的意思是...";
-			mes "要和我...?";
-			mes "打一架?!";
+			mes "[礚]";
+			mes "ê...";
+			mes "種琌...";
+			mes "璶㎝и...?";
+			mes "ゴ琜?!";
 			next;
-			mes "[无名者]";
-			mes "算了吧. 我所过之处, 血流成河. 刀下亡魂无数.";
+			mes "[礚]";
+			mes "衡. и┮筁ぇ矪, ﹀瑈Θ猠. 活礚计.";
 			next;
-			mes "[无名者]";
-			mes "我来这儿是为了测试你的理论知识. 对于成为一名刺客来说, 知识一样很重要.";
+			mes "[礚]";
+			mes "иㄓ硂琌代刚瞶阶醚. 癸Θㄓ弧, 醚妓璶.";
 			next;
-			mes "[无名者]";
-			mes "如果想胜出,";
-			mes "就要正确回答我的问题, 而这些问题, 只有一名伟大的刺客才能答对.";
+			mes "[礚]";
+			mes "狦稱衊,";
+			mes "碞璶タ谔氮и拜肈, τ硂ㄇ拜肈, Τ岸氮癸.";
 			next;
-			mes "[无名者]";
-			mes "尽管我很狠心,";
-			mes "但我并不无情. 开始回答之前, 有什么要问的吗?";
+			mes "[礚]";
+			mes "荷恨иみ,";
+			mes "иぃ礚薄. 秨﹍氮ぇ玡, Τぐ璶拜盾?";
 			next;
 			set ASSIN_Q2,0;
 			while(ASSIN_Q2 < 3) {
-				switch(select("...技能?:...素质?:我都知道了.")) {
+				switch(select("...м?:...借?:и常笵.")) {
 				case 1:
-					mes "[无名者]";
-					mes "技能...?";
-					mes "尽管技能有很多应用时注意的细节, 但我会把基本的概念告诉你的.";
+					mes "[礚]";
+					mes "м...?";
+					mes "荷恨мΤ莱ノ猔種灿竊, и穦р膀セ阀├禗.";
 					next;
-					mes "[无名者]";
-					mes "首先, ^3355FF拳刃修炼^000000. 这个技能增加拳刃系列武器的攻击力. 等级愈高, 增加的攻击力也愈大.";
+					mes "[礚]";
+					mes ", ^3355FF芬^000000. 硂м糤╰猌竟ю阑. 单稶蔼, 糤ю阑稶.";
 					next;
-					mes "[无名者]";
-					mes "^3355FF左手修炼^000000 and ^3355FF右手修炼^000000. 使用短剑系列武器时, 刺客两手可以分别持有不同的武器.";
+					mes "[礚]";
+					mes "^3355FFオも芬^000000 and ^3355FFも芬^000000. ㄏノ祏糃╰猌竟, ㄢもだΤぃ猌竟.";
 					next;
-					mes "[无名者]";
-					mes "但是同时使用两种武器肯定比只使用一种武器要困难得多. 左右手修炼可以恢复两手本来的攻击力.";
+					mes "[礚]";
+					mes "琌ㄏノㄢ销猌竟﹚ゑㄏノ销猌竟璶螟眔. オも芬蝋ㄢもセㄓю阑.";
 					next;
-					mes "[无名者]";
-					mes "然而, 如果你不打算使用两把短剑的话, 就不需要学习这个技能了. 右手修炼2级以后, 就可以学习左手修炼了.";
+					mes "[礚]";
+					mes "礛τ, 狦ぃゴ衡ㄏノㄢр祏糃杠, 碞ぃ惠璶厩策硂м. も芬2, 碞厩策オも芬.";
 					next;
-					mes "[无名者]";
-					mes "^3355FF音速投掷^000000可以让你一次对近身敌人进行8次攻击. 只有装配拳刃系列武器时才能使用.";
+					mes "[礚]";
+					mes "^3355FF硉щ耏^000000琵Ω癸ō寄秈︽8Ωю阑. Τ杆皌╰猌竟ㄏノ.";
 					next;
-					mes "[无名者]";
-					mes "当然了, 伤害受武器攻击力和STR的影响. 拳刃修炼4级以后, 就可以学习音速投掷了.";
+					mes "[礚]";
+					mes "讽礛, 端甡猌竟ю阑㎝STR紇臫. 芬4, 碞厩策硉щ耏.";
 					next;
-					mes "[无名者]";
-					mes "^3355FF无影之牙^000000可以让你在隐匿的状态下攻击敌人.";
+					mes "[礚]";
+					mes "^3355FF礚紇ぇ^000000琵留拔篈ю阑寄.";
 					next;
-					mes "[无名者]";
-					mes "因为是远程攻击手段, 所以当你被怪物围攻时会很有用的.";
+					mes "[礚]";
+					mes "琌环祘ю阑も琿, ┮讽砆┣瞅ю穦Τノ.";
 					next;
-					mes "[无名者]";
-					mes "因为只有在隐匿状态下才能发动此技能, 所以必须学会2级的伪装才能学习此技能.";
+					mes "[礚]";
+					mes "Τ留拔篈祇笆м, ┮ゲ斗厩穦2鞍杆厩策м.";
 					next;
-					mes "[无名者]";
-					mes "为了学习^3355FF伪装^000000, 你必须先学会2级的隐匿. 那时当你接近墙壁时就可以移动了.";
+					mes "[礚]";
+					mes "厩策^3355FF鞍杆^000000, ゲ斗厩穦2留拔. ê讽钡鲤纠碞簿笆.";
 					next;
-					mes "[无名者]";
-					mes "^3355FF涂毒^000000可以让你把毒药涂抹在你正使用的武器上. 它可以临时赋予武器毒属性.";
+					mes "[礚]";
+					mes "^3355FF襖瑀^000000琵р瑀媚襖┵タㄏノ猌竟. ウ羬结ぉ猌竟瑀妮┦.";
 					next;
-					mes "[无名者]";
-					mes "这个技能有一定机率让敌人中毒. 同时, 你也可以用此技能给你的队友进行涂毒...";
+					mes "[礚]";
+					mes "硂мΤ﹚审瞯琵寄い瑀. , ノм倒钉ね秈︽襖瑀...";
 					next;
-					mes "[无名者]";
-					mes "^3355FF毒性反弹^000000这个持能的作用是, 当某特定玩家受到毒属性的攻击时, 可以将毒性反作用到施毒者身上. 你必须提前学会3级的涂毒.";
+					mes "[礚]";
+					mes "^3355FF瑀┦は紆^000000硂ノ琌, 讽琘疭﹚產瑀妮┦ю阑, 盢瑀┦はノ琁瑀ō. ゲ斗矗玡厩穦3襖瑀.";
 					next;
-					mes "[无名者]";
-					mes "^3355FF病毒散播^000000以红色魔力矿石作为催化剂, 在指定的范围内散播病毒. 此技能等级愈高, 毒性持续时间愈长.";
+					mes "[礚]";
+					mes "^3355FF痜瑀床冀^000000︹臸膓ホ妒て警, ﹚璖瞅ず床冀痜瑀. м单稶蔼, 瑀┦尿丁稶.";
 					next;
-					mes "[无名者]";
-					mes "在学会了5级涂毒以后, 你就可以学习这个技能了.";
+					mes "[礚]";
+					mes "厩穦5襖瑀, 碞厩策硂м.";
 					next;
-					mes "[无名者]";
-					mes "^3355FF毒性感染^000000可以让被施用者在HP低于一定数值时, 3秒后发生爆炸.";
+					mes "[礚]";
+					mes "^3355FF瑀┦稰琕^000000琵砆琁ノHP﹚计, 3祇ネ脄.";
 					next;
-					mes "[无名者]";
-					mes "爆炸时对周围的敌人也给予伤害力, 让毒扩散出去. 需要5级的毒性反弹和5级的毒性散播作为前置技能.";
+					mes "[礚]";
+					mes "脄癸㏄瞅寄倒ぉ端甡, 琵瑀耎床. 惠璶5瑀┦は紆㎝5瑀┦床冀玡竚м.";
 					next;
-					mes "[无名者]";
-					mes "好了...";
-					mes "关于刺客的技能,";
-					mes "我能告诉你的就是这么多了.";
+					mes "[礚]";
+					mes "...";
+					mes "闽м,";
+					mes "и禗碞琌硂.";
 					set ASSIN_Q2,1;
 					next;
 					break;
 				case 2:
-					mes "[无名者]";
-					mes "嗯, 关于素质点...";
-					mes "对于刺客来说, AGI是最重要的了.";
+					mes "[礚]";
+					mes "垛, 闽借翴...";
+					mes "癸ㄓ弧, AGI琌程璶.";
 					next;
-					mes "[无名者]";
-					mes "为了进行刺杀任务, STR也是很重要的. 当然了, 这只是我的建议.";
+					mes "[礚]";
+					mes "秈︽炳ヴ叭, STR琌璶. 讽礛, 硂琌и某.";
 					next;
-					mes "[无名者]";
-					mes "我不能给你一个固定的素质分配方案, 走哪条路, 要看你自己的决定.";
+					mes "[礚]";
+					mes "иぃ倒㏕﹚借だ皌よ, ǐ兵隔, 璶∕﹚.";
 					set ASSIN_Q2,2;
 					next;
 					break;
 				case 3:
 					if (ASSIN_Q2 == 0) {
-						mes "[无名者]";
-						mes "都懂了吗?!";
-						mes "我会进行裁定的!";
+						mes "[礚]";
+						mes "常来盾?!";
+						mes "и穦秈︽掉﹚!";
 						next;
 					}
 					set ASSIN_Q2,3;
 					break;
 				}
 			}
-			mes "[无名者]";
-			mes "是时候对你进行理论测试了, 你最多只能答错1道题目.";
+			mes "[礚]";
+			mes "琌癸秈︽瞶阶代刚, 程氮岿1笵肈ヘ.";
 			next;
-			mes "[无名者]";
-			mes "换句话说, 10道题目中你必须要答对9道. 我不会告诉你哪道题答错了...";
+			mes "[礚]";
+			mes "传杠弧, 10笵肈ヘいゲ斗璶氮癸9笵. иぃ穦禗笵肈氮岿...";
 			next;
-			mes "[无名者]";
-			mes "准备好了吗?";
-			mes "好的, 开始了!";
+			mes "[礚]";
+			mes "称盾?";
+			mes ", 秨﹍!";
 		}
 		else if (ASSIN_Q2 < 5) {
-			mes "[无名者]";
-			mes "通过这么简单的一项测试,";
-			mes "有问题吗?";
-			mes "你还需要";
-			mes "掌握更多的知识啊.";
+			mes "[礚]";
+			mes "硄筁硂虏虫兜代刚,";
+			mes "Τ拜肈盾?";
+			mes "临惠璶";
+			mes "磝搐醚摆.";
 			next;
-			if (select("帮帮我如何通过?:我要再试一次!") == 1) {
-				mes "[无名者]";
-				mes "问的非常好. 但是你被刺客工公放逐, 所以和我没关系啊...";
+			if (select("腊腊и硄筁?:и璶刚Ω!") == 1) {
+				mes "[礚]";
+				mes "拜獶盽. 琌砆そ硋, ┮㎝и⊿闽╰摆...";
 				close2;
 				warp "moc_fild16",206,151;
 				end;
 			}
-			mes "[无名者]";
-			mes "我懂了...";
-			mes "去吧, 不要害怕. 我会一直在你身边的...";
+			mes "[礚]";
+			mes "и来...";
+			mes ", ぃ璶甡┤. и穦ō娩...";
 			next;
-			mes "[无名者]";
-			mes "现在, 我会对你再次进行测试! 记住了, 10道题目中你必须要答对9道. 记住我一直在帮你...";
+			mes "[礚]";
+			mes "瞷, и穦癸Ω秈︽代刚! 癘, 10笵肈ヘいゲ斗璶氮癸9笵. 癘и腊...";
 			next;
-			mes "[无名者]";
-			mes "如果你答错了2道题, 就不要想成为刺客了.";
+			mes "[礚]";
+			mes "狦氮岿2笵肈, 碞ぃ璶稱Θ.";
 			next;
-			mes "[无名者]";
-			mes "好的,";
-			mes "准备好了吗?";
-			mes "祝你好运.";
+			mes "[礚]";
+			mes ",";
+			mes "称盾?";
+			mes "笲.";
 		}
 		next;
 		switch(rand(1,3)) {
 		case 1:
-			mes "[无名者]";
-			mes "1. 下面哪个选项不是无影之牙的前置?";
+			mes "[礚]";
+			mes "1. 匡兜ぃ琌礚紇ぇ玡竚?";
 			next;
-			if (select("伪装2级:音速投掷5级:拳刃修炼4级:右手修炼2级") == 4)
+			if (select("鞍杆2:硉щ耏5:芬4:も芬2") == 4)
 				set .@assassin_t,.@assassin_t+10;
-			mes "[无名者]";
-			mes "2. 涂毒会赋矛武器什么属性?";
+			mes "[礚]";
+			mes "2. 襖瑀穦结ベ猌竟ぐ妮┦?";
 			next;
-			if (select("毒:地:火:风") == 1)
+			if (select("瑀:::") == 1)
 				set .@assassin_t,.@assassin_t+10;
-			mes "[无名者]";
-			mes "3. 右手修炼4级有什么作用效果?";
+			mes "[礚]";
+			mes "3. も芬4Τぐノ狦?";
 			next;
-			if (select("恢复80%攻击力:恢复90%攻击力:增加90%攻击力:增加108%攻击力") == 2)
+			if (select("蝋80%ю阑:蝋90%ю阑:糤90%ю阑:糤108%ю阑") == 2)
 				set .@assassin_t,.@assassin_t+10;
-			mes "[无名者]";
-			mes "4. 病毒散播需要什么物品作为催化剂?";
+			mes "[礚]";
+			mes "4. 痜瑀床冀惠璶ぐ珇妒て警?";
 			next;
-			if (select("火灵矿石:蓝色魔力矿石:黄色魔力矿石:红色魔力矿石") == 4)
+			if (select("艶膓ホ:屡︹臸膓ホ:独︹臸膓ホ:︹臸膓ホ") == 4)
 				set .@assassin_t,.@assassin_t+10;
-			mes "[无名者]";
-			mes "5. 涂毒5级以后, 你就可以学习哪项技能了?";
+			mes "[礚]";
+			mes "5. 襖瑀5, 碞厩策兜м?";
 			next;
-			if (select("施毒:音速投掷:毒性感染:病毒散播") == 4)
+			if (select("琁瑀:硉щ耏:瑀┦稰琕:痜瑀床冀") == 4)
 				set .@assassin_t,.@assassin_t+10;
-			mes "[无名者]";
-			mes "6. 下面这些技能中, 哪一个可以让你在隐身状态下还能移动?";
+			mes "[礚]";
+			mes "6. 硂ㄇмい, 琵留ō篈临簿笆?";
 			next;
-			if (select("隐匿:后退回避:伪装:喷砂") == 3)
+			if (select("留拔:癶磷:鞍杆:糛") == 3)
 				set .@assassin_t,.@assassin_t+10;
-			mes "[无名者]";
-			mes "7. 下面哪一个选项是和毒性感染有关的?";
+			mes "[礚]";
+			mes "7. 匡兜琌㎝瑀┦稰琕Τ闽?";
 			next;
-			if (select("移动速度.:红色魔力矿石.:施毒者的武器.") == 2)
+			if (select("簿笆硉.:︹臸膓ホ.:琁瑀猌竟.") == 2)
 				set .@assassin_t,.@assassin_t+10;
-			mes "[无名者]";
-			mes "8. 下面哪种魔物被插了螃蟹卡片的武器所克制?";
+			mes "[礚]";
+			mes "8. 销臸砆础坷蒙猌竟┮?";
 			next;
-			if (select("绿苍蝇:罗达蛙:长老树精:巴风特") == 3)
+			if (select("厚籥们:霉笷奠:ρ攫弘:ぺ疭") == 3)
 				set .@assassin_t,.@assassin_t+10;
-			mes "[无名者]";
-			mes "9. 当使用二刀连击时,";
-			mes "需要消耗多少的SP?";
+			mes "[礚]";
+			mes "9. 讽ㄏノ硈阑,";
+			mes "惠璶ぶSP?";
 			next;
-			if (select("消耗SP为15:被动技能, 消耗SP为0.:主动技能, 消耗SP为10.:消耗SP为54") == 2)
+			if (select("SP15:砆笆м, SP0.:笆м, SP10.:SP54") == 2)
 				set .@assassin_t,.@assassin_t+10;
-			mes "[无名者]";
-			mes "10. 什么属性的武器在依斯鲁德海底时使用效果最好?";
+			mes "[礚]";
+			mes "10. ぐ妮┦猌竟ㄌ吹緗紈┏ㄏノ狦程?";
 			next;
-			if (select("风属性:水属性:地属性:火属性") == 1)
+			if (select("妮┦:妮┦:妮┦:妮┦") == 1)
 				set .@assassin_t,.@assassin_t+10;
 			break;
 		case 2:
-			mes "[无名者]";
-			mes "1. 杀死哪种魔物时,";
-			mes "掉落有2洞的卡塔勒拳刃?";
+			mes "[礚]";
+			mes "1. 炳销臸,";
+			mes "奔辅Τ2瑌娥扒?";
 			next;
-			if (select("盗虫:魔菇:沙漠之狼:刺锤哥布灵") == 3)
+			if (select("祍︿:臸郏:‵簔ぇ疶:凌ガ艶") == 3)
 				set .@assassin_t,.@assassin_t+10;
-			mes "[无名者]";
-			mes "2. 杀死哪种魔物时,";
-			mes "掉落3洞的拳刃?";
+			mes "[礚]";
+			mes "2. 炳销臸,";
+			mes "奔辅3瑌?";
 			next;
-			if (select("土拨鼠:沙漠之狼:螳螂:摩尔") == 1)
+			if (select("挤公:‵簔ぇ疶:廉礁:集焊") == 1)
 				set .@assassin_t,.@assassin_t+10;
-			mes "[无名者]";
-			mes "3. 什么职业可以造属性武器?";
+			mes "[礚]";
+			mes "3. ぐ戮穨硑妮┦猌竟?";
 			next;
-			if (select("商人:铁匠:盗贼:服事") == 2)
+			if (select("坝:臟:祍搁:狝ㄆ") == 2)
 				set .@assassin_t,.@assassin_t+10;
-			mes "[无名者]";
-			mes "4. 下面哪一个不是拳刃系列的武器?";
+			mes "[礚]";
+			mes "4. ぃ琌╰猌竟?";
 			next;
-			if (select("秘刃暗啸:巨魔指甲:血之泪:长柄短剑") == 4)
+			if (select("穞糞:エ臸ヒ:﹀ぇ瞈:琡祏糃") == 4)
 				set .@assassin_t,.@assassin_t+10;
-			mes "[无名者]";
-			mes "5. 依斯鲁德海底的怪物大部分是哪种属性的?";
+			mes "[礚]";
+			mes "5. ㄌ吹緗紈┏┣场だ琌销妮┦?";
 			next;
-			if (select("水:火:风:地") == 1)
+			if (select(":::") == 1)
 				set .@assassin_t,.@assassin_t+10;
-			mes "[无名者]";
-			mes "6. 下面哪一种魔物,";
-			mes "不能作为宠物来领养?";
+			mes "[礚]";
+			mes "6. 销臸,";
+			mes "ぃ胐ㄓ烩緄?";
 			next;
-			if (select("魔菇:罗达蛙:鬼女:苍蝇") == 2)
+			if (select("臸郏:霉笷奠:碍:籥们") == 2)
 				set .@assassin_t,.@assassin_t+10;
-			mes "[无名者]";
-			mes "7. 下面哪一种魔物, 用火属性的武器最好对付?";
+			mes "[礚]";
+			mes "7. 销臸, ノ妮┦猌竟程癸?";
 			next;
-			if (select("刺刀哥布灵:链锤哥布灵:大斧哥布灵:榔头哥布灵") == 4)
+			if (select("ガ艶:渺凌ガ艶:ガ艶:穧繷ガ艶") == 4)
 				set .@assassin_t,.@assassin_t+10;
-			mes "[无名者]";
-			mes "8. 下面哪种拳刃是无属性的?";
+			mes "[礚]";
+			mes "8. 销琌礚妮┦?";
 			next;
-			if (select("火灵拳刃:刺藤拳刃:骸灵拳刃:圣灵拳刃") == 4)
+			if (select("艶:妹:纄艶:蒾艶") == 4)
 				set .@assassin_t,.@assassin_t+10;
-			mes "[无名者]";
-			mes "9. 下面哪种波利是念属性的?";
+			mes "[礚]";
+			mes "9. 销猧琌├妮┦?";
 			next;
-			if (select("波利:波利之王:幽灵波利:圣诞波利") == 3)
+			if (select("猧:猧ぇ:艶猧:蒾较猧") == 3)
 				set .@assassin_t,.@assassin_t+10;
-			mes "[无名者]";
-			mes "10. 下面哪一种魔物,";
-			mes "不是不死属性的?";
+			mes "[礚]";
+			mes "10. 销臸,";
+			mes "ぃ琌ぃ妮┦?";
 			next;
-			if (select("腐尸:毕莱特:幽灵剑士:安毕斯") == 3)
+			if (select("籊:拨弟疭:艶糃:拨吹") == 3)
 				set .@assassin_t,.@assassin_t+10;
 			break;
 		case 3:
-			mes "[无名者]";
-			mes "1. 10级的残影能提升多少的闪避?";
+			mes "[礚]";
+			mes "1. 10摧紇矗どぶ皗磷?";
 			next;
 			if (select("30:40:160:20") == 1)
 				set .@assassin_t,.@assassin_t+10;
-			mes "[无名者]";
-			mes "2. 即使处于隐匿或伪装状态, 也可以被下列哪种魔物发现?";
+			mes "[礚]";
+			mes "2. ㄏ矪留拔┪鞍杆篈, 砆销臸祇瞷?";
 			next;
-			if (select("绿棉虫:黑暗之王:木乃伊:疯兔") == 2)
+			if (select("厚粗︿:堵穞ぇ:れレ:浩ㄟ") == 2)
 				set .@assassin_t,.@assassin_t+10;
-			mes "[无名者]";
-			mes "3. 下面哪种搭配不能被刺客同时使用?";
+			mes "[礚]";
+			mes "3. 销穎皌ぃ砆ㄏノ?";
 			next;
-			if (select("双刃短剑+大马士革短剑:笨拙短剑+大马士革短剑:血之泪+笨拙短剑:破甲短锥+手术刀") == 3)
+			if (select("蛮祏糃+皑祏糃:猜╁祏糃+皑祏糃:﹀ぇ瞈+猜╁祏糃:瘆ヒ祏繞+も砃") == 3)
 				set .@assassin_t,.@assassin_t+10;
-			mes "[无名者]";
-			mes "4. 下面哪一座城市是盗贼转职之地?";
+			mes "[礚]";
+			mes "4. 畒カ琌祍搁锣戮ぇ?";
 			next;
-			if (select("普隆德拉:朱诺:艾尔怕兰:梦罗克") == 4)
+			if (select("炊订紈┰:Χ空:︺焊┤孽:冠霉") == 4)
 				set .@assassin_t,.@assassin_t+10;
-			mes "[无名者]";
-			mes "5. 下面哪个卡片和AGI无关?";
+			mes "[礚]";
+			mes "5. ㎝AGI礚闽?";
 			next;
-			if (select("小巴风特卡片:长老树精卡片:盗虫卡片:浮勒盗虫卡片") == 2)
+			if (select("ぺ疭:ρ攫弘:祍︿:疊扒祍︿") == 2)
 				set .@assassin_t,.@assassin_t+10;
-			mes "[无名者]";
-			mes "6. 哪一项是刺客这个职业的特长?";
+			mes "[礚]";
+			mes "6. 兜琌硂戮穨疭?";
 			next;
-			if (select("出色的歌唱能力:无敌的阅读能力:厉害的魔法能力:看似NB的闪避能力") == 4)
+			if (select("︹簈佰:礚寄綷弄:糉甡臸猭:NB皗磷") == 4)
 				set .@assassin_t,.@assassin_t+10;
-			mes "[无名者]";
-			mes "7. 当职业技能等级达到50级时, 可以额外获得的AGI点数是多少?";
+			mes "[礚]";
+			mes "7. 讽戮穨м单笷50, 肂莉眔AGI翴计琌ぶ?";
 			next;
 			if (select("7:8:9:10") == 4) 
 				set .@assassin_t,.@assassin_t+10;
-			mes "[无名者]";
-			mes "8. 哪一种装备是刺客不能佩戴的?";
+			mes "[礚]";
+			mes "8. 销杆称琌ぃㄘ拦?";
 			next;
-			if (select("双刃短剑:狂怒飓风:圆盾:圣灵拳刃") == 2) 
+			if (select("蛮祏糃:╣咙:蛾:蒾艶") == 2) 
 				set .@assassin_t,.@assassin_t+10;
-			mes "[无名者]";
-			mes "9. 下面哪一种物品是盗贼转职所需?";
+			mes "[礚]";
+			mes "9. 销珇琌祍搁锣戮┮惠?";
 			next;
-			switch(select("恶臭香菇:香菇芽孢:毒香菇:毒魔菇芽孢")) {
+			switch(select("碿郏:郏蘒:瑀郏:瑀臸郏蘒")) {
 			case 1:
 			case 3:
 				set .@assassin_t,.@assassin_t+10;
@@ -1003,47 +1003,47 @@ OnTouch_:
 			default:
 				break;
 			}
-			mes "[无名者]";
-			mes "10. 下面哪一种武器对刺客帮助最少?";
+			mes "[礚]";
+			mes "10. 销猌竟癸腊程ぶ?";
 			next;
-			if (select("疯兔卡片:长老树精卡片:狼卡片:小鸡卡片") == 2)
+			if (select("浩ㄟ:ρ攫弘:疶:蔓") == 2)
 				set .@assassin_t,.@assassin_t+10;
 			break;
 		}
 		if (ASSIN_Q2 == 3) {
 			next;
-			mes "[无名者]";
-			mes "嗯.";
-			mes "不管怎么说";
-			mes "你都已经尽力了.";
-			mes "先休息一下吧.";
+			mes "[礚]";
+			mes "垛.";
+			mes "ぃ恨弧";
+			mes "常竒荷.";
+			mes "ヰ.";
 			next;
-			mes "[无名者]";
-			mes "让我看看...";
-			mes "你的分数.";
+			mes "[礚]";
+			mes "琵и...";
+			mes "だ计.";
 			mes "" + .@assassin_t + " percent...";
 			if (.@assassin_t > 80) {
 				set ASSIN_Q2,5;
 				changequest 8002,8003;
-				mes "不错.";
-				mes "你通过了!";
+				mes "ぃ岿.";
+				mes "硄筁!";
 				next;
-				mes "[无名者]";
-				mes "然而, 接下来还有一项测试等着你呢. 到达下一个考场时, 你会接到命令的...";
+				mes "[礚]";
+				mes "礛τ, 钡ㄓ临Τ兜代刚单帝㎡. 笷σ初, 穦钡㏑...";
 				close;
 			}
 			else {
 				set ASSIN_Q2,4;
-				mes "那么, 你失败了!";
+				mes "ê, ア毖!";
 				next;
-				mes "[无名者]";
-				mes "这个分数就想成为一名刺客? 继续修炼去吧.";
+				mes "[礚]";
+				mes "硂だ计碞稱Θ? 膥尿芬.";
 				next;
-				mes "[无名者]";
-				mes "你可以去问问卡伊, 看看他有什么建议.";
+				mes "[礚]";
+				mes "拜拜レ, Τぐ某.";
 				next;
-				mes "[无名者]";
-				mes "另外, 蓝翔技校欢迎你...";
+				mes "[礚]";
+				mes ", 屡稻м舧...";
 				close2;
 				warp "in_moc_16",19,76;
 				end;
@@ -1051,40 +1051,40 @@ OnTouch_:
 		}
 		else if (ASSIN_Q2 == 4) {
 			next;
-			mes "[无名者]";
-			mes "你尽力了,";
-			mes "我看得出来...";
+			mes "[礚]";
+			mes "荷,";
+			mes "и眔ㄓ...";
 			next;
-			mes "[无名者]";
-			mes "让我看看...";
-			mes "你的得分.";
+			mes "[礚]";
+			mes "琵и...";
+			mes "眔だ.";
 			mes "" + .@assassin_t + " points...";
 			if (.@assassin_t > 80) {
 				set ASSIN_Q2,5;
 				changequest 8002,8003;
 				next;
-				mes "[无名者]";
-				mes "这次总算通过了! 但是并没有结束. 前面还有一个测试等着你呢. 祝你好运了!";
+				mes "[礚]";
+				mes "硂Ω羆衡硄筁! 琌⊿Τ挡. 玡临Τ代刚单帝㎡. 笲!";
 				close;
 			}
 			else {
 				set ASSIN_Q2,4;
-				mes "你失败了!";
+				mes "ア毖!";
 				next;
-				mes "[无名者]";
-				mes "这么弱的渣渣, 你怎么可能成为一名刺客?!";
+				mes "[礚]";
+				mes "硂畓错错, Θ?!";
 				next;
-				mes "[无名者]";
-				mes "我认为你也就只能是一个盗贼了. 快走吧, 继续修炼直到你完全掌握了刺客的知识.";
+				mes "[礚]";
+				mes "и粄碞琌祍搁. еǐ, 膥尿芬Ч磝搐醚.";
 				next;
-				mes "[无名者]";
-				mes "如果你毫无头绪的话, 我可以给你一个建议.";
+				mes "[礚]";
+				mes "狦睝礚繷狐杠, и倒某.";
 				next;
-				mes "[无名者]";
-				mes "去找卡伊吧, 就是那个放你进来的人, 他或许可以帮你提升一下你的理论知识.";
+				mes "[礚]";
+				mes "тレ, 碞琌ê秈ㄓ, ┪砛腊矗ど瞶阶醚.";
 				next;
-				mes "[无名者]";
-				mes "另外, 蓝翔技校欢迎你...";
+				mes "[礚]";
+				mes ", 屡稻м舧...";
 				close2;
 				warp "in_moc_16",19,76;
 				end;
@@ -1092,19 +1092,19 @@ OnTouch_:
 		}
 	}
 	else {
-		mes "[无名者]";
-		mes "...我会一直关注你的.";
+		mes "[礚]";
+		mes "...и穦闽猔.";
 		close;
 	}
 }
 
-in_moc_16,21,165,2	script	待命房间#ASNTEST	4_F_JOB_ASSASSIN,{
+in_moc_16,21,165,2	script	㏑┬丁#ASNTEST	4_F_JOB_ASSASSIN,{
 	end;
 
 OnInit:
 	//disablenpc "Standby Room#ASNTEST";
-	hideonnpc "待命房间#ASNTEST";
-	waitingroom "待命房间",10,"待命房间#ASNTEST::OnStartArena",1;
+	hideonnpc "㏑┬丁#ASNTEST";
+	waitingroom "㏑┬丁",10,"㏑┬丁#ASNTEST::OnStartArena",1;
 	enablewaitingroomevent;
 	end;
 
@@ -1115,9 +1115,9 @@ OnStartArena:
 		warpchar "in_moc_16",20,145,getcharid(0);
 		end;
 	}
-	donpcevent "旁观者#ASNTEST::OnEnable";
-	donpcevent "门卫#ASN::OnDisable";
-	set getvariableofnpc(.DisableTraps,"旁观者#ASNTEST"),0;
+	donpcevent "芠#ASNTEST::OnEnable";
+	donpcevent "矫#ASN::OnDisable";
+	set getvariableofnpc(.DisableTraps,"芠#ASNTEST"),0;
 	disablewaitingroomevent;
 	end;
 
@@ -1126,73 +1126,73 @@ OnStart:
 	end;
 }
 
-in_moc_16,21,165,2	script	测试向导#ASN	4_F_JOB_ASSASSIN,4,4,{
+in_moc_16,21,165,2	script	代刚旧#ASN	4_F_JOB_ASSASSIN,4,4,{
 	end;
 
 OnTouch_:
 	if (ASSIN_Q2 < 5) {
-		mes "[帕勒卡迪]";
-		mes "没有通过理论知识考试的话是不能继续进行任务的, 再去找无名者谈谈吧...";
+		mes "[┈扒瓆]";
+		mes "⊿Τ硄筁瞶阶醚σ刚杠琌ぃ膥尿秈︽ヴ叭, т礚酵酵...";
 		close2;
 		warp "in_moc_16",19,76;
 		end;
 	}
 	if (ASSIN_Q == 1 && ASSIN_Q2 == 5) {
-		mes "[帕勒卡迪]";
+		mes "[┈扒瓆]";
 		mes "" + strcharinfo(0) + "...";
-		mes "你通过考试了..?";
+		mes "硄筁σ刚..?";
 		next;
-		mes "[帕勒卡迪]";
-		mes "说实话, 我宁愿让你不需任何条件就转职成为刺客, 但近来有太多无知的人什么也不懂就来转职...";
+		mes "[┈扒瓆]";
+		mes "弧龟杠, и蓃篅琵ぃ惠ヴ兵ン碞锣戮Θ, ㄓΤび礚ぐぃ来碞ㄓ锣戮...";
 		next;
-		mes "[帕勒卡迪]";
-		mes "我们必须要保持我们刺客的尊严, 但是很遗憾, 有太多无节操的人也想成为刺客了...";
+		mes "[┈扒瓆]";
+		mes "иゲ斗璶玂и碙腨, 琌框狙, Τび礚竊巨稱Θ...";
 		next;
-		mes "[帕勒卡迪]";
-		mes "所有的刺客都必须对他们杀死的敌人保持敬意, 武器上染着的血痕, 一样包含了他们的尊严!";
+		mes "[┈扒瓆]";
+		mes "┮Τ常ゲ斗癸炳寄玂穛種, 猌竟琕帝﹀勃, 妓碙腨!";
 		next;
-		mes "[帕勒卡迪]";
-		mes "好了. 下一项测试是考验你快速准确找到目标的能力.";
+		mes "[┈扒瓆]";
+		mes ". 兜代刚琌σ喷е硉谔тヘ夹.";
 		next;
-		mes "[帕勒卡迪]";
-		mes "如果你要成为一名刺客, 就要清楚的分辨出哪些是敌人而哪些是朋友.";
+		mes "[┈扒瓆]";
+		mes "狦璶Θ, 碞璶睲贰だ侩ㄇ琌寄τㄇ琌狟ね.";
 		next;
-		mes "[帕勒卡迪]";
-		mes "这个测试的任务就是杀死尽可能多的, 名为^008800转职试验用样本^000000的魔物.";
+		mes "[┈扒瓆]";
+		mes "硂代刚ヴ叭碞琌炳荷, ^008800锣戮刚喷ノ妓セ^000000臸.";
 		next;
-		mes "[帕勒卡迪]";
-		mes "你至少要杀死6只名为^008800转职试验用样本^000000的魔物,";
-		mes "它们夹杂在相近名字的魔物中间, 所以你要格外小心...";
+		mes "[┈扒瓆]";
+		mes "ぶ璶炳6^008800锣戮刚喷ノ妓セ^000000臸,";
+		mes "ウЖ馒臸い丁, ┮璶み...";
 		next;
-		mes "[帕勒卡迪]";
-		mes "如果失败了, 就要重新开始测试. 到我上面的房间去,";
-		mes "就可以传送到考试场地.";
+		mes "[┈扒瓆]";
+		mes "狦ア毖, 碞璶穝秨﹍代刚. и┬丁,";
+		mes "碞肚癳σ刚初.";
 		next;
-		mes "[帕勒卡迪]";
-		mes "房间里一次只允许进一个人, 所以只要有人在进行测试, 你就只有在外面等着直到他考试完毕.";
+		mes "[┈扒瓆]";
+		mes "┬丁ńΩす砛秈, ┮璶Τ秈︽代刚, 碞Τ单帝σ刚Ч拨.";
 		close;
 	}
 	else {
-		mes "[帕勒卡迪]";
-		mes "嘿, 不要太紧张了,";
-		mes "放轻松!";
+		mes "[┈扒瓆]";
+		mes "糑, ぃ璶び候眎,";
+		mes "淮猀!";
 		next;
-		mes "[帕勒卡迪]";
-		mes "嗯, 如果你很累了, 我可以送你回去, 但是你就要重新接受考试了. 所以你的决定是...?";
+		mes "[┈扒瓆]";
+		mes "垛, 狦仓, и癳, 琌碞璶穝钡σ刚. ┮∕﹚琌...?";
 		next;
-		if (select("继续考试!:退出考试.") == 1) {
-			mes "[帕勒卡迪]";
-			mes "好的!";
-			mes "记住了,";
-			mes "你必须杀死至少6只";
-			mes "名为^008800转职试验用样本^000000的魔物!";
-			mes "祝你好运!";
+		if (select("膥尿σ刚!:癶σ刚.") == 1) {
+			mes "[┈扒瓆]";
+			mes "!";
+			mes "癘,";
+			mes "ゲ斗炳ぶ6";
+			mes "^008800锣戮刚喷ノ妓セ^000000臸!";
+			mes "笲!";
 			close;
 		}
-		mes "[帕勒卡迪]";
-		mes "好吧...";
-		mes "我想,";
-		mes "你是应该休息一下了...";
+		mes "[┈扒瓆]";
+		mes "...";
+		mes "и稱,";
+		mes "琌莱赣ヰ...";
 		close2;
 		set ASSIN_Q,0;
 		set ASSIN_Q3,0;
@@ -1203,144 +1203,144 @@ OnTouch_:
 	}
 }
 
-in_moc_16,1,1,0	script	旁观者#ASNTEST	-1,{
+in_moc_16,1,1,0	script	芠#ASNTEST	-1,{
 	end;
 
 OnEnable:
 	set .MyMobs,6;
 	// Target mobs
-	monster "in_moc_16",62,161,"转职试验用样本",1002,1,"旁观者#ASNTEST::OnMyMobDead";
-	monster "in_moc_16",85,169,"转职试验用样本",1063,1,"旁观者#ASNTEST::OnMyMobDead";
-	monster "in_moc_16",88,152,"转职试验用样本",1002,1,"旁观者#ASNTEST::OnMyMobDead";
-	monster "in_moc_16",90,143,"转职试验用样本",1113,1,"旁观者#ASNTEST::OnMyMobDead";
-	monster "in_moc_16",74,167,"转职试验用样本",1031,1,"旁观者#ASNTEST::OnMyMobDead";
-	monster "in_moc_16",77,173,"转职试验用样本",1002,1,"旁观者#ASNTEST::OnMyMobDead";
+	monster "in_moc_16",62,161,"锣戮刚喷ノ妓セ",1002,1,"芠#ASNTEST::OnMyMobDead";
+	monster "in_moc_16",85,169,"锣戮刚喷ノ妓セ",1063,1,"芠#ASNTEST::OnMyMobDead";
+	monster "in_moc_16",88,152,"锣戮刚喷ノ妓セ",1002,1,"芠#ASNTEST::OnMyMobDead";
+	monster "in_moc_16",90,143,"锣戮刚喷ノ妓セ",1113,1,"芠#ASNTEST::OnMyMobDead";
+	monster "in_moc_16",74,167,"锣戮刚喷ノ妓セ",1031,1,"芠#ASNTEST::OnMyMobDead";
+	monster "in_moc_16",77,173,"锣戮刚喷ノ妓セ",1002,1,"芠#ASNTEST::OnMyMobDead";
 	// Decoy mobs
-	monster "in_moc_16",62,161,"转职试验有样本",1063,1,"旁观者#ASNTEST::OnMyMobDead2";
-	monster "in_moc_16",85,169,"转职试验有样本",1031,1,"旁观者#ASNTEST::OnMyMobDead2";
-	monster "in_moc_16",79,174,"转职试验有样本",1113,1,"旁观者#ASNTEST::OnMyMobDead2";
-	monster "in_moc_16",85,156,"转职试验有样本",1063,1,"旁观者#ASNTEST::OnMyMobDead2";
-	monster "in_moc_16",74,171,"转职试验用样式",1002,1,"旁观者#ASNTEST::OnMyMobDead2";
-	monster "in_moc_16",68,173,"转职试用样式子",1113,1,"旁观者#ASNTEST::OnMyMobDead2";
-	monster "in_moc_16",65,158,"转职试用战斗本",1002,1,"旁观者#ASNTEST::OnMyMobDead2";
-	monster "in_moc_16",60,158,"转职试用验样本",1113,1,"旁观者#ASNTEST::OnMyMobDead2";
-	monster "in_moc_16",64,169,"转职试验用样本们",1002,1,"旁观者#ASNTEST::OnMyMobDead2";
-	monster "in_moc_16",71,173,"转职试验有样子",1063,1,"旁观者#ASNTEST::OnMyMobDead2";
-	monster "in_moc_16",77,172,"别操我",1002,1,"旁观者#ASNTEST::OnMyMobDead2";
-	monster "in_moc_16",76,172,"转职样本",1063,1,"旁观者#ASNTEST::OnMyMobDead2";
-	monster "in_moc_16",75,172,"雅蠛蝶",1113,1,"旁观者#ASNTEST::OnMyMobDead2";
-	monster "in_moc_16",67,167,"快来快来嘛",1063,1,"旁观者#ASNTEST::OnMyMobDead2";
-	monster "in_moc_16",86,170,"转职试验用啊用",1031,1,"旁观者#ASNTEST::OnMyMobDead2";
-	monster "in_moc_16",86,171,"试验用转职样本",1002,1,"旁观者#ASNTEST::OnMyMobDead2";
-	monster "in_moc_16",85,170,"试验有转职样本",1113,1,"旁观者#ASNTEST::OnMyMobDead2";
-	monster "in_moc_16",89,171,"弄我",1063,1,"旁观者#ASNTEST::OnMyMobDead2";
-	monster "in_moc_16",85,170,"黑暗之王",1031,1,"旁观者#ASNTEST::OnMyMobDead2";
-	monster "in_moc_16",89,156,"金正日",1002,1,"旁观者#ASNTEST::OnMyMobDead2";
-	monster "in_moc_16",89,156,"霸天虎",1113,1,"旁观者#ASNTEST::OnMyMobDead2";
-	monster "in_moc_16",89,156,"转职用试样本",1063,1,"旁观者#ASNTEST::OnMyMobDead2";
-	monster "in_moc_16",89,156,"车专试用样本",1113,1,"旁观者#ASNTEST::OnMyMobDead2";
-	monster "in_moc_16",89,156,"哭尿了",1031,1,"旁观者#ASNTEST::OnMyMobDead2";
-	monster "in_moc_16",83,169,"土波利",1002,1,"旁观者#ASNTEST::OnMyMobDead2";
-	monster "in_moc_16",63,158,"周杰伦",1063,1,"旁观者#ASNTEST::OnMyMobDead2";
-	monster "in_moc_16",63,157,"车专耳只试用",1002,1,"旁观者#ASNTEST::OnMyMobDead2";
-	monster "in_moc_16",64,159,"转用试验样子",1002,1,"旁观者#ASNTEST::OnMyMobDead2";
-	monster "in_moc_16",63,159,"转职用试样样",1063,1,"旁观者#ASNTEST::OnMyMobDead2";
-	monster "in_moc_16",63,159,"祝你好运啊",1002,1,"旁观者#ASNTEST::OnMyMobDead2";
-	monster "in_moc_16",63,159,"李亚鹏",1002,1,"旁观者#ASNTEST::OnMyMobDead2";
-	monster "in_moc_16",83,148,"今晚打老虎",1002,1,"旁观者#ASNTEST::OnMyMobDead2";
-	monster "in_moc_16",82,148,"巨魔战将",1002,1,"旁观者#ASNTEST::OnMyMobDead2";
-	monster "in_moc_16",84,148,"四大天王",1002,1,"旁观者#ASNTEST::OnMyMobDead2";
+	monster "in_moc_16",62,161,"锣戮刚喷Τ妓セ",1063,1,"芠#ASNTEST::OnMyMobDead2";
+	monster "in_moc_16",85,169,"锣戮刚喷Τ妓セ",1031,1,"芠#ASNTEST::OnMyMobDead2";
+	monster "in_moc_16",79,174,"锣戮刚喷Τ妓セ",1113,1,"芠#ASNTEST::OnMyMobDead2";
+	monster "in_moc_16",85,156,"锣戮刚喷Τ妓セ",1063,1,"芠#ASNTEST::OnMyMobDead2";
+	monster "in_moc_16",74,171,"锣戮刚喷ノ妓Α",1002,1,"芠#ASNTEST::OnMyMobDead2";
+	monster "in_moc_16",68,173,"锣戮刚ノ妓Α",1113,1,"芠#ASNTEST::OnMyMobDead2";
+	monster "in_moc_16",65,158,"锣戮刚ノ驹ゆセ",1002,1,"芠#ASNTEST::OnMyMobDead2";
+	monster "in_moc_16",60,158,"锣戮刚ノ喷妓セ",1113,1,"芠#ASNTEST::OnMyMobDead2";
+	monster "in_moc_16",64,169,"锣戮刚喷ノ妓セ",1002,1,"芠#ASNTEST::OnMyMobDead2";
+	monster "in_moc_16",71,173,"锣戮刚喷Τ妓",1063,1,"芠#ASNTEST::OnMyMobDead2";
+	monster "in_moc_16",77,172,"巨и",1002,1,"芠#ASNTEST::OnMyMobDead2";
+	monster "in_moc_16",76,172,"锣戮妓セ",1063,1,"芠#ASNTEST::OnMyMobDead2";
+	monster "in_moc_16",75,172,"懂鯞胶",1113,1,"芠#ASNTEST::OnMyMobDead2";
+	monster "in_moc_16",67,167,"еㄓеㄓ估",1063,1,"芠#ASNTEST::OnMyMobDead2";
+	monster "in_moc_16",86,170,"锣戮刚喷ノ摆ノ",1031,1,"芠#ASNTEST::OnMyMobDead2";
+	monster "in_moc_16",86,171,"刚喷ノ锣戮妓セ",1002,1,"芠#ASNTEST::OnMyMobDead2";
+	monster "in_moc_16",85,170,"刚喷Τ锣戮妓セ",1113,1,"芠#ASNTEST::OnMyMobDead2";
+	monster "in_moc_16",89,171,"и",1063,1,"芠#ASNTEST::OnMyMobDead2";
+	monster "in_moc_16",85,170,"堵穞ぇ",1031,1,"芠#ASNTEST::OnMyMobDead2";
+	monster "in_moc_16",89,156,"タら",1002,1,"芠#ASNTEST::OnMyMobDead2";
+	monster "in_moc_16",89,156,"臦ぱ",1113,1,"芠#ASNTEST::OnMyMobDead2";
+	monster "in_moc_16",89,156,"锣戮ノ刚妓セ",1063,1,"芠#ASNTEST::OnMyMobDead2";
+	monster "in_moc_16",89,156,"ó盡刚ノ妓セ",1113,1,"芠#ASNTEST::OnMyMobDead2";
+	monster "in_moc_16",89,156,"Э",1031,1,"芠#ASNTEST::OnMyMobDead2";
+	monster "in_moc_16",83,169,"猧",1002,1,"芠#ASNTEST::OnMyMobDead2";
+	monster "in_moc_16",63,158,"㏄狽",1063,1,"芠#ASNTEST::OnMyMobDead2";
+	monster "in_moc_16",63,157,"ó盡φ刚ノ",1002,1,"芠#ASNTEST::OnMyMobDead2";
+	monster "in_moc_16",64,159,"锣ノ刚喷妓",1002,1,"芠#ASNTEST::OnMyMobDead2";
+	monster "in_moc_16",63,159,"锣戮ノ刚妓妓",1063,1,"芠#ASNTEST::OnMyMobDead2";
+	monster "in_moc_16",63,159,"笲摆",1002,1,"芠#ASNTEST::OnMyMobDead2";
+	monster "in_moc_16",63,159,"ㄈ腜",1002,1,"芠#ASNTEST::OnMyMobDead2";
+	monster "in_moc_16",83,148,"さ边ゴρ",1002,1,"芠#ASNTEST::OnMyMobDead2";
+	monster "in_moc_16",82,148,"エ臸驹盢",1002,1,"芠#ASNTEST::OnMyMobDead2";
+	monster "in_moc_16",84,148,"ぱ",1002,1,"芠#ASNTEST::OnMyMobDead2";
 	initnpctimer;
 	end;
 
 OnReset:
-	killmonster "in_moc_16","旁观者#ASNTEST::OnMyMobDead";
-	killmonster "in_moc_16","旁观者#ASNTEST::OnMyMobDead2";
+	killmonster "in_moc_16","芠#ASNTEST::OnMyMobDead";
+	killmonster "in_moc_16","芠#ASNTEST::OnMyMobDead2";
 	stopnpctimer;
-	donpcevent "待命房间#ASNTEST::OnStart";
+	donpcevent "㏑┬丁#ASNTEST::OnStart";
 	end;
 
 OnResetmob:
-	killmonster "in_moc_16","旁观者#ASNTEST::OnMyMobDead";
-	killmonster "in_moc_16","旁观者#ASNTEST::OnMyMobDead2";
+	killmonster "in_moc_16","芠#ASNTEST::OnMyMobDead";
+	killmonster "in_moc_16","芠#ASNTEST::OnMyMobDead2";
 	stopnpctimer;
 	end;
 
 OnMyMobDead:
 	set .MyMobs,.MyMobs-1;
 	if (.MyMobs < 1) {
-		mapannounce "in_moc_16","看起来你做的不错啊, 保持住!",bc_map;
+		mapannounce "in_moc_16","癬ㄓ暗ぃ岿摆, 玂!",bc_map;
 		set ASSIN_Q,3;
 		changequest 8003,8004;
-		donpcevent "计时器#1::OnEnable";
-		donpcevent "门卫#ASN::OnEnable";
-		donpcevent "旁观者#ASNTEST::OnResetmob";
+		donpcevent "璸竟#1::OnEnable";
+		donpcevent "矫#ASN::OnEnable";
+		donpcevent "芠#ASNTEST::OnResetmob";
 		set .DisableTraps,1;
 		stopnpctimer;
 	}
 	else {
-		mapannounce "in_moc_16","好的, 做的不错! 就快成功了, 快了!",bc_map;
+		mapannounce "in_moc_16",", 暗ぃ岿! 碞еΘ, е!",bc_map;
 	}
 	end;
 
 OnMyMobDead2:
-	mapannounce "in_moc_16",strcharinfo(0) + "! 你犯了一个错误! 我要把你带出考场!",bc_map;
+	mapannounce "in_moc_16",strcharinfo(0) + "! デ岿粇! и璶р盿σ初!",bc_map;
 	set ASSIN_Q,2;
 	warp "in_moc_16",19,161;
-	donpcevent "旁观者#ASNTEST::OnReset";
+	donpcevent "芠#ASNTEST::OnReset";
 	end;
 
 OnTimer1000:
-	mapannounce "in_moc_16"," 好了, 开始测试!",bc_map;
+	mapannounce "in_moc_16"," , 秨﹍代刚!",bc_map;
 	end;
 
 OnTimer2000:
-	mapannounce "in_moc_16","就像之前告诉你的那样, 只能杀死名为 '转职试验用样本' 的魔物",bc_map;
+	mapannounce "in_moc_16","碞钩ぇ玡禗ê妓, 炳 '锣戮刚喷ノ妓セ' 臸",bc_map;
 	end;
 
 OnTimer3000:
-	mapannounce "in_moc_16","考试的目的是为了检验你从人群中辨别出敌人的能力!",bc_map;
+	mapannounce "in_moc_16","σ刚ヘ琌浪喷眖竤い侩寄!",bc_map;
 	end;
 
 OnTimer4000:
-	mapannounce "in_moc_16","你只有3分钟的时间! 每过一分钟我都会提醒你一次.",bc_map;
+	mapannounce "in_moc_16","Τ3だ牧丁! –筁だ牧и常穦矗眶Ω.",bc_map;
 	end;
 
 OnTimer5000:
-	mapannounce "in_moc_16","好了, 3分钟计时开始, 出发出发!",bc_map;
+	mapannounce "in_moc_16",", 3だ牧璸秨﹍, 祇祇!",bc_map;
 	end;
 
 OnTimer65000:
-	mapannounce "in_moc_16","只有2分钟了. 只能杀死名为 '转职试验用样本' 的魔物!",bc_map;
+	mapannounce "in_moc_16","Τ2だ牧. 炳 '锣戮刚喷ノ妓セ' 臸!",bc_map;
 	end;
 
 OnTimer125000:
-	mapannounce "in_moc_16","还有一分钟.",bc_map;
+	mapannounce "in_moc_16","临Τだ牧.",bc_map;
 	end;
 
 OnTimer180000:
-	mapannounce "in_moc_16","还有5秒钟...",bc_map;
+	mapannounce "in_moc_16","临Τ5牧...",bc_map;
 	end;
 
 OnTimer181000:
-	mapannounce "in_moc_16","还有4秒钟...",bc_map;
+	mapannounce "in_moc_16","临Τ4牧...",bc_map;
 	end;
 
 OnTimer182000:
-	mapannounce "in_moc_16","还有3秒钟...",bc_map;
+	mapannounce "in_moc_16","临Τ3牧...",bc_map;
 	end;
 
 OnTimer183000:
-	mapannounce "in_moc_16","还有2秒钟...",bc_map;
+	mapannounce "in_moc_16","临Τ2牧...",bc_map;
 	end;
 
 OnTimer184000:
-	mapannounce "in_moc_16","还有1秒钟.",bc_map;
+	mapannounce "in_moc_16","临Τ1牧.",bc_map;
 	end;
 
 OnTimer185000:
-	mapannounce "in_moc_16","时间到!",bc_map;
-	mapannounce "in_moc_16","想浪费时间的话你就这样继续吧. 你不得不再进行一次测试了!",bc_map;
+	mapannounce "in_moc_16","丁!",bc_map;
+	mapannounce "in_moc_16","稱禣丁杠碞硂妓膥尿. ぃ眔ぃ秈︽Ω代刚!",bc_map;
 	//set ASSIN_Q,2;
 	end;
 
@@ -1349,18 +1349,18 @@ OnTimer186000:
 	end;
 
 OnTimer187000:
-	donpcevent "旁观者#ASNTEST::OnReset";
+	donpcevent "芠#ASNTEST::OnReset";
 	end;
 }
 
 in_moc_16,68,158,0	script	01_1::SinTrap	-1,0,0,{
 OnTouch:
-	if (getvariableofnpc(.DisableTraps,"旁观者#ASNTEST")  < 1) {
-		mapannounce "in_moc_16",strcharinfo(0) + ", 你掉入了陷阱, 将会被遣返.",bc_map;
+	if (getvariableofnpc(.DisableTraps,"芠#ASNTEST")  < 1) {
+		mapannounce "in_moc_16",strcharinfo(0) + ", 奔炒ɡ, 盢穦砆缓.",bc_map;
 		set ASSIN_Q,2;
 		warp "in_moc_16",19,161;
-		donpcevent "旁观者#ASNTEST::OnResetmob";
-		donpcevent "待命房间#ASNTEST::OnStart";
+		donpcevent "芠#ASNTEST::OnResetmob";
+		donpcevent "㏑┬丁#ASNTEST::OnStart";
 	}
 	end;
 }
@@ -1449,13 +1449,13 @@ in_moc_16,86,147,0	duplicate(SinTrap)	18_2	-1,0,0
 in_moc_16,87,146,0	duplicate(SinTrap)	18_3	-1,0,0
 in_moc_16,87,147,0	duplicate(SinTrap)	18_4	-1,0,0
 
-in_moc_16,87,137,0	script	门卫#ASN	WARPNPC,2,1,{
+in_moc_16,87,137,0	script	矫#ASN	WARPNPC,2,1,{
 OnInit:
-	disablenpc "门卫#ASN";
+	disablenpc "矫#ASN";
 	end;
 
 OnTouch:
-	donpcevent "托马斯#ASNTEST::OnDisable";
+	donpcevent "Λ皑吹#ASNTEST::OnDisable";
 	if (ASSIN_Q == 3)
 		set ASSIN_Q,3;
 	else
@@ -1465,22 +1465,22 @@ OnTouch:
 	end;
 
 OnEnable:
-	mapannounce "in_moc_16","坐标(87 137)处, 通向另一个房间的门, 已经打开.",bc_map;
-	enablenpc "门卫#ASN";
+	mapannounce "in_moc_16","Г夹(87 137)矪, 硄┬丁, 竒ゴ秨.",bc_map;
+	enablenpc "矫#ASN";
 	end;
 
 OnDisable:
-	disablenpc "门卫#ASN";
+	disablenpc "矫#ASN";
 	end;
 }
 
-in_moc_16,3,3,0	script	计时器#1	-1,{
+in_moc_16,3,3,0	script	璸竟#1	-1,{
 OnEnable:
 	initnpctimer;
 	end;
 
 OnTimer187000:
-	donpcevent "托马斯#ASNTEST::OnDisable";
+	donpcevent "Λ皑吹#ASNTEST::OnDisable";
 	stopnpctimer;
 	end;
 
@@ -1489,111 +1489,111 @@ OnDisable:
 	end;
 	
 OnMyMobDead:
-	mapannounce "in_moc_16","嘿, 我怎么跟你说的, 不要乱杀生啊!",bc_map;
-	mapannounce "in_moc_16","我要把你带回去... *唉...*",bc_map;
+	mapannounce "in_moc_16","糑, и蛤弧, ぃ璶睹炳ネ摆!",bc_map;
+	mapannounce "in_moc_16","и璶р盿... *...*",bc_map;
 	set ASSIN_Q,3;
 	warp "in_moc_16",87,102;
 	killmonsterall "in_moc_16";
 	end;
 }
 
-in_moc_16,89,98,1	script	托马斯#ASNTEST	2_M_THIEFMASTER,5,1,{
+in_moc_16,89,98,1	script	Λ皑吹#ASNTEST	2_M_THIEFMASTER,5,1,{
 	end;
 
 OnTouch:
 	if (ASSIN_Q == 4) {
-		mes "[托马斯]";
-		mes "啧啧...! 看起来你受了不少伤啊. ^666666*唉*^000000 等一下, 让我恢复你的HP和SP先...";
+		mes "[Λ皑吹]";
+		mes "股股...! 癬ㄓぃぶ端摆. ^666666**^000000 单, 琵и蝋HP㎝SP...";
 		percentheal 100,100;
 		next;
-		mes "[托马斯]";
-		mes "看起来你过得并不好啊. 你是不是觉得太刻苦了点...";
-		mes "够了, 孩子.";
+		mes "[Λ皑吹]";
+		mes "癬ㄓ筁眔ぃ摆. 琌ぃ琌谋眔びㄨ璚翴...";
+		mes "镑, .";
 		next;
-		switch(select("我想再试一次!:我... 我退出!")) {
+		switch(select("и稱刚Ω!:и... и癶!")) {
 		case 1:
-			mes "[托马斯]";
-			mes "好的.";
-			mes "祝你好运了.";
+			mes "[Λ皑吹]";
+			mes ".";
+			mes "笲.";
 			close;
 		case 2:
-			mes "[托马斯]";
-			mes "呼...";
-			mes "退出考试? 我想你也是不想浪费我们大家的时间了.";
+			mes "[Λ皑吹]";
+			mes "㊣...";
+			mes "癶σ刚? и稱琌ぃ稱禣и產丁.";
 			next;
-			mes "[托马斯]";
-			mes "另外, 不要忘了储存你在城市里的出生点.";
+			mes "[Λ皑吹]";
+			mes ", ぃ璶а纗カńネ翴.";
 			close2;
-			mapannounce "in_moc_16",strcharinfo(0) + " 退出了考试...下一个是谁?!",bc_map;
+			mapannounce "in_moc_16",strcharinfo(0) + " 癶σ刚...琌街?!",bc_map;
 			set ASSIN_Q,0;
 			set ASSIN_Q2,0;
 			set ASSIN_Q3,0;
 			changequest 8004,8000;
 			savepoint "in_moc_16",18,14,1,1;
 			warp "in_moc_16",18,14;
-			donpcevent "待命房间#ASNTEST::OnStart";
+			donpcevent "㏑┬丁#ASNTEST::OnStart";
 			end;
 		}
 	}
 
-	mes "[托马斯]";
-	mes "嘿, 我的名字是托马斯. 我负责测试你的隐身能力, 准备好了吗?";
+	mes "[Λ皑吹]";
+	mes "糑, и琌Λ皑吹. и璽砫代刚留ō, 称盾?";
 	next;
-	mes "[托马斯]";
-	mes "听着, 这次测试你不能杀死任何一只魔物. 你的目标是走到站在这个屋子反方向的 '帕勒卡迪' 那里.";
+	mes "[Λ皑吹]";
+	mes "帝, 硂Ω代刚ぃ炳ヴ臸. ヘ夹琌ǐ硂はよ '┈扒瓆' êń.";
 	next;
-	mes "[托马斯]";
-	mes "简单的说, 就是不杀死一只魔物的情况下, 走到 '帕勒卡迪' 那里, 明白了吗?";
+	mes "[Λ皑吹]";
+	mes "虏虫弧, 碞琌ぃ炳臸薄猵, ǐ '┈扒瓆' êń, フ盾?";
 	next;
-	mes "[托马斯]";
-	mes "好吧, 说的够多了, 让我们看看你的表现吧.";
+	mes "[Λ皑吹]";
+	mes ", 弧镑, 琵и瞷.";
 	close2;
 	set ASSIN_Q,4;
 
-	monster "in_moc_16",81,77,"木乃伊",1041,1,"计时器#1::OnMyMobDead";
-	monster "in_moc_16",82,77,"木乃伊",1041,1,"计时器#1::OnMyMobDead";
-	monster "in_moc_16",83,77,"木乃伊",1041,1,"计时器#1::OnMyMobDead";
-	monster "in_moc_16",84,77,"木乃伊",1041,1,"计时器#1::OnMyMobDead";
-	monster "in_moc_16",85,77,"木乃伊",1041,1,"计时器#1::OnMyMobDead";
-	monster "in_moc_16",86,77,"木乃伊",1041,1,"计时器#1::OnMyMobDead";
-	monster "in_moc_16",88,77,"木乃伊",1041,1,"计时器#1::OnMyMobDead";
-	monster "in_moc_16",89,77,"木乃伊",1041,1,"计时器#1::OnMyMobDead";
-	monster "in_moc_16",90,77,"木乃伊",1041,1,"计时器#1::OnMyMobDead";
-	monster "in_moc_16",77,77,"木乃伊",1041,1,"计时器#1::OnMyMobDead";
-	monster "in_moc_16",78,56,"木乃伊",1041,1,"计时器#1::OnMyMobDead";
-	monster "in_moc_16",79,56,"木乃伊",1041,1,"计时器#1::OnMyMobDead";
-	monster "in_moc_16",80,56,"木乃伊",1041,1,"计时器#1::OnMyMobDead";
-	monster "in_moc_16",81,56,"木乃伊",1041,1,"计时器#1::OnMyMobDead";
-	monster "in_moc_16",91,55,"木乃伊",1041,1,"计时器#1::OnMyMobDead";
-	monster "in_moc_16",92,56,"木乃伊",1041,1,"计时器#1::OnMyMobDead";
-	monster "in_moc_16",93,56,"木乃伊",1041,1,"计时器#1::OnMyMobDead";
-	monster "in_moc_16",94,56,"木乃伊",1041,1,"计时器#1::OnMyMobDead";
-	monster "in_moc_16",95,56,"木乃伊",1041,1,"计时器#1::OnMyMobDead";
-	monster "in_moc_16",96,56,"木乃伊",1041,1,"计时器#1::OnMyMobDead";
-	monster "in_moc_16",97,56,"木乃伊",1041,1,"计时器#1::OnMyMobDead";
-	monster "in_moc_16",76,62,"海葵",1068,1,"计时器#1::OnMyMobDead";
-	monster "in_moc_16",79,62,"海葵",1068,1,"计时器#1::OnMyMobDead";
-	monster "in_moc_16",79,65,"海葵",1068,1,"计时器#1::OnMyMobDead";
-	monster "in_moc_16",76,65,"海葵",1068,1,"计时器#1::OnMyMobDead";
-	monster "in_moc_16",96,62,"海葵",1068,1,"计时器#1::OnMyMobDead";
-	monster "in_moc_16",96,65,"海葵",1068,1,"计时器#1::OnMyMobDead";
-	monster "in_moc_16",99,62,"海葵",1068,1,"计时器#1::OnMyMobDead";
-	monster "in_moc_16",99,65,"海葵",1068,1,"计时器#1::OnMyMobDead";
+	monster "in_moc_16",81,77,"れレ",1041,1,"璸竟#1::OnMyMobDead";
+	monster "in_moc_16",82,77,"れレ",1041,1,"璸竟#1::OnMyMobDead";
+	monster "in_moc_16",83,77,"れレ",1041,1,"璸竟#1::OnMyMobDead";
+	monster "in_moc_16",84,77,"れレ",1041,1,"璸竟#1::OnMyMobDead";
+	monster "in_moc_16",85,77,"れレ",1041,1,"璸竟#1::OnMyMobDead";
+	monster "in_moc_16",86,77,"れレ",1041,1,"璸竟#1::OnMyMobDead";
+	monster "in_moc_16",88,77,"れレ",1041,1,"璸竟#1::OnMyMobDead";
+	monster "in_moc_16",89,77,"れレ",1041,1,"璸竟#1::OnMyMobDead";
+	monster "in_moc_16",90,77,"れレ",1041,1,"璸竟#1::OnMyMobDead";
+	monster "in_moc_16",77,77,"れレ",1041,1,"璸竟#1::OnMyMobDead";
+	monster "in_moc_16",78,56,"れレ",1041,1,"璸竟#1::OnMyMobDead";
+	monster "in_moc_16",79,56,"れレ",1041,1,"璸竟#1::OnMyMobDead";
+	monster "in_moc_16",80,56,"れレ",1041,1,"璸竟#1::OnMyMobDead";
+	monster "in_moc_16",81,56,"れレ",1041,1,"璸竟#1::OnMyMobDead";
+	monster "in_moc_16",91,55,"れレ",1041,1,"璸竟#1::OnMyMobDead";
+	monster "in_moc_16",92,56,"れレ",1041,1,"璸竟#1::OnMyMobDead";
+	monster "in_moc_16",93,56,"れレ",1041,1,"璸竟#1::OnMyMobDead";
+	monster "in_moc_16",94,56,"れレ",1041,1,"璸竟#1::OnMyMobDead";
+	monster "in_moc_16",95,56,"れレ",1041,1,"璸竟#1::OnMyMobDead";
+	monster "in_moc_16",96,56,"れレ",1041,1,"璸竟#1::OnMyMobDead";
+	monster "in_moc_16",97,56,"れレ",1041,1,"璸竟#1::OnMyMobDead";
+	monster "in_moc_16",76,62,"釜",1068,1,"璸竟#1::OnMyMobDead";
+	monster "in_moc_16",79,62,"釜",1068,1,"璸竟#1::OnMyMobDead";
+	monster "in_moc_16",79,65,"釜",1068,1,"璸竟#1::OnMyMobDead";
+	monster "in_moc_16",76,65,"釜",1068,1,"璸竟#1::OnMyMobDead";
+	monster "in_moc_16",96,62,"釜",1068,1,"璸竟#1::OnMyMobDead";
+	monster "in_moc_16",96,65,"釜",1068,1,"璸竟#1::OnMyMobDead";
+	monster "in_moc_16",99,62,"釜",1068,1,"璸竟#1::OnMyMobDead";
+	monster "in_moc_16",99,65,"釜",1068,1,"璸竟#1::OnMyMobDead";
 	end;
 
 OnDisable:
-	donpcevent "待命房间#ASNTEST::OnStart";
+	donpcevent "㏑┬丁#ASNTEST::OnStart";
 	killmonsterall "in_moc_16";
 	end;
 }
 
-in_moc_16,87,48,2	script	帕勒卡迪#ASN	4_F_JOB_ASSASSIN,2,2,{
+in_moc_16,87,48,2	script	┈扒瓆#ASN	4_F_JOB_ASSASSIN,2,2,{
 OnTouch_:
-	donpcevent "计时器#1::OnDisable";
-	donpcevent "托马斯#ASNTEST::OnDisable";
-	mes "[帕勒卡迪]";
-	mes "噢! 恭喜你了!";
-	mes "你可以到我们工会会长的房间去了, 加油吧!";
+	donpcevent "璸竟#1::OnDisable";
+	donpcevent "Λ皑吹#ASNTEST::OnDisable";
+	mes "[┈扒瓆]";
+	mes "揪! 尺!";
+	mes "и穦穦┬丁, 猳!";
 	close2;
 	set ASSIN_Q,5;
 	changequest 8004,8005;
@@ -1601,7 +1601,7 @@ OnTouch_:
 	end;
 }
 
-in_moc_16,182,169,0	script	迷宫辅助人员	WARPNPC,1,1,{
+in_moc_16,182,169,0	script	癵甤徊	WARPNPC,1,1,{
 OnTouch_:
 	if (ASSIN_Q == 5 || ASSIN_Q == 6) {
 		warp "in_moc_16",181,183;
@@ -1609,36 +1609,36 @@ OnTouch_:
 		changequest 8005,8006;
 	}
 	else {
-		mapannounce "in_moc_16",strcharinfo(0)+" 进入了工会会长的房间.'",bc_map;
+		mapannounce "in_moc_16",strcharinfo(0)+" 秈穦穦┬丁.'",bc_map;
 		savepoint "in_moc_16",181,183,1,1;
-		donpcevent "工会会长#ASN1::OnCast";
+		donpcevent "穦穦#ASN1::OnCast";
 		warp "in_moc_16",167,113;
 		end;
 	}
 }
 
-in_moc_16,167,110,0	script	工会会长#ASN1	-1,3,1,{
+in_moc_16,167,110,0	script	穦穦#ASN1	-1,3,1,{
 OnTouch_:
 	savepoint "in_moc_16",167,110,1,1;
-	mes "[工会会长]";
-	mes "欢迎啊. ";
-	mes "这里就是工会会长房间了, 刺客工会的最深处.";
+	mes "[穦穦]";
+	mes "舧摆. ";
+	mes "硂ń碞琌穦穦┬丁, 穦程瞏矪.";
 	next;
-	mes "[工会会长]";
-	mes "我会给你一个小测试. 你需要通过这个迷宫走到我这里来. 这个迷宫是工会用来避免外界打扰用的.";
+	mes "[穦穦]";
+	mes "и穦倒代刚. 惠璶硄筁硂癵甤ǐи硂ńㄓ. 硂癵甤琌穦ノㄓ磷ゴ署ノ.";
 	next;
-	mes "[工会会长]";
-	mes "我很期待";
-	mes "在迷宫的出口处";
-	mes "和你会面.";
+	mes "[穦穦]";
+	mes "и戳";
+	mes "癵甤矪";
+	mes "㎝穦.";
 	close;
 
 OnCast:
-	mapannounce "in_moc_16","...下一位志愿者, 请进来吧.",bc_map;
+	mapannounce "in_moc_16","...в篅, 叫秈ㄓ.",bc_map;
 	end;
 }
 
-in_moc_16,149,80,4	script	工会会长#ASN2	1_M_MOC_LORD,1,1,{
+in_moc_16,149,80,4	script	穦穦#ASN2	1_M_MOC_LORD,1,1,{
 	end;
 OnTouch_:
 	if (checkre(0))
@@ -1647,462 +1647,462 @@ OnTouch_:
 		savepoint "moc_ruins",79,99,1,1;
 	if (ASSIN_Q == 7 && BaseJob == Job_Thief) {
 		set ASSIN_Q,8;
-		mes "[工会会长]";
-		mes "欢迎!";
-		mes "让你花费这么长时间";
-		mes "通过迷宫,";
-		mes "真是不好意思啊.";
+		mes "[穦穦]";
+		mes "舧!";
+		mes "琵禣硂丁";
+		mes "硄筁癵甤,";
+		mes "痷琌ぃ種摆.";
 		next;
-		mes "[工会会长]";
-		mes "我刚才看了你的简历. 作为一名盗贼, 你很有勇气. 很少能遇到像你一样有潜力的人了.";
+		mes "[穦穦]";
+		mes "и虏菌. 祍搁, Τ玦蒩. ぶ笿钩妓Τ肩.";
 		next;
-		mes "[工会会长]";
-		mes "如果不介意的话, 我能问你一些问题吗? 不用太紧张的, 不过如果你说谎了, 你的菊花就是我的了.";
+		mes "[穦穦]";
+		mes "狦ぃざ種杠, и拜ㄇ拜肈盾? ぃノび候眎, ぃ筁狦弧晾, 碘碞琌и.";
 		next;
-		mes "[工会会长]";
-		mes "首先, 对于刺客来说, 你认为什么是最重要的?";
+		mes "[穦穦]";
+		mes ", 癸ㄓ弧, 粄ぐ琌程璶?";
 		next;
-		switch(select("更强大的力量.:刺客的尊严.:无尽的修炼.")) {
+		switch(select("眏秖.:碙腨.:礚荷芬.")) {
 		case 1:
-			mes "[工会会长]";
-			mes "更强大的力量...";
-			mes "是的, 我想你的意思是说";
-			mes "作为一名刺客,";
-			mes "肯定要比盗贼更加强大.";
+			mes "[穦穦]";
+			mes "眏秖...";
+			mes "琌, и稱種琌弧";
+			mes ",";
+			mes "﹚璶ゑ祍搁眏.";
 			next;
-			mes "[工会会长]";
-			mes "然而, 是什么让你想要拥有更强大的力量呢? 去做秀? 去逞能? 你想如何利用你强大的力量呢?";
+			mes "[穦穦]";
+			mes "礛τ, 琌ぐ琵稱璶局Τ眏秖㎡? 暗╭? 硏? 稱ノ眏秖㎡?";
 			next;
-			mes "[工会会长]";
-			mes "你想要变得更加强大的原因是什么?";
-			mes "嗯...";
-			mes "能和我说说吗?";
+			mes "[穦穦]";
+			mes "稱璶跑眔眏琌ぐ?";
+			mes "垛...";
+			mes "㎝и弧弧盾?";
 			next;
-			switch(select("复仇...!:钱财~:我想去旅行.")) {
+			switch(select("蝋こ...!:窥癩~:и稱︽.")) {
 			case 1:
 				set ASSIN_Q,8;
-				mes "[工会会长]";
-				mes "复仇...?";
-				mes "是的, 我懂的, 我们每个人都有一些怨恨的人或事.";
+				mes "[穦穦]";
+				mes "蝋こ...?";
+				mes "琌, и来, и–常Τㄇ┪ㄆ.";
 				next;
-				mes "[工会会长]";
-				mes "但是, 记住了, 我们不能被情感所左右. 这才是我们要走的路.";
+				mes "[穦穦]";
+				mes "琌, 癘, иぃ砆薄稰┮オ. 硂琌и璶ǐ隔.";
 				next;
-				mes "[工会会长]";
-				mes "成为了刺客,";
-				mes "就意味着以后必定要走一条孤独的路.";
+				mes "[穦穦]";
+				mes "Θ,";
+				mes "碞種帝ゲ﹚璶ǐ兵﹖縒隔.";
 				next;
 				break;
 			case 2:
 				set ASSIN_Q,9;
-				mes "[工会会长]";
-				mes "为了金钱...? 不否认我们都需要钱才能活下去. 但是我们刺客有更高尚的目的.";
+				mes "[穦穦]";
+				mes "窥...? ぃ粄и常惠璶窥. 琌иΤ蔼﹟ヘ.";
 				next;
-				mes "[工会会长]";
-				mes "成为一名刺客就意味着";
-				mes "放弃了奢侈的生活,";
-				mes "甘于朴素...";
+				mes "[穦穦]";
+				mes "Θ碞種帝";
+				mes "斌傍ㄗネ,";
+				mes "ヌΦ...";
 				next;
 				break;
 			case 3:
 				set ASSIN_Q,10;
-				mes "[工会会长]";
-				mes "好想法. 周游世界会增长你的见识.";
+				mes "[穦穦]";
+				mes "稱猭. ㏄村穦糤ǎ醚.";
 				next;
-				mes "[工会会长]";
-				mes "尽管我们中的大多数人都不愿混在人群中, 但是我想你已经注意到了这一点, 是吗?";
+				mes "[穦穦]";
+				mes "荷恨иい计常ぃ篅睼竤い, 琌и稱竒猔種硂翴, 琌盾?";
 				next;
-				mes "[工会会长]";
-				mes "从某种意义上说, 我们就是天煞孤星...";
+				mes "[穦穦]";
+				mes "眖琘销種竡弧, и碞琌ぱ焚﹖琍...";
 				next;
 				break;
 			}
 			break;
 		case 2:
-			mes "[工会会长]";
-			mes "刺客的尊严...";
-			mes "其他的刺客有告诉过你吗...?";
+			mes "[穦穦]";
+			mes "碙腨...";
+			mes "ㄤΤ禗筁盾...?";
 			next;
-			mes "[工会会长]";
-			mes "尊严是很重要, 但是如果没有能力的话, 尊严就毫无价值.";
+			mes "[穦穦]";
+			mes "碙腨琌璶, 琌狦⊿Τ杠, 碙腨碞睝礚刹.";
 			next;
-			mes "[工会会长]";
-			mes "你之前遇到过的很多的刺客都是我们的同胞, 是出生入死过的战友.";
+			mes "[穦穦]";
+			mes "ぇ玡笿筁常琌и璏, 琌ネ筁驹ね.";
 			next;
-			mes "[工会会长]";
-			mes "我能理解为什么尊严对他们来说是那么的重要. 那么, 是什么原因让你立志成为一名刺客的呢?";
+			mes "[穦穦]";
+			mes "и瞶秆ぐ碙腨癸ㄓ弧琌ê璶. ê, 琌ぐ琵ミвΘ㎡?";
 			next;
-			switch(select("我喜欢孤独的感觉.:赚钱.:感觉挺屌.")) {
+			switch(select("и尺舧﹖縒稰谋.:寥窥.:稰谋蝬.")) {
 			case 1:
 				set ASSIN_Q,11;
-				mes "[工会会长]";
-				mes "说的对...";
-				mes "我们都是苦行僧, 都是独行侠...";
+				mes "[穦穦]";
+				mes "弧癸...";
+				mes "и常琌璚︽宫, 常琌縒︽獿...";
 				next;
-				mes "[工会会长]";
-				mes "换句话说,";
-				mes "成为了刺客,";
-				mes "就要失去很多.";
+				mes "[穦穦]";
+				mes "传杠弧,";
+				mes "Θ,";
+				mes "碞璶ア.";
 				next;
-				mes "[工会会长]";
-				mes "但我之前说过, 我们有很多兄弟, 无处不在, 特别是当你执行工会任务的时候.";
+				mes "[穦穦]";
+				mes "иぇ玡弧筁, иΤ, 礚矪ぃ, 疭琌讽磅︽穦ヴ叭.";
 				next;
 				break;
 			case 2:
 				set ASSIN_Q,12;
-				mes "[工会会长]";
-				mes "不否认我们都需要钱才能活下去. 但是我们刺客有更高尚的目的, 不只是为了钱, 是吗?";
+				mes "[穦穦]";
+				mes "ぃ粄и常惠璶窥. 琌иΤ蔼﹟ヘ, ぃ琌窥, 琌盾?";
 				next;
 				break;
 			case 3:
 				set ASSIN_Q,13;
-				mes "[工会会长]";
-				mes "外貌只是表象...";
+				mes "[穦穦]";
+				mes "华琌禜...";
 				next;
-				mes "[工会会长]";
-				mes "用我们的方式来看, 有些可耻的刺客背叛了作为一名刺客的初衷...";
+				mes "[穦穦]";
+				mes "ノиよΑㄓ, Τㄇ璉玵癑...";
 				next;
-				mes "[工会会长]";
-				mes "不要忘了...";
-				mes "刺客不会左顾右盼. 我们不会生活在世俗的看法中, 永远不会.";
+				mes "[穦穦]";
+				mes "ぃ璶а...";
+				mes "ぃ穦オ臮. иぃ穦ネ玌猭い, ッ环ぃ穦.";
 				next;
 				break;
 			}
 			break;
 		case 3:
-			mes "[工会会长]";
-			mes "无尽的修炼...";
-			mes "你想成为刺客的原因是这个吗?";
+			mes "[穦穦]";
+			mes "礚荷芬...";
+			mes "稱Θ琌硂盾?";
 			next;
-			mes "[工会会长]";
-			mes "跟盗贼相比, 刺客这个职业不允许丝毫的放纵.";
-			mes "告诉我你训练的目的.";
+			mes "[穦穦]";
+			mes "蛤祍搁ゑ, 硂戮穨ぃす砛捣睝羇.";
+			mes "禗и癡絤ヘ.";
 			next;
-			switch(select("加强我的技能.:就是我的目标.:为了精神上的充实.")) {
+			switch(select("眏им.:碞琌иヘ夹.:弘龟.")) {
 			case 1:
 				set ASSIN_Q,14;
-				mes "[工会会长]";
-				mes "这是必然的. 但是不要认为技能对刺客来说是最重要的.";
+				mes "[穦穦]";
+				mes "硂琌ゲ礛. 琌ぃ璶粄м癸ㄓ弧琌程璶.";
 				next;
-				mes "[工会会长]";
-				mes "如果你只是想这样的话, 刺客这个职业不会让你满意的...";
+				mes "[穦穦]";
+				mes "狦琌稱硂妓杠, 硂戮穨ぃ穦琵骸種...";
 				next;
 				break;
 			case 2:
 				set ASSIN_Q,15;
-				mes "[工会会长]";
-				mes "是你其中的一个理想? 我想你一定有很多理想了...";
+				mes "[穦穦]";
+				mes "琌ㄤい瞶稱? и稱﹚Τ瞶稱...";
 				next;
-				mes "[工会会长]";
-				mes "我也认识这么一个人... 很久以前, 在一次任务中我也遇到过一个有理想的骑士, 他在躲避着追杀.";
+				mes "[穦穦]";
+				mes "и粄醚硂... 玡, Ωヴ叭いи笿筁Τ瞶稱肕, 跟磷帝發炳.";
 				next;
-				mes "[工会会长]";
-				mes "可是在他达到52级之前我必须要杀了他... ^666666*唉*^000000.";
+				mes "[穦穦]";
+				mes "琌笷52ぇ玡иゲ斗璶炳... ^666666**^000000.";
 				next;
-				mes "我对你有一些担扰啊, 我想说的是, 一旦你成为了刺客就再也没有回头路了...";
+				mes "и癸Τㄇ踞署摆, и稱弧琌, スΘ碞⊿Τ繷隔...";
 				next;
 				break;
 			case 3:
 				set ASSIN_Q,16;
-				mes "[工会会长]";
-				mes "好想法...";
-				mes "这是提升的一个好想法. 很多人只注重身体上的修炼而忽视了精神的修养.";
+				mes "[穦穦]";
+				mes "稱猭...";
+				mes "硂琌矗ど稱猭. 猔ō蔨芬τ┛跌弘緄.";
 				next;
-				mes "[工会会长]";
-				mes "我想你会成为一名正直的刺客.";
+				mes "[穦穦]";
+				mes "и稱穦Θタ.";
 				next;
 				break;
 			}
 			break;
 		}
-		mes "[工会会长]";
-		mes "很遗憾, 不少智力有硬伤的人也想成为刺客...";
+		mes "[穦穦]";
+		mes "框狙, ぃぶ醇Τ祑端稱Θ...";
 		next;
-		mes "[工会会长]";
-		mes "他们到处惹事让我们也连受耻辱.";
+		mes "[穦穦]";
+		mes "矪稴ㄆ琵и硈癲.";
 		next;
-		mes "[工会会长]";
-		mes "千万不要成为他们中的一员. 工会的责任你也要担负一份...";
+		mes "[穦穦]";
+		mes "蒃ぃ璶Θい. 穦砫ヴ璶踞璽...";
 		next;
-		mes "[工会会长]";
-		mes "那么, 如果你成为了一名刺客, 第一件事想干什么?";
+		mes "[穦穦]";
+		mes "ê, 狦Θ, 材ンㄆ稱ぐ?";
 		next;
-		switch(select("我会马上去捕猎.:有人在等我呢.:看看刺客都有些什么能力.")) {
+		switch(select("и穦皑聐.:Τ单и㎡.:常Τㄇぐ.")) {
 		case 1:
-			mes "[工会会长]";
-			mes "捕猎...";
-			mes "没了...?";
+			mes "[穦穦]";
+			mes "聐...";
+			mes "⊿...?";
 			next;
-			switch(select("我会先去升级.:我去试试我的技能.:我会去那些原来我不能去的地方.")) {
+			switch(select("и穦ど.:и刚刚им.:и穦êㄇㄓиぃよ.")) {
 			case 1:
 				set .@assassin_sangdam,.@assassin_sangdam+10;
-				mes "[工会会长]";
-				mes "不要鲁莽啊...";
-				mes "成为刺客并不意味着你变成了另外一个人, 不要着急.";
+				mes "[穦穦]";
+				mes "ぃ璶緗蝉摆...";
+				mes "Θぃ種帝跑Θ, ぃ璶帝.";
 				next;
 				break;
 			case 2:
 				set .@assassin_sangdam,.@assassin_sangdam+5;
-				mes "[工会会长]";
-				mes "自省是很重要的. 我能理解当你成为刺客时对自己的新能力而感到兴奋.";
+				mes "[穦穦]";
+				mes "琌璶. и瞶秆讽Θ癸穝τ稰砍灸.";
 				next;
-				mes "[工会会长]";
-				mes "那么, 我希望你不要忽略了你的智力成长.";
+				mes "[穦穦]";
+				mes "ê, и辨ぃ璶┛菠醇Θ.";
 				next;
 				break;
 			case 3:
-				mes "[工会会长]";
-				mes "非常好...";
-				mes "去寻找那些未知之地吧. 但是要记住成为刺客并不意味着你完全成为另一个人.";
+				mes "[穦穦]";
+				mes "獶盽...";
+				mes "碝тêㄇゼぇ. 琌璶癘Θぃ種帝ЧΘ.";
 				next;
-				mes "[工会会长]";
-				mes "不要强迫自己做太多的事情.";
-				mes "放松一些, 自然就好.";
+				mes "[穦穦]";
+				mes "ぃ璶眏暗びㄆ薄.";
+				mes "猀ㄇ, 礛碞.";
 				next;
 				break;
 			}
 			break;
 		case 2:
-			mes "[工会会长]";
-			mes "我可以问问,";
-			mes "是谁在等你吗?";
+			mes "[穦穦]";
+			mes "и拜拜,";
+			mes "琌街单盾?";
 			next;
-			switch(select("好基友.:好战友.:好炮友.")) {
+			switch(select("膀ね.:驹ね.:ね.")) {
 			case 1:
 				set .@assassin_sangdam,.@assassin_sangdam+5;
-				mes "[工会会长]";
-				mes "我懂的...";
-				mes "好基友, 一起走.";
+				mes "[穦穦]";
+				mes "и来...";
+				mes "膀ね, 癬ǐ.";
 				next;
 				break;
 			case 2:
 				set .@assassin_sangdam,.@assassin_sangdam+5;
-				mes "[工会会长]";
-				mes "非常好...";
-				mes "好战友是那些为了你可以牺牲自己生命的朋友...";
+				mes "[穦穦]";
+				mes "獶盽...";
+				mes "驹ね琌êㄇ碾ネ㏑狟ね...";
 				next;
-				mes "[工会会长]";
-				mes "为了他们, 你也应当同样如此.";
+				mes "[穦穦]";
+				mes ", 莱讽妓.";
 				next;
 				break;
 			case 3:
-				mes "[工会会长]";
-				mes "我懂的...快去吧...注意身体...";
+				mes "[穦穦]";
+				mes "и来...е...猔種ō蔨...";
 				next;
-				mes "[工会会长]";
+				mes "[穦穦]";
 				if (Sex)
-					mes "但是永远不要向她透露你是一名刺客的信息.";
+					mes "琌ッ环ぃ璶硓臩琌獺.";
 				else
-					mes "但是永远不要向她透露你是一名刺客的信息.";
+					mes "琌ッ环ぃ璶硓臩琌獺.";
 				next;
-				mes "[工会会长]";
-				mes "爱你所爱, 对于你的真心人, 上天是不会给你第二次机会和她相遇的.";
+				mes "[穦穦]";
+				mes "稲┮稲, 癸痷み, ぱ琌ぃ穦倒材Ω审穦㎝笿.";
 				next;
 				break;
 			}
 			break;
 		case 3:
-			mes "[工会会长]";
-			mes "真令人敬佩. 有什么想问的吗?";
+			mes "[穦穦]";
+			mes "痷穛ㄘ. Τぐ稱拜盾?";
 			next;
-			switch(select("刺客在哪里升级...:刺客的主要目标.:赚钱方面的...")) {
+			switch(select("ńど...:璶ヘ夹.:寥窥よ...")) {
 			case 1:
 				set .@assassin_sangdam,.@assassin_sangdam+5;
-				mes "[工会会长]";
-				mes "全看你的能力和选择了, 其实任何地方都可以做为你成长的环境.";
+				mes "[穦穦]";
+				mes "㎝匡拒, ㄤ龟ヴよ常暗Θ吏挂.";
 				next;
-				mes "[工会会长]";
-				mes "不过你必须要学会一项技能,";
-				mes "就是在任何环境下的逃生本领.";
+				mes "[穦穦]";
+				mes "ぃ筁ゲ斗璶厩穦兜м,";
+				mes "碞琌ヴ吏挂発ネセ烩.";
 				next;
 				break;
 			case 2:
-				mes "[工会会长]";
-				mes "外面的世界有很多的刺客的, 去问问他们的意见吧.";
+				mes "[穦穦]";
+				mes "Τ, 拜拜種ǎ.";
 				next;
-				mes "[工会会长]";
-				mes "我希望你成为一名优秀的刺客. 在你足够强大时, 我也希望你能像你的老师现在关照你一样, 来关照他们.";
+				mes "[穦穦]";
+				mes "и辨Θ涩╭. ì镑眏, и辨钩ρ畍瞷闽酚妓, ㄓ闽酚.";
 				next;
 				break;
 			case 3:
 				set .@assassin_sangdam,.@assassin_sangdam+10;
-				mes "[工会会长]";
-				mes "啧啧啧...";
-				mes "你成为刺客就是想去赚钱吗?";
+				mes "[穦穦]";
+				mes "股股股...";
+				mes "Θ碞琌稱寥窥盾?";
 				next;
-				mes "[工会会长]";
-				mes "那样的人们是不受欢迎的, 如果你的目标是这个, 那么你就要重新考虑你的职业选择了...";
+				mes "[穦穦]";
+				mes "ê妓琌ぃ舧, 狦ヘ夹琌硂, ê碞璶穝σ納戮穨匡拒...";
 				next;
 				break;
 			}
 			break;
 		}
-		mes "[工会会长]";
-		mes "很高兴遇到你, 你让我想起了我逝去的青春.";
+		mes "[穦穦]";
+		mes "蔼砍笿, 琵и稱癬и硊獵琄.";
 		next;
-		mes "[工会会长]";
-		mes "给我一点儿时间,";
-		mes "让我考虑一下...";
+		mes "[穦穦]";
+		mes "倒и翴丁,";
+		mes "琵иσ納...";
 		next;
-		mapannounce "in_moc_16","所有参加了" + strcharinfo(0) + "测试的人员, 请都站到我前面来.",bc_map;
-		mes "[工会会长]";
-		mes "所有参加了" + strcharinfo(0) + "测试的人员, 请都站到我前面来.";
+		mapannounce "in_moc_16","┮Τ把" + strcharinfo(0) + "代刚, 叫常и玡ㄓ.",bc_map;
+		mes "[穦穦]";
+		mes "┮Τ把" + strcharinfo(0) + "代刚, 叫常и玡ㄓ.";
 		next;
-		mes "[工会会长]";
-		mes "他们马上就到";
+		mes "[穦穦]";
+		mes "皑碞";
 		mes "......";
 		next;
-		enablenpc "[修伊]";
-		enablenpc "[凯伊]";
-		enablenpc "[无名者]";
-		enablenpc "[帕勒卡迪]";
-		enablenpc "[监考官]";
-		enablenpc "[托马斯]";
-		enablenpc "[马洛毕斯]";
-		mes "[无名者]";
-		mes "到齐了.";
+		enablenpc "[レ]";
+		enablenpc "[惩レ]";
+		enablenpc "[礚]";
+		enablenpc "[┈扒瓆]";
+		enablenpc "[菏σ﹛]";
+		enablenpc "[Λ皑吹]";
+		enablenpc "[皑拨吹]";
+		mes "[礚]";
+		mes "霍.";
 		next;
-		mes "[工会会长]";
-		mes "我想听听你们关于" + strcharinfo(0) + "的考试意见.";
+		mes "[穦穦]";
+		mes "и稱闽" + strcharinfo(0) + "σ刚種ǎ.";
 		next;
-		mes "[无名者]";
-		mes "嗯...";
-		mes "我认为";
+		mes "[礚]";
+		mes "垛...";
+		mes "и粄";
 		mes ""+ strcharinfo(0) +"";
-		mes "还是不错的.";
+		mes "临琌ぃ岿.";
 		next;
-		mes "[工会会长]";
-		mes "嗯...";
-		mes "无名者的看法,";
-		mes "还是支持你的.";
-		mes "你的意见呢, 修伊?";
+		mes "[穦穦]";
+		mes "垛...";
+		mes "礚猭,";
+		mes "临琌や.";
+		mes "種ǎ㎡, レ?";
 		next;
 		if (ASSIN_Q3 == 1) {
-			mes "[修伊]";
-			mes "这么说吧...";
-			mes "他的表现不是非常好,";
-			mes "不过....";
+			mes "[レ]";
+			mes "硂弧...";
+			mes "瞷ぃ琌獶盽,";
+			mes "ぃ筁....";
 			next;
-			mes "[修伊]";
-			mes "我的意见呢,";
-			mes "和无名者一样.";
+			mes "[レ]";
+			mes "и種ǎ㎡,";
+			mes "㎝礚妓.";
 		}
 		else {
-			mes "[修伊]";
-			mes "尽管"+ strcharinfo(0) +"表现的有点儿柔弱, 但总的来说, "+ strcharinfo(0) +"达到了我的标准.";
+			mes "[レ]";
+			mes "荷恨"+ strcharinfo(0) +"瞷Τ翴琗畓, 羆ㄓ弧, "+ strcharinfo(0) +"笷и夹.";
 			next;
-			mes "[修伊]";
-			mes "如果没什么事儿, 我回去工作了.";
+			mes "[レ]";
+			mes "狦⊿ぐㄆ, и.";
 			next;
-			mes "[工会会长]";
-			mes "好的..";
-			mes "咳咳...修伊从来就是这么酷...";
+			mes "[穦穦]";
+			mes "..";
+			mes "珁珁...レ眖ㄓ碞琌硂慌...";
 		}
 		next;
-		mes "[工会会长]";
-		mes "那么...";
-		mes "监考官, 你的意见呢?";
-		mes "说说看吧.";
+		mes "[穦穦]";
+		mes "ê...";
+		mes "菏σ﹛, 種ǎ㎡?";
+		mes "弧弧.";
 		next;
-		disablenpc "[修伊]";
-		mes "[监考官]";
-		mes "他的确通过了考试, 我只能这么说.";
+		disablenpc "[レ]";
+		mes "[菏σ﹛]";
+		mes "谔硄筁σ刚, и硂弧.";
 		next;
-		mes "[工会会长]";
-		mes "嗯...";
-		mes "我们的意见挺统一的, 关于"+ strcharinfo(0) +"我没有什么问题了...";
+		mes "[穦穦]";
+		mes "垛...";
+		mes "и種ǎ参, 闽"+ strcharinfo(0) +"и⊿Τぐ拜肈...";
 		next;
 		switch(ASSIN_Q) {
 		case 8:
-			mes "[工会会长]";
-			mes "尽管现在你被仇恨所驱使, 但我希望你能在日后的修炼中慢慢平复...";
+			mes "[穦穦]";
+			mes "荷恨瞷砆こ┮臱ㄏ, и辨ら芬い篊篊キ蝋...";
 			next;
 			break;
 		case 9:
-			mes "[工会会长]";
-			mes "尽管你现在更关心的是金钱, 但我想你会有更伟大的理想的...";
+			mes "[穦穦]";
+			mes "荷恨瞷闽み琌窥, и稱穦Τ岸瞶稱...";
 			next;
 			break;
 		case 10:
-			mes "[工会会长]";
-			mes "渴望周游世界, 我希望你会在旅途中找到真实的自己...";
+			mes "[穦穦]";
+			mes "戴辨㏄村, и辨穦硚いт痷龟...";
 			next;
 			break;
 		case 11:
-			mes "[工会会长]";
-			mes "你好像很了解刺客. 我认为孤独对你来说不算什么...";
+			mes "[穦穦]";
+			mes "钩秆. и粄﹖縒癸ㄓ弧ぃ衡ぐ...";
 			next;
 			break;
 		case 12:
-			mes "[工会会长]";
-			mes "你对金钱很痴迷, 不过我想你会改变的.";
+			mes "[穦穦]";
+			mes "癸窥扶癵, ぃ筁и稱穦э跑.";
 			next;
-			mes "[工会会长]";
-			mes "尽管我不太信任你, 但我会给你机会的...";
+			mes "[穦穦]";
+			mes "荷恨иぃび獺ヴ, и穦倒审穦...";
 			next;
 			break;
 		case 13:
-			mes "[工会会长]";
-			mes "尽管你对刺客的造型有很大的兴趣, 但我想今后你会了解刺客的本质的.";
+			mes "[穦穦]";
+			mes "荷恨癸硑Τ砍届, и稱さ穦秆セ借.";
 			next;
 			break;
 		case 14:
-			mes "[工会会长]";
-			mes "渴望更强大的技能的人啊, 我想你终会了解精神力的作用的.";
+			mes "[穦穦]";
+			mes "戴辨眏м摆, и稱沧穦秆弘ノ.";
 			next;
 			break;
 		case 15:
-			mes "[工会会长]";
-			mes "或早或晚, 你会发现你愿意为之努力的事情的...";
+			mes "[穦穦]";
+			mes "┪Ν┪边, 穦祇瞷篅種ぇㄆ薄...";
 			next;
 			break;
 		case 16:
-			mes "[工会会长]";
-			mes "我知道有些人只注重物理方面的修炼,";
-			mes "但我相信, 你和他们不同...";
+			mes "[穦穦]";
+			mes "и笵Τㄇ猔瞶よ芬,";
+			mes "и獺, ㎝ぃ...";
 			next;
 		}
 		if (ASSIN_Q3 == 1 && BaseJob == Job_Thief && ASSIN_Q > 6 && ASSIN_Q < 17) {
-			mes "[工会会长]";
-			mes "好了, 我说的够多了, 选一项做为礼物吧.";
+			mes "[穦穦]";
+			mes ", и弧镑, 匡兜暗搂.";
 			next;
-			mes "[工会会长]";
-			mes "看看有什么你喜欢的.";
+			mes "[穦穦]";
+			mes "Τぐ尺舧.";
 			next;
-			switch(select("拳刃:卡塔勒拳刃:笨拙短剑:短剑")) {
+			switch(select(":娥扒:猜╁祏糃:祏糃")) {
 			case 1:
-				mes "[工会会长]";
-				mes "想去附魔啊...";
-				mes "附魔毁一生......不过还是祝你好运吧.";
+				mes "[穦穦]";
+				mes "稱臸摆...";
+				mes "臸反ネ......ぃ筁临琌笲.";
 				getitem 1251,1; //Jur_
 				break;
 			case 2:
-				mes "[工会会长]";
-				mes "这样啊...";
-				mes "莫拉村有彩虹桥的传说.";
-				mes "村子里面有各种小草精,";
-				mes "我很早就听说过了,";
-				mes "拿着吧.";
+				mes "[穦穦]";
+				mes "硂妓摆...";
+				mes "馋┰Τ眒璱爵肚弧.";
+				mes "ńΤ销弘,";
+				mes "иΝ碞弧筁,";
+				mes "帝.";
 				getitem 1253,1; //Katar_
 				break;
 			case 3:
-				mes "[工会会长]";
-				mes "运气不好的时候就用得上它们咯.";
+				mes "[穦穦]";
+				mes "笲蒩ぃ碞ノ眔ウ.";
 				getitem 1208,1; //Main_Gauche_
 				break;
 			case 4:
-				mes "[工会会长]";
-				mes "原来你更喜欢逛商城啊...";
-				mes "给你, 拿好啦. 祝你成功!";
+				mes "[穦穦]";
+				mes "ㄓ尺舧硙坝摆...";
+				mes "倒, 罢. Θ!";
 				getitem 1220,1; //Gladius_
 			}
 			ASSIN_Q3 = 2;
 			next;
 		}
 		else if (ASSIN_Q3 != 2) {
-			mes "[工会会长]";
-			mes "好了, 我说的够多了.";
-			mes "这个先拿着吧.";
+			mes "[穦穦]";
+			mes ", и弧镑.";
+			mes "硂帝.";
 			next;
 			switch(rand(1,5)) {
 			case 1:
@@ -2122,14 +2122,14 @@ OnTouch_:
 			}
 			ASSIN_Q3 = 2;
 		}
-		mes "[工会会长]";
-		mes "好吧, 我会给你一个标记. 去找入口处那位看起来很凶的人.";
+		mes "[穦穦]";
+		mes ", и穦倒夹癘. т矪ê癬ㄓた.";
 		next;
-		mes "[工会会长]";
-		mes "拿着这个, 修伊会为你进行转职仪式的.";
+		mes "[穦穦]";
+		mes "帝硂, レ穦秈︽锣戮祸Α.";
 		next;
-		mes "[工会会长]";
-		mes "你, " + strcharinfo(0) + ", 立志成为一名刺客. 愿你使用我们刺客的方式, 成为别人的榜样.";
+		mes "[穦穦]";
+		mes ", " + strcharinfo(0) + ", ミвΘ. 篅ㄏノиよΑ, Θ篯妓.";
 		if (checkre(0))
 			savepoint "morocc",100,100,1,1;
 		else
@@ -2138,116 +2138,116 @@ OnTouch_:
 		ASSIN_Q = 17;
 		changequest 8006,8007;
 		next;
-		mes "[工会会长]";
-		mes "好了, 都回到自己的岗位上去吧. 我也会把你送到入口处的, 走着...";
-		disablenpc "[修伊]";
-		disablenpc "[凯伊]";
-		disablenpc "[无名者]";
-		disablenpc "[帕勒卡迪]";
-		disablenpc "[监考官]";
-		disablenpc "[托马斯]";
-		disablenpc "[马洛毕斯]";
+		mes "[穦穦]";
+		mes ", 常盺. и穦р癳矪, ǐ帝...";
+		disablenpc "[レ]";
+		disablenpc "[惩レ]";
+		disablenpc "[礚]";
+		disablenpc "[┈扒瓆]";
+		disablenpc "[菏σ﹛]";
+		disablenpc "[Λ皑吹]";
+		disablenpc "[皑拨吹]";
 		close2;
 		warp "in_moc_16",17,19;
 		end;
 	}
 	else if (ASSIN_Q == 17) {
-		mes "[工会会长]";
-		mes "嗯...?";
-		mes "你怎么会在这里...?";
+		mes "[穦穦]";
+		mes "垛...?";
+		mes "穦硂ń...?";
 		next;
-		mes "[工会会长]";
-		mes "你就快完成考试了. 为什么不去拿到^006699泯灭之心^000000呢, 这样你就可以转职了啊.";
+		mes "[穦穦]";
+		mes "碞еЧΘσ刚. ぐぃ^006699獅防ぇみ^000000㎡, 硂妓碞锣戮摆.";
 		close2;
 		warp "in_moc_16",17,19;
 		end;
 	}
 	else if (ASSIN_Q > 7 && ASSIN_Q < 17) {
 		set ASSIN_Q,7;
-		mes "[工会会长]";
-		mes "搞什么? 你选择了取消? 你不想完成转职了吗?";
+		mes "[穦穦]";
+		mes "穌ぐ? 匡拒? ぃ稱ЧΘ锣戮盾?";
 		next;
-		mes "[工会会长]";
-		mes "^666666*唉...*^000000";
-		mes "好吧, 让我们再试一次, 如果你还是不听我说什么的话, 你的菊花就是我的了, 明白吗?";
+		mes "[穦穦]";
+		mes "^666666*...*^000000";
+		mes ", 琵и刚Ω, 狦临琌ぃи弧ぐ杠, 碘碞琌и, フ盾?";
 		close;
 	}
 	else {
-		mes "[工会会长]";
-		mes "嗯? 你怎么进来了?";
+		mes "[穦穦]";
+		mes "垛? 秈ㄓ?";
 		next;
-		mes "[工会会长]";
-		mes "你已经完成了考试, 把^006699泯灭之心^000000交给那个看起来很凶的人, 就可以完成转职了!";
+		mes "[穦穦]";
+		mes "竒ЧΘσ刚, р^006699獅防ぇみ^000000ユ倒ê癬ㄓた, 碞ЧΘ锣戮!";
 		close2;
 		warp "in_moc_16",17,19;
 		end;
 	}
 }
 
-in_moc_16,186,81,1	script	辅助人员	1_M_JOBTESTER,1,1,{
-	mes "[辅助人员]";
-	mes "对不起, 我不负责转职. 去找工会会长吧, 就像他告诉你的那样.";
+in_moc_16,186,81,1	script	徊	1_M_JOBTESTER,1,1,{
+	mes "[徊]";
+	mes "癸ぃ癬, иぃ璽砫锣戮. т穦穦, 碞钩禗ê妓.";
 	close;
 }
 
 in_moc_16,170,90,0	script	info 1	-1,{
 OnTouch_:
-	mes "[工会会长]";
-	mes "嗯.";
-	mes "那边是行不通的, 再找其它的路.";
+	mes "[穦穦]";
+	mes "垛.";
+	mes "ê娩琌︽ぃ硄, тㄤウ隔.";
 	close;
 }
 
 in_moc_16,153,85,0	script	info 2	-1,1,1,{
 OnTouch_:
-	mes "[工会会长]";
-	mes "你做的不错. 只需要再拐一点儿弯.";
+	mes "[穦穦]";
+	mes "暗ぃ岿. 惠璶╀翴舠.";
 	close;
 }
 
 in_moc_16,160,85,0	script	info 3	-1,1,1,{
 OnTouch_:
-	mes "[工会会长]";
-	mes "嗯.";
-	mes "现在,";
-	mes "那边是行不通的.";
+	mes "[穦穦]";
+	mes "垛.";
+	mes "瞷,";
+	mes "ê娩琌︽ぃ硄.";
 	close;
 }
 
 in_moc_16,175,89,0	script	info 4	-1,1,1,{
 OnTouch_:
-	mes "[工会会长]";
-	mes "嗯...";
-	mes "你在向着我的助手走过去啊. 你还需要和他再说两句吗?";
+	mes "[穦穦]";
+	mes "垛...";
+	mes "帝иもǐ筁摆. 临惠璶㎝弧ㄢ盾?";
 	close;
 }
 
 in_moc_16,164,88,0	script	info 5	-1,{
 OnTouch_:
-	mes "[工会会长]";
-	mes "不错...";
-	mes "我能感觉到你离我愈来愈近了.";
+	mes "[穦穦]";
+	mes "ぃ岿...";
+	mes "и稰谋置и稶ㄓ稶.";
 	close;
 }
 
 in_moc_16,149,95,0	script	info 6	-1,1,1,{
 OnTouch_:
-	mes "[工会会长]";
-	mes "嗯, 不错啊, 快到了.";
+	mes "[穦穦]";
+	mes "垛, ぃ岿摆, е.";
 	close;
 }
 
 in_moc_16,180,101,0	script	info 7	-1,1,1,{
 OnTouch_:
-	mes "[工会会长]";
-	mes "我想你走的路不对啊.";
+	mes "[穦穦]";
+	mes "и稱ǐ隔ぃ癸摆.";
 	close;
 }
 
 in_moc_16,186,107,0	script	info 8	-1,1,1,{
 OnTouch_:
-	mes "[工会会长]";
-	mes "毫无方向感了, 嗯?";
+	mes "[穦穦]";
+	mes "睝礚よ稰, 垛?";
 	close;
 }
 
@@ -2258,10 +2258,10 @@ OnInit:
 	disablenpc strnpcinfo(0);
 	end;
 }
-in_moc_16,156,87,1	duplicate(#moc_assin_dup)	[修伊]	1_M_JOBTESTER
-in_moc_16,156,85,1	duplicate(#moc_assin_dup)	[凯伊]	4_M_JOB_ASSASSIN
-in_moc_16,156,83,1	duplicate(#moc_assin_dup)	[无名者]	1_M_MOC_LORD
-in_moc_16,156,81,2	duplicate(#moc_assin_dup)	[帕勒卡迪]	4_F_JOB_ASSASSIN
-in_moc_16,156,79,1	duplicate(#moc_assin_dup)	[监考官]	2_M_THIEFMASTER
-in_moc_16,156,77,1	duplicate(#moc_assin_dup)	[托马斯]	2_M_THIEFMASTER
-in_moc_16,156,75,1	duplicate(#moc_assin_dup)	[马洛毕斯]	1_M_JOBTESTER
+in_moc_16,156,87,1	duplicate(#moc_assin_dup)	[レ]	1_M_JOBTESTER
+in_moc_16,156,85,1	duplicate(#moc_assin_dup)	[惩レ]	4_M_JOB_ASSASSIN
+in_moc_16,156,83,1	duplicate(#moc_assin_dup)	[礚]	1_M_MOC_LORD
+in_moc_16,156,81,2	duplicate(#moc_assin_dup)	[┈扒瓆]	4_F_JOB_ASSASSIN
+in_moc_16,156,79,1	duplicate(#moc_assin_dup)	[菏σ﹛]	2_M_THIEFMASTER
+in_moc_16,156,77,1	duplicate(#moc_assin_dup)	[Λ皑吹]	2_M_THIEFMASTER
+in_moc_16,156,75,1	duplicate(#moc_assin_dup)	[皑拨吹]	1_M_JOBTESTER

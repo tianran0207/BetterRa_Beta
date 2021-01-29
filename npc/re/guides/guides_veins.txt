@@ -14,81 +14,81 @@
 //= 1.1 Navigation system update. [Euphy]
 //============================================================ 
 
-veins,210,345,5	script	菲音斯 导游#veins01::GuideVeins	934,{
+veins,210,345,5	script	滇吹 旧村#veins01::GuideVeins	934,{
 	mes "[Veins Guide]";
-	mes "感谢您穿越了沙尘暴. 来到^8B4513菲音斯^000000, 峡谷村落.";
-	mes "第一次接受我们介绍的旅客们, 何不先按选单听取注意事项', 了解必须注意的事情?";
-	F_Navi("[菲音斯 导游]");
+	mes "稰谅眤禫‵剐忌. ㄓ^8B4513滇吹^000000, 甽é辅.";
+	mes "材Ω钡иざ残, ぃ匡虫猔種ㄆ兜', 秆ゲ斗猔種ㄆ薄?";
+	F_Navi("[滇吹 旧村]");
 	next;
 	while (1) {
-		switch(select("[ 瑟斯隆尼勒神殿]:[ 旅馆 ]:[ 酒店 ]:[ 武器店]:[ 道具商店 ]:[ 飞空艇]:[ 地里研究协会 ]:[ 准它 企划社 服务人员]:从小地图中删除标记:取消")) {
+		switch(select("[ 锋吹订ェ扒返]:[ 繻 ]:[ 皊┍ ]:[ 猌竟┍]:[ 笵ㄣ坝┍ ]:[ 弗]:[ ń╯穦 ]:[ ウ  狝叭]:眖瓜い埃夹癘:")) {
 		case 1:
-			mes "[菲音斯 导游]";
-			mes "我们的神殿位在北边.";
-			mes "平常有许多信奉菲依雅女神的信徒.";
-			mes "你想看看其他地方吗?";
+			mes "[滇吹 旧村]";
+			mes "и返娩.";
+			mes "キ盽Τ砛獺滇ㄌ懂獺畕.";
+			mes "稱ㄤよ盾?";
 			viewpoint 1,197,256,0,0xFF0000;
 			next;
 			break;
 		case 2:
-			mes "[菲音斯 导游]";
-			mes "你可以在旅馆休息消除你的旅途疲劳. 旅馆位于菲音斯的西北侧.";
-			mes "你想看看其他地方吗?";
+			mes "[滇吹 旧村]";
+			mes "繻ヰ埃硚痟骋. 繻滇吹﹁凹.";
+			mes "稱ㄤよ盾?";
 			viewpoint 1,110,278,1,0xFF4500;
 			next;
 			break;
 		case 3:
-			mes "[菲音斯 导游]";
-			mes "如果你想广交朋友建议你到酒店里去看看.";
-			mes "酒店位于菲音斯西侧.";
-			mes "你想看看其他地方吗?";
+			mes "[滇吹 旧村]";
+			mes "狦稱約ユ狟ね某皊┍ń.";
+			mes "皊┍滇吹﹁凹.";
+			mes "稱ㄤよ盾?";
 			viewpoint 1,150,215,2,0xDAA520;
 			next;
 			break;
 		case 4:
-			mes "[菲音斯 导游]";
-			mes "有时候你必须把自己从危险之中解救出来.";
-			mes "菲音斯的武器店以合理价格出售不错的武器..";
-			mes "店位于菲音斯西侧.";
-			mes "你想看看其他地方吗?";
+			mes "[滇吹 旧村]";
+			mes "Τゲ斗р眖繧ぇい秆毕ㄓ.";
+			mes "滇吹猌竟┍瞶刹扳ぃ岿猌竟..";
+			mes "┍滇吹﹁凹.";
+			mes "稱ㄤよ盾?";
 			viewpoint 1,150,175,3,0x008000;
 			next;
 			break;
 		case 5:
-			mes "[菲音斯 导游]";
-			mes "你背包内的补给品还够用吗..如果有任何必需品需要购买的话, 请到道具商店.";
-			mes "你想看看其他地方吗?";
+			mes "[滇吹 旧村]";
+			mes "璉ず干倒珇临镑ノ盾..狦Τヴゲ惠珇惠璶潦禦杠, 叫笵ㄣ坝┍.";
+			mes "稱ㄤよ盾?";
 			viewpoint 1,230,161,4,0x0000FF;
 			next;
 			break;
 		case 6:
-			mes "[菲音斯 导游]";
-			mes "飞空艇目前只用于载运货物.";
-			mes "你想看看其他地方吗?";
+			mes "[滇吹 旧村]";
+			mes "弗ヘ玡ノ更笲砯.";
+			mes "稱ㄤよ盾?";
 			viewpoint 1,273,287,5,0x000080;
 			next;
 			break;
 		case 7:
-			mes "[菲音斯 导游]";
-			mes "你对地理研究有兴趣吗?";
-			mes "也许你可以过去看看, " + F_Navi("地理研究协会","veins,150,175")+" 在武器店的二楼.";
-			mes "你想看看其他地方吗?";
+			mes "[滇吹 旧村]";
+			mes "癸瞶╯Τ砍届盾?";
+			mes "砛筁, " + F_Navi("瞶╯穦","veins,150,175")+" 猌竟┍加.";
+			mes "稱ㄤよ盾?";
 			viewpoint 1,150,175,6,0x800080;
 			next;
 			break;
 		case 8:
-			mes "[菲音斯 导游]";
-			mes "我会标记";
-			mes "^808080准它 企划社 服务人员^000000";
-			mes "的位置在你的小地图中.";
-			mes "你想看看其他地方吗?";
+			mes "[滇吹 旧村]";
+			mes "и穦夹癘";
+			mes "^808080ウ  狝叭^000000";
+			mes "竚瓜い.";
+			mes "稱ㄤよ盾?";
 			viewpoint 1,209,127,7,0x808080;
 			next;
 			break;
 		case 9:
-			mes "[菲音斯 导游]";
-			mes "我会从你的小地图中删除所有标记.";
-			mes "我能?你效劳什么?";
+			mes "[滇吹 旧村]";
+			mes "и穦眖瓜い埃┮Τ夹癘.";
+			mes "и?骋ぐ?";
 			viewpoint 2,197,256,0,0xFFFFFF;
 			viewpoint 2,110,278,1,0xFFFFFF;
 			viewpoint 2,150,215,2,0xFFFFFF;
@@ -100,10 +100,10 @@ veins,210,345,5	script	菲音斯 导游#veins01::GuideVeins	934,{
 			next;
 			break;
 		case 10:
-			mes "[菲音斯 导游]";
-			mes "那么, 祝你有个愉快的旅行!";
+			mes "[滇吹 旧村]";
+			mes "ê, Τ磖е︽!";
 			close;
 		}
 	}
 }
-veins,189,101,5	duplicate(GuideVeins)	菲音斯 导游#veins02	934
+veins,189,101,5	duplicate(GuideVeins)	滇吹 旧村#veins02	934

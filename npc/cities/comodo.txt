@@ -26,208 +26,208 @@
 
 // Inside Comodo
 //============================================================
-cmd_in02,73,81,4	script	马乐纳#cmd	1_M_02,{
-	mes "[马乐纳]";
-	mes "赌博?不是赌博!";
-	mes "不要把克魔岛的赌博场, 当做赌博比喻";
-	mes "这明明是一场一决胜负的比赛, 活生生的比赛";
-	mes "能了解我的话吗, 朋友?!";
+cmd_in02,73,81,4	script	皑贾#cmd	1_M_02,{
+	mes "[皑贾]";
+	mes "戒痴?ぃ琌戒痴!";
+	mes "ぃ璶р臸畄戒痴初, 讽暗戒痴ゑ畴";
+	mes "硂琌初∕衊璽ゑ辽, ネネゑ辽";
+	mes "秆и杠盾, 狟ね?!";
 	next;
-	mes "[马乐纳]";
-	mes "啊啊...不要用这种眼光看我...";
-	mes "...好了 好了! 知道了...";
-	mes "我在这克魔岛玩过很多种游戏, 也让金币消耗殆尽.不过...我不后悔";
+	mes "[皑贾]";
+	mes "摆摆...ぃ璶ノ硂销泊и...";
+	mes "... ! 笵...";
+	mes "и硂臸畄筁销村栏, 琵刽琾荷.ぃ筁...иぃ";
 	next;
-	mes "[马乐纳]";
-	mes "今天是今天、明天是明天!";
-	mes "我再到克魔岛其他区域打倒魔物, 赚取一些金币";
-	mes "这样又可以快乐的玩";
-	mes "哈哈哈...";
+	mes "[皑贾]";
+	mes "さぱ琌さぱぱ琌ぱ!";
+	mes "и臸畄ㄤ跋办ゴ臸, 寥ㄇ刽";
+	mes "硂妓е贾";
+	mes "...";
 	close;
 }
 
-cmd_in02,48,55,4	script	斯库世基#cmd	1_M_BARD,{
-	mes "[斯库世基]";
-	mes "有个向我“借了些金币”的男人...到底躲到那里去了...";
-	mes "哎~明明讲好说会帮我增值好几倍的";
-	mes "不要紧吗不要紧吗?";
+cmd_in02,48,55,4	script	吹畐膀#cmd	1_M_BARD,{
+	mes "[吹畐膀]";
+	mes "Τи¨ㄇ刽〃╧...┏跟êń...";
+	mes "玼~量弧穦腊и糤";
+	mes "ぃ璶候盾ぃ璶候盾?";
 	next;
-	mes "[斯库世基]";
-	mes "我是不是被骗了...";
-	mes "我被骗了吗...?";
-	mes "那...那么...";
-	mes "哇哇哇哇哇!!";
+	mes "[吹畐膀]";
+	mes "и琌ぃ琌砆腇...";
+	mes "и砆腇盾...?";
+	mes "ê...ê...";
+	mes "珃珃珃珃珃!!";
 	close;
 }
 
-cmd_in02,64,43,4	script	乐倍乐透#cmd	4_M_SEAMAN,{
-	mes "[乐倍乐透]";
-	mes "因为有一个纯真的家伙";
-	mes "我又赚了一笔私房钱";
-	mes "哈哈哈哈!";
-	mes "喀喀...什么事?";
-	mes "耶?你第一次看人家数钱吗...?";
+cmd_in02,64,43,4	script	贾贾硓#cmd	4_M_SEAMAN,{
+	mes "[贾贾硓]";
+	mes "Τ痷產ル";
+	mes "и寥掸╬┬窥";
+	mes "!";
+	mes "池池...ぐㄆ?";
+	mes "瑿?材Ω產计窥盾...?";
 	close;
 }
 
-cmd_in02,89,72,4	script	戴妮罗斯#cmd	4_M_ORIENT02,{
-	mes "[戴妮罗斯]";
-	mes "这一次小弹珠, ";
-	mes "只要进的话...我就赚翻了!";
-	mes "这是让小弹珠进那个小洞的游戏";
-	mes "因为是非常小的洞";
+cmd_in02,89,72,4	script	拦ゞ霉吹#cmd	4_M_ORIENT02,{
+	mes "[拦ゞ霉吹]";
+	mes "硂Ω紆痌, ";
+	mes "璶秈杠...и碞寥陆!";
+	mes "硂琌琵紆痌秈ê瑌村栏";
+	mes "琌獶盽瑌";
 	next;
-	mes "[戴妮罗斯]";
-	mes "大部分的人对这个游戏挑战死心";
-	mes "可是我是不一样的...";
-	mes "现在我手上拿的这啤酒罐是磁铁, 专门用来玩这游戏的";
-	mes "喀喀喀喀喀...";
+	mes "[拦ゞ霉吹]";
+	mes "场だ癸硂村栏珼驹み";
+	mes "琌и琌ぃ妓...";
+	mes "瞷иも硂班皊砒琌合臟, 盡ノㄓ硂村栏";
+	mes "池池池池池...";
 	next;
-	mes "[戴妮罗斯]";
-	mes "用磁铁啤酒罐, 狠狠的赚了一笔!";
+	mes "[拦ゞ霉吹]";
+	mes "ノ合臟班皊砒, 寥掸!";
 	close;
 }
 
-cmd_in02,178,92,4	script	水伊乐呢#cmd	4W_F_01,{
-	mes "[水伊乐呢]";
-	mes "唉 唉 唉, 真是的!!";
-	mes "客人你又输了...";
-	mes "呵呵呵...";
-	mes "嗯...想给你一个建议";
-	mes "赌博手气不是很顺的时候";
-	mes "以退为进才是上策";
+cmd_in02,178,92,4	script	レ贾㎡#cmd	4W_F_01,{
+	mes "[レ贾㎡]";
+	mes "  , 痷琌!!";
+	mes "块...";
+	mes "...";
+	mes "垛...稱倒某";
+	mes "戒痴も蒩ぃ琌抖";
+	mes "癶秈琌郸";
 	next;
-	mes "[水伊乐呢]";
-	mes "(这位客人一直都没有蠃...)";
-	mes "(真是可怜极了...)";
+	mes "[レ贾㎡]";
+	mes "(硂常⊿Τ蜉...)";
+	mes "(痷琌贪体...)";
 	close;
 }
 
-cmd_in02,178,86,4	script	斯托呢#cmd	4W_M_02,{
-	mes "[斯托呢]";
-	mes "啊~这是什? ! !";
-	mes "真是的! 又 ? !";
-	mes "我不能就这样退下!";
-	mes "哇呜呜呜呜...";
-	mes "到我蠃之前, 我会一直跟你拼下去!";
+cmd_in02,178,86,4	script	吹Λ㎡#cmd	4W_M_02,{
+	mes "[吹Λ㎡]";
+	mes "摆~硂琌ぐ? ! !";
+	mes "痷琌!  ? !";
+	mes "иぃ碞硂妓癶!";
+	mes "珃躲躲躲躲...";
+	mes "и蜉ぇ玡, и穦蛤!";
 	close;
 }
 
-cmd_in02,172,105,4	script	基介#cmd	4_M_04,{
-	mes "[基介]";
-	mes "我想了又想...";
-	mes "假如在这种地方, 只想赚取意外之财, 再加上扣除税金, 这扣那扣就剩没多少";
-	mes "还不如努力工作存钱, 不认为这才是明智之举吗?";
+cmd_in02,172,105,4	script	膀ざ#cmd	4_M_04,{
+	mes "[膀ざ]";
+	mes "и稱稱...";
+	mes "安硂销よ, 稱寥種ぇ癩, Ι埃祙, 硂ΙêΙ碞逞⊿ぶ";
+	mes "临ぃ窥, ぃ粄硂琌醇ぇ羭盾?";
 	next;
-	mes "[基介]";
-	mes "辛苦赚的钱才有价值";
-	mes "只想着轻轻松松的就赚了一大笔钱, 人家看你的时候, ";
-	mes "也会用异样的眼光看着你";
-	mes "你不也这样认为吗?";
+	mes "[膀ざ]";
+	mes "ǒ璚寥窥Τ刹";
+	mes "稱帝淮淮猀猀碞寥掸窥, 產, ";
+	mes "穦ノ奢妓泊帝";
+	mes "ぃ硂妓粄盾?";
 	next;
-	mes "[基介]";
-	mes "想想看嘛~";
-	mes "假如你什么事都不做";
-	mes "只顾着玩";
-	mes "你有一位很要好的朋友";
-	mes "中了乐透财拿到了一笔钱 !";
+	mes "[膀ざ]";
+	mes "稱稱估~";
+	mes "安ぐㄆ常ぃ暗";
+	mes "臮帝";
+	mes "Τ璶狟ね";
+	mes "い贾硓癩掸窥 !";
 	next;
-	mes "[基介]";
-	mes "你会对这样的朋友说一句话";
-	mes "“好耶~请客”和";
-	mes "“可不可以借我一点”等等... ";
-	mes "也会想到他突然暴增的财富";
-	mes "原本就不属于他的";
+	mes "[膀ざ]";
+	mes "穦癸硂妓狟ね弧杠";
+	mes "¨瑿~叫〃㎝";
+	mes "¨ぃи翴〃单单... ";
+	mes "穦稱礛忌糤癩碔";
+	mes "セ碞ぃ妮";
 	next;
-	mes "[基介]";
-	mes "但是你朋友辛辛苦苦赚来的钱";
-	mes "站在你的立场, 你只顾着玩, ";
-	mes "你会说请客吧!或者是借点钱";
-	mes "给我...这样的话";
-	mes "假如是你还想要赚取意外之财吗?";
+	mes "[膀ざ]";
+	mes "琌狟ねǒǒ璚璚寥ㄓ窥";
+	mes "ミ初, 臮帝, ";
+	mes "穦弧叫!┪琌翴窥";
+	mes "倒и...硂妓杠";
+	mes "安琌临稱璶寥種ぇ癩盾?";
 	close;
 }
 
-cmd_in02,174,126,4	script	乐呀勒#cmd	4_M_01,{
-	mes "[乐呀勒]";
-	mes "啊~这里是克魔岛赌博场";
-	mes "内部装潢非常干净";
-	mes "整理整顿的很好!";
-	mes "真的有点想赌博!!";
-	mes "好好唷!";
+cmd_in02,174,126,4	script	贾扒#cmd	4_M_01,{
+	mes "[贾扒]";
+	mes "摆~硂ń琌臸畄戒痴初";
+	mes "ず场杆鍯獶盽瞓";
+	mes "俱瞶俱箉!";
+	mes "痷Τ翴稱戒痴!!";
+	mes "!";
 	next;
 	switch(rand(1,3)) {	
 	case 1:
-		mes "[乐呀勒]";
-		mes "那...哎呀?";
-		mes "这里怎么会有灰尘!";
-		mes "呼呼!（ 搽搽搽搽搽)";
-		mes "我最讨厌脏兮兮的赌场!!";
-		mes "刷净刷净刷净拚命刷净!";
+		mes "[贾扒]";
+		mes "ê...玼?";
+		mes "硂ń穦Τη剐!";
+		mes "㊣㊣! 穏穏穏穏穏)";
+		mes "и程癚菇纽ぜぜ戒初!!";
+		mes "瞓瞓瞓╅㏑瞓!";
 		next;
-		mes "[乐呀勒]";
-		mes "(搽搽 搽搽 搽搽 搽搽)";
-		mes "呼呼! 真累人啊...";
-		mes "喔耶~现在变干净了";
-		mes "(东张西望)";
-		mes "好了, 现在开始尽情的玩吧!";
+		mes "[贾扒]";
+		mes "(穏穏 穏穏 穏穏 穏穏)";
+		mes "㊣㊣! 痷仓摆...";
+		mes "翅瑿~瞷跑瞓";
+		mes "(狥眎﹁辨)";
+		mes ", 瞷秨﹍荷薄!";
 		close;
 	case 2:
-		mes "以气氛来感受赌博?";
-		mes "对, 是的没错";
-		mes "有趣的赌博正在进行时";
-		mes "在破破烂烂的室内装潢里";
-		mes "会影响到你的情绪 !";
+		mes "蒩猑ㄓ稰戒痴?";
+		mes "癸, 琌⊿岿";
+		mes "Τ届戒痴タ秈︽";
+		mes "瘆瘆年年ず杆鍯ń";
+		mes "穦紇臫薄狐 !";
 		next;
-		mes "[乐呀勒]";
-		mes "克魔岛的赌博场是最棒的...";
-		mes "首先鲜艳的红色制服";
-		mes "就会让你引起从庄家身上";
-		mes "获取分数的斗志";
-		mes "真的太棒了";
+		mes "[贾扒]";
+		mes "臸畄戒痴初琌程次...";
+		mes "翧艫︹狝";
+		mes "碞穦琵ま癬眖绍產ō";
+		mes "莉だ计ゆв";
+		mes "痷び次";
 		close;
 	case 3:
-		mes "这个 这个, 不能跟着下赌啊!";
-		mes "唉呀~你真的不懂啊...";
-		mes "那位先生是赌博初学者吗?";
-		mes "我只是爱克魔岛赌博场的小市民啊";
+		mes "硂 硂, ぃ蛤帝戒摆!";
+		mes "~痷ぃ来摆...";
+		mes "êネ琌戒痴厩盾?";
+		mes "и琌稲臸畄戒痴初カチ摆";
 		next;
-		mes "[乐呀勒]";
-		mes "嘿嘿嘿...";
-		mes "有什么不对吗?...";
+		mes "[贾扒]";
+		mes "糑糑糑...";
+		mes "Τぐぃ癸盾?...";
 		close;
 	}
 }
-cmd_in02,57,62,4	script	赌场经理 摩根#cmd	4_M_MANAGER,{
-	mes "[赌场经理 摩根]";
+cmd_in02,57,62,4	script	戒初竒瞶 集#cmd	4_M_MANAGER,{
+	mes "[戒初竒瞶 集]";
 	if (rand(1,10) == 1) {
-		mes "...魔术骰子!!!";
-		mes "...嗯!什么?";
-		mes "啊~真不好意思.刚才分神了一下...";
-		mes "您好~";
-		mes "我是克魔岛赌博场的经理";
-		mes "我叫^3355FF“姆”^000000 ";
+		mes "...臸砃浑!!!";
+		mes "...垛!ぐ?";
+		mes "摆~痷ぃ種.だ...";
+		mes "眤~";
+		mes "и琌臸畄戒痴初竒瞶";
+		mes "и^3355FF¨﹊〃^000000 ";
 		close;
 	}
 	else {
-		mes "我是克魔岛赌博场的经理";
-		mes "我叫^3355FF“姆”^000000 ";
-		mes "为了增进克魔岛赌场客人";
-		mes "能在游戏上更快乐";
-		mes "我们会不断的努力";
-		mes "你就好好的休息之后, 再离开吧";
+		mes "и琌臸畄戒痴初竒瞶";
+		mes "и^3355FF¨﹊〃^000000 ";
+		mes "糤秈臸畄戒初";
+		mes "村栏е贾";
+		mes "и穦ぃ耞";
+		mes "碞ヰぇ, 置秨";
 		next;
-		mes "[赌场经理 摩根]";
-		mes "我现在所服务的楼层";
-		mes "是贵宾楼层";
-		mes "为我们克魔岛VIP会员";
-		mes "所准备的场所";
-		mes "请你轻松的享受游戏";
-		mes "也请你多加利用其他楼层";
+		mes "[戒初竒瞶 集]";
+		mes "и瞷┮狝叭加糷";
+		mes "琌禥猾加糷";
+		mes "и臸畄VIP穦";
+		mes "┮称初┮";
+		mes "叫淮猀ㄉ村栏";
+		mes "叫ノㄤ加糷";
 		next;
-		mes "[赌场经理 摩根]";
-		mes "我们克魔岛赌场所有的收入, ";
-		mes "都花费在克魔岛的地区建设上";
+		mes "[戒初竒瞶 集]";
+		mes "и臸畄戒初┮ΤΜ, ";
+		mes "常禣臸畄跋砞";
 		close;
 	}
 
@@ -235,111 +235,111 @@ cmd_in02,57,62,4	script	赌场经理 摩根#cmd	4_M_MANAGER,{
 
 // Comodo Field
 //============================================================
-cmd_fild04,188,74,4	script	海女小姐#cmd	4_F_04,{
-	mes "[海女]";
-	mes "加油 加油";
-	mes "我是在海底里抓些贝壳类、海藻类";
-	mes "过着采卖生活的海女";
-	mes "加油 加油";
+cmd_fild04,188,74,4	script	﹋#cmd	4_F_04,{
+	mes "[]";
+	mes "猳 猳";
+	mes "и琌┏ńъㄇī催摸摩摸";
+	mes "筁帝芥ネ";
+	mes "猳 猳";
 	next;
-	mes "[海女]";
-	mes "围绕着大自然";
-	mes "吃些新鲜的海鲜也不错啦!";
-	mes "但像我这样年轻小姐";
-	mes "还是有着非常向往都市生活的心情!";
+	mes "[]";
+	mes "瞅露帝礛";
+	mes "ㄇ穝翧翧ぃ岿罢!";
+	mes "钩и硂妓淮﹋";
+	mes "临琌Τ帝獶盽┕常カネみ薄!";
 	next;
-	mes "[海女]";
-	mes "嗯嗯~专心卖海藻类所赚取的钱, ";
-	mes "一定要做为搬到首都的基金";
-	mes "绝对!";
+	mes "[]";
+	mes "垛垛~盡み芥摩摸┮寥窥, ";
+	mes "﹚璶暗穐常膀";
+	mes "荡癸!";
 	close;
 }
 
-cmd_fild04,248,86,4	script	渔夫#cmd	4_M_SEAMAN,{
-	mes "[纪亚欧]";
-	mes "哼...";
-	mes "任谁看见我都知道我是位渔夫";
-	mes "现在正在休息, ";
-	mes "今天也是非常非常辛苦的一天...";
+cmd_fild04,248,86,4	script	寒ひ#cmd	4_M_SEAMAN,{
+	mes "[ㄈ稼]";
+	mes "...";
+	mes "ヴ街ǎи常笵и琌寒ひ";
+	mes "瞷タヰ, ";
+	mes "さぱ琌獶盽獶盽ǒ璚ぱ...";
 	next;
-	mes "[纪亚欧]";
-	mes "让我更累的是";
-	mes "那边那位我的女儿";
-	mes "只急着想搬到都市去住...";
-	mes "在海边空气好, 水好, 环境又好";
-	mes "真希望他能留在这里";
+	mes "[ㄈ稼]";
+	mes "琵и仓琌";
+	mes "ê娩êи";
+	mes "帝稱穐常カ...";
+	mes "娩蒩, , 吏挂";
+	mes "痷辨痙硂ń";
 	next;
-	mes "[纪亚欧]";
-	mes "金枝玉叶地养大了";
-	mes "都想离家";
-	mes "真是的.....";
+	mes "[ㄈ稼]";
+	mes "狵ド腑緄";
+	mes "常稱置產";
+	mes "痷琌.....";
 	close;
 }
 
-cmd_fild04,267,137,4	script	海边的小孩#cmd	4_F_KID2,{
-	mes "[太古罗]";
-	mes "玩砂子、玩砂子~";
-	mes "海边的砂子非常的柔细";
-	mes "有海的气味";
-	mes "总有一天";
-	mes "我要搭着前往艾尔贝塔的船只去都会旅行";
+cmd_fild04,267,137,4	script	娩#cmd	4_F_KID2,{
+	mes "[び霉]";
+	mes "~";
+	mes "娩獶盽琗灿";
+	mes "Τ蒩";
+	mes "羆Τぱ";
+	mes "и璶穎帝玡┕︺焊ī娥差常穦︽";
 	close;
 }
 
-cmd_fild07,192,58,4	script	灯塔守护人#cmd	4W_SAILOR,{
-	mes "[拉禾斯]";
-	mes "您好.我是“拉禾斯”";
-	mes "^3355FF发乐斯灯塔^000000的灯塔守护人";
-	mes "以及发乐斯解说人员";
+cmd_fild07,192,58,4	script	縊娥臔#cmd	4W_SAILOR,{
+	mes "[┰ポ吹]";
+	mes "眤.и琌¨┰ポ吹〃";
+	mes "^3355FF祇贾吹縊娥^000000縊娥臔";
+	mes "の祇贾吹秆弧";
 	next;
-	if (select("有关发乐斯灯塔?:结束对话") == 1) {
-		mes "[拉禾斯]";
-		mes "发乐斯灯台岛在古代建造2座, 做为敌人入侵时的警戒塔功能";
+	if (select("Τ闽祇贾吹縊娥?:挡癸杠") == 1) {
+		mes "[┰ポ吹]";
+		mes "祇贾吹縊畄硑2畒, 暗寄獻牡з娥";
 		next;
-		mes "[拉禾斯]";
-		mes "现在是王国最南端的港口都市, ";
-		mes "以做交易而闻名";
-		mes "因为内部装修的关系";
-		mes "禁止进出管制";
-		mes "那灯塔里面有";
-		mes "很多漂亮的图画";
-		mes "非常多";
+		mes "[┰ポ吹]";
+		mes "瞷琌瓣程玭狠翠常カ, ";
+		mes "暗ユτ籇";
+		mes "ず场杆闽╰";
+		mes "窽ゎ秈恨";
+		mes "ê縊娥ńΤ";
+		mes "簘獹瓜礶";
+		mes "獶盽";
 		close;
 	}
-		mes "[拉禾斯]";
-		mes "真的非?上?..";
-		mes "这是一次可以了解";
-		mes "古迹的机会...";
-		mes "有机会的话";
-		mes "请一定要再来一次";
+		mes "[┰ポ吹]";
+		mes "痷獶??..";
+		mes "硂琌Ω秆";
+		mes "格审穦...";
+		mes "Τ审穦杠";
+		mes "叫﹚璶ㄓΩ";
 	close;
 }
 
-cmd_fild07,52,280,4	script	灯塔守护人.#cmd	4W_SAILOR,{
-	mes "[嗨罗思]";
-	mes "对 ! 这灯塔是两座";
-	mes "发乐斯灯塔是其中之一!";
-	mes "现在内部装修中";
-	mes "不能进去!";
-	mes "等到室内装潢全部做完之后...";
+cmd_fild07,52,280,4	script	縊娥臔.#cmd	4W_SAILOR,{
+	mes "[顿霉]";
+	mes "癸 ! 硂縊娥琌ㄢ畒";
+	mes "祇贾吹縊娥琌ㄤいぇ!";
+	mes "瞷ず场杆い";
+	mes "ぃ秈!";
+	mes "单ず杆鍯场暗Чぇ...";
 	next;
-	mes "[嗨罗思]";
-	mes "计划重新开幕!";
-	mes "麻烦你那时候再光临好吗?";
-	mes "谢、感谢您!";
-	mes "^3355FF( 他很紧张中 )^000000";
+	mes "[顿霉]";
+	mes "璸穝秨辊!";
+	mes "陈沸ê羬盾?";
+	mes "谅稰谅眤!";
+	mes "^3355FF( 候眎い )^000000";
 	close;
 }
 
-cmd_fild07,299,83,4	script	兹安#cmd	4W_SAILOR,{
+cmd_fild07,299,83,4	script	#cmd	4W_SAILOR,{
 	set .@n$,"["+strnpcinfo(1)+"]";
 	mes .@n$;
-	mes "这是往伊斯鲁得和艾尔贝塔";
-	mes "的快速艇“禄帝乐伺”号";
-	mes "感谢您每次的使用";
-	mes "请问你要搭乘此班次吗?";
+	mes "硂琌┕レ吹緗眔㎝︺焊ī娥";
+	mes "е硉弗¨窼贾〃腹";
+	mes "稰谅眤–Ωㄏノ";
+	mes "叫拜璶穎痁Ω盾?";
 	next;
-	switch(select("艾尔贝塔港口  - 600 Zeny:伊斯鲁得港口 - 800 Zeny:结束对话")) {
+	switch(select("︺焊ī娥翠  - 600 Zeny:レ吹緗眔翠 - 800 Zeny:挡癸杠")) {
 	case 1:
 		if (Zeny < 600) break;
 		set Zeny, Zeny - 600;
@@ -355,34 +355,34 @@ cmd_fild07,299,83,4	script	兹安#cmd	4W_SAILOR,{
 		end;
 	case 3:
 		mes .@n$;
-		mes "“禄帝乐伺”号";
-		mes "非常感谢您";
+		mes "¨窼贾〃腹";
+		mes "獶盽稰谅眤";
 		close;
 	}
 	mes .@n$;
-	mes "非常抱歉";
-	mes "你没有足够的";
-	mes "钱币能搭乘.";
+	mes "獶盽╆簆";
+	mes "⊿Τì镑";
+	mes "窥刽穎.";
 	close;
 }
-cmd_fild07,94,134,4	duplicate(兹安#cmd)	快速艇船员#cmd	4W_SAILOR
+cmd_fild07,94,134,4	duplicate(#cmd)	е硉弗差#cmd	4W_SAILOR
 
-cmd_in02,146,180,4	script	卡普拉 蜜丝提::kaf_comodo2	4_F_KAFRA7,{
+cmd_in02,146,180,4	script	炊┰ 籩捣矗::kaf_comodo2	4_F_KAFRA7,{
 	cutin "kafra_07",2;
-	mes "[卡普拉 蜜丝提]";
-	mes "欢迎来到";
-	mes "卡普拉会社.";
-	mes "你知道";
-	mes "我们永远在您身边";
-	mes "为您服务~";
+	mes "[炊┰ 籩捣矗]";
+	mes "舧ㄓ";
+	mes "炊┰穦.";
+	mes "笵";
+	mes "иッ环眤ō娩";
+	mes "眤狝叭~";
 	next;
-	mes "[卡普拉 蜜丝提]";
-	mes "卡普拉";
-	mes "西部赛区会社";
-	mes "承诺最优质的服务";
-	mes "强调可靠";
-	mes "与消费的高满意度.";
-	mes "谢谢您的惠顾~";
+	mes "[炊┰ 籩捣矗]";
+	mes "炊┰";
+	mes "﹁场辽跋穦";
+	mes "┯空程涩借狝叭";
+	mes "眏秸綼";
+	mes "蒓禣蔼骸種.";
+	mes "谅谅眤磃臮~";
 	close2;
 	cutin "", 255;
 	end;
@@ -390,59 +390,59 @@ cmd_in02,146,180,4	script	卡普拉 蜜丝提::kaf_comodo2	4_F_KAFRA7,{
 
 // Morocc Field
 //============================================================
-moc_fild12,35,303,4	script	斯卢特卢#cmd	1_M_ORIENT01,{
-	mes "[斯卢特卢]";
-	mes "你好哟, 我是斯卢特卢,";
-	mes "负责通往山特乐要塞之路的守门人.";
-	mes "如果你真心想去山特乐要塞基地,";
-	mes "我允许你进去哟, 但是你必须当心...";
+moc_fild12,35,303,4	script	吹縞疭縞#cmd	1_M_ORIENT01,{
+	mes "[吹縞疭縞]";
+	mes "抽, и琌吹縞疭縞,";
+	mes "璽砫硄┕疭贾璶峨ぇ隔.";
+	mes "狦痷み稱疭贾璶峨膀,";
+	mes "иす砛秈抽, 琌ゲ斗讽み...";
 	next;
-	switch(select("我要去那里!:山特乐曼要塞?:取消")) {
+	switch(select("и璶êń!:疭贾耙璶峨?:")) {
 	case 1:
-		mes "[斯卢特卢]";
-		mes "你真的要去山特乐曼要塞?";
-		mes "好吧,祝你幸运, 一定要小心哦!";
+		mes "[吹縞疭縞]";
+		mes "痷璶疭贾耙璶峨?";
+		mes ",┋笲, ﹚璶み瓳!";
 		close2;
 		warp "cmd_fild08",331,319;
 		end;
 	case 2:
-		mes "[斯卢特卢]";
-		mes "虽然现在山特乐曼";
-		mes "有怪物出没,";
-		mes "但它曾经是一个人们向往的生活区.";
-		mes "不过, 他们总是被侵略和掠夺...";
+		mes "[吹縞疭縞]";
+		mes "瘤礛瞷疭贾耙";
+		mes "Τ┣⊿,";
+		mes "ウ纯竒琌┕ネ跋.";
+		mes "ぃ筁, 羆琌砆獻菠㎝卑管...";
 		next;
-		mes "[斯卢特卢]";
-		mes "山特乐曼的居民适应了这样的入侵.";
-		mes "开始建造信号塔、加强防御工事.";
-		mes "承受战争一次又一次的蹂躏.";
-		mes "接下来,克魔岛建立了...";
+		mes "[吹縞疭縞]";
+		mes "疭贾耙﹡チ屿莱硂妓獻.";
+		mes "秨﹍硑獺腹娥眏ň眘ㄆ.";
+		mes "┯驹ΩΩ夸苙.";
+		mes "钡ㄓ,臸畄ミ...";
 		next;
-		mes "[斯卢特卢]";
-		mes "克魔岛发展的非??渐渐吸引了一些";
-		mes "山特乐曼要塞人民前往居住.";
-		mes "最后遗弃山特乐曼要塞的人越来越多,";
-		mes "从要塞转移到克魔岛居住.";
+		mes "[吹縞疭縞]";
+		mes "臸畄祇甶獶??亥亥まㄇ";
+		mes "疭贾耙璶峨チ玡┕﹡.";
+		mes "程框斌疭贾耙璶峨禫ㄓ禫,";
+		mes "眖璶峨锣簿臸畄﹡.";
 		next;
-		mes "[斯卢特卢]";
-		mes "有一些人依旧留在山特乐曼,";
-		mes "他们起义并且建立起一个羽翼尚不丰满";
-		mes "的政府.怪物们瞄准了机会, 一举攻下";
-		mes "了山特乐曼要塞...";
+		mes "[吹縞疭縞]";
+		mes "Τㄇㄌ侣痙疭贾耙,";
+		mes "癬竡ミ癬π羖﹟ぃぅ骸";
+		mes "現┎.┣核审穦, 羭ю";
+		mes "疭贾耙璶峨...";
 		next;
-		mes "[斯卢特卢]";
-		mes "现在在山特乐曼的周围啥都没有了.";
-		mes "嗯, 也许除了西南面帕罗的灯塔外,";
-		mes "其他一切都没了. 我听说那地方可能会吸引";
-		mes "有抱负的盗贼前往...";
+		mes "[吹縞疭縞]";
+		mes "瞷疭贾耙㏄瞅裕常⊿Τ.";
+		mes "垛, 砛埃﹁玭┈霉縊娥,";
+		mes "ㄤち常⊿. и弧êよ穦ま";
+		mes "Τ╆璽祍搁玡┕...";
 		close;
 	case 3:
-		mes "[斯卢特卢]";
-		mes "如果你厌倦了旅行, 你可以";
-		mes "在 ^3355FF克魔岛^000000 休息.";
-		mes "那儿是个受欢迎的";
-		mes "旅游胜地,特别是";
-		mes "针对你这类冒险者哦.你懂的.";
+		mes "[吹縞疭縞]";
+		mes "狦菇︽, ";
+		mes " ^3355FF臸畄^000000 ヰ.";
+		mes "ê琌舧";
+		mes "村衊,疭琌";
+		mes "皐癸硂摸玙繧瓳.来.";
 		close;
 	}
 }

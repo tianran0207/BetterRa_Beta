@@ -15,73 +15,73 @@
 //= 1.2 Navigation system update. [Euphy]
 //============================================================ 
 
-geffen,203,116,4	script	解说员#01geffen::GuideGeffen	705,{
+geffen,203,116,4	script	秆弧#01geffen::GuideGeffen	705,{
 	cutin "gef_soldier",2;
-	mes "[吉芬 解说员]";
-	mes "这里是魔法之都^8B4513吉芬^000000，";
-	mes "诚挚的欢迎大家的莅临，";
-	mes "需要为您介绍吗?";
-	F_Navi("[吉芬 解说员]");
+	mes "[ 秆弧]";
+	mes "硂ń琌臸猭ぇ常^8B4513^000000";
+	mes "港及舧產籝羬";
+	mes "惠璶眤ざ残盾?";
+	F_Navi("[ 秆弧]");
 	next;
 	while (1) {
-		switch(select("[主要设施]:[ 商人&小帮手 ]:删除小地图的标记:结束对话")) {
+		switch(select("[璶砞琁]:[ 坝&腊も ]:埃瓜夹癘:挡癸杠")) {
 		case 1:
 			set .@loop,1;
 			while (.@loop) {
-				switch(select("[魔法学校]:[吉芬塔]:[喷 水 池]:[道 具 店]:[装备维修及购买]:[          旅 馆          ]:[          酒 店          ]:[ 克里斯多夫铁工厂 ]:返回上一选单")) {
+				switch(select("[臸猭厩]:[娥]:[糛  ]:[笵 ㄣ ┍]:[杆称蝴の潦禦]:[           繻          ]:[          皊 ┍          ]:[ ń吹ひ臟蒁 ]:匡虫")) {
 				case 1:
-					mes "[吉芬 解说员]";
-					mes ""+F_Navi("魔法学校","geffen,61,180","^B9062F");
-					mes "负责魔法师";
-					mes "转职等的工作，";
-					mes "位置已经标记在";
-					mes "小地图上了，";
-					mes "还需要其它服务吗?";
+					mes "[ 秆弧]";
+					mes ""+F_Navi("臸猭厩","geffen,61,180","^B9062F");
+					mes "璽砫臸猭畍";
+					mes "锣戮单";
+					mes "竚竒夹癘";
+					mes "瓜";
+					mes "临惠璶ㄤウ狝叭盾?";
 					viewpoint 1,61,180,0,0xFF0000;
 					next;
 					break;
 				case 2:
-					callsub L_Mark, F_Navi("[吉芬塔]","geffen,120,114","^0000FF");
+					callsub L_Mark, F_Navi("[娥]","geffen,120,114","^0000FF");
 					viewpoint 1,120,114,1,0x0000FF;
 					next;
 					break;
 				case 3:
-					callsub L_Mark, F_Navi("[喷水池]","geffen,126,48","^FF5400");
+					callsub L_Mark, F_Navi("[糛]","geffen,126,48","^FF5400");
 					viewpoint 1,126,48,2,0xFFB400;
 					next;
 					break;
 				case 4:
-					callsub L_Mark, F_Navi("[道具店]","geffen,44,86","^006400");
+					callsub L_Mark, F_Navi("[笵ㄣ┍]","geffen,44,86","^006400");
 					viewpoint 1,44,86,3,0xAAFF00;
 					next;
 					break;
 				case 5:
-					mes "[吉芬 解说员]";
-					mes F_Navi("[武器、防具购买]","geffen,99,140","^7F3300");
-					mes "或装备维修的地方，";
-					mes "位置已经标记在";
-					mes "小地图上了，";
-					mes "还需要其它服务吗?";
+					mes "[ 秆弧]";
+					mes F_Navi("[猌竟ňㄣ潦禦]","geffen,99,140","^7F3300");
+					mes "┪杆称蝴よ";
+					mes "竚竒夹癘";
+					mes "瓜";
+					mes "临惠璶ㄤウ狝叭盾?";
 					viewpoint 1,99,140,4,0xD2691E;
 					next;
 					break;
 				case 6:
-					callsub L_Mark, F_Navi("[旅馆]","geffen,172,174","^800080");
+					callsub L_Mark, F_Navi("[繻]","geffen,172,174","^800080");
 					viewpoint 1,172,174,5,0xDA70D6;
 					next;
 					break;
 				case 7:
-					callsub L_Mark, F_Navi("[酒馆]","geffen,138,138","^B9062F");
+					callsub L_Mark, F_Navi("[皊繻]","geffen,138,138","^B9062F");
 					viewpoint 1,138,138,6,0xFF0000;
 					next;
 					break;
 				case 8:
-					mes "[吉芬 解说员]";
-					mes F_Navi("[克里斯多夫的铁工厂]","geffen,182,59","^0000FF")+"";
-					mes "出售各种精链";
-					mes "道具的地方，";
-					mes "据说以前那里曾是";
-					mes "铁匠公会。";
+					mes "[ 秆弧]";
+					mes F_Navi("[ń吹ひ臟蒁]","geffen,182,59","^0000FF")+"";
+					mes "扳销弘渺";
+					mes "笵ㄣよ";
+					mes "誹弧玡êń纯琌";
+					mes "臟そ穦";
 					viewpoint 1,182,59,6,0x0000FF;
 					next;
 					break;
@@ -94,31 +94,31 @@ geffen,203,116,4	script	解说员#01geffen::GuideGeffen	705,{
 		case 2:
 			set .@loop,1;
 			while (.@loop) {
-				switch(select("[ 乐园团传送师  ]:[     卡普拉职员       ]:[     认养宠物商人       ]:[    料理材料商    ]:[   异次元术士解说员  ]:返回上一选单")) {
+				switch(select("[ 贾堕刮肚癳畍  ]:[     炊┰戮       ]:[     粄緄胐坝       ]:[    瞶坝    ]:[   奢Ωじ砃秆弧  ]:匡虫")) {
 				case 1:
-					callsub L_Mark, F_Navi("乐园团传送师","geffen,132,66","^B9062F");
+					callsub L_Mark, F_Navi("贾堕刮肚癳畍","geffen,132,66","^B9062F");
 					viewpoint 1,61,180,7,0xFF0000;
 					viewpoint 1,132,66,8,0xFF0000;
 					next;
 					break;
 				case 2:
-					callsub L_Mark, "^FF5400卡普拉职员^000000";
+					callsub L_Mark, "^FF5400炊┰戮^000000";
 					viewpoint 1,203,123,10,0xFFB400;
 					viewpoint 1,120,62,11,0xFFB400;
 					next;
 					break;
 				case 3:
-					callsub L_Mark, F_Navi("认养宠物商人","geffen,193,152","^006400");
+					callsub L_Mark, F_Navi("粄緄胐坝","geffen,193,152","^006400");
 					viewpoint 1,193,152,12,0xAAFF00;
 					next;
 					break;
 				case 4:
-					callsub L_Mark, F_Navi("料理材料商","geffen,196,111","^7F3300");
+					callsub L_Mark, F_Navi("瞶坝","geffen,196,111","^7F3300");
 					viewpoint 1,196,111,13,0xD2691E;
 					next;
 					break;
 				case 5:
-					callsub L_Mark, F_Navi("异次元术士解说员","geffen,140,196","^800080");
+					callsub L_Mark, F_Navi("奢Ωじ砃秆弧","geffen,140,196","^800080");
 					viewpoint 1,140,196,14,0xDA70D6;
 					next;
 					break;
@@ -129,9 +129,9 @@ geffen,203,116,4	script	解说员#01geffen::GuideGeffen	705,{
 			}
 			break;
 		case 3:
-			mes "[吉芬 解说员]";
-			mes "已删除小地图上的标志了，";
-			mes "还需要其它服务吗?";
+			mes "[ 秆弧]";
+			mes "埃瓜夹в";
+			mes "临惠璶ㄤウ狝叭盾?";
 			viewpoint 2,1,1,0,0xFFFF00;
 			viewpoint 2,1,1,1,0x000000;
 			viewpoint 2,1,1,2,0xFF0000;
@@ -150,8 +150,8 @@ geffen,203,116,4	script	解说员#01geffen::GuideGeffen	705,{
 			next;
 			break;
 		case 4:
-			mes "[吉芬 解说员]";
-			mes "祝您旅途愉快!";
+			mes "[ 秆弧]";
+			mes "眤硚磖е!";
 			close2;
 			cutin "gef_soldier",255;
 			end;
@@ -159,14 +159,14 @@ geffen,203,116,4	script	解说员#01geffen::GuideGeffen	705,{
 	}
 	end;
 L_Mark:
-	mes "[吉芬 解说员]";
-	mes getarg(0)+"^000000的";
-	mes "位置已经标记在";
-	mes "小地图上了，";
-	mes "还需要其它服务吗?";
+	mes "[ 秆弧]";
+	mes getarg(0)+"^000000";
+	mes "竚竒夹癘";
+	mes "瓜";
+	mes "临惠璶ㄤウ狝叭盾?";
 	return;
 }
 
-geffen,118,62,0	duplicate(GuideGeffen)	解说员#02geffen	705
-geffen,36,123,6	duplicate(GuideGeffen)	解说员#03geffen	705
-geffen,123,203,4	duplicate(GuideGeffen)	解说员#04geffen	705
+geffen,118,62,0	duplicate(GuideGeffen)	秆弧#02geffen	705
+geffen,36,123,6	duplicate(GuideGeffen)	秆弧#03geffen	705
+geffen,123,203,4	duplicate(GuideGeffen)	秆弧#04geffen	705

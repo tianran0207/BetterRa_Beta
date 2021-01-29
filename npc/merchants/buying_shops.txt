@@ -17,59 +17,59 @@
 
 // Black Marketeer (Buy Licenses - Non-Merchant Classes) :: qskill_buy_store
 //============================================================ 
-que_job01,68,84,1	script	黑市商人#Buying	4_M_SITDOWN,{
+que_job01,68,84,1	script	堵カ坝#Buying	4_M_SITDOWN,{
 	if (checkweight(1201,1) == 0 || MaxWeight - Weight < 2400) {
-		mes "[贾斯先生]";
+		mes "[鸽吹ネ]";
 		mes "You're too greedy, even compared to someone like me!";
 		mes "Why don't you go lighten your bag first?";
 		close;
 	}
 	if (getskilllv("ALL_BUYING_STORE") == 1) {
-		mes "[贾斯先生]";
-		mes "嗯? 是和修先生有关系的人阿!";
-		mes "我跟你没什么好说的.";
+		mes "[鸽吹ネ]";
+		mes "垛? 琌㎝ネΤ闽╰!";
+		mes "и蛤⊿ぐ弧.";
 		close;
 	}
-	mes "[贾斯先生]";
-	mes "居然被你找到这里了.";
-	mes "你想要什么呢?";
+	mes "[鸽吹ネ]";
+	mes "﹡礛砆т硂ń.";
+	mes "稱璶ぐ㎡?";
 	next;
-	switch(select("采购商店执照:你是谁?:不需要!")) {
+	switch(select("潦坝┍磅酚:琌街?:ぃ惠璶!")) {
 	case 1:
-		mes "[贾斯先生]";
-		mes "好的, 好的!";
-		mes "我来帮你做.";
-		mes "保证做得跟真的一模一样!";
+		mes "[鸽吹ネ]";
+		mes ", !";
+		mes "иㄓ腊暗.";
+		mes "玂谍暗眔蛤痷家妓!";
 		next;
-		mes "[贾斯先生]";
-		mes "我的执照较好, 因为你不需要去学习任何使用技能.";
-		mes "你想要多少?";
+		mes "[鸽吹ネ]";
+		mes "и磅酚耕, ぃ惠璶厩策ヴㄏノм.";
+		mes "稱璶ぶ?";
 		next;
-		mes "[贾斯先生]";
-		mes "一次不能制作很多, 每次最多10张.";
-		mes "手续费是每张 500 金币.";
+		mes "[鸽吹ネ]";
+		mes "Ωぃ, –Ω程10眎.";
+		mes "も尿禣琌–眎 500 刽.";
 		next;
 		while(1) {
 			input .@input;
-			mes "[贾斯先生]";
+			mes "[鸽吹ネ]";
 			if (.@input == 0) {
-				mes "不需要吗?";
+				mes "ぃ惠璶盾?";
 				close;
 			} else if (.@input > 10) {
-				mes "你知道我每次最多只能制作10张.";
+				mes "笵и–Ω程10眎.";
 				next;
 			} else {
-				mes "手续费一共是 "+(.@input*500)+" zeny.";
+				mes "も尿禣琌 "+(.@input*500)+" zeny.";
 				if (Zeny < (.@input*500)) {
-					mes "你的钱好像不够阿.";
+					mes "窥钩ぃ镑.";
 					next;
-						mes "[贾斯先生]";
-						mes "虽然我没资格讲商业道德, 但世界上应该遵循等价交换原则.";
-						mes "如果你想把东西拿走就必须支付相等的代价.";
+						mes "[鸽吹ネ]";
+						mes "瘤礛и⊿戈量坝穨笵紈, 莱赣宽碻单刹ユ传玥.";
+						mes "狦稱р狥﹁ǐ碞ゲ斗や单刹.";
 				} else {
-						mes "呵呵呵... 呵呵呵!";
-						mes "修先生, 怎么样?我要成为地下世界的黑手!";
-						mes "*呵呵呵*";
+						mes "... !";
+						mes "ネ, 妓?и璶Θ堵も!";
+						mes "**";
 					getitem 12548,.@input; //Buy_Market_Permit2
 					set Zeny, Zeny - (.@input*500);
 				}
@@ -77,67 +77,67 @@ que_job01,68,84,1	script	黑市商人#Buying	4_M_SITDOWN,{
 			}
 		}
 	case 2:
-		mes "[贾斯先生]";
-		mes "我离开故乡已经很久了,";
-		mes "那种问题对我来说没有任何意义, 对我而言, 剩下的只有憎恨....";
+		mes "[鸽吹ネ]";
+		mes "и置秨珿秏竒,";
+		mes "ê销拜肈癸иㄓ弧⊿Τヴ種竡, 癸иτē, 逞Τ绩....";
 		next;
-		mes "[贾斯先生]";
+		mes "[鸽吹ネ]";
 		mes "...";
-		mes "正确的商道是什么呢...对于已经堕落的我来说, 剩下的还有什么呢?";
-		mes "要是能让修先生那各家伙吃点苦头...";
+		mes "タ谔坝笵琌ぐ㎡...癸竒糧辅иㄓ弧, 逞临Τぐ㎡?";
+		mes "璶琌琵ネê產ル翴璚繷...";
 		next;
-		mes "[贾斯先生]";
-		mes "哎呀, 我喝醉了... (*嗝*)";
-		mes "把我说的忘了吧!";
-		mes "请一定要记住我说的话.";
+		mes "[鸽吹ネ]";
+		mes "玼, и耻綤... (*苄*)";
+		mes "ри弧а!";
+		mes "叫﹚璶癘и弧杠.";
 		close;
 	case 3:
-		mes "[贾斯先生]";
-		mes "不要就不要, 干嘛那么大声?";
-		mes "现在的年轻人.....";
+		mes "[鸽吹ネ]";
+		mes "ぃ璶碞ぃ璶, 估ê羘?";
+		mes "瞷淮.....";
 		close;
 	}
 }
 
 // Purchasing Team (Learn Skill - Merchant Classes)
 //============================================================ 
-alberta_in,58,52,4	script	采购部修先生#Buying	1_M_ORIENT01,{
+alberta_in,58,52,4	script	潦场ネ#Buying	1_M_ORIENT01,{
 	if (checkweight(1201,1) == 0 || MaxWeight - Weight < 2400) {
 		mes "- You cannot converse or perform the quest because you are carrying too many items. -";
 		close;
 	}
-	mes "[修先生]";
+	mes "[ネ]";
 	if (BaseClass == Job_Merchant && getskilllv("MC_VENDING") >= 1) {
 		if (getskilllv("ALL_BUYING_STORE") == 1) {
-			mes "我是采购部的修先生.";
-			mes "你需要什么东西呢?";
+			mes "и琌潦场ネ.";
+			mes "惠璶ぐ狥﹁㎡?";
 			next;
-			if(select("购买采购商店执照:不需要") == 2) {
-				mes "[修先生]";
-				mes "如果需要开设采购商店所需的执照的话.";
-				mes "请随时来这里申请, 欢迎下次光临~";
+			if(select("潦禦潦坝┍磅酚:ぃ惠璶") == 2) {
+				mes "[ネ]";
+				mes "狦惠璶秨砞潦坝┍┮惠磅酚杠.";
+				mes "叫繦ㄓ硂ńビ叫, 舧Ω羬~";
 				close;
 			}
-			mes "[修先生]";
-			mes "采购商店执照每张售价 200 金币, 一次最多可以购买50张.";
-			mes "你想购买多少张1?";
+			mes "[ネ]";
+			mes "潦坝┍磅酚–眎扳刹 200 刽, Ω程潦禦50眎.";
+			mes "稱潦禦ぶ眎1?";
 			next;
 			while(1) {
 				input .@input;
-				mes "[修先生]";
+				mes "[ネ]";
 				if (.@input == 0) {
-					mes "您已取消交易.";
-					mes "祝您有美好的一天.";
+					mes "眤ユ.";
+					mes "眤Τぱ.";
 					close;
 				} else if (.@input > 50) {
-					mes "请输入购买张数. 至少50张起.";
+					mes "叫块潦禦眎计. ぶ50眎癬.";
 					next;
 				} else {
-					mes "花费 "+(.@input*200)+" zeny "+.@input+" 执照.";
+					mes "禣 "+(.@input*200)+" zeny "+.@input+" 磅酚.";
 					if (Zeny < (.@input*200)) {
-						mes "你没有足够的钱阿.";
+						mes "⊿Τì镑窥.";
 					} else {
-						mes "谢谢您的惠顾.";
+						mes "谅谅眤磃臮.";
 						getitem 6377,.@input; //Buy_Market_Permit
 						set Zeny, Zeny - (.@input*200);
 					}
@@ -145,108 +145,108 @@ alberta_in,58,52,4	script	采购部修先生#Buying	1_M_ORIENT01,{
 				}
 			}
 		} else {
-			mes "我是艾尔贝塔商人公会采购部的修先生.";
-			mes "你....";
+			mes "и琌︺焊ī娥坝そ穦潦场ネ.";
+			mes "....";
 			next;
-			mes "[修先生]";
-			mes "你知道吗? 这次商人公会也允许一般人购买.";
+			mes "[ネ]";
+			mes "笵盾? 硂Ω坝そ穦す砛潦禦.";
 			next;
-			select("没有那个也能买东西啊...");
-			mes "[修先生]";
-			mes "是的,";
-			mes "但是你想要购买大量商品的时候,";
-			mes "是不是觉得很辛苦呢?";
-			mes "还要去找把东西带在身上或有意出售的人才行.";
+			select("⊿Τê禦狥﹁摆...");
+			mes "[ネ]";
+			mes "琌,";
+			mes "琌稱璶潦禦秖坝珇,";
+			mes "琌ぃ琌谋眔ǒ璚㎡?";
+			mes "临璶тр狥﹁盿ō┪Τ種扳︽.";
 			next;
-			mes "[修先生]";
-			mes "物品的大量流通, 对于商人来说是非常重要的事情,";
-			mes "因此在采购部工作了十年的我, 这次提出了划时代的提案.";
+			mes "[ネ]";
+			mes "珇秖瑈硄, 癸坝ㄓ弧琌獶盽璶ㄆ薄,";
+			mes "潦场и, 硂Ω矗矗.";
 			next;
-			mes "[修先生]";
-			mes "就是个人";
-			mes "也可以开设采购商店!";
-			mes "你只要";
-			mes "看了这份提案就知道了...";
+			mes "[ネ]";
+			mes "碞琌";
+			mes "秨砞潦坝┍!";
+			mes "璶";
+			mes "硂矗碞笵...";
 			next;
-			mes "[修先生]";
+			mes "[ネ]";
 			mes "...";
-			mes "...(修先生自顾自地说着.)";
+			mes "...(ネ臮弧帝.)";
 			next;
-			select("够了, 说说结论?");
-			mes "[修先生]";
-			mes "嗯, 好吧. 简单地概括一下就是,";
-			mes "允许部份商品透过商店大量出售.";
+			select("镑, 弧弧挡阶?");
+			mes "[ネ]";
+			mes "垛, . 虏虫阀珹碞琌,";
+			mes "す砛场坝珇硓筁坝┍秖扳.";
 			next;
-			mes "[修先生]";
-			mes "想要开设采购商店, 须要有商人公会的执照.";
+			mes "[ネ]";
+			mes "稱璶秨砞潦坝┍, 斗璶Τ坝そ穦磅酚.";
 			next;
-			mes "[修先生]";
-			mes "每开设一次, 都需使用执照. 出售执照带来的收入, 可以未商人公会打下坚固的基础.";
+			mes "[ネ]";
+			mes "–秨砞Ω, 常惠ㄏノ磅酚. 扳磅酚盿ㄓΜ, ゼ坝そ穦ゴ绊㏕膀娄.";
 			next;
-			mes "[修先生]";
-			mes "这部分是我的提案核心!";
-			mes "会长非常高兴, 很快就通过了我的提案!";
+			mes "[ネ]";
+			mes "硂场だ琌и矗み!";
+			mes "穦獶盽蔼砍, е碞硄筁и矗!";
 			next;
 			mes "["+strcharinfo(0)+"]";
-			mes "只说结论就行!";
+			mes "弧挡阶碞︽!";
 			next;
-			mes "[修先生]";
-			mes "啊, 你的性子可真急.";
-			mes "所以我们允许拥有开设销售商店授权的人, 开采购商店.";
+			mes "[ネ]";
+			mes "摆, ┦痷.";
+			mes "┮иす砛局Τ秨砞綪扳坝┍甭舦, 秨潦坝┍.";
 			next;
-			mes "[修先生]";
-			mes "当然, 需要 10,000 金币的注册费.";
-			mes "每次开设商店还需要 ^4A4AFF采购商店执照^000000 .";
+			mes "[ネ]";
+			mes "讽礛, 惠璶 10,000 刽猔禣.";
+			mes "–Ω秨砞坝┍临惠璶 ^4A4AFF潦坝┍磅酚^000000 .";
 			next;
-			mes "[修先生]";
-			mes "怎样? 你想注册吗?";
-			mes "注册之后, 我就会告诉你开设采购商店的方法.";
+			mes "[ネ]";
+			mes "妓? 稱猔盾?";
+			mes "猔ぇ, и碞穦禗秨砞潦坝┍よ猭.";
 			next;
-			if(select("学习开设采购商店:不学习") == 2) {
-				mes "[修先生]";
-				mes "唉, 真让人遗憾!";
-				mes "这可以让你方便很多的, 如果感兴趣的话,";
-				mes "可以再来找我, 我永远都欢迎你过来!";
+			if(select("厩策秨砞潦坝┍:ぃ厩策") == 2) {
+				mes "[ネ]";
+				mes ", 痷琵框狙!";
+				mes "硂琵よ獽, 狦稰砍届杠,";
+				mes "ㄓти, иッ环常舧筁ㄓ!";
 				close;
 			}
-			mes "[修先生]";
+			mes "[ネ]";
 			if (Zeny < 10000) {
-				mes "登记费为 10,000 金币.";
-				mes "费用请准备好.";
+				mes "祅癘禣 10,000 刽.";
+				mes "禣ノ叫称.";
 				close;
 			} else {
-				mes "明智的决定.";
-				mes "好的,请先到这边来注册, 在这里签名....";
+				mes "醇∕﹚.";
+				mes ",叫硂娩ㄓ猔, 硂ń帽....";
 				next;
 				input .@name$;
-				mes "[修先生]";
+				mes "[ネ]";
 				mes .@name$+"....";
-				mes "字写得很不错嘛!";
-				mes "现在你可以开设采购商店了.";
+				mes "糶眔ぃ岿估!";
+				mes "瞷秨砞潦坝┍.";
 				set Zeny, Zeny - 10000;
 				getitem 6377,5; //Buy_Stall_Permit
 				skill "ALL_BUYING_STORE",1,SKILL_PERM_GRANT;
 				next;
-				mes "[修先生]";
-				mes "可以大量购买的物品是除装备和部分药水/个人制作的物品^8C2121以外^000000的普通物品, 但根据应用方法的不同, 我想应该会对个人很有帮助.";
+				mes "[ネ]";
+				mes "秖潦禦珇琌埃杆称㎝场だ媚/珇^8C2121^000000炊硄珇, 誹莱ノよ猭ぃ, и稱莱赣穦癸Τ腊.";
 				next;
-				mes "[修先生]";
-				mes "你至少需要库存一个收购物品, 因为要透过商店展让大家知道要收购的是什么物品.";
+				mes "[ネ]";
+				mes "ぶ惠璶畐Μ潦珇, 璶硓筁坝┍甶琵產笵璶Μ潦琌ぐ珇.";
 				next;
-				mes "[修先生]";
-				mes "购买商店技能应该登录在您的技能视窗了. 如果没看见您可能需切换技能视窗显示模式在检查确认一下.";
+				mes "[ネ]";
+				mes "潦禦坝┍м莱赣祅魁眤м跌怠. 狦⊿ǎ眤惠ち传м跌怠陪ボ家Α浪琩谔粄.";
 				next;
-				mes "[修先生]";
-				mes "我已经给你5张试用的采购商店执照.";
-				mes "体验采购乐趣!";
+				mes "[ネ]";
+				mes "и竒倒5眎刚ノ潦坝┍磅酚.";
+				mes "蔨喷潦贾届!";
 				close;
 			}
 		}
 	}
-	mes "我是艾尔贝塔商人公会采购部的修先生.";
-	mes "我喜欢聊天但是我现在很忙碌.";
+	mes "и琌︺焊ī娥坝そ穦潦场ネ.";
+	mes "и尺舧册ぱ琌и瞷Γ窵.";
 	next;
-	mes "[修先生]";
-	mes "我的时间完全奉献给广大的商业顾客.";
+	mes "[ネ]";
+	mes "и丁Ч膍倒約坝穨臮.";
 	close;
 }

@@ -4,6 +4,6 @@
 // ID,Sprite_Name,Name,LV,HP,SP,Range1,ATK1,ATK2,DEF,MDEF,STR,AGI,VIT,INT,DEX,LUK,Range2,Range3,Scale,Race,Element,Speed,aDelay,aMotion,dMotion
 //
 // Notes:
-// Summoned Elemental’s STATs are affected by the Caster’s Base Level and STATs.
+// Summoned ElementalÌ¼ STATs are affected by the CasterÌ¼ Base Level and STATs.
 // In other words, all values specified will be added to (and will not override) the calculated STATs of the summoned elemental.
 

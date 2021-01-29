@@ -13,40 +13,40 @@
 //= 2.0 Converted from the official Aegis script. [Dastgir]
 //============================================================ 
 
-ecl_in02,96,22,3	script	牌子#prison_inn	545,{
-	mes "[北面]监狱";
-	mes "[西面]诊所";
+ecl_in02,96,22,3	script	礟#prison_inn	545,{
+	mes "[]菏夯";
+	mes "[﹁]禘┮";
 	close;
 
 }
 
-ecl_in01,8,71,5	script	艾卡拉奇守卫#pri_inn	447,{
-	mes "[艾卡拉奇守卫]";
-	mes "这条路通向艾卡拉奇下层, 那里你可以找到监狱与一间诊所.";
+ecl_in01,8,71,5	script	︺┰矫#pri_inn	447,{
+	mes "[︺┰矫]";
+	mes "硂兵隔硄︺┰糷, êńт菏夯蒓丁禘┮.";
 	close;
 
 }
 
-ecl_in02,164,56,3	script	接待员#Laphine	835,{
-	mes "[接待员]";
-	mes "欢迎来到艾卡拉奇的诊所.";
+ecl_in02,164,56,3	script	钡#Laphine	835,{
+	mes "[钡]";
+	mes "舧ㄓ︺┰禘┮.";
 	next;
-	switch(select("保存位置:休息:结束对话")) {
+	switch(select("玂竚:ヰ:挡癸杠")) {
 	case 1:
-		mes "[接待员]";
-		mes "诊所现在是您的保存点, 要注意安全哟~";
+		mes "[钡]";
+		mes "禘┮瞷琌眤玂翴, 璶猔種抽~";
 		savepoint "ecl_in02",162,50,1,1;
 		close;
 	case 2:
-		mes "[接待员]";
-		mes "在我们的诊所修养生息吧, 这里充满的纯净的能量.";
-		mes "通常我们要收取一枚辉煌领域硬币, 但是您是旅行者, 我们可以打折收你5000zeny.";
+		mes "[钡]";
+		mes "и禘┮緄ネ, 硂ń骸瞓秖.";
+		mes "硄盽и璶Μ猅谨纷烩办祑刽, 琌眤琌︽, иゴчΜ5000zeny.";
 		next;
-		switch(select("用辉煌领域硬币支付:用zeny支付:算了")) {
+		switch(select("ノ谨纷烩办祑刽や:ノzenyや:衡")) {
 		case 1:
 			if (!countitem(6081)) {
-				mes "[接待员]";
-				mes "您好像没有足够的硬币, 再确认一下?";
+				mes "[钡]";
+				mes "眤钩⊿Τì镑祑刽, 谔粄?";
 				close;
 			}
 			close2;
@@ -56,8 +56,8 @@ ecl_in02,164,56,3	script	接待员#Laphine	835,{
 			end;
 		case 2:
 			if (Zeny < 5000) {
-				mes "[接待员]";
-				mes "您好像没有足够的zeny, 再确认一下?";
+				mes "[钡]";
+				mes "眤钩⊿Τì镑zeny, 谔粄?";
 				close;
 			}
 			close2;
@@ -73,32 +73,32 @@ ecl_in02,164,56,3	script	接待员#Laphine	835,{
 	}
 }
 
-ecl_in02,135,45,5	script	受伤的精灵	442,{
-	mes "[受伤的精灵]";
-	mes "嗷……";
-	mes "我…在…哪儿?";
+ecl_in02,135,45,5	script	端弘艶	442,{
+	mes "[端弘艶]";
+	mes "谷";
+	mes "и?";
 	next;
-	mes "[医生]";
-	mes "你现在在诊所里, 别担心.";
-	mes "我们已经帮你止血并且施放了应急法术.";
-	mes "之前你流了很多血, 现在伤口已经愈合了.";
+	mes "[洛ネ]";
+	mes "瞷禘┮ń, 踞み.";
+	mes "и竒腊ゎ﹀琁莱猭砃.";
+	mes "ぇ玡瑈﹀, 瞷端竒稶.";
 	next;
-	mes "[受伤的精灵]";
-	mes "……";
-	mes "什么?哦!不!我的身上怎么没有感觉了!";
+	mes "[端弘艶]";
+	mes "";
+	mes "ぐ?瓳!ぃ!иō⊿Τ稰谋!";
 	next;
-	mes "[医生]";
-	mes "唔……一支箭重伤了你的翅膀.";
+	mes "[洛ネ]";
+	mes "や絙端籋.";
 	next;
-	mes "[受伤的精灵]";
-	mes "……你想说什么?";
+	mes "[端弘艶]";
+	mes "稱弧ぐ?";
 	next;
-	mes "[医生]";
-	mes "呃……我想告诉你一个不幸的消息.当你康复以后, 你可能再也无法装点你的合艾了.";
-	mes "换句话说, 你的翅膀已经没用了.那支箭射中了翅膀最重要的部分.";
+	mes "[洛ネ]";
+	mes "и稱禗ぃ┋.讽眃蝋, 礚猭杆翴︺.";
+	mes "传杠弧, 籋竒⊿ノ.êや絙甮い籋程璶场だ.";
 	next;
-	mes "[受伤的精灵]";
-	mes "什么?不是这样吧……不要啊!医生!不要啊……!";
+	mes "[端弘艶]";
+	mes "ぐ?ぃ琌硂妓ぃ璶摆!洛ネ!ぃ璶摆!";
 	close;
 }
-ecl_in02,137,44,3	duplicate(受伤的精灵)	精灵医生#doctor	441
+ecl_in02,137,44,3	duplicate(端弘艶)	弘艶洛ネ#doctor	441

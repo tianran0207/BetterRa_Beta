@@ -21,31 +21,31 @@
 //============================================================
 
 //===== Set 1 ================================================
-ice_dun04,33,166,3	script	冻僵的少年	925,{
+ice_dun04,33,166,3	script	圾ぶ	925,{
 	cutin "ra_sboy.bmp",2;
         mes "["+strcharinfo(0)+"]";
-        mes "水晶龙所守护的人就是这少年吗...";
+        mes "垂纒┮臔碞琌硂ぶ盾...";
         next;
         mes "-";
-        mes "像冰河一般在坚硬冻僵的冰中那少年的样";
-        mes "子, 与其说是被关不如说像在睡眠 -";
+        mes "钩猠绊祑圾いêぶ妓";
+        mes ", 蒓ㄤ弧琌砆闽ぃ弧钩何痸 -";
         next;
         mes "-";
-        mes "从少年被封印的那巨大冰块柱子上散发出";
-        mes "恶毒的寒气, 加上敢觉道未知神秘力量";
+        mes "眖ぶ砆êエ遏琖床祇";
+        mes "碿瑀碒蒩, 幢谋笵ゼ秖";
         mes "-";
         next;
         mes "-";
-        mes "少年的外貌从头到脚都像清净的雪花般是";
-        mes "个白皙的模样 -";
+        mes "ぶ华眖繷竲常钩睲瞓撤琌";
+        mes "フ拚家妓 -";
         next;
         mes "-";
-        mes "你虽然还充满疑惑为何年轻少年被封印在";
-        mes "这阴森的地方, 但你直觉上就明白任何魔";
-        mes "法师都无法解除这封印的";
+        mes "瘤礛临骸好碽淮ぶ砆";
+        mes "硂潮此よ, 谋碞フヴ臸";
+        mes "猭畍常礚猭秆埃硂";
         next;
         mes "["+strcharinfo(0)+"]";
-        mes "究竟那少年的背后隐藏着什么秘密呢..";
+        mes "╯澈êぶ璉留旅帝ぐ盞㎡..";
 	close2;
 	cutin "",255;
 	end;
@@ -100,163 +100,163 @@ ra_san04,137,48,3	script	Loomin-1st Class Secret	111,{
 	close;
 }
 
-rachel,124,132,1	script	村民#1 	921,{
-	mes "[村民]";
-	mes "愿菲依雅的恩典与你同在....";
+rachel,124,132,1	script	チ#1 	921,{
+	mes "[チ]";
+	mes "篅滇ㄌ懂ㄥ蒓....";
 	next;
-	mes "[村民]";
-	mes "菲依雅是爱与美之女神, 如果虔诚地向菲";
-	mes "依雅祈祷的话, 就能与像菲依雅一样的美";
-	mes "丽女人陷入命运般的爱情吗?";
+	mes "[チ]";
+	mes "滇ㄌ懂琌稲蒓ぇ, 狦癅港滇";
+	mes "ㄌ懂毛杠, 碞蒓钩滇ㄌ懂妓";
+	mes "腞炒㏑笲稲薄盾?";
 	close;
 }
 
-rachel,74,150,7	script	村落 少女#1	914,{
-	mes "[村落 少女]";
-	mes "我们教皇, 听说头发也白皮肤也白呢, ";
-	mes "听父亲说, 头发和皮肤皆白的每人一时代";
-	mes "里只出现一人, 而且一定以女孩身出生, ";
-	mes "说是菲依雅的化身之类的吧?";
-	mes "虽然我不太懂什么是化身..";
-	mes "应该是住在漂亮宫廷里的公主吧?";
+rachel,74,150,7	script	辅 ぶ#1	914,{
+	mes "[辅 ぶ]";
+	mes "и毙, 弧繷祇フブ涧フ㎡, ";
+	mes "克弧, 繷祇㎝ブ涧フ–";
+	mes "ń瞷, τ﹚ōネ, ";
+	mes "弧琌滇ㄌ懂てōぇ摸?";
+	mes "瘤礛иぃび来ぐ琌てō..";
+	mes "莱赣琌簘獹甤ńそ?";
 	close;
 }
 
-rachel,144,243,5	script	瑟斯隆尼勒 警卫兵::ChesGuard	934,{
-	mes "[瑟斯隆尼勒 警卫兵]";
-	mes "这里是身为菲依雅之化身的教皇所居住的";
-	mes "瑟斯隆尼勒, ";
-	mes "请以庄严肃穆的心入场";
+rachel,144,243,5	script	锋吹订ェ扒 牡矫::ChesGuard	934,{
+	mes "[锋吹订ェ扒 牡矫]";
+	mes "硂ń琌ō滇ㄌ懂ぇてō毙┮﹡";
+	mes "锋吹订ェ扒, ";
+	mes "叫绍腨德縫み初";
 	close;
 }
 
-rachel,155,243,3	duplicate(ChesGuard)	瑟斯隆尼勒 警卫兵	934
+rachel,155,243,3	duplicate(ChesGuard)	锋吹订ェ扒 牡矫	934
 
 
-rachel,209,198,3	script	齐奴斯#aru	921,{
-	mes "[小朋友]";
-	mes "开启此门进入房子里的话, 可以选择一个";
-	mes "喜欢的房间还当作自己的房子, ";
-	mes "刚开始是移动一下桌子或椅子, 之后就挂";
-	mes "挂相框及摆饰书籍看看了";
+rachel,209,198,3	script	霍ィ吹#aru	921,{
+	mes "[狟ね]";
+	mes "秨币秈┬ń杠, 匡拒";
+	mes "尺舧┬丁临讽┬, ";
+	mes "秨﹍琌簿笆┪慈, ぇ碞珽";
+	mes "珽の耚耿膟";
 	next;
-	mes "[小朋友]";
-	mes "不可以是吗?? 哦哦~ 好奇怪喔";
+	mes "[狟ね]";
+	mes "ぃ琌盾?? 瓳瓳~ ┣翅";
 	close;
 }
 
-rachel,260,175,3	script	小朋友#aru	914,{
-	mes "[昂库]";
-	mes "唉咿 真是的~";
-	mes "我正在跟喜牧喜牧玩捉迷藏, 已经过了一";
-	mes "个小时了还找不到他";
+rachel,260,175,3	script	狟ね#aru	914,{
+	mes "[畐]";
+	mes " 痷琌~";
+	mes "иタ蛤尺尺癵旅, 竒筁";
+	mes "临тぃ";
 	next;
-	mes "[昂库]";
-	mes "我肚子太饿了想告诉他我要回家了...";
-	mes "喜牧喜牧你可以出来了~";
+	mes "[畐]";
+	mes "и▄び緅稱禗и璶產...";
+	mes "尺尺ㄓ~";
 	close;
 }
 
-rachel,272,141,3	script	睡觉的小朋友#aru	921,{
-	mes "[睡觉的小朋友]";
-	mes "呀呀..呼呼..........";
-	mes "...嘻嘻.....昂库笨蛋!";
-	mes "..........呼呼.......";
+rachel,272,141,3	script	何谋狟ね#aru	921,{
+	mes "[何谋狟ね]";
+	mes "..㊣㊣..........";
+	mes "...糎糎.....畐猜矹!";
+	mes "..........㊣㊣.......";
 	close;
 }
 
-rachel,268,120,1	script	拉赫 警卫兵#1aru::RaGuard	934,{
-	mes "[拉赫 警卫兵]";
-	mes "这里是教国阿卢纳贝兹的神圣都市, 拉赫";
+rachel,268,120,1	script	┰划 牡矫#1aru::RaGuard	934,{
+	mes "[┰划 牡矫]";
+	mes "硂ń琌毙瓣縞ī蒾常カ, ┰划";
 	mes ", ";
-	mes "导览及各项服务请洽询位于拉赫中央的服";
-	mes "务人员";
+	mes "旧凝の兜狝叭叫高┰划いァ狝";
+	mes "叭";
 	close;
 }
 
-rachel,125,33,5	duplicate(RaGuard)	拉赫 警卫兵#2aru	934
+rachel,125,33,5	duplicate(RaGuard)	┰划 牡矫#2aru	934
 
-rachel,31,130,3	duplicate(RaGuard)	拉赫 警卫兵#3aru	934
+rachel,31,130,3	duplicate(RaGuard)	┰划 牡矫#3aru	934
 
-rachel,76,77,3	script	拉赫 神官	927,{
-	mes "[拉赫 神官]";
-	mes "呀哈~! 果然工作时所偷喝的酒最美味!";
+rachel,76,77,3	script	┰划 ﹛	927,{
+	mes "[┰划 ﹛]";
+	mes "~! 狦礛┮敖耻皊程!";
 	close;
 }
 
-ra_fild12,45,230,3	script	飞空艇 服务人员#Fild	934,{
-	mes "[飞空艇 服务人员]";
-	mes "在秀发兹发德所经营的国际线飞空艇, 只";
-	mes "有从阿卢纳贝兹飞到拉赫而以, ";
-	mes "若要找飞空艇航站的话, 只要移动至迷你";
-	mes "地图上所标示的地方就可以了";
+ra_fild12,45,230,3	script	弗 狝叭#Fild	934,{
+	mes "[弗 狝叭]";
+	mes "╭祇祇紈┮竒犁瓣悔絬弗, ";
+	mes "Τ眖縞ī┰划τ, ";
+	mes "璝璶т弗杠, 璶簿笆癵";
+	mes "瓜┮夹ボよ碞";
 	viewpoint 1,293,208,1,0xFF0000;
 	close;
 }
 
 //rachel,201,174,3	script	Freya's Follower	927,{
-rachel,201,174,3	script	菲依雅 信徒	926,{
-	mes "[菲依雅 信徒]";
-	mes "阿卢纳贝兹是信奉菲依雅的国家, 也叫做";
-	mes "阿卢纳贝兹教国";
+rachel,201,174,3	script	滇ㄌ懂 獺畕	926,{
+	mes "[滇ㄌ懂 獺畕]";
+	mes "縞ī琌獺滇ㄌ懂瓣產, 暗";
+	mes "縞ī毙瓣";
 	next;
-	mes "[菲依雅 信徒]";
-	mes "有一些穿着特殊服装的人吧?";
-	mes "像我一样戴着帽子或假面的人是所谓'一";
-	mes "般信徒', 当然大家都只信奉菲依雅..";
-	mes "可以说是更虔诚的信徒吧?";
+	mes "[滇ㄌ懂 獺畕]";
+	mes "Τㄇ帝疭狝杆?";
+	mes "钩и妓拦帝碪┪安琌┮孔'";
+	mes "獺畕', 讽礛產常獺滇ㄌ懂..";
+	mes "弧琌癅港獺畕?";
 	next;
-	mes "[菲依雅 信徒]";
-	mes "穿着干净又整齐白色服装的人是'神官'们";
-	mes ", 他们负责的是关于神殿或各项宗教方面";
-	mes "的业务";
+	mes "[滇ㄌ懂 獺畕]";
+	mes "帝瞓俱霍フ︹狝杆琌'﹛'";
+	mes ", 璽砫琌闽返┪兜﹙毙よ";
+	mes "穨叭";
 	next;
-	mes "[菲依雅 信徒]";
-	mes "以及随时在教皇身边服侍与为阿卢纳贝兹";
-	mes "牺牲奉献的人就是'大神官'们, 服装比'";
-	mes "神官'更华丽些, 所以一眼就能辨认出来";
+	mes "[滇ㄌ懂 獺畕]";
+	mes "の繦毙ō娩狝ㄍ蒓縞ī";
+	mes "碾膍碞琌'﹛', 狝杆ゑ'";
+	mes "﹛'地腞ㄇ, ┮泊碞侩粄ㄓ";
 	next;
-	mes "[菲依雅 信徒]";
-	mes "大神官或是神官他们都很忙碌, 要注意别";
-	mes "给他们造成困扰";
+	mes "[滇ㄌ懂 獺畕]";
+	mes "﹛┪琌﹛常Γ窵, 璶猔種";
+	mes "倒硑Θ署";
 	close;
 }
 
-rachel,206,30,3	script	菲依雅 神官#play	920,{
-	mes "[菲依雅 神官]";
-	mes "好无聊....";
+rachel,206,30,3	script	滇ㄌ懂 ﹛#play	920,{
+	mes "[滇ㄌ懂 ﹛]";
+	mes "礚册....";
 	next;
-	mes "[菲依雅 神官]";
-	mes "好无聊喔.........";
+	mes "[滇ㄌ懂 ﹛]";
+	mes "礚册翅.........";
 	next;
-	mes "[菲依雅 神官]";
-	mes "我好无聊啦??????";
+	mes "[滇ㄌ懂 ﹛]";
+	mes "и礚册罢??????";
 	emotion ET_ANGER;
 	next;
-	if (select("啊~ 是....:我来逗你开心吧?") == 1) {
-		mes "[菲依雅 神官]";
-		mes "哼, 好无趣的家伙..";
+	if (select("摆~ 琌....:иㄓ硆秨み?") == 1) {
+		mes "[滇ㄌ懂 ﹛]";
+		mes ", 礚届產ル..";
 		close;
 	}
-	mes "[菲依雅 神官]";
-	mes "嗯! 嗯!!";
-	mes "你要如何逗我开心呢???";
+	mes "[滇ㄌ懂 ﹛]";
+	mes "垛! 垛!!";
+	mes "璶硆и秨み㎡???";
 	next;
-	if (select("我讲有趣的故事给你听:我会听你的话") == 1) {
-		mes "[菲依雅 神官]";
-		mes "有趣的故事? 好啊!!";
-		mes "来, 快点说!";
+	if (select("и量Τ届珿ㄆ倒:и穦杠") == 1) {
+		mes "[滇ㄌ懂 ﹛]";
+		mes "Τ届珿ㄆ? 摆!!";
+		mes "ㄓ, е翴弧!";
 		next;
-		mes "- 你把自认为最有趣的故事讲给他听 -";
+		mes "- р粄程Τ届珿ㄆ量倒 -";
 		specialeffect2 EF_TALK_FROSTJOKE;
 		next;
-		mes "[菲依雅 神官]";
-		mes "呼呜... 变忧郁了";
+		mes "[滇ㄌ懂 ﹛]";
+		mes "㊣躲... 跑紐";
 		close;
 	}
-	mes "[菲依雅 神官]";
-	mes "呵嗯~ 真的?";
-	mes "那么这个如何? 呀!!!!!";
+	mes "[滇ㄌ懂 ﹛]";
+	mes "垛~ 痷?";
+	mes "ê硂? !!!!!";
 	close2;
 	set .@play,rand(1,10);
 	if (.@play < 3)
@@ -269,315 +269,315 @@ rachel,206,30,3	script	菲依雅 神官#play	920,{
 	end;
 }
 
-rachel,197,137,3	script	流浪诗人#aru	51,{
-	mes "[流浪诗人]";
-	mes "噢噢噢~";
-	mes "我是漂泊他乡的诗人人人人人~~?";
+rachel,197,137,3	script	瑈钢#aru	51,{
+	mes "[瑈钢]";
+	mes "揪揪揪~";
+	mes "и琌簘獃秏钢~~?";
 	next;
-	mes "[流浪诗人]";
-	mes "今天追随美丽的光芒来到拉赫啰啰啰~~?";
+	mes "[瑈钢]";
+	mes "さぱ發繦腞▇ㄓ┰划~~?";
 	next;
-	mes "[流浪诗人]";
-	mes "不过却被我听到了~~~?";
+	mes "[瑈钢]";
+	mes "ぃ筁玱砆и~~~?";
 	next;
-	mes "[流浪诗人]";
-	mes "得知像勿忘草般纤细、如百合般刺眼的白";
-	mes "皙又高洁的少女教皇, 居住在神殿的事情";
+	mes "[瑈钢]";
+	mes "眔钩づа胖灿κ泊フ";
+	mes "拚蔼稀ぶ毙, ﹡返ㄆ薄";
 	mes "~~~?";
 	next;
-	mes "[流浪诗人]";
-	mes "要如何才能拜见教皇呢~~?";
-	mes "我要用美妙的诗和音乐来诱惑她吗~~?";
-	mes "正在路过的你~~ 请回答我吧~~?";
+	mes "[瑈钢]";
+	mes "璶ǎ毙㎡~~?";
+	mes "и璶ノМ钢㎝贾ㄓ护碽盾~~?";
+	mes "タ隔筁~~ 叫氮и~~?";
 	next;
 	mes "["+strcharinfo(0)+"]";
-	mes "真差劲";
+	mes "痷畉玪";
 	next;
-	mes "[流浪诗人]";
+	mes "[瑈钢]";
 	mes ".........................";
 	emotion ET_CRY;
 	close;
 }
 
-ra_temple,148,91,3	script	信徒 雅卡莉娜	916,{
-	mes "[信徒 雅卡莉娜]";
-	mes "瑟斯隆尼勒......";
-	mes "总有一天会对这美丽的宫殿和伟大的菲依";
-	mes "雅之影子落幕的时候?";
-	mes "一想到内心就觉得颤抖, 呼呼";
+ra_temple,148,91,3	script	獺畕 懂产甊	916,{
+	mes "[獺畕 懂产甊]";
+	mes "锋吹订ェ扒......";
+	mes "羆Τぱ穦癸硂腞甤返㎝岸滇ㄌ";
+	mes "懂ぇ紇辅辊?";
+	mes "稱ずみ碞谋眔鸥л, ㊣㊣";
 	close;
 }
 
-ra_temple,115,148,7	script	信徒 雅坤	916,{
-	mes "[信徒 雅坤]";
-	mes "(嘀咕嘀咕)";
-	mes "(嘀咕嘀咕)";
-	mes "(嘀咕嘀咕)";
+ra_temple,115,148,7	script	獺畕 懂	916,{
+	mes "[獺畕 懂]";
+	mes "(箍〣箍〣)";
+	mes "(箍〣箍〣)";
+	mes "(箍〣箍〣)";
 	next;
 	mes "-";
-	mes "在眼前的信徒好像正聚精会神的吟咏祈祷";
-	mes "文句, 不管怎么叫他都不会回头理我 -";
+	mes "泊玡獺畕钩タ籈弘穦碟毛";
+	mes "ゅ, ぃ恨常ぃ穦繷瞶и -";
 	close;
 }
 
-ra_temin,287,88,7	script	信徒 卢克亚	926,{
-	mes "[信徒 卢克亚]";
-	mes "这些花.. 你觉得怎么样呢?? 喜欢吗?";
-	mes "瑟斯隆尼勒最浪漫的~ 纯情的男子 我";
-	mes "卢克亚亲自所采摘并装饰的花束";
+ra_temin,287,88,7	script	獺畕 縞ㄈ	926,{
+	mes "[獺畕 縞ㄈ]";
+	mes "硂ㄇ.. 谋眔妓㎡?? 尺舧盾?";
+	mes "锋吹订ェ扒程憨~ 薄╧ и";
+	mes "縞ㄈ克┮篕杆耿";
 	next;
-	mes "[信徒 卢克亚]";
-	mes "虽然普通的花不会太显眼, 但由于它们的";
-	mes "存在让周围的环境和气氛更加明亮和美化";
+	mes "[獺畕 縞ㄈ]";
+	mes "瘤礛炊硄ぃ穦び陪泊, パウ";
+	mes "琵㏄瞅吏挂㎝蒩猑獹㎝て";
 	mes ", ";
-	mes "花好像真的拥有亲切又美丽的心肠一样, ";
-	mes "是不是吗?";
+	mes "钩痷局Τ克ち腞み竮妓, ";
+	mes "琌ぃ琌盾?";
 	close;
 }
 
 //ra_temin,228,303,5	script	Freya's Follower#in1	927,{
-ra_temin,228,303,5	script	菲依雅 信徒#in1	926,{
-	mes "[菲依雅 信徒]";
-	mes "由于昨天忙着祈求菲依雅的复活而祈祷弄";
-	mes "得整晚都没睡, ";
-	mes "虽然肩膀酸痛又疲惫, 但只要想起菲依雅";
-	mes "内心就感到很充实";
+ra_temin,228,303,5	script	滇ㄌ懂 獺畕#in1	926,{
+	mes "[滇ㄌ懂 獺畕]";
+	mes "パ琎ぱΓ帝―滇ㄌ懂蝋τ毛";
+	mes "眔俱边常⊿何, ";
+	mes "瘤礛籋荒礹痟疚, 璶稱癬滇ㄌ懂";
+	mes "ずみ碞稰龟";
 	close;
 }
 
 //ra_temin,230,303,3	script	Freya's Follower#in2	927,{
-ra_temin,230,303,3	script	菲依雅 信徒#in2	926,{
-	mes "[菲依雅 信徒]";
-	mes "你做了一件非常了不起的事情, ";
-	mes "相信菲依雅内心深处也一定对你赞誉有加";
+ra_temin,230,303,3	script	滇ㄌ懂 獺畕#in2	926,{
+	mes "[滇ㄌ懂 獺畕]";
+	mes "暗ン獶盽ぃ癬ㄆ薄, ";
+	mes "獺滇ㄌ懂ずみ瞏矪﹚癸觅臕Τ";
 	close;
 }
 
-ra_temin,138,64,5	script	小孩 信徒#in1	921,{
-	mes "[小孩 信徒]";
-	mes "我的呜呜死掉了!";
+ra_temin,138,64,5	script	 獺畕#in1	921,{
+	mes "[ 獺畕]";
+	mes "и躲躲奔!";
 	next;
-	select("呜呜?");
-	mes "[小孩 信徒]";
-	mes "呜呜是上周在路上捡到的可爱小鸟, ";
-	mes "我有很细心的照料它却仍然死掉了, 哭泣..";
+	select("躲躲?");
+	mes "[ 獺畕]";
+	mes "躲躲琌㏄隔具稲尘, ";
+	mes "иΤ灿み酚ウ玱ご礛奔, 猒..";
 	emotion ET_CRY;
 	next;
-	mes "[小孩 信徒]";
-	mes "我本来打算请求教皇救回我的小鸟";
-	mes "呜呜, 可是地方太大了遍寻不着";
-	mes "教皇到底在哪呢?";
-	mes "这里又是什么地方呢???";
+	mes "[ 獺畕]";
+	mes "иセㄓゴ衡叫―毙毕и尘";
+	mes "躲躲, 琌よび筂碝ぃ帝";
+	mes "毙┏㎡?";
+	mes "硂ń琌ぐよ㎡???";
 	close;
 }
 
 
 //===== Set 2 ================================================
-ra_fild12,283,208,3	script	见习神官	914,{
+ra_fild12,283,208,3	script	ǎ策﹛	914,{
 	if ($rachel_donate < 10000) {
-		mes "[帕帕伊]";
-		mes "欢迎您来到 阿卢纳贝兹!";
-		mes "祝您旅途愉快~";
+		mes "[┈┈レ]";
+		mes "舧眤ㄓ 縞ī!";
+		mes "眤硚磖е~";
 		next;
-		if (select("请问你不是服务人员吗?:是的, 祝你今天愉快") == 1) {
-			mes "[帕帕伊]";
-			mes "啊, 我是从神殿里来";
-			mes "做对民众宣传活动的";
-			mes "我叫做帕帕伊, 这里有牌子";
-			mes "我相信你应该有看到?";
-			mes "服务人员在西边的都市拉赫";
-			mes "中央的广场北边啊";
+		if (select("叫拜ぃ琌狝叭盾?:琌, さぱ磖е") == 1) {
+			mes "[┈┈レ]";
+			mes "摆, и琌眖返ńㄓ";
+			mes "暗癸チ渤肚笆";
+			mes "и暗┈┈レ, 硂ńΤ礟";
+			mes "и獺莱赣Τ?";
+			mes "狝叭﹁娩常カ┰划";
+			mes "いァ約初娩摆";
 			next;
-			mes "[帕帕伊]";
-			mes "再过不久的话在神殿里为了女神的庆典即将要开了, 为了那个我们正在做募款活动啊, ";
-			mes "并不是我直接来做收款的...";
+			mes "[┈┈レ]";
+			mes "筁ぃ杠返ń紋ㄥ盢璶秨, êиタ暗兑蹿笆摆, ";
+			mes "ぃ琌и钡ㄓ暗Μ蹿...";
 			next;
-			mes "[帕帕伊]";
-			mes "看样子你比较有在关心啊?";
-			mes "若你能走到神殿前面的话, 会看到有一位";
-			mes "带着牌子的内麻神官, 现在正在那募款啊";
+			mes "[┈┈レ]";
+			mes "妓ゑ耕Τ闽み摆?";
+			mes "璝ǐ返玡杠, 穦Τ";
+			mes "盿帝礟ず陈﹛, 瞷タê兑蹿摆";
 			next;
-			mes "[帕帕伊]";
-			mes "只要有献金的话";
-			mes "会分给你摸彩券的, ";
-			mes "至于会获得什么东西";
-			mes "我们也不知道啊, ";
-			mes "我也只听说是给";
-			mes "从仓库里出来的^0000FF某一个好的东西^000000而已啊";
+			mes "[┈┈レ]";
+			mes "璶Τ膍杠";
+			mes "穦だ倒篘眒ㄩ, ";
+			mes "穦莉眔ぐ狥﹁";
+			mes "иぃ笵摆, ";
+			mes "и弧琌倒";
+			mes "眖畐ńㄓ^0000FF琘狥﹁^000000τ摆";
 			next;
-			mes "[帕帕伊]";
-			mes "希望你有空一定要来做献金啊, ";
-			mes "那么, 助你有一个神的恩宠, 神的祝福!";
+			mes "[┈┈レ]";
+			mes "辨Τ﹚璶ㄓ暗膍摆, ";
+			mes "ê, Τ胐, 褐!";
 			close;
 		}
-		mes "[帕帕伊]";
-		mes "神的恩宠, 神的祝福, ";
-		mes "若有去神殿的话拜托要献金啊, ";
-		mes "在神殿的入口处正在募款啊";
+		mes "[┈┈レ]";
+		mes "胐, 褐, ";
+		mes "璝Τ返杠Λ璶膍摆, ";
+		mes "返矪タ兑蹿摆";
 		close;
 	}
-	mes "[帕帕伊]";
-	mes "欢迎您来到 阿卢纳贝兹!";
-	mes "现在旅行者先生/小姐";
-	mes "所看到的城墙内部的都市叫做";
-	mes "'拉赫', 也是我们 阿卢纳贝兹的首都";
-	mes "在漫长的航海中应该是累坏了吧, 先到里";
-	mes "面喝一下饮料解一解渴吧?";
+	mes "[┈┈レ]";
+	mes "舧眤ㄓ 縞ī!";
+	mes "瞷︽ネ/﹋";
+	mes "┮鲤ず场常カ暗";
+	mes "'┰划', 琌и 縞ī常";
+	mes "憨い莱赣琌仓Д, ń";
+	mes "耻都秆秆戴?";
 	next;
-	if (select("请问你不是服务人员吗?:有关首都再做一点详细的说明吧") == 1) {
-		mes "[帕帕伊]";
-		mes "我是从神殿里来 做对民众宣传活动的";
-		mes "我叫做帕帕伊, 老实说我们国教信奉菲依";
-		mes "雅女神, 不过对外过人还没有做即时的宣";
-		mes "传啊";
+	if (select("叫拜ぃ琌狝叭盾?:Τ闽常暗翴冈灿弧") == 1) {
+		mes "[┈┈レ]";
+		mes "и琌眖返ńㄓ 暗癸チ渤肚笆";
+		mes "и暗┈┈レ, ρ龟弧и瓣毙獺滇ㄌ";
+		mes "懂, ぃ筁癸筁临⊿Τ暗";
+		mes "肚摆";
 		next;
-		mes "[帕帕伊]";
-		mes "若有兴趣的话 请来神殿拜访一下吧~";
+		mes "[┈┈レ]";
+		mes "璝Τ砍届杠 叫ㄓ返砐~";
 		next;
-		mes "[帕帕伊]";
-		mes "那么 请慢走啰~";
+		mes "[┈┈レ]";
+		mes "ê 叫篊ǐ~";
 		close;
 	}
-	mes "[帕帕伊]";
-	mes "我们祖先们在这宽广的沙漠上做开垦";
-	mes "做成可以使人能生活的地方, 依据神的指";
-	mes "示来到这大地之后, 在漫长的岁月里洗礼";
-	mes "着教育而在这里活着";
+	mes "[┈┈レ]";
+	mes "и硂糴約‵簔暗秨玖";
+	mes "暗Θㄏネよ, ㄌ誹";
+	mes "ボㄓ硂ぇ, 憨烦るń瑍搂";
+	mes "帝毙▅τ硂ń帝";
 	next;
-	mes "[帕帕伊]";
-	mes "现在所看到的风景, 老实说全部都是人类";
-	mes "所创造出来的, 当然, 没有那一位的帮忙";
-	mes "的话是不可能的事情";
+	mes "[┈┈レ]";
+	mes "瞷┮春, ρ龟弧场常琌摸";
+	mes "┮承硑ㄓ, 讽礛, ⊿Τê腊Γ";
+	mes "杠琌ぃㄆ薄";
 	next;
-	mes "[帕帕伊]";
-	mes "互相信赖服从会变成这么大的力量, 连我";
-	mes "们的祖先们也是当初没有想到的啊, ";
-	mes "所以说我啊";
-	mes "为了对领导我们的菲依雅女神, 能为祂奉";
-	mes "献出我的身心是已做好准备了";
+	mes "[┈┈レ]";
+	mes "が獺苦狝眖穦跑Θ硂秖, 硈и";
+	mes "琌讽⊿Τ稱摆, ";
+	mes "┮弧и摆";
+	mes "癸烩旧и滇ㄌ懂, 廷";
+	mes "膍иōみ琌暗称";
 	next;
-	mes "[帕帕伊]";
-	mes "当旅行者若能进入到首都的话";
-	mes "你就会了解我这句话是什么意思了";
+	mes "[┈┈レ]";
+	mes "讽︽璝秈常杠";
+	mes "碞穦秆и硂杠琌ぐ種";
 	close;
 }
 
-rachel,127,117,4	script	小孩 信徒#2	914,{
-	mes "[迪浓]";
-	mes "不能只有相信神而已, ";
-	mes "也不能只观往着祂, ";
-	mes "不是因为相信神";
-	mes "会对自己回来福报的";
+rachel,127,117,4	script	 獺畕#2	914,{
+	mes "[瓆緻]";
+	mes "ぃΤ獺τ, ";
+	mes "ぃ芠┕帝廷, ";
+	mes "ぃ琌獺";
+	mes "穦癸ㄓ褐厨";
 	next;
-	mes "[迪浓]";
-	mes "能做的事情都做完之后, ";
-	mes "等待神的旨意";
-	mes "这才是人要做的事情啊";
+	mes "[瓆緻]";
+	mes "暗ㄆ薄常暗Чぇ, ";
+	mes "单Ξ種";
+	mes "硂琌璶暗ㄆ薄摆";
 	next;
 	emotion ET_QUESTION;
-	mes "[迪浓]";
-	mes "虽然现在有点听不懂, ";
-	mes "总有一天会有了解的一天";
+	mes "[瓆緻]";
+	mes "瘤礛瞷Τ翴ぃ来, ";
+	mes "羆Τぱ穦Τ秆ぱ";
 	close;
 }
 
-ra_temple,167,155,4	script	小孩 信徒#3	914,{
-	mes "[李薇]";
-	mes "嘘!";
-	mes "安静一点";
+ra_temple,167,155,4	script	 獺畕#3	914,{
+	mes "[哩]";
+	mes "糔!";
+	mes "繰翴";
 	next;
-	mes "[李薇]";
+	mes "[哩]";
 	mes "......";
 	next;
-	mes "[李薇]";
-	mes "请你到别的地方去啦!";
-	mes "会被发现的!";
+	mes "[哩]";
+	mes "叫よ罢!";
+	mes "穦砆祇瞷!";
 	next;
-	if (select("请问你在做什么呀?:我知道了") == 1) {
-		mes "[李薇]";
-		mes "难道你不知道吗?";
-		mes "你从来没有玩过吗?";
-		mes "就是跷课啊!";
-		mes "看不出来吗?";
+	if (select("叫拜暗ぐ?:и笵") == 1) {
+		mes "[哩]";
+		mes "螟笵ぃ笵盾?";
+		mes "眖ㄓ⊿Τ筁盾?";
+		mes "碞琌眠揭摆!";
+		mes "ぃㄓ盾?";
 		next;
-		mes "[李薇]";
-		mes "请你去别的地方啦!";
+		mes "[哩]";
+		mes "叫よ罢!";
 		close;
 	}
-	mes "[李薇]";
-	mes "嘘!";
+	mes "[哩]";
+	mes "糔!";
 	close;
 }
 
-ra_temple,179,161,7	script	小孩 信徒#4	921,{
-	mes "[支卡]";
-	mes "嘘";
-	mes "我们正在玩";
-	mes "捉迷藏啊";
+ra_temple,179,161,7	script	 獺畕#4	921,{
+	mes "[や]";
+	mes "糔";
+	mes "иタ";
+	mes "癵旅摆";
 	next;
-	mes "[支卡]";
-	mes "会被发现的";
-	mes "请到别的地方吧, ";
-	mes "若找到其它小孩的话请大声的喧哗吧, ";
-	mes "我今天做猫猫已经是第五次了";
+	mes "[や]";
+	mes "穦砆祇瞷";
+	mes "叫よ, ";
+	mes "璝тㄤウ杠叫羘迟糓, ";
+	mes "иさぱ暗窟窟竒琌材きΩ";
 	next;
 	close;
 }
 
-ra_temple,77,114,7	script	小孩 信徒#5	921,{
-	mes "[爱弥]";
-	mes "哇 吓一跳啊!";
-	mes "我还以为是猫来抓我了呢?";
-	mes "若被发现要怎么办啊!";
-	mes "请你走开啦! 快一点!";
+ra_temple,77,114,7	script	 獺畕#5	921,{
+	mes "[稲辣]";
+	mes "珃 纞铬摆!";
+	mes "и临琌窟ㄓъи㎡?";
+	mes "璝砆祇瞷璶快摆!";
+	mes "叫ǐ秨罢! е翴!";
 	close;
 }
 
-ra_temple,172,113,5	script	小孩 信徒#6	921,{
-	mes "[哈斯]";
-	mes "小孩们都跑到哪里去了呢~";
-	mes "到哪里去了呢~ 到哪里去了呢~";
+ra_temple,172,113,5	script	 獺畕#6	921,{
+	mes "[吹]";
+	mes "常禲ń㎡~";
+	mes "ń㎡~ ń㎡~";
 	next;
-	mes "[哈斯]";
-	mes "玩捉迷藏时我们不会邀请大人参加的";
-	mes "请你到别的地方吧!";
+	mes "[吹]";
+	mes "癵旅иぃ穦淋叫把";
+	mes "叫よ!";
 	close;
 }
 
-airplane,238,54,7	script	旅行者	4_M_ORIENT01,{
+airplane,238,54,7	script	︽	4_M_ORIENT01,{
 	if ($rachel_donate < 10000) {
-		mes "[旅行者]";
-		mes "我这一次和我的朋友";
-		mes "去过拉赫这都市旅行了, ";
-		mes "据说在拉赫神殿里献金的话";
-		mes "会从仓库里开启任何一样物品给你, ";
-		mes "所以我就献金了";
+		mes "[︽]";
+		mes "и硂Ω㎝и狟ね";
+		mes "筁┰划硂常カ︽, ";
+		mes "誹弧┰划返ń膍杠";
+		mes "穦眖畐ń秨币ヴ妓珇倒, ";
+		mes "┮и碞膍";
 		next;
-		mes "[旅行者]";
-		mes "然后会给你一个书本之类的东西, ";
-		mes "据说在书页中插着一个漂亮的卡片似的?";
-		mes "为了纪念到远处旅游";
-		mes "所以就把它当成纪念品带回来了";
+		mes "[︽]";
+		mes "礛穦倒セぇ摸狥﹁, ";
+		mes "誹弧い础帝簘獹?";
+		mes "├环矪村";
+		mes "┮碞рウ讽Θ├珇盿ㄓ";
 		next;
-		mes "[旅行者]";
-		mes "我也从那仓库里得到一样物品";
-		mes "是一个漂亮的果实, ";
-		mes "连神官也不知道那是什么东西啊, ";
-		mes "由于第一次见到的东西, ";
-		mes "所以就把它吃下肚子";
-		mes "变得全身元气十足啊";
+		mes "[︽]";
+		mes "и眖ê畐ń眔妓珇";
+		mes "琌簘獹狦龟, ";
+		mes "硈﹛ぃ笵ê琌ぐ狥﹁摆, ";
+		mes "パ材Ωǎ狥﹁, ";
+		mes "┮碞рウ▄";
+		mes "跑眔ōじ蒩ì摆";
 		next;
-		mes "[旅行者]";
-		mes "好像是为了某个庆典在做献金似的, ";
-		mes "虽然不知道要募款到多久, ";
-		mes "觉得很好玩想试试看";
-		mes "若下一次去的时候她还在的话";
-		mes "我还想多捐一点献金呢";
+		mes "[︽]";
+		mes "钩琌琘紋ㄥ暗膍, ";
+		mes "瘤礛ぃ笵璶兑蹿, ";
+		mes "谋眔稱刚刚";
+		mes "璝Ω临杠";
+		mes "и临稱翴膍㎡";
 		close;
 	}
-	mes "[旅行者]";
-	mes "在拉赫神殿里做献金的神官";
-	mes "好像有点困扰的样子...";
-	mes "不知现在是否有解决了呢?";
+	mes "[︽]";
+	mes "┰划返ń暗膍﹛";
+	mes "钩Τ翴署妓...";
+	mes "ぃ瞷琌Τ秆∕㎡?";
 	close;
 }

@@ -25,118 +25,118 @@
 // Floating mailbox npc that all NPCs duplicate from.
 //============================================================
 -	script	Mailbox#dummy::MailBox	-1,{
-	mes "[邮件筒]";
-	mes "邮件筒可以给离线的朋友寄送";
-	mes "消息、金钱、甚至部分物品。";
-	mes "使用邮件筒服务需要支付 130 zeny！";
-	mes "您还想继续使用邮件筒吗？";
+	mes "[秎ン旦]";
+	mes "秎ン旦倒置絬狟ね盚癳";
+	mes "窥场だ珇";
+	mes "ㄏノ秎ン旦狝叭惠璶や 130 zeny";
+	mes "眤临稱膥尿ㄏノ秎ン旦盾";
 	next;
-	switch(select("使用:不使用")) {
+	switch(select("ㄏノ:ぃㄏノ")) {
 	case 1:
-		mes "[邮件筒]";
+		mes "[秎ン旦]";
 		if (Zeny < 130) {
-			mes "很抱歉，您没有足够的金币！";
-			mes "使用邮件筒服务需要支付 130 zeny！";
+			mes "╆簆眤⊿Τì镑刽";
+			mes "ㄏノ秎ン旦狝叭惠璶や 130 zeny";
 			close;
 		}
-		mes "感谢您的使用，欢迎下次再来~";
+		mes "稰谅眤ㄏノ舧Ωㄓ~";
 		set Zeny, Zeny - 130;
 		close2;
 		openmail;
 		end;
 	case 2:
-		mes "[邮件筒]";
-		mes "没关系，我们期待您的光临~";
+		mes "[秎ン旦]";
+		mes "⊿闽╰и戳眤羬~";
 		close;
 	}
 }
 
-// 普隆德拉
+// 炊订紈┰
 //============================================================
-prontera,146,86,0	duplicate(MailBox)	邮件筒#prt	888
-prontera,275,213,0	duplicate(MailBox)	邮件筒#2prt	888
-prontera,34,212,0	duplicate(MailBox)	邮件筒#3prt	888
+prontera,146,86,0	duplicate(MailBox)	秎ン旦#prt	888
+prontera,275,213,0	duplicate(MailBox)	秎ン旦#2prt	888
+prontera,34,212,0	duplicate(MailBox)	秎ン旦#3prt	888
 
-// 伊斯鲁得岛
+// レ吹緗眔畄
 //============================================================
-izlude,136,94,0	duplicate(MailBox)	邮件筒#iz	888
+izlude,136,94,0	duplicate(MailBox)	秎ン旦#iz	888
 
-// 梦罗克
+// 冠霉
 //============================================================
-moc_ruins,72,166,0	duplicate(MailBox)	邮件筒#1moc	888
-moc_ruins,156,52,0	duplicate(MailBox)	邮件筒#2moc	888
+moc_ruins,72,166,0	duplicate(MailBox)	秎ン旦#1moc	888
+moc_ruins,156,52,0	duplicate(MailBox)	秎ン旦#2moc	888
 
-// 吉芬
+// 
 //============================================================
-geffen,115,67,0	duplicate(MailBox)	邮件筒#gef	888
-geffen,199,125,0	duplicate(MailBox)	邮件筒#2gef	888
+geffen,115,67,0	duplicate(MailBox)	秎ン旦#gef	888
+geffen,199,125,0	duplicate(MailBox)	秎ン旦#2gef	888
 
-// 斐扬
+// 创喘
 //============================================================
-payon,191,104,0	duplicate(MailBox)	邮件筒#pay	888
-payon,171,226,0	duplicate(MailBox)	邮件筒#2pay	888
-pay_arche,55,127,0	duplicate(MailBox)	邮件筒#3pay	888
+payon,191,104,0	duplicate(MailBox)	秎ン旦#pay	888
+payon,171,226,0	duplicate(MailBox)	秎ン旦#2pay	888
+pay_arche,55,127,0	duplicate(MailBox)	秎ン旦#3pay	888
 
-// 艾尔贝塔
+// ︺焊ī娥
 //============================================================
-alberta,90,60,0	duplicate(MailBox)	邮件筒#alb	888
-alberta,30,240,0	duplicate(MailBox)	邮件筒#2alb	888
+alberta,90,60,0	duplicate(MailBox)	秎ン旦#alb	888
+alberta,30,240,0	duplicate(MailBox)	秎ン旦#2alb	888
 
-// 艾尔帕兰
+// ︺焊┈孽
 //============================================================
-aldebaran,135,122,0	duplicate(MailBox)	邮件筒#alde	888
+aldebaran,135,122,0	duplicate(MailBox)	秎ン旦#alde	888
 
-// 朱诺
+// Χ空
 //============================================================
-yuno,148,187,0	duplicate(MailBox)	邮件筒#yuno	888
-yuno,332,108,0	duplicate(MailBox)	邮件筒#2yuno	888
+yuno,148,187,0	duplicate(MailBox)	秎ン旦#yuno	888
+yuno,332,108,0	duplicate(MailBox)	秎ン旦#2yuno	888
 
-// 里希塔乐镇
+// ń娥贾马
 //============================================================
-lighthalzen,164,85,0	duplicate(MailBox)	邮件筒#lht	888
-lighthalzen,196,320,0	duplicate(MailBox)	邮件筒#2lht	888
+lighthalzen,164,85,0	duplicate(MailBox)	秎ン旦#lht	888
+lighthalzen,196,320,0	duplicate(MailBox)	秎ン旦#2lht	888
 
-// 艾音布罗克、艾音贝赫
+// ︺ガ霉︺ī划
 //============================================================
-einbroch,231,215,0	duplicate(MailBox)	邮件筒#ein	888
-einbroch,77,202,0	duplicate(MailBox)	邮件筒#2ein	888
-einbech,182,124,0	duplicate(MailBox)	邮件筒#3ein	888
+einbroch,231,215,0	duplicate(MailBox)	秎ン旦#ein	888
+einbroch,77,202,0	duplicate(MailBox)	秎ン旦#2ein	888
+einbech,182,124,0	duplicate(MailBox)	秎ン旦#3ein	888
 
-// 克魔岛
+// 臸畄
 //============================================================
-comodo,200,150,0	duplicate(MailBox)	邮件筒#cmd	888
+comodo,200,150,0	duplicate(MailBox)	秎ン旦#cmd	888
 
-// 汶巴拉
+// ╖ぺ┰
 //============================================================
-umbala,104,155,0	duplicate(MailBox)	邮件筒#um	888
+umbala,104,155,0	duplicate(MailBox)	秎ン旦#um	888
 
-// 天津町
+// ぱ瑉薽
 //============================================================
-amatsu,102,146,0	duplicate(MailBox)	邮件筒#ama	888
+amatsu,102,146,0	duplicate(MailBox)	秎ン旦#ama	888
 
-// 昆仑
+// ㄚ
 //============================================================
-gonryun,152,117,0	duplicate(MailBox)	邮件筒#gon	888
+gonryun,152,117,0	duplicate(MailBox)	秎ン旦#gon	888
 
-// 哎呦泰雅
+// 玼绥懂
 //============================================================
-ayothaya,205,169,0	duplicate(MailBox)	邮件筒#ayo	888
+ayothaya,205,169,0	duplicate(MailBox)	秎ン旦#ayo	888
 
-// 洛阳
+// 锭
 //============================================================
-louyang,204,100,0	duplicate(MailBox)	邮件筒#lou	888
+louyang,204,100,0	duplicate(MailBox)	秎ン旦#lou	888
 
-// 毁葛
+// 反腐
 //============================================================
-hugel,86,168,0	duplicate(MailBox)	邮件筒#hu	111
+hugel,86,168,0	duplicate(MailBox)	秎ン旦#hu	111
 
-// 拉赫
+// ┰划
 //============================================================
-rachel,122,146,0	duplicate(MailBox)	邮件筒#ra	888
+rachel,122,146,0	duplicate(MailBox)	秎ン旦#ra	888
 
-// 菲音斯
+// 滇吹
 //============================================================
-veins,218,123,0	duplicate(MailBox)	邮件筒#ve	888
+veins,218,123,0	duplicate(MailBox)	秎ン旦#ve	888
 
 // RODEX makes these NPCs useless
 -	script	RodexMailBoxInit	-1,{

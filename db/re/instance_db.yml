@@ -41,7 +41,7 @@ Header:
 
 Body:
   - Id: 1
-    Name: 无尽之塔
+    Name: 礚荷ぇ娥
     TimeLimit: 14400
     Enter:
       Map: 1@tower
@@ -63,7 +63,7 @@ Body:
     AdditionalMaps:
       2@cata: true
   - Id: 3
-    Name: 兽人的记忆
+    Name: 脋癘拘
     Enter:
       Map: 1@orcs 
       X: 179
@@ -80,14 +80,14 @@ Body:
     AdditionalMaps:
       2@nyd: true
   - Id: 5
-    Name: 迷雾森林迷宫
+    Name: 癵铭此狶癵甤
     TimeLimit: 7200
     Enter:
       Map: 1@mist
       X: 89
       Y: 29
   - Id: 6
-    Name: 排水沟
+    Name: 逼肪
     Enter:
       Map: 1@pump
       X: 63
@@ -95,7 +95,7 @@ Body:
     AdditionalMaps:
       2@pump: true
   - Id: 7
-    Name: 八爪鱼巢穴
+    Name: 辰盻マ
     Enter:
       Map: 1@cash
       X: 199
@@ -107,13 +107,13 @@ Body:
       X: 40
       Y: 157
   - Id: 9
-    Name: 宝箱巨鳄之巢
+    Name: 腳絚エ苨ぇ盻
     Enter:
       Map: 1@ma_c
       X: 35
       Y: 57
   - Id: 10
-    Name: 食月暴龙湖泊
+    Name: る忌纒打獃
     TimeLimit: 7200
     Enter:
       Map: 1@ma_b
@@ -135,14 +135,14 @@ Body:
     AdditionalMaps:
       2@gl_k: true
   - Id: 13
-    Name: 艾卡拉奇 内部
+    Name: ︺┰ ず场
     TimeLimit: 1200
     Enter:
       Map: 1@ecl
       X: 60
       Y: 50
   - Id: 14
-    Name: 莎拉的记忆
+    Name: 诧┰癘拘
     Enter:
       Map: 1@sara
       X: 250

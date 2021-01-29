@@ -1375,7 +1375,7 @@ eclage,191,200,4	script	Yube#ep14_2	4_M_FAIRYKID5,{
 			next;
 			mes "[Yube]";
 			mes "I mold the dust clumb like this and place the wick like this!";
-			mes "Voil√†!";
+			mes "Voil°@!";
 			next;
 			mes "[Yube]";
 			mes "They're all made!";
@@ -1471,7 +1471,7 @@ eclage,191,200,4	script	Yube#ep14_2	4_M_FAIRYKID5,{
 	else if (ep14_2_oliver == 15) {
 		if (countitem(6555) >= 128) {
 			mes "I mold the dust clumb like this and place the wick like this!";
-			mes "Voil√†!";
+			mes "Voil°@!";
 			cutin "war_y4",2;
 			next;
 			mes "[Yube]";
@@ -1514,7 +1514,7 @@ eclage,191,200,4	script	Yube#ep14_2	4_M_FAIRYKID5,{
 				}
 				else {
 					mes "I mold the dust clumb like this and place the wick like this!";
-					mes "Voil√†!";
+					mes "Voil°@!";
 					delitem 6561,.@input;// Dustball
 					getitem 6555,.@input;// Birthday_Candle
 					next;

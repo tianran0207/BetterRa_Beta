@@ -13,60 +13,60 @@
 //= 1.0 First version, Renewal guide.
 //= 1.1 Optimized. [Euphy]
 //= 1.2 Navigation system update. [Euphy]
-//= 2016.03.18 汉化部分文字 [RACN汉化组.至尊宝]
+//= 2016.03.18 簙て场だゅ [RACN簙て舱.碙腳]
 //============================================================
 
-amatsu,202,91,3	script	天津町 解说员#amatsu	758,{
-	mes "[樱花妹]";
-	mes "在这寂静的都市，";
-	mes "百花盛开着美丽的樱花，";
-	mes "欢迎来到^8B4513天津町^000000，";
+amatsu,202,91,3	script	ぱ瑉薽 秆弧#amatsu	758,{
+	mes "[腻ゝ]";
+	mes "硂盜繰常カ";
+	mes "κ脖秨帝腞腻";
+	mes "舧ㄓ^8B4513ぱ瑉薽^000000";
 
 	next;
-	mes "[樱花妹]";
-	mes "我是<第13届 天津町小姐>的冠军，";
-	mes "现在为各位指引路径，";
-	mes "欢迎来问我喔!";
-	F_Navi("[樱花妹]");
+	mes "[腻ゝ]";
+	mes "и琌<材13 ぱ瑉薽﹋>玜瓁";
+	mes "瞷ま隔畖";
+	mes "舧ㄓ拜и翅!";
+	F_Navi("[腻ゝ]");
 	while (1) {
 		next;
-		switch(select("[ 卡普拉职员 ]:[ 酒店 ]:[ 武器商人 ]:[ 道具商人 ]:[ 天津町城 ]:[ 料理材料商人 ]:[ 忍者转职所 ]:[ 商船船长 ]:删除小地图的标记:结束对话")) {
+		switch(select("[ 炊┰戮 ]:[ 皊┍ ]:[ 猌竟坝 ]:[ 笵ㄣ坝 ]:[ ぱ瑉薽 ]:[ 瞶坝 ]:[ г锣戮┮ ]:[ 坝差差 ]:埃瓜夹癘:挡癸杠")) {
 		case 1:
-			callsub L_Mark, "^0000FF卡普拉职员^000000";
+			callsub L_Mark, "^0000FF炊┰戮^000000";
 			viewpoint 1,102,149,0,0x0A82FF;
 			break;
 		case 2:
-			callsub L_Mark, F_Navi("酒店","amatsu,215,116","^006400");
+			callsub L_Mark, F_Navi("皊┍","amatsu,215,116","^006400");
 			viewpoint 1,215,116,1,0xAAFF00;
 			break;
 		case 3:
-			callsub L_Mark, F_Navi("武器商人","amatsu,129,117","^008080");
+			callsub L_Mark, F_Navi("猌竟坝","amatsu,129,117","^008080");
 			viewpoint 1,129,117,2,0x008080;
 			break;
 		case 4:
-			callsub L_Mark, F_Navi("道具商人","amatsu,97,117","^FF1493");
+			callsub L_Mark, F_Navi("笵ㄣ坝","amatsu,97,117","^FF1493");
 			viewpoint 1,97,117,3,0xFF1493;
 			break;
 		case 5:
-			callsub L_Mark, F_Navi("天津町城","amatsu,87,235","^8B4513");
+			callsub L_Mark, F_Navi("ぱ瑉薽","amatsu,87,235","^8B4513");
 			viewpoint 1,87,235,4,0x8B4513;
 			break;
 		case 6:
-			callsub L_Mark, F_Navi("料理材料商人","amatsu,206,150","^8A2BE2");
+			callsub L_Mark, F_Navi("瞶坝","amatsu,206,150","^8A2BE2");
 			viewpoint 1,206,150,5,0x8A2BE2;
 			break;
 		case 7:
-			callsub L_Mark, F_Navi("忍者转职所","amatsu,148,137","^4B0082");
+			callsub L_Mark, F_Navi("г锣戮┮","amatsu,148,137","^4B0082");
 			viewpoint 1,148,137,6,0x4B0082;
 			break;
 		case 8:
-			callsub L_Mark, F_Navi("商船船长","amatsu,195,79","^00BFFF");
+			callsub L_Mark, F_Navi("坝差差","amatsu,195,79","^00BFFF");
 			viewpoint 1,195,79,7,0x00BFFF;
 			break;
 		case 9:
-			mes "[樱花妹]";
-			mes "已删除小地图上的标志了，";
-			mes "还需要其它服务吗?";
+			mes "[腻ゝ]";
+			mes "埃瓜夹в";
+			mes "临惠璶ㄤウ狝叭盾?";
 			viewpoint 2,1,1,0,0xFFFFFF;
 			viewpoint 2,1,1,1,0xFFFFFF;
 			viewpoint 2,1,1,2,0xFFFFFF;
@@ -77,17 +77,17 @@ amatsu,202,91,3	script	天津町 解说员#amatsu	758,{
 			viewpoint 2,1,1,7,0xFFFFFF;
 			break;
 		case 10:
-			mes "[樱花妹]";
-			mes "祝您旅途愉快!!";
+			mes "[腻ゝ]";
+			mes "眤硚磖е!!";
 			close;
 		}
 	}
 	end;
 L_Mark:
-	mes "[樱花妹]";
-	mes getarg(0)+"的";
-	mes "位置，已经标记在";
-	mes "小地图上了，";
-	mes "还需要其它服务吗?";
+	mes "[腻ゝ]";
+	mes getarg(0)+"";
+	mes "竚竒夹癘";
+	mes "瓜";
+	mes "临惠璶ㄤウ狝叭盾?";
 	return;
 }

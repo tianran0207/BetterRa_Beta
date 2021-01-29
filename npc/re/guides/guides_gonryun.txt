@@ -15,50 +15,50 @@
 //= 1.2 Navigation system update. [Euphy]
 //============================================================ 
 
-gonryun,163,60,4	script	昆仑导游#01gonryun	780,{
-	mes "[何元治]";
-	mes "你好!";
-	mes "欢迎光临 ^8B4513昆仑^000000~";
-	mes "我负责村子的解说,";
-	mes "若有任何疑问";
-	mes "欢迎随时来找我喔!";
+gonryun,163,60,4	script	ㄚ旧村#01gonryun	780,{
+	mes "[じ獀]";
+	mes "!";
+	mes "舧羬 ^8B4513ㄚ^000000~";
+	mes "и璽砫秆弧,";
+	mes "璝Τヴ好拜";
+	mes "舧繦ㄓти翅!";
 
-	F_Navi("[何元治]");
+	F_Navi("[じ獀]");
 	while (1) {
 		next;
-		switch(select("[ 卡普拉职员 ]:[ 堂主府 ]:[ 道具商人 ]:[ 武器商人 ]:[ 防具商人 ]:[ 酒店 ]:[ 昆仑广宣大使 ]:删除小地图的标记:结束对话")) {
+		switch(select("[ 炊┰戮 ]:[ 绑┎ ]:[ 笵ㄣ坝 ]:[ 猌竟坝 ]:[ ňㄣ坝 ]:[ 皊┍ ]:[ ㄚ約ㄏ ]:埃瓜夹癘:挡癸杠")) {
 		case 1:
-			callsub L_Mark, "^0000FF卡普拉职员^000000";
+			callsub L_Mark, "^0000FF炊┰戮^000000";
 			viewpoint 1,159,122,0,0x0A82FF;
 			break;
 		case 2:
-			callsub L_Mark, F_Navi("堂主府","gonryun,110,131","^006400");
+			callsub L_Mark, F_Navi("绑┎","gonryun,110,131","^006400");
 			viewpoint 1,110,131,1,0xAAFF00;
 			break;
 		case 3:
-			callsub L_Mark, F_Navi("道具商人","gonryun,147,84","^D8BFD8");
+			callsub L_Mark, F_Navi("笵ㄣ坝","gonryun,147,84","^D8BFD8");
 			viewpoint 1,147,84,2,0xD8BFD8;
 			break;
 		case 4:
-			callsub L_Mark, F_Navi("武器商人","gonryun,174,101","^FF1493");
+			callsub L_Mark, F_Navi("猌竟坝","gonryun,174,101","^FF1493");
 			viewpoint 1,174,101,3,0xFF1493;
 			break;
 		case 5:
-			callsub L_Mark, F_Navi("防具商人","gonryun,173,84","^8B4513");
+			callsub L_Mark, F_Navi("ňㄣ坝","gonryun,173,84","^8B4513");
 			viewpoint 1,173,84,4,0x8B4513;
 			break;
 		case 6:
-			callsub L_Mark, F_Navi("酒店","gonryun,213,115","^9400D3");
+			callsub L_Mark, F_Navi("皊┍","gonryun,213,115","^9400D3");
 			viewpoint 1,213,115,5,0x9400D3;
 			break;
 		case 7:
-			callsub L_Mark, F_Navi("昆仑广宣大使","gonryun,161,11","^00BFFF");
+			callsub L_Mark, F_Navi("ㄚ約ㄏ","gonryun,161,11","^00BFFF");
 			viewpoint 1,161,11,6,0x00BFFF;
 			break;
 		case 8:
-			mes "[何元治]";
-			mes "标记已删除,";
-			mes "还需要其它服务吗?";
+			mes "[じ獀]";
+			mes "夹癘埃,";
+			mes "临惠璶ㄤウ狝叭盾?";
 			viewpoint 2,1,1,0,0xFFFFFF;
 			viewpoint 2,1,1,1,0xFFFFFF;
 			viewpoint 2,1,1,2,0xFFFFFF;
@@ -68,17 +68,17 @@ gonryun,163,60,4	script	昆仑导游#01gonryun	780,{
 			viewpoint 2,1,1,6,0xFFFFFF;
 			break;
 		case 9:
-			mes "[何元治]";
-			mes "祝你旅途愉快!";
+			mes "[じ獀]";
+			mes "硚磖е!";
 			close;
 		}
 	}
 	end;
 L_Mark:
-	mes "[何元治]";
-	mes "让我在你的小地图上标记一下";
-	mes "^8B4513" + getarg(0)+"^000000 的位置.";
-	mes "你还需要确认其他建筑物的位置吗?";
+	mes "[じ獀]";
+	mes "琵и瓜夹癘";
+	mes "^8B4513" + getarg(0)+"^000000 竚.";
+	mes "临惠璶谔粄ㄤ诞竚盾?";
 	mes "Is there anything else I can do for you?";
 	return;
 }

@@ -18,120 +18,120 @@
 // Amatsu Transportation
 //============================================================
 -	script	::Sea_Captain_amatsu	-1,{
-	mes "[瓦勒特 摩尔斯]";
-	mes Sex?"嘿, 那边的小伙子~":"嘿, 那边的小姑娘~";
-	mes "你可曾听说过, 在卢恩米德加尔德王国之外, 有着环境、习俗完全不同的城市呢?";
+	mes "[ニ扒疭 集焊吹]";
+	mes Sex?"糑, ê娩ル~":"糑, ê娩﹉甉~";
+	mes "纯弧筁, 縞μ紈焊紈瓣ぇ, Τ帝吏挂策玌Чぃカ㎡?";
 	next;
-	switch(select("询问关于天津町的事情...:我想前往天津町:结束对话")) {
+	switch(select("高拜闽ぱ瑉薽ㄆ薄...:и稱玡┕ぱ瑉薽:挡癸杠")) {
 	case 1:
-		mes "[瓦勒特 摩尔斯]";
-		mes "据说, 有一位船夫迷失航路, ";
-		mes "在漂流的过程中";
-		mes "无预期的被发现了...";
-		mes "在强大的暴风雨和迷雾中";
-		mes "船一定是遭殃的";
+		mes "[ニ扒疭 集焊吹]";
+		mes "誹弧, Τ差ひ癵ア隔, ";
+		mes "簘瑈筁祘い";
+		mes "礚箇戳砆祇瞷...";
+		mes "眏忌獴㎝癵铭い";
+		mes "差﹚琌綝琽";
 		next;
-		mes "[瓦勒特 摩尔斯]";
-		mes "反正遭沉船后";
-		mes "所到达的村落";
-		mes "就叫做天津町, ";
-		mes "那个人被那边的人治疗之后痊愈, ";
-		mes "后来在那边辛苦的工作, ";
-		mes "据说完成了一张海图?";
+		mes "[ニ扒疭 集焊吹]";
+		mes "はタ綝↖差";
+		mes "┮笷辅";
+		mes "碞暗ぱ瑉薽, ";
+		mes "ê砆ê娩獀励ぇ铂稶, ";
+		mes "ㄓê娩ǒ璚, ";
+		mes "誹弧ЧΘ眎瓜?";
 		next;
-		mes "[瓦勒特 摩尔斯]";
-		mes "他回来后很快就就死掉了, ";
-		mes "不过海图确实有传到特力斯坦 3世手上, ";
-		mes "后来国王下令";
-		mes "只要是有人能开辟, ";
-		mes "通往天津町航路的人就会有奖赏, ";
-		mes "并且把海图的影印本发给大家了";
+		mes "[ニ扒疭 集焊吹]";
+		mes "ㄓе碞碞奔, ";
+		mes "ぃ筁瓜谔龟Τ肚疭吹㈱ 3も, ";
+		mes "ㄓ瓣";
+		mes "璶琌Τ秨笯, ";
+		mes "硄┕ぱ瑉薽隔碞穦Τ贱洁, ";
+		mes "р瓜紇セ祇倒產";
 		next;
-		mes "[瓦勒特 摩尔斯]";
-		mes "人们期望的是, 并不是奖赏, ";
-		mes "而是先占据和其它国家的贸易权";
-		mes "就这样赚取的利益, 是无法想像的";
-		mes "所以说有很多冒险家和勇敢的船长, ";
-		mes "拿着海图";
-		mes "朝向大海挑战去了...";
+		mes "[ニ扒疭 集焊吹]";
+		mes "戳辨琌, ぃ琌贱洁, ";
+		mes "τ琌誹㎝ㄤウ瓣產禩舦";
+		mes "碞硂妓寥痲, 琌礚猭稱钩";
+		mes "┮弧Τ玙繧產㎝玦幢差, ";
+		mes "帝瓜";
+		mes "绰珼驹...";
 		next;
-		mes "[瓦勒特 摩尔斯]";
-		mes "不过全部都失败了!";
-		mes "要面对巨大的海流和气象变化, ";
-		mes "对航海术和大海";
-		mes "要有较多的经验才行, 不过全部都为了";
-		mes "奖赏和占据贸易权瞎了眼, ";
-		mes "都没有做好完全的准备";
+		mes "[ニ扒疭 集焊吹]";
+		mes "ぃ筁场常ア毖!";
+		mes "璶癸エ瑈㎝蒩禜跑て, ";
+		mes "癸砃㎝";
+		mes "璶Τ耕竒喷︽, ぃ筁场常";
+		mes "贱洁㎝誹禩舦組泊, ";
+		mes "常⊿Τ暗Ч称";
 		next;
-		mes "[瓦勒特 摩尔斯]";
-		mes "就在这个时候有人发现了, ";
-		mes "通往天津町的完整的航路...";
-		mes "那个人就是我, 发特 摩俄斯先生";
-		mes "就是第一次开始和天津町做交易的人!";
-		mes "哈哈哈! 就是这些话了";
+		mes "[ニ扒疭 集焊吹]";
+		mes "碞硂Τ祇瞷, ";
+		mes "硄┕ぱ瑉薽Ч俱隔...";
+		mes "ê碞琌и, 祇疭 集玐吹ネ";
+		mes "碞琌材Ω秨﹍㎝ぱ瑉薽暗ユ!";
+		mes "! 碞琌硂ㄇ杠";
 		next;
-		mes "[瓦勒特 摩尔斯]";
-		mes "在这几年里在交易上赚了一点钱, ";
-		mes "现在也试着对观光业";
-		mes "做一番投资, ";
-		mes "假如想要去天津町的话";
-		mes "就对我说吧...!";
+		mes "[ニ扒疭 集焊吹]";
+		mes "硂ńユ寥翴窥, ";
+		mes "瞷刚帝癸芠穨";
+		mes "暗礷щ戈, ";
+		mes "安稱璶ぱ瑉薽杠";
+		mes "碞癸и弧...!";
 		close;
 	case 2:
-		mes "[瓦勒特 摩尔斯]";
-		mes "噢, 是吗?";
-		mes "去天津町可是有很长一段路要走的!";
-		mes "这也是为什么需要收取船票费的原因.";
-		mes "你不会认为跨越海洋和穿越洋流是件很容易的事情, 对吗?";
+		mes "[ニ扒疭 集焊吹]";
+		mes "揪, 琌盾?";
+		mes "ぱ瑉薽琌Τ琿隔璶ǐ!";
+		mes "硂琌ぐ惠璶Μ差布禣.";
+		mes "ぃ穦粄阁禫瑅㎝禫瑅瑈琌ン甧ㄆ薄, 癸盾?";
 		next;
-		mes "[瓦勒特 摩尔斯]";
-		mes "10,000 金币包送你来回!";
-		mes "我的贸易船很安全, 上面一个舒适房间可以让你在到达之前好好休息一下.";
-		mes "另外再次强调：这不是一张单程票, 所以价格是很合理的.";
+		mes "[ニ扒疭 集焊吹]";
+		mes "10,000 刽癳ㄓ!";
+		mes "и禩差, 滴屿┬丁琵笷ぇ玡ヰ.";
+		mes "Ω眏秸硂ぃ琌眎虫祘布, ┮刹琌瞶.";
 		next;
-		mes "[瓦勒特 摩尔斯]";
-		mes "我们现在就出发吗?";
-		mes "你应该没忘记带买船票的钱吧?";
+		mes "[ニ扒疭 集焊吹]";
+		mes "и瞷碞祇盾?";
+		mes "莱赣⊿а癘盿禦差布窥?";
 		next;
-		if (select("出发!:取消") == 1) {
+		if (select("祇!:") == 1) {
 			if (Zeny > 9999) {
-				mes "[瓦勒特 摩尔斯]";
-				mes "好滴, 我发动引擎啦, 请坐好!";
+				mes "[ニ扒疭 集焊吹]";
+				mes "簑, и祇笆ま篮罢, 叫Г!";
 				close2;
 				set Zeny, Zeny - 10000;
 				warp "amatsu",197,83;
 				end;
 			}
-			mes "[瓦勒特 摩尔斯]";
-			mes "你到底有没有听我说?";
-			mes "旅费是 10,000 金币.";
-			mes "如果你什么都没有, ";
-			mes "那么去别的地方寻找一些宝藏吧, ";
-			mes "比如失事的沉船...无论如何, ";
-			mes "没钱我是不会带你去天津町的!";
+			mes "[ニ扒疭 集焊吹]";
+			mes "┏Τ⊿Τи弧?";
+			mes "禣琌 10,000 刽.";
+			mes "狦ぐ常⊿Τ, ";
+			mes "êよ碝тㄇ腳旅, ";
+			mes "ゑアㄆ↖差...礚阶, ";
+			mes "⊿窥и琌ぃ穦盿ぱ瑉薽!";
 			close;
 		}
 		close;
 	case 3:
-		mes "[瓦勒特 摩尔斯]";
-		mes "如果你厌倦了自己的日常生活, ";
-		mes "想要去大洋彼岸的国家做旅行~";
-		mes "那么我想天津町是个不错的选择.";
+		mes "[ニ扒疭 集焊吹]";
+		mes "狦菇ら盽ネ, ";
+		mes "稱璶瑅┘─瓣產暗︽~";
+		mes "êи稱ぱ瑉薽琌ぃ岿匡拒.";
 		close;
 	}
 }
 
-amatsu,194,79,5	script	贸易船 船长#ama2	4_M_SEAMAN,{
-	mes "[瓦勒特 摩尔斯]";
-	mes "你来啦... 怎么样?有好好享受";
-	mes "你在天津町的旅程吗...?";
-	mes "如果玩腻了, 我能送你回到艾尔贝塔.";
+amatsu,194,79,5	script	禩差 差#ama2	4_M_SEAMAN,{
+	mes "[ニ扒疭 集焊吹]";
+	mes "ㄓ罢... 妓?Τㄉ";
+	mes "ぱ瑉薽祘盾...?";
+	mes "狦堪, и癳︺焊ī娥.";
 	next;
-	if (select("我想回到艾尔贝塔:结束对话") == 1) {
-		mes "[瓦勒特 摩尔斯]";
-		mes "那我们出发吧.你这一路应该有很多";
-		mes "有趣的事情可以和我们说说, 对么?";
-		mes "好啦, 开船咯~";
+	if (select("и稱︺焊ī娥:挡癸杠") == 1) {
+		mes "[ニ扒疭 集焊吹]";
+		mes "êи祇.硂隔莱赣Τ";
+		mes "Τ届ㄆ薄㎝и弧弧, 癸?";
+		mes "罢, 秨差~";
 		close2;
 		if (checkre(0))
 			warp "alberta",244,72;
@@ -139,246 +139,246 @@ amatsu,194,79,5	script	贸易船 船长#ama2	4_M_SEAMAN,{
 			warp "alberta",243,91;
 		end;
 	}
-	mes "[瓦勒特 摩尔斯]";
-	mes "好吧, 如你所愿~";
-	mes "开往艾尔贝塔的船已经准备好随时起航...";
+	mes "[ニ扒疭 集焊吹]";
+	mes ", ┮篅~";
+	mes "秨┕︺焊ī娥差竒称繦癬...";
 	close;
 }
 
 // Generic Amatsu NPCs
 //============================================================
-amatsu,230,160,3	script	井边小姐#ama	4_F_JPN2,{
-	mes "[优舞可]";
-	mes "虽然每天都会来提水";
-	mes "不过有雾的天气或下雨天";
-	mes "我不会出现在这附近的";
+amatsu,230,160,3	script	か娩﹋#ama	4_F_JPN2,{
+	mes "[涩籖]";
+	mes "瘤礛–ぱ常穦ㄓ矗";
+	mes "ぃ筁Τ铭ぱ蒩┪獴ぱ";
+	mes "иぃ穦瞷硂";
 	next;
-	mes "[优舞可]";
-	mes "好像在这井底深处有着";
-	mes "谁在采着井墙";
-	mes "爬上来的感觉";
-	mes "让人起鸡皮疙瘩";
+	mes "[涩籖]";
+	mes "钩硂か┏瞏矪Τ帝";
+	mes "街帝か鲤";
+	mes "ㄓ稰谋";
+	mes "琵癬蔓ブ紻";
 	close;
 }
 	
-amatsu,179,107,4	script	佑翰#ama	4_M_04,{
-	mes "[佑翰]";
-	mes "唷";
-	mes "你也好跟我一样";
-	mes "不是这里出生的啊";
+amatsu,179,107,4	script	揩#ama	4_M_04,{
+	mes "[揩]";
+	mes "";
+	mes "蛤и妓";
+	mes "ぃ琌硂ńネ摆";
 	next;
-	mes "[佑翰]";
-	mes "我在这个位子";
-	mes "作生意, 也快有5年了";
+	mes "[揩]";
+	mes "и硂";
+	mes "ネ種, еΤ5";
 	next;
-	mes "卢恩-米德加兹王国以及";
-	mes "和这里天津町之间";
-	mes "第一认左了交易时";
-	mes "我就想到'机会包了'!";
+	mes "縞-μ紈瓣の";
+	mes "㎝硂ńぱ瑉薽ぇ丁";
+	mes "材粄オユ";
+	mes "и碞稱'审穦'!";
 	next;
-	mes "[佑翰]";
-	mes "想要开始做一些";
-	mes "跟别人不一样的事情";
+	mes "[揩]";
+	mes "稱璶秨﹍暗ㄇ";
+	mes "蛤ぃ妓ㄆ薄";
 	next;
-	mes "[佑翰]";
-	mes "所以曾经下定决心";
-	mes "来到这天津町";
-	mes "学会这里的料理";
-	mes "之后再回到故乡";
-	mes "让大家可以尝到特别的饮食";
+	mes "[揩]";
+	mes "┮纯竒﹚∕み";
+	mes "ㄓ硂ぱ瑉薽";
+	mes "厩穦硂ń瞶";
+	mes "ぇ珿秏";
+	mes "琵產沽疭都";
 	next;
-	mes "[佑翰]";
-	mes "不过最后还是";
-	mes "就这样对这里有了感情, ";
-	mes "5年后的现在";
-	mes "仍然待在这里";
+	mes "[揩]";
+	mes "ぃ筁程临琌";
+	mes "碞硂妓癸硂ńΤ稰薄, ";
+	mes "5瞷";
+	mes "ご礛硂ń";
 	next;
-	mes "[佑翰]";
-	mes "反正从那时开始就在这位子";
-	mes "跟村民聊东聊西的";
-	mes "放松心情";
+	mes "[揩]";
+	mes "はタ眖ê秨﹍碞硂";
+	mes "蛤チ册狥册﹁";
+	mes "猀み薄";
 	next;
-	mes "[佑翰]";
-	mes "不知何时从寿司名人";
-	mes "在对面开店之后";
-	mes "只看到苍蝇在这飞来飞去的";
+	mes "[揩]";
+	mes "ぃ眖关";
+	mes "癸秨┍ぇ";
+	mes "籥们硂ㄓ";
 	next;
-	mes "[佑翰]";
-	mes "这辈子, 我人生的乐趣";
-	mes "是在这里找到的";
-	mes "现在看来也快要结束了..";
+	mes "[揩]";
+	mes "硂晋, иネ贾届";
+	mes "琌硂ńт";
+	mes "瞷ㄓе璶挡..";
 	close;
 }
 	
-amatsu,205,163,3	script	咪咪#ama	4_F_JPNCHIBI,{
-	mes "[咪咪]";
-	mes "呼呼..";
-	mes "看到港口附近的, 冠军天津町小姐了吗?";
-	mes "非常漂亮吧?";
+amatsu,205,163,3	script	珆珆#ama	4_F_JPNCHIBI,{
+	mes "[珆珆]";
+	mes "㊣㊣..";
+	mes "翠, 玜瓁ぱ瑉薽﹋盾?";
+	mes "獶盽簘獹?";
 	next;
-	mes "[咪咪]";
-	mes "等我长大之后也要参加选美";
+	mes "[珆珆]";
+	mes "单иぇ璶把匡";
 	next;
-	mes "[咪咪]";
-	mes "虽然我觉得现在这个样子, 也算是村里最漂亮的..";
-	mes "女人总是要精心打扮自己的, 呼呼";
+	mes "[珆珆]";
+	mes "瘤礛и谋眔瞷硂妓, 衡琌ń程簘獹..";
+	mes "羆琌璶弘みゴш, ㊣㊣";
 	close;
 }
 	
-amatsu,185,115,3	script	喝醉酒的大叔#ama	4_M_JPNOJI2,{
-	mes "[酒助]";
-	mes "嗝..我这老太婆";
-	mes "只有力气最大..嗝..";
-	mes "我这次真的..嗝..决不会回家..嗝";
+amatsu,185,115,3	script	耻綤皊#ama	4_M_JPNOJI2,{
+	mes "[皊]";
+	mes "苄..и硂ρび盋";
+	mes "Τ蒩程..苄..";
+	mes "и硂Ω痷..苄..∕ぃ穦產..苄";
 	next;
-	if(select("大叔不要再喝了, 赶快回家吧:大叔我们一起喝吧!")==1) {
-		mes "[酒助]";
-		mes "什么?!";
-		mes "你叫我像我太太, 被锅盖般的大手挨揍吗?";
-		mes "嗝..你没有看过是不知道的";
-		mes "我老婆年轻时";
-		mes "都用空手抓老虎的..";
+	if(select("ぃ璶耻, 鱼е產:и癬耻!")==1) {
+		mes "[皊]";
+		mes "ぐ?!";
+		mes "и钩иびび, 砆羚籠も磣盾?";
+		mes "苄..⊿Τ筁琌ぃ笵";
+		mes "иρ盋淮";
+		mes "常ノもъρ..";
 		next;
-		mes "[酒助]";
-		mes "我在克..克什么的村落";
-		mes "输了一点点, 他就";
-		mes "可以把我打成这样..嗝";
+		mes "[皊]";
+		mes "и..ぐ辅";
+		mes "块翴翴, 碞";
+		mes "риゴΘ硂妓..苄";
 		next;
-		mes "[酒助]";
-		mes "乏味~的~人生~";
-		mes "金币都是什么~~";
-		mes "嗝...嗝...";
+		mes "[皊]";
+		mes "~~ネ~";
+		mes "刽常琌ぐ~~";
+		mes "苄...苄...";
 		mes "...............";
-		mes "......嗝.......";
+		mes "......苄.......";
 	}
 	else {
-		mes "[酒助]";
-		mes "呵呵呵..是个好年轻人啊..";
-		mes "嗝..不过呢..嗝";
-		mes "不能把我的酒给你..嗝..";
+		mes "[皊]";
+		mes "..琌淮摆..";
+		mes "苄..ぃ筁㎡..苄";
+		mes "ぃри皊倒..苄..";
 		next;
-		mes "[酒助]";
-		mes "如果你要请我喝酒的话我再考虑看看";
-		mes "呵呵..嗝..";
+		mes "[皊]";
+		mes "狦璶叫и耻皊杠иσ納";
+		mes "..苄..";
 	}
 	close;
 }
 	
-amatsu,217,179,1	script	祖母#ama	4_F_JPNOBA2,{
-	mes "[初惠]";
-	mes "我老公太沉迷于赌博, 真是令人担心啊";
-	mes "今天去了那遥远的村里, 又是输了不少钱";
-	mes "回来..";
+amatsu,217,179,1	script	ダ#ama	4_F_JPNOBA2,{
+	mes "[磃]";
+	mes "иρそび↖癵戒痴, 痷琌踞み摆";
+	mes "さぱê换环ń, 琌块ぃぶ窥";
+	mes "ㄓ..";
 	next;
-	mes "[初惠]";
-	mes "因为太生气了, 我也不知不觉的乱发脾气了";
-	mes "不知道是不是又在酒家喝酒";
-	mes "真是小气..呼呜.";
+	mes "[磃]";
+	mes "びネ蒩, иぃぃ谋睹祇凳蒩";
+	mes "ぃ笵琌ぃ琌皊產耻皊";
+	mes "痷琌蒩..㊣躲.";
 	close;
 }
 	
-amatsu,287,266,3	script	嘉普罗#ama	4_M_JPNOJI,{
-	mes "[嘉普罗]";
-	mes "这里是我跟我老婆";
-	mes "回亿的场所";
+amatsu,287,266,3	script	古炊霉#ama	4_M_JPNOJI,{
+	mes "[古炊霉]";
+	mes "硂ń琌и蛤иρ盋";
+	mes "货初┮";
 	next;
-	mes "[嘉普罗]";
-	mes "..在我那时在这下面的";
-	mes "树木那边跟她告白的..";
-	mes "真没想到她也";
-	mes "对我有意思";
+	mes "[古炊霉]";
+	mes "..иê硂";
+	mes "攫れê娩蛤フ..";
+	mes "痷⊿稱";
+	mes "癸иΤ種";
 	next;
-	mes "[嘉普罗]";
-	mes "从那次之后我们就在这里聊了很多,";
-	mes "这里安静又和平";
-	mes "是个最棒的地点,";
-	mes "一直都有着幸福的时间";
+	mes "[古炊霉]";
+	mes "眖êΩぇи碞硂ń册,";
+	mes "硂ń繰㎝キ";
+	mes "琌程次翴,";
+	mes "常Τ帝┋褐丁";
 	next;
-	mes "[嘉普罗]";
-	mes "现在也是眼睛闭起来,就会很清楚的想起";
-	mes "那时候的点点滴滴";
-	mes "就好像是昨天的事情一样...呼呼..";
+	mes "[古炊霉]";
+	mes "瞷琌泊氟超癬ㄓ,碞穦睲贰稱癬";
+	mes "ê翴翴簑簑";
+	mes "碞钩琌琎ぱㄆ薄妓...㊣㊣..";
 	next;
-	mes "[嘉普罗]";
-	mes "虽然我老婆已不在这世上了";
-	mes "现在只有我一个人来到这里,";
-	mes "不过每次来这里我老婆就好像陪在我身边";
-	mes ",而我忧郁的心情就会不见了";
+	mes "[古炊霉]";
+	mes "瘤礛иρ盋ぃ硂";
+	mes "瞷Τиㄓ硂ń,";
+	mes "ぃ筁–Ωㄓ硂ńиρ盋碞钩抄иō娩";
+	mes ",τи紐み薄碞穦ぃǎ";
 	next;
-	mes "[嘉普罗]";
-	mes "假如您听我讲完话之后";
-	mes "有想起来的人吗?";
-	mes "如果有的话,不要在犹豫也不要踌躇,全";
-	mes "心全力的对待她吧";
+	mes "[古炊霉]";
+	mes "安眤и量Ч杠ぇ";
+	mes "Τ稱癬ㄓ盾?";
+	mes "狦Τ杠,ぃ璶礢枯ぃ璶臗密,";
+	mes "み癸";
 	next;
-	mes "[嘉普罗]";
-	mes "所谓人类,就算笑着过一辈子";
-	mes "那一生也真的很短,";
-	mes "甩掉忧郁的心情";
-	mes "永远过着幸福的日子吧";
+	mes "[古炊霉]";
+	mes "┮孔摸,碞衡帝筁晋";
+	mes "êネ痷祏,";
+	mes "ハ奔紐み薄";
+	mes "ッ环筁帝┋褐ら";
 	close;
 }
 
 // Legendary Tree
 //============================================================
-amatsu,269,221,1	script	告白 少女#ama	4_F_JPN,{
+amatsu,269,221,1	script	フ ぶ#ama	4_F_JPN,{
 	set jap_tree,1;
-	mes "[乎塔利 希欧阔]";
-	mes "很高兴见到您";
-	mes "我的名字叫乎塔利 希欧阔,";
-	mes "兴趣是听音乐,";
-	mes "而我比较常听古典音乐";
+	mes "[娥 稼溜]";
+	mes "蔼砍ǎ眤";
+	mes "и娥 稼溜,";
+	mes "砍届琌贾,";
+	mes "τиゑ耕盽ㄥ贾";
 	next;
-	mes "[乎塔利 希欧阔]";
-	mes "在我们村落里的这个小山坡上";
-	mes "有着一个传说";
-	mes "您知道吗?";
+	mes "[娥 稼溜]";
+	mes "и辅ń硂℡";
+	mes "Τ帝肚弧";
+	mes "眤笵盾?";
 	next;
-	mes "[乎塔利 希欧阔]";
-	mes "传说中如果在那树木下告白";
-	mes "两个人就会永远";
-	mes "保持幸福的关系";
+	mes "[娥 稼溜]";
+	mes "肚弧い狦ê攫れフ";
+	mes "ㄢ碞穦ッ环";
+	mes "玂┋褐闽╰";
 	next;
-	mes "[乎塔利 希欧阔]";
-	mes "不过不能随时随地告白";
-	mes "一定要礼拜六晚上";
-	mes "告白才会实现";
+	mes "[娥 稼溜]";
+	mes "ぃ筁ぃ繦繦フ";
+	mes "﹚璶搂せ边";
+	mes "フ穦龟瞷";
 	next;
-	mes "[乎塔利 希欧阔]";
-	mes "还有礼拜六晚上接受";
-	mes "告白之后一定要在隔天";
-	mes "礼拜六晚上之前回应";
+	mes "[娥 稼溜]";
+	mes "临Τ搂せ边钡";
+	mes "フぇ﹚璶筳ぱ";
+	mes "搂せ边ぇ玡莱";
 	next;
 	emotion ET_BIGTHROB;
-	mes "[乎塔利 希欧阔]";
-	mes "如果心里有喜欢的人的话...";
-	mes "不妨约在那树下";
-	mes "再跟那个人告白,如何呢?";
-	mes "一定会发生好事的";
+	mes "[娥 稼溜]";
+	mes "狦みńΤ尺舧杠...";
+	mes "ぃЙê攫";
+	mes "蛤êフ,㎡?";
+	mes "﹚穦祇ネㄆ";
 	close;
 }
 	
-amatsu,243,202,3	script	戏剧 老师#ama	4_F_JPNOBA2,{
+amatsu,243,202,3	script	栏粿 ρ畍#ama	4_F_JPNOBA2,{
 	set jap_tree,2;
-	mes "[卡拉喀梅 老师]";
-	mes "这里是一个总是";
-	mes "盛开美丽樱花的地方, ";
-	mes "而且这里也是传说中的演员 '白千女'";
-	mes "诞生的地方";
+	mes "[┰池宾 ρ畍]";
+	mes "硂ń琌羆琌";
+	mes "脖秨腞腻よ, ";
+	mes "τ硂ń琌肚弧い簍 'フ'";
+	mes "较ネよ";
 	next;
 	if (Sex) {
-		mes "[卡拉喀梅 老师]";
-		mes "如果认识对演技";
-		mes "有天分的女孩的话, ";
-		mes "请带来我这里吧, 长久以来, ";
-		mes "我一直在找可以演'白千女'";
-		mes "的女孩";
+		mes "[┰池宾 ρ畍]";
+		mes "狦粄醚癸簍м";
+		mes "Τぱだ杠, ";
+		mes "叫盿ㄓи硂ń, ㄓ, ";
+		mes "ит簍'フ'";
+		mes "";
 		next;
-		mes "[卡拉喀梅 老师]";
-		mes "所谓'白千女'就是樱桃树的精灵...";
-		mes "能够演出超越";
-		mes "人类演技的这种人";
-		mes "很少...";
+		mes "[┰池宾 ρ畍]";
+		mes "┮孔'フ'碞琌腻攫弘艶...";
+		mes "镑簍禬禫";
+		mes "摸簍м硂销";
+		mes "ぶ...";
 		close;
 	}
 	emotion ET_SURPRISE;
@@ -403,115 +403,115 @@ amatsu,243,202,3	script	戏剧 老师#ama	4_F_JPNOBA2,{
 	close;
 }
 	
-amatsu,283,203,1	script	宝奴宝奴#ama1	1323,{
+amatsu,283,203,1	script	腳ィ腳ィ#ama1	1323,{
 	end;
 }
 
-amatsu,283,203,1	script	宝奴宝奴#ama2	HIDDEN_NPC,{
+amatsu,283,203,1	script	腳ィ腳ィ#ama2	HIDDEN_NPC,{
 	set jap_tree,3;
 	emotion ET_PROFUSELY_SWEAT;
-	mes "[宝奴宝奴]";
-	mes "这山坡上的树木已经";
-	mes "很久很久了,是棵很大而";
-	mes "总是盛开着樱花的王樱花树";
+	mes "[腳ィ腳ィ]";
+	mes "硂℡攫れ竒";
+	mes ",琌词τ";
+	mes "羆琌脖秨帝腻腻攫";
 	next;
 	emotion ET_PROFUSELY_SWEAT;
-	mes "[宝奴宝奴]";
-	mes "而且很感激这颗树,";
-	mes "有伤心或是难过的事";
-	mes "总是会坐在那棵树下";
+	mes "[腳ィ腳ィ]";
+	mes "τ稰縀硂聋攫,";
+	mes "Τ端み┪琌螟筁ㄆ";
+	mes "羆琌穦Гê词攫";
 	next;
 	emotion ET_PROFUSELY_SWEAT;
-	mes "[宝奴宝奴]";
-	mes "这样的话不管是伤心或难过的事";
-	mes "全部都可以忘记....";
-	mes "那棵树是会安慰我们";
-	mes "平且可以让我们忘记难过的事情";
-	mes "的神奇树";
+	mes "[腳ィ腳ィ]";
+	mes "硂妓杠ぃ恨琌端み┪螟筁ㄆ";
+	mes "场常а癘....";
+	mes "ê词攫琌穦饥и";
+	mes "キ琵иа癘螟筁ㄆ薄";
+	mes "攫";
 	next;
 	emotion ET_PROFUSELY_SWEAT;
-	mes "[宝奴宝奴]";
-	mes "有伤心难过的事的话";
-	mes "不妨坐在那棵树下吧";
-	mes "真的是神奇又感激的树木...";
+	mes "[腳ィ腳ィ]";
+	mes "Τ端み螟筁ㄆ杠";
+	mes "ぃЙГê词攫";
+	mes "痷琌稰縀攫れ...";
 	close;
 }
 	
-amatsu,274,178,7	script	兽医#ama	4_M_JOB_WIZARD,{
+amatsu,274,178,7	script	脋洛#ama	4_M_JOB_WIZARD,{
 	set jap_tree,4;
-	mes "[撒库拉 塞宜齐]";
-	mes "啊... 我不是可疑的人,";
-	mes "请不要惊讶,我只是";
-	mes "平凡的兽医,";
-	mes "以治疗生病的";
-	mes "动物为职业";
+	mes "[蓟畐┰ 峨﹜霍]";
+	mes "摆... иぃ琌好,";
+	mes "叫ぃ璶誥砓,и琌";
+	mes "キ脋洛,";
+	mes "獀励ネ痜";
+	mes "笆戮穨";
 	next;
-	mes "[撒库拉 塞宜齐]";
-	mes "不过呢... 您知道吗?";
-	mes "有关山坡上的樱桃树";
-	mes "的故事... 也许您是第一次";
-	mes "听说";
+	mes "[蓟畐┰ 峨﹜霍]";
+	mes "ぃ筁㎡... 眤笵盾?";
+	mes "Τ闽℡腻攫";
+	mes "珿ㄆ... 砛眤琌材Ω";
+	mes "弧";
 	next;
-	mes "[撒库拉 塞宜齐]";
-	mes "那颗树总是可以维持着";
-	mes "白白又美丽的样子";
-	mes "是有秘诀的...";
-	mes "那就是... 因为那颗树下面";
-	mes "埋葬着尸体...";
+	mes "[蓟畐┰ 峨﹜霍]";
+	mes "ê聋攫羆琌蝴帝";
+	mes "フフ腞妓";
+	mes "琌Τ砕...";
+	mes "ê碞琌... ê聋攫";
+	mes "甀府帝蔨...";
 	next;
-	if (select("被埋葬的人们会不会觉得痛苦呢?:讲这种愚蠢的话...") == 1) {
-		mes "[撒库拉 塞宜齐]";
-		mes "呼呼... 也许会吧...";
-		mes "不管怎样要我不要跟我";
-		mes "打个赌啊...?";
+	if (select("砆甀府穦ぃ穦谋眔礹璚㎡?:量硂销稭镍杠...") == 1) {
+		mes "[蓟畐┰ 峨﹜霍]";
+		mes "㊣㊣... 砛穦...";
+		mes "ぃ恨妓璶иぃ璶蛤и";
+		mes "ゴ戒摆...?";
 		next;
 		emotion ET_THINK;
-		mes "[撒库拉 塞宜齐]";
-		mes "万一我呢...";
+		mes "[蓟畐┰ 峨﹜霍]";
+		mes "蒃и㎡...";
 		mes "............";
 		mes ".........";
 		next;
-		mes "^6633FF她的笑声埋在风声里^000000";
-		mes "^6633FF逐渐的变小,^000000";
-		mes "^6633FF最后完全听不到了,^000000";
-		mes "^6633FF连他要讲什么话^000000";
-		mes "^6633FF都不太记得了...^000000";
+		mes "^6633FF羘甀羘ń^000000";
+		mes "^6633FF硋亥跑,^000000";
+		mes "^6633FF程Чぃ,^000000";
+		mes "^6633FF硈璶量ぐ杠^000000";
+		mes "^6633FF常ぃび癘眔...^000000";
 		close;
 	}
-	mes "[撒库拉 塞宜齐]";
-	mes "您听成这样,也没关系吧...";
-	mes "小心点吧,总有一天这种事";
-	mes "也会发生在您身上..";
+	mes "[蓟畐┰ 峨﹜霍]";
+	mes "眤Θ硂妓,⊿闽╰...";
+	mes "み翴,羆Τぱ硂销ㄆ";
+	mes "穦祇ネ眤ō..";
 	next;
 	emotion ET_THINK;
-	mes "[撒库拉 塞宜齐]";
-	mes "哈哈哈... 哈哈哈哈.....";
+	mes "[蓟畐┰ 峨﹜霍]";
+	mes "... .....";
 	mes "...............";
 	mes "...........";
 	next;
-	mes "^6633FF她的笑声埋在风声里^000000";
-	mes "^6633FF逐渐的变小,^000000";
-	mes "^6633FF最后完全听不到了,^000000";
-	mes "^6633FF我不晓得她跟我讲那种话^000000";
-	mes "^6633FF有什么意图...^000000";
+	mes "^6633FF羘甀羘ń^000000";
+	mes "^6633FF硋亥跑,^000000";
+	mes "^6633FF程Чぃ,^000000";
+	mes "^6633FFиぃ惧眔蛤и量ê销杠^000000";
+	mes "^6633FFΤぐ種瓜...^000000";
 	close;
 }
 	
-amatsu,262,197,1	script	传说中的 树木	HIDDEN_NPC,{
+amatsu,262,197,1	script	肚弧い 攫れ	HIDDEN_NPC,{
 	if (jap_tree == 1) {
-		mes "^3355FF就像她说的一样";
-		mes "这棵树是很多人告白的地方";
-		mes "因此而出名";
-		mes "偶尔会看到几个淘气的";
-		mes "画着爱心写着恋人";
-		mes "名字的标记.^000000";
+		mes "^3355FF碞钩弧妓";
+		mes "硂词攫琌フよ";
+		mes "τ";
+		mes "案焊穦瞊蒩";
+		mes "礶帝稲み糶帝攀";
+		mes "夹癘.^000000";
 		next;
-		mes "^3355FF不只是爱情告白,";
-		mes "听说还会约在这里";
-		mes "谈一些重要的事情,";
-		mes "在这么美的场所";
-		mes "不管谁讲什么事情";
-		mes "都可以答应似的^000000";
+		mes "^3355FFぃ琌稲薄フ,";
+		mes "弧临穦硂ń";
+		mes "酵ㄇ璶ㄆ薄,";
+		mes "硂初┮";
+		mes "ぃ恨街量ぐㄆ薄";
+		mes "常氮莱^000000";
 		close;
 	}
 	else if (jap_tree == 2) {
@@ -549,11 +549,11 @@ amatsu,262,197,1	script	传说中的 树木	HIDDEN_NPC,{
 		close;
 	}
 	else if (jap_tree == 4) {
-		mes "^3355FF这强烈的香气";
-		mes "让我感到头晕目眩";
-		mes "这棵树的花瓣闪耀着光芒";
-		mes "不同于其他的樱花树";
-		mes "特别奇怪.^000000";
+		mes "^3355FF硂眏疨蒩";
+		mes "琵и稰繷穡ヘ痶";
+		mes "硂词攫盲皗模帝▇";
+		mes "ぃㄤ腻攫";
+		mes "疭┣.^000000";
 		next;
 		mes "^3355FFIt feels as if my soul is";
 		mes "being drained if I stay here";
@@ -563,16 +563,16 @@ amatsu,262,197,1	script	传说中的 树木	HIDDEN_NPC,{
 		close;
 	}
 	mes "^3355FF";
-	mes "山上这棵樱桃树.";
-	mes "看起来不同于.";
-	mes "其他树木";
-	mes "这棵树似乎有很长历史...^000000";
+	mes "硂词腻攫.";
+	mes "癬ㄓぃ.";
+	mes "ㄤ攫れ";
+	mes "硂词攫Τ菌...^000000";
 	next;
 	mes "^3355FF";
-	mes "不知是否有人";
-	mes "居住在这里";
-	mes "刚看到有人下山.";
-	mes "来去询问关于这棵树的事情.^000000";
+	mes "ぃ琌Τ";
+	mes "﹡硂ń";
+	mes "Τ.";
+	mes "ㄓ高拜闽硂词攫ㄆ薄.^000000";
 	close;
 }
 

@@ -26,156 +26,156 @@
 
 // Juno
 //============================================================ 
-yuno,184,173,4	script	弗雷德莱奇#juno	4_F_NOVICE,{
+yuno,184,173,4	script	ケ筽紈弟#juno	4_F_NOVICE,{
 	if (rand(1,5) == 1) {
-		mes "[弗雷德莱奇]";
-		mes "^3355FF朱诺^000000 依靠着远古神秘的力量漂浮在空中.";
+		mes "[ケ筽紈弟]";
+		mes "^3355FFΧ空^000000 ㄌ綼帝环秖簘疊い.";
 		next;
-		mes "[弗雷德莱奇]";
-		mes "据说这股力量来自一个叫做 ^3355FF 优配擂斯 ^000000 的种族的遗迹.这个种族好像远在朱诺诞生之前就存在着.";
+		mes "[ケ筽紈弟]";
+		mes "誹弧硂秖ㄓ暗 ^3355FF 涩皌据吹 ^000000 销壁框格.硂销壁钩环Χ空较ネぇ玡碞帝.";
 		next;
-		mes "[弗雷德莱奇]";
-		mes "研究表明朱诺的能源来自于 ^3355FF 依美乐的心脏碎片 ^000000.听说这力量之源原本是 优配擂斯 种族的遗物.";
+		mes "[ケ筽紈弟]";
+		mes "╯Χ空方ㄓ ^3355FF ㄌ贾み纽窰 ^000000.弧硂秖ぇ方セ琌 涩皌据吹 销壁框.";
 		next;
-		mes "[弗雷德莱奇]";
-		mes "有很多知名学者因此而来研究这股神秘力量,所以呢,我们的城市也被称之为科学圣地.";
+		mes "[ケ筽紈弟]";
+		mes "Τ厩τㄓ╯硂秖,┮㎡,иカ砆嘿ぇ厩蒾.";
 		close;
 	}
 	else {
-		mes "[弗雷德莱奇]";
-		mes "贤者之都,";
-		mes "^3355FF朱诺,^000000 ";
-		mes "由三座岛屿构成.";
+		mes "[ケ筽紈弟]";
+		mes "藉ぇ常,";
+		mes "^3355FFΧ空,^000000 ";
+		mes "パ畒畄垃疼Θ.";
 		next;
-		mes "[弗雷德莱奇]";
-		mes "荣耀的所罗门, 丰饶之梅内塔, 以及智慧贤女.";
+		mes "[ケ筽紈弟]";
+		mes "篴模┮霉, ぅ那ぇ宾ず娥, の醇紌藉.";
 		next;
-		mes "[弗雷德莱奇]";
-		mes "这三座岛屿分别位于";
-		mes "西北 : 所罗门";
-		mes "东北 : 贤女";
-		mes "南边 : 梅内塔.";
+		mes "[ケ筽紈弟]";
+		mes "硂畒畄垃だ";
+		mes "﹁ : ┮霉";
+		mes "狥 : 藉";
+		mes "玭娩 : 宾ず娥.";
 		close;
 	}
 }
 	
-yuno,337,227,4	script	朱诺的老奶奶#juno	8_F_GRANDMOTHER,{
-	mes "[老奶奶]";
+yuno,337,227,4	script	Χ空ρイイ#juno	8_F_GRANDMOTHER,{
+	mes "[ρイイ]";
 	if (rand(1,50) == 1) {
 		if (Zeny > 999) {
-			mes "要吃糖糖吗?";
+			mes "璶縸縸盾?";
 			next;
-			mes "^3355FF老奶奶伸出手来,给你看一些糖果^000000.";
+			mes "^3355FFρイイもㄓ,倒ㄇ縸狦^000000.";
 			next;
-			mes "[老奶奶]";
-			mes "你的命运已经被注定. '你'要不要糖都不重要. 能理解为什么我这样做才是重点.";
+			mes "[ρイイ]";
+			mes "㏑笲竒砆猔﹚. ''璶ぃ璶縸常ぃ璶. 瞶秆ぐи硂妓暗琌翴.";
 			next;
-			mes "[老奶奶]";
-			mes "我要 ^3355FF1,000 Zeny^000000.";
-			mes "接受吗?";
+			mes "[ρイイ]";
+			mes "и璶 ^3355FF1,000 Zeny^000000.";
+			mes "钡盾?";
 			next;
-			if (select("好的:不要") == 1) {
-				mes "[老奶奶]";
-				mes "*咯咯咯*";
-				mes "好勒~";
+			if (select(":ぃ璶") == 1) {
+				mes "[ρイイ]";
+				mes "**";
+				mes "扒~";
 				set Zeny, Zeny-1000;
 				getitem 529,1; //Candy
 				next;
-				mes "[老奶奶]";
-				mes "*咯咯咯*";
-				mes "那么...";
-				mes "白白 ~";
+				mes "[ρイイ]";
+				mes "**";
+				mes "ê...";
+				mes "フフ ~";
 				close;
 			}
-			mes "[老奶奶]";
-			mes "对.你问问你自己为什么不要我的糖 .";
+			mes "[ρイイ]";
+			mes "癸.拜拜ぐぃ璶и縸 .";
 			close;
 		}
 		else {
-			mes "*咯咯咯咯*";
-			mes "时间到了.";
-			mes "那么...";
+			mes "**";
+			mes "丁.";
+			mes "ê...";
 			close;
 		}
 	}
 	else {
-		mes "我是一位可以预见很多事情的贤者老奶奶...";
+		mes "и琌箇ǎㄆ薄藉ρイイ...";
 		next;
-		mes "[老奶奶]";
-		mes "听说过以前朱诺被一个BOSS级魔物所包围吗 ? 人们称其为 ^FF3355死灵骑士^000000.";
+		mes "[ρイイ]";
+		mes "弧筁玡Χ空砆BOSS臸┮瞅盾 ? 嘿ㄤ ^FF3355艶肕^000000.";
 		next;
-		mes "[老奶奶]";
-		mes "谣言说他来自死灵之地. 他周围伴随着许多不死的魔物, 把活着的生物送入他那寒冷又漆黑的领地去.";
+		mes "[ρイイ]";
+		mes "亮ē弧ㄓ艶ぇ. ㏄瞅︸繦帝砛ぃ臸, р帝ネ癳ê碒海堵烩.";
 		next;
-		mes "[老奶奶]";
-		mes "你是否要去对付死灵骑士,也是命中注定的. 你所要知道的,是你做出抉择的原因.";
+		mes "[ρイイ]";
+		mes "琌璶癸艶肕,琌㏑い猔﹚. ┮璶笵,琌暗о拒.";
 		close;
 	}
 }
 
-yuno,328,239,4	script	朱诺斗士#juno	4_M_JOB_HUNTER,{
-	mes "[瑟基伍夫]";
-	mes "我叫瑟基伍夫,";
-	mes "保护朱诺奶奶的战士.";
+yuno,328,239,4	script	Χ空ゆ#juno	4_M_JOB_HUNTER,{
+	mes "[锋膀ヮひ]";
+	mes "и锋膀ヮひ,";
+	mes "玂臔Χ空イイ驹.";
 	next;
-	mes "[瑟基伍夫]";
-	mes "其实 ^3355FF七彩大嘴鸟^000000 是大嘴鸟的上位品种. 七彩大嘴鸟移动速度要大于大嘴鸟的移动速度,而且也更加具有侵略性.";
+	mes "[锋膀ヮひ]";
+	mes "ㄤ龟 ^3355FF眒糒尘^000000 琌糒尘珇销. 眒糒尘簿笆硉璶糒尘簿笆硉,τㄣΤ獻菠┦.";
 	next;
-	mes "[瑟基伍夫]";
-	mes "它用它强有力的喙进行攻击,身边也有很多大嘴鸟追随. 七彩大嘴鸟和大嘴鸟之间,他们之间的区别是天和地一样大的.";
+	mes "[锋膀ヮひ]";
+	mes "ウノウ眏Τ绸秈︽ю阑,ō娩Τ糒尘發繦. 眒糒尘㎝糒尘ぇ丁,ぇ丁跋琌ぱ㎝妓.";
 	close;
 }
 
-yuno,343,68,4	script	朱诺统治者#juno	4_M_JOB_ASSASSIN,{
-	mes "[尼诺]";
+yuno,343,68,4	script	Χ空参獀#juno	4_M_JOB_ASSASSIN,{
+	mes "[ェ空]";
 	if (rand(1,1000) == 1) {
-		mes "很荣幸,你将会听到我为你讲一个故事. 千千万万的冒险者中, ^FF33551 只有少数人才会这样幸运^000000.";
+		mes "篴┋,盢穦и量珿ㄆ. 蒃蒃玙繧い, ^FF33551 Τぶ计穦硂妓┋笲^000000.";
 		next;
-		mes "[尼诺]";
-		mes "你现在所感知到的世界是虚幻的!看看真实的世界吧!";
+		mes "[ェ空]";
+		mes "瞷┮稰琌店ほ!痷龟!";
 		next;
-		mes "[尼诺]";
-		mes "睁开你的眼睛吧! 不要被眼前的虚幻所欺骗了!";
+		mes "[ェ空]";
+		mes "窩秨泊氟! ぃ璶砆泊玡店ほ┮篡腇!";
 		close2;
 		warp "prontera",182,206;
 		end;
 	}
-	mes "听说过据说是上帝之子的埃及王吗? 他叫 ^3355FF法老^000000.";
+	mes "弧筁誹弧琌ぇ甁の盾?  ^3355FF猭ρ^000000.";
 	next;
-	mes "[尼诺]";
-	mes "传闻他是一名喜好诅咒无辜者的妖术师.有人说他还活着,继续用他的诡异力量来诅咒人类.";
+	mes "[ェ空]";
+	mes "肚籇琌尺禔〨礚禿Н砃畍.Τ弧临帝,膥尿ノ皋奢秖ㄓ禔〨摸.";
 	next;
-	mes "[尼诺]";
-	mes "作为一名冒险者的话,你是很有可能在旅途中遇见他的.时刻保持警惕!";
+	mes "[ェ空]";
+	mes "玙繧杠,琌Τ硚い笿ǎ.ㄨ玂牡抱!";
 	close;
 }
 
-yuno,165,111,4	script	朱诺的贤者#juno	2_F_MAGICMASTER,,{
-	mes "[摩尔莆神]";
+yuno,165,111,4	script	Χ空藉#juno	2_F_MAGICMASTER,,{
+	mes "[集焊矦]";
 	if (rand(1,50) == 25) {
 		if (Zeny > 4999) {
-			mes "看着我的手,我的手里有两种不同的药草.";
+			mes "帝иも,иもńΤㄢ销ぃ媚.";
 			next;
-			mes "[摩尔莆神]";
-			mes "一种是 ^3355FF红色药草^000000 ,可以用来帮助你麻痹自己,进入虚幻^000000.";
+			mes "[集焊矦]";
+			mes "销琌 ^3355FF︹媚^000000 ,ノㄓ腊陈尥,秈店ほ^000000.";
 			next;
-			mes "[摩尔莆神]";
-			mes "另一个就是 ^FF3355蓝色药草^000000 ,帮你返回现实.";
+			mes "[集焊矦]";
+			mes "碞琌 ^FF3355屡︹媚^000000 ,腊瞷龟.";
 			next;
-			mes "[摩尔莆神]";
-			mes "不管想要哪一种,都请支付 ^3355FF5,000 Zeny^000000. 现在,选择吧.";
+			mes "[集焊矦]";
+			mes "ぃ恨稱璶销,常叫や ^3355FF5,000 Zeny^000000. 瞷,匡拒.";
 			next;
-			if (select("选择 ^FF3355红色药草^000000:选择 ^3355FF蓝色药草^000000.") == 1) {
-				mes "[摩尔莆神]";
-				mes "你选择了他,就将会在无尽的虚无中飘荡.";
+			if (select("匡拒 ^FF3355︹媚^000000:匡拒 ^3355FF屡︹媚^000000.") == 1) {
+				mes "[集焊矦]";
+				mes "匡拒,碞盢穦礚荷店礚い钠亢.";
 				set Zeny, Zeny - 5000;
 				getitem 507,1; //Red_Herb
 				close2;
 				warp "prontera",182,206;
 				end;
 			}
-			mes "[摩尔莆神]";
-			mes "真相在你眼前解开了序幕.";
+			mes "[集焊矦]";
+			mes "痷泊玡秆秨辊.";
 			set Zeny, Zeny - 5000;
 			getitem 510,1; //Blue_Herb
 			close2;
@@ -183,179 +183,179 @@ yuno,165,111,4	script	朱诺的贤者#juno	2_F_MAGICMASTER,,{
 			end;
 		}
 		else {
-			mes "嗯,抱歉,你错过了机会咯.没有钱的人是无法将机会变成财富的啊.";
+			mes "垛,╆簆,岿筁审穦.⊿Τ窥琌礚猭盢审穦跑Θ癩碔摆.";
 			close;
 		}
 	}
 	else {
-		mes "^3355FF天启^000000...";
-		mes "这是很久以前一位保护朱诺的机器人之名.";
+		mes "^3355FFぱ币^000000...";
+		mes "硂琌玡玂臔Χ空审竟ぇ.";
 		next;
-		mes "[摩尔莆神]";
-		mes "因为他的人工智能随着时间流逝而遭到流逝,他已经无法很好的区别同伴和敌人了.现在啊,唉,这个机器人只是一个无脑的怪物啊!....";
+		mes "[集焊矦]";
+		mes "醇繦帝丁瑈硊τ綝瑈硊,竒礚猭跋︸㎝寄.瞷摆,,硂审竟琌礚福┣摆!....";
 		close;
 	}
 }
 	
-yuno,157,205,4	script	朱诺的匠人#juno	1_M_JOBGUIDER,{
-	mes "[匠人]";
-	mes "*嘟哝嘟哝...*";
+yuno,157,205,4	script	Χ空#juno	1_M_JOBGUIDER,{
+	mes "[]";
+	mes "*故竞故竞...*";
 	next;
-	mes "[匠人]";
-	mes "啊,你好. 介绍一下我自己吧. 我是献身于为朱诺全体匠人争取权利和义务的一名匠人.";
+	mes "[]";
+	mes "摆,. ざ残и. и琌膍ōΧ空蔨舦㎝竡叭.";
 	next;
-	switch(select("关于强力的装备:关于特殊的物品:关于真实之食:结束对话")) {
+	switch(select("闽眏杆称:闽疭珇:闽痷龟ぇ:挡癸杠")) {
 	case 1:
-		mes "[匠人]";
-		mes "我来介绍一下 ^3355FF圣卫^000000 和 ^3355FF圣复仇者^000000 ,对于十字军来说这都是很特别的东东哦.";
+		mes "[]";
+		mes "иㄓざ残 ^3355FF蒾矫^000000 ㎝ ^3355FF蒾蝋こ^000000 ,癸瓁ㄓ弧硂常琌疭狥狥瓳.";
 		next;
-		mes "[匠人]";
-		mes "这些装备又轻,能力又强. 也有圣力呢.";
+		mes "[]";
+		mes "硂ㄇ杆称淮,眏. Τ蒾㎡.";
 		next;
-		mes "[匠人]";
-		mes "这些圣力使得在和不死系魔物和无形系魔物的战斗中,这些装备比其他任何装备都要给力喔.";
+		mes "[]";
+		mes "硂ㄇ蒾ㄏ眔㎝ぃ╰臸㎝礚╰臸驹ゆい,硂ㄇ杆称ゑㄤヴ杆称常璶倒翅.";
 		next;
-		mes "[匠人]";
-		mes "但是,哈哈,大家也认为因为这些装备的材料太难获得了,也只有一些好运的十字军才可以得到这些装备呢.";
+		mes "[]";
+		mes "琌,,產粄硂ㄇ杆称び螟莉眔,Τㄇ笲瓁眔硂ㄇ杆称㎡.";
 		close;
 	case 2:
-		mes "[匠人]";
-		mes "看起来像是一个印有同心圆和一颗星星的老旧卷轴. 这个 ^FF3355老旧卷轴^000000 真的很老哦,很多贤者都很想要拿这个做研究呢.";
+		mes "[]";
+		mes "癬ㄓ钩琌Τみ蛾㎝聋琍琍ρ侣禸. 硂 ^FF3355ρ侣禸^000000 痷ρ瓳,藉常稱璶硂暗╯㎡.";
 		next;
-		mes "[匠人]";
-		mes "当你能够施展高等级魔法的时候啊,你就可以使用这个卷轴了喔.";
+		mes "[]";
+		mes "讽镑琁甶蔼单臸猭摆,碞ㄏノ硂禸翅.";
 		close;
 	case 3:
-		mes "[匠人]";
-		mes "^3355FF米糕^000000! 是的,这就是很多人都爱的传统食物. 一说起米糕啊,关于米糕的老超市的怀旧感...就涌上心头了呢.";
+		mes "[]";
+		mes "^3355FFμ縷^000000! 琌,硂碞琌常稲肚参. 弧癬μ縷摆,闽μ縷ρ禬カ输侣稰...碞疐み繷㎡.";
 		next;
-		mes "[匠人]";
-		mes "啊~";
-		mes "现在真是想轻咬一口米糕啊.";
+		mes "[]";
+		mes "摆~";
+		mes "瞷痷琌稱淮玶μ縷摆.";
 		close;
 	case 4:
-		mes "[匠人]";
-		mes "尽管朱诺以贤者之都的身份出名, 但是我也希望你可以理解居住在此地的人们. 请尽情享受朱诺城带给你的独特味道吧.";
+		mes "[]";
+		mes "荷恨Χ空藉ぇ常ō, 琌и辨瞶秆﹡. 叫荷薄ㄉΧ空盿倒縒疭笵.";
 		close;
 	}
 }
 
 -	script	::JunoSoldier1	-1,{
-	mes "[朱诺的士兵]";
-	mes "欢迎来到朱诺,创造之源.";
+	mes "[Χ空]";
+	mes "舧ㄓΧ空,承硑ぇ方.";
 	next;
-	mes "[朱诺的士兵]";
-	mes "这里附近有一种叫做 熔岩巨石 的魔物. 他生于石心,力量在熔岩中翻滚,壮大..";
+	mes "[Χ空]";
+	mes "硂ńΤ销暗 翰━エホ 臸. ネホみ,秖翰━い陆簎,Ё..";
 	next;
-	mes "[朱诺的士兵]";
-	mes "他的身上掉下来容颜,所以,如果武器和防具由高浓度的铁制作而成的话,就会被损毁.";
+	mes "[Χ空]";
+	mes "ō奔ㄓ甧肅,┮,狦猌竟㎝ňㄣパ蔼緻臟τΘ杠,碞穦砆穕反.";
 	next;
-	mes "[朱诺的士兵]";
-	mes "遇到他你就小心点吧. 眨眨眼睛你的武器和装备就都被融化掉了.";
+	mes "[Χ空]";
+	mes "笿碞み翴. 痺痺泊氟猌竟㎝杆称碞常砆磕て奔.";
 	close;
 }
 
 -	script	::JunoSoldier2	-1,{
-	mes "[朱诺的士兵]";
-	mes "欢迎来到朱诺,创造之源.";
+	mes "[Χ空]";
+	mes "舧ㄓΧ空,承硑ぇ方.";
 	next;
-	mes "[朱诺的士兵]";
-	mes "邪恶向日葵...";
-	mes "那个魔物就像是一种从地里长出来的花儿一样.";
+	mes "[Χ空]";
+	mes "ǜ碿ら釜...";
+	mes "ê臸碞钩琌销眖ńㄓ妓.";
 	next;
-	mes "[朱诺的士兵]";
-	mes "诡异的是啊,他可以延伸自己的身体. 即使你距离他很远也会遭到袭击.";
+	mes "[Χ空]";
+	mes "皋奢琌摆,┑ō蔨. ㄏ禯置环穦綝脓阑.";
 	next;
-	mes "[朱诺的士兵]";
-	mes "这个名字是这样来的,有位可怜的地理学家,在全身心投入研究的时候就,很不小心的,唉,被这个怪物给吃掉啦.";
+	mes "[Χ空]";
+	mes "硂琌硂妓ㄓ,Τ贪瞶厩產,ōみщ╯碞,ぃみ,,砆硂┣倒奔罢.";
 	close;
 }
 
 -	script	::JunoSoldier3	-1,{
-	mes "[朱诺的士兵]";
-	mes "欢迎来到朱诺,创造之源.";
+	mes "[Χ空]";
+	mes "舧ㄓΧ空,承硑ぇ方.";
 	next;
-	mes "[朱诺的士兵]";
-	mes "朱诺旁边有一种堕落的天使 '伪天使.' 他看起来很无辜,好想要为过路人祈祷的样子,但是啊,会悄悄地在背后袭击那些路人哩.";
+	mes "[Χ空]";
+	mes "Χ空娩Τ销糧辅ぱㄏ '鞍ぱㄏ.' 癬ㄓ礚禿,稱璶筁隔毛妓,琌摆,穦璉脓阑êㄇ隔.";
 	next;
-	mes "[朱诺的士兵]";
-	mes "别被他的外表迷惑了,要不然你就麻烦咯.";
+	mes "[Χ空]";
+	mes "砆癵碽,璶ぃ礛碞陈沸.";
 	close;
 }
 
 -	script	::JunoSoldier4	-1,{
-	mes "[朱诺的士兵]";
-	mes "欢迎来到朱诺,创造之源.";
+	mes "[Χ空]";
+	mes "舧ㄓΧ空,承硑ぇ方.";
 	next;
-	mes "[朱诺的士兵]";
-	mes "'魔羌' 是一种长得像羚羊的魔物,住在高高的山上,不知怎么的就变成了魔物.";
+	mes "[Χ空]";
+	mes "'臸' 琌销眔钩曹ο臸,蔼蔼,ぃ碞跑Θ臸.";
 	next;
-	mes "[朱诺的士兵]";
-	mes "提防他的角,还要提防他的腿啊.";
+	mes "[Χ空]";
+	mes "矗ňà,临璶矗ň籐摆.";
 	next;
-	mes "[朱诺的士兵]";
-	mes "魔羌'腿很有力,所以在追杀人类的时候翻山越岭也速度很快.";
+	mes "[Χ空]";
+	mes "臸'籐Τ,┮發炳摸陆禫蘢硉е.";
 	close;
 }
 
 -	script	::JunoSoldier5	-1,{
-	mes "[朱诺的士兵]";
-	mes "欢迎来到朱诺,创造之源.";
+	mes "[Χ空]";
+	mes "舧ㄓΧ空,承硑ぇ方.";
 	next;
-	mes "[朱诺的士兵]";
-	mes "听说过巨大杰勒比结晶吗?";
-	mes "那些东西真TMD大!";
+	mes "[Χ空]";
+	mes "弧筁エ狽扒ゑ挡垂盾?";
+	mes "êㄇ狥﹁痷TMD!";
 	next;
-	mes "[朱诺的士兵]";
-	mes "真TMD难以相信这样又大又亮的杰勒比结晶居然会存在啊!";
+	mes "[Χ空]";
+	mes "痷TMD螟獺硂妓獹狽扒ゑ挡垂﹡礛穦摆!";
 	close;
 }
 
 -	script	::JunoSoldier6	-1,{
-	mes "[朱诺的士兵]";
-	mes "欢迎来到朱诺,创造之源.";
+	mes "[Χ空]";
+	mes "舧ㄓΧ空,承硑ぇ方.";
 	next;
-	mes "[朱诺的士兵]";
-	mes "贤者有一种装备叫做 '反击短剑'";
+	mes "[Χ空]";
+	mes "藉Τ销杆称暗 'は阑祏糃'";
 	next;
-	mes "[朱诺的士兵]";
-	mes "对于贤者阶级来说,用处也还蛮大的, 这把短剑提高了暴击率. 所以说对于贤者,这把短剑很有用的,而且看起来也很炫.";
+	mes "[Χ空]";
+	mes "癸藉顶ㄓ弧,ノ矪临芞, 硂р祏糃矗蔼忌阑瞯. ┮弧癸藉,硂р祏糃Τノ,τ癬ㄓ.";
 	close;
 }
 
 -	script	::JunoSoldier7	-1,{
-	mes "[朱诺的士兵]";
-	mes "欢迎来到朱诺,创造之源.";
+	mes "[Χ空]";
+	mes "舧ㄓΧ空,承硑ぇ方.";
 	next;
-	mes "[朱诺的士兵]";
-	mes "有一面圣盾叫做 '圣之使命' 只能被十字军所装备";
+	mes "[Χ空]";
+	mes "Τ蒾暗 '蒾ぇㄏ㏑' 砆瓁┮杆称";
 	next;
-	mes "[朱诺的士兵]";
-	mes "这面盾牌又长又窄,前端雕刻着一个天使. 在和不死系的魔物,无形系的魔物斗争的过程中是很好用的.";
+	mes "[Χ空]";
+	mes "硂礟,玡狠繨ㄨ帝ぱㄏ. ㎝ぃ╰臸,礚╰臸ゆ筁祘い琌ノ.";
 	close;
 }
 
-yuno,142,183,5	script	飞空艇解说员	4W_SAILOR,{
-	mes "[飞空艇解说员]";
-	mes "你好,我来这里给你讲讲";
-	mes "我们对飞空艇这个项目做出的未来预期修正.";
+yuno,142,183,5	script	弗秆弧	4W_SAILOR,{
+	mes "[弗秆弧]";
+	mes ",иㄓ硂ń倒量量";
+	mes "и癸弗硂兜ヘ暗ゼㄓ箇戳タ.";
 	next;
-	mes "[飞空艇解说员]";
-	mes "我们还只是在不断测试而已.";
-	mes "但是我们认为我们的顾客是很有必要知道我们的研究进度的.";
+	mes "[弗秆弧]";
+	mes "и临琌ぃ耞代刚τ.";
+	mes "琌и粄и臮琌Τゲ璶笵и╯秈.";
 	next;
-	mes "[飞空艇解说员]";
-	mes "我们正在研发的飞空艇将可以带您抵达世界上的任何一个角落.您也可以享受空中的美景.我们将会使用到各个科研领域的成果来给您提供最高格的享受.";
+	mes "[弗秆弧]";
+	mes "иタ祇弗盢盿眤╄笷ヴà辅.眤ㄉい春.и盢穦ㄏノ烩办Θ狦ㄓ倒眤矗ㄑ程蔼ㄉ.";
 	next;
-	mes "[飞空艇解说员]";
-	mes "当飞空艇开始运作的时候,";
-	mes "我们保证一定可以让您惊讶的.";
-	mes "同时我们也提供特别的传送服务.";
+	mes "[弗秆弧]";
+	mes "讽弗秨﹍笲,";
+	mes "и玂谍﹚琵眤誥砓.";
+	mes "и矗ㄑ疭肚癳狝叭.";
 	next;
-	mes "[飞空艇解说员]";
-	mes "传送费为 1,800 zeny, 不管你想去哪里. 请告诉我您想去哪里呢.";
+	mes "[弗秆弧]";
+	mes "肚癳禣 1,800 zeny, ぃ恨稱ń. 叫禗и眤稱ń㎡.";
 	next;
-	switch(select("普隆德拉:依斯鲁得:吉芬:梦罗克:斐扬:艾尔贝塔:克魔岛:取消")) {
+	switch(select("炊订紈┰:ㄌ吹緗眔::冠霉:创喘:︺焊ī娥:臸畄:")) {
 		case 1: callsub S_Warp,"prontera",116,72;
 		case 2: if (checkre(0)) callsub S_Warp,"izlude",128,98; else callsub S_Warp,"izlude",94,103;
 		case 3: callsub S_Warp,"geffen",120,39;
@@ -373,9 +373,9 @@ S_Warp:
 		end;
 	}
 	else {
-		mes "[飞空艇解说员]";
-		mes "很抱歉,您的 zeny 没有带足.";
-		mes "请检查一下您所带的 zeny 吧.";
+		mes "[弗秆弧]";
+		mes "╆簆,眤 zeny ⊿Τ盿ì.";
+		mes "叫浪琩眤┮盿 zeny .";
 		close;
 	}
 }

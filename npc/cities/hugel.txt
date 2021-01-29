@@ -31,141 +31,141 @@
 
 // Hugel
 //============================================================
-hugel,189,143,5	script	纯朴的青年	4_M_HUMAN_01,{
-	mes "[纯朴的青年]";
-	mes "噢! 那个庞大的空气袋子, ";
-	mes "就是可以升空的东西吗?";
-	mes "我也试试把肚里注满空气后, ";
-	mes "在空中飘摇看看吧?";
+hugel,189,143,5	script	Φ獵	4_M_HUMAN_01,{
+	mes "[Φ獵]";
+	mes "揪! ê胑蒩砋, ";
+	mes "碞琌ど狥﹁盾?";
+	mes "и刚刚р▄ń猔骸蒩, ";
+	mes "い钠穘?";
 	close;
 }
 
-hugel,126,151,3	script	艾蜜莉	4_F_01,{
-	mes "[艾蜜莉]";
-	mes "虽说这里是乡下, ";
-	mes "却是个很平和的地方, ";
-	mes "左邻右舍都很好相处.";
+hugel,126,151,3	script	︺籩产	4_F_01,{
+	mes "[︺籩产]";
+	mes "瘤弧硂ń琌秏, ";
+	mes "玱琌キ㎝よ, ";
+	mes "オ綟常矪.";
 	next;
-	mes "[艾蜜莉]";
-	mes "可是我姐姐一天到晚";
-	mes "只想离开这里, ";
-	mes "她说愈往愈觉得";
-	mes "恐惧和害怕, 好奇怪喔?";
+	mes "[︺籩产]";
+	mes "琌и﹋﹋ぱ边";
+	mes "稱置秨硂ń, ";
+	mes "弧稶┕稶谋眔";
+	mes "倪㎝甡┤, ┣翅?";
 	close;
 }
  
-hugel,86,165,5	script	卡伊普勒斯	4_M_HUBOY,{
-	mes "[卡伊普勒斯]";
-	mes "哦, 好想要那个红红的瓶子!";
-	mes "真想要麻麻给我买一个喇.";
-	mes "看上去又很贵啦~";
+hugel,86,165,5	script	レ炊扒吹	4_M_HUBOY,{
+	mes "[レ炊扒吹]";
+	mes "瓳, 稱璶ê瞺!";
+	mes "痷稱璶陈陈倒и禦斥.";
+	mes "禥罢~";
 	close;
 }
 
-hugel,71,197,3	script	丽莎	4_F_01,{
-	mes "[丽莎]";
-	mes "毁葛村落这地方实在太小, ";
-	mes "每天有谁发生了什么事情, ";
-	mes "很快就会传开来";
+hugel,71,197,3	script	腞诧	4_F_01,{
+	mes "[腞诧]";
+	mes "反腐辅硂よ龟び, ";
+	mes "–ぱΤ街祇ネぐㄆ薄, ";
+	mes "е碞穦肚秨ㄓ";
 	next;
-	mes "[丽莎]";
-	mes "我好讨厌这种乡下村落, ";
-	mes "很想早日搬至大村落生活.";
+	mes "[腞诧]";
+	mes "и癚菇硂销秏辅, ";
+	mes "稱Νら穐辅ネ.";
 	close;
 }
 
-hugel,169,112,5	script	老尼基	4_F_HUGRANMA,{
-	mes "[老尼基]";
-	mes "你不是这里的人啊.";
-	mes "那么, 你是一名冒险者吧?";
-	mes "知道我是怎么看出来的吗?";
+hugel,169,112,5	script	ρェ膀	4_F_HUGRANMA,{
+	mes "[ρェ膀]";
+	mes "ぃ琌硂ń摆.";
+	mes "ê, 琌玙繧?";
+	mes "笵и琌ㄓ盾?";
 	next;
-	mes "[老尼基]";
-	mes "因为在这儿居住的每个人";
-	mes "久而久之长得都一样了呢.";
-	mes "你看上去很年轻, 不和我们这些人一样老,";
-	mes "呵呵, 过的愉快, 冒险者~";
+	mes "[ρェ膀]";
+	mes "硂﹡–";
+	mes "τぇ眔常妓㎡.";
+	mes "淮, ぃ㎝и硂ㄇ妓ρ,";
+	mes ", 筁磖е, 玙繧~";
 	close;
 }
 
-hugel,175,115,5	script	马里亚斯 	4_M_HUGRANFA,{
-	mes "[马里亚斯]";
-	mes "我是个老头, 是的,";
-	mes "但是对付你这种傲慢自大的家伙,";
-	mes "老头子我的鞭子什么时候都有空!";
-	mes "你知道毁葛的人均寿命会比较长, 知道为什么吗?";
+hugel,175,115,5	script	皑ńㄈ吹 	4_M_HUGRANFA,{
+	mes "[皑ńㄈ吹]";
+	mes "и琌ρ繷, 琌,";
+	mes "琌癸硂销镀篊產ル,";
+	mes "ρ繷и聾ぐ常Τ!";
+	mes "笵反腐А关㏑穦ゑ耕, 笵ぐ盾?";
 	next;
-	mes "[马里亚斯]";
-	mes "因为这镇子里的笨家伙们都不喜欢躺下, 升天!";
-	mes "来吧! 让你看看我有多结识!";
-	mes "小家伙, 我们来角力吧~";
+	mes "[皑ńㄈ吹]";
+	mes "硂马ń猜產ル常ぃ尺舧仅, どぱ!";
+	mes "ㄓ! 琵иΤ挡醚!";
+	mes "產ル, иㄓà~";
 	close;
 }
 
 // Inside Hugel
 //============================================================
-hu_in01,111,386,4	script	克里斯	4_M_04,{
-	mes "[克里斯]";
-	mes "老实说在本村落里, ";
-	mes "与其说用武器来杀敌, ";
-	mes "倒不如买来狩猎或采集时, ";
-	mes "以做为自卫的情形";
-	mes "反而比较常见";
+hu_in01,111,386,4	script	ń吹	4_M_04,{
+	mes "[ń吹]";
+	mes "ρ龟弧セ辅ń, ";
+	mes "蒓ㄤ弧ノ猌竟ㄓ炳寄, ";
+	mes "ぃ禦ㄓ聐┪栋, ";
+	mes "暗矫薄";
+	mes "はτゑ耕盽ǎ";
 	next;
-	mes "[克里斯]";
-	mes "如果你想购买更高档的盔甲, ";
-	mes "那么我建议你去一些大城市.";
+	mes "[ń吹]";
+	mes "狦稱潦禦蔼郎帛ヒ, ";
+	mes "êи某ㄇカ.";
 	close;
 }
 
-hu_in01,23,311,4	script	派对用品商人	4_M_HUMAN_01,{
-	mes "[派对用品商人]";
-	mes "欢迎光临!";
-	mes "请问要不要跟朋友们一起玩漂亮的鞭炮游";
-	mes "戏呢?";
-	mes "鞭炮5个一捆, 卖给你的话只收500金币哟";
+hu_in01,23,311,4	script	癸ノ珇坝	4_M_HUMAN_01,{
+	mes "[癸ノ珇坝]";
+	mes "舧羬!";
+	mes "叫拜璶ぃ璶蛤狟ね癬簘獹聾村";
+	mes "栏㎡?";
+	mes "聾5, 芥倒杠Μ500刽抽";
 	next;
-	switch (select("购买:不购买")) {
+	switch (select("潦禦:ぃ潦禦")) {
 		case 1:
 			if (Zeny < 500) { 
-				mes "[派对用品商人]";
-				mes "客人~ 好像你的金币不够啊";
+				mes "[癸ノ珇坝]";
+				mes "~ 钩刽ぃ镑摆";
 				close;
 			}
 			set Zeny, Zeny - 500;
 			getitem 12018,5;	// Fire_Cracker
-			mes "[派对用品商人]";
-			mes "真的谢谢你!";
-			mes "祝你有一些美好的回忆";
+			mes "[癸ノ珇坝]";
+			mes "痷谅谅!";
+			mes "Τㄇ拘";
 			close;
 		case 2:
-			mes "[派对用品商人]";
-			mes "在宁静的夜晚飞翔着鞭炮的情景...嘻!";
+			mes "[癸ノ珇坝]";
+			mes "蓃繰边稻帝聾薄春...糎!";
 			close;
 	}
 }
 
-hu_in01,18,94,0	script	兼职工作人员#1	1_M_03,{
-	mes "[露达]";
-	mes "欢迎来到神殿探险部.";
-	mes "我叫露达, 是一名兼职助理.";
-	mes "我是负责办公室卫生工作的, 但是你看啊, 好乱的!";
+hu_in01,18,94,0	script	戮#1	1_M_03,{
+	mes "[臩笷]";
+	mes "舧ㄓ返贝繧场.";
+	mes "и臩笷, 琌戮瞶.";
+	mes "и琌璽砫快そ矫ネ, 琌摆, 睹!";
 	next;
-	mes "[露达]";
-	mes "但是我觉得自己其实还是可以搞定这个难题的~";
-	mes "这是修法兹共和国远征团和其他来自卢恩米德加兹王国的远征团的办公处~";
+	mes "[臩笷]";
+	mes "琌и谋眔ㄤ龟临琌穌﹚硂螟肈~";
+	mes "硂琌猭㎝瓣环┖刮㎝ㄤㄓ縞μ紈瓣环┖刮快そ矪~";
 	next;
-	mes "[露达]";
-	mes "两个办公室都是我扫的,";
-	mes "他们弄得我好忙哦.";
-	mes "对了, 试试看加入他们的远征团吧?";
-	mes "当然不会有什么实质性的报酬喇, 但是,";
-	mes "真的很好玩喇~";
+	mes "[臩笷]";
+	mes "ㄢ快そ常琌и苯,";
+	mes "眔иΓ瓳.";
+	mes "癸, 刚刚环┖刮?";
+	mes "讽礛ぃ穦Τぐ龟借┦厨筍斥, 琌,";
+	mes "痷斥~";
 	close;
 }
 
-hu_in01,26,77,4	script	兼职工作人员#2	1_M_04,{
-	mes "^3355FF这个兼职工作人员全神贯注的";
-	mes "沉浸在他整理档案书籍的工作中.^000000";
+hu_in01,26,77,4	script	戮#2	1_M_04,{
+	mes "^3355FF硂戮砮猔";
+	mes "↖俱瞶郎膟い.^000000";
 	close;
 }

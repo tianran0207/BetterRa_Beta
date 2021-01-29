@@ -1,41 +1,41 @@
-# æœ¬ç³»ç»Ÿç”¨äºŽå®šä¹‰æ¯ä¸€ç§çŠ¶æ€åœ¨ç‰¹å®šçš„æ¡ä»¶ä¸‹çš„è¿›è¡Œæ¸…é™¤ã€ä¿ç•™ã€‚
-# ä¸»è¦ç›®çš„ä¸ºå¼€å‘å„ç§è¯æ°´ã€å·è½´ã€æ¶ˆè´¹å“ï¼Œä¹Ÿå¯ä»¥å¯¹è§¦å‘çŠ¶æ€çš„æŠ€èƒ½è¿›è¡Œä¿®æ­£
+# Ãì¡@×ëºý¡@Ùu¡@¡@æ®¯K¡@½H®þ€ç¡@ÄÁ²ë€¡@£¸ìÍôe¡@ÕÚ¡@¡¬Åw®þìÒÕÚâY¡@¡@®UËæ¡@ä±Ë¼Â·¡@¡@€‚
+# ®þ©ü¡@öa¡@ÕÚ®þ«¡ÓRîí¡@Ñ¬¿¨á¬Øé«¹²f€îàºÆÂæä±ËÁÖÇíiºÀÝµëæÉÖ¡@îí¡@¤¬ô\Öº¡@îíÝr¡@Âî¨ÞÕÚ¡@€è¡@âY¡@¡@²N¡@¡@
 #
-# Type å¯¹è°ç”Ÿæ•ˆï¼ˆæŽ©ç é€‰é¡¹ï¼‰:
-#	- 1 çŽ©å®¶
-#	- 2 é­”ç‰©
-# Condition èµ‹äºˆ/æ¶ˆå¤±æ¡ä»¶ï¼ˆå¡« true æ¸…é™¤ï¼Œå¡« false ä¿ç•™ï¼Œä¸å¡«ä¿æŒé»˜è®¤ï¼‰
-#   - Dead             æ­»äº¡
-#   - Logout           ç¦»çº¿
-#   - Gospel           è¢«åœ£éŸ³åŽ
-#   - Dispell          è¢«é­”æ³•æ•ˆæžœè§£é™¤åŽ
-#   - Clearance        è¢«é©±æ•£åŽ
-#   - Hermode          è¢«æµ·ç½—é»˜å¾·çš„æ‰‹æ–åŽ
-#   - Tarotcard        è¢«å‘½è¿å¡”ç½—ç‰ŒåŽ
-#   - Banishing_Buster è¢«å¼ºåˆ¶é©±é€åŽ
-#   - Inspiration      è¢«åœ£çµæ„Ÿåº”åŽ
-#   - Refresh          è¢«ç²¾åŠ›é‡ç”ŸåŽ
-#   - Luxanima         RKæŸä¸ªæŠ€èƒ½, æœ‰çŸ¥é“çš„éº»çƒ¦å‘ŠçŸ¥ä¸€ä¸‹, æŠ€èƒ½ID 5005
-#   - NoMagicDamage    é»„é‡‘ç›—è™«æŠµå¾¡çš„çŠ¶æ€
-#   - ScriptSCend      è„šæœ¬æŒ‡ä»¤ sc_end ç§»é™¤å…¨éƒ¨çŠ¶æ€æ—¶
-# RemoveStatus èµ‹äºˆçŠ¶æ€æ—¶ç§»é™¤æŽ‰çš„çŠ¶æ€ï¼ˆå¦‚æžœæƒ³å†™æˆäº’ä¸å…±å­˜è¯·åœ¨å¦ä¸€ä¸ªçŠ¶æ€å†™å…¥ç§»é™¤å¯¹åº”çŠ¶æ€ï¼‰
-# Restricted ç”Ÿæ•ˆçš„åœ°å›¾ï¼ˆæŽ©ç é€‰é¡¹ é»˜è®¤å…¨éƒ¨åœ°å›¾ï¼‰
-#   1    - åœ¨æ™®é€šåœ°å›¾ ä¸­ç”Ÿæ•ˆ
-#   2    - åœ¨ PVPåœ°å›¾ ä¸­ç”Ÿæ•ˆ (è‹¥å·²å¯ç”¨ PKæ¨¡å¼ çš„è¯, è¯·ç”¨æ­¤é€‰é¡¹æ¥å–ä»£1)
-#   4    - åœ¨ GVGåœ°å›¾ ä¸­ç”Ÿæ•ˆ
-#   8    - åœ¨æˆ˜åœºåœ°å›¾ ä¸­ç”Ÿæ•ˆ
-#   16   - åœ¨  TEåœ°å›¾ ä¸­ç”Ÿæ•ˆ
-#   åŒºåŸŸé™åˆ¶ - è¯·å‚è€ƒ npc\mapflag\restricted.txt è„šæœ¬æ‰€ä½¿ç”¨çš„æ–¹æ³•, æ¥ä¸ºåœ°å›¾åˆ’åˆ†åŒºåŸŸ
-#   32   - åœ¨ 1å·åŒºåŸŸ ä¸­ç”Ÿæ•ˆ (è‰¾å°”å¸•å…°è¿½é€èµ›åœ°å›¾)
-#   64   - åœ¨ 2å·åŒºåŸŸ ä¸­ç”Ÿæ•ˆ (ç›‘ç‹±åœ°å›¾)
-#   128  - åœ¨ 3å·åŒºåŸŸ ä¸­ç”Ÿæ•ˆ (ä¾æ–¯é²å¾·ç«žæŠ€åœºåœ°å›¾)
-#   256  - åœ¨ 4å·åŒºåŸŸ ä¸­ç”Ÿæ•ˆ (åŽä¸½é‡‘å±žä¹‹æˆ˜:ç¬¬äºŒç‰ˆæœ¬åœ°å›¾)
-#   512  - åœ¨ 5å·åŒºåŸŸ ä¸­ç”Ÿæ•ˆ (å°é—­çš„åœ°ä¸‹å¢“ç©´åœ°å›¾)
-#   1024 - åœ¨ 6å·åŒºåŸŸ ä¸­ç”Ÿæ•ˆ (æ— å°½ä¹‹å¡”åœ°å›¾)
-#   2048 - åœ¨ 7å·åŒºåŸŸ ä¸­ç”Ÿæ•ˆ (åŸŽé•‡åœ°å›¾)
-#   4096 - åœ¨ 8å·åŒºåŸŸ ä¸­ç”Ÿæ•ˆ (å°šæœªè¢«åˆ†é…)
+# Type ô\Öºæ¹¡@êJÕ©ëæ¡@¡@ÅIË¶€‰÷â¬Ñ¯Å:
+#	- 1 ¡@¡@¡@
+#	- 2 ÆVÑÒéL
+# Condition Âz¡@Â±/®P³ú¡@¡@¡¬Åwëæ³ú¡ã true ®UËæ¡@ëæ¡@¡ã false ²NéïÙ¤ëæÉÖÓGêA¡@Â·¡@Ë¶ßVæ¦¡@¯Å
+#   - Dead             Îg¿ÐÀe
+#   - Logout           ²Ù¸§Àz
+#   - Gospel           Ú¡¡@ÚLÁï¨RÑ«
+#   - Dispell          Ú¡¡@Ò½®\¡@Õ©¡@ÞN¡@¡@¡@Ñ«
+#   - Clearance        Ú¡¡@ùæ¡@¢íÑ«
+#   - Hermode          Ú¡¡@·oæçÝÐßV¾È­·ÕÚñS¡@¼òÁíŽ
+#   - Tarotcard        Ú¡¡@¡@âYáÂ¡@æç¡@åKÁíŽ
+#   - Banishing_Buster Ú¡¡@¤vîâ¼Zùæè§áÂÑ«
+#   - Inspiration      Ú¡¡@ÚLôë¹Ô¡@ºSÎêÑ«
+#   - Refresh          Ú¡¡@Ã¯ÁîÞe¾·¡@¡@Ñ«
+#   - Luxanima         RKóh¡@°y¡@€è¡@, ÃìÌBÞvè¦¡@ÕÚ·­¸§ÀxÁëÔàÞv®þ€äÓB, ¡@€è¡@ID 5005
+#   - NoMagicDamage    ºdäõìÆöaÝä¡@¡@ÀQºÉôð¡@¡@Âî
+#   - ScriptSCend      ùr¡@¡@¡@¡@Å@ sc_end ¿¨±B¡@îã£ºñëÄÁ²ë€Ãë¶
+# RemoveStatus Âz¡@Â±ÄÁ²ë€Ãë¨ï¡@¡@¡@¡@ôð¡@¡@Âî¡@¯ÈÀáØQõ×îÏ¨R¡@ñi¡@ðl®þ¡@èûÃséÍ¡@¡@£¶¡@®þ€ä°yÄÁ²ë€îØ÷â¡@¿¨±B¡@ô\ºÀ¡@ÄÁ²ë€ëæ‰
+# Restricted ¡@êJÕ©ôðáDÕäÁæå±¯È¡@¡@¡@è§¡@¡v ºdéÍ¡@îã£ºñë¡@ªOÒLëæ‰
+#   1    - ¡@£·¡@è§´ãÕäÁæ¾ ®þ¡@Õ§¡@ˆ
+#   2    - ¡@¨ PVP¡@ªOÒL ®þ¡@Õ§¡@ˆ (¡@¡@¤ZÁí¡@Ùu PK©o¡@¯¼ ôð¡@ên, æ¢­·ÙuÎg¡@€‰÷â³W¡@îíÑî°ä1)
+#   4    - ¡@¨ GVG¡@ªOÒL ®þ¡@Õ§¡@ˆ
+#   8    - ¡@£·¡@¡@«¡ÕäÁæ¾ ®þ¡@Õ§¡@ˆ
+#   16   - ¡@¨  TE¡@ªOÒL ®þ¡@Õ§¡@ˆ
+#   îÑ«¡·Ï¡@áÂ¡@ - æ¢®p¡@Æ_ƒ npc\mapflag\restricted.txt ùr¡@¡@ñS€ä¼b¡@£¸ÕÚóc³W¡@, ¡@¡@­t¡@ªOÒLîâÕ¤¡@îÑ«¡·Ï
+#   32   - ¡@¨ 1îí®p¡@¡@Ÿ ®þ¡@Õ§¡@ˆ (¡@ÄßÞÖÚ¬òK¡@âY¤¶€ÂzÒ]ÕäÁæ¾)
+#   64   - ¡@¨ 2îí®p¡@¡@Ÿ ®þ¡@Õ§¡@ˆ (öaÝrás¡@ªOÒL)
+#   128  - ¡@¨ 3îí®p¡@¡@Ÿ ®þ¡@Õ§¡@ˆ (²ZéìÏ_ÝàËÃµj¡@Ï´Êº¡@«¡ÕäÁæ¾)
+#   256  - ¡@¨ 4îí®p¡@¡@Ÿ ®þ¡@Õ§¡@ˆ (îà¡@ªþ¡@¡@¡@¯K¡@¡@:Úû¡@ðb¡@¡@¡@¡@ªOÒL)
+#   512  - ¡@¨ 5îí®p¡@¡@Ÿ ®þ¡@Õ§¡@ˆ (ø¯Ë¶ÙÒôðáDÕä®þÀ§¡@²Ò§øÕäÁæ¾)
+#   1024 - ¡@¨ 6îí®p¡@¡@Ÿ ®þ¡@Õ§¡@ˆ (Ãë¡@±Î¯KÀ§¡@¡@ªOÒL)
+#   2048 - ¡@¨ 7îí®p¡@¡@Ÿ ®þ¡@Õ§¡@ˆ (¡@Ñu¡@¡@ªOÒL)
+#   4096 - ¡@¨ 8îí®p¡@¡@Ÿ ®þ¡@Õ§¡@ˆ (ø¯¡@¡@Ú¡¡@¡@è©)
 #
-# ä¾‹1: å¤©ä½¿èµç¦ä¸ŽåŠ é€Ÿæœ¯ä¸èƒ½å…±å­˜
+# ²Z‹1: ¿G¡@¼bÂzÝl¡@®þ¡@Îcè§êJÙõ®þá¬¡@îã¤ËÍo
 #
 #  - Id: SC_INCREASEAGI
 #    RemoveStatus:
@@ -45,7 +45,7 @@
 #    RemoveStatus:
 #      - Id: SC_INCREASEAGI
 #
-# ä¾‹2: åŠ é€Ÿæœ¯æ­»äº¡ä¸æ¶ˆå¤±ï¼Œä¸‹çº¿çŠ¶æ€æ¶ˆå¤±
+# ²Z‹2: Áî¡@€ŸÃì¡@¡@¡@¡¬ÓG®P³ú¡@ëæÉÖÓBºí¸ó¡@ÂîËÁÖÇ¿G±
 #
 #  - Id: SC_INCREASEAGI
 #    Condition: 

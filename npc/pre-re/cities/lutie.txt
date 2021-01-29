@@ -8,4 +8,4 @@
 
 // Teleport to Lutie
 //============================================================
-aldebaran,223,222,4	duplicate(连结耶诞)	连结耶诞#1	718
+aldebaran,223,222,4	duplicate(硈挡瑿较)	硈挡瑿较#1	718

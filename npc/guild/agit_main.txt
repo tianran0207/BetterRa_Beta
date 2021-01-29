@@ -94,7 +94,7 @@ OnStartArena:
 		end;
 	}
 	if (!mobcount(strnpcinfo(2),"Agit#"+strnpcinfo(2)+"::OnAgitBreak")) {
-		monster strnpcinfo(2),.@emproom[0],.@emproom[1],"华丽金属",1288,1,"Agit#"+strnpcinfo(2)+"::OnAgitBreak";
+		monster strnpcinfo(2),.@emproom[0],.@emproom[1],"地腞妮",1288,1,"Agit#"+strnpcinfo(2)+"::OnAgitBreak";
 	}
 	end;
 
@@ -121,12 +121,12 @@ OnAgitBreak:
 	SetCastleData strnpcinfo(2),CD_GUILD_ID, .@GID;
 
 	// Announce that the Emperium is destroyed, and respawn all but new castle-occupants.
-	mapannounce strnpcinfo(2),"华丽金属被击碎了.",bc_map|bc_woe,"0x00CCFF",FW_NORMAL,12;
+	mapannounce strnpcinfo(2),"地腞妮砆阑窰.",bc_map|bc_woe,"0x00CCFF",FW_NORMAL,12;
 	MapRespawnGuildID strnpcinfo(2),.@GID,6;
 
 	// Refresh castle data, disable Kafra and reset Invest information.
 	donpcevent strnpcinfo(0)+"::OnRecvCastle";
-	disablenpc "卡普拉 职员#"+strnpcinfo(2);
+	disablenpc "炊┰ 戮#"+strnpcinfo(2);
 	for( set .@i, CD_INVESTED_ECONOMY; .@i <= CD_ENABLED_KAFRA; set .@i, .@i+1 ) {
 		SetCastleData strnpcinfo(2), .@i, 0;
 	}
@@ -141,7 +141,7 @@ OnAgitBreak:
 	if( agitcheck() )
 		donpcevent "Agit#"+strnpcinfo(2)+"::OnStartArena";
 	sleep 7000;
-	announce "公会城堡 [" + getcastlename(strnpcinfo(2)) + "] 被 [" + getguildName(.@GID) + "] 公会占领.",bc_all|bc_woe;
+	announce "そ穦躇 [" + getcastlename(strnpcinfo(2)) + "] 砆 [" + getguildName(.@GID) + "] そ穦烩.",bc_all|bc_woe;
 	end;
 
 // War of Emperium has ended.
@@ -158,12 +158,12 @@ OnAgitEnd:
 OnGuildBreak:
 	if (strnpcinfo(0) == "Gld_Agit_Manager") end;
 	// Kill guardians, disable the Kafra, and set owner to 0.
-	killmonster strnpcinfo(2),"城堡监护人#"+strnpcinfo(2)+"::OnGuardianDied";
-	disablenpc "卡普拉 职员#"+strnpcinfo(2);
+	killmonster strnpcinfo(2),"躇菏臔#"+strnpcinfo(2)+"::OnGuardianDied";
+	disablenpc "炊┰ 戮#"+strnpcinfo(2);
 	SetCastleData strnpcinfo(2),CD_GUILD_ID,0;
 	// Wait before refreshing guild information.
 	sleep 7000;
-	Announce "公会城堡 [" + GetCastleName(strnpcinfo(2)) + "] 已经被放弃了, 现在处于无主状态!",0;
+	Announce "そ穦躇 [" + GetCastleName(strnpcinfo(2)) + "] 竒砆斌, 瞷矪礚篈!",0;
 	donpcevent strnpcinfo(0)+"::OnRecvCastle";
 	end;
 
@@ -176,100 +176,100 @@ OnRecvCastle:
 		killmonsterall strnpcinfo(2);
 		if (compare(strnpcinfo(2),"aldeg")) {
 			// Normal Spawns
-			monster strnpcinfo(2),0,0,"闇神官",1117,10;
-			monster strnpcinfo(2),0,0,"卡利斯格",1132,4;
-			monster strnpcinfo(2),0,0,"深渊骑士",1219,2;
-			monster strnpcinfo(2),0,0,"行刑者",1205,1;
-			monster strnpcinfo(2),0,0,"梅纳海葵",1216,10;
-			monster strnpcinfo(2),0,0,"钟怪",1193,18;
-			monster strnpcinfo(2),0,0,"古钟魔",1269,9;
-			monster strnpcinfo(2),0,0,"幽灵弓箭手",1276,7;
-			monster strnpcinfo(2),0,0,"邪骸浪人",1208,3;
-			monster strnpcinfo(2),0,0,"爱丽丝女仆",1275,1;
-			monster strnpcinfo(2),0,0,"血腥骑士",1268,1;
-			monster strnpcinfo(2),0,0,"黑暗之王",1272,1;
+			monster strnpcinfo(2),0,0,"铑﹛",1117,10;
+			monster strnpcinfo(2),0,0,"吹",1132,4;
+			monster strnpcinfo(2),0,0,"瞏瞁肕",1219,2;
+			monster strnpcinfo(2),0,0,"︽",1205,1;
+			monster strnpcinfo(2),0,0,"宾釜",1216,10;
+			monster strnpcinfo(2),0,0,"牧┣",1193,18;
+			monster strnpcinfo(2),0,0,"牧臸",1269,9;
+			monster strnpcinfo(2),0,0,"艶絙も",1276,7;
+			monster strnpcinfo(2),0,0,"ǜ纄",1208,3;
+			monster strnpcinfo(2),0,0,"稲腞捣げ",1275,1;
+			monster strnpcinfo(2),0,0,"﹀竰肕",1268,1;
+			monster strnpcinfo(2),0,0,"堵穞ぇ",1272,1;
 			// Set Emperium room spawn coordinates and spawn monsters.
 			if (strnpcinfo(2) == "aldeg_cas01") { setarray .@emproom[0],216,23; }
 			else if (strnpcinfo(2) == "aldeg_cas02") { setarray .@emproom[0],213,23; }
 			else if (strnpcinfo(2) == "aldeg_cas03") { setarray .@emproom[0],205,31; }
 			else if (strnpcinfo(2) == "aldeg_cas04") { setarray .@emproom[0],36,217; }
 			else if (strnpcinfo(2) == "aldeg_cas05") { setarray .@emproom[0],27,101; }
-			monster strnpcinfo(2),.@emproom[0],.@emproom[1],"黑暗之王",1272,1;
-			monster strnpcinfo(2),.@emproom[0],.@emproom[1],"钟塔守护者",1270,4;
-			monster strnpcinfo(2),.@emproom[0],.@emproom[1],"血腥骑士",1268,1;
-			monster strnpcinfo(2),.@emproom[0],.@emproom[1],"深渊骑士",1219,1;
-			monster strnpcinfo(2),.@emproom[0],.@emproom[1],"幽灵弓箭手",1276,5;
+			monster strnpcinfo(2),.@emproom[0],.@emproom[1],"堵穞ぇ",1272,1;
+			monster strnpcinfo(2),.@emproom[0],.@emproom[1],"牧娥臔",1270,4;
+			monster strnpcinfo(2),.@emproom[0],.@emproom[1],"﹀竰肕",1268,1;
+			monster strnpcinfo(2),.@emproom[0],.@emproom[1],"瞏瞁肕",1219,1;
+			monster strnpcinfo(2),.@emproom[0],.@emproom[1],"艶絙も",1276,5;
 		}
 		else if (compare(strnpcinfo(2),"gefg")) {
 			// Normal Spawns
-			monster strnpcinfo(2),0,0,"闇神官",1117,10;
-			monster strnpcinfo(2),0,0,"风魔巫师",1263,11;
-			monster strnpcinfo(2),0,0,"巫婆",1102,10;
-			monster strnpcinfo(2),0,0,"南瓜先生",1130,10;
-			monster strnpcinfo(2),0,0,"马尔杜克",1140,20;
-			monster strnpcinfo(2),0,0,"幽灵剑士",1163,9;
-			monster strnpcinfo(2),0,0,"爱丽丝女仆",1275,1;
-			monster strnpcinfo(2),0,0,"深渊骑士",1219,1;
-			monster strnpcinfo(2),0,0,"月夜猫",1150,1;
-			monster strnpcinfo(2),0,0,"皮里恩",1159,1;
+			monster strnpcinfo(2),0,0,"铑﹛",1117,10;
+			monster strnpcinfo(2),0,0,"臸畍",1263,11;
+			monster strnpcinfo(2),0,0,"盋",1102,10;
+			monster strnpcinfo(2),0,0,"玭ナネ",1130,10;
+			monster strnpcinfo(2),0,0,"皑焊",1140,20;
+			monster strnpcinfo(2),0,0,"艶糃",1163,9;
+			monster strnpcinfo(2),0,0,"稲腞捣げ",1275,1;
+			monster strnpcinfo(2),0,0,"瞏瞁肕",1219,1;
+			monster strnpcinfo(2),0,0,"る窟",1150,1;
+			monster strnpcinfo(2),0,0,"ブń",1159,1;
 			// Set Emperium room spawn coordinates and spawn monsters.
 			if (strnpcinfo(2) == "gefg_cas01") { setarray .@emproom[0],197,181; }
 			else if (strnpcinfo(2) == "gefg_cas02") { setarray .@emproom[0],176,178; }
 			else if (strnpcinfo(2) == "gefg_cas03") { setarray .@emproom[0],244,166; }
 			else if (strnpcinfo(2) == "gefg_cas04") { setarray .@emproom[0],174,177; }
 			else if (strnpcinfo(2) == "gefg_cas05") { setarray .@emproom[0],194,184; }
-			monster strnpcinfo(2),.@emproom[0],.@emproom[1],"弑神者",1203,1;
-			monster strnpcinfo(2),.@emproom[0],.@emproom[1],"兽人英雄",1087,1;
-			monster strnpcinfo(2),.@emproom[0],.@emproom[1],"兽人战士长",1213,10;
-			monster strnpcinfo(2),.@emproom[0],.@emproom[1],"兽人弓箭手",1189,10;
+			monster strnpcinfo(2),.@emproom[0],.@emproom[1],"稩",1203,1;
+			monster strnpcinfo(2),.@emproom[0],.@emproom[1],"脋璣动",1087,1;
+			monster strnpcinfo(2),.@emproom[0],.@emproom[1],"脋驹",1213,10;
+			monster strnpcinfo(2),.@emproom[0],.@emproom[1],"脋絙も",1189,10;
 		}
 		else if (compare(strnpcinfo(2),"payg")) {
 			// Normal Spawns
-			monster strnpcinfo(2),0,0,"将军魔碑",1277,9;
-			monster strnpcinfo(2),0,0,"邪骸浪人",1208,10;
-			monster strnpcinfo(2),0,0,"半龙人",1262,5;
-			monster strnpcinfo(2),0,0,"巫婆",1102,5;
-			monster strnpcinfo(2),0,0,"月夜猫",1150,1;
-			monster strnpcinfo(2),0,0,"虎王",1115,1;
-			monster strnpcinfo(2),0,0,"鬼火",1129,11;
-			monster strnpcinfo(2),0,0,"幽灵弓箭手",1276,5;
-			monster strnpcinfo(2),0,0,"犬妖弓箭手",1282,4;
-			monster strnpcinfo(2),0,0,"蝙蝠弓箭手",1253,5;
+			monster strnpcinfo(2),0,0,"盢瓁臸窸",1277,9;
+			monster strnpcinfo(2),0,0,"ǜ纄",1208,10;
+			monster strnpcinfo(2),0,0,"纒",1262,5;
+			monster strnpcinfo(2),0,0,"盋",1102,5;
+			monster strnpcinfo(2),0,0,"る窟",1150,1;
+			monster strnpcinfo(2),0,0,"",1115,1;
+			monster strnpcinfo(2),0,0,"碍",1129,11;
+			monster strnpcinfo(2),0,0,"艶絙も",1276,5;
+			monster strnpcinfo(2),0,0,"Н絙も",1282,4;
+			monster strnpcinfo(2),0,0,"娇交絙も",1253,5;
 			// Set Emperium room spawn coordinates and spawn monsters.
 			if (strnpcinfo(2) == "payg_cas01") { setarray .@emproom[0],139,139; }
 			else if (strnpcinfo(2) == "payg_cas02") { setarray .@emproom[0],38,25; }
 			else if (strnpcinfo(2) == "payg_cas03") { setarray .@emproom[0],269,265; }
 			else if (strnpcinfo(2) == "payg_cas04") { setarray .@emproom[0],270,28; }
 			else if (strnpcinfo(2) == "payg_cas05") { setarray .@emproom[0],30,30; }
-			monster strnpcinfo(2),.@emproom[0],.@emproom[1],"月夜猫",1150,1;
-			monster strnpcinfo(2),.@emproom[0],.@emproom[1],"虎王",1115,1;
-			monster strnpcinfo(2),.@emproom[0],.@emproom[1],"邪骸浪人",1208,6;
-			monster strnpcinfo(2),.@emproom[0],.@emproom[1],"幽灵弓箭手",1276,5;
+			monster strnpcinfo(2),.@emproom[0],.@emproom[1],"る窟",1150,1;
+			monster strnpcinfo(2),.@emproom[0],.@emproom[1],"",1115,1;
+			monster strnpcinfo(2),.@emproom[0],.@emproom[1],"ǜ纄",1208,6;
+			monster strnpcinfo(2),.@emproom[0],.@emproom[1],"艶絙も",1276,5;
 		}
 		else if (compare(strnpcinfo(2),"prtg")) {
 			// Normal Spawns
-			monster strnpcinfo(2),0,0,"幽灵剑士",1163,1;
-			monster strnpcinfo(2),0,0,"卡利斯格",1132,10;
-			monster strnpcinfo(2),0,0,"深渊骑士",1219,5;
-			monster strnpcinfo(2),0,0,"血腥骑士",1268,5;
-			monster strnpcinfo(2),0,0,"冰暴骑士",1251,1;
-			monster strnpcinfo(2),0,0,"卡仑",1252,1;
-			monster strnpcinfo(2),0,0,"幽灵弓箭手",1276,5;
-			monster strnpcinfo(2),0,0,"狮鹫兽",1259,2;
-			monster strnpcinfo(2),0,0,"凯美拉",1283,3;
-			monster strnpcinfo(2),0,0,"爱丽丝女仆",1275,1;
-			monster strnpcinfo(2),0,0,"艾斯恩魔女",1200,1;
+			monster strnpcinfo(2),0,0,"艶糃",1163,1;
+			monster strnpcinfo(2),0,0,"吹",1132,10;
+			monster strnpcinfo(2),0,0,"瞏瞁肕",1219,5;
+			monster strnpcinfo(2),0,0,"﹀竰肕",1268,5;
+			monster strnpcinfo(2),0,0,"忌肕",1251,1;
+			monster strnpcinfo(2),0,0,"ㄚ",1252,1;
+			monster strnpcinfo(2),0,0,"艶絙も",1276,5;
+			monster strnpcinfo(2),0,0,"粪鴏脋",1259,2;
+			monster strnpcinfo(2),0,0,"惩┰",1283,3;
+			monster strnpcinfo(2),0,0,"稲腞捣げ",1275,1;
+			monster strnpcinfo(2),0,0,"︺吹臸",1200,1;
 			// Set Emperium room spawn coordinates and spawn monsters.
 			if (strnpcinfo(2) == "prtg_cas01") { setarray .@emproom[0],197,197; }
 			else if (strnpcinfo(2) == "prtg_cas02") { setarray .@emproom[0],157,174; }
 			else if (strnpcinfo(2) == "prtg_cas03") { setarray .@emproom[0],16,220; }
 			else if (strnpcinfo(2) == "prtg_cas04") { setarray .@emproom[0],291,14; }
 			else if (strnpcinfo(2) == "prtg_cas05") { setarray .@emproom[0],266,266; }
-			monster strnpcinfo(2),.@emproom[0],.@emproom[1],"血腥骑士",1268,1;
-			monster strnpcinfo(2),.@emproom[0],.@emproom[1],"冰暴骑士",1251,1;
-			monster strnpcinfo(2),.@emproom[0],.@emproom[1],"卡仑",1252,1;
-			monster strnpcinfo(2),.@emproom[0],.@emproom[1],"深渊骑士",1219,1;
-			monster strnpcinfo(2),.@emproom[0],.@emproom[1],"幽灵弓箭手",1276,5;
+			monster strnpcinfo(2),.@emproom[0],.@emproom[1],"﹀竰肕",1268,1;
+			monster strnpcinfo(2),.@emproom[0],.@emproom[1],"忌肕",1251,1;
+			monster strnpcinfo(2),.@emproom[0],.@emproom[1],"ㄚ",1252,1;
+			monster strnpcinfo(2),.@emproom[0],.@emproom[1],"瞏瞁肕",1219,1;
+			monster strnpcinfo(2),.@emproom[0],.@emproom[1],"艶絙も",1276,5;
 		}
 		// Add custom Guild Castles here.
 		else {
@@ -277,7 +277,7 @@ OnRecvCastle:
 		}
 		donpcevent "Agit#"+strnpcinfo(2)+"::OnStartArena";
 		// Disable Kafra Staff...
-		disablenpc "卡普拉 职员#"+strnpcinfo(2);
+		disablenpc "炊┰ 戮#"+strnpcinfo(2);
 		end;
 	}
 	else {
@@ -307,33 +307,33 @@ OnRecvCastle:
 			end;
 		}
 		// And load purchased Guardian in castles.
-		donpcevent "城堡监护人#"+strnpcinfo(2)+"::OnSpawnGuardians";
+		donpcevent "躇菏臔#"+strnpcinfo(2)+"::OnSpawnGuardians";
 		// And display Kafra if purchased.
-		if (GetCastleData(strnpcinfo(2),CD_ENABLED_KAFRA) < 1) disablenpc "卡普拉 职员#"+strnpcinfo(2);
+		if (GetCastleData(strnpcinfo(2),CD_ENABLED_KAFRA) < 1) disablenpc "炊┰ 戮#"+strnpcinfo(2);
 	}
 	end;
 }
 
 // WoE : Guild Kafras
 //============================================================
--	script	卡普拉 职员#woe::guildkafra	-1,{
+-	script	炊┰ 戮#woe::guildkafra	-1,{
 
 	set .@GID,GetCastleData(strnpcinfo(2),CD_GUILD_ID);
 
 	if (compare(strnpcinfo(2),"aldeg")) {
-		setarray .@destination$[0],"艾尔帕兰","aldebaran";
+		setarray .@destination$[0],"︺焊┈孽","aldebaran";
 		setarray .@coordinates[0],132,103;
 	}
 	else if (compare(strnpcinfo(2),"gefg")) {
-		setarray .@destination$[0],"吉芬","geffen";
+		setarray .@destination$[0],"","geffen";
 		setarray .@coordinates[0],120,39;
 	}
 	else if (compare(strnpcinfo(2),"payg")) {
-		setarray .@destination$[0],"斐扬","payon";
+		setarray .@destination$[0],"创喘","payon";
 		setarray .@coordinates[0],70,100;
 	}
 	else if (compare(strnpcinfo(2),"prtg")) {
-		setarray .@destination$[0],"普隆德拉","prontera";
+		setarray .@destination$[0],"炊订紈┰","prontera";
 		setarray .@coordinates[0],278,211;
 	}
 	// Add custom Guild Castles here.
@@ -343,40 +343,40 @@ OnRecvCastle:
 
 	cutin "kafra_01",2;
 	if (getcharid(2) == .@GID) {
-		mes "[卡普拉 职员]";
-		mes "尊敬的^ff0000" + GetGuildName(.@GID) + "^000000成员们.";
-		mes "我们将永远为您提供最优质的服务!";
-		mes "请问您需要什么服务呢?";
+		mes "[炊┰ 戮]";
+		mes "碙穛^ff0000" + GetGuildName(.@GID) + "^000000Θ.";
+		mes "и盢ッ环眤矗ㄑ程涩借狝叭!";
+		mes "叫拜眤惠璶ぐ狝叭㎡?";
 		next;
-		switch (select("仓库服务:传送服务:租用手推车:结束对话")) {
+		switch (select("畐狝叭:肚癳狝叭:ノも崩ó:挡癸杠")) {
 		case 1:
 			if(!callfunc("F_CanOpenStorage")){
-				mes "[卡普拉 职员]";
-				mes "非常抱歉";
-				mes "您的基本技能需要达到6级以上,";
-				mes "才能使用仓库服务.";
+				mes "[炊┰ 戮]";
+				mes "獶盽╆簆";
+				mes "眤膀セм惠璶笷6,";
+				mes "ㄏノ畐狝叭.";
 				close2;
 				cutin "",255;
 				end;
 			}
-			mes "[卡普拉 职员]";
-			mes "现在为您打开仓库!";
-			mes "感谢您使用卡普拉服务.";
-			callfunc("F_CheckKafCode", "[卡普拉 职员]");	//check your storage password, if set
+			mes "[炊┰ 戮]";
+			mes "瞷眤ゴ秨畐!";
+			mes "稰谅眤ㄏノ炊┰狝叭.";
+			callfunc("F_CheckKafCode", "[炊┰ 戮]");	//check your storage password, if set
 			close2;
 			cutin "",255;
 			openstorage;
 			end;
 		case 2:
-			mes "[卡普拉 职员]";
-			mes "请告诉我您的目的地";
+			mes "[炊┰ 戮]";
+			mes "叫禗и眤ヘ";
 			next;
-			switch (select(.@destination$+" -> 200z:结束对话")) {
+			switch (select(.@destination$+" -> 200z:挡癸杠")) {
 			case 1:
 				if (Zeny < 200) {
-					mes "[卡普拉 职员]";
-					mes "您没有足够的金币来使用传送服务,";
-					mes "传送到 "+.@destination$+" 需要 200 zeny.";
+					mes "[炊┰ 戮]";
+					mes "眤⊿Τì镑刽ㄓㄏノ肚癳狝叭,";
+					mes "肚癳 "+.@destination$+" 惠璶 200 zeny.";
 					close2;
 					cutin "",255;
 					end;
@@ -393,37 +393,37 @@ OnRecvCastle:
 			}
 		case 3:
 			if (BaseClass != Job_Merchant) {
-				mes "[卡普拉 职员]";
-				mes "很抱歉, 手推车租用服务仅提供给";
+				mes "[炊┰ 戮]";
+				mes "╆簆, も崩óノ狝叭度矗ㄑ倒";
 
 				if (checkre(0))
-					mes "商人系职业!";
+					mes "坝╰戮穨!";
 				else {
-					mes "商人、铁匠、炼金术师、创造者";
-					mes "等商人系职业!";
+					mes "坝臟芬砃畍承硑";
+					mes "单坝╰戮穨!";
 				}
 				close2;
 				cutin "",255;
 				end;
 			}
 			if (checkcart()) {
-				mes "[卡普拉 职员]";
-				mes "你已经租用过手推车啦.";
-				mes "我们不允许同时租用两辆手推车!";
+				mes "[炊┰ 戮]";
+				mes "竒ノ筁も崩ó罢.";
+				mes "иぃす砛ノㄢ进も崩ó!";
 				close2;
 				cutin "",255;
 				end;
 			}
-			mes "[卡普拉 职员]";
-			mes "租用手推车需要 800 Zeny.";
-			mes "您想继续租用手推车吗?";
+			mes "[炊┰ 戮]";
+			mes "ノも崩ó惠璶 800 Zeny.";
+			mes "眤稱膥尿ノも崩ó盾?";
 			next;
-			switch (select("租用手推车:取消")) {
+			switch (select("ノも崩ó:")) {
 			case 1:
 				if (Zeny < 800) {
-					mes "[卡普拉 职员]";
-					mes "很抱歉, 您并没有足够的金钱,";
-					mes "租用手推车需要 800 Zeny.";
+					mes "[炊┰ 戮]";
+					mes "╆簆, 眤⊿Τì镑窥,";
+					mes "ノも崩ó惠璶 800 Zeny.";
 					close2;
 					cutin "",255;
 					end;
@@ -440,16 +440,16 @@ OnRecvCastle:
 				end;
 			}
 		case 4:
-			mes "[卡普拉 职员]";
-			mes "为了让您舒心的使用卡普拉公司的服务, 我们会尽最大努力提升我们的服务质量.";
-			mes "感谢您对我们一如既往的支持.";
+			mes "[炊┰ 戮]";
+			mes "琵眤滴みㄏノ炊┰そ狝叭, и穦荷程矗どи狝叭借秖.";
+			mes "稰谅眤癸и琂┕や.";
 			close2;
 			cutin "",255;
 			end;
 		}
 	}
-	mes "[卡普拉 职员]";
-	mes "我已签订契约专为 ^ff0000"+GetGuildName(.@GID)+"^000000 的公会成员服务, 请使用我们其它地方的卡普拉职员, 如有不便之处敬请见谅.";
+	mes "[炊┰ 戮]";
+	mes "и帽璹盡 ^ff0000"+GetGuildName(.@GID)+"^000000 そ穦Θ狝叭, 叫ㄏノиㄤウよ炊┰戮, Τぃ獽ぇ矪穛叫ǎ教.";
 	close2;
 	cutin "",255;
 	end;
@@ -598,34 +598,34 @@ OnRecvCastle:
 
 	if (.@GID == 0) {
 		mes "["+strnpcinfo(1)+"]";
-		mes "我在此等待我的主人.";
-		mes "勇敢的冒险者啊, 追随你的命运吧...";
+		mes "и单и.";
+		mes "玦幢玙繧摆, 發繦㏑笲...";
 		close;
 	}
 	if (is_guild_leader(.@GID) == false) {
 		mes "["+strnpcinfo(1)+"]";
-		mes "不管你们怎么威胁我, 我只愿意追随我的主人 ^ff0000"+GetGuildMaster(.@GID)+"^000000. 监护人你们在哪里呀?! 赶快把这些无理的家伙们赶走吧!";
+		mes "ぃ恨и, и篅種發繦и ^ff0000"+GetGuildMaster(.@GID)+"^000000. 菏臔ń?! 鱼ер硂ㄇ礚瞶產ル鱼ǐ!";
 		close;
 	}
 	mes "["+strnpcinfo(1)+"]";
-	mes "我的主人 ^ff0000"+strcharinfo(0)+"^000000 啊...";
-	mes "有什么事情请尽管吩咐"+strnpcinfo(1)+", 我将忠诚地完成您托付的全部任务.";
+	mes "и ^ff0000"+strcharinfo(0)+"^000000 摆...";
+	mes "Τぐㄆ薄叫荷恨㎎"+strnpcinfo(1)+", и盢┚港ЧΘ眤Λ场ヴ叭.";
 	next;
-	switch (select("查看公会城堡状况:投资商业发展度:投资防御度:设置 / 召唤监护人:雇用 / 解雇 仓库职员:进入主人房间")) {
+	switch (select("琩そ穦躇猵:щ戈坝穨祇甶:щ戈ň眘:砞竚 / 酬菏臔:侗ノ / 秆侗 畐戮:秈┬丁")) {
 	case 1:
 		mes "["+strnpcinfo(1)+"]";
-		mes "现在向你报告公会城堡的状况.";
+		mes "瞷厨そ穦躇猵.";
 		mes " ";
-		mes "^0000ff现在商业发展度是 "+GetCastleData(strnpcinfo(2),CD_CURRENT_ECONOMY)+".";
+		mes "^0000ff瞷坝穨祇甶琌 "+GetCastleData(strnpcinfo(2),CD_CURRENT_ECONOMY)+".";
 		if (GetCastleData(strnpcinfo(2),CD_INVESTED_ECONOMY)) {
-			mes " 在过去一天之内,投资了 "+GetCastleData(strnpcinfo(2),CD_INVESTED_ECONOMY)+" 次.";
+			mes " 筁ぱぇず,щ戈 "+GetCastleData(strnpcinfo(2),CD_INVESTED_ECONOMY)+" Ω.";
 		}
-		mes "现在的防御度是 "+GetCastleData(strnpcinfo(2),CD_CURRENT_DEFENSE)+".^000000";
+		mes "瞷ň眘琌 "+GetCastleData(strnpcinfo(2),CD_CURRENT_DEFENSE)+".^000000";
 		if (GetCastleData(strnpcinfo(2),CD_INVESTED_DEFENSE)) {
-			mes " ^0000ff- 在过去一天之内,投资了 "+GetCastleData(strnpcinfo(2),CD_INVESTED_DEFENSE)+" 次.^000000";
+			mes " ^0000ff- 筁ぱぇず,щ戈 "+GetCastleData(strnpcinfo(2),CD_INVESTED_DEFENSE)+" Ω.^000000";
 		}
 		mes " ";
-		mes "以上为城堡情况, 报告完毕.";
+		mes "躇薄猵, 厨Ч拨.";
 		close;
 	case 2:
 		set .@Economy,GetCastleData(strnpcinfo(2),CD_CURRENT_ECONOMY);
@@ -654,43 +654,43 @@ OnRecvCastle:
 			set .@eco_invest,.@eco_invest*4;
 		}
 		mes "["+strnpcinfo(1)+"]";
-		mes "提高商业发展度的话, 在公会里生产的物品数量会增加, 为了以后着想的话, 不能不投资啊.";
+		mes "矗蔼坝穨祇甶杠, そ穦ńネ玻珇计秖穦糤, 帝稱杠, ぃぃщ戈摆.";
 		mes " ";
-		mes "照原先的方式, 一天只能投资一次. 但是如果多支付一些金币的话, 那么一天最多可以投资两次.";
+		mes "酚よΑ, ぱщ戈Ω. 琌狦やㄇ刽杠, êぱ程щ戈ㄢΩ.";
 		if (.@Economy >= 100) {
 			mes " ";
-			mes "^ff0000目前商业发展度已经是100了, 你已经不需要再加入任何投资了.^000000";
+			mes "^ff0000ヘ玡坝穨祇甶竒琌100, 竒ぃ惠璶ヴщ戈.^000000";
 			close;
 		}
 		if (GetCastleData(strnpcinfo(2),CD_INVESTED_ECONOMY) >= 2) {
 			mes " ";
-			mes "^ff0000可是你已经在今天之内投资了两次, 不能再投资了.^000000 让发展度赶快上升, 期待着富贵的日子啰.";
+			mes "^ff0000琌竒さぱぇずщ戈ㄢΩ, ぃщ戈.^000000 琵祇甶鱼еど, 戳帝碔禥ら.";
 			close;
 		}
 		if (GetCastleData(strnpcinfo(2),CD_INVESTED_ECONOMY) == 0) {
 			mes " ";
-			mes "现在需要的投资金额是 ^ff0000"+.@eco_invest+"^000000 金币, 请问你要投资吗?";
+			mes "瞷惠璶щ戈肂琌 ^ff0000"+.@eco_invest+"^000000 刽, 叫拜璶щ戈盾?";
 		}
 		else {
 			mes " ";
-			mes "今天已经投资一次了, 还要再投资吗? 继续的话需要 ^ff0000"+.@eco_invest+"^000000 金币噢.";
+			mes "さぱ竒щ戈Ω, 临璶щ戈盾? 膥尿杠惠璶 ^ff0000"+.@eco_invest+"^000000 刽揪.";
 		}
 		next;
-		switch (select("对商业发展度进行投资:取消")) {
+		switch (select("癸坝穨祇甶秈︽щ戈:")) {
 		case 1:
 			if (Zeny < .@eco_invest) {
 				mes "["+strnpcinfo(1)+"]";
-				mes "我的主人, 投资资金似乎不足喔. 等资金足够时在尝试看看.";
+				mes "и, щ戈戈ぃì翅. 单戈ì镑沽刚.";
 				close;
 			}
 			set Zeny, Zeny - .@eco_invest;
 			SetCastleData strnpcinfo(2),CD_INVESTED_ECONOMY,GetCastleData(strnpcinfo(2),CD_INVESTED_ECONOMY)+1;
 			mes "[ "+strnpcinfo(1)+"]";
-			mes "顺利地完成投资了! 期待着我们往后要面临的光辉未来, 明天的话发展度会上升.";
+			mes "抖ЧΘщ戈! 戳帝и┕璶羬谨ゼㄓ, ぱ杠祇甶穦ど.";
 			close;
 		case 2:
 			mes "["+strnpcinfo(1)+"]";
-			mes "我将依照您的吩咐去执行, 我的主人不用太过着急, 慢慢来, 我们会做得很好.";
+			mes "и盢ㄌ酚眤㎎磅︽, иぃノび筁帝, 篊篊ㄓ, и穦暗眔.";
 			close;
 		}
 	case 3:
@@ -720,83 +720,83 @@ OnRecvCastle:
 			set .@def_invest,.@def_invest*4;
 		}
 		mes "["+strnpcinfo(1)+"]";
-		mes "提高防御程度的话, 监护人和华丽金属的耐久度会增加, 考虑到往后的战争, 不得不投资啊.";
+		mes "矗蔼ň眘祘杠, 菏臔㎝地腞妮瑻穦糤, σ納┕驹, ぃ眔ぃщ戈摆.";
 		mes " ";
-		mes "照原先的方式, 一天只能投资一次. 但是如果多支付一些金币的话, 那么一天最多可以投资两次.";
+		mes "酚よΑ, ぱщ戈Ω. 琌狦やㄇ刽杠, êぱ程щ戈ㄢΩ.";
 		if (.@Defence >= 100) {
 			mes " ";
-			mes "^ff0000目前防御度以经是100了,你已经不需要再加入任何投资了.^000000";
+			mes "^ff0000ヘ玡ň眘竒琌100,竒ぃ惠璶ヴщ戈.^000000";
 			close;
 		}
 		if (GetCastleData(strnpcinfo(2),CD_INVESTED_DEFENSE) >= 2) {
 			mes " ";
-			mes "^ff0000可是你已经在今天之内投资了两次, 不能再投资了.^000000 让防御度赶快上升, 期待着富贵的日子啰.";
+			mes "^ff0000琌竒さぱぇずщ戈ㄢΩ, ぃщ戈.^000000 琵ň眘鱼еど, 戳帝碔禥ら.";
 			close;
 		}
 		if (GetCastleData(strnpcinfo(2),CD_INVESTED_DEFENSE) == 0) {
 			mes " ";
-			mes "现在需要的投资金额是 ^ff0000"+.@def_invest+"^000000 金币, 请问你要投资吗?";
+			mes "瞷惠璶щ戈肂琌 ^ff0000"+.@def_invest+"^000000 刽, 叫拜璶щ戈盾?";
 		}
 		else {
 			mes " ";
-			mes "今天已经投资一次了, 还要再投资吗? 继续的话需要 ^ff0000"+.@def_invest+"^000000 金币噢.";
+			mes "さぱ竒щ戈Ω, 临璶щ戈盾? 膥尿杠惠璶 ^ff0000"+.@def_invest+"^000000 刽揪.";
 		}
 		next;
-		switch (select("对城堡防御度进行投资:取消")) {
+		switch (select("癸躇ň眘秈︽щ戈:")) {
 		case 1:
 			if (Zeny < .@def_invest) {
 				mes "["+strnpcinfo(1)+"]";
-				mes "我的主人, 投资资金似乎不足喔. 等资金足够时在尝试看看.";
+				mes "и, щ戈戈ぃì翅. 单戈ì镑沽刚.";
 				close;
 			}
 			set Zeny, Zeny - .@def_invest;
 			SetCastleData strnpcinfo(2),CD_INVESTED_DEFENSE,GetCastleData(strnpcinfo(2),CD_INVESTED_DEFENSE)+1;
 			mes "[ "+strnpcinfo(1)+"]";
-			mes "顺利地完成投资了! 期待着我们往后要面临的光辉未来, 明天的话防御度会上升.";
+			mes "抖ЧΘщ戈! 戳帝и┕璶羬谨ゼㄓ, ぱ杠ň眘穦ど.";
 			close;
 		case 2:
 			mes "["+strnpcinfo(1)+"]";
-			mes "我将依照您的吩咐去执行, 我的主人不用太过着急, 慢慢来, 我们会做得很好.";
+			mes "и盢ㄌ酚眤㎎磅︽, иぃノび筁帝, 篊篊ㄓ, и穦暗眔.";
 			close;
 		}
 	case 4:
 		mes "["+strnpcinfo(1)+"]";
-		mes "请问你要召唤监护人吗? 监护人会成为我们城堡的忠诚守护者.";
-		mes "请选择要召唤的监护人类型.";
+		mes "叫拜璶酬菏臔盾? 菏臔穦Θи躇┚港臔.";
+		mes "叫匡拒璶酬菏臔摸.";
 		next;
 		for( set .@i, 0; .@i <= 7 ; set .@i, .@i+1 ) {
-			if (.@guardiantype[.@i] == 1) { set .@type$,"剑士 监护人"; }
-			else if (.@guardiantype[.@i] == 2) { set .@type$,"弓箭 监护人"; }
-			else { set .@type$,"骑士 监护人"; }
+			if (.@guardiantype[.@i] == 1) { set .@type$,"糃 菏臔"; }
+			else if (.@guardiantype[.@i] == 2) { set .@type$,"絙 菏臔"; }
+			else { set .@type$,"肕 菏臔"; }
 			if (guardianinfo(strnpcinfo(2),.@i,0)) {
-				setarray .@gname$[.@i], .@type$ + " - 已召唤 (" + guardianinfo(strnpcinfo(2),.@i,2) + "/" + guardianinfo(strnpcinfo(2),.@i,1) + ")";
+				setarray .@gname$[.@i], .@type$ + " - 酬 (" + guardianinfo(strnpcinfo(2),.@i,2) + "/" + guardianinfo(strnpcinfo(2),.@i,1) + ")";
 			}
 			else {
-				setarray .@gname$[.@i], .@type$ + " - 未召唤";
+				setarray .@gname$[.@i], .@type$ + " - ゼ酬";
 			}
 		}
 		set .@menu$,.@gname$[0]+":"+.@gname$[1]+":"+.@gname$[2]+":"+.@gname$[3]+":"+.@gname$[4]+":"+.@gname$[5]+":"+.@gname$[6]+":"+.@gname$[7];
 		set .@GDnum,select(.@menu$)+9;
 		mes "["+strnpcinfo(1)+"]";
-		mes "确定要召唤已选择的监护人吗? 这将需要花费您 10,000 金币.";
+		mes "谔﹚璶酬匡拒菏臔盾? 硂盢惠璶禣眤 10,000 刽.";
 		next;
-		switch (select("召唤:取消")) {
+		switch (select("酬:")) {
 		case 1:
 			if (getgdskilllv(.@GID,10002) == 0) {
 				mes "["+strnpcinfo(1)+"]";
-				mes "我的主人, 如果想要设置监护人的话,";
-				mes "请先学会公会技能中 ^FF0000研究监护人^000000 吧.";
+				mes "и, 狦稱璶砞竚菏臔杠,";
+				mes "叫厩穦そ穦мい ^FF0000╯菏臔^000000 .";
 				close;
 			}
 			if (GetCastleData(strnpcinfo(2),.@GDnum) == 1) {
 				mes "["+strnpcinfo(1)+"]";
-				mes "你选择监护人已经召唤过了, 不能再召唤了, 主人.";
+				mes "匡拒菏臔竒酬筁, ぃ酬, .";
 				close;
 			}
 			if (Zeny < 10000) {
 				mes "["+strnpcinfo(1)+"]";
-				mes "我的主人, 真是遗憾啊.";
-				mes "你没有足够的资金可以召唤监护人.";
+				mes "и, 痷琌框狙摆.";
+				mes "⊿Τì镑戈酬菏臔.";
 				close;
 			}
 			set Zeny, Zeny - 10000;
@@ -805,109 +805,109 @@ OnRecvCastle:
 			if (.@guardiantype[.@UseGID] == 1) { set .@type,1287; }
 			else if (.@guardiantype[.@UseGID] == 2) { set .@type,1285; }
 			else { set .@type,1286; }
-			guardian strnpcinfo(2),.@guardianposx[.@UseGID],.@guardianposy[.@UseGID],strmobinfo(2,.@type),.@type,"城堡监护人#"+strnpcinfo(2)+"::OnGuardianDied",.@UseGID;
+			guardian strnpcinfo(2),.@guardianposx[.@UseGID],.@guardianposy[.@UseGID],strmobinfo(2,.@type),.@type,"躇菏臔#"+strnpcinfo(2)+"::OnGuardianDied",.@UseGID;
 			mes "["+strnpcinfo(1)+"]";
-			mes "我的主人啊, 已经完成监护人召唤了.";
-			mes "现在开始逐渐召唤, 它们是保护我们城堡的强壮军队.";
+			mes "и摆, 竒ЧΘ菏臔酬.";
+			mes "瞷秨﹍硋亥酬, ウ琌玂臔и躇眏Ё瓁钉.";
 			close;
 		case 2:
 			mes "["+strnpcinfo(1)+"]";
-			mes "我已经按照你的吩咐做了.";
-			mes "我的主人啊, 如果资金上宽裕的话, 一定要召唤监护人, 这是较好的方案.";
+			mes "и竒酚㎎暗.";
+			mes "и摆, 狦戈糴肝杠, ﹚璶酬菏臔, 硂琌耕よ.";
 			close;
 		}
 	case 5:
 		if (GetCastleData(strnpcinfo(2),CD_ENABLED_KAFRA) == 1) {
 			mes "["+strnpcinfo(1)+"]";
-			mes "我们已经雇佣了卡普拉员工... 你想解雇卡普拉员工吗?";
+			mes "и竒侗炊┰... 稱秆侗炊┰盾?";
 			next;
-			switch (select("解雇:取消")) {
+			switch (select("秆侗:")) {
 			case 1:
 				cutin "kafra_01",2;
-				mes "[卡普拉 职员]";
-				mes "我做错了什么事吗? 如果我有做错事的话, 能请您原谅我, 再给我一次机会吗...";
+				mes "[炊┰ 戮]";
+				mes "и暗岿ぐㄆ盾? 狦иΤ暗岿ㄆ杠, 叫眤教и, 倒иΩ审穦盾...";
 				next;
-				switch (select("解雇:取消")) {
+				switch (select("秆侗:")) {
 				case 1:
-					mes "[卡普拉 职员]";
-					mes "不能够继续为您服务真是我最大的遗憾!";
+					mes "[炊┰ 戮]";
+					mes "ぃ镑膥尿眤狝叭痷琌и程框狙!";
 					next;
 					cutin "",255;
 					break;
 				case 2:
-					mes "[卡普拉 职员]";
-					mes "我会努力勤奋的为您服务的!";
+					mes "[炊┰ 戮]";
+					mes "и穦对灸眤狝叭!";
 					cutin "",255;
 					close;
 				}
 				break;
 			case 2:
 				mes "["+strnpcinfo(1)+"]";
-				mes "我的主人, 恕我冒昧的提出建议.";
-				mes "我想我们应该留下这位卡普拉职员, 因为她已经竭尽所能地为我们服务了.";
+				mes "и, и玙琋矗某.";
+				mes "и稱и莱赣痙硂炊┰戮, 竒很荷┮и狝叭.";
 				close;
 			}
-			disablenpc "卡普拉 职员#"+strnpcinfo(2);
+			disablenpc "炊┰ 戮#"+strnpcinfo(2);
 			SetCastleData strnpcinfo(2),CD_ENABLED_KAFRA,0;
 			mes "["+strnpcinfo(1)+"]";
 			mes "....";
-			mes "卡普拉职员已经解雇了... 不过为了辛苦的会员着想, 我想雇用卡普拉职员才是上策啊.";
+			mes "炊┰戮竒秆侗... ぃ筁ǒ璚穦帝稱, и稱侗ノ炊┰戮琌郸摆.";
 			close;
 		}
 		mes "["+strnpcinfo(1)+"]";
-		mes "当和卡普拉公司订契约后, 就可以在城堡里面雇佣卡普拉职员.";
-		mes "^ff0000想要雇用的话,需要 10,000 金币. ";
+		mes "讽㎝炊┰そ璹, 碞躇ń侗炊┰戮.";
+		mes "^ff0000稱璶侗ノ杠,惠璶 10,000 刽. ";
 		next;
-		switch (select("雇佣:取消")) {
+		switch (select("侗:")) {
 		case 1:
 			if (getgdskilllv(.@GID,10001) == 0) {
 				mes "["+strnpcinfo(1)+"]";
-				mes "主人 ,如今还没跟卡普拉总公司订契约状况 ,所以还不能雇用卡普拉职员 ,假如想要跟卡普拉总公司签订契约的话 ,先学会公会技能中 ^FF0000和卡普拉订契约^000000的技能吧.";
+				mes " ,さ临⊿蛤炊┰羆そ璹猵 ,┮临ぃ侗ノ炊┰戮 ,安稱璶蛤炊┰羆そ帽璹杠 ,厩穦そ穦мい ^FF0000㎝炊┰璹^000000м.";
 				close;
 			}
 			if (Zeny < 10000) {
 				mes "["+strnpcinfo(1)+"]";
-				mes "主人 ,你没有足够的资金可以雇用卡普拉职员.";
+				mes " ,⊿Τì镑戈侗ノ炊┰戮.";
 				close;
 			}
 			set Zeny, Zeny - 10000;
-			enablenpc "卡普拉 职员#"+strnpcinfo(2);
+			enablenpc "炊┰ 戮#"+strnpcinfo(2);
 			SetCastleData strnpcinfo(2),CD_ENABLED_KAFRA,1;
 			mes "["+strnpcinfo(1)+"]";
-			mes "成功的和卡普拉总公司签订契约了, 您雇用了一位卡普拉职员.";
+			mes "Θ㎝炊┰羆そ帽璹, 眤侗ノ炊┰戮.";
 			next;
 			cutin "kafra_01",2;
-			mes "[卡普拉 职员]";
-			mes "你好吗? 我是总公司派来的卡普拉职员.";
-			mes "我将会竭尽所能地为您服务.";
+			mes "[炊┰ 戮]";
+			mes "盾? и琌羆そㄓ炊┰戮.";
+			mes "и盢穦很荷┮眤狝叭.";
 			next;
 			cutin "",255;
 			mes "["+strnpcinfo(1)+"]";
-			mes "雇用的卡普拉职员将有 ^FF0000一个月的时间^000000在此服务.";
-			mes "时间到了之后必须重新签订契约.";
+			mes "侗ノ炊┰戮盢Τ ^FF0000る丁^000000狝叭.";
+			mes "丁ぇゲ斗穝帽璹.";
 			close;
 		case 2:
 			mes "["+strnpcinfo(1)+"]";
-			mes "我已经按照你的吩咐做了, 不过也要为了辛苦的会员着想, 早日雇用卡普拉职员为上策啊.";
+			mes "и竒酚㎎暗, ぃ筁璶ǒ璚穦帝稱, Νら侗ノ炊┰戮郸摆.";
 			close;
 		}
 	case 6:
 		mes "["+strnpcinfo(1)+"]";
-		mes "要到我们生产珍贵物品房间吗?";
-		mes "那个地方是为了我们的主人设置的, 专属于你的地方... 除了你之外, 其它人都不能进入.";
+		mes "璶иネ玻禥珇┬丁盾?";
+		mes "êよ琌и砞竚, 盡妮よ... 埃ぇ, ㄤウ常ぃ秈.";
 		next;
-		switch (select("要进入会长的房间:取消")) {
+		switch (select("璶秈穦┬丁:")) {
 		case 1:
 			mes "["+strnpcinfo(1)+"]";
-			mes "我会送你到秘密通道那里, 请跟我来.";
-			mes "回来的时候按下秘密按钮即可.";
+			mes "и穦癳盞硄笵êń, 叫蛤иㄓ.";
+			mes "ㄓ盞秙.";
 			close2;
 			warp strnpcinfo(2),.@masterroom[0],.@masterroom[1];
 			end;
 		case 2:
 			mes "["+strnpcinfo(1)+"]";
-			mes "生产品一天只生产一次... 如没有即时收走的话, 明天就不会累积生产了.";
-			mes "为了公会的发展, 请尽量去收取啊.";
+			mes "ネ玻珇ぱネ玻Ω... ⊿ΤΜǐ杠, ぱ碞ぃ穦仓縩ネ玻.";
+			mes "そ穦祇甶, 叫荷秖Μ摆.";
 			close;
 		}
 	}
@@ -920,8 +920,8 @@ OnRecvCastle:
 	set .@GID,GetCastleData(strnpcinfo(2),CD_GUILD_ID);
 
 	if (.@GID == 0) {
-		mes "[响亮的声音]";
-		mes "'克服严峻考验展现过人的勇气... 并且继续迈向另一个考验之路.'";
+		mes "[臫獹羘]";
+		mes "'狝腨甿σ喷甶瞷筁玦蒩... 膥尿邻σ喷ぇ隔.'";
 		close;
 	}
 
@@ -962,20 +962,20 @@ OnRecvCastle:
 		end;
 	}
 
-	mes "[响亮的声音]";
-	mes "'只有勇气的主人,才能接受考验啊.'";
+	mes "[臫獹羘]";
+	mes "'Τ玦蒩,钡σ喷摆.'";
 	next;
 	mes " ";
-	mes "有个小小的手执 ,您要拉动吗?";
+	mes "Τも磅 ,眤璶┰笆盾?";
 	next;
-	if(select("- 我要拉:- 我不要拉.") == 1) {
+	if(select("- и璶┰:- иぃ璶┰.") == 1) {
 		if (getcharid(2) == .@GID) {
 			close2;
 			warp .@destination$,.@coordinates[0],.@coordinates[1];
 			end;
 		}
 		mes " ";
-		mes "什么都没有发生.";
+		mes "ぐ常⊿Τ祇ネ.";
 		close;
 	}
 	close;
@@ -1113,7 +1113,7 @@ OnSpawnGuardians:
 		else if (.@guardiantype[.@i] == 2) { set .@type,1285; }
 		else { set .@type,1286; }
 		if (GetCastleData(strnpcinfo(2),.@UseGID)) {
-			guardian strnpcinfo(2),.@guardianposx[.@i],.@guardianposy[.@i],strmobinfo(2,.@type),.@type,"城堡监护人#"+strnpcinfo(2)+"::OnGuardianDied",.@i;
+			guardian strnpcinfo(2),.@guardianposx[.@i],.@guardianposy[.@i],strmobinfo(2,.@type),.@type,"躇菏臔#"+strnpcinfo(2)+"::OnGuardianDied",.@i;
 		}
 	}
 	end;
@@ -1268,7 +1268,7 @@ OnClock0001:
 		set .@box,1 << .@i;
 		// Spawn or do not spawn chests if one already exists.
 		if ((getd("$@"+strnpcinfo(2)+"_treasure") & .@box) == 0) {
-			monster strnpcinfo(2),.@treasurex[.@i],.@treasurey[.@i],"公会宝箱",.@boxid,1,"公会宝箱#"+strnpcinfo(2)+"::OnTreasureDied"+.@i;
+			monster strnpcinfo(2),.@treasurex[.@i],.@treasurey[.@i],"そ穦腳絚",.@boxid,1,"そ穦腳絚#"+strnpcinfo(2)+"::OnTreasureDied"+.@i;
 			setd "$@"+strnpcinfo(2)+"_treasure",getd("$@"+strnpcinfo(2)+"_treasure") | .@box;
 		}
 	}

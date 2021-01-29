@@ -18,60 +18,60 @@
 
 // Instance Creation :: ma_baku
 //============================================================
-ma_scene01,174,179,4	script	酸奶	541,{
+ma_scene01,174,179,4	script	荒イ	541,{
 	disable_items;
 	if (checkweight(1201,1) == 0) {
-		mes "您携带的物品种类太多, 请稍做处理.";
+		mes "眤拟盿珇销摸び, 叫祔暗矪瞶.";
 		close;
 	}
 	if (MaxWeight - Weight < 10000) {
-		mes "您的负重不足, 请稍做处理.";
+		mes "眤璽ぃì, 叫祔暗矪瞶.";
 		close;
 	}
 	if (BaseLevel < 140) {
-		mes "[酸奶]";
-		mes "嘿. 这地方对你来说太危险了. 你会丧命的. 立即离开这里回镇上!";
+		mes "[荒イ]";
+		mes "糑. 硂よ癸ㄓ弧び繧. 穦赤㏑. ミ置秨硂ń马!";
 		close;
 	}
 	if (malaya_bakona1 < 7 && malaya_bakona2 < 15) {
-		mes "[酸奶]";
-		mes "我们都会丧命在食月暴龙手上的. 啊, 我们必须杀了它, 但不幸的是我们都没有做好准备.";
+		mes "[荒イ]";
+		mes "и常穦赤㏑る忌纒も. 摆, иゲ斗炳ウ, ぃ┋琌и常⊿Τ暗称.";
 		close;
 	}
 
 	set .@party_id,getcharid(1);
-	set .@md_name$, "食月暴龙湖泊";
+	set .@md_name$, "る忌纒打獃";
 
 	set .@baku_time, checkquest(12278,PLAYTIME);
 	if (.@baku_time == -1) {
 		if (checkquest(12279) == -1) setquest 12279;
 	}
 	if (!.@party_id) {
-		mes "[酸奶]";
-		mes "怎么你没有其他伙伴, 难道你想一个人去和食月暴龙干架? 组织点人手再来吧.";
+		mes "[荒イ]";
+		mes "⊿Τㄤル︸, 螟笵稱㎝る忌纒琜? 舱麓翴もㄓ.";
 		close;
 	}
 	if (.@baku_time == -1) {
 		if (is_party_leader() == true) {
-			mes "[酸奶]";
-			mes "你是猎杀暴龙队伍的队长吗? 这里几乎没有任何正常的路可以到那里, 我们会用绳索把你们吊下去, 没问题吧?";
+			mes "[荒イ]";
+			mes "琌聐炳忌纒钉ヮ钉盾? 硂ń⊿Τヴタ盽隔êń, и穦ノ梅р, ⊿拜肈?";
 			next;
-			set .@i, select("- 请制作吊绳.:- 我现在要下去了.:- 取消.");
+			set .@i, select("- 叫梅.:- и瞷璶.:- .");
 		} else {
-			mes "[酸奶]";
-			mes "你们是来猎杀暴龙的. 队长请出来和我一起编织下吊绳吧.";
+			mes "[荒イ]";
+			mes "琌ㄓ聐炳忌纒. 钉叫ㄓ㎝и癬絪麓梅.";
 			next;
-			set .@i, select(":- 我现在要下去了.:- 取消.");
+			set .@i, select(":- и瞷璶.:- .");
 		}
 		switch(.@i) {
 		case 1:
 			if (instance_create(.@md_name$) < 0) {
-				mes "[酸奶]";
-				mes "呃, 我不小心让它掉下去了. 我必须做个新的.";
+				mes "[荒イ]";
+				mes ", иぃみ琵ウ奔. иゲ斗暗穝.";
 				close;
 			}
-			mes "[酸奶]";
-			mes "我正在做新绳子呢, 你得等我做好了才能去了.";
+			mes "[荒イ]";
+			mes "иタ暗穝梅㎡, 眔单и暗.";
 
 			close;
 		case 2:
@@ -89,7 +89,7 @@ ma_scene01,174,179,4	script	酸奶	541,{
 				mes "Civilians cannot enter.";
 				close;
 			case IE_OK:
-				mapannounce "ma_scene01",""+strcharinfo(0)+" 率领小队 "+getpartyname(.@party_id)+" 进入了副本, "+.@md_name$+".",bc_map,"0x00ff99"; //FW_NORMAL 12 0 0
+				mapannounce "ma_scene01",""+strcharinfo(0)+" 瞯烩钉 "+getpartyname(.@party_id)+" 秈捌セ, "+.@md_name$+".",bc_map,"0x00ff99"; //FW_NORMAL 12 0 0
 				setquest 12278;
 				//warp "1@ma_b",64,51;
 				close;
@@ -98,21 +98,21 @@ ma_scene01,174,179,4	script	酸奶	541,{
 			close;
 		}
 	} else if (.@baku_time == 0 || .@baku_time == 1) {
-		mes "[酸奶]";
-		mes "这里唯一能用的交通工具吊绳, 已经断掉了. 我们正在重做并清理附近的战场, 你们请稍候再来.";
+		mes "[荒イ]";
+		mes "硂ń斑ノユ硄ㄣ梅, 竒耞奔. иタ暗睲瞶驹初, 叫祔ㄓ.";
 		close;
 	} else if (.@baku_time == 2) {
-		mes "[酸奶]";
-		mes "附近全部清扫干净了. 等吊绳做好你们就能够再次进入.";
+		mes "[荒イ]";
+		mes "场睲苯瞓. 单梅暗碞镑Ω秈.";
 		erasequest 12278;
 		close;
 	}
 }
 
-sec_in02,26,26,4	script	食月暴龙湖泊	541,{
+sec_in02,26,26,4	script	る忌纒打獃	541,{
 	callfunc "F_GM_NPC";
-	mes "[酸奶]";
-	mes "我叫酸奶.";
+	mes "[荒イ]";
+	mes "и荒イ.";
 	if (callfunc("F_GM_NPC",1854,0) == 1) {
 		erasequest 12278;
 		erasequest 12279;
@@ -124,35 +124,35 @@ sec_in02,26,26,4	script	食月暴龙湖泊	541,{
 
 // Instance Scripts :: in_baku01
 //============================================================
-1@ma_b,62,52,4	script	酸奶#nf	541,{
-	mes "[酸奶]";
-	mes "嘿嘿, 我也要加入捕猎队伍, 不过我只会在你们后面指挥不会冲锋陷阵的.";
+1@ma_b,62,52,4	script	荒イ#nf	541,{
+	mes "[荒イ]";
+	mes "糑糑, и璶聐钉ヮ, ぃ筁и穦揣ぃ穦≧網炒皚.";
 	next;
-	mes "[酸奶]";
-	mes "暴龙有时会变的很无敌. 当碰到这种情况时, 仔细听我的指导. 只要相信我, 一切都会好.";
+	mes "[荒イ]";
+	mes "忌纒Τ穦跑礚寄. 讽窱硂销薄猵, 灿и旧. 璶獺и, ち常穦.";
 	next;
 	if (is_party_leader() == true) {
-		mes "[酸奶]";
-		mes "现在我会把暴龙给弄出湖水.";
+		mes "[荒イ]";
+		mes "瞷и穦р忌纒倒打.";
 		next;
-		switch(select("- 等等! 我还没准备好!:- 上吧!")) {
+		switch(select("- 单单! и临⊿称!:- !")) {
 		case 1:
-			mes "[酸奶]";
-			mes "噢... 好吧... 准备好就通知我.";
+			mes "[荒イ]";
+			mes "揪... ... 称碞硄и.";
 			close;
 		case 2:
-			mes "[酸奶]";
-			mes "一会我会洒一些 Albopal 到湖水里.";
+			mes "[荒イ]";
+			mes "穦и穦蟬ㄇ Albopal 打ń.";
 			next;
-			mes "[酸奶]";
-			mes "一旦暴龙闻到这个味道, 它就会从湖里出来...";
+			mes "[荒イ]";
+			mes "ス忌纒籇硂笵, ウ碞穦眖打ńㄓ...";
 			donpcevent instance_npcname("#Bakonawan1")+"::OnStart";
-			disablenpc instance_npcname("酸奶#nf");
+			disablenpc instance_npcname("荒イ#nf");
 			close;
 		}
 	} else {
-		mes "[酸奶]";
-		mes "我洒的 Alpopal 会让暴龙变的很疯狂. 暴龙的肉可是蕴含大量蛋白质的好东西.";
+		mes "[荒イ]";
+		mes "и蟬 Alpopal 穦琵忌纒跑浩╣. 忌纒ψ琌沫秖矹フ借狥﹁.";
 		close;
 	}
 }
@@ -165,8 +165,8 @@ OnInstanceInit:
 OnStart:
 	enablenpc instance_npcname("#Bakonawan1");
 	set .@map$, instance_mapname("1@ma_b");
-	mapannounce .@map$,"酸奶: 我看到它浮出水面了! 攻击!!!",bc_map,"0x00ffff"; //FW_NORMAL 15 0 0
-	monster .@map$,78,81,"食月暴龙",2320,1,instance_npcname("#Bakonawan1")+"::OnMyMobDead"; //original: (78,83)
+	mapannounce .@map$,"荒イ: иウ疊! ю阑!!!",bc_map,"0x00ffff"; //FW_NORMAL 15 0 0
+	monster .@map$,78,81,"る忌纒",2320,1,instance_npcname("#Bakonawan1")+"::OnMyMobDead"; //original: (78,83)
 	initnpctimer;
 	end;
 OnFail:
@@ -192,20 +192,20 @@ OnTimer420000:	callsub OnAnnounce,"3 minutes";
 OnTimer480000:	callsub OnAnnounce,"2 minutes";
 OnTimer540000:	callsub OnAnnounce,"1 minute";
 OnTimer570000:
-	mapannounce instance_mapname("1@ma_b"),"时间限制 : 30 秒",bc_map,"0xff4400"; //FW_NORMAL 18 0 0
+	mapannounce instance_mapname("1@ma_b"),"丁 : 30 ",bc_map,"0xff4400"; //FW_NORMAL 18 0 0
 	donpcevent instance_npcname("#SummonPuppetsn1")+"::OnStart";
 	end;
 OnTimer600000:
 	set .@map$, instance_mapname("1@ma_b");
-	mapannounce .@map$,"暴龙逃脱进入湖底了.",bc_map,"0xffff00"; //FW_NORMAL 20 0 0
-	donpcevent instance_npcname("酸奶#Fail")+"::OnStart";
+	mapannounce .@map$,"忌纒発叉秈打┏.",bc_map,"0xffff00"; //FW_NORMAL 20 0 0
+	donpcevent instance_npcname("荒イ#Fail")+"::OnStart";
 	donpcevent instance_npcname("#Bakonawan1")+"::OnFail";
 	killmonster .@map$,instance_npcname("#Bakonawan1")+"::OnMyMobDead";
 	stopnpctimer;
 	disablenpc instance_npcname("#Bakonawan1");
 	end;
 OnAnnounce:
-	mapannounce instance_mapname("1@ma_b"),"时间限制 : "+getarg(0),bc_map,"0xff4400"; //FW_NORMAL 15 0 0
+	mapannounce instance_mapname("1@ma_b"),"丁 : "+getarg(0),bc_map,"0xff4400"; //FW_NORMAL 15 0 0
 	donpcevent instance_npcname("#SummonPuppetsn1")+"::OnStart";
 	end;
 }
@@ -231,9 +231,9 @@ OnTimer5000:
 	for(set .@i,0; .@i<9; set .@i,.@i+1) {
 		set .@rand, rand(1,10);
 		if (.@rand > 7)
-			monster .@map$,.@x[.@i],.@y[.@i],"食月暴龙的意志",2337,1,instance_npcname("#SummonPuppetsn1")+"::OnMyMobDead";
+			monster .@map$,.@x[.@i],.@y[.@i],"る忌纒種в",2337,1,instance_npcname("#SummonPuppetsn1")+"::OnMyMobDead";
 		else if (.@rand < 4)
-			monster .@map$,.@x[.@i],.@y[.@i],"食月暴龙的意志",2343,1,instance_npcname("#SummonPuppetsn1")+"::OnMyMobDead";
+			monster .@map$,.@x[.@i],.@y[.@i],"る忌纒種в",2343,1,instance_npcname("#SummonPuppetsn1")+"::OnMyMobDead";
 	}
 	end;
 OnTimer50000:
@@ -255,16 +255,16 @@ OnStart:
 	initnpctimer;
 	end;
 OnTimer100:
-	mapannounce instance_mapname("1@ma_b"),"酸奶: 很好! 暴龙躲在湖底. 它在尝试吞掉月亮.",bc_map,"0x00ffff"; //FW_NORMAL 15 0 0
+	mapannounce instance_mapname("1@ma_b"),"荒イ: ! 忌纒跟打┏. ウ沽刚奔る獹.",bc_map,"0x00ffff"; //FW_NORMAL 15 0 0
 	end;
 OnTimer5000:
-	mapannounce instance_mapname("1@ma_b"),"酸奶: 我们必须制造噪音, 用上锅子和铜锣. 不能让它专注在食月上面!",bc_map,"0x00ffff"; //FW_NORMAL 15 0 0
+	mapannounce instance_mapname("1@ma_b"),"荒イ: иゲ斗硑靖, ノ羚㎝簧苧. ぃ琵ウ盡猔る!",bc_map,"0x00ffff"; //FW_NORMAL 15 0 0
 	end;
 OnTimer10000:
-	mapannounce instance_mapname("1@ma_b"),"酸奶: 不用去打它, 就算它浮在湖面上也不用管. 专心制造噪音!",bc_map,"0x00ffff"; //FW_NORMAL 15 0 0
+	mapannounce instance_mapname("1@ma_b"),"荒イ: ぃノゴウ, 碞衡ウ疊打ぃノ恨. 盡み硑靖!",bc_map,"0x00ffff"; //FW_NORMAL 15 0 0
 	end;
 OnTimer15000:
-	mapannounce instance_mapname("1@ma_b"),"任务 - 在湖的左右两侧, 分别敲坏2个锅子和2个铜锣.",bc_map,"0xff3300"; //FW_NORMAL 15 0 0
+	mapannounce instance_mapname("1@ma_b"),"ヴ叭 - 打オㄢ凹, だ篤Д2羚㎝2簧苧.",bc_map,"0xff3300"; //FW_NORMAL 15 0 0
 	donpcevent instance_npcname("#Bakonawan2")+"::OnStart";
 	stopnpctimer;
 	disablenpc instance_npcname("#BakonawaDeadn1");
@@ -280,10 +280,10 @@ OnStart:
 	enablenpc instance_npcname("#Bakonawan2");
 	set .@label$, instance_npcname("#Bakonawan2")+"::OnMyMobDead";
 	set .@map$, instance_mapname("1@ma_b");
-	monster .@map$,95,98,"锅子",2328,1,.@label$;
-	monster .@map$,60,98,"锅子",2328,1,.@label$;
-	monster .@map$,97,104,"铜锣",2328,1,.@label$;
-	monster .@map$,58,104,"铜锣",2328,1,.@label$;
+	monster .@map$,95,98,"羚",2328,1,.@label$;
+	monster .@map$,60,98,"羚",2328,1,.@label$;
+	monster .@map$,97,104,"簧苧",2328,1,.@label$;
+	monster .@map$,58,104,"簧苧",2328,1,.@label$;
 	donpcevent instance_npcname("#Bakonawan2-1")+"::OnStart";
 	initnpctimer;
 	end;
@@ -295,7 +295,7 @@ OnMyMobDead:
 		stopnpctimer;
 		disablenpc instance_npcname("#Bakonawan2");
 	} else
-		mapannounce .@map$,"酸奶: Good! "+.@mob_dead_num+" left to go!",bc_map,"0x00ffff"; //FW_NORMAL 15 0 0
+		mapannounce .@map$,"荒イ: Good! "+.@mob_dead_num+" left to go!",bc_map,"0x00ffff"; //FW_NORMAL 15 0 0
 	 end;
 OnTimer1000:	callsub OnAnnounce,"5 minutes",15,1;
 OnTimer60000:	callsub OnAnnounce,"4 minutes",15,1;
@@ -312,8 +312,8 @@ OnTimer298000:	callsub OnAnnounce,"2 seconds",19,0;
 OnTimer299000:	callsub OnAnnounce,"1 second",20,0;
 OnTimer300000:
 	set .@map$, instance_mapname("1@ma_b");
-	mapannounce .@map$,"食月暴龙逃进了湖底.",bc_map,"0xffff00"; //FW_NORMAL 20 0 0
-	donpcevent instance_npcname("酸奶#Fail")+"::OnStart";
+	mapannounce .@map$,"る忌纒発秈打┏.",bc_map,"0xffff00"; //FW_NORMAL 20 0 0
+	donpcevent instance_npcname("荒イ#Fail")+"::OnStart";
 	donpcevent instance_npcname("#Bakonawan2-1")+"::OnFail";
 	killmonster .@map$,instance_npcname("#Bakonawan2")+"::OnMyMobDead";
 	stopnpctimer;
@@ -332,7 +332,7 @@ OnInstanceInit:
 	end;
 OnStart:
 	enablenpc instance_npcname("#Bakonawan2-1");
-	monster instance_mapname("1@ma_b"),78,81,"愤怒的食月暴龙",2321,1,instance_npcname("#Bakonawan2-1")+"::OnMyMobDead"; //original: (78,93)
+	monster instance_mapname("1@ma_b"),78,81,"极る忌纒",2321,1,instance_npcname("#Bakonawan2-1")+"::OnMyMobDead"; //original: (78,93)
 	end;
 OnFail:
 	killmonster instance_mapname("1@ma_b"),instance_npcname("#Bakonawan2-1")+"::OnMyMobDead";
@@ -343,13 +343,13 @@ OnEnd:
 	initnpctimer;
 	end;
 OnTimer1000:
-	mapannounce instance_mapname("1@ma_b"),"酸奶: 它又逃进湖里了. 结束了吗?",bc_map,"0x00ffff"; //FW_NORMAL 15 0 0
+	mapannounce instance_mapname("1@ma_b"),"荒イ: ウ発秈打ń. 挡盾?",bc_map,"0x00ffff"; //FW_NORMAL 15 0 0
 	end;
 OnTimer5000:
-	mapannounce instance_mapname("1@ma_b"),"酸奶: 嗯! 有什么东西正在水下迅速上浮! 暴... 暴龙来了!!",bc_map,"0x00ffff"; //FW_NORMAL 15 0 0
+	mapannounce instance_mapname("1@ma_b"),"荒イ: 垛! Τぐ狥﹁タǔ硉疊! 忌... 忌纒ㄓ!!",bc_map,"0x00ffff"; //FW_NORMAL 15 0 0
 	end;
 OnTimer10000:
-	mapannounce instance_mapname("1@ma_b"),"任务 - 消灭变得狂暴的食月暴龙.",bc_map,"0xff3300"; //FW_NORMAL 15 0 0
+	mapannounce instance_mapname("1@ma_b"),"ヴ叭 - 防跑眔╣忌る忌纒.",bc_map,"0xff3300"; //FW_NORMAL 15 0 0
 	donpcevent instance_npcname("#Bakonawan3")+"::OnStart";
 	stopnpctimer;
 	disablenpc instance_npcname("#Bakonawan2-1");
@@ -366,15 +366,15 @@ OnInstanceInit:
 OnStart:
 	enablenpc instance_npcname("#Bakonawan3");
 	initnpctimer;
-	monster instance_mapname("1@ma_b"),78,81,"愤怒的食月暴龙",2322,1,instance_npcname("#Bakonawan3")+"::OnMyMobDead"; //original: (78,83)
+	monster instance_mapname("1@ma_b"),78,81,"极る忌纒",2322,1,instance_npcname("#Bakonawan3")+"::OnMyMobDead"; //original: (78,83)
 	donpcevent instance_npcname("#Bakonawan3-1")+"::OnStart";
 	end;
 OnMyMobDead:
 	set .@map$, instance_mapname("1@ma_b");
 	set .@mob_dead_num, mobcount(.@map$,instance_npcname("#Bakonawan3")+"::OnMyMobDead");
 	if (.@mob_dead_num < 1) {
-		mapannounce .@map$,"酸奶: 我们逮到它了! 我看见它身上掉了一个盒子一样的东西.",bc_map,"0x00ffff"; //FW_NORMAL 15 0 0
-		donpcevent instance_npcname("酸奶#Completed")+"::OnStart";
+		mapannounce .@map$,"荒イ: и秂ウ! иǎウō奔舶妓狥﹁.",bc_map,"0x00ffff"; //FW_NORMAL 15 0 0
+		donpcevent instance_npcname("荒イ#Completed")+"::OnStart";
 		donpcevent instance_npcname("#Bakonawan3-1")+"::OnEnd";
 		killmonster .@map$,instance_npcname("#Bakonawan3")+"::OnMyMobDead";
 		stopnpctimer;
@@ -390,23 +390,23 @@ OnTimer180000:
 OnTimer240000:
 	donpcevent instance_npcname("#SummonPuppetsn1")+"::OnStart";
 	end;
-OnTimer300000:	callsub OnAnnounce,"5 分钟",15,1;
-OnTimer360000:	callsub OnAnnounce,"4 分钟",15,1;
-OnTimer420000:	callsub OnAnnounce,"3 分钟",15,1;
-OnTimer480000:	callsub OnAnnounce,"2 分钟",15,1;
-OnTimer540000:	callsub OnAnnounce,"1 分钟",15,1;
-OnTimer570000:	callsub OnAnnounce,"30 秒",15,0;
-OnTimer580000:	callsub OnAnnounce,"20 秒",15,0;
-OnTimer590000:	callsub OnAnnounce,"10 秒",15,0;
-OnTimer595000:	callsub OnAnnounce,"5 秒",16,0;
-OnTimer596000:	callsub OnAnnounce,"4 秒",17,0;
-OnTimer597000:	callsub OnAnnounce,"3 秒",18,0;
-OnTimer598000:	callsub OnAnnounce,"2 秒",19,0;
-OnTimer599000:	callsub OnAnnounce,"1 秒",20,0;
+OnTimer300000:	callsub OnAnnounce,"5 だ牧",15,1;
+OnTimer360000:	callsub OnAnnounce,"4 だ牧",15,1;
+OnTimer420000:	callsub OnAnnounce,"3 だ牧",15,1;
+OnTimer480000:	callsub OnAnnounce,"2 だ牧",15,1;
+OnTimer540000:	callsub OnAnnounce,"1 だ牧",15,1;
+OnTimer570000:	callsub OnAnnounce,"30 ",15,0;
+OnTimer580000:	callsub OnAnnounce,"20 ",15,0;
+OnTimer590000:	callsub OnAnnounce,"10 ",15,0;
+OnTimer595000:	callsub OnAnnounce,"5 ",16,0;
+OnTimer596000:	callsub OnAnnounce,"4 ",17,0;
+OnTimer597000:	callsub OnAnnounce,"3 ",18,0;
+OnTimer598000:	callsub OnAnnounce,"2 ",19,0;
+OnTimer599000:	callsub OnAnnounce,"1 ",20,0;
 OnTimer600000:
 	set .@map$, instance_mapname("1@ma_b");
-	mapannounce .@map$,"暴龙逃进湖底了.",bc_map,"0xffff00"; //FW_NORMAL 20 0 0
-	donpcevent instance_npcname("酸奶#Fail")+"::OnStart";
+	mapannounce .@map$,"忌纒発秈打┏.",bc_map,"0xffff00"; //FW_NORMAL 20 0 0
+	donpcevent instance_npcname("荒イ#Fail")+"::OnStart";
 	killmonster .@map$,instance_npcname("#Bakonawan3")+"::OnMyMobDead";
 	stopnpctimer;
 	disablenpc instance_npcname("#Bakonawan3");
@@ -456,7 +456,7 @@ OnMobSpawn:
 		if (.@mob_rg > getarg(0))
 			set .@mob_rg, getarg(0);
 		while(1) {
-			areamonster .@map$,74,74,82,74,"食月暴龙的人偶",2334,1,.@label$;
+			areamonster .@map$,74,74,82,74,"る忌纒案",2334,1,.@label$;
 			set .@mob_dead_num, mobcount(.@map$,.@label$);
 			if (.@mob_dead_num >= .@mob_rg) {
 				break;
@@ -466,20 +466,20 @@ OnMobSpawn:
 	end;
 }
 
-1@ma_b,62,52,4	script	酸奶#Completed	541,{
+1@ma_b,62,52,4	script	荒イ#Completed	541,{
 	disable_items;
 	if (checkweight(1201,1) == 0) {
-		mes "您携带的物品种类太多, 请稍做处理.";
+		mes "眤拟盿珇销摸び, 叫祔暗矪瞶.";
 		close;
 	}
 	if (MaxWeight - Weight < 10000) {
-		mes "您的负重不足, 请稍做处理.";
+		mes "眤璽ぃì, 叫祔暗矪瞶.";
 		close;
               }
 	if (checkquest(12279,HUNTING) == 2) {
 		erasequest 12279;
-		mes "[酸奶]";
-		mes "这是从暴龙身上掉落的. 我想应该对你有用.";
+		mes "[荒イ]";
+		mes "硂琌眖忌纒ō奔辅. и稱莱赣癸Τノ.";
 		if (!VIP_SCRIPT || vip_status(1))
 			getitem 6499,7; //Ancient_Grudge
 		else
@@ -487,64 +487,64 @@ OnMobSpawn:
 		getexp 0,100000;
 		next;
 	}
-	mes "[酸奶]";
-	mes "我们最好快点离开这里, 就算暴龙不在这里还是让人不舒服...";
+	mes "[荒イ]";
+	mes "и程е翴置秨硂ń, 碞衡忌纒ぃ硂ń临琌琵ぃ滴狝...";
 	next;
-	mes "[酸奶]";
-	mes "让我们用绳子上去!";
+	mes "[荒イ]";
+	mes "琵иノ梅!";
 	close2;
 	warp "ma_scene01",175,176;
 	end;
 OnInstanceInit:
-	disablenpc instance_npcname("酸奶#Completed");
+	disablenpc instance_npcname("荒イ#Completed");
 	end;
 OnStart:
-	enablenpc instance_npcname("酸奶#Completed");
+	enablenpc instance_npcname("荒イ#Completed");
 	initnpctimer;
 	end;
 OnTimer1000:
-	monster instance_mapname("1@ma_b"),78,74,"食月暴龙掉落的宝盒",2335,1;
+	monster instance_mapname("1@ma_b"),78,74,"る忌纒奔辅腳舶",2335,1;
 	end;
 OnTimer10000:
-	mapannounce instance_mapname("1@ma_b"),"酸奶: 打开宝盒后, 请到山顶来找我. 我有些东西要给你.",bc_map,"0x00ffff"; //FW_NORMAL 15 0 0
+	mapannounce instance_mapname("1@ma_b"),"荒イ: ゴ秨腳舶, 叫郴ㄓти. иΤㄇ狥﹁璶倒.",bc_map,"0x00ffff"; //FW_NORMAL 15 0 0
 	stopnpctimer;
 	end;
 }
 
-1@ma_b,62,52,4	script	酸奶#Fail	541,{
-	mes "[酸奶]";
-	mes "嗯. 我们差点就抓住它了, 它动作非常敏捷...";
+1@ma_b,62,52,4	script	荒イ#Fail	541,{
+	mes "[荒イ]";
+	mes "垛. и畉翴碞ъウ, ウ笆獶盽庇倍...";
 	next;
 	if (is_party_leader() == true) {
-		mes "[酸奶]";
-		mes "想不想再来次?";
+		mes "[荒イ]";
+		mes "稱ぃ稱ㄓΩ?";
 		next;
-		switch(select("- 打住!:- 当然! 我们不能袖手旁观!")) {
+		switch(select("- ゴ!:- 讽礛! иぃ砈も芠!")) {
 		case 1:
-			mes "[酸奶]";
-			mes "啊哈哈... 差点就逮住它了.";
+			mes "[荒イ]";
+			mes "摆... 畉翴碞秂ウ.";
 			close;
 		case 2:
-			mes "[酸奶]";
-			mes "我会在湖里再用次 Albopal.";
+			mes "[荒イ]";
+			mes "и穦打ńノΩ Albopal.";
 			next;
-			mes "[酸奶]";
-			mes "我想我们爱上暴龙狂怒时的那张脸了...";
-			disablenpc instance_npcname("酸奶#Fail");
+			mes "[荒イ]";
+			mes "и稱и稲忌纒╣ê眎羪...";
+			disablenpc instance_npcname("荒イ#Fail");
 			donpcevent instance_npcname("#Bakonawan1")+"::OnStart";
 			close;
 		}
 		close;
 	} else {
-		mes "[酸奶]";
-		mes "我会像上次一样向湖里洒 Albopal. 我期待看到它拉屎的样子...";
+		mes "[荒イ]";
+		mes "и穦钩Ω妓打ń蟬 Albopal. и戳ウ┰妓...";
 		close;
 	}
 
 OnInstanceInit:
-	disablenpc instance_npcname("酸奶#Fail");
+	disablenpc instance_npcname("荒イ#Fail");
 	end;
 OnStart:
-	enablenpc instance_npcname("酸奶#Fail");
+	enablenpc instance_npcname("荒イ#Fail");
 	end;
 }

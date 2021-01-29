@@ -16,27 +16,27 @@
 
 // Guild Flag (Outside Castle)
 //============================================================
--	script	雷普立温#1::OutsideFlagsG1	722,{
+-	script	筽炊ミ放#1::OutsideFlagsG1	722,{
 
 	set .@GID, GetCastleData("gefg_cas01",1);
 
 	if (.@GID == 0) {
-		mes "[ 神圣卢恩米德加兹王国条例 ]";
+		mes "[ 蒾縞μ紈瓣兵ㄒ ]";
 		mes " ";
-		mes "1. 按照神圣卢恩米德加兹王国的条例,";
-		mes "我们正式声明此城堡没有正式拥有者.";
+		mes "1. 酚蒾縞μ紈瓣兵ㄒ,";
+		mes "иタΑ羘躇⊿ΤタΑ局Τ.";
 		mes " ";
-		mes "2. 经过所有试炼,";
-		mes "并且破坏了华丽金属的勇士.";
-		mes "将会得到国王授予的城堡拥有权";
+		mes "2. 竒筁┮Τ刚芬,";
+		mes "瘆Д地腞妮玦.";
+		mes "盢穦眔瓣甭ぉ躇局Τ舦";
 		close;
 	}
 	if (getcharid(2) == .@GID) {
-		mes "[ 回声 ]";
-		mes "勇士们...";
-		mes "想要回到你们的勇气所在之地吗?";
+		mes "[ 羘 ]";
+		mes "玦...";
+		mes "稱璶玦蒩┮ぇ盾?";
 		next;
-		if(select("返回公会城堡.:取消.") == 1) {
+		if(select("そ穦躇.:.") == 1) {
 			close2;
 			if (getcharid(2) == GetCastleData("gefg_cas01",1)) {
 				warp "gefg_cas01",197,36;
@@ -46,14 +46,14 @@
 		}
 		close;
 	}
-	mes "[ 神圣卢恩米德加兹王国条例 ]";
+	mes "[ 蒾縞μ紈瓣兵ㄒ ]";
 	mes " ";
-	mes "1. 按照神圣卢恩米德加兹王国的条例,";
-	mes "我们批准该地区作为公会 ^ff0000"+GetGuildName(.@GID)+"^000000 的私有领地.";
+	mes "1. 酚蒾縞μ紈瓣兵ㄒ,";
+	mes "иу赣跋そ穦 ^ff0000"+GetGuildName(.@GID)+"^000000 ╬Τ烩.";
 	mes " ";
-	mes "2. ^ff0000"+GetGuildName(.@GID)+"^000000 公会的领袖为:";
+	mes "2. ^ff0000"+GetGuildName(.@GID)+"^000000 そ穦烩砈:";
 	mes "^ff0000"+GetGuildMaster(.@GID)+"^000000";
-	mes "对此结果有意见的人，请用你手中的武器说话，证明你的勇气，捍卫你的光荣！";
+	mes "癸挡狦Τ種ǎ叫ノもい猌竟弧杠谍玦蒩矫篴";
 	close;
 
 OnRecvCastleG01:
@@ -61,14 +61,14 @@ OnRecvCastleG01:
 	end;
 }
 
-gef_fild13,148,51,5	duplicate(OutsideFlagsG1)	雷普立温#1-2	722
-gef_fild13,155,54,5	duplicate(OutsideFlagsG1)	雷普立温#2	722
-gef_fild13,212,79,6	duplicate(OutsideFlagsG1)	雷普立温#3	722
-gef_fild13,211,71,6	duplicate(OutsideFlagsG1)	雷普立温#4	722
+gef_fild13,148,51,5	duplicate(OutsideFlagsG1)	筽炊ミ放#1-2	722
+gef_fild13,155,54,5	duplicate(OutsideFlagsG1)	筽炊ミ放#2	722
+gef_fild13,212,79,6	duplicate(OutsideFlagsG1)	筽炊ミ放#3	722
+gef_fild13,211,71,6	duplicate(OutsideFlagsG1)	筽炊ミ放#4	722
 
 // Guild Flag (Inside Castle)
 //============================================================
--	script	雷普立温#5::InsideFlagsG1	722,{
+-	script	筽炊ミ放#5::InsideFlagsG1	722,{
 	end;
 
 OnRecvCastleG01:
@@ -76,32 +76,32 @@ OnRecvCastleG01:
 	end;
 }
 
-gefg_cas01,28,157,4	duplicate(InsideFlagsG1)	雷普立温#5-2	722
-gefg_cas01,22,156,5	duplicate(InsideFlagsG1)	雷普立温#6	722
-gefg_cas01,68,185,3	duplicate(InsideFlagsG1)	雷普立温#7	722
-gefg_cas01,17,171,5	duplicate(InsideFlagsG1)	雷普立温#8	722
-gefg_cas01,59,16,4	duplicate(InsideFlagsG1)	雷普立温#9	722
-gefg_cas01,64,16,4	duplicate(InsideFlagsG1)	雷普立温#10	722
+gefg_cas01,28,157,4	duplicate(InsideFlagsG1)	筽炊ミ放#5-2	722
+gefg_cas01,22,156,5	duplicate(InsideFlagsG1)	筽炊ミ放#6	722
+gefg_cas01,68,185,3	duplicate(InsideFlagsG1)	筽炊ミ放#7	722
+gefg_cas01,17,171,5	duplicate(InsideFlagsG1)	筽炊ミ放#8	722
+gefg_cas01,59,16,4	duplicate(InsideFlagsG1)	筽炊ミ放#9	722
+gefg_cas01,64,16,4	duplicate(InsideFlagsG1)	筽炊ミ放#10	722
 
 // Guild Flag (Town)
 //============================================================
-geffen,109,123,2	duplicate(InsideFlagsG1)	雷普立温#11	722
+geffen,109,123,2	duplicate(InsideFlagsG1)	筽炊ミ放#11	722
 
 // Kafra Employee
 //============================================================
-gefg_cas01,83,47,3	duplicate(guildkafra)	卡普拉 职员#gefg_cas01	117
+gefg_cas01,83,47,3	duplicate(guildkafra)	炊┰ 戮#gefg_cas01	117
 
 // Steward
 //============================================================
-gefg_cas01,40,48,5	duplicate(cm)	纳泽#gefg_cas01	55
+gefg_cas01,40,48,5	duplicate(cm)	緼#gefg_cas01	55
 
 // Treasure Room Exit
 //============================================================
 gefg_cas01,152,117,0	script	#lever_G01	111,{
 	mes " ";
-	mes "这里有一个小小的控制杆, 去拉一下吗?";
+	mes "硂ńΤ北, ┰盾?";
 	next;
-	if(select("上前拉杆.:算了.") == 1) {
+	if(select("玡┰.:衡.") == 1) {
 		close2;
 		warp "gefg_cas01",40,49;
 		end;
@@ -115,7 +115,7 @@ gefg_cas01,78,84,0	duplicate(gdlever)	#gefg_cas01	111
 
 // Guild Treasure Spawns
 //============================================================
-gefg_cas01,154,112,0	duplicate(Gld_Trea_Spawn)	公会宝箱#gefg_cas01	-1
+gefg_cas01,154,112,0	duplicate(Gld_Trea_Spawn)	そ穦腳絚#gefg_cas01	-1
 
 // AGIT Manager
 //============================================================
@@ -123,4 +123,4 @@ gefg_cas01,198,182,0	duplicate(Gld_Agit_Manager)	Agit#gefg_cas01	-1
 
 // Guardians
 //============================================================
-gefg_cas01,40,48,5	duplicate(Gld_Guard_Template)	城堡监护人#gefg_cas01	-1
+gefg_cas01,40,48,5	duplicate(Gld_Guard_Template)	躇菏臔#gefg_cas01	-1

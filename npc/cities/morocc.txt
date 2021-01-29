@@ -29,504 +29,504 @@
 
 // Morocc
 //============================================================
-morocc,150,120,5	script	管制士兵#01::MocSoldier	4_M_MOC_SOLDIER,3,3,{
-	mes "[梦罗克 管制士兵]";
-	mes "请你站住!";
+morocc,150,120,5	script	恨#01::MocSoldier	4_M_MOC_SOLDIER,3,3,{
+	mes "[冠霉 恨]";
+	mes "叫!";
 	next;
-	mes "[梦罗克 管制士兵]";
-	mes "闲杂人等请勿靠近!";
+	mes "[冠霉 恨]";
+	mes "秪馒单叫づ綼!";
 	close;
 
 OnTouch_:
-	mes "[梦罗克 管制士兵]";
-	mes "请你站住!";
+	mes "[冠霉 恨]";
+	mes "叫!";
 	next;
-	mes "[梦罗克 管制士兵]";
-	mes "闲杂人等请勿靠近!";
+	mes "[冠霉 恨]";
+	mes "秪馒单叫づ綼!";
 	close;
 }
 
-morocc,202,244,0	script	梦罗克村民#01	4_F_CRU,{
-	mes "[梦罗克村民]";
-	mes "呵, 最近不管是冒险家或旅行家, 进出村落里的人次变多了, 所以分辨不出谁是村民谁是旅行家";
+morocc,202,244,0	script	冠霉チ#01	4_F_CRU,{
+	mes "[冠霉チ]";
+	mes ", 程ぃ恨琌玙繧產┪︽產, 秈辅ńΩ跑, ┮だ侩ぃ街琌チ街琌︽產";
 	next;
-	mes "[梦罗克村民]";
-	mes "若不是像我在地人就无法分辨谁是新来的人了?";
+	mes "[冠霉チ]";
+	mes "璝ぃ琌钩и碞礚猭だ侩街琌穝ㄓ?";
 	close;
 }
 
-morocc,88,133,3	script	梦罗克 义工#02	4_M_ALCHE_A,{
-	mes "[梦罗克 义工]";
-	mes "事... 事情超多的...";
+morocc,88,133,3	script	冠霉 竡#02	4_M_ALCHE_A,{
+	mes "[冠霉 竡]";
+	mes "ㄆ... ㄆ薄禬...";
 	next;
-	mes "[梦罗克 义工]";
-	mes "事情多到做也做不完啦!!!";
-	mes "卢恩 米德加兹人民啊!! 把各位的力量借给我们吧!!!";
+	mes "[冠霉 竡]";
+	mes "ㄆ薄暗暗ぃЧ罢!!!";
+	mes "縞 μ紈チ摆!! р秖倒и!!!";
 	next;
-	mes "[梦罗克 义工]";
-	mes "嘻嘻... 呵呵... 嘻嘻嘻...";
+	mes "[冠霉 竡]";
+	mes "糎糎... ... 糎糎糎...";
 	close;
 }
 
-morocc,202,110,0	script	梦罗克 义工#03	4_M_JOB_ASSASSIN,{
-	mes "[梦罗克 义工]";
-	mes "据说受害程度目前尚未明朗";
+morocc,202,110,0	script	冠霉 竡#03	4_M_JOB_ASSASSIN,{
+	mes "[冠霉 竡]";
+	mes "誹弧甡祘ヘ玡﹟ゼ";
 	next;
-	mes "[梦罗克 义工]";
-	mes "冒险家公会与普隆德拉王宫方面正在秘密地进行梦罗克的重建工程, 并且试图要牵制引起灾害的根本原因, 但似乎不容易";
+	mes "[冠霉 竡]";
+	mes "玙繧產そ穦蒓炊订紈┰甤よタ盞秈︽冠霉祘, 刚瓜璶瞣ま癬╝甡セ, ぃ甧";
 	next;
-	mes "[梦罗克 义工]";
-	mes "在根本原因未解决之前, 不仅是梦罗克, 其它区域的灾害势必会越来越扩大";
+	mes "[冠霉 竡]";
+	mes "セゼ秆∕ぇ玡, ぃ度琌冠霉, ㄤウ跋办╝甡墩ゲ穦禫ㄓ禫耎";
 	close;
 }
 
-morocc,268,287,3	script	梦罗克 义工#04	4_F_JOB_HUNTER,{
-	mes "[梦罗克 义工]";
-	mes "情况实在太糟糕, 很难再获得支援, ";
-	mes "这可能是卢恩 米德加兹王国史上最惨的状况吧";
+morocc,268,287,3	script	冠霉 竡#04	4_F_JOB_HUNTER,{
+	mes "[冠霉 竡]";
+	mes "薄猵龟び罺縷, 螟莉眔や穿, ";
+	mes "硂琌縞 μ紈瓣程篏猵";
 	next;
-	mes "[梦罗克 义工]";
-	mes "如果能掌握确切状况该有多好, 甚至连评估都有困难, 所以大家都心急如焚呢?";
+	mes "[冠霉 竡]";
+	mes "狦磝搐谔ち猵赣Τ, 硈蝶︳常Τ螟, ┮產常み礗㎡?";
 	close;
 }
 
-morocc,37,287,0	script	梦罗克 义工#05	1_F_PRIEST,{
-	mes "[梦罗克 义工]";
-	mes "不只是村落, 村民们更是凄惨不已";
+morocc,37,287,0	script	冠霉 竡#05	1_F_PRIEST,{
+	mes "[冠霉 竡]";
+	mes "ぃ琌辅, チ琌锈篏ぃ";
 	next;
-	mes "[梦罗克 义工]";
-	mes "那些经历过严重灾害的村民们已经够可怜了, 但亲眼目睹恐怖景象而存活下来的人, 也几乎变的精神异常了";
+	mes "[冠霉 竡]";
+	mes "êㄇ竒菌筁腨╝甡チ竒镑贪, 克泊ヘ窣┢春禜τㄓ, 跑弘奢盽";
 	next;
-	mes "[梦罗克 义工]";
-	mes "还有一些遭受惊吓的人还算幸运吧?";
-	mes "至于精神崩溃的人...";
-	mes "总之那些人实在是令人鼻酸啊";
+	mes "[冠霉 竡]";
+	mes "临Τㄇ綝誥纞临衡┋笲?";
+	mes "弘盰检...";
+	mes "羆ぇêㄇ龟琌惑荒摆";
 	close;
 }
 
-morocc,223,102,0	script	梦罗克 义工#06::MocVolunteer	2_M_BARD_ORIENT,{
-	mes "[梦罗克 义工]";
-	mes "感觉有点不寻常呢? 连沙漠的干燥空气似乎都弥漫着黑暗的气息";
+morocc,223,102,0	script	冠霉 竡#06::MocVolunteer	2_M_BARD_ORIENT,{
+	mes "[冠霉 竡]";
+	mes "稰谋Τ翴ぃ碝盽㎡? 硈‵簔狸蒩常辣憨帝堵穞蒩";
 	next;
-	mes "[梦罗克 义工]";
-	mes "呜呜呜!! 好像... 有感觉到! 这村落所弥漫的黑暗空气与阴森森的气息, 仿佛是一场噩梦!";
+	mes "[冠霉 竡]";
+	mes "躲躲躲!! 钩... Τ稰谋! 硂辅┮辣憨堵穞蒩蒓潮此此蒩, ラ︱琌初镜冠!";
 	next;
-	mes "[梦罗克 义工]";
-	mes "你要不要听听看呢? 主题是'魔王梦罗克献唱之复活之狂想曲'!!";
+	mes "[冠霉 竡]";
+	mes "璶ぃ璶㎡? 肈琌'臸冠霉膍佰ぇ蝋ぇ╣稱Ρ'!!";
 	next;
-	mes "[梦罗克 义工]";
-	mes "当醒来时在同样深渊的黑暗之中, ";
-	mes "以及虽然在相同地方上复活失败, ";
-	mes "但是绝不轻易放弃继续尝试复活, ";
-	mes "试了又试、一遍又一遍的尝试, ";
-	mes "仍无法复活的魔王梦罗克~";
+	mes "[冠霉 竡]";
+	mes "讽眶ㄓ妓瞏瞁堵穞ぇい, ";
+	mes "の瘤礛よ蝋ア毖, ";
+	mes "琌荡ぃ淮斌膥尿沽刚蝋, ";
+	mes "刚刚筂筂沽刚, ";
+	mes "ご礚猭蝋臸冠霉~";
 	next;
-	mes "[梦罗克 义工]";
-	mes "我也曾派过手下去, ";
-	mes "但还是斗不过冒险家, ";
-	mes "所以这次为了复活成功, ";
-	mes "时空的裂缝要保护到";
-	mes "最后啊~~~";
+	mes "[冠霉 竡]";
+	mes "и纯筁も, ";
+	mes "临琌ゆぃ筁玙繧產, ";
+	mes "┮硂Ω蝋Θ, ";
+	mes "吊羅璶玂臔";
+	mes "程摆~~~";
 	next;
-	mes "[某人的声音]";
-	mes "安静, 别吵了!";
-	specialeffect EF_HIT2,AREA,"梦罗克 义工#06";
+	mes "[琘羘]";
+	mes "繰, !";
+	specialeffect EF_HIT2,AREA,"冠霉 竡#06";
 	next;
-	mes "[梦罗克 义工]";
-	mes "哦哦, 你好过份世纽利他, 你这样会伤了我的心";
+	mes "[冠霉 竡]";
+	mes "瓳瓳, 筁, 硂妓穦端иみ";
 	next;
-	mes "[某人的声音]";
-	mes "那不是某个标题吗? 好像在哪里听过?";
+	mes "[琘羘]";
+	mes "êぃ琌琘夹肈盾? 钩ń筁?";
 	next;
-	mes "[梦罗克 义工]";
-	mes "怎, 怎么可能!? 不, 不是啦!";
+	mes "[冠霉 竡]";
+	mes ", !? ぃ, ぃ琌罢!";
 	close;
 }
 
-morocc,226,102,4	duplicate(MocVolunteer)	梦罗克 义工#07	4_F_JOB_BLACKSMITH
+morocc,226,102,4	duplicate(MocVolunteer)	冠霉 竡#07	4_F_JOB_BLACKSMITH
 
-moc_ruins,123,154,0	script	年轻人#moc01	4W_M_03,{
-	mes "[梦罗克 义工]";
-	mes "真糟糕, 这次还好损毁一个村落, 但下次...";
+moc_ruins,123,154,0	script	淮#moc01	4W_M_03,{
+	mes "[冠霉 竡]";
+	mes "痷罺縷, 硂Ω临穕反辅, Ω...";
 	next;
-	mes "[梦罗克 义工]";
-	mes "冒险家们觉得怎样呢? 有什么解决的方法吗?";
+	mes "[冠霉 竡]";
+	mes "玙繧產谋眔妓㎡? Τぐ秆∕よ猭盾?";
 	next;
-	mes "[某人的声音]";
-	mes "有啊有啊, 你要听听看吗? 主题是'魔王梦罗克献唱之复活之狂想曲'!!";
+	mes "[琘羘]";
+	mes "Τ摆Τ摆, 璶盾? 肈琌'臸冠霉膍佰ぇ蝋ぇ╣稱Ρ'!!";
 	next;
-	mes "[某人的声音]";
-	mes "当醒来时在同样深渊的黑暗之中, ";
-	mes "以及虽然在相同地方上复活失败, ";
-	mes "但是绝不轻易放弃继续尝试复活, ";
-	mes "试了又试、一遍又一遍的尝试, ";
-	mes "魔王梦罗克仍无法复活魔王梦罗克~";
+	mes "[琘羘]";
+	mes "讽眶ㄓ妓瞏瞁堵穞ぇい, ";
+	mes "の瘤礛よ蝋ア毖, ";
+	mes "琌荡ぃ淮斌膥尿沽刚蝋, ";
+	mes "刚刚筂筂沽刚, ";
+	mes "臸冠霉ご礚猭蝋臸冠霉~";
 	next;
-	mes "[某人的声音]";
-	mes "我也曾派过手下去, ";
-	mes "但还是斗不过冒险家, ";
-	mes "所以这次为了复活成功, ";
-	mes "时空的裂缝要保护到";
-	mes "最后~~~";
+	mes "[琘羘]";
+	mes "и纯筁も, ";
+	mes "临琌ゆぃ筁玙繧產, ";
+	mes "┮硂Ω蝋Θ, ";
+	mes "吊羅璶玂臔";
+	mes "程~~~";
 	next;
-	mes "[梦罗克 义工]";
-	mes "安静, 别吵了!";
+	mes "[冠霉 竡]";
+	mes "繰, !";
 	next;
-	mes "[某人的声音]";
-	mes "哦哦, 你好过份世纽利他, 你这样会伤了我的心";
+	mes "[琘羘]";
+	mes "瓳瓳, 筁, 硂妓穦端иみ";
 	next;
-	mes "[梦罗克 义工]";
-	mes "那不是某个标题吗? 好像在哪里听过?";
+	mes "[冠霉 竡]";
+	mes "êぃ琌琘夹肈盾? 钩ń筁?";
 	next;
-	mes "[梦罗克 义工]";
-	mes "怎, 怎么可能!? 不, 不是啦!";
+	mes "[冠霉 竡]";
+	mes ", !? ぃ, ぃ琌罢!";
 	close;
 }
 
-moc_ruins,128,153,0	script	伯伯#moc	1_M_PUBMASTER,{
-	mes "[金字塔 研究员]";
-	mes "我把一生致力于研究本村落的金字塔上, 且挖掘了不少东西, 虽然无法证实, 但相信那金字塔是古代某王的陵寝";
+moc_ruins,128,153,0	script	#moc	1_M_PUBMASTER,{
+	mes "[娥 ╯]";
+	mes "ирネ璓╯セ辅娥, 备ぃぶ狥﹁, 瘤礛礚猭谍龟, 獺ê娥琌琘钞轨";
 	next;
-	mes "[金字塔 研究员]";
-	mes "也许在那陵寝的深处沉睡着古代王俄赛里斯吧, 如果我的研究正确的话...";
+	mes "[娥 ╯]";
+	mes "砛ê钞轨瞏矪↖何帝玐辽ń吹, 狦и╯タ谔杠...";
 	close;
 }
 
-moc_ruins,132,144,0	script	青年#moc	4_M_03,{
-	mes "[青年]";
-	mes "我曾经称呼沙漠的无赖为沙漠豺狼, 老是集体为非作歹的恶徒们, 当同类遭受攻击时就会变成凶恶的畜牲";
+moc_ruins,132,144,0	script	獵#moc	4_M_03,{
+	mes "[獵]";
+	mes "и纯竒嘿㊣‵簔礚苦‵簔癧疶, ρ琌栋蔨獶わ碿畕, 讽摸綝ю阑碞穦跑Θた碿痓";
 	next;
-	mes "[青年]";
-	mes "它们毫不留情呢? 不夸张凡是被它们蹂躏过的地方, 只剩下骨头和背包里的腐烂牛奶而已, ";
-	mes "真是一群可恶的畜牲...";
+	mes "[獵]";
+	mes "ウ睝ぃ痙薄㎡? ぃ眎琌砆ウ夸苙筁よ, 逞癌繷㎝璉ń籊年イτ, ";
+	mes "痷琌竤碿痓...";
 	next;
-	mes "[青年]";
-	mes "不过经过这次事件之后, 反而觉得它们可爱哩, 你看看摧毁的梦罗克, 那里已成人间炼狱了";
+	mes "[獵]";
+	mes "ぃ筁竒筁硂Ωㄆンぇ, はτ谋眔ウ稲, 篟反冠霉, êńΘ丁芬夯";
 	close;
 }
 
-moc_ruins,115,144,3	script	促进青年#moc	4_M_01,{
-	mes "[青年]";
-	mes "我为了在这里和普隆德拉之间作生意, 已经去了上百次那干燥的沙漠";
+moc_ruins,115,144,3	script	玃秈獵#moc	4_M_01,{
+	mes "[獵]";
+	mes "и硂ń㎝炊订紈┰ぇ丁ネ種, 竒κΩê狸‵簔";
 	next;
-	mes "[青年]";
-	mes "不过现在连这生意也没得做了";
+	mes "[獵]";
+	mes "ぃ筁瞷硈硂ネ種⊿眔暗";
 	next;
-	mes "[青年]";
-	mes "所以反而感到怀念起来了, ";
-	mes "记得有次经过沙漠时口渴想切开仙人掌汁来喝... 却不小心被刺刺到而差点客死异乡哩...";
+	mes "[獵]";
+	mes "┮はτ稰输├癬ㄓ, ";
+	mes "癘眔ΤΩ竒筁‵簔戴稱ち秨磝ツㄓ耻... 玱ぃみ砆τ畉翴奢秏...";
 	next;
-	mes "[青年]";
-	mes "那个摩卡, 酷似仙人掌的魔物, ";
-	mes "现在回想起来刺激又有趣";
+	mes "[獵]";
+	mes "ê集, 慌磝臸, ";
+	mes "瞷稱癬ㄓ縀Τ届";
 	close;
 }
 
-moc_ruins,109,138,0	script	钻石青年#moc	4W_M_03,{
-	mes "[青年]";
-	mes "宝石中的宝石非钻石莫属, 那晶莹剔透又炫丽的色泽, 其它的宝石就相形失色了, 所以价格当然也不斐了...";
+moc_ruins,109,138,0	script	苝ホ獵#moc	4W_M_03,{
+	mes "[獵]";
+	mes "腳ホい腳ホ獶苝ホ馋妮, ê垂键硓腞︹緼, ㄤウ腳ホ碞ア︹, ┮刹讽礛ぃ创...";
 	next;
-	mes "[青年]";
-	mes "决定价格的因素有很多种, 最重要的当然就是大小了";
+	mes "[獵]";
+	mes "∕﹚刹Τ销, 程璶讽礛碞琌";
 	next;
-	mes "[青年]";
-	mes "哦哦... 不过再大的钻石若结晶体内有空洞或裂痕时, 价格就差十万八千里了";
+	mes "[獵]";
+	mes "瓳瓳... ぃ筁苝ホ璝挡垂蔨ずΤ瑌┪吊勃, 刹碞畉蒃ń";
 	next;
-	mes "[青年]";
-	mes "不过来看看这个! 世界上硬度最高的钻石竟被切成两半了!";
+	mes "[獵]";
+	mes "ぃ筁ㄓ硂! 祑程蔼苝ホ澈砆ちΘㄢ!";
 	next;
-	mes "[青年]";
-	mes "如今村落遭逢灾难下不应该关心钻石的事, 不过它可是我的全部财产哩...";
+	mes "[獵]";
+	mes "さ辅綝硔╝螟ぃ莱赣闽み苝ホㄆ, ぃ筁ウ琌и场癩玻...";
 	close;
 }
 
-morocc,54,251,0	script	青年#moc02	4_M_ORIENT02,{
-	mes "[饮酒青年]";
-	mes "嘻嘻... 打嗝! 你是外地来的吧? 你好! 旅途愉快吗?";
-	mes "相见自是有缘, 我来告诉你一件事, 这是我刚在酒店里喝一杯时偶然间听到的呢?";
+morocc,54,251,0	script	獵#moc02	4_M_ORIENT02,{
+	mes "[都皊獵]";
+	mes "糎糎... ゴ苄! 琌ㄓ? ! 硚磖е盾?";
+	mes "ǎ琌Τ絫, иㄓ禗ンㄆ, 硂琌и皊┍ń耻狹案礛丁㎡?";
 	next;
-	mes "[饮酒青年]";
-	mes "就是魔王梦罗克复活了, 好像是穿越时空的裂缝出来的吧... 打嗝";
+	mes "[都皊獵]";
+	mes "碞琌臸冠霉蝋, 钩琌禫吊羅ㄓ... ゴ苄";
 	next;
-	mes "[饮酒青年]";
-	mes "啊... 我也想去亲眼目睹, 但却比登天还难, ";
-	mes "像你这样穿越沙漠有勇气的人, 值得去看一看吧? 嘻嘻~ 如果有看到的话要请喝一杯喔!";
+	mes "[都皊獵]";
+	mes "摆... и稱克泊ヘ窣, 玱ゑ祅ぱ临螟, ";
+	mes "钩硂妓禫‵簔Τ玦蒩, 眔? 糎糎~ 狦Τ杠璶叫耻狹翅!";
 	next;
-	mes "[饮酒青年]";
-	mes "不过你知道这是哪里吗? 我到酒店喝了一杯出来后... 怎么村落就不见了呢...? 难道已经过了五百年了吗?!";
+	mes "[都皊獵]";
+	mes "ぃ筁笵硂琌ń盾? и皊┍耻狹ㄓ... 辅碞ぃǎ㎡...? 螟笵竒筁きκ盾?!";
 	close;
 }
 
-moc_ruins,94,117,0	script	脸色苍白的青年	1_M_02,{
-	mes "[脸色苍白的青年]";
-	mes "... 那天是... 升起了带有血光的月亮, 是个令人毛骨悚然的恐怖夜晚";
+moc_ruins,94,117,0	script	羪︹籥フ獵	1_M_02,{
+	mes "[羪︹籥フ獵]";
+	mes "... êぱ琌... ど癬盿Τ﹀る獹, 琌を癌礛┢边";
 	next;
-	mes "[脸色苍白的青年]";
-	mes "连干燥的沙漠风也没有吹, 空气又是快要窒息般的难过, 此时突然听到狂叫和超大水蒸气从梦罗克中央城向空中窜起来";
+	mes "[羪︹籥フ獵]";
+	mes "硈狸‵簔⊿Τ, 蒩琌е璶部螟筁, 礛╣㎝禬籡蒩眖冠霉いァい芦癬ㄓ";
 	next;
-	mes "[脸色苍白的青年]";
-	mes "那是一瞬间的事, 中央城的绿洲蒸发掉和梦罗克村落被毁都是瞬间发生的, 还有... 还有传来... 传来了那声音";
+	mes "[羪︹籥フ獵]";
+	mes "ê琌俐丁ㄆ, いァ厚瑆籡祇奔㎝冠霉辅砆反常琌俐丁祇ネ, 临Τ... 临Τ肚ㄓ... 肚ㄓê羘";
 	next;
-	mes "[脸色苍白的青年]";
-	mes "说血... 血是灵魂的货币... 还有那恐怖的笑声...";
-	mes "啊啊!!! 在我的耳际仍然... 回荡着那笑声!!! 啊啊啊啊啊啊!!!!!!";
+	mes "[羪︹籥フ獵]";
+	mes "弧﹀... ﹀琌艶活砯刽... 临Τê┢羘...";
+	mes "摆摆!!! иφ悔ご礛... 亢帝ê羘!!! 摆摆摆摆摆摆!!!!!!";
 	next;
-	mes "- 为了让他稳定情绪, 还是别再问好了-";
+	mes "- 琵铆﹚薄狐, 临琌拜-";
 	close;
 }
 
-moc_ruins,115,82,0	script	小女孩#moc	4_F_KID2,{
-	mes "[小女生]";
-	mes "呜呜, 哇哇哇, 不要, 好可怕...";
+moc_ruins,115,82,0	script	#moc	4_F_KID2,{
+	mes "[ネ]";
+	mes "躲躲, 珃珃珃, ぃ璶, ┤...";
 	next;
-	mes "[小女生]";
-	mes "爸妈在哪里... 呜呜呜... 我们家不见了... 呜哇哇哇哇哇哇";
+	mes "[ネ]";
+	mes "洱ń... 躲躲躲... и產ぃǎ... 躲珃珃珃珃珃珃";
 	next;
-	mes "[小男生]";
-	mes "别哭了, 尔洁... 这样会伤身体的...";
+	mes "[╧ネ]";
+	mes ", 焊稀... 硂妓穦端ō蔨...";
 	next;
-	mes "[小女生]";
-	mes "呜哇哇, 不要... 妈咪... 爹地...";
+	mes "[ネ]";
+	mes "躲珃珃, ぃ璶... 洱珆... 疪...";
 	close;
 }
 
-moc_ruins,118,82,1	script	小男孩#moc	4_M_KID1,{
-	mes "[小男生]";
-	mes "...............别哭了, 尔洁...";
+moc_ruins,118,82,1	script	╧#moc	4_M_KID1,{
+	mes "[╧ネ]";
+	mes "..............., 焊稀...";
 	next;
-	mes "[小女生]";
-	mes "呜哇哇哇哇哇哇... 妈咪... 爹地...";
+	mes "[ネ]";
+	mes "躲珃珃珃珃珃珃... 洱珆... 疪...";
 	next;
-	mes "[小男生]";
-	mes "妈咪爹地已经...";
+	mes "[╧ネ]";
+	mes "洱珆疪竒...";
 	next;
-	mes "[小女生]";
-	mes "哥哥... 呜哇哇...";
+	mes "[ネ]";
+	mes "... 躲珃珃...";
 	next;
-	mes "[小男生]";
-	mes "对, 对了, 你爱吃冰淇淋吧? 不哭的话我买给你吃好不好, 别哭了, 尔洁乖乖, 嗯? 别哭了...";
+	mes "[╧ネ]";
+	mes "癸, 癸, 稲睳睴? ぃ杠и禦倒ぃ, , 焊稀, 垛? ...";
 	close;
 }
 
-moc_ruins,121,116,4	script	歌妮#moc	1_F_01,{
-	mes "[史比亚萍]";
-	mes "在米德加兹全区上充斥着可爱的魔物, ";
-	mes "像是被击倒时会吐舌头的魔菇...";
+moc_ruins,121,116,4	script	簈ゞ#moc	1_F_01,{
+	mes "[ゑㄈ涤]";
+	mes "μ紈跋ジ帝稲臸, ";
+	mes "钩琌砆阑穦繷臸郏...";
 	next;
-	mes "[史比亚萍]";
-	mes "头上戴着自己所孵出时的蛋壳, 到处蹦蹦跳跳的小鸡魔物等等...";
+	mes "[ゑㄈ涤]";
+	mes "繷拦帝┮瑰矹催, 矪论论铬铬蔓臸单单...";
 	next;
-	mes "[史比亚萍]";
-	mes "也有这种即可爱又不会害人的魔物, 究竟是为什么呢? 没想到我们村落里也沉睡着如此恐怖的魔王! 啊啊...";
+	mes "[ゑㄈ涤]";
+	mes "Τ硂销稲ぃ穦甡臸, ╯澈琌ぐ㎡? ⊿稱и辅ń↖何帝┢臸! 摆摆...";
 	next;
-	mes "[史比亚萍]";
-	mes "实在太可怕了... 我想看着可爱的波利来稳定一下情绪...";
+	mes "[ゑㄈ涤]";
+	mes "龟び┤... и稱帝稲猧ㄓ铆﹚薄狐...";
 	next;
-	switch(select("天使波利是?:幽灵波利是?:取消对话")) {
+	switch(select("ぱㄏ猧琌?:艶猧琌?:癸杠")) {
 	case 1:
-		mes "[史比亚萍]";
-		mes "天使波利是指在普隆德拉南部地区波利草原上, 只有稀有天使波利所活动的地方";
+		mes "[ゑㄈ涤]";
+		mes "ぱㄏ猧琌炊订紈┰玭场跋猧, Τ祡Τぱㄏ猧┮笆よ";
 		next;
-		mes "[史比亚萍]";
-		mes "由于它们是属于高等级圣属性波利, 所以普通的魔法是毫无作用的";
-		mes "它们只受无属性与暗属性魔法的伤害";
+		mes "[ゑㄈ涤]";
+		mes "パウ琌妮蔼单蒾妮┦猧, ┮炊硄臸猭琌睝礚ノ";
+		mes "ウ礚妮┦蒓穞妮┦臸猭端甡";
 		next;
-		mes "[史比亚萍]";
-		mes "呵呵, 我懂得很多吧? 因我是波利迷";
+		mes "[ゑㄈ涤]";
+		mes ", и来眔? и琌猧癵";
 		close;
 	case 2:
-		mes "[史比亚萍]";
-		mes "幽灵波利是指在普隆德拉南部地区波利原野上, 只有凶猛幽灵波利所活动的地方";
+		mes "[ゑㄈ涤]";
+		mes "艶猧琌炊订紈┰玭场跋猧偿, Τた瞨艶猧┮笆よ";
 		next;
-		mes "[史比亚萍]";
-		mes "由于它们是属于高等级念属性波利, 因此无属性物理攻击不会起作用...";
-		mes "它们只受魔法或其它属性的伤害";
+		mes "[ゑㄈ涤]";
+		mes "パウ琌妮蔼单├妮┦猧, 礚妮┦瞶ю阑ぃ穦癬ノ...";
+		mes "ウ臸猭┪ㄤウ妮┦端甡";
 		next;
-		mes "[史比亚萍]";
-		mes "我是波利达人的波利迷";
+		mes "[ゑㄈ涤]";
+		mes "и琌猧笷猧癵";
 		close;
 	case 3:
-		mes "[史比亚萍]";
-		mes "呵呵... 波利... 波利......";
+		mes "[ゑㄈ涤]";
+		mes "... 猧... 猧......";
 		close;
 	}
 }
 
-moc_ruins,155,107,4	script	玛倚#moc	1_M_01,{
-	mes "[阿里卡哩]";
-	mes "请问你是穿越沙漠来的吗?";
+moc_ruins,155,107,4	script	嚎#moc	1_M_01,{
+	mes "[ń]";
+	mes "叫拜琌禫‵簔ㄓ盾?";
 	next;
-	mes "[阿里卡哩]";
-	mes "那么从这村落起往北一个地图... 再往东三个地图距离的蚂蚁地狱密穴的现况, 也许你应该会知道吧";
+	mes "[ń]";
+	mes "ê眖硂辅癬┕瓜... ┕狥瓜禯置柯闷夯盞マ瞷猵, 砛莱赣穦笵";
 	next;
-	mes "[阿里卡哩]";
-	mes "蚂蚁地狱密穴的入口有两个, 入内后非常弯取的密穴会连到地下1楼和2楼";
+	mes "[ń]";
+	mes "柯闷夯盞マΤㄢ, ず獶盽舠盞マ穦硈1加㎝2加";
 	next;
-	mes "[阿里卡哩]";
-	mes "那密穴的入口经过这次的折腾后, 很好奇会受到什么影响, 但又不放我出去... 如果你知道消息的话, 告诉我一下吧";
+	mes "[ń]";
+	mes "ê盞マ竒筁硂Ωч乃, 穦ぐ紇臫, ぃи... 狦笵杠, 禗и";
 	next;
-	switch(select("关于'蚂蚁地狱密穴':关于蚂蚁:取消对话")) {
+	switch(select("闽'柯闷夯盞マ':闽柯闷:癸杠")) {
 	case 1:
-		mes "[阿里卡哩]";
-		mes "就是通到地下1, 2楼的那个湿湿黏黏又弯弯取取的洞穴...";
-		mes "从梦罗克往东直走的话, 会看到与斐扬森林面对的桥";
+		mes "[ń]";
+		mes "碞琌硄1, 2加ê楞楞翲翲舠舠瑌マ...";
+		mes "眖冠霉┕狥ǐ杠, 穦蒓创喘此狶癸爵";
 		next;
-		mes "[阿里卡哩]";
-		mes "就在那地图之前的 4个距离地图上, 再往上前进一点的话, 就会出现蚂蚁地狱密穴'入口中的一个... 不知道还在不在那里";
+		mes "[ń]";
+		mes "碞ê瓜ぇ玡 4禯置瓜, ┕玡秈翴杠, 碞穦瞷柯闷夯盞マ'い... ぃ笵临ぃêń";
 		close;
 	case 2:
-		mes "[阿里卡哩]";
-		mes "密穴里面充斥着黑色巨蚁魔物群, 当看过那些小东西们之后, 感觉它们的名字都挺有个性的...";
+		mes "[ń]";
+		mes "盞マńジ帝堵︹エ闷臸竤, 讽筁êㄇ狥﹁ぇ, 稰谋ウ常Τ┦...";
 		next;
-		mes "[阿里卡哩]";
-		mes "它们的名称依强度排序为白蚁、工蚁、兵蚁";
+		mes "[ń]";
+		mes "ウ嘿ㄌ眏逼フ闷闷闷";
 		next;
-		mes "[阿里卡哩]";
-		mes "有米白色的白蚁、黄绿色的工蚁、赤红色的兵蚁等";
-		mes "其中有个叫黑蚁的工作蚂蚁因外表差异颇大, 所以很容易分辨";
+		mes "[ń]";
+		mes "Τμフ︹フ闷独厚︹闷í︹闷单";
+		mes "ㄤいΤ堵闷柯闷畉奢会, ┮甧だ侩";
 		next;
-		mes "[阿里卡哩]";
-		mes "还有蚂蚁群跟波利一样对物品很贪心, 所以要考虑清楚";
+		mes "[ń]";
+		mes "临Τ柯闷竤蛤猧妓癸珇砱み, ┮璶σ納睲贰";
 		next;
-		mes "[阿里卡哩]";
-		mes "前提是不受魔王的阻碍下平安的穿越沙漠...";
+		mes "[ń]";
+		mes "玡矗琌ぃ臸锚キ禫‵簔...";
 		close;
 	case 3:
-		mes "[阿里卡哩]";
-		mes "'蚂蚁地狱密穴' 内部不仅有蚂蚁, 还有栖息着很难对付的土地精灵基尔瑟伯伯";
+		mes "[ń]";
+		mes "'柯闷夯盞マ' ず场ぃ度Τ柯闷, 临Τ厌帝螟癸弘艶膀焊锋";
 		next;
-		mes "[阿里卡哩]";
-		mes "有着尖锐的牙齿和下巴, 它不仅是普通的蚂蚁, 基尔瑟伯伯最厉害的就是铲子要小心啰";
+		mes "[ń]";
+		mes "Τ帝綰睛㎝ぺ, ウぃ度琌炊硄柯闷, 膀焊锋程糉甡碞琌藐璶み";
 		next;
-		mes "[阿里卡哩]";
-		mes "...在魔王梦罗克出没的危险之际, 什么都得小心, 呵呵呵";
+		mes "[ń]";
+		mes "...臸冠霉⊿繧ぇ悔, ぐ常眔み, ";
 		close;
 	}
 }
 
-moc_ruins,143,43,4	script	刺客青年#moc	2_M_THIEFMASTER,{
-	mes "[思尔]";
-	mes "采 1 : 1 的直接攻击战斗方式, 并干净俐落的解决敌人的就是刺客也!";
+moc_ruins,143,43,4	script	獵#moc	2_M_THIEFMASTER,{
+	mes "[焊]";
+	mes " 1 : 1 钡ю阑驹ゆよΑ, 瞓玏辅秆∕寄碞琌!";
 	next;
-	mes "[思尔]";
-	mes "到底... 梦罗克遭受空前严重毁坏, 刺客们都在做什么呢!!!";
+	mes "[焊]";
+	mes "┏... 冠霉綝玡腨反Д, 常暗ぐ㎡!!!";
 	next;
-	switch(select("?????:刺客公会在哪里呢?:取消对话")) {
+	switch(select("?????:そ穦ń㎡?:癸杠")) {
 	case 1:
-		mes "[思尔]";
-		mes "刺客具有无声无息靠近对方后不留痕迹的干掉对方的能力...";
+		mes "[焊]";
+		mes "ㄣΤ礚羘礚綼癸よぃ痙勃格奔癸よ...";
 		next;
-		mes "[思尔]";
-		mes "我寻觅刺客公会已经3年了...";
-		mes "该是出现的时候了吧?!";
+		mes "[焊]";
+		mes "и碝砎そ穦竒3...";
+		mes "赣琌瞷?!";
 		next;
-		mes "[思尔]";
-		mes "难... 难道来不及了嘛...";
-		mes "村落也毁了... 现在该何去何从呢...";
+		mes "[焊]";
+		mes "螟... 螟笵ㄓぃの估...";
+		mes "辅反... 瞷赣眖㎡...";
 		close;
 	case 2:
-		mes "[思尔]";
-		mes "那个嘛...";
-		mes "我实在找不到";
+		mes "[焊]";
+		mes "ê估...";
+		mes "и龟тぃ";
 		next;
-		mes "[思尔]";
-		mes "我听说是在这梦罗克以东的2个地图, 再往南走2个地图距离后, 就会出现藏于沙漠风暴中的刺客公会, 也就是'苏克拉特总部海市蜃楼塔'...";
+		mes "[焊]";
+		mes "и弧琌硂冠霉狥2瓜, ┕玭ǐ2瓜禯置, 碞穦瞷旅‵簔忌いそ穦, 碞琌'默┰疭羆场カ嘎加娥'...";
 		next;
-		mes "[思尔]";
-		mes "据说被那里的公会会长十字刺客同意的话, 即可转职为刺客了";
+		mes "[焊]";
+		mes "誹弧砆êńそ穦穦種杠, 锣戮";
 		next;
-		mes "[思尔]";
-		mes "所谓十字刺客是只颁授给刺客中最优秀的一种高等纹章!";
+		mes "[焊]";
+		mes "┮孔琌箋甭倒い程涩╭销蔼单彻!";
 		next;
-		mes "[思尔]";
-		mes "若是不够优秀的盗贼的话, 想看十字刺客的庐山真面目比登天还难哩...";
+		mes "[焊]";
+		mes "璝琌ぃ镑涩╭祍搁杠, 稱胒痷ヘゑ祅ぱ临螟...";
 		next;
-		mes "[思尔]";
-		mes "不过... 梦罗克被这样摧毁, 十字刺客们究竟有何作为呢!!!";
+		mes "[焊]";
+		mes "ぃ筁... 冠霉砆硂妓篟反, ╯澈Τ㎡!!!";
 		close;
 	case 3:
-		mes "[思尔]";
-		mes "刺客是盗贼(Thief)可转职的一种, 在 1 : 1 战斗尤其是对无属性 + 毒性的直接攻击上, 属于具备多项优异技能的2转职业";
+		mes "[焊]";
+		mes "琌祍搁(Thief)锣戮销,  1 : 1 驹ゆぷㄤ琌癸礚妮┦ + 瑀┦钡ю阑, 妮ㄣ称兜涩奢м2锣戮穨";
 		next;
-		mes "[思尔]";
-		mes "还有为了组员们可以隐身后独自到敌人聚集之处, 进行侦探敌情及搜集情报";
+		mes "[焊]";
+		mes "临Τ舱留ō縒寄籈栋ぇ矪, 秈︽盎贝寄薄の穓栋薄厨";
 		next;
-		mes "[思尔]";
-		mes "不过... 梦罗克被这样摧毁, 刺客们究竟有何作为呢!!!";
+		mes "[焊]";
+		mes "ぃ筁... 冠霉砆硂妓篟反, ╯澈Τ㎡!!!";
 		close;
 	}
 }
 
-moc_ruins,173,141,4	script	酷热先生#moc	1_M_03,{
-	mes "[蒙力]";
-	mes "梦罗克地区的沙漠是米德加兹全区中平均气温最高的地方, 只要在沙地上坐下来的话, 小心屁屁会烤熟喔";
+moc_ruins,173,141,4	script	慌荐ネ#moc	1_M_03,{
+	mes "[籜]";
+	mes "冠霉跋‵簔琌μ紈跋いキА蒩放程蔼よ, 璶‵Гㄓ杠, みЬЬ穦疦剪翅";
 	next;
-	switch(select("关于沙漠的沙子:关于恢复疲劳:取消对话")) {
+	switch(select("闽‵簔‵:闽蝋痟骋:癸杠")) {
 	case 1:
-		mes "[蒙力]";
-		mes "......其实那个嘛...";
-		mes "照理说热热的才是正常, 但实际上并非如此!";
+		mes "[籜]";
+		mes "......ㄤ龟ê估...";
+		mes "酚瞶弧荐荐琌タ盽, 龟悔獶!";
 		next;
-		mes "[蒙力]";
-		mes "理由是梦罗克沙漠的沙子因导热性很差的关系, 当坐下来休息时... 屁股只是有些暖和而已";
+		mes "[籜]";
+		mes "瞶パ琌冠霉‵簔‵旧荐┦畉闽╰, 讽Гㄓヰ... Ь琌Τㄇ穢㎝τ";
 		next;
-		mes "[蒙力]";
-		mes "所以大家都才可以在沙漠正中央处恢复HP和 SP";
+		mes "[籜]";
+		mes "┮產常‵簔タいァ矪蝋HP㎝ SP";
 		next;
-		mes "[蒙力]";
-		mes "现在回想起来唯独梦罗克地区的平均温度高的原因, 也许是这里魔王被封印的关系吧";
+		mes "[籜]";
+		mes "瞷稱癬ㄓ斑縒冠霉跋キА放蔼, 砛琌硂ń臸砆闽╰";
 		close;
 	case 2:
-		mes "[蒙力]";
-		mes "恢复疲劳!";
-		mes "那是所有药水们的期望!";
-		mes "尤其红色药水即使只有微量的恢复效果, 但因低廉与重量轻的特性, 一直颇受大家的欢迎";
+		mes "[籜]";
+		mes "蝋痟骋!";
+		mes "ê琌┮Τ媚戳辨!";
+		mes "ぷㄤ︹媚ㄏΤ稬秖蝋狦, 稧蒓秖淮疭┦, 会產舧";
 		next;
-		mes "[蒙力]";
-		mes "虽想跳入金字塔附近的绿洲后喝一瓶清凉的药水...";
-		mes "但目前的状况并不允许...";
+		mes "[籜]";
+		mes "瘤稱铬娥厚瑆耻瞺睲睤媚...";
+		mes "ヘ玡猵ぃす砛...";
 		close;
 	case 3:
-		mes "[蒙力]";
-		mes "把'大嘴鸟魔物蛋'打破时偶尔会出来'牛奶', ";
-		mes "很纳闷为何牛奶会从鸟蛋中蹦出来呢...";
+		mes "[籜]";
+		mes "р'糒尘臸矹'ゴ瘆案焊穦ㄓ'イ', ";
+		mes "磂イ穦眖尘矹い论ㄓ㎡...";
 		next;
-		mes "[蒙力]";
-		mes "从蛋里竟会冒出'牛奶'来...";
-		mes "太不可思议了...";
-		mes "这都是灾后的后遗症吧...";
+		mes "[籜]";
+		mes "眖矹ń澈穦玙'イ'ㄓ...";
+		mes "びぃ某...";
+		mes "硂常琌╝框痝...";
 		close;
 	}
 }
 
-moc_ruins,174,120,4	script	苍蝇叔叔#moc	1_M_JOBGUIDER,{
-	mes "[麻尼]";
-	mes "呃, 呜呜呜呜";
+moc_ruins,174,120,4	script	籥们#moc	1_M_JOBGUIDER,{
+	mes "[陈ェ]";
+	mes ", 躲躲躲躲";
 	next;
-	mes "[麻尼]";
-	mes "我... 看到了... 沙漠苍蝇之王'龙蝇'竟然一瞬间化为灰烬的景况...";
+	mes "[陈ェ]";
+	mes "и... ... ‵簔籥们ぇ'纒们'澈礛俐丁てη聈春猵...";
 	next;
-	mes "[麻尼]";
-	mes "这世界到底是怎么了呢? 我们能生存下来吗?";
+	mes "[陈ェ]";
+	mes "硂┏琌㎡? иネㄓ盾?";
 	next;
-	switch(select("龙... 龙蝇?!")) {
+	switch(select("纒... 纒们?!")) {
 	case 1:
-		mes "[麻尼]";
-		mes "本村落东北方有只与众不同的苍蝇!";
-		mes "它的名字是沙漠苍蝇们的大王'龙蝇'!";
+		mes "[陈ェ]";
+		mes "セ辅狥よΤ蒓渤ぃ籥们!";
+		mes "ウ琌‵簔籥们'纒们'!";
 		next;
-		mes "[麻尼]";
-		mes "龙蝇比其它沙漠上的首领苍蝇有着更大的战斗力";
+		mes "[陈ェ]";
+		mes "纒们ゑㄤウ‵簔烩籥们Τ帝驹ゆ";
 		next;
-		mes "[麻尼]";
-		mes "且有较低机率会掉落叫做'发夹'的珍贵宝物...";
+		mes "[陈ェ]";
+		mes "Τ耕审瞯穦奔辅暗'祇Ж'禥腳...";
 		next;
-		mes "[麻尼]";
-		mes "对了, 你不觉得魔王梦罗克冷酷无情吗?";
-		mes "甚至连与人类为敌的魔物们也都不放过";
+		mes "[陈ェ]";
+		mes "癸, ぃ谋眔臸冠霉慌礚薄盾?";
+		mes "硈蒓摸寄臸常ぃ筁";
 		next;
-		mes "[麻尼]";
-		mes "如此惨忍的魔王竟然复活了, 我们是否大祸临头了啊!";
+		mes "[陈ェ]";
+		mes "篏г臸澈礛蝋, и琌鹤羬繷摆!";
 		close;
 	}
 }
@@ -571,156 +571,156 @@ moc_ruins,173,70,4	script	Uncle Morocc#moc	1_M_02,{
 	}
 }
 
-moc_fild16,199,212,4	script	资深刺客#moc	55,{
-	mes "[何西]";
-	mes "刺客";
-	mes "要成为好的刺客 必须要锻炼出一股杀气";
-	mes "但是, 当发现要暗杀的对象时 必须要隐匿自己的杀气, 以防对方察觉";
-	mes "有的人, 已经锻炼出可以察觉周围是否有杀气";
-	mes "这是一种可以锻炼的反应";
+moc_fild16,199,212,4	script	戈瞏#moc	55,{
+	mes "[﹁]";
+	mes "";
+	mes "璶Θ ゲ斗璶岭芬炳蒩";
+	mes "琌, 讽祇瞷璶穞炳癸禜 ゲ斗璶留拔炳蒩, ň癸よ诡谋";
+	mes "Τ, 竒岭芬诡谋㏄瞅琌Τ炳蒩";
+	mes "硂琌销岭芬は莱";
 	next;
-	switch(select("刺客的定义:结束对话")) {
+	switch(select("﹚竡:挡癸杠")) {
 	case 1:
-		mes "[何西]";
-		mes "我把我的经验分享给你";
-		mes "你听看看";
-		mes "刺客必须泯灭人性";
-		mes "这是入门";
-		mes "但是, 却又是最难做到的";
-		mes "我希望你能做到";
+		mes "[﹁]";
+		mes "ири竒喷だㄉ倒";
+		mes "";
+		mes "ゲ斗獅防┦";
+		mes "硂琌";
+		mes "琌, 玱琌程螟暗";
+		mes "и辨暗";
 		next;
-		mes "[何西]";
-		mes "还有一点是";
-		mes "刺客公会";
-		mes "是个神秘的组织";
-		mes "刺客公会不只是杀杀人而已";
-		mes "还有一个任务";
+		mes "[﹁]";
+		mes "临Τ翴琌";
+		mes "そ穦";
+		mes "琌舱麓";
+		mes "そ穦ぃ琌炳炳τ";
+		mes "临Τヴ叭";
 		next;
-		mes "[何西]";
-		mes "这个任务就是";
-		mes "利用本身的技能";
-		mes "消灭魔物, 还有情报搜集";
+		mes "[﹁]";
+		mes "硂ヴ叭碞琌";
+		mes "ノセōм";
+		mes "防臸, 临Τ薄厨穓栋";
 		close;
 	case 2:
-		mes "[何西]";
-		mes "很久以前";
-		mes "我曾经犯了一个错误";
-		mes "我在吃完羊肉麻辣锅后";
-		mes "跑去执行任务";
+		mes "[﹁]";
+		mes "玡";
+		mes "и纯竒デ岿粇";
+		mes "иЧοψ陈欢羚";
+		mes "禲磅︽ヴ叭";
 		mes "..";
-		mes "那时候";
-		mes "我去执行暗杀魔物任务";
+		mes "ê";
+		mes "и磅︽穞炳臸ヴ叭";
 		next;
-		mes "[何西]";
-		mes "当我到达任务地点时";
-		mes "身体也隐藏起来";
-		mes "却发现";
-		mes "魔物竟然能发觉我的存在";
-		mes "那时候我拚命隐藏";
-		mes "它却能一再的发现我";
-		mes "我吓坏了";
+		mes "[﹁]";
+		mes "讽и笷ヴ叭翴";
+		mes "ō蔨留旅癬ㄓ";
+		mes "玱祇瞷";
+		mes "臸澈礛祇谋и";
+		mes "êи╅㏑留旅";
+		mes "ウ玱祇瞷и";
+		mes "и纞Д";
 		next;
-		mes "[何西]";
-		mes "那次以后我就警惕在心";
-		mes "希望你能记得";
-		mes "有的魔物嗅觉很灵敏";
-		mes "你一定要小心";
+		mes "[﹁]";
+		mes "êΩи碞牡抱み";
+		mes "辨癘眔";
+		mes "Τ臸跺谋艶庇";
+		mes "﹚璶み";
 		close;
 	}
 }
 
-moc_fild16,211,254,4	script	新进刺客#07rhea_30	2_M_THIEFMASTER,{
-	mes "[帝毕]";
-	mes "盗贼的进阶职业就是刺客";
-	mes "你转职后就会发现";
-	mes "你可以使用不同的武器了";
-	mes "很惊讶吧";
-	mes "拳刃跟短剑";
-	mes "攻击利可是有差异的喔";
-	mes "而且, 拳刃看起来多帅啊";
+moc_fild16,211,254,4	script	穝秈#07rhea_30	2_M_THIEFMASTER,{
+	mes "[拨]";
+	mes "祍搁秈顶戮穨碞琌";
+	mes "锣戮碞穦祇瞷";
+	mes "ㄏノぃ猌竟";
+	mes "誥砓";
+	mes "蛤祏糃";
+	mes "ю阑琌Τ畉奢翅";
+	mes "τ, 癬ㄓ摆";
 	next;
-	switch(select("拳刃类攻击特性:短剑类攻击特性:结束对话")) {
+	switch(select("摸ю阑疭┦:祏糃摸ю阑疭┦:挡癸杠")) {
 	case 1:
-		mes "[帝毕]";
-		mes "在沙漠之城　梦罗克";
-		mes "在武器店里可以购买到";
-		mes "拳刃";
-		mes "拳刃是种双手武器";
-		mes "它插在双手上";
-		mes "是种适合快速砍杀技巧的武器";
+		mes "[拨]";
+		mes "‵簔ぇ冠霉";
+		mes "猌竟┍ń潦禦";
+		mes "";
+		mes "琌销蛮も猌竟";
+		mes "ウ础蛮も";
+		mes "琌销屿е硉炳мォ猌竟";
 		next;
-		mes "[帝毕]";
-		mes "右手修练";
-		mes "可以补足较弱左手臂的力量";
-		mes "以加强攻击力";
-		mes "还有, 因为是双手武器";
-		mes "所以不能使用盾牌之类的防具";
-		mes "你懂了吗?";
+		mes "[拨]";
+		mes "も絤";
+		mes "干ì耕畓オも羥秖";
+		mes "眏ю阑";
+		mes "临Τ, 琌蛮も猌竟";
+		mes "┮ぃㄏノ礟ぇ摸ňㄣ";
+		mes "来盾?";
 		next;
-		mes "[帝毕]";
-		mes "装备上拳刃后";
-		mes "可以快速攻击敌人的技能";
-		mes "就是：音速投掷";
-		mes "嘿嘿";
-		mes "这招只有装备拳刃才可以使用喔";
-		mes "特别吧";
+		mes "[拨]";
+		mes "杆称";
+		mes "е硉ю阑寄м";
+		mes "碞琌硉щ耏";
+		mes "糑糑";
+		mes "硂┷Τ杆称ㄏノ翅";
+		mes "疭";
 		next;
-		mes "[帝毕]";
-		mes "音速投掷";
-		mes "你会使用??";
-		mes "我看是你想太多了";
-		mes "那个必须先学会某项技能";
-		mes "然后, 还必须修练那项技能到一定的境界";
-		mes ", 才能使用的";
+		mes "[拨]";
+		mes "硉щ耏";
+		mes "穦ㄏノ??";
+		mes "и琌稱び";
+		mes "êゲ斗厩穦琘兜м";
+		mes "礛, 临ゲ斗絤ê兜м﹚挂";
+		mes ", ㄏノ";
 		next;
-		mes "[帝毕]";
-		mes "要修练哪项技能才会出现??";
-		mes "抱歉, 我也不知道, 那是一个刺客中的一";
-		mes "个佼佼者所创造出来的梦幻技能";
-		mes "我只知道它是无属性的物理性攻击技能";
+		mes "[拨]";
+		mes "璶絤兜м穦瞷??";
+		mes "╆簆, иぃ笵, ê琌い";
+		mes "顺顺┮承硑ㄓ冠ほм";
+		mes "и笵ウ琌礚妮┦瞶┦ю阑м";
 		close;
 	case 2:
-		mes "[帝毕]";
-		mes "什么是短剑类攻击特性";
-		mes "你有够笨的";
-		mes "就是两手拿不同的短剑";
-		mes "懂了吧";
-		mes "是两手拿不同的短剑.";
-		mes "算了";
-		mes "没看过那么笨的人";
+		mes "[拨]";
+		mes "ぐ琌祏糃摸ю阑疭┦";
+		mes "Τ镑猜";
+		mes "碞琌ㄢもぃ祏糃";
+		mes "来";
+		mes "琌ㄢもぃ祏糃.";
+		mes "衡";
+		mes "⊿筁ê猜";
 		next;
-		mes "[帝毕]";
-		mes "因为刺客";
-		mes "必须使用比较好隐藏的武器";
-		mes "所以短剑类是很好的选择";
-		mes "你不要小看这类武器喔";
-		mes "他们的攻击力";
-		mes "好好的搭配";
-		mes "可是具有高水准的表现";
+		mes "[拨]";
+		mes "";
+		mes "ゲ斗ㄏノゑ耕留旅猌竟";
+		mes "┮祏糃摸琌匡拒";
+		mes "ぃ璶硂摸猌竟翅";
+		mes "ю阑";
+		mes "穎皌";
+		mes "琌ㄣΤ蔼瞷";
 		next;
-		mes "[帝毕]";
-		mes "还有";
-		mes "装备短剑也许还可以装备盾牌类的防具";
-		mes "这点我就不清楚了";
-		mes "这请你自己去试看看了";
+		mes "[拨]";
+		mes "临Τ";
+		mes "杆称祏糃砛临杆称礟摸ňㄣ";
+		mes "硂翴и碞ぃ睲贰";
+		mes "硂叫刚";
 		next;
-		mes "[帝毕]";
-		mes "刺客的武器选择";
-		mes "必须端看个人喜爱";
-		mes "没有人可以强迫你的选择";
-		mes "好好的运用你的智慧";
-		mes "创造出你的个人风格吧";
-		mes "哈哈哈哈";
+		mes "[拨]";
+		mes "猌竟匡拒";
+		mes "ゲ斗狠尺稲";
+		mes "⊿Τ眏匡拒";
+		mes "笲ノ醇紌";
+		mes "承硑";
+		mes "";
 		close;
 	case 3:
-		mes "[帝毕]";
-		mes "你真的不想听吗?";
-		mes "反正, 我也认为你听不懂";
-		mes "我所要说的太深奥";
-		mes "去磨练过后, 增长你的见识";
-		mes "再回来找我吧";
-		mes "我会在这里等你的";
-		mes "哈哈哈哈";
+		mes "[拨]";
+		mes "痷ぃ稱盾?";
+		mes "はタ, и粄ぃ来";
+		mes "и┮璶弧び瞏而";
+		mes "縤絤筁, 糤ǎ醚";
+		mes "ㄓти";
+		mes "и穦硂ń单";
+		mes "";
 		close;
 	}
 }
@@ -729,19 +729,19 @@ moc_fild16,211,254,4	script	新进刺客#07rhea_30	2_M_THIEFMASTER,{
 //============================================================
 //Bartender
 
-morocc_in,166,76,3	script	酒保#02	1_ETC_01,{
-	mes "[酒保]";
-	mes "请点饮料吧?";
+morocc_in,166,76,3	script	皊玂#02	1_ETC_01,{
+	mes "[皊玂]";
+	mes "叫翴都?";
 	next;
-	switch(select("热带苏格拉特饮料:朱红色海滩饮料:取消")) {
+	switch(select("荐盿默┰疭都:Χ︹舮都:")) {
 	case 1:
 		if (Zeny >= 1000 ) {
 			set Zeny, Zeny - 1000;
 			getitem 12112,1;
-			mes "[酒保]";
-			mes "在这里,";
-			mes "虽然主要成分是果汁,";
-			mes "不过不要过量的饮用啊";
+			mes "[皊玂]";
+			mes "硂ń,";
+			mes "瘤礛璶Θだ琌狦ツ,";
+			mes "ぃ筁ぃ璶筁秖都ノ摆";
 			close;
 		}
 		break;
@@ -749,45 +749,45 @@ morocc_in,166,76,3	script	酒保#02	1_ETC_01,{
 		if (Zeny >= 1000 ) {
 			set Zeny, Zeny - 1000;
 			getitem 12113,1;
-			mes "[酒保]";
-			mes "在这里,";
-			mes "不过不要过量的饮用啊";
+			mes "[皊玂]";
+			mes "硂ń,";
+			mes "ぃ筁ぃ璶筁秖都ノ摆";
 			close;
 		}
 		break;
 	case 3:
-		mes "[酒保]";
-		mes "哼...";
+		mes "[皊玂]";
+		mes "...";
 		close;
 	}
-	mes "[酒保]";
-	mes ".... 你有能力付得起吗?";
-	mes "请你确认一下皮夹之后再来点吧,";
-	mes "一杯要 1000金币哟";
+	mes "[皊玂]";
+	mes ".... Τ眔癬盾?";
+	mes "叫谔粄ブЖぇㄓ翴,";
+	mes "狹璶 1000刽抽";
 	close;
 }
 
 // Assassin Guild Guards
 //===================================================
-moc_fild16,195,281,4	script	刺客公会守卫#1::SinGuard	4_M_MOC_SOLDIER,{
-	mes "[刺客公会守卫]";
+moc_fild16,195,281,4	script	そ穦矫#1::SinGuard	4_M_MOC_SOLDIER,{
+	mes "[そ穦矫]";
 	if(BaseJob == Job_Assassin) {
-		mes "你好.";
+		mes ".";
 		close;
 	}
 	set .@temp, rand(1,4);
 	if(.@temp == 1) mes "........";
-	if(.@temp == 2) mes "唔..........";
-	if(.@temp == 3) mes "唔... 你不该出现在这里.....";
-	if(.@temp == 4) mes "此处不适合你逗留.......";
+	if(.@temp == 2) mes "..........";
+	if(.@temp == 3) mes "... ぃ赣瞷硂ń.....";
+	if(.@temp == 4) mes "矪ぃ屿硆痙.......";
 	close;
 }
 
-moc_fild16,204,281,4	duplicate(SinGuard)	刺客公会守卫#2	4_M_MOC_SOLDIER
-moc_fild16,207,281,4	duplicate(SinGuard)	刺客公会守卫#3	4_M_MOC_SOLDIER
-moc_fild16,216,281,4	duplicate(SinGuard)	刺客公会守卫#4	4_M_MOC_SOLDIER
-moc_fild16,200,231,4	duplicate(SinGuard)	刺客公会守卫#5	4_M_MOC_SOLDIER
-moc_fild16,211,231,4	duplicate(SinGuard)	刺客公会守卫#6	4_M_MOC_SOLDIER
-moc_fild16,200,257,4	duplicate(SinGuard)	刺客公会守卫#7	4_M_MOC_SOLDIER
-moc_fild16,211,257,4	duplicate(SinGuard)	刺客公会守卫#8	4_M_MOC_SOLDIER
+moc_fild16,204,281,4	duplicate(SinGuard)	そ穦矫#2	4_M_MOC_SOLDIER
+moc_fild16,207,281,4	duplicate(SinGuard)	そ穦矫#3	4_M_MOC_SOLDIER
+moc_fild16,216,281,4	duplicate(SinGuard)	そ穦矫#4	4_M_MOC_SOLDIER
+moc_fild16,200,231,4	duplicate(SinGuard)	そ穦矫#5	4_M_MOC_SOLDIER
+moc_fild16,211,231,4	duplicate(SinGuard)	そ穦矫#6	4_M_MOC_SOLDIER
+moc_fild16,200,257,4	duplicate(SinGuard)	そ穦矫#7	4_M_MOC_SOLDIER
+moc_fild16,211,257,4	duplicate(SinGuard)	そ穦矫#8	4_M_MOC_SOLDIER
 

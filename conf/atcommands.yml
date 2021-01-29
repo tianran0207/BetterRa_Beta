@@ -22,12 +22,12 @@
 # Atcommand Settings
 #
 ###########################################################################
-# - Command                  指令名.
-#   Aliases:                 指令的别名. (可选)
-#     - <AliasName>             - 别名
-#   Help                     帮助命令的需讯息. (可选)
+# - Command                  .
+#   Aliases:                 . (匡)
+#     - <AliasName>             - 
+#   Help                     腊㏑惠癟. (匡)
 ###########################################################################
-#@reloadatcommand	: "重新加载指令配置文件"
+#@reloadatcommand	: "穝更皌竚ゅン"
 
 Header:
   Type: ATCOMMAND_DB
@@ -38,420 +38,420 @@ Body:
     Aliases:
       - h
     Help: |
-      指令参数: <想寻求帮助的指令名称>
-      可以帮您查某个指令的使用方法.
+      把计: <稱碝―腊嘿>
+      腊眤琩琘ㄏノよ猭.
   - Command: noask
     Help: |
-      自动拒绝交易和所有邀请(邀请包括: 添加好友邀请、组队邀请和公会邀请).
+      笆┶荡ユ㎝┮Τ淋叫(淋叫珹: 睰ね淋叫舱钉淋叫㎝そ穦淋叫).
   - Command: gmotd
     Help: |
-      将 conf/motd.txt 中配置的公告信息发送给全部玩家(以黄字公告样式显示).
+      盢 conf/motd.txt い皌竚そ獺祇癳倒场產(独そ妓Α陪ボ).
   - Command: me
     Help: |
-      指令参数: <讯息>
-      将消息以指定的格式发送出去, 格式为 * :角色名 讯息: * (类似 mIRC 中的 /me 指令).
+      把计: <癟>
+      盢﹚Α祇癳, Α * :à︹ 癟: * (摸 mIRC い /me ).
   - Command: fakename
     Help: |
-      指令参数: <要伪装成什么角色名>
-      临时修改你的角色名.
+      把计: <璶鞍杆Θぐà︹>
+      羬эà︹.
   - Command: npctalk
     Aliases:
       - npctalkc
     Help: |
-      指令参数: <NPC名称> <讯息>
-      强制让指定的NPC显示一个普通的对话消息.
+      把计: <NPC嘿> <癟>
+      眏琵﹚NPC陪ボ炊硄癸杠.
   - Command: broadcast
     Help: |
-      指令参数: <讯息>
-      在带有你角色名的情况下,进行全服广播(黄色字体).
+      把计: <癟>
+      盿Τà︹薄猵,秈︽狝約冀(独︹蔨).
   - Command: kami
     Help: |
-      指令参数: <讯息>
-      不带有你角色名的情况下,进行全服广播(黄色字体).
+      把计: <癟>
+      ぃ盿Τà︹薄猵,秈︽狝約冀(独︹蔨).
   - Command: kamib
     Help: |
-      指令参数: <讯息>
-      不带有你角色名的情况下,进行全服广播(蓝色字体).
+      把计: <癟>
+      ぃ盿Τà︹薄猵,秈︽狝約冀(屡︹蔨).
   - Command: localbroadcast
     Help: |
-      指令参数: <讯息>
-      在带有你角色名的情况下,对当前地图进行广播(黄色字体).
+      把计: <癟>
+      盿Τà︹薄猵,癸讽玡瓜秈︽約冀(独︹蔨).
   - Command: commands
     Help: |
-      显示出所有目前您可以使用的指令.
+      陪ボ┮Τヘ玡眤ㄏノ.
   - Command: rates
     Help: |
-      显示服务器目前的倍率设置信息, 包括: 经验倍率、物品掉落倍率等等.
+      陪ボ狝叭竟ヘ玡瞯砞竚獺, 珹: 竒喷瞯珇奔辅瞯单单.
   - Command: uptime
     Help: |
-      显示服务器距离上一次维护之后,已经持续运行多长时间.
+      陪ボ狝叭竟禯置Ω蝴臔ぇ,竒尿笲︽丁.
   - Command: showdelay
     Help: |
-      显示/隐藏技能冷却提示(当使用正在冷却的技能时,是否提示此技能正在冷却? 默认不显示).
+      陪ボ/留旅м玱矗ボ(讽ㄏノタ玱м,琌矗ボмタ玱? 纐粄ぃ陪ボ).
   - Command: exp
     Help: |
-      显示当前的等级,以及经验的百分比进度.
+      陪ボ讽玡单,の竒喷κだゑ秈.
   - Command: mobinfo
     Aliases:
       - monsterinfo
       - mi
     Help: |
-      指令参数: <魔物名称|魔物编号>
-      显示指定魔物的信息(能力, 经验值, 掉落的道具信息等).
+      把计: <臸嘿|臸絪腹>
+      陪ボ﹚臸獺(, 竒喷, 奔辅笵ㄣ獺单).
   - Command: iteminfo
     Aliases:
       - ii
     Help: |
-      指令参数: <物品名称|物品编号>
-      显示指定物品的信息(物品类型, 重量等).
+      把计: <珇嘿|珇絪腹>
+      陪ボ﹚珇獺(珇摸, 秖单).
   - Command: whodrops
     Help: |
-      指令参数: <物品名称|物品编号>
-      查询指定的物品可以从哪些魔物身上获得(按照魔物的掉率排序).
+      把计: <珇嘿|珇絪腹>
+      琩高﹚珇眖ㄇ臸ō莉眔(酚臸奔瞯逼).
   - Command: version
     Help: |
-      显示服务端的版本号信息.
+      陪ボ狝叭狠セ腹獺.
   - Command: email
     Help: |
-      指令参数: <现在使用的邮件地址> <新的邮件地址>
-      修改你账号的邮件地址(邮件地址在部分版本的客户端中, 将作为删除角色的确认密码使用).
+      把计: <瞷ㄏノ秎ン> <穝秎ン>
+      э姐腹秎ン(秎ン场だセめ狠い, 盢埃à︹谔粄盞絏ㄏノ).
   - Command: where
     Help: |
-      指令参数: <角色名称>
-      查询指定角色所处的位置(所在地图和坐标).
+      把计: <à︹嘿>
+      琩高﹚à︹┮矪竚(┮瓜㎝Г夹).
   - Command: time
     Aliases:
       - date
       - serverdate
       - servertime
     Help: |
-      显示服务器的日期和时间, 以及游戏内的昼夜时间.
+      陪ボ狝叭竟ら戳㎝丁, の村栏ず鞭丁.
   - Command: showexp
     Help: |
-      显示/隐藏获得的经验值.
+      陪ボ/留旅莉眔竒喷.
   - Command: showzeny
     Help: |
-      显示/隐藏获得的金币.
+      陪ボ/留旅莉眔刽.
   - Command: mobsearch
     Help: |
-      指令参数: <魔物名称|编号>
-      搜索当前地图中, 指定魔物的位置(可以用这个指令来查BOSS位置, 再利用 jump 指令瞬移过去).
+      把计: <臸嘿|絪腹>
+      穓讽玡瓜い, ﹚臸竚(ノ硂ㄓ琩BOSS竚, ノ jump 俐簿筁).
   - Command: who
     Aliases:
       - whois
     Help: |
-      指令参数: [<角色名称>]
-      显示全服玩家的队伍和公会名称(若指定角色名, 则只查找特定的角色).
+      把计: [<à︹嘿>]
+      陪ボ狝產钉ヮ㎝そ穦嘿(璝﹚à︹, 玥琩т疭﹚à︹).
   - Command: who2
     Help: |
-      指令参数: [<角色名称>]
-      显示全服玩家的等级和职业(若指定角色名, 则只查找特定的角色).
+      把计: [<à︹嘿>]
+      陪ボ狝產单㎝戮穨(璝﹚à︹, 玥琩т疭﹚à︹).
   - Command: who3
     Help: |
-      指令参数: [<角色名称>]
-      显示全服玩家的账号编号和所在的位置(若指定角色名, 则只查找特定的角色).
+      把计: [<à︹嘿>]
+      陪ボ狝產姐腹絪腹㎝┮竚(璝﹚à︹, 玥琩т疭﹚à︹).
   - Command: whomap
     Help: |
-      @whomap/@whomap2/@whomap3 [地图名称] - 与 @who/@who2/@who3 类似, 但只针对指定的地图.
+      @whomap/@whomap2/@whomap3 [瓜嘿] - 蒓 @who/@who2/@who3 摸, 皐癸﹚瓜.
   - Command: whogm
     Help: |
-      指令参数: [关键词] - 类似 @who+@who2+who3 的集合, 但只针对在线的GM(如果指定了关键词, 那么只搜索出名称包含指定关键词的在线GM).
+      把计: [闽龄迭] - 摸 @who+@who2+who3 栋, 皐癸絬GM(狦﹚闽龄迭, ê穓嘿﹚闽龄迭絬GM).
   - Command: guildspy
     Help: |
-      指令参数: <公会名称|编号> - 你将会收到指定公会的“公会频道”中的所有聊天信息 (聊天记录必须启用).
+      把计: <そ穦嘿|絪腹> - 盢穦Μ﹚そ穦¨そ穦繵笵〃い┮Τ册ぱ獺 (册ぱ癘魁ゲ斗币ノ).
   - Command: partyspy
     Help: |
-      @partyspy <队伍名称|编号> - 你将会收到指定队伍的“队伍频道”中的所有聊天信息 (聊天记录必须启用).
+      @partyspy <钉ヮ嘿|絪腹> - 盢穦Μ﹚钉ヮ¨钉ヮ繵笵〃い┮Τ册ぱ獺 (册ぱ癘魁ゲ斗币ノ).
   - Command: mapinfo
     Help: |
-      指令参数: [<0-3> [地图名称]] - 显示出指定地图的详细信息 (常规内容 +: 0: 没有其他信息, 1: 玩家信息, 2: NPC信息, 3: 聊天室信息).
+      把计: [<0-3> [瓜嘿]] - 陪ボ﹚瓜冈灿獺 (盽砏ず甧 +: 0: ⊿Τㄤ獺, 1: 產獺, 2: NPC獺, 3: 册ぱ獺).
   - Command: go
     Help: |
-      指令参数: <城市名称|城市编号>
-      将您传送到一个您所指定的城市.
-        -3: (记忆传送点 2)     14: 龙之城/洛阳城     31: 莫拉村
-        -2: (记忆传送点 1)     15: 出生点            32: 德瓦他
-        -1: (记忆传送点 0)     16: 监狱              33: 绵绵岛/喵喵岛
-         0: 普隆德拉           17: 蜜月岛            34: 马来亚港口
-         1: 梦罗克             18: 哎哟泰雅          35: 艾卡拉奇
-         2: 吉芬               19: 艾音布罗克        36: 勒沙尼亚
-         3: 斐扬               20: 里希塔乐镇
-         4: 艾尔贝塔           21: 艾音贝赫
-         5: 依斯鲁得岛         22: 毁葛
-         6: 艾尔帕兰           23: 拉赫
-         7: 姜饼城             24: 菲音斯/伯仁斯
-         8: 克魔岛             25: 莫斯科比亚
-         9: 朱诺               26: 米德加尔特联合驻地
-        10: 天津町             27: 马努克
-        11: 昆仑               28: 辉煌领域
-        12: 汶巴拉             29: 巴西
-        13: 尼芙菲姆           30: 埃迪斯特斯
+      把计: <カ嘿|カ絪腹>
+      盢眤肚癳眤┮﹚カ.
+        -3: (癘拘肚癳翴 2)     14: 纒ぇ/锭     31: 馋┰
+        -2: (癘拘肚癳翴 1)     15: ネ翴            32: 紈ニ
+        -1: (癘拘肚癳翴 0)     16: 菏夯              33: 壶壶畄/豴豴畄
+         0: 炊订紈┰           17: 籩る畄            34: 皑ㄓㄈ翠
+         1: 冠霉             18: 玼抽懂          35: ︺┰
+         2:                19: ︺ガ霉        36: 扒‵ェㄈ
+         3: 创喘               20: ń娥贾马
+         4: ︺焊ī娥           21: ︺ī划
+         5: ㄌ吹緗眔畄         22: 反腐
+         6: ︺焊┈孽           23: ┰划
+         7: 绘             24: 滇吹/く吹
+         8: 臸畄             25: 馋吹ゑㄈ
+         9: Χ空               26: μ紈焊疭羛緉
+        10: ぱ瑉薽             27: 皑
+        11: ㄚ               28: 谨纷烩办
+        12: ╖ぺ┰             29: ぺ﹁
+        13: ェ滇﹊           30: 甁瓆吹疭吹
   - Command: jumpto
     Aliases:
       - goto
       - warpto
     Help: |
-      指令参数: <角色名称>
-      将您传送到指定角色的身边.
+      把计: <à︹嘿>
+      盢眤肚癳﹚à︹ō娩.
   - Command: follow
     Help: |
-      指令参数: <角色名称>
-      跟踪一个玩家.
+      把计: <à︹嘿>
+      蛤萝產.
   - Command: mount
     Aliases:
       - mountpeco
     Help: |
-      给予/移除职业基础坐骑(就算没有学习技能也可以获得坐骑).
+      倒ぉ/簿埃戮穨膀娄Г肕(碞衡⊿Τ厩策м莉眔Г肕).
   - Command: mount2
     Help: |
-      给予/移除商城坐骑(九尾狐、羊驼等).
+      倒ぉ/簿埃坝Г肕(Юο緈单).
   - Command: disguise
     Help: |
-      指令参数: <魔物名称|魔物编号|NPC外观编号>
-      将玩家伪装成魔物或者NPC.
+      把计: <臸嘿|臸絪腹|NPC芠絪腹>
+      盢產鞍杆Θ臸┪NPC.
   - Command: undisguise
     Help: |
-      还原被 @disguise 指令修改过的外观.
+      临砆 @disguise э筁芠.
   - Command: disguiseguild
     Help: |
-      与 @disguise 类似, 可以将指定公会的成员伪装成魔物或者NPC.
+      蒓 @disguise 摸, 盢﹚そ穦Θ鞍杆Θ臸┪NPC.
   - Command: undisguiseguild
     Help: |
-      还原被 @disguiseguild 指令修改过的外观.
+      临砆 @disguiseguild э筁芠.
   - Command: model
     Help: |
-      指令参数:  <发型编号: 0-17> <发色编号: 0-8> <服装染色编号: 0-4>
-      - 改变你角色的外观.
+      把计:  <祇絪腹: 0-17> <祇︹絪腹: 0-8> <狝杆琕︹絪腹: 0-4>
+      - э跑à︹芠.
   - Command: size
     Help: |
-      指令参数:  <0-2> 
-      改变角色的体型大小 (0-普通 1-小型 2-大型)
+      把计:  <0-2> 
+      э跑à︹蔨 (0-炊硄 1- 2-)
   - Command: sizeall
     Help: |
-      与 @size 指令类似, 可以改变全服玩家的体型大小.
+      蒓 @size 摸, э跑狝產蔨.
   - Command: sizeguild
     Help: |
-      指令参数:  <0-2> <公会名称|公会编号>
-      与 @size 指令类似, 可以改变指定公会成员的体型大小.
+      把计:  <0-2> <そ穦嘿|そ穦絪腹>
+      蒓 @size 摸, э跑﹚そ穦Θ蔨.
   - Command: hide
     Help: |
-      把自己设置为隐身(不会被任何技能发现). 再次输入此指令则取消隐身.
+      р砞竚留ō(ぃ穦砆ヴм祇瞷). Ω块玥留ō.
   - Command: save
     Help: |
-      把当前位置设置为我的复活点.
+      р讽玡竚砞竚и蝋翴.
   - Command: load
     Aliases:
       - return
     Help: |
-      传送到你的复活点.
+      肚癳蝋翴.
   - Command: warp
     Aliases:
       - rura
       - mapmove
     Help: |
-      指令参数: <地图名称> [<X坐标> <Y坐标>]
-      传送到你指定的地图和位置.
+      把计: <瓜嘿> [<XГ夹> <YГ夹>]
+      肚癳﹚瓜㎝竚.
   - Command: jump
     Help: |
-      指令参数: [<X坐标> [<Y坐标>]]
-      随机传送, 效果类似苍蝇翅膀.
+      把计: [<XГ夹> [<YГ夹>]]
+      繦审肚癳, 狦摸籥们籋.
   - Command: jobchange
     Aliases:
       - job
     Help: |
-      指令参数: <职业名称|职业编号>
-      改变你的职业.
-      ----- 初学者 / 普通 一转职业 -----
-         0 初学者            1 剑士              2 魔法师              3 弓箭手
-         4 服事              5 商人              6 盗贼
-      ----- 普通 二转职业 -----
-         7 骑士              8 牧师              9 巫师               10 铁匠
-        11 猎人             12 刺客             14 十字军             15 武僧
-        16 贤者             17 流氓             18 炼金术师           19 诗人
-        20 舞娘
-      ----- 进阶 初学者 / 进阶 一转职业 -----
-      4001 进阶初学者     4002 进阶剑士       4003 进阶魔法师       4004 进阶弓箭手
-      4005 进阶服事       4006 进阶商人       4007 进阶盗贼
-      ----- 进阶 二转职业 -----
-      4008 骑士领主       4009 神官           4010 超魔导师         4011 神工匠
-      4012 神射手         4013 十字刺客       4015 圣殿十字军       4016 武术宗师
-      4017 智者           4018 神行太保       4019 创造者           4020 搞笑艺人
-      4021 冷艳舞姬
-      ----- 普通 三转职业 -----
-      4054 卢恩骑士       4055 大法师         4056 游侠             4057 大主教
-      4058 机匠           4059 十字斩首者     4066 皇家卫士         4067 元素使
-      4068 宫廷乐师       4069 浪姬舞者       4070 修罗             4071 基因学者
-      4072 魅影追踪者
-      ----- 进阶 三转职业 -----
-      4060 卢恩骑士       4061 大法师         4062 游侠             4063 大主教
-      4064 机匠           4065 十字斩首者     4073 皇家卫士         4074 元素使
-      4075 宫廷乐师       4076 浪姬舞者       4077 修罗             4078 基因学者
-      4079 魅影追踪者
-      ----- 拓展职业 -----
-        23 超级初学者       24 枪手             25 忍者             4045 超初宝宝
-      4046 跆拳少年       4047 拳圣           4049 灵媒             4050 Gangsi
-      4051 死亡骑士       4052 黑暗收集者     4190 进阶超级初学者   4191 进阶超初宝宝
-      4211 日影忍者       4212 月影忍者       4215 反叛者           4218 召唤师
-      4239 星帝           4240 灵魂收割者	
-      ----- 宝宝 初学者 / 宝宝 一转职业 -----
-      4023 初学者宝宝     4024 剑士宝宝       4025 魔法师宝宝       4026 弓箭手宝宝
-      4027 服事宝宝       4028 商人宝宝       4029 盗贼宝宝
-      ----- 宝宝 二转职业 -----
-      4030 骑士宝宝       4031 牧师宝宝       4032 巫师宝宝         4033 铁匠宝宝
-      4034 猎人宝宝       4035 刺客宝宝       4037 十字军宝宝       4038 武僧宝宝
-      4039 贤者宝宝       4040 流氓宝宝       4041 炼金术师宝宝     4042 诗人宝宝
-      4043 舞娘宝宝
-      ----- 宝宝 三转职业 -----
-      4096 卢恩骑士宝宝   4097 大法师宝宝     4098 游侠宝宝         4099 大主教宝宝
-      4100 机匠宝宝       4101 十字斩首者宝宝 4102 皇家卫士宝宝     4103 元素使宝宝
-      4104 宫廷乐师宝宝   4105 浪姬舞者宝宝   4106 修罗宝宝         4107 基因学者宝宝
-      4108 魅影追踪者宝宝
-      ----- 宝宝 拓展职业 -----
-      4220 召唤师宝宝     4222 忍者宝宝       4223 日影忍者宝宝     4224 月影忍者宝宝
-      4225 跆拳少年宝宝   4226 拳圣宝宝       4227 灵媒宝宝         4228 枪手宝宝
-      4229 反叛者宝宝     4241 星帝宝宝       4242 灵魂收割者宝宝
-      ----- 模型以及其他 -----
-        22 结婚礼服         26 圣诞节服装       27 夏日服装           28 韩国服装
-       29 Oktoberfest       30 夏日服装2 
+      把计: <戮穨嘿|戮穨絪腹>
+      э跑戮穨.
+      ----- 厩 / 炊硄 锣戮穨 -----
+         0 厩            1 糃              2 臸猭畍              3 絙も
+         4 狝ㄆ              5 坝              6 祍搁
+      ----- 炊硄 锣戮穨 -----
+         7 肕              8 畍              9 畍               10 臟
+        11 聐             12              14 瓁             15 猌宫
+        16 藉             17 瑈猐             18 芬砃畍           19 钢
+        20 籖甉
+      ----- 秈顶 厩 / 秈顶 锣戮穨 -----
+      4001 秈顶厩     4002 秈顶糃       4003 秈顶臸猭畍       4004 秈顶絙も
+      4005 秈顶狝ㄆ       4006 秈顶坝       4007 秈顶祍搁
+      ----- 秈顶 锣戮穨 -----
+      4008 肕烩       4009 ﹛           4010 禬臸旧畍         4011 
+      4012 甮も         4013        4015 蒾返瓁       4016 猌砃﹙畍
+      4017 醇           4018 ︽び玂       4019 承硑           4020 穌美
+      4021 艫籖甐
+      ----- 炊硄 锣戮穨 -----
+      4054 縞肕       4055 猭畍         4056 村獿             4057 毙
+      4058 审           4059 辟     4066 產矫         4067 じㄏ
+      4068 甤贾畍       4069 甐籖       4070 霉             4071 膀厩
+      4072 緔紇發萝
+      ----- 秈顶 锣戮穨 -----
+      4060 縞肕       4061 猭畍         4062 村獿             4063 毙
+      4064 审           4065 辟     4073 產矫         4074 じㄏ
+      4075 甤贾畍       4076 甐籖       4077 霉             4078 膀厩
+      4079 緔紇發萝
+      ----- ┹甶戮穨 -----
+        23 禬厩       24 簀も             25 г             4045 禬腳腳
+      4046 禶ぶ       4047 蒾           4049 艶碈             4050 Gangsi
+      4051 肕       4052 堵穞Μ栋     4190 秈顶禬厩   4191 秈顶禬腳腳
+      4211 ら紇г       4212 る紇г       4215 は玵           4218 酬畍
+      4239 琍           4240 艶活Μ澄	
+      ----- 腳腳 厩 / 腳腳 锣戮穨 -----
+      4023 厩腳腳     4024 糃腳腳       4025 臸猭畍腳腳       4026 絙も腳腳
+      4027 狝ㄆ腳腳       4028 坝腳腳       4029 祍搁腳腳
+      ----- 腳腳 锣戮穨 -----
+      4030 肕腳腳       4031 畍腳腳       4032 畍腳腳         4033 臟腳腳
+      4034 聐腳腳       4035 腳腳       4037 瓁腳腳       4038 猌宫腳腳
+      4039 藉腳腳       4040 瑈猐腳腳       4041 芬砃畍腳腳     4042 钢腳腳
+      4043 籖甉腳腳
+      ----- 腳腳 锣戮穨 -----
+      4096 縞肕腳腳   4097 猭畍腳腳     4098 村獿腳腳         4099 毙腳腳
+      4100 审腳腳       4101 辟腳腳 4102 產矫腳腳     4103 じㄏ腳腳
+      4104 甤贾畍腳腳   4105 甐籖腳腳   4106 霉腳腳         4107 膀厩腳腳
+      4108 緔紇發萝腳腳
+      ----- 腳腳 ┹甶戮穨 -----
+      4220 酬畍腳腳     4222 г腳腳       4223 ら紇г腳腳     4224 る紇г腳腳
+      4225 禶ぶ腳腳   4226 蒾腳腳       4227 艶碈腳腳         4228 簀も腳腳
+      4229 は玵腳腳     4241 琍腳腳       4242 艶活Μ澄腳腳
+      ----- 家のㄤ -----
+        22 挡盉搂狝         26 蒾较竊狝杆       27 甃ら狝杆           28 龙瓣狝杆
+       29 Oktoberfest       30 甃ら狝杆2 
       4048 Star Gladiator (Union)             4238 Baby Star Glad (Union)
   - Command: option
     Help: |
-      指令参数: <参数1> <参数2>(可堆叠) <参数3>(可堆叠)
-      为你的角色添加指定的视觉效果(负面效果往往也伴随着禁止移动).
-       <参数1>       <参数2>        <参数3>
-      01: 石化       01: 中毒       01: 火狩          512: Cart Lv. 4
-      02: 冰冻       02: 诅咒       02: 隐匿         1024: Cart Lv. 5
-      03: 晕眩       04: 沉默       04: 伪装         2048: 兽人脸
-      04: 睡眠       08: Signum     08: Cart Lv. 1   4096: Wedding
-      06: Petrify    16: 盲目       16: 猎鹰         8192: 光猎
-      07: 烧伤       32: Angelus    32: 乘坐大嘴鸟  16384: Chasewalk
-      08: 禁足       64: Bleeding   64: 不可见
-      16: 无效果    128: 致命荼毒  128: Cart Lv. 2
-      32: 被挑衅    256: 害怕      256: Cart Lv. 3
-      可堆叠的意思是, 使用 @option 指令时, 把参数的2个值相加可以同时得到两种效果.
-      例如: “参数3” 中的 1 表示火狩, 2 表示隐匿. 那么当你用 @option 0 0 3 的时候,
-            你将同时获得这两种效果, 因为 1(火狩) + 2(隐匿) 等于 3.
-      注意: 上述没翻译的效果, 皆于 2016年5月27日在 20150916 客户端中测试无效.
+      把计: <把计1> <把计2>(帮舼) <把计3>(帮舼)
+      à︹睰﹚跌谋狦(璽狦┕┕︸繦帝窽ゎ簿笆).
+       <把计1>       <把计2>        <把计3>
+      01: ホて       01: い瑀       01:           512: Cart Lv. 4
+      02:        02: 禔〨       02: 留拔         1024: Cart Lv. 5
+      03: 穡痶       04: ↖纐       04: 鞍杆         2048: 脋羪
+      04: 何痸       08: Signum     08: Cart Lv. 1   4096: Wedding
+      06: Petrify    16: ヘ       16: 聐芅         8192: 聐
+      07: 縉端       32: Angelus    32: Г糒尘  16384: Chasewalk
+      08: 窽ì       64: Bleeding   64: ぃǎ
+      16: 礚狦    128: 璓㏑猖瑀  128: Cart Lv. 2
+      32: 砆珼舻    256: 甡┤      256: Cart Lv. 3
+      帮舼種琌, ㄏノ @option , р把计2眔ㄢ销狦.
+      ㄒ: ¨把计3〃 い 1 ボ, 2 ボ留拔. ê讽ノ @option 0 0 3 ,
+            盢莉眔硂ㄢ销狦,  1() + 2(留拔) 单 3.
+      猔種: 瓃⊿陆亩狦,  20165る27ら 20150916 め狠い代刚礚.
   - Command: heal
     Help: |
-      指令参数: [<HP> <SP>]
-      恢复定量的HP和SP. 如果没有指定参数, 则恢复全量的HP和SP.
+      把计: [<HP> <SP>]
+      蝋﹚秖HP㎝SP. 狦⊿Τ﹚把计, 玥蝋秖HP㎝SP.
   - Command: dye
     Aliases:
       - ccolor
     Help: |
-      指令参数: <服装染色编号>
-      改变角色的服装染色.
+      把计: <狝杆琕︹絪腹>
+      э跑à︹狝杆琕︹.
   - Command: hairstyle
     Aliases:
       - hstyle
     Help: |
-      指令参数: <发型编号>
-      改变角色的发型.
+      把计: <祇絪腹>
+      э跑à︹祇.
   - Command: haircolor
     Aliases:
       - hcolor
     Help: |
-      指令参数 <发色编号>
-      改变角色的发色.
+      把计 <祇︹絪腹>
+      э跑à︹祇︹.
   - Command: speed
     Help: |
-      指令参数: <1-1000>
-      改变角色的移动速度. 1 为最快, 1000 为最慢. 默认的移动速度是 150..
+      把计: <1-1000>
+      э跑à︹簿笆硉. 1 程е, 1000 程篊. 纐粄簿笆硉琌 150..
   - Command: effect
     Help: |
-      指令参数: <效果编号> [<标记>]
-      给你的角色赋予一个效果(比如晕眩的动画效果等).
+      把计: <狦絪腹> [<夹癘>]
+      倒à︹结ぉ狦(ゑ穡痶笆礶狦单).
   - Command: dropall
     Help: |
-      指令参数: [<物品类型编号>]
-      把角色身上指定类型的物品全部丢到地上(无论是否已装备). 若没有指定物品类型, 则丢弃全部物品.
+      把计: [<珇摸絪腹>]
+      рà︹ō﹚摸珇场メ(礚阶琌杆称). 璝⊿Τ﹚珇摸, 玥メ斌场珇.
   - Command: storeall
     Help: |
-      将角色背包中的所有物品存到仓库中去.
+      盢à︹璉い┮Τ珇畐い.
   - Command: killable
     Help: |
-      让你的角色在非 PvP 和 Gvg 的情况下, 也能被其他玩家攻击并杀死(攻击者需要按Shift或执行/ns后才能攻击你).
+      琵à︹獶 PvP ㎝ Gvg 薄猵, 砆ㄤ產ю阑炳(ю阑惠璶Shift┪磅︽/nsю阑).
   - Command: memo
     Help: |
-      指令参数: [记录点编号]
-      将指定编号的记录点设置为当前角色站立的位置 (若不指定编号, 则显示现在的记录点列表)..
+      把计: [癘魁翴絪腹]
+      盢﹚絪腹癘魁翴砞竚讽玡à︹ミ竚 (璝ぃ﹚絪腹, 玥陪ボ瞷癘魁翴)..
   - Command: spiritball
     Help: |
-      指令参数: <1-100>
-      给你指定数量的"气弹", 和使用"蓄气"技能类似..
+      把计: <1-100>
+      倒﹚计秖"蒩紆", ㎝ㄏノ"籛蒩"м摸..
   - Command: questskill
     Help: |
-      指令参数: <任务技能编号>
-      让您能够习得特殊的任务技能
-        初学者  =   142: 紧急治疗,     143: 装死
-        弓箭手  =   147: 制作箭,       148: 冲锋箭
-          剑士  =   144: 移动时恢复HP, 145: 攻击弱点,   146: 狂暴状态
-          服事  =   156: 神圣之光
-          盗贼  =   149: 喷砂,         150: 后退回避,   151: 捡石头,    152: 投掷石头
-          商人  =   153: 手推车攻击,   154: 改装手推车, 155: 大声呐喊, 2535: 开设采购商店
-        魔法师  =   157: 能量外套
-          猎人  =  1009: 幻影箭
-          诗人  =  1010: 阵痛之声
-          舞娘  =  1011: 眨眼之诱
-          骑士  =  1001: 冲锋攻击
-        十字军  =  1002: 退缩
-          牧师  =  1014: 舍身取义
-          武僧  =  1015: 真气注入,   1016: 发劲
-          刺客  =  1003: 超音速投掷, 1004: 毒刃
-          流氓  =  1005: 紧密的约束
-          铁匠  =  1012: 诡计的商术, 1013: 贪婪
-      炼金术师  =   238: 生命伦理
-          巫师  =  1006: 火狩芽
-          贤者  =  1007: 元素肯贝特制作, 1008: 元素更换(水), 1017: 元素更换(地),
-                   1018: 元素更换(火),   1019: 元素更换(风)
+      把计: <ヴ叭м絪腹>
+      琵眤镑策眔疭ヴ叭м
+        厩  =   142: 候獀励,     143: 杆
+        絙も  =   147: 絙,       148: ≧網絙
+          糃  =   144: 簿笆蝋HP, 145: ю阑畓翴,   146: ╣忌篈
+          狝ㄆ  =   156: 蒾ぇ
+          祍搁  =   149: 糛,         150: 癶磷,   151: 具ホ繷,    152: щ耏ホ繷
+          坝  =   153: も崩óю阑,   154: э杆も崩ó, 155: 羘驰, 2535: 秨砞潦坝┍
+        臸猭畍  =   157: 秖甅
+          聐  =  1009: ほ紇絙
+          钢  =  1010: 皚礹ぇ羘
+          籖甉  =  1011: 痺泊ぇ护
+          肕  =  1001: ≧網ю阑
+        瓁  =  1002: 癶罽
+          畍  =  1014: ō竡
+          猌宫  =  1015: 痷蒩猔,   1016: 祇玪
+            =  1003: 禬硉щ耏, 1004: 瑀
+          瑈猐  =  1005: 候盞
+          臟  =  1012: 皋璸坝砃, 1013: 砱褒
+      芬砃畍  =   238: ネ㏑瞶
+          畍  =  1006: 
+          藉  =  1007: じī疭, 1008: じ传(), 1017: じ传(),
+                   1018: じ传(),   1019: じ传()
   - Command: lostskill
     Help: |
-      指令参数: <任务技能编号>
-      让您能够忘记特殊的任务技能
-        初学者  =   142: 紧急治疗,     143: 装死
-        弓箭手  =   147: 制作箭,       148: 冲锋箭
-          剑士  =   144: 移动时恢复HP, 145: 攻击弱点,   146: 狂暴状态
-          服事  =   156: 神圣之光
-          盗贼  =   149: 喷砂,         150: 后退回避,   151: 捡石头,    152: 投掷石头
-          商人  =   153: 手推车攻击,   154: 改装手推车, 155: 大声呐喊, 2535: 开设采购商店
-        魔法师  =   157: 能量外套
-          猎人  =  1009: 幻影箭
-          诗人  =  1010: 阵痛之声
-          舞娘  =  1011: 眨眼之诱
-          骑士  =  1001: 冲锋攻击
-        十字军  =  1002: 退缩
-          牧师  =  1014: 舍身取义
-          武僧  =  1015: 真气注入,   1016: 发劲
-          刺客  =  1003: 超音速投掷, 1004: 毒刃
-          流氓  =  1005: 紧密的约束
-          铁匠  =  1012: 诡计的商术, 1013: 贪婪
-      炼金术师  =   238: 生命伦理
-          巫师  =  1006: 火狩芽
-          贤者  =  1007: 元素肯贝特制作, 1008: 元素更换(水), 1017: 元素更换(地),
-                   1018: 元素更换(火),   1019: 元素更换(风)
+      把计: <ヴ叭м絪腹>
+      琵眤镑а癘疭ヴ叭м
+        厩  =   142: 候獀励,     143: 杆
+        絙も  =   147: 絙,       148: ≧網絙
+          糃  =   144: 簿笆蝋HP, 145: ю阑畓翴,   146: ╣忌篈
+          狝ㄆ  =   156: 蒾ぇ
+          祍搁  =   149: 糛,         150: 癶磷,   151: 具ホ繷,    152: щ耏ホ繷
+          坝  =   153: も崩óю阑,   154: э杆も崩ó, 155: 羘驰, 2535: 秨砞潦坝┍
+        臸猭畍  =   157: 秖甅
+          聐  =  1009: ほ紇絙
+          钢  =  1010: 皚礹ぇ羘
+          籖甉  =  1011: 痺泊ぇ护
+          肕  =  1001: ≧網ю阑
+        瓁  =  1002: 癶罽
+          畍  =  1014: ō竡
+          猌宫  =  1015: 痷蒩猔,   1016: 祇玪
+            =  1003: 禬硉щ耏, 1004: 瑀
+          瑈猐  =  1005: 候盞
+          臟  =  1012: 皋璸坝砃, 1013: 砱褒
+      芬砃畍  =   238: ネ㏑瞶
+          畍  =  1006: 
+          藉  =  1007: じī疭, 1008: じ传(), 1017: じ传(),
+                   1018: じ传(),   1019: じ传()
   - Command: skillid
     Help: |
-      指令参数: <技能名称>
-      根据技能名称来查询技能编号
+      把计: <м嘿>
+      誹м嘿ㄓ琩高м絪腹
   - Command: useskill
     Help: |
-      指令参数: <技能编号> <技能等级> <目标玩家名称>
-      对指定的玩家使用技能, 若目标玩家名称为 self 则表示对自己使用.
+      把计: <м絪腹> <м单> <ヘ夹產嘿>
+      癸﹚產ㄏノм, 璝ヘ夹產嘿 self 玥ボ癸ㄏノ.
   - Command: skilltree
     Help: |
-      指令参数: <技能编号> <角色名称>
-      显示想要习得“指定技能”所需的“前置技能”.
+      把计: <м絪腹> <à︹嘿>
+      陪ボ稱璶策眔¨﹚м〃┮惠¨玡竚м〃.
   - Command: marry
     Help: |
-      指令参数: <对方的角色名>
-      与指定的玩家结婚.
+      把计: <癸よà︹>
+      蒓﹚產挡盉.
   - Command: divorce
     Help: |
-      让玩家离婚, 回到单身状态.
+      琵產置盉, 虫ō篈.
   - Command: alive
     Help: |
-      将自己从死亡状态中复活.
+      盢眖篈い蝋.
   - Command: blvl
     Aliases:
       - lvup
@@ -461,8 +461,8 @@ Body:
       - baselevel
       - baselvlup
     Help: |
-      指令参数: <要增减的基础等级>
-      根据指定数值来调整角色的基础等级(若使用负数, 则是降低基础等级).
+      把计: <璶糤搭膀娄单>
+      誹﹚计ㄓ秸俱à︹膀娄单(璝ㄏノ璽计, 玥琌膀娄单).
   - Command: jlvl
     Aliases:
       - jlevel
@@ -471,220 +471,220 @@ Body:
       - joblevel
       - joblvlup
     Help: |
-      指令参数: <要增减的职业等级>
-      根据指定数值来调整角色的职业等级(若使用负数, 则是降低职业等级).
+      把计: <璶糤搭戮穨单>
+      誹﹚计ㄓ秸俱à︹戮穨单(璝ㄏノ璽计, 玥琌戮穨单).
   - Command: allskill
     Aliases:
       - allskills
       - skillall
       - skillsall
     Help: |
-      让你学到所有能学到的技能.
+      琵厩┮Τ厩м.
   - Command: stpoint
     Help: |
-      指令参数: <要增减的能力点数> 
-      - 让你获得指定数量的能力点数(若使用负数, 则是扣减能力点数).
+      把计: <璶糤搭翴计> 
+      - 琵莉眔﹚计秖翴计(璝ㄏノ璽计, 玥琌Ι搭翴计).
   - Command: skpoint
     Help: |
-      指令参数: <要增减的技能点数> 
-      - 让你获得指定数量的技能点数(若使用负数, 则是扣减技能点数).
+      把计: <璶糤搭м翴计> 
+      - 琵莉眔﹚计秖м翴计(璝ㄏノ璽计, 玥琌Ι搭м翴计).
   - Command: zeny
     Help: |
-      指令参数: <要增减的金币数量> 
-      - 让你获得指定数量的金币(若使用负数, 则是扣减金币).
+      把计: <璶糤搭刽计秖> 
+      - 琵莉眔﹚计秖刽(璝ㄏノ璽计, 玥琌Ι搭刽).
   - Command: cash
     Help: |
-      指令参数: <要增减的现金点券> 
-      - 让你获得指定数量的现金点券(若使用负数, 则是扣减现金点券).
+      把计: <璶糤搭瞷翴ㄩ> 
+      - 琵莉眔﹚计秖瞷翴ㄩ(璝ㄏノ璽计, 玥琌Ι搭瞷翴ㄩ).
   - Command: points
     Help: |
-      指令参数: <要增减的免费点券> 
-      - 让你获得指定数量的免费点券(若使用负数, 则是扣减免费点券).
+      把计: <璶糤搭禣翴ㄩ> 
+      - 琵莉眔﹚计秖禣翴ㄩ(璝ㄏノ璽计, 玥琌Ι搭禣翴ㄩ).
   - Command: str
     Help: |
-      指令参数: <+/- 数量>
-      增加/减少角色指定数量的 STR(力量).
+      把计: <+/- 计秖>
+      糤/搭ぶà︹﹚计秖 STR(秖).
   - Command: agi
     Help: |
-      指令参数: <+/- 数量>
-      增加/减少角色指定数量的 AGI(敏捷).
+      把计: <+/- 计秖>
+      糤/搭ぶà︹﹚计秖 AGI(庇倍).
   - Command: dex
     Help: |
-      指令参数: <+/- 数量>
-      增加/减少角色指定数量的 DEX(灵巧).
+      把计: <+/- 计秖>
+      糤/搭ぶà︹﹚计秖 DEX(艶ォ).
   - Command: vit
     Help: |
-      指令参数: <+/- 数量>
-      增加/减少角色指定数量的 VIT(体力).
+      把计: <+/- 计秖>
+      糤/搭ぶà︹﹚计秖 VIT(蔨).
   - Command: int
     Help: |
-      指令参数: <+/- 数量>
-      增加/减少角色指定数量的 INT(智力).
+      把计: <+/- 计秖>
+      糤/搭ぶà︹﹚计秖 INT(醇).
   - Command: luk
     Help: |
-      指令参数: <+/- 数量>
-      增加/减少角色指定数量的 LUK(幸运).
+      把计: <+/- 计秖>
+      糤/搭ぶà︹﹚计秖 LUK(┋笲).
   - Command: allstats
     Aliases:
       - allstat
       - statall
       - statsall
     Help: |
-      指令参数: <要提升的值>
-      将角色的全部能力增加你指定的数值 (若不携带参数, 则提升到最大值).
+      把计: <璶矗ど>
+      盢à︹场糤﹚计 (璝ぃ拟盿把计, 玥矗ど程).
   - Command: addwarp
     Help: |
-      指令参数: <目的地地图名称> <目的地X坐标> <目的地Y坐标> <传送点的NPC名称>
-      在指令使用者的脚下, 生成一个传送点(NPC名称只要不冲突, 随意起名)
+      把计: <ヘ瓜嘿> <ヘXГ夹> <ヘYГ夹> <肚癳翴NPC嘿>
+      ㄏノ竲, ネΘ肚癳翴(NPC嘿璶ぃ≧, 繦種癬)
   - Command: killmonster2
     Help: |
-      指令参数: <想杀死魔物的地图名>
-      杀死当前地图的所有魔物(不会掉落物品). 也可以通过参数来指定目标地图名称..
+      把计: <稱炳臸瓜>
+      炳讽玡瓜┮Τ臸(ぃ穦奔辅珇). 硄筁把计ㄓ﹚ヘ夹瓜嘿..
   - Command: monster
     Aliases:
       - spawn
     Help: |
-      指令参数: <魔物名称|编号> [<魔物数量> [<魔物显示名称> [<x坐标> [<y坐标>]]]]
-      @monster2 <desired_monster_name> <魔物名称|编号> [<召唤数量> [<x坐标> [<y坐标>]]]
-      @spawn/@monster/@summon/@monster2 "召唤出来的魔物名称" <魔物名称|编号> [<召唤数量> [<x坐标> [<y坐标>]]]
-      @spawn/@monster/@summon/@monster2 <魔物名称|编号> "召唤出来的魔物名称" [<召唤数量> [<x坐标> [<y坐标>]]]
-      以指定的魔物名称召唤出指定的魔物.
+      把计: <臸嘿|絪腹> [<臸计秖> [<臸陪ボ嘿> [<xГ夹> [<yГ夹>]]]]
+      @monster2 <desired_monster_name> <臸嘿|絪腹> [<酬计秖> [<xГ夹> [<yГ夹>]]]
+      @spawn/@monster/@summon/@monster2 "酬ㄓ臸嘿" <臸嘿|絪腹> [<酬计秖> [<xГ夹> [<yГ夹>]]]
+      @spawn/@monster/@summon/@monster2 <臸嘿|絪腹> "酬ㄓ臸嘿" [<酬计秖> [<xГ夹> [<yГ夹>]]]
+      ﹚臸嘿酬﹚臸.
   - Command: monstersmall
     Help: |
-      指令参数: <魔物名称|编号>
-      召唤一个看起来体型较小的魔物.
+      把计: <臸嘿|絪腹>
+      酬癬ㄓ蔨耕臸.
   - Command: monsterbig
     Help: |
-      指令参数: <魔物名称|编号>
-      召唤一个看起来体型更大的魔物.
+      把计: <臸嘿|絪腹>
+      酬癬ㄓ蔨臸.
   - Command: killmonster
     Help: |
-      指令参数: <map>
-      杀死当前地图的所有魔物(会掉落物品). 也可以通过参数来指定目标地图名称
+      把计: <map>
+      炳讽玡瓜┮Τ臸(穦奔辅珇). 硄筁把计ㄓ﹚ヘ夹瓜嘿
   - Command: autoloot
     Help: |
-      指令参数: <on|off|数值<1-100%>>
-      开启/关闭自动拾取模式.
+      把计: <on|off|计<1-100%>>
+      秨币/闽超笆珺家Α.
   - Command: autotrade
     Aliases:
       - at
     Help: |
-      开启离线挂店(你将会立刻掉线, 但你的角色将会留在服务器中继续摆摊).
+      秨币置絬珽┍(盢穦ミㄨ奔絬, à︹盢穦痙狝叭竟い膥尿耚舥).
   - Command: changegm
     Help: |
-      指令参数: <新任会长的角色名>
-      任命新的公会会长 (你必须是会长才能执行此操作).
+      把计: <穝ヴ穦à︹>
+      ヴ㏑穝そ穦穦 (ゲ斗琌穦磅︽巨).
   - Command: changeleader
     Help: |
-      指令参数: <新任队长的角色名>
-      任命新的队伍组长 (你必须是队长才能执行此操作).
+      把计: <穝ヴ钉à︹>
+      ヴ㏑穝钉ヮ舱 (ゲ斗琌钉磅︽巨).
   - Command: request
     Help: |
-      指令参数: <讯息>
-      通过私聊系统, 发消息给所有在线的游戏管理员.
+      把计: <癟>
+      硄筁╬册╰参, 祇倒┮Τ絬村栏恨瞶.
   - Command: sound
     Help: |
-      指令参数: <以data目录为基准的相对路径>
-      播放data文件夹中或grf文件中的wav音效文件(如 @sound wav\dracula_die.wav).
+      把计: <dataヘ魁膀癸隔畖>
+      冀dataゅンЖい┪grfゅンいwavゅン( @sound wav\dracula_die.wav).
   - Command: clone
     Help: |
-      指令参数: <角色名称>
-      根据指定的角色生成一个友好的克隆体(会随机移动且主动攻击怪物).
+      把计: <à︹嘿>
+      誹﹚à︹ネΘね订蔨(穦繦审簿笆笆ю阑┣).
   - Command: slaveclone
     Help: |
-      指令参数: <角色名称>
-      根据指定的角色生成一个友好的克隆体(会随机移动且主动攻击怪物).
+      把计: <à︹嘿>
+      誹﹚à︹ネΘね订蔨(穦繦审簿笆笆ю阑┣).
   - Command: evilclone
     Help: |
-      指令参数: <角色名称>
-      根据指定的角色生成一个友好的克隆体, 并跟随在指令的使用者身边.
+      把计: <à︹嘿>
+      誹﹚à︹ネΘね订蔨, 蛤繦ㄏノō娩.
   - Command: changesex
     Help: |
-      改变你的角色性别.
+      э跑à︹┦.
   - Command: duel
     Help: |
-      开始决斗(开始决斗后, 可以使用 @invite 来邀请玩家参与决斗).
+      秨﹍∕ゆ(秨﹍∕ゆ, ㄏノ @invite ㄓ淋叫產把蒓∕ゆ).
   - Command: invite
     Help: |
-      邀请指定的玩家参与决斗.
+      淋叫﹚產把蒓∕ゆ.
   - Command: accept
     Help: |
-      接受决斗邀请.
+      钡∕ゆ淋叫.
   - Command: reject
     Help: |
-      拒绝决斗邀请.
+      ┶荡∕ゆ淋叫.
   - Command: leave
     Help: |
-      离开决斗(当你开始或者接受了一个决斗后, 可以使用 @leave 来离开决斗).
+      置秨∕ゆ(讽秨﹍┪钡∕ゆ, ㄏノ @leave ㄓ置秨∕ゆ).
   - Command: mail
     Help: |
-      打开邮箱.
+      ゴ秨秎絚.
   - Command: storage
     Help: |
-      打开个人仓库.
+      ゴ秨畐.
   - Command: itemreset
     Aliases:
       - clearinventory
     Help: |
-      清空玩家背包中所持有的一切物品.
+      睲產璉い┮Τち珇.
   - Command: guildstorage
     Aliases:
       - gstorage
     Help: |
-      打开公会仓库.
+      ゴ秨そ穦畐.
   - Command: idsearch
     Help: |
-      指令参数: <物品名称关键词>
-      搜索所有包含"物品名称关键词"的物品, 并列出它们的物品编号
+      把计: <珇嘿闽龄迭>
+      穓┮Τ"珇嘿闽龄迭"珇, ウ珇絪腹
   - Command: refine
     Help: |
-      指令参数: <装备位置编号> <+/- 精炼值>
+      把计: <杆称竚絪腹> <+/- 弘芬>
   - Command: produce
     Help: |
-      指令参数: <装备类的物品编号> <属性> <几级强悍>
-      属性: 0=无属性 1=水属性 2=地属性 3=火属性 4=风属性
-      强化: 0=无强悍 1=一级强悍 2=二级强悍 3=三级强悍
+      把计: <杆称摸珇絪腹> <妮┦> <眏>
+      妮┦: 0=礚妮┦ 1=妮┦ 2=妮┦ 3=妮┦ 4=妮┦
+      眏て: 0=礚眏 1=眏 2=眏 3=眏
   - Command: repairall
     Help: |
-      修理角色背包中所有损坏的装备
+      瞶à︹璉い┮Τ穕Д杆称
   - Command: item
     Help: |
-      指令参数: <物品名称|物品编号> <数量>
-      创造出指定的物品.
+      把计: <珇嘿|珇絪腹> <计秖>
+      承硑﹚珇.
   - Command: item2
     Help: |
-      指令参数: <物品名称|物品编号> <数量> <是否已鉴定> <精炼等级> <是否已损坏> <卡片编号1> <卡片编号2> <卡片编号3> <卡片编号4>
-      创造出指定的物品.
+      把计: <珇嘿|珇絪腹> <计秖> <琌懦﹚> <弘芬单> <琌穕Д> <絪腹1> <絪腹2> <絪腹3> <絪腹4>
+      承硑﹚珇.
   - Command: pvpon
     Help: |
-      开启当前地图的 PvP 模式
+      秨币讽玡瓜 PvP 家Α
   - Command: pvpoff
     Help: |
-      关闭当前地图的 PvP 模式
+      闽超讽玡瓜 PvP 家Α
   - Command: gvgon
     Aliases:
       - gpvpon
     Help: |
-      开启当前地图的 GvG 模式
+      秨币讽玡瓜 GvG 家Α
   - Command: gvgoff
     Aliases:
       - gpvpoff
     Help: |
-      关闭当前地图的 GvG 模式
+      闽超讽玡瓜 GvG 家Α
   - Command: agitstart
     Help: |
-      开启 GvG 攻城战
+      秨币 GvG ю驹
   - Command: agitend
     Help: |
-      关闭 Gvg 攻城战
+      闽超 Gvg ю驹
   - Command: party
     Help: |
-      指令参数: <队伍名称>
-      建立一个队伍.
+      把计: <钉ヮ嘿>
+      ミ钉ヮ.
   - Command: guild
     Help: |
-      指令参数: <公会名称>
-      创建一个公会(无需消耗华丽金属).
+      把计: <そ穦嘿>
+      承そ穦(礚惠地腞妮).
   - Command: glvl
     Aliases:
       - glevel
@@ -694,255 +694,255 @@ Body:
       - guildlvlup
       - guildup
     Help: |
-      指令参数: <要增减的公会等级>
-      根据指定数值来调整公会等级(若使用负数, 则是降低公会等级).
+      把计: <璶糤搭そ穦单>
+      誹﹚计ㄓ秸俱そ穦单(璝ㄏノ璽计, 玥琌そ穦单).
   - Command: guildrecall
     Help: |
-      指令参数: <公会名称|公会编号>
-      将指定公会的在线玩家召唤到你的身边.
+      把计: <そ穦嘿|そ穦絪腹>
+      盢﹚そ穦絬產酬ō娩.
   - Command: partyrecall
     Help: |
-      指令参数: <队伍名称|队伍编号>
-      将指定队伍的在线玩家召唤到你的身边.
+      把计: <钉ヮ嘿|钉ヮ絪腹>
+      盢﹚钉ヮ絬產酬ō娩.
   - Command: petrename
     Help: |
-      准许对宠物重新命名(宠物默认只能改一次名, 使用该指令可以让你重新获得改名的机会)
+      砛癸胐穝㏑(胐纐粄эΩ, ㄏノ赣琵穝莉眔э审穦)
   - Command: pettalk
     Help: |
-      指令参数: <想让宠物说的话>
-      让你的宠物能够说出你指定的消息.
+      把计: <稱琵胐弧杠>
+      琵胐镑弧﹚.
   - Command: petfriendly
     Help: |
-      指令参数: <0-1000>
-      设置宠物的亲密度, 有效范围为 0-1000, 1000 = 非常亲密
+      把计: <0-1000>
+      砞竚胐克盞, Τ璖瞅 0-1000, 1000 = 獶盽克盞
   - Command: pethungry
     Help: |
-      指令参数: <0-1000>
-      设置宠物的饥饿值, 有效范围为 0-100, 100 = 最饱
+      把计: <0-1000>
+      砞竚胐哀緅, Τ璖瞅 0-100, 100 = 程埂
   - Command: hatch
     Help: |
-      打开宠物蛋孵化选择界面(相当于使用了“携带用孵蛋器”).
+      ゴ秨胐矹瑰て匡拒(讽ㄏノ¨拟盿ノ瑰矹竟〃).
   - Command: makeegg
     Help: |
-      指令参数: <魔物编号>
-      根据给定的魔物编号, 创造出一个与其匹配的宠物蛋
+      把计: <臸絪腹>
+      誹倒﹚臸絪腹, 承硑蒓ㄤで皌胐矹
   - Command: kick
     Help: |
-      指令参数: <角色名称>
-      将指定的角色踢下线.
+      把计: <à︹嘿>
+      盢﹚à︹金絬.
   - Command: unjail
     Aliases:
       - discharge
     Help: |
-      指令参数: <角色名称>
-      将指定的玩家从监狱中释放出来
+      把计: <à︹嘿>
+      盢﹚產眖菏夯い睦ㄓ
   - Command: kill
     Aliases:
       - die
     Help: |
-      杀死玩家.
+      炳產.
   - Command: recall
     Help: |
-      指令参数: <角色名称>
-      将指定的角色召唤到你的身边.
+      把计: <à︹嘿>
+      盢﹚à︹酬ō娩.
   - Command: raise
     Aliases:
       - revive
     Help: |
-      指令参数: <角色名称>
-      复活指定的角色(若不指定角色, 则复活自己).
+      把计: <à︹嘿>
+      蝋﹚à︹(璝ぃ﹚à︹, 玥蝋).
   - Command: block
     Help: |
-      指令参数: <角色名称>
-      永久封禁指定角色所属的账号.
+      把计: <à︹嘿>
+      ッ窽﹚à︹┮妮姐腹.
   - Command: unblock
     Help: |
-      指令参数: <角色名称>
-      解除指定角色所属账号的永久封禁.
+      把计: <à︹嘿>
+      秆埃﹚à︹┮妮姐腹ッ窽.
   - Command: ban
     Aliases:
       - banish
     Help: |
-      指令参数: <time> <角色名称>
-      临时封禁指定角色所属的账号.
-      时间代码: 由 (+/- 号) 和时间以及单位组合而成 (单位代码: y, m, d, h, mn, s)
-      单位代码说明: y(年) m(月) d(日) h(时) mn(分) s(秒)
-      例如: @ban +1m-2mn1s 小明 (封禁小明 1个月减去2分1秒)
+      把计: <time> <à︹嘿>
+      羬窽﹚à︹┮妮姐腹.
+      丁絏: パ (+/- 腹) ㎝丁の虫舱τΘ (虫絏: y, m, d, h, mn, s)
+      虫絏弧: y() m(る) d(ら) h() mn(だ) s()
+      ㄒ: @ban +1m-2mn1s  (窽 1る搭2だ1)
   - Command: unban
     Aliases:
       - unbanish
     Help: |
-      指令参数: <角色名称> 
-      - 解除指定角色所属账号的临时封禁
+      把计: <à︹嘿> 
+      - 秆埃﹚à︹┮妮姐腹羬窽
   - Command: jail
     Help: |
-      指令参数: <角色名称>
-      - 将指定的角色送到监狱
+      把计: <à︹嘿>
+      - 盢﹚à︹癳菏夯
   - Command: trade
     Help: |
-      指令参数: <角色名称>
-      - 邀请指定的玩家进行交易(需要对方点接受交易才能打开交易窗口)
+      把计: <à︹嘿>
+      - 淋叫﹚產秈︽ユ(惠璶癸よ翴钡ユゴ秨ユ怠)
   - Command: recallall
     Help: |
-      将所有在线的角色召唤到你的身边.
+      盢┮Τ絬à︹酬ō娩.
   - Command: doom
     Help: |
-      杀死服务器中所有不是GM的玩家.
+      炳狝叭竟い┮Τぃ琌GM產.
   - Command: doommap
     Help: |
-      杀死当前地图所有不是GM的玩家.
+      炳讽玡瓜┮Τぃ琌GM產.
   - Command: raisemap
     Help: |
-      复活当前地图的所有玩家.
+      蝋讽玡瓜┮Τ產.
   - Command: night
     Help: |
-      切换到夜晚模式, 对所有在线玩家都有效.
+      ち传边家Α, 癸┮Τ絬產常Τ.
   - Command: day
     Help: |
-      关闭夜晚模式并回到白天, 对所有在线玩家都有效.
+      闽超边家Αフぱ, 癸┮Τ絬產常Τ.
   - Command: skillon
     Help: |
-      允许在当前地图中使用技能.
+      す砛讽玡瓜いㄏノм.
   - Command: skilloff
     Help: |
-      禁止在当前地图中使用技能(相当于给地图添加了 noskill 地图标记).
+      窽ゎ讽玡瓜いㄏノм(讽倒瓜睰 noskill 瓜夹癘).
   - Command: snow
     Help: |
-      开启/关闭当前地图的"下雪"天气效果.
+      秨币/闽超讽玡瓜"撤"ぱ蒩狦.
   - Command: clouds
     Help: |
-      开启/关闭当前地图的"云雾"天气效果.
+      秨币/闽超讽玡瓜"お铭"ぱ蒩狦.
   - Command: clouds2
     Help: |
-      开启/关闭当前地图的"另一种云雾"天气效果(20150916客户端实测无效).
+      秨币/闽超讽玡瓜"销お铭"ぱ蒩狦(20150916め狠龟代礚).
   - Command: fog
     Help: |
-      开启/关闭当前地图的"雾霾"天气效果.
+      秨币/闽超讽玡瓜"铭诺"ぱ蒩狦.
   - Command: fireworks
     Help: |
-      开启/关闭当前地图的"烟花"天气效果(20150916客户端实测无效).
+      秨币/闽超讽玡瓜"废"ぱ蒩狦(20150916め狠龟代礚).
   - Command: sakura
     Help: |
-      开启/关闭当前地图的"樱花飘落"天气效果.
+      秨币/闽超讽玡瓜"腻钠辅"ぱ蒩狦.
   - Command: leaves
     Help: |
-      开启/关闭当前地图的"枫叶飘落"天气效果.
+      秨币/闽超讽玡瓜"番腑钠辅"ぱ蒩狦.
   - Command: shownpc
     Help: |
-      指令参数: <NPC名称>
-      启用指定的NPC.
+      把计: <NPC嘿>
+      币ノ﹚NPC.
   - Command: hidenpc
     Help: |
-      指令参数: <NPC名称>
-      禁用指定的NPC.
+      把计: <NPC嘿>
+      窽ノ﹚NPC.
   - Command: npcmove
     Help: |
-      指令参数: <x坐标> <y坐标> <NPC名称>
-      将指定的NPC移动到当前地图指定的位置.
+      把计: <xГ夹> <yГ夹> <NPC嘿>
+      盢﹚NPC簿笆讽玡瓜﹚竚.
   - Command: loadnpc
     Help: |
-      指令参数: <脚本文件路径>
-      加载指定路径的脚本文件, 例如 npc/test.txt.
+      把计: <竲セゅン隔畖>
+      更﹚隔畖竲セゅン, ㄒ npc/test.txt.
   - Command: unloadnpc
     Help: |
-      指令参数: <NPC名称>
-      卸载指定名称的NPC.
+      把计: <NPC嘿>
+      更﹚嘿NPC.
   - Command: unloadnpcfile
     Help: |
-      指令参数: <脚本文件路径>
-      卸载指定路径的脚本文件, 包括里面包含的全部 NPC (但不会卸载里面声明的地图标记和魔物刷新点).
+      把计: <竲セゅン隔畖>
+      更﹚隔畖竲セゅン, 珹ń场 NPC (ぃ穦更ń羘瓜夹癘㎝臸穝翴).
   - Command: adjgroup
     Help: |
-      指令参数: <Group等级> <角色名称>
-      临时提升玩家的分组级别(下线不保存, 若设置为99则等于超级管理员).
+      把计: <Group单> <à︹嘿>
+      羬矗ど產だ舱(絬ぃ玂, 璝砞竚99玥单禬恨瞶).
   - Command: addperm
     Help: |
-      指令参数: <权限名称>
-      临时赋予玩家指定的权限(权限名称请参考 doc/permissions.txt).
+      把计: <舦嘿>
+      羬结ぉ產﹚舦(舦嘿叫把σ doc/permissions.txt).
   - Command: rmvperm
     Help: |
-      指令参数: <权限名称>
-      临时移除玩家指定的权限(权限名称请参考 doc/permissions.txt).
+      把计: <舦嘿>
+      羬簿埃產﹚舦(舦嘿叫把σ doc/permissions.txt).
   - Command: kickall
     Help: |
-      将在线玩家全部踢下线.
+      盢絬產场金絬.
   - Command: mapexit
     Help: |
-      关闭地图服务器.
+      闽超瓜狝叭竟.
   - Command: gat
     Help: |
-      返回当前位置为中心, 5x5范围内的区域可否移动 (调试使用)
+      讽玡竚いみ, 5x5璖瞅ず跋办簿笆 (秸刚ㄏノ)
   - Command: send
     Help: |
-      指令参数: <十六进制封包头> [<值>]
-      发送一个封包给服务端 (调试使用)
+      把计: <せ秈繷> [<>]
+      祇癳倒狝叭狠 (秸刚ㄏノ)
   - Command: nuke
     Help: |
-      指令参数: <角色名称>
-      让某个玩家自爆, 伤害会波及到附近的魔物.
+      把计: <à︹嘿>
+      琵琘產脄, 端甡穦猧の臸.
   - Command: reloadachievementdb
     Help: |
       Reload achievement database.
   - Command: reloadatcommand
     Help: |
-      重新加载指令配置文件.
+      穝更皌竚ゅン.
   - Command: reloadattendancedb
     Help: |
       Reload attendance database.
   - Command: reloadbattleconf
     Help: |
-      重新加载战斗配置文件.
+      穝更驹ゆ皌竚ゅン.
   - Command: reloadinstancedb
     Help: |
       Reload instance database.
   - Command: reloaditemdb
     Help: |
-      重新加载物品数据库.
+      穝更珇计誹畐.
   - Command: reloadmobdb
     Help: |
-      重新加载魔物数据库.
+      穝更臸计誹畐.
   - Command: reloadmotd
     Help: |
-      重新加载聊天栏公告信息.
+      穝更册ぱ逆そ獺.
   - Command: reloadmsgconf
     Help: |
-      重新加载信息配置文件.
+      穝更獺皌竚ゅン.
   - Command: reloadpcdb
     Help: |
-      重新加载玩家配置文件.
+      穝更產皌竚ゅン.
   - Command: reloadquestdb
     Help: |
-      重新加载任务数据库.
+      穝更ヴ叭计誹畐.
   - Command: reloadscript
     Help: |
-      重新加载全服NPC脚本.
+      穝更狝NPC竲セ.
   - Command: reloadskilldb
     Help: |
-      重新加载技能数据库.
+      穝更м计誹畐.
   - Command: reloadstatusdb
     Help: |
-      重新加载状态配置文件.
+      穝更篈皌竚ゅン.
   - Command: reloadupgradedb
     Help: |
-      重新加载物品词缀配置文件.
+      穝更珇迭后皌竚ゅン.
   - Command: reloadsynthesisdb
     Help: |
-      重新加载物品合成配置文件.
+      穝更珇Θ皌竚ゅン.
   - Command: reload
     Help: |
-      指令参数: <要重载的数据类型>
-      重新加载一个数据库或者配置文件.
+      把计: <璶更计誹摸>
+      穝更计誹畐┪皌竚ゅン.
       itemdb                mobdb          skilldb
       atcommand        battleconf         statusdb
       pcdb                   motd           script
       questdb             msgconf         packetdb
   - Command: langtype
     Help: |
-      指令参数: <语言编号>
-      更改语言设置.
+      把计: <粂ē絪腹>
+      э粂ē砞竚.
   - Command: limitedsale
     Help: |
-      打开"限量促销"窗口.
+      ゴ秨"秖玃綪"怠.
   - Command: changedress
     Aliases:
       - nocosplay
@@ -953,18 +953,18 @@ Body:
       - viewpointvalue
       - setcamera
     Help: |
-      显示或更新客户端的相机设置.
-      焦距(range) 旋转(rotation) 维度(latitude)
+      陪ボ┪穝め狠审砞竚.
+      礘禯(range) 臂锣(rotation) 蝴(latitude)
   - Command: resetstat
     Aliases:
       - streset
     Help: |
-      重置属性点.
+      竚妮┦翴.
   - Command: resetskill
     Aliases:
       - skreset
     Help: |
-      重置技能点.
+      竚м翴.
   - Command: homlevel
     Aliases:
       - hlvl
@@ -972,7 +972,7 @@ Body:
       - homlvl
       - homlvup
     Help: |
-      生命体等级.
+      ネ㏑蔨单.
   - Command: homevolution
     Aliases:
       - homevolve
@@ -980,7 +980,7 @@ Body:
     Aliases:
       - stfu
     Help: |
-      全部禁言.
+      场窽ē.
   - Command: monsterignore
     Aliases:
       - battleignore

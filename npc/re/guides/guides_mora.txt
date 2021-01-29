@@ -11,211 +11,211 @@
 //===== Additional Comments: ================================= 
 //= 1.0 First version. [Euphy]
 //= 1.1 Navigation system update. [Euphy]
-//= 2016.03.22 参照TWRO汉化NPC [杨梅]
+//= 2016.03.22 把酚TWRO簙てNPC [法宾]
 //============================================================
 
-mora,25,158,5	script	草精解说员#north	516,{
-	mes "[解说员 拉普奥]";
-	mes "啦喔~!";
-	mes "欢迎来到莫拉村!";
-	mes "如有想要了解的地方，拉普奥我会全部都告诉你的~!";
-	F_Navi("[解说员 拉普奥]");
+mora,25,158,5	script	弘秆弧#north	516,{
+	mes "[秆弧 ┰炊而]";
+	mes "罢翅~!";
+	mes "舧ㄓ馋┰!";
+	mes "Τ稱璶秆よ┰炊而и穦场常禗~!";
+	F_Navi("[秆弧 ┰炊而]");
 	next;
-	switch(select("[ 旅馆 ]:[ 居住地区 ]:[ 商店街 ]:[ 仓库 ]:删除小地图标示:结束")) {
+	switch(select("[ 繻 ]:[ ﹡跋 ]:[ 坝┍刁 ]:[ 畐 ]:埃瓜夹ボ:挡")) {
 	case 1:
-		mes "[解说员 拉普奥]";
-		mes "啦喔~!";
-		mes "旅行者无法像草精一样随处休息，请前往"+F_Navi("旅馆","mora,44,138")+"吧~!";
-		mes "请舒适的休息吧!";
+		mes "[秆弧 ┰炊而]";
+		mes "罢翅~!";
+		mes "︽礚猭钩弘妓繦矪ヰ叫玡┕"+F_Navi("繻","mora,44,138")+"~!";
+		mes "叫滴屿ヰ!";
 		viewpoint 1,44,134,0,0x0A82FF;
 		close;
 	case 2:
-		mes "[解说员 拉普奥]";
-		mes "啦喔~!";
-		mes F_Navi("草精的家","mora,119,170")+"。";
-		mes "还有很多还在家睡觉的朋友，所以请你小心你的步伐!啦喔~!";
+		mes "[秆弧 ┰炊而]";
+		mes "罢翅~!";
+		mes F_Navi("弘產","mora,119,170")+"";
+		mes "临Τ临產何谋狟ね┮叫み˙ワ!罢翅~!";
 		viewpoint 1,119,170,1,0xAAFF00;
 		close;
 	case 3:
-		mes "[解说员 拉普奥]";
-		mes "啦喔~!";
-		mes "如果需要旅行纪念品，那应该可以在这个"+F_Navi("区域","mora,112,110")+"住下来。";
+		mes "[秆弧 ┰炊而]";
+		mes "罢翅~!";
+		mes "狦惠璶︽├珇ê莱赣硂"+F_Navi("跋办","mora,112,110")+"ㄓ";
 		viewpoint 1,112,110,2,0xDA70D6;
 		close;
 	case 4:
-		mes "[解说员 拉普奥]";
-		mes "啦喔~!";
-		mes "这是保管各种配送品和食品的"+F_Navi("仓库","mora,182,161")+"。";
-		mes "有很多不是草精族的东西，因此要多加小心!";
+		mes "[秆弧 ┰炊而]";
+		mes "罢翅~!";
+		mes "硂琌玂恨销皌癳珇㎝珇"+F_Navi("畐","mora,182,161")+"";
+		mes "Τぃ琌弘壁狥﹁璶み!";
 		viewpoint 1,182,161,3,0xFF1493;
 		close;
 	case 5:
-		mes "[解说员 拉普奥]";
-		mes "啦喔~! 全部清除吧~啦喔~!";
+		mes "[秆弧 ┰炊而]";
+		mes "罢翅~! 场睲埃~罢翅~!";
 		viewpoint 2,1,1,0,0xFFFF00;
 		viewpoint 2,1,1,1,0xFFFF00;
 		viewpoint 2,1,1,2,0xFFFF00;
 		viewpoint 2,1,1,3,0xFFFF00;
 		close;
 	case 6:
-		mes "[解说员 拉普奥]";
-		mes "啦喔~!";
-		mes "在你的故乡里，流行哪一种运动啊?";
+		mes "[秆弧 ┰炊而]";
+		mes "罢翅~!";
+		mes "珿秏ń瑈︽销笲笆摆?";
 		close;
 	}
 }
 
-mora,167,76,3	script	草精解说员#east	522,{
-	mes "[解说员 拉普乌]";
-	mes "呜呜...";
-	mes "这，这里是莫，莫拉村。";
-	mes "呜呜... 你想知道哪个地方呢?";
-	F_Navi("[解说员 拉普乌]");
+mora,167,76,3	script	弘秆弧#east	522,{
+	mes "[秆弧 ┰炊疩]";
+	mes "躲躲...";
+	mes "硂硂ń琌馋馋┰";
+	mes "躲躲... 稱笵よ㎡?";
+	F_Navi("[秆弧 ┰炊疩]");
 	next;
-	switch(select("[ 旅馆 ]:[ 居住地区 ]:[ 商店街 ]:[ 仓库 ]:删除小地图标示:结束")) {
+	switch(select("[ 繻 ]:[ ﹡跋 ]:[ 坝┍刁 ]:[ 畐 ]:埃瓜夹ボ:挡")) {
 	case 1:
-		mes "[解说员 拉普乌]";
-		mes "呜呜...";
-		mes "请，请休?";
-		mes "请在"+F_Navi("这里","mora,44,138")+"休息吧!! 行李也请放在这里! 另，另外...";
+		mes "[秆弧 ┰炊疩]";
+		mes "躲躲...";
+		mes "叫叫ヰ?";
+		mes "叫"+F_Navi("硂ń","mora,44,138")+"ヰ!! ︽叫硂ń! ...";
 		viewpoint 1,44,134,0,0x0A82FF;
 		close;
 	case 2:
-		mes "[解说员 拉普乌]";
-		mes "呜呜...";
-		mes "你为什么想要了解"+F_Navi("拉普乌的家","mora,119,170")+"呢--?";
-		mes "啊，其实我也想要和朋友们住在一起--";
+		mes "[秆弧 ┰炊疩]";
+		mes "躲躲...";
+		mes "ぐ稱璶秆"+F_Navi("┰炊疩產","mora,119,170")+"㎡--?";
+		mes "摆ㄤ龟и稱璶㎝狟ね癬--";
 		viewpoint 1,119,170,1,0xAAFF00;
 		close;
 	case 3:
-		mes "[解说员 拉普乌]";
-		mes "呜呜...";
-		mes "在"+F_Navi("商店街","mora,112,110")+"哪里有很多商品...啊，还有温泉呢!";
+		mes "[秆弧 ┰炊疩]";
+		mes "躲躲...";
+		mes ""+F_Navi("坝┍刁","mora,112,110")+"ńΤ坝珇...摆临Τ放瑄㎡!";
 		viewpoint 1,112,110,2,0xDA70D6;
 		close;
 	case 4:
-		mes "[解说员 拉普乌]";
-		mes "呜呜...";
-		mes "如随意打开"+F_Navi("仓库","mora,182,161")+",是会被教训的...";
-		mes "听说那里有很多从莫拉村外面送来的物品...拉普乌曾经被狠狠的修理过...";
+		mes "[秆弧 ┰炊疩]";
+		mes "躲躲...";
+		mes "繦種ゴ秨"+F_Navi("畐","mora,182,161")+",琌穦砆毙癡...";
+		mes "弧êńΤ眖馋┰癳ㄓ珇...┰炊疩纯竒砆瞶筁...";
 		viewpoint 1,182,161,3,0xFF1493;
 		close;
 	case 5:
-		mes "[解说员 拉普乌]";
-		mes "已，已删除小地图上的标志...";
+		mes "[秆弧 ┰炊疩]";
+		mes "埃瓜夹в...";
 		viewpoint 2,1,1,0,0xFFFF00;
 		viewpoint 2,1,1,1,0xFFFF00;
 		viewpoint 2,1,1,2,0xFFFF00;
 		viewpoint 2,1,1,3,0xFFFF00;
 		close;
 	case 6:
-		mes "[解说员 拉普乌]";
-		mes "呜呜...";
-		mes "就算担任解说员，还是无法改善我对人群的恐惧感啊...";
+		mes "[秆弧 ┰炊疩]";
+		mes "躲躲...";
+		mes "碞衡踞ヴ秆弧临琌礚猭э到и癸竤倪稰摆...";
 		close;
 	}
 }
 
-mora,115,138,5	script	草精解说员#center	524,{
-	mes "[解说员 拉裴拉]";
-	mes "啦啦!";
-	mes "欢迎来到莫拉村!";
-	mes "如果你有想要了解的地方，尽管说吧!";
-	F_Navi("[解说员 拉裴拉]");
+mora,115,138,5	script	弘秆弧#center	524,{
+	mes "[秆弧 ┰籶┰]";
+	mes "罢罢!";
+	mes "舧ㄓ馋┰!";
+	mes "狦Τ稱璶秆よ荷恨弧!";
+	F_Navi("[秆弧 ┰籶┰]");
 	next;
-	switch(select("[ 旅馆 ]:[ 居住地区 ]:[ 商店街 ]:[ 仓库 ]:删除小地图标示:结束")) {
+	switch(select("[ 繻 ]:[ ﹡跋 ]:[ 坝┍刁 ]:[ 畐 ]:埃瓜夹ボ:挡")) {
 	case 1:
-		mes "[解说员 拉裴拉]";
-		mes "啦啦!";
-		mes "旅行者们，在"+F_Navi("这里","mora,44,138")+"休息吧!";
-		mes "旅馆住人非常亲切，请您多多与他对话!";
+		mes "[秆弧 ┰籶┰]";
+		mes "罢罢!";
+		mes "︽"+F_Navi("硂ń","mora,44,138")+"ヰ!";
+		mes "繻獶盽克ち叫眤蒓癸杠!";
 		viewpoint 1,44,134,0,0x0A82FF;
 		close;
 	case 2:
-		mes "[解说员 拉裴拉]";
-		mes "啦啦!";
-		mes "草精们的"+F_Navi("居住地","mora,119,170")+"!";
-		mes "请您前往那里看看吧!";
+		mes "[秆弧 ┰籶┰]";
+		mes "罢罢!";
+		mes "弘"+F_Navi("﹡","mora,119,170")+"!";
+		mes "叫眤玡┕êń!";
 		viewpoint 1,119,170,1,0xAAFF00;
 		close;
 	case 3:
-		mes "[解说员 拉裴拉]";
-		mes "啦啦!";
-		mes "多多购买想要的物品吧!";
-		mes "这里有不少的餐厅、"+F_Navi("商店和咖啡馆","mora,112,110")+"，请多去看看吧!";
+		mes "[秆弧 ┰籶┰]";
+		mes "罢罢!";
+		mes "潦禦稱璶珇!";
+		mes "硂ńΤぃぶ繺芔"+F_Navi("坝┍㎝〡柏繻","mora,112,110")+"叫!";
 		viewpoint 1,112,110,2,0xDA70D6;
 		close;
 	case 4:
-		mes "[解说员 拉裴拉]";
-		mes "啦啦!";
-		mes F_Navi("仓库","mora,182,161")+"是可以保管重要物品的地方!";
-		mes "要小心不要被偷，所以不要随便拿走物品!";
+		mes "[秆弧 ┰籶┰]";
+		mes "罢罢!";
+		mes F_Navi("畐","mora,182,161")+"琌玂恨璶珇よ!";
+		mes "璶みぃ璶砆敖┮ぃ璶繦獽ǐ珇!";
 		viewpoint 1,182,161,3,0xFF1493;
 		close;
 	case 5:
-		mes "[解说员 拉裴拉]";
-		mes "已删除小地图上的标志了啦啦!";
+		mes "[秆弧 ┰籶┰]";
+		mes "埃瓜夹в罢罢!";
 		viewpoint 2,1,1,0,0xFFFF00;
 		viewpoint 2,1,1,1,0xFFFF00;
 		viewpoint 2,1,1,2,0xFFFF00;
 		viewpoint 2,1,1,3,0xFFFF00;
 		close;
 	case 6:
-		mes "[解说员 拉裴拉]";
-		mes "啦啦!";
-		mes "我们的家人不知怎么的，总是被分派到做这种事!";
+		mes "[秆弧 ┰籶┰]";
+		mes "罢罢!";
+		mes "и產ぃ羆琌砆だ暗硂销ㄆ!";
 		close;
 	}
 }
 
-mora,72,51,3	script	草精解说员#south	518,{
-	mes "[解说员 拉普莉]";
-	mes "啦哩?";
-	mes "欢迎来到莫拉村!";
-	mes "如果你有想要了解的地方，尽管跟我说";
-	F_Navi("[解说员 拉普莉]");
+mora,72,51,3	script	弘秆弧#south	518,{
+	mes "[秆弧 ┰炊产]";
+	mes "罢?";
+	mes "舧ㄓ馋┰!";
+	mes "狦Τ稱璶秆よ荷恨蛤и弧";
+	F_Navi("[秆弧 ┰炊产]");
 	next;
-	switch(select("[ 旅馆 ]:[ 居住地区 ]:[ 商店街 ]:[ 仓库 ]:删除小地图标示:结束")) {
+	switch(select("[ 繻 ]:[ ﹡跋 ]:[ 坝┍刁 ]:[ 畐 ]:埃瓜夹ボ:挡")) {
 	case 1:
-		mes "[解说员 拉普莉]";
-		mes "啦哩?";
-		mes "旅行者请在"+F_Navi("这里","mora,44,138")+"休息吧!";
-		mes "旅馆住人非常亲切，请您多多与他对话!";
+		mes "[秆弧 ┰炊产]";
+		mes "罢?";
+		mes "︽叫"+F_Navi("硂ń","mora,44,138")+"ヰ!";
+		mes "繻獶盽克ち叫眤蒓癸杠!";
 		viewpoint 1,44,134,0,0x0A82FF;
 		close;
 	case 2:
-		mes "[解说员 拉普莉]";
-		mes "啦哩?";
-		mes "草精们的"+F_Navi("居住地","mora,119,170")+"!";
-		mes "要来我的家吗? 很欢迎喔~";
+		mes "[秆弧 ┰炊产]";
+		mes "罢?";
+		mes "弘"+F_Navi("﹡","mora,119,170")+"!";
+		mes "璶ㄓи產盾? 舧翅~";
 		viewpoint 1,119,170,1,0xAAFF00;
 		close;
 	case 3:
-		mes "[解说员 拉普莉]";
-		mes "啦哩?";
-		mes "我也有很多东西想要买喔...";
-		mes "餐厅、"+F_Navi("商店","mora,112,110")+"里，有贩卖很多的东西";
+		mes "[秆弧 ┰炊产]";
+		mes "罢?";
+		mes "иΤ狥﹁稱璶禦翅...";
+		mes "繺芔"+F_Navi("坝┍","mora,112,110")+"ńΤ砪芥狥﹁";
 		viewpoint 1,112,110,2,0xDA70D6;
 		close;
 	case 4:
-		mes "[解说员 拉普莉]";
-		mes "啦哩?";
-		mes ""+F_Navi("仓库","mora,182,161")+"是报关重要物品的地方";
-		mes "要小心不要遭小偷喔";
+		mes "[秆弧 ┰炊产]";
+		mes "罢?";
+		mes ""+F_Navi("畐","mora,182,161")+"琌厨闽璶珇よ";
+		mes "璶みぃ璶綝敖翅";
 		viewpoint 1,182,161,3,0xFF1493;
 		close;
 	case 5:
-		mes "[解说员 拉普莉]";
-		mes "已删除小地图上的标志";
+		mes "[秆弧 ┰炊产]";
+		mes "埃瓜夹в";
 		viewpoint 2,1,1,0,0xFFFF00;
 		viewpoint 2,1,1,1,0xFFFF00;
 		viewpoint 2,1,1,2,0xFFFF00;
 		viewpoint 2,1,1,3,0xFFFF00;
 		close;
 	case 6:
-		mes "[解说员 拉普莉]";
-		mes "啦哩?";
-		mes "我的哥哥今天好像又生气了，拉普莉又做错了什么吗?";
+		mes "[秆弧 ┰炊产]";
+		mes "罢?";
+		mes "иさぱ钩ネ蒩┰炊产暗岿ぐ盾?";
 		close;
 	}
 }

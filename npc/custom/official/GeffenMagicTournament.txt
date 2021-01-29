@@ -3978,7 +3978,7 @@ OnEnable:
 // Cutscenes
 
 
-//席席席席席席席席席
+//畊畊畊畊畊畊畊畊畊
 //   Event 1
 //__________________
 1@gef,159,172,6	duplicate(#gmt_dummy)	Geffen Gangster#1	682
@@ -4235,7 +4235,7 @@ OnTimer1000:
 	end;
 }
 
-//席席席席席席席席席
+//畊畊畊畊畊畊畊畊畊
 //   Event 2
 //__________________
 1@gef,75,172,4	duplicate(#gmt_dummy)	Geffen Bully#1	681
@@ -4525,7 +4525,7 @@ OnMobKilled:
 	end;
 }
 
-//席席席席席席席席席
+//畊畊畊畊畊畊畊畊畊
 //   Event 3
 //__________________
 1@gef,111,146,4	duplicate(#gmt_dummy)	Geffen Resident#1	67

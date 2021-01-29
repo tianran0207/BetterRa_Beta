@@ -45,42 +45,42 @@
 //= 2.3 Updated the second entrance to Biolabs. [Capuche]
 //=============================================================
 
-lighthalzen,198,285,5	script	少女#zen5	4_F_LGTGIRL,{
-	mes "[少女]";
-	mes "响遏行云的钢琴声, 舒畅的";
-	mes "庭园, 路过的行人及";
-	mes "好天气... 体认到了和平, ";
-	mes "没什么好再奢求的";
+lighthalzen,198,285,5	script	ぶ#zen5	4_F_LGTGIRL,{
+	mes "[ぶ]";
+	mes "臫筀︽お葵礮羘, 滴篫";
+	mes "畑堕, 隔筁︽の";
+	mes "ぱ蒩... 蔨粄㎝キ, ";
+	mes "⊿ぐ傍―";
 	next;
-	mes "[少女]";
-	mes "我认为这和平, 都是";
-	mes "生活在富裕的里希塔乐镇";
-	mes "的人才能感受到吧, ";
-	mes "真是个很棒的地方呢, ";
-	mes "叫做里希塔乐镇的这个村落";
+	mes "[ぶ]";
+	mes "и粄硂㎝キ, 常琌";
+	mes "ネ碔肝ń娥贾马";
+	mes "稰, ";
+	mes "痷琌次よ㎡, ";
+	mes "暗ń娥贾马硂辅";
 	close;
 }
 
-lighthalzen,220,244,3	script	少女#zen2	4_F_LGTGRAND,{
-	mes "[少女]";
-	mes "你说, 我们在这么好的";
-	mes "天气, 在这么有气氛";
-	mes "又清爽的地方约会, ";
-	mes "不觉得很棒吗?";
-	mes "嗯?嗯?";
+lighthalzen,220,244,3	script	ぶ#zen2	4_F_LGTGRAND,{
+	mes "[ぶ]";
+	mes "弧, и硂";
+	mes "ぱ蒩, 硂Τ蒩猑";
+	mes "睲瞡よ穦, ";
+	mes "ぃ谋眔次盾?";
+	mes "垛?垛?";
 	next;
-	mes "[少女]";
-	mes "在这种气氛下, 能和你";
-	mes "在一起, 高兴的整个人";
-	mes "快要溶化掉~ 溶化的我";
-	mes "会像旁边的水一样清彻~";
-	mes "我不会马上离开.";
-	mes "有什么事情吗?";
+	mes "[ぶ]";
+	mes "硂销蒩猑, ㎝";
+	mes "癬, 蔼砍俱";
+	mes "е璶坊て奔~ 坊てи";
+	mes "穦钩娩妓睲过~";
+	mes "иぃ穦皑置秨.";
+	mes "Τぐㄆ薄盾?";
 	next;
 	mes "["+strcharinfo(0)+"]";
-	mes "... 我快要抓狂了!";
-	mes "最好看都别看一眼, ";
-	mes "直接穿过她们吧, 恶恶";
+	mes "... ие璶ъ╣!";
+	mes "程常泊, ";
+	mes "钡筁, 碿碿";
 	close;
 }
 
@@ -134,13 +134,13 @@ lighthalzen,259,108,7	script	Oyoung#zen14	869,{
 	close;
 }
 
-lighthalzen,233,121,3	script	女孩#li_01	72,{
-	mes "[女孩]";
-	mes "'里希塔乐镇', 有光的极致的意义";
+lighthalzen,233,121,3	script	#li_01	72,{
+	mes "[]";
+	mes "'ń娥贾马', Τ体璓種竡";
 	next;
-	mes "[女孩]";
-	mes "就像村落的名字一样, 在秀发兹发德最富有最华丽亮丽的村落, ";
-	mes "旅行者先生/小姐, 你也很喜欢吧?";
+	mes "[]";
+	mes "碞钩辅妓, ╭祇祇紈程碔Τ程地腞獹腞辅, ";
+	mes "︽ネ/﹋, 尺舧?";
 	close;
 }
 
@@ -204,328 +204,328 @@ lighthalzen,89,73,3	script	Sameer#zen15	854,{
 	close;
 }
 
-lighthalzen,45,59,7	script	珍妮丝#zen03	863,{
-	mes "[奶奶]";
-	mes "唉哟... 我住在这个地区住了多久了啦, ";
-	mes "既然我又把路给忘了, ";
-	mes "因为路太宽了可以看到天空, ";
-	mes "看着天空便走着, ";
-	mes "既然走到不知道的地方去了...";
+lighthalzen,45,59,7	script	ゞ捣#zen03	863,{
+	mes "[イイ]";
+	mes "抽... и硂跋罢, ";
+	mes "琂礛ир隔倒а, ";
+	mes "隔び糴ぱ, ";
+	mes "帝ぱ獽ǐ帝, ";
+	mes "琂礛ǐぃ笵よ...";
 	close;
 }
 
-lighthalzen,66,94,3	script	埃尔默凯斯#li_03	866,{
-	mes "[埃尔默凯斯]";
-	mes "这样走着, 回想到以前的事情啊, ";
-	mes "那时候老婆你真是人气好旺啊, 我为了要独占你真的很辛苦啊, 呼呼呼";
+lighthalzen,66,94,3	script	甁焊纐惩吹#li_03	866,{
+	mes "[甁焊纐惩吹]";
+	mes "硂妓ǐ帝, 稱玡ㄆ薄摆, ";
+	mes "êρ盋痷琌蒩摆, и璶縒痷ǒ璚摆, ㊣㊣㊣";
 	next;
-	mes "[埃尔默凯斯]";
-	mes "不过现在的老婆还是很漂亮啊, ";
-	mes "和老婆走过的这一生, 我真是一位幸福的男人啊!呼呼呼";
+	mes "[甁焊纐惩吹]";
+	mes "ぃ筁瞷ρ盋临琌簘獹摆, ";
+	mes "㎝ρ盋ǐ筁硂ネ, и痷琌┋褐╧摆!㊣㊣㊣";
 	emotion ET_CHUP, getnpcid(0, "Margie Keays#li_02");
 	emotion ET_CHUPCHUP;
 	close;
 }
 
 lighthalzen,65,94,5	script	Margie Keays#li_02	863,{
-	mes "[玛姬凯斯]";
-	mes "老头, 今天天气真好啊, ";
-	mes "有时候一起这样散步也不错啊?";
+	mes "[嚎甐惩吹]";
+	mes "ρ繷, さぱぱ蒩痷摆, ";
+	mes "Τ癬硂妓床˙ぃ岿摆?";
 	close;
 }
 
-lighthalzen,78,120,3	script	少女#zen1	862,{
-	mes "[少女]";
+lighthalzen,78,120,3	script	ぶ#zen1	862,{
+	mes "[ぶ]";
 	mes "....................";
 	next;
-	mes "[少女]";
+	mes "[ぶ]";
 	mes "....................";
 	next;
-	mes "[少女]";
+	mes "[ぶ]";
 	mes "....................";
-	mes "啊, 哎哟, 不小心睡着了, ";
-	mes "天气实在太舒服的关系..";
-	mes "与~ 那遥远地方空气差的";
-	mes "村落是大相迳庭呢";
+	mes "摆, 玼抽, ぃみ何帝, ";
+	mes "ぱ蒩龟び滴狝闽╰..";
+	mes "蒓~ ê换环よ蒩畉";
+	mes "辅琌硍畑㎡";
 	next;
-	mes "[少女]";
-	mes "这都受惠于位在";
-	mes "那中间的企业";
-	mes "不是吗?";
+	mes "[ぶ]";
+	mes "硂常磃";
+	mes "êい丁穨";
+	mes "ぃ琌盾?";
 	close;
 
 }
 
 /*
-lighthalzen,226,210,3	script	楠楠	86,{
-	mes "[楠楠]";
-	mes "我本来以为所有的炼金术师, ";
-	mes "个个都只会读书, ";
-	mes "但好像并不全然如此";
+lighthalzen,226,210,3	script	罚罚	86,{
+	mes "[罚罚]";
+	mes "иセㄓ┮Τ芬砃畍, ";
+	mes "常穦弄, ";
+	mes "钩ぃ礛";
 	next;
-	mes "[楠楠]";
-	mes "也有一天到晚不读书、";
-	mes "光会喝酒玩乐的奇异之";
-	mes "炼金术师, 大名";
-	mes "好像是... 布陵澈的样子?";
+	mes "[罚罚]";
+	mes "Τぱ边ぃ弄";
+	mes "穦耻皊贾奢ぇ";
+	mes "芬砃畍, ";
+	mes "钩琌... ガ钞韩妓?";
 	next;
-	mes "[楠楠]";
-	mes "炼金术师们都是勤奋、";
-	mes "全神贯注于自我锻炼的";
-	mes "这种我的想法, 彻底被";
-	mes "颠覆了, 唉咻...";
+	mes "[罚罚]";
+	mes "芬砃畍常琌对灸";
+	mes "砮猔и岭芬";
+	mes "硂销и稱猭, 过┏砆";
+	mes "腁滦, ...";
 	close;
 
 }
 */
 
-lighthalzen,230,182,4	script	柯莱威斯#zen3	866,{
-	mes "[柯莱威斯]";
-	mes "嗯...?你是旅行者啊, ";
-	mes "怎么样呢?对本村的观感呢?";
-	mes "其实生活还过得去啦,  ";
-	mes "只是有点无聊";
+lighthalzen,230,182,4	script	琠弟吹#zen3	866,{
+	mes "[琠弟吹]";
+	mes "垛...?琌︽摆, ";
+	mes "妓㎡?癸セ芠稰㎡?";
+	mes "ㄤ龟ネ临筁眔罢,  ";
+	mes "琌Τ翴礚册";
 	next;
-	switch (select("你在这里住很久了吗?:就如你说的是个无聊的地方:请问...这村落发生的事件")) {
+	switch (select("硂ń盾?:碞弧琌礚册よ:叫拜...硂辅祇ネㄆン")) {
 	case 1:
-		mes "[柯莱威斯]";
-		mes "可以说是住很久了吧, ";
-		mes "从先祖爷爷到现在, ";
-		mes "把我算进去的话, ";
-		mes "共居住了4代200年吧";
+		mes "[琠弟吹]";
+		mes "弧琌, ";
+		mes "眖份份瞷, ";
+		mes "ри衡秈杠, ";
+		mes "﹡4200";
 		next;
-		mes "[柯莱威斯]";
-		mes "以我父亲而言, ";
-		mes "嫌村落太无聊,  ";
-		mes "就四处周游列国, ";
-		mes "结果还是在故乡逝世";
+		mes "[琠弟吹]";
+		mes "и克τē, ";
+		mes "尔辅び礚册,  ";
+		mes "碞矪㏄村瓣, ";
+		mes "挡狦临琌珿秏硊";
 		next;
-		mes "[柯莱威斯]";
-		mes "所以我仍觉得";
-		mes "最好是生长在自己";
-		mes "出生的地方";
+		mes "[琠弟吹]";
+		mes "┮иご谋眔";
+		mes "程琌ネ";
+		mes "ネよ";
 		next;
-		mes "-语毕, 老人似乎在";
-		mes "回想什么, 远眺着";
-		mes "天空-";
+		mes "-粂拨, ρ";
+		mes "稱ぐ, 环卜帝";
+		mes "ぱ-";
 		close;
 	case 2:
-		mes "[柯莱威斯]";
-		mes "确实像我说的是个";
-		mes "蛮无聊的村落, ";
-		mes "不过你也没必要";
-		mes "说的那么露骨吧";
+		mes "[琠弟吹]";
+		mes "谔龟钩и弧琌";
+		mes "芞礚册辅, ";
+		mes "ぃ筁⊿ゲ璶";
+		mes "弧ê臩癌";
 		next;
-		mes "[柯莱威斯]";
-		mes "既然你远来乍到, 建议你";
-		mes "慢慢欣赏, 应该会发现";
-		mes "本村许多优异的地方吧?";
+		mes "[琠弟吹]";
+		mes "琂礛环ㄓ, 某";
+		mes "篊篊猋洁, 莱赣穦祇瞷";
+		mes "セ砛涩奢よ?";
 		next;
-		mes "[柯莱威斯]";
-		mes "(反正现在的小孩..";
-		mes "实在没礼貌...嗳嗳)";
+		mes "[琠弟吹]";
+		mes "(はタ瞷..";
+		mes "龟⊿搂华...炯炯)";
 		next;
-		mes "-老人似乎感到不快, ";
-		mes "瞪了你一下-";
+		mes "-ρ稰ぃе, ";
+		mes "傈-";
 		close;
 	case 3:
-		mes "[柯莱威斯]";
-		mes "嗯?你是说哪一事件呢?";
-		mes "如果是关于杀人魔的传闻的话, ";
-		mes "由于时间过久, ";
-		mes "我也记不太清楚";
+		mes "[琠弟吹]";
+		mes "垛?琌弧ㄆン㎡?";
+		mes "狦琌闽炳臸肚籇杠, ";
+		mes "パ丁筁, ";
+		mes "и癘ぃび睲贰";
 		next;
-		mes "[柯莱威斯]";
-		mes "听说在武器店旁边的";
-		mes "小姐, 对这传闻";
-		mes "很清楚... 那小姐";
-		mes "好像自称是超自然的";
-		mes "狂热份子吧";
+		mes "[琠弟吹]";
+		mes "弧猌竟┍娩";
+		mes "﹋, 癸硂肚籇";
+		mes "睲贰... ê﹋";
+		mes "钩嘿琌禬礛";
+		mes "╣荐";
 		next;
-		mes "[柯莱威斯]";
-		mes "她光讲些我这种老人家";
-		mes "完全听不懂的话, ";
-		mes "你去找她看看吧, ";
-		mes "要远行路上小心";
+		mes "[琠弟吹]";
+		mes "量ㄇи硂销ρ產";
+		mes "Чぃ来杠, ";
+		mes "т, ";
+		mes "璶环︽隔み";
 		next;
-		mes "-老人似乎在想其它事, ";
-		mes "陷入了沉思之中-";
+		mes "-ρ稱ㄤウㄆ, ";
+		mes "炒↖ぇい-";
 		close;
 	}
 
 }
 
-lighthalzen,232,156,3	script	西格蒙德#zen3	869,{
-	mes "[西格蒙德]";
-	mes "看守在通往贫民区";
-	mes "路口的警卫, 时常在";
-	mes "混水摸鱼呢";
+lighthalzen,232,156,3	script	﹁籜紈#zen3	869,{
+	mes "[﹁籜紈]";
+	mes "硄┕砲チ跋";
+	mes "隔牡矫, 盽";
+	mes "睼篘辰㎡";
 	next;
-	mes "[西格蒙德]";
-	mes "其实我也是趁他混水摸鱼时, ";
-	mes "偷溜到对面去呢, ";
-	mes "只是去了也没什么好看的, ";
-	mes "所以马上就感到后悔了";
+	mes "[﹁籜紈]";
+	mes "ㄤ龟и琌禭睼篘辰, ";
+	mes "敖啡癸㎡, ";
+	mes "琌⊿ぐ, ";
+	mes "┮皑碞稰";
 	next;
-	mes "[西格蒙德]";
-	mes "反正也没有人会想";
-	mes "过去那里, 干嘛要";
-	mes "看守呢?";
+	mes "[﹁籜紈]";
+	mes "はタ⊿Τ穦稱";
+	mes "筁êń, 估璶";
+	mes "㎡?";
 	close;
 
 }
 
-lighthalzen,190,134,5	script	乔伊斯#zen	862,{
-	mes "[乔伊斯]";
-	mes "你那强烈的眼神, ";
-	mes "无情又深深地刺痛了";
-	mes "我的心, 让少女的心脏";
-	mes "小鹿乱撞剧跳不已, 哎哟...";
+lighthalzen,190,134,5	script	踌レ吹#zen	862,{
+	mes "[踌レ吹]";
+	mes "ê眏疨泊, ";
+	mes "礚薄瞏瞏礹";
+	mes "иみ, 琵ぶみ纽";
+	mes "忱睹疾粿铬ぃ, 玼抽...";
 	next;
-	mes "[乔伊斯]";
-	mes "...一定有这种令人起鸡皮疙瘩";
-	mes "的人... 装不知道直接经过吧";
+	mes "[踌レ吹]";
+	mes "...﹚Τ硂销癬蔓ブ紻";
+	mes "... 杆ぃ笵钡竒筁";
 	close;
 
 }
 
-lighthalzen,191,134,3	script	丹桑#zen2	869,{
-	mes "[丹桑]";
-	mes "由于你的眼睛太明亮了, ";
-	mes "像镜子般映照我的模样, ";
-	mes "你的心肠也一样明澈";
-	mes "又美丽, 嘻";
+lighthalzen,191,134,3	script	う#zen2	869,{
+	mes "[う]";
+	mes "パ泊氟び獹, ";
+	mes "钩描琈酚и家妓, ";
+	mes "み竮妓韩";
+	mes "腞, 糎";
 	next;
-	mes "[丹桑]";
-	mes "...一定有这种令人起鸡皮疙瘩";
-	mes "的人... 装不知道直接经过吧";
+	mes "[う]";
+	mes "...﹚Τ硂销癬蔓ブ紻";
+	mes "... 杆ぃ笵钡竒筁";
 	close;
 
 }
 
-lighthalzen,115,159,3	script	柯林斯#zen1	866,{
-	mes "[柯林斯]"; 
-	mes "雷根贝勒企业... 若是我儿子"; 
-	mes "能进入那里工作的话, 该有"; 
-	mes "多好呢... 呵呵, "; 
-	mes "以稳定的职业而言, "; 
-	mes "大企业当然是首屈一指啰!"; 
+lighthalzen,115,159,3	script	琠狶吹#zen1	866,{
+	mes "[琠狶吹]"; 
+	mes "筽ī扒穨... 璝琌и"; 
+	mes "秈êń杠, 赣Τ"; 
+	mes "㎡... , "; 
+	mes "铆﹚戮穨τē, "; 
+	mes "穨讽礛琌﹠!"; 
 	next;
-	mes "[柯林斯]"; 
-	mes "只是想要进入大企业"; 
-	mes "很困难... 进入大企业的人, "; 
-	mes "难道都是超人吗?";
+	mes "[琠狶吹]"; 
+	mes "琌稱璶秈穨"; 
+	mes "螟... 秈穨, "; 
+	mes "螟笵常琌禬盾?";
 	close;
 
 }
 
-lighthalzen,77,157,5	script	戈麦斯#li_01	866,{
-	mes "[戈麦斯]";
-	mes "唉哟我只是出来想理个头发而已啊, 这到底是哪里呀..";
-	mes "上一次我们家媳妇为了找我吃了不少苦头, 这一次她又要对我发飙了, 唉哟喂呀";
+lighthalzen,77,157,5	script	む沉吹#li_01	866,{
+	mes "[む沉吹]";
+	mes "抽и琌ㄓ稱瞶繷祇τ摆, 硂┏琌ń..";
+	mes "Ωи產稝包тиぃぶ璚繷, 硂Ω璶癸и祇鰐, 抽侈";
 	close;
 }
 
-lighthalzen,125,68,5	script	肯普#zen13	97,{
-	mes "[肯普]";
-	mes "喂喂, 你知道吗?位于上方的";
-	mes "那间巨大企业啊?听说那里";
-	mes "有许多的怪癖职员呢!";
+lighthalzen,125,68,5	script	炊#zen13	97,{
+	mes "[炊]";
+	mes "侈侈, 笵盾?よ";
+	mes "ê丁エ穨摆?弧êń";
+	mes "Τ砛┣聖戮㎡!";
 	next;
-	mes "[肯普]";
-	mes "我是一次也没去过啦, ";
-	mes "但我确定那里是充斥着";
-	mes "黑暗气息又遍布怪人们的巢穴, ";
-	mes "我是不太想去...";
-	mes "只是超好奇的!";
+	mes "[炊]";
+	mes "и琌Ω⊿筁罢, ";
+	mes "и谔﹚êń琌ジ帝";
+	mes "堵穞蒩筂ガ┣盻マ, ";
+	mes "и琌ぃび稱...";
+	mes "琌禬!";
 	next;
-	mes "[肯普]";
-	mes "他们是怎样怪癖呢?";
-	mes "...我自己这样想像";
-	mes "还蛮有趣的, 啊哈哈";
+	mes "[炊]";
+	mes "琌妓┣聖㎡?";
+	mes "...и硂妓稱钩";
+	mes "临芞Τ届, 摆";
 	close;
 
 }
 
-lighthalzen,138,50,7	script	莫罗#zen3	847,{
-	mes "[爷爷]";
-	mes "你年迈时!会像我一样";
-	mes "满脸邹纹而且体虚呢!";
-	mes "想当年我也不可一世呢!";
+lighthalzen,138,50,7	script	馋霉#zen3	847,{
+	mes "[份份]";
+	mes "邻!穦钩и妓";
+	mes "骸羪筈τ蔨店㎡!";
+	mes "稱讽иぃ㎡!";
 	next;
-	mes "[爷爷]";
-	mes "什么?你是问我为何如此";
-	mes "苍老啊?那是因为我年轻时, ";
-	mes "过度劳碌的缘故!";
+	mes "[份份]";
+	mes "ぐ?琌拜и";
+	mes "籥ρ摆?ê琌и淮, ";
+	mes "筁骋窵絫珿!";
 	next;
-	mes "[爷爷]";
-	mes "这村落生活能过的这么好, ";
-	mes "这都归功于像我这样的老人, ";
-	mes "年轻时非常努力工作的缘故, ";
-	mes "现在才能富裕啊...嗳!";
+	mes "[份份]";
+	mes "硂辅ネ筁硂, ";
+	mes "硂常耴钩и硂妓ρ, ";
+	mes "淮獶盽絫珿, ";
+	mes "瞷碔肝摆...炯!";
 	next;
-	mes "[爷爷]";
-	mes "现在的年轻人";
-	mes "太不懂得感恩!";
+	mes "[份份]";
+	mes "瞷淮";
+	mes "びぃ来眔稰!";
 	close;	
 
 }
 
-lighthalzen,132,103,5	script	村落 青年#li_01	734,{
-	mes "[世琵司]";
-	mes "受女性喜爱的男性是, 就是要靠知性和外貌还有礼貌, 所有条件都具备的我, 就是主要代表之一";
+lighthalzen,132,103,5	script	辅 獵#li_01	734,{
+	mes "[礬]";
+	mes "┦尺稲╧┦琌, 碞琌璶綼┦㎝华临Τ搂华, ┮Τ兵ン常ㄣ称и, 碞琌璶ぇ";
 	next;
-	mes "[世琵司]";
-	mes "看起来粗犷的下巴线条, 不被任何诱惑所动摇的信任般的强烈的眼光, ";
-	mes "还有没有任何空隙的强烈气息, 让周围喘不过气的";
+	mes "[礬]";
+	mes "癬ㄓ彩聏ぺ絬兵, ぃ砆ヴ护碽┮笆穘獺ヴ眏疨泊, ";
+	mes "临Τ⊿Τヴ回眏疨蒩, 琵㏄瞅齿ぃ筁蒩";
 	next;
-	mes "[世琵司]";
-	mes "只注视着我, 连生命都可以牺牲似的热情, 像火燃烧般的爱.. ";
-	mes "这是所有女性们梦寐以求的爱, 我可以让女性们知道'可以被保护的感觉'是什么样的感觉, 我是有强硬的被信任感有能力的男子";
+	mes "[礬]";
+	mes "猔跌帝и, 硈ネ㏑常碾荐薄, 钩縐縉稲.. ";
+	mes "硂琌┮Τ┦冠碖―稲, и琵┦笵'砆玂臔稰谋'琌ぐ妓稰谋, и琌Τ眏祑砆獺ヴ稰Τ╧";
 	next;
-	mes "[世琵司]";
-	mes "对面的轻如红毛的小台客们, 根本就没有信任感, ";
-	mes "呼呼, 里希塔乐镇所有女性们的视线, 我要全部搜刮呢..!";
+	mes "[礬]";
+	mes "癸淮を, セ碞⊿Τ獺ヴ稰, ";
+	mes "㊣㊣, ń娥贾马┮Τ┦跌絬, и璶场穓㎡..!";
 	close;
 }
 
 
 lighthalzen,239,64,5	script	Jade#zen2	862,{
-	mes "[少女]";
-	mes "根据消息, 听说有个";
-	mes "充斥着剑和魔法的";
-	mes "奇异国度, 在那种地方";
-	mes "怎么生活啊... 真是个";
-	mes "幻想的世界";
+	mes "[ぶ]";
+	mes "誹, 弧Τ";
+	mes "ジ帝糃㎝臸猭";
+	mes "奢瓣, ê销よ";
+	mes "ネ摆... 痷琌";
+	mes "ほ稱";
 	next;
-	mes "[少女]";
-	mes "幸好这国度是真实的, ";
-	mes "机械!金钱!普通人!";
-	mes "啊啊... 没有比这个";
-	mes "更好的吧?";
+	mes "[ぶ]";
+	mes "┋硂瓣琌痷龟, ";
+	mes "审瘪!窥!炊硄!";
+	mes "摆摆... ⊿Τゑ硂";
+	mes "?";
 	next;
-	mes "[少女]";
-	mes "不过, 真有那充斥着";
-	mes "剑和魔法的国度的话,  ";
-	mes "我倒想去见识一下";
+	mes "[ぶ]";
+	mes "ぃ筁, 痷Τêジ帝";
+	mes "糃㎝臸猭瓣杠,  ";
+	mes "и稱ǎ醚";
 	close;
 
 }
 
-lighthalzen,205,208,4	script	看起来 富有的男人#li_01	853,{
-	mes "[克郎特]";
-	mes "喀, 这里就是!";
-	mes "在这个地方, 地价是最贵的地方呀!";
+lighthalzen,205,208,4	script	癬ㄓ 碔Τ╧#li_01	853,{
+	mes "[疭]";
+	mes "池, 硂ń碞琌!";
+	mes "硂よ, 刹琌程禥よ!";
 	next;
-	mes "[克郎特]";
-	mes "喀, 这种地方才是对克郎特先生来说, 是最适合的村落啦!";
+	mes "[疭]";
+	mes "池, 硂销よ琌癸疭ネㄓ弧, 琌程屿辅罢!";
 	next;
-	mes "[克郎特]";
-	mes "喀..看好一个不错的用地后, 搭建一座光线亮丽的城堡吧!";
+	mes "[疭]";
+	mes "池..ぃ岿ノ, 穎畒絬獹腞躇!";
 	next;
-	mes "[克郎特]";
-	mes "喀, 现在刚好没有钱, 等有钱了再说吧!";
-	mes "喀喀喀";
+	mes "[疭]";
+	mes "池, 瞷⊿Τ窥, 单Τ窥弧!";
+	mes "池池池";
 	close;
 
 }
@@ -548,40 +548,40 @@ lhz_in02,34,212,4	script	Maggie#05	91,{
 	close;
 }
 
-lighthalzen,202,94,5	script	华莱士#zen2	847,{
-	mes "[爷爷]";
-	mes "你年迈时!会像我一样";
-	mes "满脸邹纹而且体虚呢!";
-	mes "想当年我也不可一世呢!";
+lighthalzen,202,94,5	script	地弟#zen2	847,{
+	mes "[份份]";
+	mes "邻!穦钩и妓";
+	mes "骸羪筈τ蔨店㎡!";
+	mes "稱讽иぃ㎡!";
 	next;
-	mes "[爷爷]";
-	mes "什么?你是问我为何如此";
-	mes "苍老啊?那是因为我年轻时, ";
-	mes "过度劳碌的缘故!";
+	mes "[份份]";
+	mes "ぐ?琌拜и";
+	mes "籥ρ摆?ê琌и淮, ";
+	mes "筁骋窵絫珿!";
 	next;
-	mes "[爷爷]";
-	mes "这村落生活能过的这么好, ";
-	mes "这都归功于像我这样的老人, ";
-	mes "年轻时非常努力工作的缘故, ";
-	mes "现在才能富裕啊...嗳!";
+	mes "[份份]";
+	mes "硂辅ネ筁硂, ";
+	mes "硂常耴钩и硂妓ρ, ";
+	mes "淮獶盽絫珿, ";
+	mes "瞷碔肝摆...炯!";
 	next;
-	mes "[爷爷]";
-	mes "现在的年轻人";
-	mes "太不懂得感恩!";
+	mes "[份份]";
+	mes "瞷淮";
+	mes "びぃ来眔稰!";
 	close;
 
 }
 
-lighthalzen,182,102,3	script	卢修斯#zen5	866,{
+lighthalzen,182,102,3	script	縞吹#zen5	866,{
 	if (Zeny < 90000) {
-		mes "[卢修斯]";
+		mes "[縞吹]";
 		mes "Hello youngster~";
 		mes "Would you like to";
 		mes "make a donation";
 		mes "to help the hungry?";
 		next;
 		if (select("Sure.:No, thanks.") == 1) {
-			mes "[卢修斯]";
+			mes "[縞吹]";
 			mes "Now, you can donate 1 to";
 			mes "30,000 zeny that will be used";
 			mes "to support the poor and feed";
@@ -590,7 +590,7 @@ lighthalzen,182,102,3	script	卢修斯#zen5	866,{
 			next;
 			input .@input;
 			if (.@input > 30000 || .@input < 0) {
-				mes "[卢修斯]";
+				mes "[縞吹]";
 				mes "Please enter a value";
 				mes "from 1 to 30,000 in";
 				mes "order to make a donation";
@@ -598,7 +598,7 @@ lighthalzen,182,102,3	script	卢修斯#zen5	866,{
 				close;
 			}
 			else if (.@input == 0) {
-				mes "[卢修斯]";
+				mes "[縞吹]";
 				mes "How disappointing,";
 				mes "but I'm sure you have";
 				mes "your reasons. Well, when";
@@ -607,7 +607,7 @@ lighthalzen,182,102,3	script	卢修斯#zen5	866,{
 				mes "to come back at any time.";
 				close;
 			}
-			mes "[卢修斯]";
+			mes "[縞吹]";
 			mes "Thank you so much";
 			mes "for your " + .@input + " zeny donation.";
 			mes "I promise that your money";
@@ -615,7 +615,7 @@ lighthalzen,182,102,3	script	卢修斯#zen5	866,{
 			mes "benefiting the poor and needy.";
 			next;
 			if (Zeny < .@input) {
-				mes "[卢修斯]";
+				mes "[縞吹]";
 				mes "Still, I'm just a little";
 				mes "disappointed. An adventurer";
 				mes "like you should be donating";
@@ -624,7 +624,7 @@ lighthalzen,182,102,3	script	卢修斯#zen5	866,{
 			}
 			set Zeny, Zeny-.@input;
 			set $donatedzeny,$donatedzeny + .@input;
-			mes "[卢修斯]";
+			mes "[縞吹]";
 			mes "So far, I've received";
 			mes "a total of " + $donatedzeny + " zeny in";
 			mes "donations. I'm glad to see";
@@ -632,7 +632,7 @@ lighthalzen,182,102,3	script	卢修斯#zen5	866,{
 			mes "generous people in the world.";
 			if ($donatedzeny > 260000) {
 				next;
-				mes "[卢修斯]";
+				mes "[縞吹]";
 				mes "This should be enough";
 				mes "to send to the Poor Relief";
 				mes "Organization. Please accept";
@@ -645,7 +645,7 @@ lighthalzen,182,102,3	script	卢修斯#zen5	866,{
 			}
 			close;
 		}
-		mes "[卢修斯]";
+		mes "[縞吹]";
 		mes "I understand. Still,";
 		mes "keep in mind that when";
 		mes "you give from your heart,";
@@ -654,14 +654,14 @@ lighthalzen,182,102,3	script	卢修斯#zen5	866,{
 		mes "aren't always readily apparent.";
 		close;
 	}
-	mes "[卢修斯]";
+	mes "[縞吹]";
 	mes "Hello youngster~";
 	mes "You seem to be fairly";
 	mes "well-off. Money is good";
 	mes "to have, but be careful not";
 	mes "to become obsessed with it.";
 	next;
-	mes "[卢修斯]";
+	mes "[縞吹]";
 	mes "When you have the chance,";
 	mes "please show your generosity";
 	mes "towards others who may be";
@@ -669,31 +669,31 @@ lighthalzen,182,102,3	script	卢修斯#zen5	866,{
 	close;
 }
 
-lighthalzen,147,105,3	script	村落 青年#li_02	869,{
-	mes "[马喀弥特]";
-	mes "女性们比较喜欢听取她所有要求的男人, 并且能聊的来喜欢具备幽默的男性, 不是吗?";
+lighthalzen,147,105,3	script	辅 獵#li_02	869,{
+	mes "[皑池辣疭]";
+	mes "┦ゑ耕尺舧┮Τ璶―╧, 册ㄓ尺舧ㄣ称纐╧┦, ぃ琌盾?";
 	next;
-	mes "[马喀弥特]";
-	mes "可爱的外貌和不能直视的白析光芒, 天然灿烂的微笑, 以及正面的个性";
+	mes "[皑池辣疭]";
+	mes "稲华㎝ぃ跌フ猂▇, ぱ礛篱年稬, のタ┦";
 	next;
-	mes "[马喀弥特]";
-	mes "对面的世琵司家伙, 只会摆一些姿势, 没有什么内涵?";
-	mes "女人们总是喜欢听一些诚实的感情表白!";
+	mes "[皑池辣疭]";
+	mes "癸礬產ル, 穦耚ㄇ墩, ⊿Τぐず瞇?";
+	mes "羆琌尺舧ㄇ港龟稰薄フ!";
 	next;
-	mes "[马喀弥特]";
-	mes "总比哪些每天装模作样有礼貌没精神的家伙, 还不如每次明朗的都在你身边, 鼓舞你士气像天使般的我, 是不是最好的男性呢?";
-	mes "您是怎么认为啊?";
+	mes "[皑池辣疭]";
+	mes "羆ゑㄇ–ぱ杆家妓Τ搂华⊿弘產ル, 临ぃ–Ω常ō娩, 躬籖蒩钩ぱㄏи, 琌ぃ琌程╧┦㎡?";
+	mes "眤琌粄摆?";
 	close;
 }
 
-lhz_in02,242,172,1	script	饭店 职员#zen3	868,{
-	mes "[饭店 职员]";
+lhz_in02,242,172,1	script	逗┍ 戮#zen3	868,{
+	mes "[逗┍ 戮]";
 	mes "If you are experiencing";
 	mes "any sort of inconvenience,";
 	mes "please do not hesitate and";
 	mes "let us know right away.";
 	next;
-	mes "[饭店 职员]";
+	mes "[逗┍ 戮]";
 	mes "Please use the stairs";
 	mes "at the northern end to";
 	mes "go downstairs so that you";
@@ -703,46 +703,46 @@ lhz_in02,242,172,1	script	饭店 职员#zen3	868,{
 	close;
 }
 
-lhz_in02,210,189,3	script	克里斯托弗米迦勒#zen	849,{
-	mes "[克里斯托弗米迦勒]";
-	mes "喔喔喔... 太舒服了!";
+lhz_in02,210,189,3	script	ń吹Λケμ瓄扒#zen	849,{
+	mes "[ń吹Λケμ瓄扒]";
+	mes "翅翅翅... び滴狝!";
 	next;
-	mes "[克里斯托弗米迦勒]";
-	mes "实在太赞了";
+	mes "[ń吹Λケμ瓄扒]";
+	mes "龟び觅";
 	next;
-	mes "[克里斯托弗米迦勒]";
-	mes "简直舒服的要命";
+	mes "[ń吹Λケμ瓄扒]";
+	mes "虏滴狝璶㏑";
 	close;
 }
 
 lhz_in02,201,181,7	script	Safwat Fahmy	853,{
-	mes "[中年人]";
-	mes "哼, 虽然这里很舒适, ";
-	mes "但是酒太难喝了, 对我";
-	mes "这种美酒专家没有吸引力";
+	mes "[い]";
+	mes ", 瘤礛硂ń滴屿, ";
+	mes "琌皊び螟耻, 癸и";
+	mes "硂销皊盡產⊿Τま";
 	next;
-	mes "[中年人]";
-	mes "自称最高级的饭店, ";
-	mes "当然客房服务所提供的酒";
-	mes "也要好喝啊!嗳嗳... 难道";
-	mes "想要品尝好酒, 非得要去";
-	mes "酒店吗...";
+	mes "[い]";
+	mes "嘿程蔼逗┍, ";
+	mes "讽礛┬狝叭┮矗ㄑ皊";
+	mes "璶耻摆!炯炯... 螟笵";
+	mes "稱璶珇沽皊, 獶眔璶";
+	mes "皊┍盾...";
 	next;
-	mes "[中年人]";
-	mes "本来边想在舒适";
-	mes "又安静的空间中, ";
-	mes "边细细的品尝酒味... 唉唉";
+	mes "[い]";
+	mes "セㄓ娩稱滴屿";
+	mes "繰丁い, ";
+	mes "娩灿灿珇沽皊... ";
 	close;
 }
 
-lhz_in02,251,212,3	script	饭店 职员#zen2	868,{
-	mes "[饭店 职员]";
-	mes "这里是夫妻专用房间, ";
-	mes "虽然非夫妻的客人";
-	mes "也能使用, 但是我们";
-	mes "希望尽量优惠给夫妻";
-	mes "使用这间";
-	mes "房间";
+lhz_in02,251,212,3	script	逗┍ 戮#zen2	868,{
+	mes "[逗┍ 戮]";
+	mes "硂ń琌ひヾ盡ノ┬丁, ";
+	mes "瘤礛獶ひヾ";
+	mes "ㄏノ, 琌и";
+	mes "辨荷秖涩磃倒ひヾ";
+	mes "ㄏノ硂丁";
+	mes "┬丁";
 	close;
 }
 
@@ -762,352 +762,352 @@ lhz_in02,229,217,3	script	Tanoue#zen04	863,{
 	close;
 }
 
-lhz_in02,209,277,5	script	本·艾伦#zen11	84,{
-	mes "[本·艾伦]";
-	mes "啊~ 超舒服的, 很棒的香味, ";
-	mes "加上舒适的~沙发, 这地方";
-	mes "真不错, 如果我有钱的话, ";
-	mes "好想把这里当作自己的家..";
+lhz_in02,209,277,5	script	セ︺#zen11	84,{
+	mes "[セ︺]";
+	mes "摆~ 禬滴狝, 次, ";
+	mes "滴屿~‵祇, 硂よ";
+	mes "痷ぃ岿, 狦иΤ窥杠, ";
+	mes "稱р硂ń讽產..";
 	next;
-	mes "[本·艾伦]";
-	mes "我在别处也住过, ";
-	mes "还是觉得这里最棒, ";
-	mes "一觉醒来感觉身体";
-	mes "更健康的样子!";
+	mes "[セ︺]";
+	mes "и矪筁, ";
+	mes "临琌谋眔硂ń程次, ";
+	mes "谋眶ㄓ稰谋ō蔨";
+	mes "胺眃妓!";
 	close;
 }
 
-lhz_in02,221,276,1	script	哈普#zen8	869,{
-	mes "[哈普]";
-	mes "请问一下, 上面那位卡普拉职员";
-	mes "不觉得很漂亮吗?哇啊~ 那";
-	mes "曼妙的身材和典雅的";
-	mes "眼镜!我对她一见钟情!";
+lhz_in02,221,276,1	script	炊#zen8	869,{
+	mes "[炊]";
+	mes "叫拜, ê炊┰戮";
+	mes "ぃ谋眔簘獹盾?珃摆~ ê";
+	mes "耙Мō㎝ㄥ懂";
+	mes "泊描!и癸ǎ牧薄!";
 	next;
-	mes "[哈普]";
-	mes "我要不要跟他约会呢..";
-	mes "不然写情书给她吧,  ";
-	mes "哈啊哈啊...";
+	mes "[炊]";
+	mes "и璶ぃ璶蛤穦㎡..";
+	mes "ぃ礛糶薄倒,  ";
+	mes "摆摆...";
 	next;
-	mes "[哈普]";
-	mes "啊啊... 望着她";
-	mes "就觉得很幸福!";
-	mes "卡普拉服务万岁!";
+	mes "[炊]";
+	mes "摆摆... 辨帝";
+	mes "碞谋眔┋褐!";
+	mes "炊┰狝叭蒃烦!";
 	close;
 }
 
-lhz_in02,238,275,5	script	饭店 职员#zen1	869,{
-	mes "[饭店 职员]";
-	mes "微笑, 亲切, 服务!就是我们";
-	mes "'皇龙'饭店的经营理念, ";
-	mes "若要住宿的话, 请洽询";
-	mes "前面柜台的职员吧, ";
-	mes "祝你玩的愉快";
+lhz_in02,238,275,5	script	逗┍ 戮#zen1	869,{
+	mes "[逗┍ 戮]";
+	mes "稬, 克ち, 狝叭!碞琌и";
+	mes "'纒'逗┍竒犁瞶├, ";
+	mes "璝璶盝杠, 叫高";
+	mes "玡螥戮, ";
+	mes "磖е";
 	close;
 }
 
-lhz_in02,247,275,1	script	饭店 职员#zen4	868,{
-	mes "[饭店 职员]";
-	mes "这里是我们'皇龙'饭店";
-	mes "所共同经营的酒店, ";
-	mes "睡觉之前, 在气炊?";
-	mes "喝一杯如何呢";
+lhz_in02,247,275,1	script	逗┍ 戮#zen4	868,{
+	mes "[逗┍ 戮]";
+	mes "硂ń琌и'纒'逗┍";
+	mes "┮竒犁皊┍, ";
+	mes "何谋ぇ玡, 蒩?";
+	mes "耻狹㎡";
 	next;
-	mes "[饭店 职员]";
-	mes "若想要在这里找个伴的话, ";
-	mes "在本酒店里一定能寻觅";
-	mes "理想的因缘";
+	mes "[逗┍ 戮]";
+	mes "璝稱璶硂ńт︸杠, ";
+	mes "セ皊┍ń﹚碝砎";
+	mes "瞶稱絫";
 	close;
 }
 
-lhz_in02,271,281,2	script	村民#amano09	47,{
-	mes "[中年人]";
-	mes "哼, 虽然这里很舒适, ";
-	mes "但是酒太难喝了, 对我";
-	mes "这种美酒专家没有吸引力";
+lhz_in02,271,281,2	script	チ#amano09	47,{
+	mes "[い]";
+	mes ", 瘤礛硂ń滴屿, ";
+	mes "琌皊び螟耻, 癸и";
+	mes "硂销皊盡產⊿Τま";
 	next;
-	mes "[中年人]";
-	mes "自称最高级的饭店, ";
-	mes "当然客房服务所提供的酒";
-	mes "也要好喝啊!嗳嗳... 难道";
-	mes "想要品尝好酒, 非得要去";
-	mes "酒店吗...";
+	mes "[い]";
+	mes "嘿程蔼逗┍, ";
+	mes "讽礛┬狝叭┮矗ㄑ皊";
+	mes "璶耻摆!炯炯... 螟笵";
+	mes "稱璶珇沽皊, 獶眔璶";
+	mes "皊┍盾...";
 	next;
-	mes "[中年人]";
-	mes "本来边想在舒适";
-	mes "又安静的空间中, ";
-	mes "边细细的品尝酒味... 唉唉";
+	mes "[い]";
+	mes "セㄓ娩稱滴屿";
+	mes "繰丁い, ";
+	mes "娩灿灿珇沽皊... ";
 	close;
 }
 
-lhz_in02,277,285,4	script	酒保#amano07	61,{
-	mes "[多夫]";
-	mes "客人你不是本地人啊, ";
-	mes "来这里饭店投宿的人, ";
-	mes "大部份都一样, 我看你";
-	mes "确定是旅客啊";
+lhz_in02,277,285,4	script	皊玂#amano07	61,{
+	mes "[ひ]";
+	mes "ぃ琌セ摆, ";
+	mes "ㄓ硂ń逗┍щ盝, ";
+	mes "场常妓, и";
+	mes "谔﹚琌摆";
 	next;
-	mes "[多夫]";
-	mes "在你停留期间";
-	mes "欢迎多加利用";
+	mes "[ひ]";
+	mes "氨痙戳丁";
+	mes "舧ノ";
 	close;
 }
 
-lhz_in02,281,280,6	script	顾客#amano13	816,{
-	mes "[罗娜]";
-	mes "现在这里的气?";
-	mes "我不想再来了, ";
-	mes "被那些死缠烂打的";
-	mes "小子们烦死了";
+lhz_in02,281,280,6	script	臮#amano13	816,{
+	mes "[霉甊]";
+	mes "瞷硂ń蒩?";
+	mes "иぃ稱ㄓ, ";
+	mes "砆êㄇ鸟年ゴ";
+	mes "沸";
 	next;
-	mes "[罗娜]";
-	mes "真是讨厌~";
+	mes "[霉甊]";
+	mes "痷琌癚菇~";
 	close;
 }
 
-lhz_in02,287,282,4	script	顾客#amano10	853,{
-	mes "[格林菲德]";
-	mes "呵嗯...我今天又把";
-	mes "苹果给全输光了~ 打嗝~~";
-	mes "我的手气太差了~";
+lhz_in02,287,282,4	script	臮#amano10	853,{
+	mes "[狶滇紈]";
+	mes "垛...иさぱр";
+	mes "衜狦倒块~ ゴ苄~~";
+	mes "иも蒩び畉~";
 	next;
-	mes "[格林菲德]";
-	mes "如果我以后又在飞空挺";
-	mes "玩游戏的话, 我就是波利, ";
-	mes "波利~!!! 打嗝~";
+	mes "[狶滇紈]";
+	mes "狦и";
+	mes "村栏杠, и碞琌猧, ";
+	mes "猧~!!! ゴ苄~";
 	close;
 }
 
-lhz_in02,287,273,3	script	顾客#amano11	50,{
-	mes "[泰利]";
-	mes "虽然我不喜欢喝酒, ";
-	mes "但是被这里的好气牧?";
-	mes "音乐所吸引, 所以常光顾, ";
-	mes "来这里心情会变得很轻松";
+lhz_in02,287,273,3	script	臮#amano11	50,{
+	mes "[]";
+	mes "瘤礛иぃ尺舧耻皊, ";
+	mes "琌砆硂ń蒩?";
+	mes "贾┮ま, ┮盽臮, ";
+	mes "ㄓ硂ńみ薄穦跑眔淮猀";
 	next;
-	mes "[泰利]";
-	mes "而且也很温馨, ";
-	mes "我看你像是旅行者啊, ";
-	mes "假如只是在这里短暂";
-	mes "停留的话, 要注意安全";
+	mes "[]";
+	mes "τ放纳, ";
+	mes "и钩琌︽摆, ";
+	mes "安琌硂ń祏既";
+	mes "氨痙杠, 璶猔種";
 	next;
-	mes "[泰利]";
-	mes "习惯这间酒吧之后, ";
-	mes "你可能就不愿意";
-	mes "去别家了~ 呵呵~";
+	mes "[]";
+	mes "策篋硂丁皊ぇ, ";
+	mes "碞ぃ篅種";
+	mes "產~ ~";
 	close;
 }
 
-lhz_in02,283,276,4	script	顾客#amano12	815,{
-	mes "[赛依]";
-	mes "我每次想来这里小酌一杯时, ";
-	mes "被那些心怀不轨的小子";
-	mes "纠缠的很烦很烦, ";
-	mes "跑到我身边只会讲一些";
-	mes "无聊的冷笑话";
+lhz_in02,283,276,4	script	臮#amano12	815,{
+	mes "[辽ㄌ]";
+	mes "и–Ω稱ㄓ硂ń皍狹, ";
+	mes "砆êㄇみ输ぃ瓂";
+	mes "鸟沸沸, ";
+	mes "禲иō娩穦量ㄇ";
+	mes "礚册杠";
 	next;
-	mes "[赛依]";
-	mes "你也不会是想过来";
-	mes "参一脚吧?";
+	mes "[辽ㄌ]";
+	mes "ぃ穦琌稱筁ㄓ";
+	mes "把竲?";
 	close;
 }
 
 lighthalzen,123,212,4	script	Merpi#zen2	700,{
-	mes "[麦莉碧]";
-	mes "啊啊, 你好~";
-	mes "天气真好, 像今天";
-	mes "这种天气洗衣服最好了, ";
-	mes "不仅很快就会晒干, ";
-	mes "又会柔软舒适, 阳光和风的";
-	mes "香气都会渗透至衣物中";
+	mes "[沉产貉]";
+	mes "摆摆, ~";
+	mes "ぱ蒩痷, 钩さぱ";
+	mes "硂销ぱ蒩瑍︾狝程, ";
+	mes "ぃ度е碞穦, ";
+	mes "穦琗硁滴屿, 锭㎝";
+	mes "蒩常穦函硓︾い";
 	next;
-	mes "[麦莉碧]";
-	mes "不过你是从哪儿来的呢?";
-	mes "好像是走远路的旅行者啊, ";
-	mes "别老是匆匆忙忙的, 偶尔";
-	mes "也享受一下这地方的景致";
-	mes "如何呢?这里的风很凉爽, ";
-	mes "会让你神情气爽喔";
+	mes "[沉产貉]";
+	mes "ぃ筁琌眖ㄓ㎡?";
+	mes "钩琌ǐ环隔︽摆, ";
+	mes "ρ琌ΓΓ, 案焊";
+	mes "ㄉ硂よ春璓";
+	mes "㎡?硂ń睤瞡, ";
+	mes "穦琵薄蒩瞡翅";
 	next;
-	mes "[麦莉碧]";
-	mes "啊, 还有想要询问";
-	mes "这村落的有关事项时, ";
-	mes "就问我吧, 在允许的范围内";
-	mes "我会尽量告诉你的";
+	mes "[沉产貉]";
+	mes "摆, 临Τ稱璶高拜";
+	mes "硂辅Τ闽ㄆ兜, ";
+	mes "碞拜и, す砛璖瞅ず";
+	mes "и穦荷秖禗";
 	next;
-	switch (select("没有想问的事情:有什么有趣的事情吗?:我也喜欢洗衣服")) {
+	switch (select("⊿Τ稱拜ㄆ薄:ΤぐΤ届ㄆ薄盾?:и尺舧瑍︾狝")) {
 	case 1:
-		mes "[麦莉碧]";
-		mes "什么?其实, 像你这种人";
-		mes "应该周游列国过了, ";
-		mes "对这里也没什么";
-		mes "感到好奇的吧, ";
-		mes "我很忙, 所以请你";
-		mes "让开吧, 谢谢";
+		mes "[沉产貉]";
+		mes "ぐ?ㄤ龟, 钩硂销";
+		mes "莱赣㏄村瓣筁, ";
+		mes "癸硂ń⊿ぐ";
+		mes "稰, ";
+		mes "иΓ, ┮叫";
+		mes "琵秨, 谅谅";
 		next;
-		mes "-他似乎有些不高兴, ";
-		mes "又开始进行刚才的";
-		mes "工作, 好像有点惹她";
-		mes "心情不好似的-";
+		mes "-Τㄇぃ蔼砍, ";
+		mes "秨﹍秈︽";
+		mes ", 钩Τ翴稴";
+		mes "み薄ぃ-";
 		close;
 	case 2:
-		mes "[麦莉碧]";
-		mes "其实这村落也一样, ";
-		mes "这几年没发生特别";
-		mes "重大的事件呢, ";
-		mes "不过蛮久米前";
-		mes "这里曾发生极恐怖";
-		mes "又凶残的事件";
+		mes "[沉产貉]";
+		mes "ㄤ龟硂辅妓, ";
+		mes "硂⊿祇ネ疭";
+		mes "ㄆン㎡, ";
+		mes "ぃ筁芞μ玡";
+		mes "硂ń纯祇ネ体┢";
+		mes "た摧ㄆン";
 		next;
-		mes "[麦莉碧]";
-		mes "细节我是不太清楚, ";
-		mes "可是这村落的某人";
-		mes "或许知道那件事情";
+		mes "[沉产貉]";
+		mes "灿竊и琌ぃび睲贰, ";
+		mes "琌硂辅琘";
+		mes "┪砛笵êンㄆ薄";
 		next;
-		mes "[麦莉碧]";
-		mes "据说是关于杀人魔和斧头的";
-		mes "故事...细节我不知道啦, ";
-		mes "你要不要去讯问一下";
-		mes "这里的村民呢?";
+		mes "[沉产貉]";
+		mes "誹弧琌闽炳臸㎝繷";
+		mes "珿ㄆ...灿竊иぃ笵罢, ";
+		mes "璶ぃ璶癟拜";
+		mes "硂ńチ㎡?";
 		close;
 	case 3:
-		mes "[麦莉碧]";
-		mes "洗衣服的方式还是以";
-		mes "手洗最好, 当然";
-		mes "还有捶打方式及";
-		mes "在流水的溪边, ";
-		mes "洗涤污垢的方法";
+		mes "[沉产貉]";
+		mes "瑍︾狝よΑ临琌";
+		mes "も瑍程, 讽礛";
+		mes "临Τ川ゴよΑの";
+		mes "瑈匪娩, ";
+		mes "瑍喊γよ猭";
 		next;
-		mes "[麦莉碧]";
-		mes "还是用双手揉搓和拧干的";
-		mes "那种感觉, 无法用";
-		mes "言语形容!还有晒衣服时";
-		mes "从衣物中散发的水味, ";
-		mes "也好极了!";
+		mes "[沉产貉]";
+		mes "临琌ノ蛮も磡穊㎝谰";
+		mes "ê销稰谋, 礚猭ノ";
+		mes "ē粂甧!临Τ︾狝";
+		mes "眖︾い床祇, ";
+		mes "体!";
 		next;
-		mes "[麦莉碧]";
-		mes "有朝一日我一定要成为";
-		mes "世上最厉害的手洗衣服名人!";
-		mes "你也懂得洗衣服的乐趣, ";
-		mes "感觉找到志趣相投的人, ";
-		mes "我很高兴呢~!";
+		mes "[沉产貉]";
+		mes "Τ绰らи﹚璶Θ";
+		mes "程糉甡も瑍︾狝!";
+		mes "来眔瑍︾狝贾届, ";
+		mes "稰谋тв届щ, ";
+		mes "и蔼砍㎡~!";
 		next;
-		mes "-她似乎高兴的样子, 嘴里";
-		mes "哼着歌, 又开始进行刚才的";
-		mes "工作, 望着她这么喜爱";
-		mes "自己的工作, ";
-		mes "你的心情也好起来-";
+		mes "-蔼砍妓, 糒ń";
+		mes "帝簈, 秨﹍秈︽";
+		mes ", 辨帝硂尺稲";
+		mes ", ";
+		mes "み薄癬ㄓ-";
 		close;
 	}
 }
 
-lighthalzen,296,239,3	script	少年#lhz_01	706,{
+lighthalzen,296,239,3	script	ぶ#lhz_01	706,{
 	switch(rand(1,3)) {
 	case 1:
-		mes "[少年]";
-		mes "呜哇! 呜哇!";
-		mes "爸! 爸爸你什么时候回来啊.. 呜哇";
-		emotion ET_CRY, getnpcid(0, "少年#lhz_01");
+		mes "[ぶ]";
+		mes "躲珃! 躲珃!";
+		mes "! ぐㄓ摆.. 躲珃";
+		emotion ET_CRY, getnpcid(0, "ぶ#lhz_01");
 		next;
-		mes "[少女]";
-		mes "贝鲁...";
-		mes "看样子今天爸爸是不会回来的";
-		mes "你先回屋里面吧...";
+		mes "[ぶ]";
+		mes "ī緗...";
+		mes "妓さぱ琌ぃ穦ㄓ";
+		mes "ń...";
 		next;
-		mes "[少年]";
-		mes "我要在这边一直等到";
-		mes "爸爸回来为止!";
-		mes "毕丽亚姐姐你先进去呀";
-		emotion ET_ANGER, getnpcid(0, "少年#lhz_01");
+		mes "[ぶ]";
+		mes "и璶硂娩单";
+		mes "ㄓゎ!";
+		mes "拨腞ㄈ﹋﹋秈";
+		emotion ET_ANGER, getnpcid(0, "ぶ#lhz_01");
 		next;
-		mes "[少女]";
-		mes "^333333*叹气...*^000000";
-		mes "到底爸爸去哪里了呢..";
-		mes "说是找到了一家";
-		mes "可以赚很多钱的工作之后, ";
-		mes "就这样没有消息了...";
-		emotion ET_THINK, getnpcid(0, "少女#lhz_01");
+		mes "[ぶ]";
+		mes "^333333*鼓蒩...*^000000";
+		mes "┏ń㎡..";
+		mes "弧琌т產";
+		mes "寥窥ぇ, ";
+		mes "碞硂妓⊿Τ...";
+		emotion ET_THINK, getnpcid(0, "ぶ#lhz_01");
 		close;
 	case 2:
-		mes "[少女]";
-		mes "到底爸爸去做什么工作呀, ";
-		mes "这么久都还不回来, ";
-		mes "希望能赶快回来啊..";
-		emotion ET_THINK, getnpcid(0, "少女#lhz_01");
+		mes "[ぶ]";
+		mes "┏暗ぐ, ";
+		mes "硂常临ぃㄓ, ";
+		mes "辨鱼еㄓ摆..";
+		emotion ET_THINK, getnpcid(0, "ぶ#lhz_01");
 		next;
-		mes "[少年]";
-		mes "^333333*哭泣...*^000000";
-		mes "爸爸什么时候?";
-		mes "贝鲁.. 好饿喔..";
+		mes "[ぶ]";
+		mes "^333333*猒...*^000000";
+		mes "ぐ?";
+		mes "ī緗.. 緅翅..";
 		next;
-		mes "[少女]";
-		mes "隔壁的 '涛企' 叔叔, ";
-		mes "也一起去了到现在也没有?";
+		mes "[ぶ]";
+		mes "筳纠 '儡' , ";
+		mes "癬瞷⊿Τ?";
 		close;
 	case 3:
-		mes "[少女]";
-		mes "请问你是谁啊?";
-		mes "为什么这样...";
-		mes "一直看着我们呢...";
-		emotion ET_QUESTION, getnpcid(0, "少女#lhz_01");
+		mes "[ぶ]";
+		mes "叫拜琌街摆?";
+		mes "ぐ硂妓...";
+		mes "帝и㎡...";
+		emotion ET_QUESTION, getnpcid(0, "ぶ#lhz_01");
 		next;
 		mes "["+strcharinfo(0)+"]";
-		mes "啊..没有啊..";
-		mes "好像有小孩在哭的关系, ";
-		mes "所以就看你们啦..";
-		mes "好像你们发生什么事情似的?";
+		mes "摆..⊿Τ摆..";
+		mes "钩Τ闽╰, ";
+		mes "┮碞罢..";
+		mes "钩祇ネぐㄆ薄?";
 		next;
-		mes "[少女]";
-		mes "啊..听爸爸说";
-		mes "找到了一个好的工作...";
-		mes "以后就可以赚很多钱了..";
-		mes "就这样子出去工作好几天了, ";
-		mes "一直都没有消息..";
-		mes "他只说在很遥远的地方工作呀..";
+		mes "[ぶ]";
+		mes "摆..弧";
+		mes "т...";
+		mes "碞寥窥..";
+		mes "碞硂妓ぱ, ";
+		mes "常⊿Τ..";
+		mes "弧换环よ..";
 		next;
-		mes "[少女]";
-		mes "我弟弟贝鲁一直这样, ";
-		mes "哭着等待着我爸爸..";
-		mes "我真不知道拿他怎么办..";
+		mes "[ぶ]";
+		mes "иī緗硂妓, ";
+		mes "帝单帝и..";
+		mes "и痷ぃ笵快..";
 		mes ". . . . . . . . .";
-		mes "啊..你就随便听听吧... 不要理我";
-		mes "很抱歉";
-		emotion ET_PROFUSELY_SWEAT, getnpcid(0, "少女#lhz_01");
+		mes "摆..碞繦獽... ぃ璶瞶и";
+		mes "╆簆";
+		emotion ET_PROFUSELY_SWEAT, getnpcid(0, "ぶ#lhz_01");
 		close;
 	}
 }
 
-lighthalzen,297,239,3	duplicate(少年#lhz_01)	少女#lhz_01	818
+lighthalzen,297,239,3	duplicate(ぶ#lhz_01)	ぶ#lhz_01	818
 
-lighthalzen,312,233,3	script	乞丐#lhz_02	777,3,1,{
+lighthalzen,312,233,3	script	あ#lhz_02	777,3,1,{
 	end;
 
 OnTouch_:
-	mes "[乞丐]";
-	mes "拜托... 小孩在饿肚子呢..";
-	mes "施舍一点钱吧...";
-	mes "一点点也好...";
+	mes "[あ]";
+	mes "Λ... 緅▄㎡..";
+	mes "琁翴窥...";
+	mes "翴翴...";
 	next;
-	if (select("给他少量的金币:忽视他.") == 1) {
+	if (select("倒ぶ秖刽:┛跌.") == 1) {
 		if (Zeny < 50) {
-			mes "[乞丐]";
+			mes "[あ]";
 			mes "........";
 			close;
 			emotion ET_SMILE;
 			close;
 		}
 		mes "[" + strcharinfo(0) + "]";
-		mes "来..金币请收下吧, ";
-		mes "不多啦, 希望对你";
-		mes "有帮助..";
+		mes "ㄓ..刽叫Μ, ";
+		mes "ぃ罢, 辨癸";
+		mes "Τ腊..";
 		set Zeny, Zeny-50;
 		next;
-		mes "[乞丐]";
-		mes "哎哟哟.. 哎哟哟..";
-		mes "谢谢你喔..旅行者..";
-		mes "当作谢意, 我来告诉你";
-		mes "关于这都市的事情吧, ";
-		mes "希望对你有帮助...";
+		mes "[あ]";
+		mes "玼抽抽.. 玼抽抽..";
+		mes "谅谅翅..︽..";
+		mes "讽谅種, иㄓ禗";
+		mes "闽硂常カㄆ薄, ";
+		mes "辨癸Τ腊...";
 		emotion ET_THANKS;
 		next;
 		switch(rand(1,3)) {
@@ -1277,482 +1277,482 @@ OnTouch_:
 		}
 	}
 	mes "[" + strcharinfo(0) + "]";
-	mes "哼..";
+	mes "..";
 	close;
 }
 
-lighthalzen,311,194,3	script	鲁本#lhz_02	870,{
+lighthalzen,311,194,3	script	緗セ#lhz_02	870,{
 	if (rand(1,2) == 1) {
-		mes "[鲁本]";
-		mes "我一定要变成机关士后";
-		mes "要开那一台火车的!";
-		mes "布的的的(咬牙切齿声), ";
-		mes "这令人讨厌的地方...";
-		mes "真的.. 够了! 唉呀!";
+		mes "[緗セ]";
+		mes "и﹚璶跑Θ审闽";
+		mes "璶秨êó!";
+		mes "ガ(玶ち睛羘), ";
+		mes "硂癚菇よ...";
+		mes "痷.. 镑! !";
 		emotion ET_ANGER;
 		next;
-		mes "[鲁本]]";
-		mes "嗯? 你是什么人, ";
-		mes "是外地人啊!";
-		mes "给我走开啦!";
-		mes "不要在我的周围";
-		mes "团团转啊!";
+		mes "[緗セ]]";
+		mes "垛? 琌ぐ, ";
+		mes "琌摆!";
+		mes "倒иǐ秨罢!";
+		mes "ぃ璶и㏄瞅";
+		mes "刮刮锣摆!";
 		emotion ET_FRET;
 		close;
 	}
-	mes "[鲁本]";
-	mes "什..什么嘛!";
-	mes "很讨厌, 没事站在我后面干嘛, ";
-	mes "要跟我打一场吗?";
-	mes "我是不分男女的!";
-	mes "唉哟! 给我走开啦!";
-	mes "不要在这烦我啦!";
+	mes "[緗セ]";
+	mes "ぐ..ぐ估!";
+	mes "癚菇, ⊿ㄆи估, ";
+	mes "璶蛤иゴ初盾?";
+	mes "и琌ぃだ╧!";
+	mes "抽! 倒иǐ秨罢!";
+	mes "ぃ璶硂沸и罢!";
 	emotion ET_ROCK;
 	close;
 }
 
-lighthalzen,306,324,3	script	青年#zen7	870,{
-	mes "[青年]";
-	mes "最近感觉周围的人, ";
-	mes "很奇妙地渐渐在";
-	mes "消失中, 其实";
-	mes "我身边亲近的人都";
-	mes "平安无事, 难道";
-	mes "是我想太多了吗...";
+lighthalzen,306,324,3	script	獵#zen7	870,{
+	mes "[獵]";
+	mes "程稰谋㏄瞅, ";
+	mes "М亥亥";
+	mes "アい, ㄤ龟";
+	mes "иō娩克常";
+	mes "キ礚ㄆ, 螟笵";
+	mes "琌и稱び盾...";
 	next;
-	mes "[青年]";
-	mes "我是说, 一些点头之交的人, ";
-	mes "平常应该在老地方, 却突然";
-	mes "消失不见的事件, ";
-	mes "最近常常发生?";
-	mes "或许是我想太多了...";
+	mes "[獵]";
+	mes "и琌弧, ㄇ翴繷ぇユ, ";
+	mes "キ盽莱赣ρよ, 玱礛";
+	mes "アぃǎㄆン, ";
+	mes "程盽盽祇ネ?";
+	mes "┪砛琌и稱び...";
 	close;
 }
 
-lhz_in03,26,167,5	script	谢娜#li	850,{
-	mes "[村落 女性]";
-	mes "^333333*叹气...*^000000";
-	mes "多么贫困可怜的女孩..";
+lhz_in03,26,167,5	script	谅甊#li	850,{
+	mes "[辅 ┦]";
+	mes "^333333*鼓蒩...*^000000";
+	mes "砲贪..";
 	close;
 }
 
-lhz_in01,134,45,3	script	升玖 达克丹#delic	869,{
-	mes "[升玖 达克丹]";
-	mes "里希塔乐镇大概值多少金币呢?";
+lhz_in01,134,45,3	script	ど╤ 笷う#delic	869,{
+	mes "[ど╤ 笷う]";
+	mes "ń娥贾马阀ぶ刽㎡?";
 	next;
-	mes "- 讲一句冷笑话纯朴笑的升玖 达克丹的模样, 和他眼底下的黑眼圈成强烈的对比似的-";
+	mes "- 量杠Φど╤ 笷う家妓, ㎝泊┏堵泊伴Θ眏疨癸ゑ-";
 	close;
 }
 
-lighthalzen,330,276,3	script	修女#light	79,{
-	mes "[安洁菈]";
-	mes "你好, 我是为了教团的救济活动, ";
-	mes "被派遣来到这里的 安洁菈";
+lighthalzen,330,276,3	script	#light	79,{
+	mes "[稀踚]";
+	mes ", и琌毙刮毕蕾笆, ";
+	mes "砆缓ㄓ硂ń 稀踚";
 	next;
-	mes "[安洁菈]";
-	mes "我做救济活动所感受到的是, ";
-	mes "这里的人很奇怪的是健康条件好差啊, ";
-	mes "好像不单纯";
-	mes "只是环境上的问题而已吧";
+	mes "[稀踚]";
+	mes "и暗毕蕾笆┮稰琌, ";
+	mes "硂ń┣琌胺眃兵ン畉摆, ";
+	mes "钩ぃ虫";
+	mes "琌吏挂拜肈τ";
 	next;
-	mes "[安洁菈]";
-	mes "我已经通报给教团了.. ";
-	mes "可是教团方面好像没有什么反应似的";
+	mes "[稀踚]";
+	mes "и竒硄厨倒毙刮.. ";
+	mes "琌毙刮よ钩⊿Τぐは莱";
 	close;
 }
 
-lhz_in01,134,38,3	script	邦革力君#kagun	798,{
-	mes "[邦革力君]";
-	mes "啊.. 要工作啦...";
+lhz_in01,134,38,3	script	ü#kagun	798,{
+	mes "[ü]";
+	mes "摆.. 璶罢...";
 	next;
-	mes "[邦革力君]";
-	mes "工作又不顺...又不想做...";
+	mes "[ü]";
+	mes "ぃ抖...ぃ稱暗...";
 	next;
-	mes "[邦革力君]";
+	mes "[ü]";
 	mes "..............";
 	next;
-	mes "[邦革力君]";
-	mes "讲一句建言不过是没有根据的话, 若不常常保持牙齿干净的话, 搞不好牙齿里面要用铝去涂抹也不一定噢";
+	mes "[ü]";
+	mes "量ēぃ筁琌⊿Τ誹杠, 璝ぃ盽盽玂睛瞓杠, 穌ぃ睛ń璶ノ綯襖┵ぃ﹚揪";
 	next;
-	mes "[邦革力君]";
-	mes "那种事也要得去做啊..那就...";
-	mes "嘻嘻哈哈";
+	mes "[ü]";
+	mes "ê销ㄆ璶眔暗摆..ê碞...";
+	mes "糎糎";
 }
 
-lhz_in01,139,40,7	script	爱奴兹#oz	53,{
-	mes "[爱奴兹]";
-	mes "呀呼-! 刚刚对 卢恩--米德加兹王国订购的物品已经到达了!!";
+lhz_in01,139,40,7	script	稲ィ#oz	53,{
+	mes "[稲ィ]";
+	mes "㊣-! 癸 縞--μ紈瓣璹潦珇竒笷!!";
 	next;
-	mes "[爱奴兹]";
-	mes "你知道这些是什么吗? 这些是在几年前写 卢恩--米德加兹'罗达蛙奇行记'作品的作家新刊作品, 这作家的性向是这样然后又那样, 当时人们对他的评价是这样然后又那样, 这套书籍总共有10集, 以前的书又再版过了, 想要再订购的话碎碎念..";
+	mes "[稲ィ]";
+	mes "笵硂ㄇ琌ぐ盾? 硂ㄇ琌玡糶 縞--μ紈'霉笷奠︽癘'珇產穝珇, 硂產┦琌硂妓礛ê妓, 讽癸蝶刹琌硂妓礛ê妓, 硂甅膟羆Τ10栋, 玡筁, 稱璶璹潦杠窰窰├..";
 	next;
-	mes "[爱奴兹]";
-	mes "- 到底他在讲什么呀, 真的听不懂 -";
+	mes "[稲ィ]";
+	mes "- ┏量ぐ, 痷ぃ来 -";
 	close;
 }
 
 lhz_in01,124,28,3	script	Ellette#tre	66,{
-	mes "[依恋德]";
+	mes "[ㄌ攀紈]";
 	mes "..........";
 	next;
 	mes "["+strcharinfo(0)+"]";
-	mes "请问~";
+	mes "叫拜~";
 	next;
-	mes "[依恋德]";
+	mes "[ㄌ攀紈]";
 	mes "..........";
 	next;
 	mes "["+strcharinfo(0)+"]";
-	mes "请问~?";
+	mes "叫拜~?";
 	next;
-	mes "[依恋德]";
+	mes "[ㄌ攀紈]";
 	mes "..........!!";
-	mes "各位! 我, 又完成了!!!";
+	mes "! и, ЧΘ!!!";
 	next;
-	mes "[其它 职员们]";
-	mes "什么! 又啊!?";
+	mes "[ㄤウ 戮]";
+	mes "ぐ! 摆!?";
 	next;
-	mes "[依恋德]";
-	mes "嗯哈哈哈哈哈哈哈- ";
+	mes "[ㄌ攀紈]";
+	mes "垛- ";
 	next;
-	mes "[李刀]";
-	mes "反正, 依恋德先生真的不是人啊";
+	mes "[]";
+	mes "はタ, ㄌ攀紈ネ痷ぃ琌摆";
 	next;
-	mes "[依恋德]";
-	mes "你这句话是什么意思.. 我怎么做也是赢不过升玖先生啊";
+	mes "[ㄌ攀紈]";
+	mes "硂杠琌ぐ種.. и暗琌墓ぃ筁ど╤ネ摆";
 	next;
-	mes "- 虽然不知道详细的事情, 不过在我眼前的这位黑眼圈小姐, 经常把一些很困难的事情完成似的 -";
+	mes "- 瘤礛ぃ笵冈灿ㄆ薄, ぃ筁и泊玡硂堵泊伴﹋, 竒盽рㄇ螟ㄆ薄ЧΘ -";
 	close;
 }
 
 lhz_in01,125,40,3	script	Dowbow Ryuei#ryusei	843,{
-	mes "[特乌宝晤 刘]";
-	mes "不需要其它的废话!";
-	mes "请问你 '超级'和 '真实' 你比较喜欢哪一个单字-!!";
+	mes "[疭疩腳编 糂]";
+	mes "ぃ惠璶ㄤウ紀杠!";
+	mes "叫拜 '禬'㎝ '痷龟' ゑ耕尺舧虫-!!";
 	next;
-	if(select("超级:真实")==1) {
+	if(select("禬:痷龟")==1) {
 		emotion ET_BEST;
-		mes "[特乌宝晤 刘]";
-		mes "噢噢噢噢噢!!! 看样子你是懂点事情的人!!";
-		mes "我很欣赏你啊!";
+		mes "[疭疩腳编 糂]";
+		mes "揪揪揪揪揪!!! 妓琌来翴ㄆ薄!!";
+		mes "и猋洁摆!";
 		next;
-		mes "- 和他握手之后摇摇手后, 脸上显示满足的表情后又继续工作的 特乌宝晤 刘-";
+		mes "- ㎝搐もぇ穘穘も, 羪陪ボ骸ì薄膥尿 疭疩腳编 糂-";
 		close;
 	}
-	mes "[特乌宝晤 刘]";
-	mes "什么!!!!";
-	mes "我不想在跟你继续说法, 走开啦";
+	mes "[疭疩腳编 糂]";
+	mes "ぐ!!!!";
+	mes "иぃ稱蛤膥尿弧猭, ǐ秨罢";
 	close;
 }
 
-lhz_in01,125,46,3	script	利库#lackee	849,{
-	mes "[利库]";
-	mes "咳啊啊啊啊!!";
-	mes "上个礼拜有出版'歌剧魅影!'限定版的丛书, 这个礼拜又出版了'重新出现的大人' 限定版! 唉哟! 不行啊! 我手上已经没有零用钱啦!!! 尼豪士先生! 可以帮我吗!";
+lhz_in01,125,46,3	script	畐#lackee	849,{
+	mes "[畐]";
+	mes "珁摆摆摆摆!!";
+	mes "搂Τ'簈粿緔紇!'﹚翺, 硂搂'穝瞷' ﹚! 抽! ぃ︽摆! иも竒⊿Τ箂ノ窥罢!!! ェ花ネ! 腊и盾!";
 	next;
-	mes "[尼豪士]";
-	mes "所以说嘛, 平时你都没有好好的管理钱! 来! '任谁都可以容易变成致富之路'李刀先生你也阅读看看吧!";
+	mes "[ェ花]";
+	mes "┮弧估, キ常⊿Τ恨瞶窥! ㄓ! 'ヴ街常甧跑Θ璓碔ぇ隔'ネ綷弄!";
 	close;
 }
 
-lhz_in01,116,53,7	script	尼豪士#nina	841,{
-	mes "[尼豪士]";
-	mes "我在前几天买下房子了!";
-	mes "真正的理财是靠转投资才能达成的呀!";
-	mes "你也读一下这本书吧!";
+lhz_in01,116,53,7	script	ェ花#nina	841,{
+	mes "[ェ花]";
+	mes "и玡ぱ禦┬!";
+	mes "痷タ瞶癩琌綼锣щ戈笷Θ!";
+	mes "弄硂セ!";
 	next;
-	mes "- 他把一本书递给你上面写着 '任谁都可以容易变成致富之路' ";
+	mes "- рセ患倒糶帝 'ヴ街常甧跑Θ璓碔ぇ隔' ";
 	close;
 }
 
 lhz_in01,116,39,7	script	Kejulle Rekenber#reken	822,{
-	mes "[吉茱莉 雷根贝勒]";
-	mes "我们董事长和我刚好是同名异人啊, ";
-	mes "虽然这样子, 但并不表示我的薪水与他同高之类的...";
+	mes "[产 筽ī扒]";
+	mes "и赋ㄆ㎝и琌奢摆, ";
+	mes "瘤礛硂妓, ぃボи羱蒓蔼ぇ摸...";
 	close;
 }
 
 lhz_in01,110,40,3	script	Jorjerro#fhero	89,{
-	mes "- 眼前有一位男士, 禁止不动着睡眠中 -";
+	mes "- 泊玡Τ╧, 窽ゎぃ笆帝何痸い -";
 	close;
 }
 
-lhz_in01,116,45,7	script	约书亚#aya	704,{
-	mes "[游守阿]";
-	mes "我的理想型是高个子金发的白析皮肤, 还有就是很快会挥拳的女性, ";
-	mes "啊啊 我的姐姐呀..?";
+lhz_in01,116,45,7	script	ㄈ#aya	704,{
+	mes "[村]";
+	mes "и瞶稱琌蔼祇フ猂ブ涧, 临Τ碞琌е穦揣┦, ";
+	mes "摆摆 и﹋﹋..?";
 	close;
 }
 
-lighthalzen,326,249,5	script	格里内尔#zen6	870,{
-	mes "[格里内尔]";
-	mes "不久之前, 来了一些";
-	mes "黑衣人士, 他们询问";
-	mes "我一些问题, 问我";
-	mes "是否和企业方面的人";
-	mes "见过面, 有没有去过";
-	mes "对面... 等等";
+lighthalzen,326,249,5	script	ńず焊#zen6	870,{
+	mes "[ńず焊]";
+	mes "ぃぇ玡, ㄓㄇ";
+	mes "堵︾, 高拜";
+	mes "иㄇ拜肈, 拜и";
+	mes "琌㎝穨よ";
+	mes "ǎ筁, Τ⊿Τ筁";
+	mes "癸... 单单";
 	next;
-	mes "[格里内尔]";
-	mes "瞧不起人也要有个";
-	mes "限度啊, 唉哼... 我";
-	mes "实在不喜欢这个村落!";
+	mes "[ńず焊]";
+	mes "罖ぃ癬璶Τ";
+	mes "摆, ... и";
+	mes "龟ぃ尺舧硂辅!";
 	close;
 }
 
-lhz_in03,192,19,3	script	哈格德#zen1	855,{
-	mes "[酒鬼]";
-	mes "威士忌~ 威士忌 给我...";
+lhz_in03,192,19,3	script	紈#zen1	855,{
+	mes "[皊碍]";
+	mes "б~ б 倒и...";
 	next;
-	mes "[酒鬼]";
-	mes "为什么给我小米酒呢!!";
-	mes "哼~";
+	mes "[皊碍]";
+	mes "ぐ倒иμ皊㎡!!";
+	mes "~";
 	close;
 }
 
-lhz_in03,193,25,2	script	酒吧侍者#12	61,{
-	mes "[汤尼]";
-	mes "喂~呵~ 年轻人~";
-	mes "我家的兰姆酒是最赞的, ";
-	mes "虽说是贫民村内的仙术酒店, ";
-	mes "但我家的兰姆酒味道, 可是";
-	mes "独门密传、独一无二呢~";
+lhz_in03,193,25,2	script	皊ㄍ#12	61,{
+	mes "[傣ェ]";
+	mes "侈~~ 淮~";
+	mes "и產孽﹊皊琌程觅, ";
+	mes "瘤弧琌砲チず砃皊┍, ";
+	mes "и產孽﹊皊笵, 琌";
+	mes "縒盞肚縒礚㎡~";
 	next;
-	mes "[汤尼]";
-	mes "喝下我家的兰姆酒后, ";
-	mes "就有如兽人的力量!!!";
-	mes "也会暂时忘记烦恼~";
-	mes "任~何事情~都能~完成~!!";
+	mes "[傣ェ]";
+	mes "耻и產孽﹊皊, ";
+	mes "碞Τ脋秖!!!";
+	mes "穦既а癘沸磑~";
+	mes "ヴ~ㄆ薄~常~ЧΘ~!!";
 	close;
 }
 
-lhz_in03,185,20,6	script	酒鬼#amano06	869,2,2,{
-	mes "[葛瑞]";
-	mes "喂喂~就是你~";
-	mes "想要进来这里就要";
-	mes "付过路费~ 打嗝~";
+lhz_in03,185,20,6	script	皊碍#amano06	869,2,2,{
+	mes "[腐风]";
+	mes "侈侈~碞琌~";
+	mes "稱璶秈ㄓ硂ń碞璶";
+	mes "筁隔禣~ ゴ苄~";
 	next;
 	mes "["+strcharinfo(0)+"]";
-	mes "多少钱呢";
+	mes "ぶ窥㎡";
 	next;
-	mes "[葛瑞]";
-	mes "1亿金币...打嗝~";
+	mes "[腐风]";
+	mes "1货刽...ゴ苄~";
 	next;
 	mes "["+strcharinfo(0)+"]";
-	mes "白痴...";
+	mes "フ扶...";
 	close;
 }
 
-lhz_in03,186,29,7	script	酒鬼#12	869,{
-	mes "[柏恩斯]";
-	mes "呜喔~ 真的这里的兰姆酒";
-	mes "任何时候喝都很好好喝喔 ~";
-	mes "我有一次我感冒了, ";
-	mes "打嗝~ 喝下这里的兰姆酒后, ";
-	mes "马上把流鼻涕和咳嗽治好了~";
+lhz_in03,186,29,7	script	皊碍#12	869,{
+	mes "[琭吹]";
+	mes "躲翅~ 痷硂ń孽﹊皊";
+	mes "ヴ耻常耻翅 ~";
+	mes "иΤΩи稰玙, ";
+	mes "ゴ苄~ 耻硂ń孽﹊皊, ";
+	mes "皑р瑈惑㎝珁孤獀~";
 	next;
-	mes "[柏恩斯]";
-	mes "一级棒~ 真赞~";
-	mes "你也有机会时, ";
-	mes "喝喝看吧 ~!";
+	mes "[琭吹]";
+	mes "次~ 痷觅~";
+	mes "Τ审穦, ";
+	mes "耻耻 ~!";
 	close;
 }
 
-lhz_in02,265,273,6	script	研究所职员#amano08	865,{
-	mes "[阿森]";
-	mes "这里气氛佳又寂静, ";
-	mes "每次我工作烦恼时, ";
-	mes "都会来这里, ";
-	mes "酒保也很有品味";
+lhz_in02,265,273,6	script	╯┮戮#amano08	865,{
+	mes "[此]";
+	mes "硂ń蒩猑ㄎ盜繰, ";
+	mes "–Ωи沸磑, ";
+	mes "常穦ㄓ硂ń, ";
+	mes "皊玂Τ珇";
 	next;
-	mes "[阿森]";
-	mes "尤其重点是只有在这里";
-	mes "才能喝得到的威士忌";
-	mes "非常好喝, ";
-	mes "他门只免费送给";
-	mes "老顾客品尝";
+	mes "[此]";
+	mes "ぷㄤ翴琌Τ硂ń";
+	mes "耻眔б";
+	mes "獶盽耻, ";
+	mes "禣癳倒";
+	mes "ρ臮珇沽";
 	close;
 }
 
-lhz_in03,192,93,3	script	村落 女孩#amano05	862,{
-	mes "[兰寇]";
-	mes "我是为了父亲";
-	mes "才来这里帮忙, ";
-	mes "手臂好酸喔~";
+lhz_in03,192,93,3	script	辅 #amano05	862,{
+	mes "[孽盕]";
+	mes "и琌克";
+	mes "ㄓ硂ń腊Γ, ";
+	mes "も羥荒翅~";
 	next;
-	mes "[兰寇]";
-	mes "不过我看到他们";
-	mes "喝酒高兴的样子, ";
-	mes "又能解除一天";
-	mes "工作上的疲惫, ";
-	mes "我也会很高兴呢~";
+	mes "[孽盕]";
+	mes "ぃ筁и";
+	mes "耻皊蔼砍妓, ";
+	mes "秆埃ぱ";
+	mes "痟疚, ";
+	mes "и穦蔼砍㎡~";
 	next;
-	mes "[兰寇]";
-	mes "我希望找一天";
-	mes "休假时到里希塔乐镇";
-	mes "逛街就好了";
+	mes "[孽盕]";
+	mes "и辨тぱ";
+	mes "ヰ安ń娥贾马";
+	mes "硙刁碞";
 	close;
 }
 
-lhz_in03,189,87,5	script	酒鬼#amano01	869,{
-	mes "[熊酷]";
-	mes "呜哼~ 与交往5年的";
-	mes "女朋友, ";
-	mes "终于分手了~";
-	mes "呃呜哼~~";
+lhz_in03,189,87,5	script	皊碍#amano01	869,{
+	mes "[旱慌]";
+	mes "躲~ 蒓ユ┕5";
+	mes "狟ね, ";
+	mes "沧だも~";
+	mes "躲~~";
 	next;
-	mes "[熊酷]";
-	mes "我本来不太会";
-	mes "喝酒... 但今天";
-	mes "喝起来很顺口...";
-	mes "呃呜哼~~~";
-	mes "我都不需要~!!";
-	mes "统统都离开吧吧吧吧!";
+	mes "[旱慌]";
+	mes "иセㄓぃび穦";
+	mes "耻皊... さぱ";
+	mes "耻癬ㄓ抖...";
+	mes "躲~~~";
+	mes "и常ぃ惠璶~!!";
+	mes "参参常置秨!";
 	close;
 }
 
-lhz_in03,183,82,7	script	酒鬼#amano02	870,{
-	mes "[莱伊诺斯]";
-	mes "我太太得了重病, ";
-	mes "正面临生死关头, ";
-	mes "我却在这里";
-	mes "喝酒...哭泣...";
+lhz_in03,183,82,7	script	皊碍#amano02	870,{
+	mes "[弟レ空吹]";
+	mes "иびび眔痜, ";
+	mes "タ羬ネ闽繷, ";
+	mes "и玱硂ń";
+	mes "耻皊...猒...";
 	next;
-	mes "[莱伊诺斯]";
-	mes "如此痛苦的事实, ";
-	mes "统统从我脑海里";
-	mes "消失就好了... 咳嗽咳嗽";
+	mes "[弟レ空吹]";
+	mes "礹璚ㄆ龟, ";
+	mes "参参眖и福ń";
+	mes "ア碞... 珁孤珁孤";
 	close;
 }
 
-lhz_in03,180,83,6	script	村民#amano03	86,{
-	mes "[米契尔]";
-	mes "在这里的居民";
-	mes "展现出的生命特质, ";
-	mes "都有很多共同点...";
+lhz_in03,180,83,6	script	チ#amano03	86,{
+	mes "[μ焊]";
+	mes "硂ń﹡チ";
+	mes "甶瞷ネ㏑疭借, ";
+	mes "常Τ翴...";
 	next;
-	mes "[米契尔]";
-	mes "因为要靠互相安慰";
-	mes "才能生存的关系, ";
-	mes "所以大家才会这样";
-	mes "居在一起生活吧...";
+	mes "[μ焊]";
+	mes "璶綼が饥";
+	mes "ネ闽╰, ";
+	mes "┮產穦硂妓";
+	mes "﹡癬ネ...";
 	close;
 }
 
-lhz_in03,176,85,5	script	村民#amano04	869,{
-	mes "[达意克]";
-	mes "下班后晚上时来这里";
-	mes "再小酌一杯, ";
-	mes "是我唯一的乐趣~";
-	mes "有时候看到被普通的";
-	mes "事情而自得其乐的我, ";
-	mes "感到很气但又能奈何~";
+lhz_in03,176,85,5	script	チ#amano04	869,{
+	mes "[笷種]";
+	mes "痁边ㄓ硂ń";
+	mes "皍狹, ";
+	mes "琌и斑贾届~";
+	mes "Τ砆炊硄";
+	mes "ㄆ薄τ眔ㄤ贾и, ";
+	mes "稰蒩ー~";
 	next;
-	mes "[达意克]";
-	mes "不管我的家人, ";
-	mes "我自己觉得满足就好了~";
-	mes "你也来喝一杯吧~";
-	mes "当然要各自付帐~";
+	mes "[笷種]";
+	mes "ぃ恨и產, ";
+	mes "и谋眔骸ì碞~";
+	mes "ㄓ耻狹~";
+	mes "讽礛璶眀~";
 	close;
 }
 
-lhz_in03,184,38,3	script	吹牛大王	55,{
-	mes "[吹牛大王]";
-	mes "你知道我是谁吗? ";
-	mes "看到我这个腿, ";
-	mes "难到你没有想到什么吗?";
+lhz_in03,184,38,3	script		55,{
+	mes "[]";
+	mes "笵и琌街盾? ";
+	mes "и硂籐, ";
+	mes "螟⊿Τ稱ぐ盾?";
 	next;
-	mes "[吹牛大王]";
-	mes "那么你知道克魔岛的战争吗?";
+	mes "[]";
+	mes "ê笵臸畄驹盾?";
 	next;
-	mes "[吹牛大王]";
-	mes "我就是那个很有名的, ";
-	mes "克魔岛滑雪部队的出身";
+	mes "[]";
+	mes "и碞琌êΤ, ";
+	mes "臸畄菲撤场钉ō";
 	next;
-	mes "[吹牛大王]";
-	mes "什么嘛 那眼神...";
-	mes "你是不相信我的话啰?";
+	mes "[]";
+	mes "ぐ估 ê泊...";
+	mes "琌ぃ獺и杠?";
 	close;
 }
 
-lhz_in01,173,28,4	script	警卫兵#01::LhzRekGuard	868,{
-	mes "[警卫兵]";
-	mes "这里是禁区, ";
-	mes "请你离开";
+lhz_in01,173,28,4	script	牡矫#01::LhzRekGuard	868,{
+	mes "[牡矫]";
+	mes "硂ń琌窽跋, ";
+	mes "叫置秨";
 	mes ".....";
 	close;
 }
 
-lhz_in01,180,28,4	duplicate(LhzRekGuard)	警卫兵#03	868
+lhz_in01,180,28,4	duplicate(LhzRekGuard)	牡矫#03	868
 
-lhz_in01,72,209,5	script	警卫兵#lt0	862,{
-	mes "[那司伊]";
-	mes "唉呜..真无聊...";
-	mes "每天都是一样的客人...";
+lhz_in01,72,209,5	script	牡矫#lt0	862,{
+	mes "[êレ]";
+	mes "躲..痷礚册...";
+	mes "–ぱ常琌妓...";
 	next;
-	mes "[那司伊]";
-	mes "唉哟...";
-	mes "欢迎光临..";
-	mes "呵呵呵..";
+	mes "[êレ]";
+	mes "抽...";
+	mes "舧羬..";
+	mes "..";
 	close;
 }
 
-lhz_in01,72,195,0	script	警卫兵#lt1	90,{
-	mes "[基阿努益]";
-	mes "欢迎光临, ";
-	mes "这里是通往图书馆与研究室的通道, ";
-	mes "这里除了相关人员之外是禁止进入的";
+lhz_in01,72,195,0	script	牡矫#lt1	90,{
+	mes "[膀痲]";
+	mes "舧羬, ";
+	mes "硂ń琌硄┕瓜繻蒓╯硄笵, ";
+	mes "硂ń埃闽ぇ琌窽ゎ秈";
 	close;
 }
 
-lhz_in01,73,188,0	script	警卫兵#lt2	862,{
-	mes "[宝尼]";
-	mes "唉哟...";
-	mes "到底在哪里呢...";
-	mes "唉唉...";
+lhz_in01,73,188,0	script	牡矫#lt2	862,{
+	mes "[腳ェ]";
+	mes "抽...";
+	mes "┏ń㎡...";
+	mes "...";
 	close;
 }
 
-lhz_in01,35,226,5	script	雷根贝勒 警卫#li01	867,{
+lhz_in01,35,226,5	script	筽ī扒 牡矫#li01	867,{
 	if (isequipped(2241) && isequipped(2243)) {
-		mes "[雷根贝勒 卫兵]";
-		mes "呵, 呵呵, 呵, 呵, 只能让!";
-		mes "相关人员才能进去!!";
-		mes "勤, 勤务中没有任何问题!";
+		mes "[筽ī扒 矫]";
+		mes ", , , , 琵!";
+		mes "闽秈!!";
+		mes "对, 对叭い⊿Τヴ拜肈!";
 		close2;
 		warp "lhz_in01",37,225;
 		end;
 	}
-	mes "[雷根贝勒 卫兵]";
-	mes "这, 这, 这里, ";
-	mes "除, 除了相关人员之外, ";
-	mes "是, 是不能进去的!!";
-	mes "假如你是相关人员的话, 请显示证, 证, 证明!!";
+	mes "[筽ī扒 矫]";
+	mes "硂, 硂, 硂ń, ";
+	mes "埃, 埃闽ぇ, ";
+	mes "琌, 琌ぃ秈!!";
+	mes "安琌闽杠, 叫陪ボ谍, 谍, 谍!!";
 	next;
-	if(select("证明?:结束对话")==1) {
-		mes "[雷根贝勒 卫兵]";
-		mes "那, 那, 那, 那, ";
-		mes "那个不是有嘛, 那个 !";
-		mes "不知道的话, 就, 就给我滚开 !!";
+	if(select("谍?:挡癸杠")==1) {
+		mes "[筽ī扒 矫]";
+		mes "ê, ê, ê, ê, ";
+		mes "êぃ琌Τ估, ê !";
+		mes "ぃ笵杠, 碞, 碞倒и簎秨 !!";
 		close;
 	}
-	mes "[雷根贝勒 卫兵]";
-	mes "楼, 楼下是研, 研究室啦不, 不, 不是任何人都可以进去的";
+	mes "[筽ī扒 矫]";
+	mes "加, 加琌, ╯罢ぃ, ぃ, ぃ琌ヴ常秈";
 	close;
 }
 
-lhz_in01,23,132,3	script	雷根贝勒 警卫#li02	867,5,5,{
+lhz_in01,23,132,3	script	筽ī扒 牡矫#li02	867,5,5,{
 OnTouch_:
 	if (isequipped(2241) && isequipped(2243)) {
-		mes "[雷根贝勒 卫兵]";
-		mes "这里是我们公司中枢般的地方, 不要打瞌睡确实做好勤务啊";
+		mes "[筽ī扒 矫]";
+		mes "硂ń琌иそい枷よ, ぃ璶ゴ絆何谔龟暗对叭摆";
 		close;
 	}
 	else {
-		mes "[雷根贝勒 卫兵]";
+		mes "[筽ī扒 矫]";
 		mes "...!!!";
-		mes "这里只有特殊的几个人才能进去的地方, ";
-		mes "你是谁! 是怎么进来的?";
-		mes "喂-! 这里有一般人啊 !!";
+		mes "硂ńΤ疭秈よ, ";
+		mes "琌街! 琌秈ㄓ?";
+		mes "侈-! 硂ńΤ摆 !!";
 		close2;
 		warp "lhz_in01",33,224;
 	}
@@ -1841,23 +1841,23 @@ lhz_in01,199,137,3	script	Scientist#li_03	865,{
 	end;
 }
 
-lhz_in01,46,125,3	script	雷根贝勒 警卫#li03	867,5,5,{
+lhz_in01,46,125,3	script	筽ī扒 牡矫#li03	867,5,5,{
 OnTouch_:
 	if (isequipped(2241) && isequipped(2243)) {
-		mes "[雷根贝勒 警卫]";
+		mes "[筽ī扒 牡矫]";
 		mes "......................";
 		next;
-		if (select("天气不错, 对吧?:取消") == 1) {
-			mes "[雷根贝勒 警卫]";
+		if (select("ぱ蒩ぃ岿, 癸?:") == 1) {
+			mes "[筽ī扒 牡矫]";
 			mes "...";
 			emotion ET_FRET;
 			close;
 		}
-		mes "[雷根贝勒 警卫]";
+		mes "[筽ī扒 牡矫]";
 		mes "...";
 		close;
 	}
-	mes "[雷根贝勒 警卫]";
+	mes "[筽ī扒 牡矫]";
 	mes "...!";
 	emotion ET_SURPRISE;
 	close2;
@@ -1866,37 +1866,37 @@ OnTouch_:
 }
 
 lhz_in01,24,140,3	script	Regenschirm Guard#40	4_M_LGTGUARD,{
-	mes "[雷根贝勒 守卫]";
+	mes "[筽ī扒 矫]";
 	if ((MISC_QUEST&512) && countitem(2657) > 0) {// Lab_Passport
-		mes "我是负责前往地下";
-		mes "研究所出入系统的";
-		mes "守卫工作, ";
-		mes "请问你要到地下吗?";
+		mes "и琌璽砫玡┕";
+		mes "╯┮╰参";
+		mes "矫, ";
+		mes "叫拜璶盾?";
 		next;
-		if(select("是的:不要")==1){
+		if(select("琌:ぃ璶")==1){
 			if(isequipped(2657)){
-				mes "[雷根贝勒 守卫]";
-				mes "我知道了, ";
-				mes "我现在马上送你去, ";
-				mes "执勤中一切正常!!";
+				mes "[筽ī扒 矫]";
+				mes "и笵, ";
+				mes "и瞷皑癳, ";
+				mes "磅对いちタ盽!!";
 				close2;
 				warp "lhz_dun01",150,288;
 				end;
 				}
-			mes "[雷根贝勒 守卫]";
-			mes "请务必再次确认进出证后, ";
-			mes "再来找我吧";
+			mes "[筽ī扒 矫]";
+			mes "叫叭ゲΩ谔粄秈谍, ";
+			mes "ㄓти";
 			close;
 			}
-		mes "[雷根贝勒 守卫]";
-		mes "我知道了";
+		mes "[筽ī扒 矫]";
+		mes "и笵";
 		close;
 		}
-	mes "请问有事吗, ";
-	mes "从这里开始唯有持有";
-	mes "出入许可证之人士才能进出, ";
-	mes "请务必再次确认进出证后, ";
-	mes "再来找我吧";
+	mes "叫拜Τㄆ盾, ";
+	mes "眖硂ń秨﹍斑ΤΤ";
+	mes "砛谍ぇ秈, ";
+	mes "叫叭ゲΩ谔粄秈谍, ";
+	mes "ㄓти";
 	close2;
 	warp "lhz_in01",34,224;
 	end;
@@ -1905,274 +1905,274 @@ lhz_in01,24,140,3	script	Regenschirm Guard#40	4_M_LGTGUARD,{
 
 // Lighthalzen Bank Area ------------------------------------------------------
 
-lhz_in02,34,41,1	script	亚瑟#zen16	849,{
-	mes "[亚瑟]";
-	mes "呜呜..虽然椅子有点硬, ";
-	mes "但是很凉快我喜欢!还是";
-	mes "银行最好了!万岁万岁";
+lhz_in02,34,41,1	script	ㄈ锋#zen16	849,{
+	mes "[ㄈ锋]";
+	mes "躲躲..瘤礛慈Τ翴祑, ";
+	mes "琌睤еи尺舧!临琌";
+	mes "蝗︽程!蒃烦蒃烦";
 	close;
 }
 
-lhz_in02,28,39,3	script	海伦#zen6	703,{
-	mes "[海伦]";
-	mes "我长大以后也到";
-	mes "银行上班吧, ";
-	mes "你不觉得这工作";
-	mes "很棒吗?嘻嘻...";
+lhz_in02,28,39,3	script	#zen6	703,{
+	mes "[]";
+	mes "и";
+	mes "蝗︽痁, ";
+	mes "ぃ谋眔硂";
+	mes "次盾?糎糎...";
 	close;
 }
 
-lhz_in02,31,34,3	script	爷爷#zen6	847,{
-	mes "[爷爷]";
-	mes "大楼干干净静的, 看起来";
-	mes "就很舒服... 呵呵, 把我家";
-	mes "也像它一样装修吧?";
-	mes "这样住起来才有意思...";
+lhz_in02,31,34,3	script	份份#zen6	847,{
+	mes "[份份]";
+	mes "加瞓繰, 癬ㄓ";
+	mes "碞滴狝... , ри產";
+	mes "钩ウ妓杆?";
+	mes "硂妓癬ㄓΤ種...";
 	close;
 }
 
-lhz_in02,31,33,3	script	格雷西#5	863,{
-	mes "[格雷西]";
-	mes "这里好舒适, 还有";
-	mes "芳香的气味, 真是";
-	mes "不错吧?我常常在想";
-	mes "这里若是我家的话, ";
-	mes "那该多好啊";
+lhz_in02,31,33,3	script	筽﹁#5	863,{
+	mes "[筽﹁]";
+	mes "硂ń滴屿, 临Τ";
+	mes "蒩, 痷琌";
+	mes "ぃ岿?и盽盽稱";
+	mes "硂ń璝琌и產杠, ";
+	mes "ê赣摆";
 	close;
 }
 
-lhz_in02,21,38,7	script	银行 职员#1::BankClerk	86,{
-	mes "[银行 职员]";
-	mes "这里是为了服务大众";
-	mes "而设立的银行, 虽然";
-	mes "目前业务是停摆状态, ";
-	mes "但是业务只要?";
-	mes "正常后, 一定会提供";
-	mes "舒适又便捷的服务";
+lhz_in02,21,38,7	script	蝗︽ 戮#1::BankClerk	86,{
+	mes "[蝗︽ 戮]";
+	mes "硂ń琌狝叭渤";
+	mes "τ砞ミ蝗︽, 瘤礛";
+	mes "ヘ玡穨叭琌氨耚篈, ";
+	mes "琌穨叭璶?";
+	mes "タ盽, ﹚穦矗ㄑ";
+	mes "滴屿獽倍狝叭";
 	close;
 }
 
-lhz_in02,21,25,7	duplicate(BankClerk)	银行 职员#2	86
-lhz_in02,34,22,1	duplicate(BankClerk)	银行 职员#3	755
+lhz_in02,21,25,7	duplicate(BankClerk)	蝗︽ 戮#2	86
+lhz_in02,34,22,1	duplicate(BankClerk)	蝗︽ 戮#3	755
 
 // Lighthalzen Prison Area -------------------------------------------------------------
 
-lhz_in02,145,177,0	script	酒醉的 叔叔#07	849,{
-	mes "[叔叔]";
-	mes "唉哟唉哟...";
-	mes "我又醉了... 嘻呵";
-	mes "意嘻嘻嘻...";
-	mes "酒还是梦罗克酿造的";
-	mes "最好喝啊...";
+lhz_in02,145,177,0	script	皊綤 #07	849,{
+	mes "[]";
+	mes "抽抽...";
+	mes "и綤... 糎";
+	mes "種糎糎糎...";
+	mes "皊临琌冠霉艭硑";
+	mes "程耻摆...";
 	close;
 }
 
-lhz_in02,159,198,7	script	看起来 很魁梧的男人#hol	85,{
-	mes "[看起来 很魁梧的男人]";
-	mes "嗯呵呵呵呵呵呵呵呵呵!!!";
-	mes "你们到底是怎样啊~";
-	mes "我没有把精炼的物品偷走啊?";
-	mes "我是清白的!!!";
+lhz_in02,159,198,7	script	癬ㄓ 豁憋╧#hol	85,{
+	mes "[癬ㄓ 豁憋╧]";
+	mes "垛!!!";
+	mes "┏琌妓摆~";
+	mes "и⊿Τр弘芬珇敖ǐ摆?";
+	mes "и琌睲フ!!!";
 	close;
 }
 
-lhz_in02,157,201,6	script	酒醉的 叔叔#06	870,{
-	mes "[叔叔]";
+lhz_in02,157,201,6	script	皊綤 #06	870,{
+	mes "[]";
 	mes ".......";
-	mes ".....嘻隔";
-	mes ".......意嘻嘻";
-	mes "嘻隔 嘻隔";
+	mes ".....糎筳";
+	mes ".......種糎糎";
+	mes "糎筳 糎筳";
 	next;
-	mes " == 完全喝醉了 ==";
- 	mes "== 跟本就不能对话 ==";
+	mes " == Ч耻綤 ==";
+ 	mes "== 蛤セ碞ぃ癸杠 ==";
 	close;
 }
 
-lhz_in02,153,206,4	script	酒醉的 叔叔#05	853,{
-	mes "[叔叔]";
-	mes "我是清白的~!!!!!!";
-	mes "咳嗽咳嗽咳嗽咳嗽咳嗽咳嗽, ";
-	mes "咳嗽咳嗽咳嗽咳嗽咳嗽咳嗽, ";
-	mes "哼哼哼哼, ";
-	mes "我是清白的!!!!";
-	mes "打隔 打隔";
+lhz_in02,153,206,4	script	皊綤 #05	853,{
+	mes "[]";
+	mes "и琌睲フ~!!!!!!";
+	mes "珁孤珁孤珁孤珁孤珁孤珁孤, ";
+	mes "珁孤珁孤珁孤珁孤珁孤珁孤, ";
+	mes ", ";
+	mes "и琌睲フ!!!!";
+	mes "ゴ筳 ゴ筳";
 	next;
-	mes "[叔叔]";
-	mes "喝了酒唱了一首歌, ";
-	mes "这会有什么罪吗~!";
-	mes "我既然要大声的吵闹, ";
-	mes "那又怎么样呢!";
-	mes "咳嗽咳嗽咳嗽咳嗽咳嗽咳嗽, ";
-	mes "打隔 打隔";
+	mes "[]";
+	mes "耻皊佰簈, ";
+	mes "硂穦Τぐ竜盾~!";
+	mes "и琂礛璶羘緓, ";
+	mes "ê妓㎡!";
+	mes "珁孤珁孤珁孤珁孤珁孤珁孤, ";
+	mes "ゴ筳 ゴ筳";
 	close;
 }
 
-lhz_in02,147,222,3	script	郭警官#06::off_guo	85,{
-	mes "[郭警官]";
-	mes "快说啊! 快说!";
-	mes "为什么不说呢!";
-	mes "快说呀!";
+lhz_in02,147,222,3	script	尝牡﹛#06::off_guo	85,{
+	mes "[尝牡﹛]";
+	mes "е弧摆! е弧!";
+	mes "ぐぃ弧㎡!";
+	mes "е弧!";
 	next;
-	mes "[嫌疑犯]";
-	mes "唉哟 真是的!";
-	mes "不是我呀!";
+	mes "[尔好デ]";
+	mes "抽 痷琌!";
+	mes "ぃ琌и!";
 	next;
-	mes "[郭警官]";
-	mes "...呼";
+	mes "[尝牡﹛]";
+	mes "...㊣";
 	next;
-	mes "[嫌疑犯]";
-	mes "请你不要白费力气了, ";
-	mes "让我回去了, ";
+	mes "[尔好デ]";
+	mes "叫ぃ璶フ禣蒩, ";
+	mes "琵и, ";
 	next;
-	mes "[郭警官]";
-	mes "...你母亲... 还好吗?";
+	mes "[尝牡﹛]";
+	mes "...ダ克... 临盾?";
 	next;
-	mes "[嫌疑犯]";
-	mes "母亲还好啊!  哼!";
+	mes "[尔好デ]";
+	mes "ダ克临摆!  !";
 	next;
-	mes "[郭警官]";
-	mes "最后一次见过母亲的面, ";
-	mes "是多久之前的事情啦?";
+	mes "[尝牡﹛]";
+	mes "程Ωǎ筁ダ克, ";
+	mes "琌ぇ玡ㄆ薄罢?";
 	next;
-	mes "[嫌疑犯]";
-	mes "管你什么事啊!";
+	mes "[尔好デ]";
+	mes "恨ぐㄆ摆!";
 	next;
-	mes "[郭警官]";
-	mes "不过你母亲还是在, ";
-	mes "担心你啊";
+	mes "[尝牡﹛]";
+	mes "ぃ筁ダ克临琌, ";
+	mes "踞み摆";
 	mes "...";
 	next;
-	mes "[嫌疑犯]";
+	mes "[尔好デ]";
 	mes "...";
 	next;
-	mes "[郭警官]";
-	mes "请问你要吃... 波利热炒吗?";
+	mes "[尝牡﹛]";
+	mes "叫拜璶... 猧荐盾?";
 	next;
-	mes "[嫌疑犯]";
-	mes "算了吧!";
+	mes "[尔好デ]";
+	mes "衡!";
 	close;
 }
 
-lhz_in02,142,222,6	duplicate(off_guo)	嫌疑犯#6	870
+lhz_in02,142,222,6	duplicate(off_guo)	尔好デ#6	870
 
-lhz_in01,14,28,3	script	宴会场人员	109,{
-	mes "[宴会场人员]";
-	mes "宴会场主要是事业相关人员和买家之间用晚餐的地方, 或着是于顾客之间的活动及记者会时等使用, 目前是没有任何计划行程的关系, 稍微有点闲";
+lhz_in01,14,28,3	script	産穦初	109,{
+	mes "[産穦初]";
+	mes "産穦初璶琌ㄆ穨闽㎝禦產ぇ丁ノ边繺よ, ┪帝琌臮ぇ丁笆の癘穦单ㄏノ, ヘ玡琌⊿Τヴ璸︽祘闽╰, 祔稬Τ翴秪";
 	next;
-	mes "[宴会场人员]";
-	mes "虽然是安静有点闲比较好啦, 不过还是稍微忙一点, 比较不会那么无聊的";
+	mes "[産穦初]";
+	mes "瘤礛琌繰Τ翴秪ゑ耕罢, ぃ筁临琌祔稬Γ翴, ゑ耕ぃ穦ê礚册";
 	close;
 }
 
-lhz_in01,43,52,3	script	卢世#li_party	703,{
-	mes "[卢世]";
-	mes "虚~!!";
-	mes "现在刚好哥哥是扒手, ";
-	mes "我是躲猫猫, ";
-	mes "我要躲藏在哪里呢? 书桌? 椅子? 餐桌?";
-	mes "在哥哥还没有出现时, 我要躲藏好吧~~";
+lhz_in01,43,52,3	script	縞#li_party	703,{
+	mes "[縞]";
+	mes "店~!!";
+	mes "瞷琌ザも, ";
+	mes "и琌跟窟窟, ";
+	mes "и璶跟旅ń㎡? ? 慈? 繺?";
+	mes "临⊿Τ瞷, и璶跟旅~~";
 	close;
 }
 
-lhz_in01,28,33,7	script	韩世#li_party	706,{
-	mes "[韩世]";
-	mes "卢世~ 我要开始要抓了~~";
-	mes "恩嗯... 到底躲到哪里去了呢?";
-	mes "我妹妹会躲在哪里呢?";
+lhz_in01,28,33,7	script	龙#li_party	706,{
+	mes "[龙]";
+	mes "縞~ и璶秨﹍璶ъ~~";
+	mes "垛... ┏跟ń㎡?";
+	mes "иゝゝ穦跟ń㎡?";
 	next;
-	menu "书桌",-,"椅子",-,"餐桌",-;
-	mes "[韩世]";
-	mes "好-啊~!";
-	mes "我要开始找了! 卢世~ 哥哥 开始了~";
+	menu "",-,"慈",-,"繺",-;
+	mes "[龙]";
+	mes "-摆~!";
+	mes "и璶秨﹍т! 縞~  秨﹍~";
 	close;
 }
 
-lhz_in01,21,50,7	script	阿内特#li_party	91,{
-	mes "[阿内特]";
-	mes "雷根贝勒 宴会场有时候当做一般的结婚礼堂使用, ";
-	mes "看起来应该满贵的.. 我的结婚典礼一定要在这里举办的!";
-	mes "一辈子只有一次的结婚典礼啊, 想在记忆里清晰的场所, 受到大家的祝福这应该都是女人的心吧?";
+lhz_in01,21,50,7	script	ず疭#li_party	91,{
+	mes "[ず疭]";
+	mes "筽ī扒 産穦初Τ讽暗挡盉搂绑ㄏノ, ";
+	mes "癬ㄓ莱赣骸禥.. и挡盉ㄥ搂﹚璶硂ń羭快!";
+	mes "晋ΤΩ挡盉ㄥ搂摆, 稱癘拘ń睲捶初┮, 產褐硂莱赣常琌み?";
 	close;
 }
 
 lhz_in01,129,54,1	script	Mereth#erem	869,{
-	mes "[梅勒思]";
-	mes "(嘘嘘-)";
-	mes "(嘘嘘-)";
+	mes "[宾扒]";
+	mes "(糔糔-)";
+	mes "(糔糔-)";
 	next;
-	mes "[梅勒思]";
-	mes "呼........哈.......";
+	mes "[宾扒]";
+	mes "㊣...............";
 	next;
-	mes "- 对着你转向头部的一位职员, 头上戴着奇怪的黑色假面 -";
+	mes "- 癸帝锣繷场戮, 繷拦帝┣堵︹安 -";
 	next;
-	mes "- 他什么话也没有说只直视你的面孔, 只摇动着上半身跳了一会舞, 好像很高兴似的 -";
+	mes "- ぐ杠⊿Τ弧跌ふ, 穘笆帝ō铬穦籖, 钩蔼砍 -";
 	close;
 }
 
 lhz_in01,108,53,3	script	#horri	111,{
-	mes "- 书桌上面有很多的文件和书, 还有放着一幅幸福家庭的照片相框-";
+	mes "- Τゅン㎝, 临Τ帝碩┋褐產畑酚-";
 	close;
 }
 
 lhz_in01,108,47,3	script	#never	111,{
-	mes "- 非常干净整顿好的书桌, 比起其它书桌来相比, 真的显得非常干净 -";
+	mes "- 獶盽瞓俱箉, ゑ癬ㄤウㄓゑ, 痷陪眔獶盽瞓 -";
 	close;
 }
 
 lhz_in01,166,55,3	script	#crazy4u	111,{
-	mes "- 书桌上面书柜上插满了书本-";
+	mes "- 螥础骸セ-";
 	next;
-	mes "- 你很好奇书本的内容就拿起了一本书, 因为书本所散发出来的强烈的黑暗气息, 你只好又把书本放回去 - ";
+	mes "- セず甧碞癬セ, セ┮床祇ㄓ眏疨堵穞蒩, рセ - ";
 	specialeffect EF_CURSEATTACK;
 	close;
 }
 
 lhz_in01,148,45,3	script	Noama#amano	97,{
-	mes "[娜阿玛]";
-	mes "我讲一个笑话给你听吧?";
-	mes "所以说~ 是这样又那样~ 嘻嘻哈哈";
+	mes "[甊嚎]";
+	mes "и量杠倒?";
+	mes "┮弧~ 琌硂妓ê妓~ 糎糎";
 	next;
-	mes "[马丝婉]";
-	mes "娜阿玛, 你这家伙!";
+	mes "[皑捣胞]";
+	mes "甊嚎, 硂產ル!";
 	next;
-	mes "[娜阿玛]";
-	mes "又怎样了~!";
-	mes "真是的! 为什么只整我呀!";
+	mes "[甊嚎]";
+	mes "妓~!";
+	mes "痷琌! ぐ俱и!";
 	close;
 }
 
 lhz_in01,147,40,1	script	Mazwon#minus1	828,{
-	mes "- 书桌上面有两个不知名的机械, 非常让我费精神的位子 -";
+	mes "- Τㄢぃ审瘪, 獶盽琵и禣弘 -";
 	next;
-	mes "[马丝婉]";
-	mes "娜阿玛, 你这家伙!";
-	mes "快点给我出来!";
+	mes "[皑捣胞]";
+	mes "甊嚎, 硂產ル!";
+	mes "е翴倒иㄓ!";
 	next;
-	mes "[娜阿玛]";
-	mes "又怎样了~!";
-	mes "真是的!";
+	mes "[甊嚎]";
+	mes "妓~!";
+	mes "痷琌!";
 	next;
-	mes "- 好像是为了工作的事情, 起了一点争吵似的";
+	mes "- 钩琌ㄆ薄, 癬翴";
 	close;
 }
 
 lhz_in01,157,47,1	script	Mareth#seram	797,{
-	mes "- 感觉不到是男性或是女性只感觉到中性的这个人, 一直把看起来很甜的巧克力放在嘴巴里, 显现出幸福的笑容 -";
+	mes "- 稰谋ぃ琌╧┦┪琌┦稰谋い┦硂, р癬ㄓ并ォ糒ぺń, 陪瞷┋褐甧 -";
 	emotion ET_THROB;
 	next;
-	mes "[马勒斯]";
-	mes "好好啊, 嗯呵~";
+	mes "[皑扒吹]";
+	mes "摆, 垛~";
 	close;
 }
 
 lhz_in01,164,45,3	script	Eiya#iaiai	91,{
-	mes "[埃依阿]";
-	mes "胡乐杰先生最近个性变的很暴躁让我有点担心, 之前是一位和蔼可亲的人..";
-	mes "唉, 不管那么多了, 专心做我的事情吧..";
+	mes "[甁ㄌ]";
+	mes "璊贾狽ネ程┦跑忌募琵иΤ翴踞み, ぇ玡琌㎝魔克..";
+	mes ", ぃ恨ê, 盡み暗иㄆ薄..";
 	next;
-	mes "[埃依阿]";
-	mes "不过你可以看一下这小公仔吗? 会不会觉得又小又可爱呢?";
-	mes "这都是用木头和黏土做成的, 我是搜集这些小公仔为主要的兴趣, 看着这些小的小公仔的话, 不知不觉中感到幸福啊";
+	mes "[甁ㄌ]";
+	mes "ぃ筁硂そ盾? 穦ぃ穦谋眔稲㎡?";
+	mes "硂常琌ノれ繷㎝翲暗Θ, и琌穓栋硂ㄇそ璶砍届, 帝硂ㄇそ杠, ぃぃ谋い稰┋褐摆";
 	close;
 }
 
@@ -2206,80 +2206,80 @@ lhz_in01,135,57,3	script	Blackboard#li	111,{
 	close;
 }
 
-lhz_in03,100,18,3	script	洛奇#li_house	81,{
+lhz_in03,100,18,3	script	#li_house	81,{
 	if (rand(1,2) == 1) {
-		mes "[洛奇]";
-		mes "汪汪!!";
+		mes "[]";
+		mes "↙↙!!";
 		close;
 	}
-	mes "[洛奇]";
-	mes "呕呕呕...";
+	mes "[]";
+	mes "姑姑姑...";
 	close;
 }
 
-lhz_in03,130,41,5	script	杰伊#li_house	706,{
-	mes "[杰伊]";
-	mes "...父母亲每次都是很晚才回家";
-	mes "所以说我总是一个人用餐, 我现在已经不知道饭是什么味道了";
+lhz_in03,130,41,5	script	狽レ#li_house	706,{
+	mes "[狽レ]";
+	mes "...ダ克–Ω常琌边產";
+	mes "┮弧и羆琌ノ繺, и瞷竒ぃ笵逗琌ぐ笵";
 	next;
-	mes "[杰伊]";
-	mes "以前大家一起吃饭的时候, 好像不是这样子的味道..";
+	mes "[狽レ]";
+	mes "玡產癬逗, 钩ぃ琌硂妓笵..";
 	close;
 }
 
-lhz_in03,129,22,7	script	女仆 简#li_house1	850,{
-	mes "[女仆 简]";
-	mes "这个家住的人很少, 只是家太大了, 一旦打扫起来至到下午时再能打扫完毕";
+lhz_in03,129,22,7	script	げ 虏#li_house1	850,{
+	mes "[げ 虏]";
+	mes "硂產ぶ, 琌產び, スゴ苯癬ㄓとゴ苯Ч拨";
 	next;
-	mes "[女仆 简]";
-	mes "唉哟~ 真的好累呀!";
+	mes "[げ 虏]";
+	mes "抽~ 痷仓!";
 	close;
 }
 
-lhz_in03,124,117,1	script	女仆 布伦达#li	74,{
-	mes "[女仆 布伦达]";
-	mes "听说这花瓶一个是千万金币的高价品啊? 打扫时不小心碰到的话!!!";
-	mes "噢咻咻... 就用看的心脏就已经在跳了...";
+lhz_in03,124,117,1	script	げ ガ笷#li	74,{
+	mes "[げ ガ笷]";
+	mes "弧硂瞺琌蒃刽蔼刹珇摆? ゴ苯ぃみ窱杠!!!";
+	mes "揪... 碞ノみ纽碞竒铬...";
 	close;
 }
 
-lighthalzen,159,222,1	script	雷根贝勒 职员#li	109,{
-	mes "[贝娜托斯]";
-	mes "下面有董事长使用的飞空艇, ";
-	mes "刚刚修理工做好检修的工作, 请不要触碰谢谢";
+lighthalzen,159,222,1	script	筽ī扒 戮#li	109,{
+	mes "[ī甊Λ吹]";
+	mes "Τ赋ㄆㄏノ弗, ";
+	mes "瞶暗浪, 叫ぃ璶郉窱谅谅";
 	close;
 }
 
-lighthalzen,162,304,7	script	雷根贝勒 警卫 Drew#li	868,{
-	mes "[雷根贝勒 卫兵]";
-	mes "来, 终于搜集到了! 所有卡普拉小姐脱丝袜的照片!!!";
-	mes "呼呼呼, 怎么样! 想拥有吧?";
+lighthalzen,162,304,7	script	筽ī扒 牡矫 Drew#li	868,{
+	mes "[筽ī扒 矫]";
+	mes "ㄓ, 沧穓栋! ┮Τ炊┰﹋叉捣柠酚!!!";
+	mes "㊣㊣㊣, 妓! 稱局Τ?";
 	emotion ET_DELIGHT;
 	next;
-	mes "[其它 雷根贝勒 卫兵]";
-	mes "噢噢!!! 就是这个呀!";
-	mes "喀- 连角度也拍的很好呀!";
-	mes "喀呵呵呵~~ 多少钱啊!?";
+	mes "[ㄤウ 筽ī扒 矫]";
+	mes "揪揪!!! 碞琌硂!";
+	mes "池- 硈à╃!";
+	mes "池~~ ぶ窥摆!?";
 	next;
-	mes "[雷根贝勒 卫兵]";
-	mes "30万金币";
-	emotion ET_HUK, getnpcid(0, "雷根贝勒 警卫 Tan#li");
+	mes "[筽ī扒 矫]";
+	mes "30蒃刽";
+	emotion ET_HUK, getnpcid(0, "筽ī扒 牡矫 Tan#li");
 	next;
-	mes "[其它 雷根贝勒 卫兵]";
-	mes "什么?! 太贵了吧!!!";
-	mes "这个骗徒!!";
+	mes "[ㄤウ 筽ī扒 矫]";
+	mes "ぐ?! び禥!!!";
+	mes "硂腇畕!!";
 	next;
-	mes "[雷根贝勒 卫兵]";
-	mes "不需要的话就算了~";
+	mes "[筽ī扒 矫]";
+	mes "ぃ惠璶杠碞衡~";
 	close;
 }
 
-lighthalzen,163,306,3	script	雷根贝勒 卫兵#li	867,{
+lighthalzen,163,306,3	script	筽ī扒 矫#li	867,{
 	emotion ET_PROFUSELY_SWEAT;
 	next;
-	mes "[雷根贝勒 卫兵]";
-	mes "呜呜呜呜!! 我好想要啊卡普拉姐姐的照片!!!!";
-	mes "可不可以卖我便宜一点啦? 嗯?";
+	mes "[筽ī扒 矫]";
+	mes "躲躲躲躲!! и稱璶摆炊┰﹋﹋酚!!!!";
+	mes "ぃ芥и獽﹜翴罢? 垛?";
 	close;
 }
 
@@ -2301,269 +2301,269 @@ lighthalzen,70,227,4	script	Delna#li_reken	102,{
 	close;
 }
 
-lhz_in02,289,277,3	script	武术家#1	753,{
-	mes "[武术家]";
-	mes "我想与更强者";
-	mes "战斗, 这里聚集的人";
-	mes "都只想靠金钱来";
-	mes "保护自己!";
+lhz_in02,289,277,3	script	猌砃產#1	753,{
+	mes "[猌砃產]";
+	mes "и稱蒓眏";
+	mes "驹ゆ, 硂ń籈栋";
+	mes "常稱綼窥ㄓ";
+	mes "玂臔!";
 	next;
-	mes "[武术家]";
-	mes "透过肉体来分享权力的";
-	mes "同时, 所萌芽的友谊和";
-	mes "成就感他们为何不懂呢!";
-	mes "所以我随时寻觅着";
-	mes "能和我战斗的斗士";
+	mes "[猌砃產]";
+	mes "硓筁ψ蔨ㄓだㄉ舦";
+	mes ", ┮缔ね剿㎝";
+	mes "Θ碞稰ぃ来㎡!";
+	mes "┮и繦碝砎帝";
+	mes "㎝и驹ゆゆ";
 	next;
-	mes "[武术家]";
-	mes "我再停留一阵子后, "; 
-	mes "实在找不到对手的话, ";
-	mes "我只好到别处找找看了";
+	mes "[猌砃產]";
+	mes "и氨痙皚, "; 
+	mes "龟тぃ癸も杠, ";
+	mes "и矪тт";
 	close;
 }
 
-lighthalzen,107,107,3	script	考西特#zen1	869,{
-	mes "[考西特]";
-	mes "真搞不懂这里的治安";
-	mes "到底是好还是坏, ";
-	mes "警卫也多, 好像又有";
-	mes "许多为了维持治安的";
-	mes "各项政策...";
+lighthalzen,107,107,3	script	σ﹁疭#zen1	869,{
+	mes "[σ﹁疭]";
+	mes "痷穌ぃ来硂ń獀";
+	mes "┏琌临琌Д, ";
+	mes "牡矫, 钩Τ";
+	mes "砛蝴獀";
+	mes "兜現郸...";
 	next;
-	mes "[考西特]";
-	mes "也许是对过度压制方面的";
-	mes "反抗, 像流氓一样的坏人";
-	mes "算蛮多的... 或许是因光芒";
-	mes "太毕露, 所以黑暗也随之";
-	mes "强大..了吧?";
+	mes "[σ﹁疭]";
+	mes "砛琌癸筁溃よ";
+	mes "はк, 钩瑈猐妓Д";
+	mes "衡芞... ┪砛琌▇";
+	mes "び拨臩, ┮堵穞繦ぇ";
+	mes "眏..?";
 	next;
-	mes "[考西特]";
-	mes "管制的太严苛";
-	mes "并非全是好事";
+	mes "[σ﹁疭]";
+	mes "恨び腨璙";
+	mes "獶琌ㄆ";
 	close;
 }
 
-lhz_in03,32,99,3	script	索皮#zen1	863,{
-	mes "[索皮]";
-	mes "呼呼... 过的很舒适, ";
-	mes "人老了日子只求舒适";
-	mes "和平安就好了...";
+lhz_in03,32,99,3	script	ブ#zen1	863,{
+	mes "[ブ]";
+	mes "㊣㊣... 筁滴屿, ";
+	mes "ρら―滴屿";
+	mes "㎝キ碞...";
 	next;
-	mes "[索皮]";
-	mes "没必要逞强乱去挑战, ";
-	mes "余生什么事都不用做, ";
-	mes "只要悠悠哉哉地";
-	mes "过日子就好了... 嘿嘿";
+	mes "[ブ]";
+	mes "⊿ゲ璶硏眏睹珼驹, ";
+	mes "ネぐㄆ常ぃノ暗, ";
+	mes "璶眣眣玽玽";
+	mes "筁ら碞... 糑糑";
 	close;
 }
 
-lhz_in03,25,105,5	script	戈帕尔#zen4	869,{
-	mes "[戈帕尔]";
-	mes "哎哟!或许奶奶满足于";
-	mes "现状, 不过";
-	mes "我可不同!虽然安定和";
-	mes "舒适是不错啦, 但是要我满足于";
-	mes "现状, 就太浪费我的青春了!";
+lhz_in03,25,105,5	script	む┈焊#zen4	869,{
+	mes "[む┈焊]";
+	mes "玼抽!┪砛イイ骸ì";
+	mes "瞷, ぃ筁";
+	mes "иぃ!瘤礛﹚㎝";
+	mes "滴屿琌ぃ岿罢, 琌璶и骸ì";
+	mes "瞷, 碞び禣и獵琄!";
 	next;
-	mes "[戈帕尔]";
-	mes "走着瞧!我一定要创立";
-	mes "优于雷根贝勒的企业!";
+	mes "[む┈焊]";
+	mes "ǐ帝罖!и﹚璶承ミ";
+	mes "涩筽ī扒穨!";
 	close;
 }
 
-lighthalzen,176,65,5	script	吉米#zen3	862,{
-	mes "[吉米]";
-	mes "与别村不同的是, 这里";
-	mes "贩售着许多漂亮衣服, 和";
-	mes "可爱装饰品, 所以很喜欢, ";
-	mes "像我这样爱美的少女而言, ";
-	mes "简直就是天堂了";
+lighthalzen,176,65,5	script	μ#zen3	862,{
+	mes "[μ]";
+	mes "蒓ぃ琌, 硂ń";
+	mes "砪扳帝砛簘獹︾狝, ㎝";
+	mes "稲杆耿珇, ┮尺舧, ";
+	mes "钩и硂妓稲ぶτē, ";
+	mes "虏碞琌ぱ绑";
 	next;
-	mes "[吉米]";
-	mes "你好像是冒险家, 与其";
-	mes "每天都穿着不帅气又相同的";
-	mes "衣服, 倒不如在这里治装";
-	mes "好好打扮一下如何呢?";
+	mes "[μ]";
+	mes "钩琌玙繧產, 蒓ㄤ";
+	mes "–ぱ常帝ぃ蒩";
+	mes "︾狝, ぃ硂ń獀杆";
+	mes "ゴш㎡?";
 	close;
 }
 
-lighthalzen,364,282,3	script	博杰#zen5	870,{
-	mes "[博杰]";
-	mes "唉咻... 今天又";
-	mes "挨肚子了, 虽想";
-	mes "饱啖一顿, 但既没钱, ";
-	mes "又没卖吃的地方, 真是的, ";
-	mes "我的人生就像";
-	mes "行尸走肉般";
+lighthalzen,364,282,3	script	痴狽#zen5	870,{
+	mes "[痴狽]";
+	mes "... さぱ";
+	mes "▄, 瘤稱";
+	mes "埂败箉, 琂⊿窥, ";
+	mes "⊿芥よ, 痷琌, ";
+	mes "иネ碞钩";
+	mes "︽ǐψ";
 	next;
-	mes "[博杰]";
-	mes "那边的富裕村落和我们";
-	mes "过着截然不同的";
-	mes "生活...唉咻, 说这些";
-	mes "又有什么用呢...";
+	mes "[痴狽]";
+	mes "ê娩碔肝辅㎝и";
+	mes "筁帝篒礛ぃ";
+	mes "ネ..., 弧硂ㄇ";
+	mes "Τぐノ㎡...";
 	close;
 }
 
-lhz_in03,239,38,3	script	青年#zen10	849,{
-	mes "[青年]";
-	mes "呜呜呜... 药...给我药...";
-	mes "咳嗽... 咳嗽... 好痛...";
-	mes "咳嗽...咳嗽咳嗽咳嗽!";
+lhz_in03,239,38,3	script	獵#zen10	849,{
+	mes "[獵]";
+	mes "躲躲躲... 媚...倒и媚...";
+	mes "珁孤... 珁孤... 礹...";
+	mes "珁孤...珁孤珁孤珁孤!";
 	next;
-	mes "[青年]";
-	mes "想要买药...钱...钱";
-	mes "需要钱...钱...才可以...";
-	mes "咳嗽...痛得我无法...";
-	mes "工作, 所以没钱...";
-	mes "咳嗽..";
+	mes "[獵]";
+	mes "稱璶禦媚...窥...窥";
+	mes "惠璶窥...窥......";
+	mes "珁孤...礹眔и礚猭...";
+	mes ", ┮⊿窥...";
+	mes "珁孤..";
 	close;
 }
 
-lhz_in02,267,25,4	script	黛安娜#npc	747,{
-	mes "[黛安娜]";
-	mes "呜哇~";
-	mes "这些东西看起来好贵啊...";
-	mes "到底值多少钱呢...";
+lhz_in02,267,25,4	script	翷甊#npc	747,{
+	mes "[翷甊]";
+	mes "躲珃~";
+	mes "硂ㄇ狥﹁癬ㄓ禥摆...";
+	mes "┏ぶ窥㎡...";
 	next;
-	mes "[店员]";
-	mes "你是只这个双刃短剑嘛?";
-	mes "客人你的眼光很高啊, ";
-	mes "请问你是哪里出身呢?";
+	mes "[┍]";
+	mes "琌硂蛮祏糃估?";
+	mes "泊蔼摆, ";
+	mes "叫拜琌ńō㎡?";
 	next;
-	mes "[黛安娜]";
-	mes "梦罗克出身, 耶嘿嘿";
+	mes "[翷甊]";
+	mes "冠霉ō, 瑿糑糑";
 	next;
-	mes "[店员]";
-	mes "唉哟... 梦罗克不错嘛, ";
-	mes "那个地方的人";
-	mes "实在是有眼光啊~";
-	mes "反正... 这双刃短剑是卖";
-	mes "39800金币的, 客人";
+	mes "[┍]";
+	mes "抽... 冠霉ぃ岿估, ";
+	mes "êよ";
+	mes "龟琌Τ泊摆~";
+	mes "はタ... 硂蛮祏糃琌芥";
+	mes "39800刽, ";
 	next;
 	emotion 23;
-	mes "[黛安娜]";
-	mes "什么?!";
-	mes "为什么卖这么贵啊?";
+	mes "[翷甊]";
+	mes "ぐ?!";
+	mes "ぐ芥硂禥摆?";
 	next;
-	mes "[店员]";
-	mes "唉呀 唉呀, ";
-	mes "我还以为你有眼光, ";
-	mes "连价钱都会看上眼的...";
-	mes "请你看这边好吗, ";
-	mes "在剑身上镶嵌了许多钻石吧?";
+	mes "[┍]";
+	mes " , ";
+	mes "и临Τ泊, ";
+	mes "硈刹窥常穦泊...";
+	mes "叫硂娩盾, ";
+	mes "糃ō芧碠砛苝ホ?";
 	next;
-	mes "[店员]";
-	mes "还有这里把手底端, ";
-	mes "粗犷的镶嵌了蓝宝石, ";
-	mes "这边还有...";
-	mes "那边还有...";
+	mes "[┍]";
+	mes "临Τ硂ńрも┏狠, ";
+	mes "彩聏芧碠屡腳ホ, ";
+	mes "硂娩临Τ...";
+	mes "ê娩临Τ...";
 	mes "...";
 	next;
-	mes "[黛安娜]";
-	mes "好了, 好了! 够了! 可以啦!";
-	mes "那边那个长柄短剑值多少?";
+	mes "[翷甊]";
+	mes ", ! 镑! 罢!";
+	mes "ê娩ê琡祏糃ぶ?";
 	next;
-	mes "[店员]";
-	mes "那个卖39800金币";
+	mes "[┍]";
+	mes "ê芥39800刽";
 	next;
-	mes "[黛安娜]";
-	mes "呜哇 好便宜啊! 我要买这个!";
+	mes "[翷甊]";
+	mes "躲珃 獽﹜摆! и璶禦硂!";
 	next;
-	mes "[店员]";
-	mes "这算模型中还算是制作的不错啦?";
-	mes "虽然刀刃还不算是很锋利, ";
-	mes "应该可以撕开信封这类的东西吧, ";
-	mes "这边这个武士刀模型也满不错的啦...";
+	mes "[┍]";
+	mes "硂衡家い临衡琌ぃ岿罢?";
+	mes "瘤礛临ぃ衡琌網, ";
+	mes "莱赣脊秨獺硂摸狥﹁, ";
+	mes "硂娩硂猌家骸ぃ岿罢...";
 	next;
 	emotion 4;
-	mes "[黛安娜]";
+	mes "[翷甊]";
 	mes "...";
 	close;
 }
 
-lhz_in02,267,22,1	script	店员#cobo	91,{
-	mes "[店员]";
-	mes "欢迎光临, 客人, ";
-	mes "在我们卖场里可以看到, ";
-	mes "在其它地方所买不到的东西";
+lhz_in02,267,22,1	script	┍#cobo	91,{
+	mes "[┍]";
+	mes "舧羬, , ";
+	mes "и芥初ń, ";
+	mes "ㄤウよ┮禦ぃ狥﹁";
 	next;
-	mes "[店员]";
-	mes "物品是可以贩卖给会员的, ";
-	mes "首先呢, 把别人介绍给卖场";
-	mes "变成会员后, 那位会员们所购买的";
-	mes "金额一部份, ";
-	mes "可转让给客人 您的";
+	mes "[┍]";
+	mes "珇琌砪芥倒穦, ";
+	mes "㎡, рざ残倒芥初";
+	mes "跑Θ穦, ê穦┮潦禦";
+	mes "肂场, ";
+	mes "锣琵倒 眤";
 	next;
-	mes "[店员]";
-	mes "第二, 要缴交年费, ";
-	mes "反正这个是你所介绍的会员们, ";
-	mes "从他们购买的物品价格中";
-	mes "可以冲掉的...";
+	mes "[┍]";
+	mes "材, 璶煤ユ禣, ";
+	mes "はタ硂琌┮ざ残穦, ";
+	mes "眖潦禦珇刹い";
+	mes "≧奔...";
 	next;
 	mes "["+strcharinfo(0)+"]";
-	mes "好了, 够了, 谢谢你!";
+	mes ", 镑, 谅谅!";
 	close;
 }
 
 lighthalzen,192,63,4	script	Sergei#zen1	92,{
-	mes "[赛乐薇]";
-	mes "请问, 你知道吗?对于武器店";
-	mes "里大斧头的由来, 你不会";
-	mes "好奇吗?我告诉你吧?";
+	mes "[辽贾哩]";
+	mes "叫拜, 笵盾?癸猌竟┍";
+	mes "ń繷パㄓ, ぃ穦";
+	mes "盾?и禗?";
 	next;
-	if(select("恩, 我想知道:不太想知道...")==1) {
-		mes "[赛乐薇]";
-		mes "听说以前这里的武器店老板是";
-		mes "凶神恶煞的连续杀人犯呢, ";
-		mes "每晚提着斧头出去后, ";
-		mes "就针对像我这种柔弱又美丽的";
-		mes "女孩, 惨遭下毒手呢";
+	if(select(", и稱笵:ぃび稱笵...")==1) {
+		mes "[辽贾哩]";
+		mes "弧玡硂ń猌竟┍ρ狾琌";
+		mes "た碿焚硈尿炳デ㎡, ";
+		mes "–边矗帝繷, ";
+		mes "碞皐癸钩и硂销琗畓腞";
+		mes ", 篏綝瑀も㎡";
 		next;
-		mes "[赛乐薇]";
-		mes "不过最后被村民们";
-		mes "抓到后, 就用那巨大的";
-		mes "斧头将他斩首示众, ";
-		mes "想到就让我起鸡皮疙瘩..";
+		mes "[辽贾哩]";
+		mes "ぃ筁程砆チ";
+		mes "ъ, 碞ノêエ";
+		mes "繷盢辟ボ渤, ";
+		mes "稱碞琵и癬蔓ブ紻..";
 		next;
-		mes "[赛乐薇]";
-		mes "所以每当夜晚时, ";
-		mes "有不少人目击到";
-		mes "在这附近磨斧头";
-		mes "男子的幽灵";
+		mes "[辽贾哩]";
+		mes "┮–讽边, ";
+		mes "Τぃぶヘ阑";
+		mes "硂縤繷";
+		mes "╧艶";
 		next;
-		mes "[赛乐薇]";
-		mes "那幽灵为了确认斧头";
-		mes "是不是磨利了, ";
-		mes "就砍下自己的头颅后, ";
-		mes "继续追赶着目睹";
-		mes "这情况的人, 啊啊...";
-		mes "我实在不敢想像..";
+		mes "[辽贾哩]";
+		mes "ê艶谔粄繷";
+		mes "琌ぃ琌縤, ";
+		mes "碞繷芵, ";
+		mes "膥尿發鱼帝ヘ窣";
+		mes "硂薄猵, 摆摆...";
+		mes "и龟ぃ幢稱钩..";
 		next;
-		mes "-她吓得身体颤抖-";
+		mes "-纞眔ō蔨鸥л-";
 		close;
 	}
-	mes "[赛乐薇]";
-	mes "好可惜喔.. 在炎热的夏天";
-	mes "听的话刚好...实在是";
-	mes "非常有趣的故事呢...";
+	mes "[辽贾哩]";
+	mes "堡翅.. 荐甃ぱ";
+	mes "杠...龟琌";
+	mes "獶盽Τ届珿ㄆ㎡...";
 	next;
-	mes "-她脸上一副";
-	mes "很可惜的表情-";
+	mes "-羪捌";
+	mes "堡薄-";
 	close;
 }
 
-lighthalzen,258,223,3	script	斯里尼瓦#zen4	866,{
-	mes "[斯里尼瓦]";
-	mes "咻呜... 总觉得旁边";
-	mes "那些快崩塌的房子, ";
-	mes "降低本村落的格调, ";
-	mes "确实帮了大忙";
+lighthalzen,258,223,3	script	吹ńェニ#zen4	866,{
+	mes "[吹ńェニ]";
+	mes "躲... 羆谋眔娩";
+	mes "êㄇе盰厄┬, ";
+	mes "セ辅秸, ";
+	mes "谔龟腊Γ";
 	next;
-	mes "[斯里尼瓦]";
-	mes "村落的格调要高一点, ";
-	mes "生活才会有乐趣, 又能";
-	mes "向其它村落的人好好";
-	mes "炫燿一番... 嗳嗳";
+	mes "[吹ńェニ]";
+	mes "辅秸璶蔼翴, ";
+	mes "ネ穦Τ贾届, ";
+	mes "ㄤウ辅";
+	mes "嵇礷... 炯炯";
 	close;
 }
 
@@ -2593,190 +2593,190 @@ lighthalzen,77,203,3	script	Victor Perfecto#zen9	869,{
 	close;
 }
 
-lighthalzen,40,107,4	script	维吉尔#zen4	869,{
-	mes "[维吉尔]";
-	mes "咻呜...像今天这种天气, ";
-	mes "好想把一切抛在脑后, ";
-	mes "去某个地方";
-	mes "游玩";
+lighthalzen,40,107,4	script	蝴焊#zen4	869,{
+	mes "[蝴焊]";
+	mes "躲...钩さぱ硂销ぱ蒩, ";
+	mes "稱рち┻福, ";
+	mes "琘よ";
+	mes "村";
 	next;
-	switch (select("你想去哪里玩呢?:事情要做完啊!:询问关于村落发生的那事件")) {
+	switch (select("稱ń㎡?:ㄆ薄璶暗Ч摆!:高拜闽辅祇ネêㄆン")) {
 	case 1:
-		mes "[维吉尔]";
-		mes "唉, 即使我想出去玩, ";
-		mes "说实在的这附近有太多";
-		mes "危险的魔物到处出没,  ";
-		mes "若是我独自出去, ";
-		mes "一定会被修理的很惨";
+		mes "[蝴焊]";
+		mes ", ㄏи稱, ";
+		mes "弧龟硂Τび";
+		mes "繧臸矪⊿,  ";
+		mes "璝琌и縒, ";
+		mes "﹚穦砆瞶篏";
 		next;
-		mes "[维吉尔]";
-		mes "其实我是很想翘班之后, ";
-		mes "跑到艾尔帕兰竞速场地";
-		mes "观赏比赛就好了";
+		mes "[蝴焊]";
+		mes "ㄤ龟и琌稱录痁ぇ, ";
+		mes "禲︺焊┈孽膙硉初";
+		mes "芠洁ゑ辽碞";
 		next;
-		mes "[维吉尔]";
-		mes "之前我有一位朋友, ";
-		mes "也没什么实力, 就到";
-		mes "竞速场地拼了老命参与比赛, ";
-		mes "结果还拿到参加奖, ";
-		mes "得了一瓶奇异的药水?";
+		mes "[蝴焊]";
+		mes "ぇ玡иΤ狟ね, ";
+		mes "⊿ぐ龟, 碞";
+		mes "膙硉初ρ㏑把蒓ゑ辽, ";
+		mes "挡狦临把贱, ";
+		mes "眔瞺奢媚?";
 		next;
-		mes "[维吉尔]";
-		mes "由于好奇心使然, 就把它";
-		mes "喝掉了, 结果真是的";
-		mes "一点效果也没有!天啊";
-		mes "说是什么走路变慢的药水, ";
-		mes "可是根本就是唬人的嘛, ";
-		mes "干嘛做这种东西呢...";
+		mes "[蝴焊]";
+		mes "パみㄏ礛, 碞рウ";
+		mes "耻奔, 挡狦痷琌";
+		mes "翴狦⊿Τ!ぱ摆";
+		mes "弧琌ぐǐ隔跑篊媚, ";
+		mes "琌セ碞琌颁估, ";
+		mes "估暗硂销狥﹁㎡...";
 		next;
-		mes "[维吉尔]";
-		mes "真不知道是哪个家伙";
-		mes "制造的, 好想见他";
-		mes "一面, 说什么竞速比赛";
-		mes "参加奖, 好像也都是";
-		mes "骗人的吧";
+		mes "[蝴焊]";
+		mes "痷ぃ笵琌產ル";
+		mes "硑, 稱ǎ";
+		mes ", 弧ぐ膙硉ゑ辽";
+		mes "把贱, 钩常琌";
+		mes "腇";
 		next;
-		mes "[维吉尔]";
-		mes "肯定是被某个骗子";
-		mes "欺骗, 才会买到了";
-		mes "来路不明的药水吧";
+		mes "[蝴焊]";
+		mes "﹚琌砆琘腇";
+		mes "篡腇, 穦禦";
+		mes "ㄓ隔ぃ媚";
 	next;
-		mes "-男子似乎轻快的";
-		mes "记忆, 哼哼的发出鼻息声后";
-		mes "转了身-";
+		mes "-╧淮е";
+		mes "癘拘, 祇惑羘";
+		mes "锣ō-";
 		close;
 	case 2:
-		mes "[维吉尔]";
-		mes "...忽然出现后说什么风凉话吗?";
-		mes "你以为我是好吃懒做";
-		mes "只顾贪玩的人吗?我只是";
-		mes "因为觉得天气不错, ";
-		mes "所以才说想去玩而已啊";
+		mes "[蝴焊]";
+		mes "...┛礛瞷弧ぐ睤杠盾?";
+		mes "и琌胕暗";
+		mes "臮砱盾?и琌";
+		mes "谋眔ぱ蒩ぃ岿, ";
+		mes "┮弧稱τ摆";
 		next;
-		mes "[维吉尔]";
-		mes "(..嘟嘟囔囔)";
-		mes "(今晚之前一定要完成...)";
+		mes "[蝴焊]";
+		mes "(..故故)";
+		mes "(さ边ぇ玡﹚璶ЧΘ...)";
 		next;
-		mes "- 男子似乎想起有急事, ";
-		mes "在便笺上开始";
-		mes "猛记东西 -";
+		mes "- ╧稱癬Τㄆ, ";
+		mes "獽亨秨﹍";
+		mes "瞨癘狥﹁ -";
 		close;
 	case 3:
-		mes "[维吉尔]";
-		mes "啊, 你是说那件事吗?我当然";
-		mes "记得很清楚, 大家都误以为";
-		mes "他是凶惨的斧头杀人魔, ";
-		mes "但事实不然";
+		mes "[蝴焊]";
+		mes "摆, 琌弧êンㄆ盾?и讽礛";
+		mes "癘眔睲贰, 產常粇";
+		mes "琌た篏繷炳臸, ";
+		mes "ㄆ龟ぃ礛";
 		next;
-		mes "[维吉尔]";
-		mes "其实在很久以前, 本村落";
-		mes "有位出名的帽子匠人, ";
-		mes "他的专长之一就是用";
-		mes "魔物的头颅来制作帽子...";
-		mes "换句话说, 他是类似以";
-		mes "死尸来制作帽子的男子";
+		mes "[蝴焊]";
+		mes "ㄤ龟玡, セ辅";
+		mes "Τ碪, ";
+		mes "盡ぇ碞琌ノ";
+		mes "臸繷芵ㄓ碪...";
+		mes "传杠弧, 琌摸";
+		mes "ㄓ碪╧";
 		next;
-		mes "[维吉尔]";
-		mes "或许你有看过, ";
-		mes "就像是狸猫帽, ";
-		mes "那种东西啦";
+		mes "[蝴焊]";
+		mes "┪砛Τ筁, ";
+		mes "碞钩琌疻窟碪, ";
+		mes "ê销狥﹁罢";
 		next;
-		mes "[维吉尔]";
-		mes "可是某一天那位帽子匠人, ";
-		mes "非要将飞空挺船长的亲戚";
-		mes "制成了帽了, 也就是说";
-		mes "是个杀人事件";
+		mes "[蝴焊]";
+		mes "琌琘ぱê碪, ";
+		mes "獶璶盢差克杯";
+		mes "Θ碪, 碞琌弧";
+		mes "琌炳ㄆン";
 		next;
-		mes "[维吉尔]";
-		mes "他辩称自己杀的是魔物, ";
-		mes "后来才明白原来他搞错了, ";
-		mes "因此他受到相当大的震惊, ";
-		mes "结果他受不了痛苦, ";
-		mes "听说后来他在家里";
-		mes "自杀了";
+		mes "[蝴焊]";
+		mes "臛嘿炳琌臸, ";
+		mes "ㄓフㄓ穌岿, ";
+		mes "讽綺誥, ";
+		mes "挡狦ぃ礹璚, ";
+		mes "弧ㄓ產ń";
+		mes "炳";
 		next;
-		mes "[维吉尔]";
-		mes "后来听说那个不幸的帽子, ";
-		mes "在飞空挺的船舱内";
-		mes "妥善保管着";
+		mes "[蝴焊]";
+		mes "ㄓ弧êぃ┋碪, ";
+		mes "差康ず";
+		mes "Т到玂恨帝";
 		next;
-		mes "[维吉尔]";
-		mes "很多人目睹了当时的惨况后, ";
-		mes "为了避免历史重演, ";
-		mes "他们都有了要随时";
-		mes "提高注意和警觉心的";
-		mes "那种共识吧?";
+		mes "[蝴焊]";
+		mes "ヘ窣讽篏猵, ";
+		mes "磷菌簍, ";
+		mes "常Τ璶繦";
+		mes "矗蔼猔種㎝牡谋み";
+		mes "ê销醚?";
 		next;
-		mes "[维吉尔]";
-		mes "在我眼里只不过是个";
-		mes "驯鹿头颅的标本而已啊, ";
-		mes "可是我讲的话, 万一被";
-		mes "飞空挺的人听到话, ";
-		mes "他们也许会气的直跳脚";
+		mes "[蝴焊]";
+		mes "и泊ńぃ筁琌";
+		mes "攻忱繷芵夹セτ摆, ";
+		mes "琌и量杠, 蒃砆";
+		mes "杠, ";
+		mes "砛穦蒩铬竲";
 		next;
-		mes "[维吉尔]";
-		mes "在他们面前最好是";
-		mes "别乱讲话";
-		mes "-讲完话的男子似乎觉得";
-		mes "很有趣, 自己在一旁";
-		mes "嗤嗤的笑起来-";
+		mes "[蝴焊]";
+		mes "玡程琌";
+		mes "睹量杠";
+		mes "-量Ч杠╧谋眔";
+		mes "Τ届, ";
+		mes "夺夺癬ㄓ-";
 		close;
 	}
 }
 
-lhz_in01,144,53,3	script	胡乐杰#zero	98,1,1,{
+lhz_in01,144,53,3	script	璊贾狽#zero	98,1,1,{
 OnTouch_:
 	switch(rand(1,3)) {
 	case 1:
-		mes "[胡乐杰]";
-		mes "唉哟! 你现在还不能来到我这个位子呀-";
-		mes "现在我正在处理重要的事情当中";
+		mes "[璊贾狽]";
+		mes "抽! 瞷临ぃㄓи硂-";
+		mes "瞷иタ矪瞶璶ㄆ薄讽い";
 		close;
 	case 2:
-		mes "[胡乐杰]";
-		mes "只要是靠近我位子的人, 都是嫌疑犯啊, 嫌疑犯!!";
-		mes "为什么是嫌疑犯我也不知道啦, 反正不要靠过来!";
+		mes "[璊贾狽]";
+		mes "璶琌綼и, 常琌尔好デ摆, 尔好デ!!";
+		mes "ぐ琌尔好デиぃ笵罢, はタぃ璶綼筁ㄓ!";
 		close;
 	case 3:
-		mes "[胡乐杰]";
-		mes "呵嗯.. 这期间我是太努力的工作了, ";
-		mes "试着不购买某种东西的话...";
+		mes "[璊贾狽]";
+		mes "垛.. 硂戳丁и琌び, ";
+		mes "刚帝ぃ潦禦琘销狥﹁杠...";
 		next;
-		mes "[胡乐杰]";
-		mes "呜呜, 不行!对我来说未来要娶一位像兔子般的可爱的太太!! 钱! 我要存钱啊!";
-		mes "呜.. 看样子这个东西我也使用了很久的样子, 啊, 不是! 工作吧! 工作!";
+		mes "[璊贾狽]";
+		mes "躲躲, ぃ︽!癸иㄓ弧ゼㄓ璶谤钩ㄟ稲びび!! 窥! и璶窥摆!";
+		mes "躲.. 妓硂狥﹁иㄏノ妓, 摆, ぃ琌! ! !";
 		close;
 	}
 	end;
 }
 
-lhz_in01,139,48,7	script	莉咪#mimir	73,{
-	mes "- 有一位姓名叫做莉咪的职员, 想要跟她说话, 她确实埋头苦干的工作, 害我不知所措-";
+lhz_in01,139,48,7	script	产珆#mimir	73,{
+	mes "- Τ﹎暗产珆戮, 稱璶蛤弧杠, 谔龟甀繷璚, 甡иぃ┮惫-";
 	next;
-	mes "[莉咪]";
+	mes "[产珆]";
 	mes "............";
 	next;
 	emotion 23;
-	mes "[莉咪]";
-	mes "(突然间)";
+	mes "[产珆]";
+	mes "(礛丁)";
 	next;
-	mes "[莉咪]";
-	mes "请问...有什么事吗?";
+	mes "[产珆]";
+	mes "叫拜...Τぐㄆ盾?";
 	emotion ET_HUK;
 	if (BaseJob == Job_Assassin) {
 		if (Sex == SEX_MALE) {
 			next;
 			mes "[Leimi]";
-			mes "啊... 是一位刺客呀!";
-			mes "喔, 你们太可爱了!";
-			mes "如此凉爽同时又如此神秘！我爱你!";
+			mes "摆... 琌!";
+			mes "翅, び稲!";
+			mes "睤瞡и稲!";
 		}
 		else {
 			next;
 			mes "[Leimi]";
-			mes "啊... 是一位刺客呀...?";
-			mes "你知道有什么单身的刺客吗?";
-			mes "喔, 我的天啊. 他们可都是大热门~";
+			mes "摆... 琌...?";
+			mes "笵Τぐ虫ō盾?";
+			mes "翅, иぱ摆. 常琌荐~";
 		}
 	}
 	close;
@@ -2786,13 +2786,13 @@ lhz_in01,138,47,0	script	#mimir_camera	-1,2,2,{
 OnTouch_:
 	if (BaseJob == Job_Assassin) {
 		if (Sex == SEX_MALE) {
-			mes "^3355FF*点击*^000000";
+			mes "^3355FF*翴阑*^000000";
 			next;
 			mes "["+strcharinfo(0)+"]";
-			mes "什么东西...?";
-			mes "这声音. 是...";
-			mes "有什么东西拍下了";
-			mes "我的样子?";
+			mes "ぐ狥﹁...?";
+			mes "硂羘. 琌...";
+			mes "Τぐ狥﹁╃";
+			mes "и妓?";
 			close;
 		}
 	}
@@ -2800,99 +2800,99 @@ OnTouch_:
 }
 
 lhz_in02,36,274,4	script	Cool Event Staff#Saera	831,{
-	mes "[塞拉]";
-	mes "欢迎光临, ";
-	mes "这里是准它企划社的临时总公司, ";
-	mes "请问需要帮忙吗?";
+	mes "[峨┰]";
+	mes "舧羬, ";
+	mes "硂ń琌ウ羬羆そ, ";
+	mes "叫拜惠璶腊Γ盾?";
 	next;
-	switch(select("临时总公司?:询问有关投票权的事情..:取消")) {
+	switch(select("羬羆そ?:高拜Τ闽щ布舦ㄆ薄..:")) {
 	case 1:
-		mes "[塞拉]";
-		mes "是的, ";
-		mes "因为总公司尚未整理完毕, ";
-		mes "所以租下这里";
-		mes "作为临时总公司";
+		mes "[峨┰]";
+		mes "琌, ";
+		mes "羆そ﹟ゼ俱瞶Ч拨, ";
+		mes "┮硂ń";
+		mes "羬羆そ";
 		close;
 	case 2:
-		mes "[塞拉]";
-		mes "啊...你是说投票权吗?";
-		mes "这次投票权是根据我们'准它企划社'和";
-		mes "'卡普拉服务'之间的协议, ";
-		mes "所实施的有关传送服务的";
-		mes "决定权, 将各公司的顾客们, ";
-		mes "经过严格的筛选后";
-		mes "才赋予投票权";
+		mes "[峨┰]";
+		mes "摆...琌弧щ布舦盾?";
+		mes "硂Ωщ布舦琌誹и'ウ'㎝";
+		mes "'炊┰狝叭'ぇ丁某, ";
+		mes "┮龟琁Τ闽肚癳狝叭";
+		mes "∕﹚舦, 盢そ臮, ";
+		mes "竒筁腨縵匡";
+		mes "结ぉщ布舦";
 		next;
-		mes "[塞拉]";
-		mes "传送服务是指在各种洞穴探险时, ";
-		mes "为了让玩家更加便利, 所以在各自";
-		mes "洞穴提供了直接传送的服务";
+		mes "[峨┰]";
+		mes "肚癳狝叭琌销瑌マ贝繧, ";
+		mes "琵產獽, ┮";
+		mes "瑌マ矗ㄑ钡肚癳狝叭";
 		next;
-		mes "[塞拉]";
-		mes "只是, 以目前的系统, 我们'准它企划社'";
-		mes "与'卡普拉服务', 并不会提供";
-		mes "同时传送至一个洞穴中";
+		mes "[峨┰]";
+		mes "琌, ヘ玡╰参, и'ウ'";
+		mes "蒓'炊┰狝叭', ぃ穦矗ㄑ";
+		mes "肚癳瑌マい";
 		next;
-		mes "[塞拉]";
-		mes "为了能提供更好的服务, ";
-		mes "我们采用更公平的方式, ";
-		mes "计划在特定时间内选出服务地区";
-		mes "与服务公司后, 再开始提供服务的";
+		mes "[峨┰]";
+		mes "矗ㄑ狝叭, ";
+		mes "иノそキよΑ, ";
+		mes "璸疭﹚丁ず匡狝叭跋";
+		mes "蒓狝叭そ, 秨﹍矗ㄑ狝叭";
 		next;
-		mes "[塞拉]";
-		mes "挑选服务公司的方式是, ";
-		mes "在利用各公司的顾客中, ";
-		mes "透过特定的审查后再票选出来, ";
-		mes "想要确认自己是否有投票权的话, ";
-		mes "请洽询各公司的总公司吧";
+		mes "[峨┰]";
+		mes "珼匡狝叭そよΑ琌, ";
+		mes "ノそ臮い, ";
+		mes "硓筁疭﹚糵琩布匡ㄓ, ";
+		mes "稱璶谔粄琌Τщ布舦杠, ";
+		mes "叫高そ羆そ";
 		next;
-		mes "[塞拉]";
-		mes "目前对您的审核尚未";
-		mes "结束, 审核一完成, ";
-		mes "我们会立刻通知您结果, ";
-		mes "而后开始进行投票时, ";
-		mes "请您踊跃参与";
+		mes "[峨┰]";
+		mes "ヘ玡癸眤糵﹟ゼ";
+		mes "挡, 糵ЧΘ, ";
+		mes "и穦ミㄨ硄眤挡狦, ";
+		mes "τ秨﹍秈︽щ布, ";
+		mes "叫眤鋅臘把蒓";
 		close;
 	case 3:
-		mes "[塞拉]";
-		mes "谢谢你, ";
-		mes "欢迎下次再使用";
+		mes "[峨┰]";
+		mes "谅谅, ";
+		mes "舧Ωㄏノ";
 		close;
 	}
 }
 
-lhz_in02,40,280,6	script	事件策划人	833,{
-	mes "[库迪佑]";
-	mes "唉哟...";
-	mes "真是的..";
-	mes "怎么一直打扫不完呢, ";
-	mes "仓库里灰尘怎么这么多啊...";
+lhz_in02,40,280,6	script	ㄆン郸	833,{
+	mes "[畐瓆]";
+	mes "抽...";
+	mes "痷琌..";
+	mes "ゴ苯ぃЧ㎡, ";
+	mes "畐ńη剐硂摆...";
 	next;
-	mes "[库迪佑]";
-	mes "咳嗽...";
-	mes "咳嗽..咳嗽..";
+	mes "[畐瓆]";
+	mes "珁孤...";
+	mes "珁孤..珁孤..";
 	close;
 }
 
-lhz_in02,110,286,5	script	准它经理	853,{
-	mes "[巴宇图]";
-	mes "这这这这..";
-	mes "最近职员们似乎真的";
-	mes "很混.... 想要赚钱就要";
-	mes "努力工作啊...";
-	mes "想混哪能赚钱..";
+lhz_in02,110,286,5	script	ウ竒瞶	853,{
+	mes "[ぺ瓜]";
+	mes "硂硂硂硂..";
+	mes "程戮痷";
+	mes "睼.... 稱璶寥窥碞璶";
+	mes "摆...";
+	mes "稱睼寥窥..";
 	close;
 }
 
-lhz_in02,36,284,0	script	准它管理员#Cesuna	874,{
-	mes "[西施娜]";
-	mes "啊嗯.....";
-	mes "工作一堆但又懒得做...";
-	mes "哼哦...没有好玩的吗";
+lhz_in02,36,284,0	script	ウ恨瞶#Cesuna	874,{
+	mes "[﹁琁甊]";
+	mes "摆垛.....";
+	mes "帮胕眔暗...";
+	mes "瓳...⊿Τ盾";
 	next;
-	mes "[西施娜]";
-	mes "叫塞拉先生一起去玩吧?";
-	mes "哼嗯...";
+	mes "[﹁琁甊]";
+	mes "峨┰ネ癬?";
+	mes "垛...";
 	close;
 }
 
@@ -2909,15 +2909,15 @@ lhz_in02,19,274,2	script	Maintenance Guy#lhz	851,{
 }
 */
 
-lighthalzen,337,296,3	script	雷根贝勒 职员#li_2	868,{
+lighthalzen,337,296,3	script	筽ī扒 戮#li_2	868,{
 	if (hg_tre > 54) {
-		mes "[雷根贝勒 职员]";
-		mes "您好!";
-		mes "我们雷根贝勒, 对生活上比较困苦的人提供救援活动, 也就是说提供工作机会的, ";
+		mes "[筽ī扒 戮]";
+		mes "眤!";
+		mes "и筽ī扒, 癸ネゑ耕璚矗ㄑ毕穿笆, 碞琌弧矗ㄑ审穦, ";
 		next;
-		mes "[雷根贝勒 职员]";
-		mes "可以待在家里从事简单的手工艺品开始, 还有稍微有点知识的话也可以从事一些专业的工作!";
-		mes "也可以赚钱, 也可以感觉到工作上的收获!";
+		mes "[筽ī扒 戮]";
+		mes "產ń眖ㄆ虏虫も美珇秨﹍, 临Τ祔稬Τ翴醚杠眖ㄆㄇ盡穨!";
+		mes "寥窥, 稰谋Μ莉!";
 		emotion ET_BEST;
 		close;
 	}

@@ -1,149 +1,149 @@
 -	script	HOMUNCULUS_EVENT	-1,{
 end;
 OnPCHomLvUpEvent:
-	// OnPCHomLvUpEvent 是与玩家关联的(关联到生命体的主人)
-	// 当玩家的人工生命体升级之后，此事件会被触发
+	// OnPCHomLvUpEvent 琌蒓產闽羛(闽羛ネ㏑蔨)
+	// 讽產ネ㏑蔨どぇㄆン穦砆郉祇
 	// -------------------------------------------------------
 	
-	dispbottom "[事件演示] OnPCHomLvUpEvent | " + strcharinfo(0) + " 的人工生命体升级了！";
-	dispbottom "           - 生命体类型为: " + gethominfo(1) + " | 名字: " + gethominfo(2) + " | 等级: " + gethominfo(6) + " | 更多信息请用 gethominfo 指令获取";
+	dispbottom "[ㄆン簍ボ] OnPCHomLvUpEvent | " + strcharinfo(0) + " ネ㏑蔨ど";
+	dispbottom "           - ネ㏑蔨摸: " + gethominfo(1) + " | : " + gethominfo(2) + " | 单: " + gethominfo(6) + " | 獺叫ノ gethominfo 莉";
 end;
 OnPCHomCallEvent:
-	// OnPCHomCallEvent 是与玩家关联的(关联到生命体的主人)
-	// 当玩家召唤出人工生命体之后，此事件会被触发
+	// OnPCHomCallEvent 琌蒓產闽羛(闽羛ネ㏑蔨)
+	// 讽產酬ネ㏑蔨ぇㄆン穦砆郉祇
 	// -------------------------------------------------------
 	
-	dispbottom "[事件演示] OnPCHomCallEvent | " + strcharinfo(0) + " 召唤了人工生命体！";
-	dispbottom "           - 生命体类型为: " + gethominfo(1) + " | 名字: " + gethominfo(2) + " | 等级: " + gethominfo(6) + " | 更多信息请用 gethominfo 指令获取";
+	dispbottom "[ㄆン簍ボ] OnPCHomCallEvent | " + strcharinfo(0) + " 酬ネ㏑蔨";
+	dispbottom "           - ネ㏑蔨摸: " + gethominfo(1) + " | : " + gethominfo(2) + " | 单: " + gethominfo(6) + " | 獺叫ノ gethominfo 莉";
 end;
 OnPCHomRestEvent:
-	// OnPCHomRestEvent 是与玩家关联的(关联到生命体的主人)
-	// 当玩家将人工生命体安息之后，此事件会被触发
+	// OnPCHomRestEvent 琌蒓產闽羛(闽羛ネ㏑蔨)
+	// 讽產盢ネ㏑蔨ぇㄆン穦砆郉祇
 	// -------------------------------------------------------
 	
-	dispbottom "[事件演示] OnPCHomRestEvent | " + strcharinfo(0) + " 的人工生命体安息了！";
-	dispbottom "           - 生命体类型为: " + gethominfo(1) + " | 名字: " + gethominfo(2) + " | 等级: " + gethominfo(6) + " | 更多信息请用 gethominfo 指令获取";
+	dispbottom "[ㄆン簍ボ] OnPCHomRestEvent | " + strcharinfo(0) + " ネ㏑蔨";
+	dispbottom "           - ネ㏑蔨摸: " + gethominfo(1) + " | : " + gethominfo(2) + " | 单: " + gethominfo(6) + " | 獺叫ノ gethominfo 莉";
 end;
 OnPCHomDeadEvent:
-	// OnPCHomDeadEvent 是与玩家关联的(关联到生命体的主人)
-	// 当玩家的人工生命体死亡之后，此事件会被触发
+	// OnPCHomDeadEvent 琌蒓產闽羛(闽羛ネ㏑蔨)
+	// 讽產ネ㏑蔨ぇㄆン穦砆郉祇
 	// -------------------------------------------------------
 	
-	dispbottom "[事件演示] OnPCHomDeadEvent | " + strcharinfo(0) + " 的人工生命体死亡了！";
-	dispbottom "           - 生命体类型为: " + gethominfo(1) + " | 名字: " + gethominfo(2) + " | 等级: " + gethominfo(6) + " | 更多信息请用 gethominfo 指令获取";
+	dispbottom "[ㄆン簍ボ] OnPCHomDeadEvent | " + strcharinfo(0) + " ネ㏑蔨";
+	dispbottom "           - ネ㏑蔨摸: " + gethominfo(1) + " | : " + gethominfo(2) + " | 单: " + gethominfo(6) + " | 獺叫ノ gethominfo 莉";
 end;
 OnPCHomAliveEvent:
-	// OnPCHomAliveEvent 是与玩家关联的(关联到生命体的主人)
-	// 当玩家复活人工生命体之后，此事件会被触发
+	// OnPCHomAliveEvent 琌蒓產闽羛(闽羛ネ㏑蔨)
+	// 讽產蝋ネ㏑蔨ぇㄆン穦砆郉祇
 	// -------------------------------------------------------
 	
-	dispbottom "[事件演示] OnPCHomAliveEvent | " + strcharinfo(0) + " 的人工生命体复活了！";
-	dispbottom "           - 生命体类型为: " + gethominfo(1) + " | 名字: " + gethominfo(2) + " | 等级: " + gethominfo(6) + " | 更多信息请用 gethominfo 指令获取";
+	dispbottom "[ㄆン簍ボ] OnPCHomAliveEvent | " + strcharinfo(0) + " ネ㏑蔨蝋";
+	dispbottom "           - ネ㏑蔨摸: " + gethominfo(1) + " | : " + gethominfo(2) + " | 单: " + gethominfo(6) + " | 獺叫ノ gethominfo 莉";
 end;
 }
 
 -	script	EVENT_TEST_INIT	-1,{
 end;
 OnPCLoginEvent:
-	dispbottom "[事件演示] 已加载演示脚本，若想关闭演示脚本，请查看 npc/script_BetterRa.conf 配置文件";
+	dispbottom "[ㄆン簍ボ] 更簍ボ竲セ璝稱闽超簍ボ竲セ叫琩 npc/script_BetterRa.conf 皌竚ゅン";
 end;
 }
 
 -	script	EVENT_IDENTIFIED	-1,{
 end;
 OnPCIdentifyFilter:
-	// OnPCIdentifyFilter 是与玩家关联的
-	// 在鉴定列表中选中装备点确定按钮时触发, 此时系统的鉴定过程还未发生
+	// OnPCIdentifyFilter 琌蒓產闽羛
+	// 懦﹚い匡い杆称翴谔﹚秙郉祇, ╰参懦﹚筁祘临ゼ祇ネ
 	// 
-	// 参数说明
+	// 把计弧
 	// -------------------------------------------------------
-	// @identify_idx 为物品的背包序号
+	// @identify_idx 珇璉腹
 	// 
-	// 问: 什么是背包序号？
-	// 答: 玩家的背包最多可以携带100种物品, 每种物品在背包都有
-	//     一个内在的序号用来标记此物品的位置。
+	// 拜: ぐ琌璉腹
+	// 氮: 產璉程拟盿100销珇, –销珇璉常Τ
+	//     ず腹ノㄓ夹癘珇竚
 	//
-	// 注意: 这个序号每次玩家登录、或者是拾取、存仓后，都可能都
-	//       会变化。不推荐拿“背包序号”来作为识别物品的唯一序号。
+	// 猔種: 硂腹–Ω產祅魁┪琌珺常常
+	//       穦跑てぃ崩¨璉腹〃ㄓ醚珇斑腹
 	// -------------------------------------------------------
-	dispbottom "[事件演示] OnPCIdentifyFilter | " + strcharinfo(0) + " 准备鉴定背包序号为 " + @identify_idx + " 的物品";
-	dispbottom "           - 编号: " + getinventoryinfo(@identify_idx, 0) + " | 数量: " + getinventoryinfo(@identify_idx, 1) + " | 装备到哪个位置: " + getinventoryinfo(@identify_idx, 2) + " | 精炼值: " + getinventoryinfo(@identify_idx, 3) + " | 是否鉴定: " + getinventoryinfo(@identify_idx, 4);
-	dispbottom "           - 是否损坏: " + getinventoryinfo(@identify_idx, 5) + " | 卡片1: " + getinventoryinfo(@identify_idx, 6) + " | 卡片2: " + getinventoryinfo(@identify_idx, 7) + " | 卡片3: " + getinventoryinfo(@identify_idx, 8) + " | 卡片4: " + getinventoryinfo(@identify_idx, 9) + " | 租赁到期时间: " + getinventoryinfo(@identify_idx, 10);
+	dispbottom "[ㄆン簍ボ] OnPCIdentifyFilter | " + strcharinfo(0) + " 称懦﹚璉腹 " + @identify_idx + " 珇";
+	dispbottom "           - 絪腹: " + getinventoryinfo(@identify_idx, 0) + " | 计秖: " + getinventoryinfo(@identify_idx, 1) + " | 杆称竚: " + getinventoryinfo(@identify_idx, 2) + " | 弘芬: " + getinventoryinfo(@identify_idx, 3) + " | 琌懦﹚: " + getinventoryinfo(@identify_idx, 4);
+	dispbottom "           - 琌穕Д: " + getinventoryinfo(@identify_idx, 5) + " | 1: " + getinventoryinfo(@identify_idx, 6) + " | 2: " + getinventoryinfo(@identify_idx, 7) + " | 3: " + getinventoryinfo(@identify_idx, 8) + " | 4: " + getinventoryinfo(@identify_idx, 9) + " | 割戳丁: " + getinventoryinfo(@identify_idx, 10);
 	
-	processhalt;	// 中断系统的默认鉴定操作
+	processhalt;	// い耞╰参纐粄懦﹚巨
 	
 	.@itemid = getinventoryinfo(@identify_idx, 0);
 	.@amount = getinventoryinfo(@identify_idx, 1);
-	.@refine = rand(1,9);	// 被鉴定的装备精炼值随机+1到+9
+	.@refine = rand(1,9);	// 砆懦﹚杆称弘芬繦审+1+9
 	
 	delinventory @identify_idx,.@amount;
 	getitem2 .@itemid,.@amount,1,.@refine,0,0,0,0,0;
 end;
 OnPCIdentifyEvent:
-	// OnPCIdentifyEvent 是与玩家关联的
-	// 当玩家成功鉴定了一件装备时，此事件会被触发
+	// OnPCIdentifyEvent 琌蒓產闽羛
+	// 讽產Θ懦﹚ン杆称ㄆン穦砆郉祇
 	// 
-	// 参数说明
+	// 把计弧
 	// -------------------------------------------------------
-	// @identify_idx 为物品的背包序号
+	// @identify_idx 珇璉腹
 	// 
-	// 问: 什么是背包序号？
-	// 答: 玩家的背包最多可以携带100种物品, 每种物品在背包都有
-	//     一个内在的序号用来标记此物品的位置。
+	// 拜: ぐ琌璉腹
+	// 氮: 產璉程拟盿100销珇, –销珇璉常Τ
+	//     ず腹ノㄓ夹癘珇竚
 	//
-	// 注意: 这个序号每次玩家登录、或者是拾取、存仓后，都可能都
-	//       会变化。不推荐拿“背包序号”来作为识别物品的唯一序号。
+	// 猔種: 硂腹–Ω產祅魁┪琌珺常常
+	//       穦跑てぃ崩¨璉腹〃ㄓ醚珇斑腹
 	// -------------------------------------------------------
-	dispbottom "[事件演示] OnPCIdentifyEvent | " + strcharinfo(0) + " 已鉴定了背包序号为 " + @identify_idx + " 的物品";
-	dispbottom "           - 编号: " + getinventoryinfo(@identify_idx, 0) + " | 数量: " + getinventoryinfo(@identify_idx, 1) + " | 装备到哪个位置: " + getinventoryinfo(@identify_idx, 2) + " | 精炼值: " + getinventoryinfo(@identify_idx, 3) + " | 是否鉴定: " + getinventoryinfo(@identify_idx, 4);
-	dispbottom "           - 是否损坏: " + getinventoryinfo(@identify_idx, 5) + " | 卡片1: " + getinventoryinfo(@identify_idx, 6) + " | 卡片2: " + getinventoryinfo(@identify_idx, 7) + " | 卡片3: " + getinventoryinfo(@identify_idx, 8) + " | 卡片4: " + getinventoryinfo(@identify_idx, 9) + " | 租赁到期时间: " + getinventoryinfo(@identify_idx, 10);
+	dispbottom "[ㄆン簍ボ] OnPCIdentifyEvent | " + strcharinfo(0) + " 懦﹚璉腹 " + @identify_idx + " 珇";
+	dispbottom "           - 絪腹: " + getinventoryinfo(@identify_idx, 0) + " | 计秖: " + getinventoryinfo(@identify_idx, 1) + " | 杆称竚: " + getinventoryinfo(@identify_idx, 2) + " | 弘芬: " + getinventoryinfo(@identify_idx, 3) + " | 琌懦﹚: " + getinventoryinfo(@identify_idx, 4);
+	dispbottom "           - 琌穕Д: " + getinventoryinfo(@identify_idx, 5) + " | 1: " + getinventoryinfo(@identify_idx, 6) + " | 2: " + getinventoryinfo(@identify_idx, 7) + " | 3: " + getinventoryinfo(@identify_idx, 8) + " | 4: " + getinventoryinfo(@identify_idx, 9) + " | 割戳丁: " + getinventoryinfo(@identify_idx, 10);
 end;
 }
 
 -	script	RELOAD_WARNING	-1,{
 end;
 OnBfReloadScriptEvent:
-	// OnBfReloadScriptEvent 是与玩家关联的
-	// 刷新NPC之前若有100个玩家在线，那么该事件会以100个玩家的身份被触发100次
-	// 因此，下面的 announce 公告必须是只有玩家自己可见的 bc_self 类型
-	// 如果是 bc_all 类型的话，刷新时若有100个玩家在线，则每个玩家会看到100条全服公告
+	// OnBfReloadScriptEvent 琌蒓產闽羛
+	// 穝NPCぇ玡璝Τ100產絬ê赣ㄆン穦100產ō砆郉祇100Ω
+	//  announce そゲ斗琌Τ產ǎ bc_self 摸
+	// 狦琌 bc_all 摸杠穝璝Τ100產絬玥–產穦100兵狝そ
 	// -------------------------------------------------------
 	
-	announce "[全服公告] 正在刷新服务器，可能会卡住几秒钟，请别强制退出游戏！", bc_self|bc_yellow;
+	announce "[狝そ] タ穝狝叭竟穦牧叫眏癶村栏", bc_self|bc_yellow;
 end;
 OnAfReloadScriptEvent:
-	// OnAfReloadScriptEvent 是与玩家关联的
-	// 刷新NPC之后若有100个玩家在线，那么该事件会以100个玩家的身份被触发100次
-	// 因此，下面的 announce 公告必须是只有玩家自己可见的 bc_self 类型
-	// 如果是 bc_all 类型的话，刷新时若有100个玩家在线，则每个玩家会看到100条全服公告
+	// OnAfReloadScriptEvent 琌蒓產闽羛
+	// 穝NPCぇ璝Τ100產絬ê赣ㄆン穦100產ō砆郉祇100Ω
+	//  announce そゲ斗琌Τ產ǎ bc_self 摸
+	// 狦琌 bc_all 摸杠穝璝Τ100產絬玥–產穦100兵狝そ
 	// -------------------------------------------------------
 	
-	announce "[全服公告] 已经刷新完毕，感谢大家的配合！", bc_self|bc_yellow;
+	announce "[狝そ] 竒穝Ч拨稰谅產皌", bc_self|bc_yellow;
 end;
 }
 
 -	script	MOB_KILL_EVENT	-1,{
 end;
 OnPCKillMvpEvent:
-	// OnPCKillMvpEvent 是与玩家关联的(关联到给MVP带来最后一击的玩家)
-	// 死了一个MVP魔物的话，此事件只会被触发1次
+	// OnPCKillMvpEvent 琌蒓產闽羛(闽羛倒MVP盿ㄓ程阑產)
+	// MVP臸杠ㄆン穦砆郉祇1Ω
 	// 
-	// 参数说明
+	// 把计弧
 	// -------------------------------------------------------
-	// killerrid 	此参数已于 v1.4.5 版本被废弃
-	// killedrid 	为被杀死的MVP魔物的魔物编号(MobID)
-	// @mob_dead_x	魔物死亡时的X坐标
-	// @mob_dead_y	魔物死亡时的Y坐标
-	// @mob_lasthit_rid		给予MVP魔物最后一击的玩家RID(账号编号)
-	// @mob_lasthit_cid		给予MVP魔物最后一击的玩家角色编号
-	// @mob_mvp_rid			给予MVP魔物最大伤害的玩家RID(账号编号)
-	// @mob_mvp_cid			给予MVP魔物最大伤害的玩家角色编号
+	// killerrid 	把计 v1.4.5 セ砆紀斌
+	// killedrid 	砆炳MVP臸臸絪腹(MobID)
+	// @mob_dead_x	臸XГ夹
+	// @mob_dead_y	臸YГ夹
+	// @mob_lasthit_rid		倒ぉMVP臸程阑產RID(姐腹絪腹)
+	// @mob_lasthit_cid		倒ぉMVP臸程阑產à︹絪腹
+	// @mob_mvp_rid			倒ぉMVP臸程端甡產RID(姐腹絪腹)
+	// @mob_mvp_cid			倒ぉMVP臸程端甡產à︹絪腹
 	// -------------------------------------------------------
 	
-	announce "[全服公告] 玩家 “" + strcharinfo(0, @mob_lasthit_cid) + "” 给予了位于 " + strcharinfo(3)+","+@mob_dead_x+","+@mob_dead_y + " 的MVP魔物 “" + strmobinfo(2, killedrid) + "” 最后一击, 对魔物造成最多伤害的MVP玩家为 “" + strcharinfo(0, @mob_mvp_cid) + "”", bc_all|bc_yellow;
+	announce "[狝そ] 產 ¨" + strcharinfo(0, @mob_lasthit_cid) + "〃 倒ぉ " + strcharinfo(3)+","+@mob_dead_x+","+@mob_dead_y + " MVP臸 ¨" + strmobinfo(2, killedrid) + "〃 程阑, 癸臸硑Θ程端甡MVP產 ¨" + strcharinfo(0, @mob_mvp_cid) + "〃", bc_all|bc_yellow;
 end;
 OnNPCKillEvent: 
-	//dispbottom "[事件演示] OnNPCKillEvent | 杀死了位于 " + strcharinfo(3)+","+@mob_dead_x+","+@mob_dead_y + " 的普通魔物，魔物编号为 " + killedrid + " ！";
+	//dispbottom "[ㄆン簍ボ] OnNPCKillEvent | 炳 " + strcharinfo(3)+","+@mob_dead_x+","+@mob_dead_y + " 炊硄臸臸絪腹 " + killedrid + " ";
 end;
 }
 
@@ -151,211 +151,211 @@ end;
 -	script	PC_EQUIP_EVENT	-1,{
 end;
 OnPCEquipFilter:
-	// OnPCEquipFilter 是与玩家关联的
-	// 当玩家准备穿戴上一件物品的时候，此事件会被触发
+	// OnPCEquipFilter 琌蒓產闽羛
+	// 讽產称拦ン珇ㄆン穦砆郉祇
 	//
-	// 时机注意事项
+	// 审猔種ㄆ兜
 	// -------------------------------------------------------
-	// “准备穿戴”说明还没完成穿戴, 所以此时使用 
-	// getinventoryinfo(@equip_idx, 2) 去获取该装备的穿戴位置时,
-	// 返回的内容只会是 0
+	// ¨称拦〃弧临⊿ЧΘ拦, ┮ㄏノ 
+	// getinventoryinfo(@equip_idx, 2) 莉赣杆称拦竚,
+	// ず甧穦琌 0
 	//
-	// 参数说明
+	// 把计弧
 	// -------------------------------------------------------
-	// @equip_idx 为物品的背包序号
+	// @equip_idx 珇璉腹
 	// 
-	// 问: 什么是背包序号？
-	// 答: 玩家的背包最多可以携带100种物品, 每种物品在背包都有
-	//     一个内在的序号用来标记此物品的位置。
+	// 拜: ぐ琌璉腹
+	// 氮: 產璉程拟盿100销珇, –销珇璉常Τ
+	//     ず腹ノㄓ夹癘珇竚
 	//
-	// 注意: 这个序号每次玩家登录、或者是拾取、存仓后，都可能都
-	//       会变化。不推荐拿“背包序号”来作为识别物品的唯一序号。
+	// 猔種: 硂腹–Ω產祅魁┪琌珺常常
+	//       穦跑てぃ崩¨璉腹〃ㄓ醚珇斑腹
 	// 
-	// 为了兼容SEA和CSEA服务端
-	// @equip_pos 也被赋予了和 @equip_idx 一样的值
+	// 甧SEA㎝CSEA狝叭狠
+	// @equip_pos 砆结ぉ㎝ @equip_idx 妓
 	// -------------------------------------------------------
 	
-	dispbottom "[事件演示] OnPCEquipFilter | " + strcharinfo(0) + " 即将穿戴一件装备，它的背包序号为: " + @equip_idx;
+	dispbottom "[ㄆン簍ボ] OnPCEquipFilter | " + strcharinfo(0) + " 盢拦ン杆称ウ璉腹: " + @equip_idx;
 end;
 OnPCEquipEvent:
-	// OnPCEquipEvent 是与玩家关联的
-	// 当玩家成功穿戴上一件物品的时候，此事件会被触发
+	// OnPCEquipEvent 琌蒓產闽羛
+	// 讽產Θ拦ン珇ㄆン穦砆郉祇
 	// 
-	// 参数说明
+	// 把计弧
 	// -------------------------------------------------------
-	// @equip_idx 为物品的背包序号
+	// @equip_idx 珇璉腹
 	// 
-	// 问: 什么是背包序号？
-	// 答: 玩家的背包最多可以携带100种物品, 每种物品在背包都有
-	//     一个内在的序号用来标记此物品的位置。
+	// 拜: ぐ琌璉腹
+	// 氮: 產璉程拟盿100销珇, –销珇璉常Τ
+	//     ず腹ノㄓ夹癘珇竚
 	//
-	// 注意: 这个序号每次玩家登录、或者是拾取、存仓后，都可能都
-	//       会变化。不推荐拿“背包序号”来作为识别物品的唯一序号。
+	// 猔種: 硂腹–Ω產祅魁┪琌珺常常
+	//       穦跑てぃ崩¨璉腹〃ㄓ醚珇斑腹
 	// 
-	// 为了兼容SEA和CSEA服务端
-	// @equip_pos 也被赋予了和 @equip_idx 一样的值
+	// 甧SEA㎝CSEA狝叭狠
+	// @equip_pos 砆结ぉ㎝ @equip_idx 妓
 	// -------------------------------------------------------
 	
-	dispbottom "[事件演示] OnPCEquipEvent | " + strcharinfo(0) + " 已经穿戴了一件装备，它的背包序号为: " + @equip_idx;
-	dispbottom "           - 编号: " + getinventoryinfo(@equip_idx, 0) + " | 数量: " + getinventoryinfo(@equip_idx, 1) + " | 装备到哪个位置: " + getinventoryinfo(@equip_idx, 2) + " | 精炼值: " + getinventoryinfo(@equip_idx, 3) + " | 是否鉴定: " + getinventoryinfo(@equip_idx, 4);
-	dispbottom "           - 是否损坏: " + getinventoryinfo(@equip_idx, 5) + " | 卡片1: " + getinventoryinfo(@equip_idx, 6) + " | 卡片2: " + getinventoryinfo(@equip_idx, 7) + " | 卡片3: " + getinventoryinfo(@equip_idx, 8) + " | 卡片4: " + getinventoryinfo(@equip_idx, 9) + " | 租赁到期时间: " + getinventoryinfo(@equip_idx, 10);
+	dispbottom "[ㄆン簍ボ] OnPCEquipEvent | " + strcharinfo(0) + " 竒拦ン杆称ウ璉腹: " + @equip_idx;
+	dispbottom "           - 絪腹: " + getinventoryinfo(@equip_idx, 0) + " | 计秖: " + getinventoryinfo(@equip_idx, 1) + " | 杆称竚: " + getinventoryinfo(@equip_idx, 2) + " | 弘芬: " + getinventoryinfo(@equip_idx, 3) + " | 琌懦﹚: " + getinventoryinfo(@equip_idx, 4);
+	dispbottom "           - 琌穕Д: " + getinventoryinfo(@equip_idx, 5) + " | 1: " + getinventoryinfo(@equip_idx, 6) + " | 2: " + getinventoryinfo(@equip_idx, 7) + " | 3: " + getinventoryinfo(@equip_idx, 8) + " | 4: " + getinventoryinfo(@equip_idx, 9) + " | 割戳丁: " + getinventoryinfo(@equip_idx, 10);
 end;
 OnPCUnequipFilter:
-	// OnPCUnequipFilter 是与玩家关联的
-	// 当玩家准备脱掉一件物品的时候，此事件会被触发
+	// OnPCUnequipFilter 琌蒓產闽羛
+	// 讽產称叉奔ン珇ㄆン穦砆郉祇
 	// 
-	// 时机注意事项
+	// 审猔種ㄆ兜
 	// -------------------------------------------------------
-	// “准备脱掉”说明还没完全脱掉, 所以此时使用 
-	// getinventoryinfo(@equip_idx, 2) 去获取该装备的穿戴位置时,
-	// 返回的内容绝对不会是 0
+	// ¨称叉奔〃弧临⊿Ч叉奔, ┮ㄏノ 
+	// getinventoryinfo(@equip_idx, 2) 莉赣杆称拦竚,
+	// ず甧荡癸ぃ穦琌 0
 	//
-	// 中断注意事项
+	// い耞猔種ㄆ兜
 	// -------------------------------------------------------
-	// 当你使用 processhalt 脚本指令中断本事件的后续动作时,
-	// 可能会导致切换装备失败. 因为切换装备实际上是由两个动作组成的,
-	// 分别是 “先脱下旧的, 再穿上新的”. 若脱下旧的装备操作被中断,
-	// 那么新的装备也会穿不上.
+	// 讽ㄏノ processhalt 竲セい耞セㄆン尿笆,
+	// 穦旧璓ち传杆称ア毖. ち传杆称龟悔琌パㄢ笆舱Θ,
+	// だ琌 ¨叉侣, 穝〃. 璝叉侣杆称巨砆い耞,
+	// ê穝杆称穦ぃ.
 	// 
-	// 参数说明
+	// 把计弧
 	// -------------------------------------------------------
-	// @unequip_idx 为物品的背包序号
+	// @unequip_idx 珇璉腹
 	// 
-	// 问: 什么是背包序号？
-	// 答: 玩家的背包最多可以携带100种物品, 每种物品在背包都有
-	//     一个内在的序号用来标记此物品的位置。
+	// 拜: ぐ琌璉腹
+	// 氮: 產璉程拟盿100销珇, –销珇璉常Τ
+	//     ず腹ノㄓ夹癘珇竚
 	//
-	// 注意: 这个序号每次玩家登录、或者是拾取、存仓后，都可能都
-	//       会变化。不推荐拿“背包序号”来作为识别物品的唯一序号。
+	// 猔種: 硂腹–Ω產祅魁┪琌珺常常
+	//       穦跑てぃ崩¨璉腹〃ㄓ醚珇斑腹
 	// 
-	// 为了兼容SEA和CSEA服务端
-	// @unequip_pos 也被赋予了和 @unequip_idx 一样的值
+	// 甧SEA㎝CSEA狝叭狠
+	// @unequip_pos 砆结ぉ㎝ @unequip_idx 妓
 	// -------------------------------------------------------
 	
-	dispbottom "[事件演示] OnPCUnequipFilter | " + strcharinfo(0) + " 准备脱下一件装备，它的背包序号为: " + @unequip_idx;
+	dispbottom "[ㄆン簍ボ] OnPCUnequipFilter | " + strcharinfo(0) + " 称叉ン杆称ウ璉腹: " + @unequip_idx;
 end;
 OnPCUnequipEvent:
-	// OnPCUnequipEvent 是与玩家关联的
-	// 当玩家成功脱掉一件物品的时候，此事件会被触发
+	// OnPCUnequipEvent 琌蒓產闽羛
+	// 讽產Θ叉奔ン珇ㄆン穦砆郉祇
 	// 
-	// 参数说明
+	// 把计弧
 	// -------------------------------------------------------
-	// @unequip_idx 为物品的背包序号
+	// @unequip_idx 珇璉腹
 	// 
-	// 问: 什么是背包序号？
-	// 答: 玩家的背包最多可以携带100种物品, 每种物品在背包都有
-	//     一个内在的序号用来标记此物品的位置。
+	// 拜: ぐ琌璉腹
+	// 氮: 產璉程拟盿100销珇, –销珇璉常Τ
+	//     ず腹ノㄓ夹癘珇竚
 	//
-	// 注意: 这个序号每次玩家登录、或者是拾取、存仓后，都可能都
-	//       会变化。不推荐拿“背包序号”来作为识别物品的唯一序号。
+	// 猔種: 硂腹–Ω產祅魁┪琌珺常常
+	//       穦跑てぃ崩¨璉腹〃ㄓ醚珇斑腹
 	// 
-	// 为了兼容SEA和CSEA服务端
-	// @unequip_pos 也被赋予了和 @unequip_idx 一样的值
+	// 甧SEA㎝CSEA狝叭狠
+	// @unequip_pos 砆结ぉ㎝ @unequip_idx 妓
 	// -------------------------------------------------------
 	
-	dispbottom "[事件演示] OnPCUnequipEvent | " + strcharinfo(0) + " 已经脱下了一件装备，它的背包序号为: " + @unequip_idx;
-	dispbottom "           - 编号: " + getinventoryinfo(@unequip_idx, 0) + " | 数量: " + getinventoryinfo(@unequip_idx, 1) + " | 精炼值: " + getinventoryinfo(@unequip_idx, 3) + " | 是否鉴定: " + getinventoryinfo(@unequip_idx, 4);
-	dispbottom "           - 是否损坏: " + getinventoryinfo(@unequip_idx, 5) + " | 卡片1: " + getinventoryinfo(@unequip_idx, 6) + " | 卡片2: " + getinventoryinfo(@unequip_idx, 7) + " | 卡片3: " + getinventoryinfo(@unequip_idx, 8) + " | 卡片4: " + getinventoryinfo(@unequip_idx, 9) + " | 租赁到期时间: " + getinventoryinfo(@unequip_idx, 10);
+	dispbottom "[ㄆン簍ボ] OnPCUnequipEvent | " + strcharinfo(0) + " 竒叉ン杆称ウ璉腹: " + @unequip_idx;
+	dispbottom "           - 絪腹: " + getinventoryinfo(@unequip_idx, 0) + " | 计秖: " + getinventoryinfo(@unequip_idx, 1) + " | 弘芬: " + getinventoryinfo(@unequip_idx, 3) + " | 琌懦﹚: " + getinventoryinfo(@unequip_idx, 4);
+	dispbottom "           - 琌穕Д: " + getinventoryinfo(@unequip_idx, 5) + " | 1: " + getinventoryinfo(@unequip_idx, 6) + " | 2: " + getinventoryinfo(@unequip_idx, 7) + " | 3: " + getinventoryinfo(@unequip_idx, 8) + " | 4: " + getinventoryinfo(@unequip_idx, 9) + " | 割戳丁: " + getinventoryinfo(@unequip_idx, 10);
 end;
 }
 
 -	script	PC_STATUS_CHANGE_EVENT	-1,{
 end;
 OnPCBuffStartEvent:
-	// OnPCBuffStartEvent 是与玩家关联的
-	// 当玩家获得了一个状态(俗称Buff)后，此事件会被触发
+	// OnPCBuffStartEvent 琌蒓產闽羛
+	// 讽產莉眔篈(玌嘿Buff)ㄆン穦砆郉祇
 	// 
-	// 参数说明
+	// 把计弧
 	// -------------------------------------------------------
-	// @started_sc_id		为这个新增状态的编号
-	// @started_sc_rate		为这个新增状态的触发概率(10000 = 100%)
-	// @started_sc_tick		为这个新增状态的持续时长(单位为毫秒)
-	// 						时长根据内部实现方式的不同，有可能是指多长时间后剩余秒数减一
-	// @started_sc_val1		为这个新增状态的第1个参数的值
-	// @started_sc_val2		为这个新增状态的第2个参数的值
-	// @started_sc_val3		为这个新增状态的第3个参数的值
-	// @started_sc_val4		为这个新增状态的第4个参数的值
+	// @started_sc_id		硂穝糤篈絪腹
+	// @started_sc_rate		硂穝糤篈郉祇阀瞯(10000 = 100%)
+	// @started_sc_tick		硂穝糤篈尿(虫睝)
+	// 						誹ず场龟瞷よΑぃΤ琌丁逞计搭
+	// @started_sc_val1		硂穝糤篈材1把计
+	// @started_sc_val2		硂穝糤篈材2把计
+	// @started_sc_val3		硂穝糤篈材3把计
+	// @started_sc_val4		硂穝糤篈材4把计
 	// 
-	// 为了兼容SEA和CSEA服务端
-	// @startedsc 也被赋予了和 @started_sc_id 一样的值
+	// 甧SEA㎝CSEA狝叭狠
+	// @startedsc 砆结ぉ㎝ @started_sc_id 妓
 	// -------------------------------------------------------
 	
-	dispbottom "[事件演示] OnPCBuffStartEvent | " + strcharinfo(0) + " 获得了编号为 " + @started_sc_id + " 的状态！";
-	dispbottom "           - 概率: " + @started_sc_rate + " | 时长: " + @started_sc_tick + " | 参数1: " + @started_sc_val1 + " | 参数2: " + @started_sc_val2 + " | 参数3: " + @started_sc_val3 + " | 参数4: " + @started_sc_val4;
+	dispbottom "[ㄆン簍ボ] OnPCBuffStartEvent | " + strcharinfo(0) + " 莉眔絪腹 " + @started_sc_id + " 篈";
+	dispbottom "           - 阀瞯: " + @started_sc_rate + " | : " + @started_sc_tick + " | 把计1: " + @started_sc_val1 + " | 把计2: " + @started_sc_val2 + " | 把计3: " + @started_sc_val3 + " | 把计4: " + @started_sc_val4;
 end;
 OnPCBuffEndEvent:
-	// OnPCBuffEndEvent 是与玩家关联的
-	// 当玩家解除了一个状态(俗称Buff)后，此事件会被触发
+	// OnPCBuffEndEvent 琌蒓產闽羛
+	// 讽產秆埃篈(玌嘿Buff)ㄆン穦砆郉祇
 	// 
-	// 参数说明
+	// 把计弧
 	// -------------------------------------------------------
-	// @ended_sc_id			为这个被解除状态的编号
+	// @ended_sc_id			硂砆秆埃篈絪腹
 	// 
-	// 为了兼容SEA和CSEA服务端
-	// @endedsc 也被赋予了和 @ended_sc_id 一样的值
+	// 甧SEA㎝CSEA狝叭狠
+	// @endedsc 砆结ぉ㎝ @ended_sc_id 妓
 	// -------------------------------------------------------
 	
-	dispbottom "[事件演示] OnPCBuffEndEvent | " + strcharinfo(0) + " 解除了编号为 " + @ended_sc_id + " 的状态！";
+	dispbottom "[ㄆン簍ボ] OnPCBuffEndEvent | " + strcharinfo(0) + " 秆埃絪腹 " + @ended_sc_id + " 篈";
 end;
 }
 
 -	script	PARTY_EVENT	-1,{
 end;
 OnPCPartyCreateFilter:
-	// OnPCPartyCreateFilter 是与玩家关联的(关联到队长)
-	// 当玩家创建了一个队伍后，此事件会被触发
+	// OnPCPartyCreateFilter 琌蒓產闽羛(闽羛钉)
+	// 讽產承钉ヮㄆン穦砆郉祇
 	// -------------------------------------------------------
 	
-	dispbottom "[事件演示] OnPCPartyCreateFilter | 您正在创建队伍！队伍名: "+ @create_party_name$ +". 可以在脚本中使用 'processhalt' 阻止创建";
+	dispbottom "[ㄆン簍ボ] OnPCPartyCreateFilter | 眤タ承钉ヮ钉ヮ: "+ @create_party_name$ +". 竲セいㄏノ 'processhalt' ゎ承";
 end;
 OnPCPartyJoinFilter:
-	// OnPCPartyJoinFilter 是与玩家关联的(关联到加入队伍的玩家)
-	// 当玩家加入了一个队伍后，此事件会被触发
+	// OnPCPartyJoinFilter 琌蒓產闽羛(闽羛钉ヮ產)
+	// 讽產钉ヮㄆン穦砆郉祇
 	// -------------------------------------------------------
 	
-	dispbottom "[事件演示] OnPCPartyCreateFilter | 您正在加入队伍！队伍ID: "+ @join_party_id +". 可以在脚本中使用 'processhalt' 阻止加入";
+	dispbottom "[ㄆン簍ボ] OnPCPartyCreateFilter | 眤タ钉ヮ钉ヮID: "+ @join_party_id +". 竲セいㄏノ 'processhalt' ゎ";
 end;//pc_setregstr
 OnPCPartyLeaveFilter:
-	// OnPCPartyLeaveFilter 是与玩家关联的(关联到离开队伍的玩家)
-	// 当玩家离开了一个队伍后(无论是自愿还是被踢)，此事件会被触发
+	// OnPCPartyLeaveFilter 琌蒓產闽羛(闽羛置秨钉ヮ產)
+	// 讽產置秨钉ヮ(礚阶琌篅临琌砆金)ㄆン穦砆郉祇
 	//
-	// 参数说明
+	// 把计弧
 	// -------------------------------------------------------
-	// @left_party_id		为已经离开的队伍编号
-	// @left_party_name$	为已经离开的队伍名称
+	// @left_party_id		竒置秨钉ヮ絪腹
+	// @left_party_name$	竒置秨钉ヮ嘿
 	// -------------------------------------------------------
 	
-	dispbottom "[事件演示] OnPCPartyCreateFilter | 您正在离开队伍！队伍ID:" + @left_party_id + "，队名为: " + @left_party_name$+". 可以在脚本中使用 'processhalt' 阻止离开";
+	dispbottom "[ㄆン簍ボ] OnPCPartyCreateFilter | 眤タ置秨钉ヮ钉ヮID:" + @left_party_id + "钉: " + @left_party_name$+". 竲セいㄏノ 'processhalt' ゎ置秨";
 end;
 }
 
 -	script	GUILD_EVENT	-1,{
 end;
 OnPCGuildCreateFilter:
-	// OnPCGuildCreateFilter 是与玩家关联的(关联到会长)
-	// 当玩家创建了一个公会后，此事件会被触发
+	// OnPCGuildCreateFilter 琌蒓產闽羛(闽羛穦)
+	// 讽產承そ穦ㄆン穦砆郉祇
 	// -------------------------------------------------------
 	
-	dispbottom "[事件演示] OnPCGuildCreateFilter | 您正在创建公会！公会名: "+ @create_guild_name$ +". 可以在脚本中使用 'processhalt' 阻止创建";
+	dispbottom "[ㄆン簍ボ] OnPCGuildCreateFilter | 眤タ承そ穦そ穦: "+ @create_guild_name$ +". 竲セいㄏノ 'processhalt' ゎ承";
 end;
 OnPCGuildJoinFilter:
-	// OnPCGuildJoinFilter 是与玩家关联的(关联到加入公会的玩家)
-	// 当玩家加入了一个公会后，此事件会被触发
+	// OnPCGuildJoinFilter 琌蒓產闽羛(闽羛そ穦產)
+	// 讽產そ穦ㄆン穦砆郉祇
 	// -------------------------------------------------------
 	
-	dispbottom "[事件演示] OnPCGuildJoinFilter | 您正在加入公会！公会ID: "+ @join_guild_id +". 可以在脚本中使用 'processhalt' 阻止加入";
+	dispbottom "[ㄆン簍ボ] OnPCGuildJoinFilter | 眤タそ穦そ穦ID: "+ @join_guild_id +". 竲セいㄏノ 'processhalt' ゎ";
 end;
 OnPCGuildLeaveFilter:
-	// OnPCGuildLeaveFilter 是与玩家关联的(关联到离开公会的玩家)
-	// 当玩家离开了一个公会后，此事件会被触发
+	// OnPCGuildLeaveFilter 琌蒓產闽羛(闽羛置秨そ穦產)
+	// 讽產置秨そ穦ㄆン穦砆郉祇
 	//
-	// 参数说明
+	// 把计弧
 	// -------------------------------------------------------
-	// @left_guild_id		为已经离开的公会编号
-	// @left_guild_name$	为已经离开的公会名称
+	// @left_guild_id		竒置秨そ穦絪腹
+	// @left_guild_name$	竒置秨そ穦嘿
 	// -------------------------------------------------------
 	
-	dispbottom "[事件演示] OnPCGuildLeaveFilter | 您正在离开公会！公会ID:" + @left_guild_id + "，队名为: " + @left_guild_name$+". 可以在脚本中使用 'processhalt' 阻止离开";
+	dispbottom "[ㄆン簍ボ] OnPCGuildLeaveFilter | 眤タ置秨そ穦そ穦ID:" + @left_guild_id + "钉: " + @left_guild_name$+". 竲セいㄏノ 'processhalt' ゎ置秨";
 end;
 }
 
@@ -363,254 +363,254 @@ end;
 -	script	PET_EVENT	-1,{
 end;
 OnPCPetLootEvent:
-	// OnPCPetLootEvent 是与玩家关联的(关联到宠物的主人)
-	// 当玩家的宠物拾取到物品之后，此事件会被触发
+	// OnPCPetLootEvent 琌蒓產闽羛(闽羛胐)
+	// 讽產胐珺珇ぇㄆン穦砆郉祇
 	//
-	// 参数说明
+	// 把计弧
 	// -------------------------------------------------------
-	// @petloot_item_id			为拾取到的物品编号
-	// @petloot_item_amount		为拾取到的物品数量
-	// @petloot_game_id			为此物品的游戏单位编号
+	// @petloot_item_id			珺珇絪腹
+	// @petloot_item_amount		珺珇计秖
+	// @petloot_game_id			珇村栏虫絪腹
 	//
-	// 为了兼容SEA和CSEA服务端
-	// @petloot_id 也被赋予了和 @petloot_item_id 一样的值
-	// @petloot_gid 也被赋予了和 @petloot_game_id 一样的值
-	// @petloot_amount 也被赋予了和 @petloot_item_amount 一样的值
+	// 甧SEA㎝CSEA狝叭狠
+	// @petloot_id 砆结ぉ㎝ @petloot_item_id 妓
+	// @petloot_gid 砆结ぉ㎝ @petloot_game_id 妓
+	// @petloot_amount 砆结ぉ㎝ @petloot_item_amount 妓
 	// -------------------------------------------------------
 	
-	dispbottom "[事件演示] OnPCPetLootEvent | 您的宠物捡取了 " + @petloot_item_amount + " 个 " + getitemname(@petloot_item_id) + " ！";
+	dispbottom "[ㄆン簍ボ] OnPCPetLootEvent | 眤胐具 " + @petloot_item_amount + "  " + getitemname(@petloot_item_id) + " ";
 end;
 OnPCPetFeedEvent:
-	// OnPCPetFeedEvent 是与玩家关联的(关联到宠物的主人)
-	// 当玩家给自己的宠物喂食后，此事件会被触发
+	// OnPCPetFeedEvent 琌蒓產闽羛(闽羛胐)
+	// 讽產倒胐侈ㄆン穦砆郉祇
 	//
-	// 为了兼容SEA和CSEA服务端
-	// OnPCFoodPet 事件也会被同时执行，等效于 OnPCPetFeedEvent 事件
+	// 甧SEA㎝CSEA狝叭狠
+	// OnPCFoodPet ㄆン穦砆磅︽单 OnPCPetFeedEvent ㄆン
 	// -------------------------------------------------------
 	
-	dispbottom "[事件演示] OnPCPetFeedEvent | 您喂养了宠物！";
+	dispbottom "[ㄆン簍ボ] OnPCPetFeedEvent | 眤侈緄胐";
 end;
 }
 
 -	script	VIEW_EQUIP_EVENT	-1,{
 end;
 OnPCViewEquipFilter:
-	// OnPCViewEquipFilter 是与玩家关联的(关联到主动发起查看请求的玩家)
-	// 当玩家点击查看某个玩家的装备之后，此事件会被触发
+	// OnPCViewEquipFilter 琌蒓產闽羛(闽羛笆祇癬琩叫―產)
+	// 讽產翴阑琩琘產杆称ぇㄆン穦砆郉祇
 	//
-	// 参数说明
+	// 把计弧
 	// -------------------------------------------------------
-	// @view_equip_target_name$	被查看者的角色名
-	// @view_equip_target_cid	被查看者的角色编号
-	// @view_equip_target_aid	被查看者的账号编号
+	// @view_equip_target_name$	砆琩à︹
+	// @view_equip_target_cid	砆琩à︹絪腹
+	// @view_equip_target_aid	砆琩姐腹絪腹
 	//
-	// 为了兼容CSEA服务端
-	// @vieweq_name$ 也被赋予了和 @view_equip_target_name$ 一样的值
-	// @vieweq_cid 也被赋予了和 @view_equip_target_cid 一样的值
-	// @vieweq_aid 也被赋予了和 @view_equip_target_aid 一样的值
+	// 甧CSEA狝叭狠
+	// @vieweq_name$ 砆结ぉ㎝ @view_equip_target_name$ 妓
+	// @vieweq_cid 砆结ぉ㎝ @view_equip_target_cid 妓
+	// @vieweq_aid 砆结ぉ㎝ @view_equip_target_aid 妓
 	// 
-	// 为了兼容SEA服务端
-	// @eqview_cid 也被赋予了和 @view_equip_target_cid 一样的值
+	// 甧SEA狝叭狠
+	// @eqview_cid 砆结ぉ㎝ @view_equip_target_cid 妓
 	// -------------------------------------------------------
 
-	dispbottom "[事件演示] OnPCViewEquipFilter | 您查看了“" + @view_equip_target_name$ + "”的装备，他的AID为 " + @view_equip_target_aid + " | CID为 " + @view_equip_target_cid + "！";
+	dispbottom "[ㄆン簍ボ] OnPCViewEquipFilter | 眤琩¨" + @view_equip_target_name$ + "〃杆称AID " + @view_equip_target_aid + " | CID " + @view_equip_target_cid + "";
 end;
 }
 
 -	script	USE_SKILL_EVENT	-1,{
 end;
 OnPCUseSkillFilter:
-	// OnPCUseSkillFilter 是与技能施放者关联的
-	// 当玩家施放技能时，咏唱之前此事件会被触发
-	// 无论技能的所需道具是否足够，最终技能会不会使用失败，只要玩家使用了技能，就必定触发此事件
+	// OnPCUseSkillFilter 琌蒓м琁闽羛
+	// 讽產琁м碟佰ぇ玡ㄆン穦砆郉祇
+	// 礚阶м┮惠笵ㄣ琌ì镑程沧м穦ぃ穦ㄏノア毖璶產ㄏノм碞ゲ﹚郉祇ㄆン
 	//
-	// 参数说明
+	// 把计弧
 	// -------------------------------------------------------
-	// useskill_id		施放的技能ID
-	// useskill_lv		被施放的技能等级
-	// useskill_target	被施法目标的GameID或者AccountID，若为 0 则表示这是个对地面施放的技能
-	// useskill_x		被施法的地面X坐标
-	// useskill_y		被施法的地面Y坐标
+	// useskill_id		琁мID
+	// useskill_lv		砆琁м单
+	// useskill_target	砆琁猭ヘ夹GameID┪AccountID璝 0 玥ボ硂琌癸琁м
+	// useskill_x		砆琁猭XГ夹
+	// useskill_y		砆琁猭YГ夹
 	// -------------------------------------------------------
 	
-	dispbottom "[事件演示] OnPCUseSkillFilter | 开始使用技能";
-	dispbottom "           - 技能编号: " + useskill_id + " | 技能等级: " + useskill_lv + " | 目标GID/AID: " + useskill_target + " | 地面坐标: " + useskill_x + "," + useskill_y;
+	dispbottom "[ㄆン簍ボ] OnPCUseSkillFilter | 秨﹍ㄏノм";
+	dispbottom "           - м絪腹: " + useskill_id + " | м单: " + useskill_lv + " | ヘ夹GID/AID: " + useskill_target + " | Г夹: " + useskill_x + "," + useskill_y;
 end;
 OnPCUseSkillEvent:
-	// OnPCUseSkillEvent 是与技能施放者关联的
-	// 当玩家技能成功施放完毕时，此事件会被触发
-	// 只有技能成功被施放出来了，才会触发此事件
+	// OnPCUseSkillEvent 琌蒓м琁闽羛
+	// 讽產мΘ琁Ч拨ㄆン穦砆郉祇
+	// ΤмΘ砆琁ㄓ穦郉祇ㄆン
 	//
-	// 参数说明
+	// 把计弧
 	// -------------------------------------------------------
-	// useskill_id		施放的技能ID
-	// useskill_lv		被施放的技能等级
-	// useskill_target	被施法目标的GameID或者AccountID，若为 0 则表示这是个对地面施放的技能
-	// useskill_x		被施法的地面X坐标
-	// useskill_y		被施法的地面Y坐标
+	// useskill_id		琁мID
+	// useskill_lv		砆琁м单
+	// useskill_target	砆琁猭ヘ夹GameID┪AccountID璝 0 玥ボ硂琌癸琁м
+	// useskill_x		砆琁猭XГ夹
+	// useskill_y		砆琁猭YГ夹
 	// -------------------------------------------------------
 	
-	dispbottom "[事件演示] OnPCUseSkillEvent | 技能使用完毕";
-	dispbottom "           - 技能编号: " + useskill_id + " | 技能等级: " + useskill_lv + " | 目标GID/AID: " + useskill_target + " | 地面坐标: " + useskill_x + "," + useskill_y;
+	dispbottom "[ㄆン簍ボ] OnPCUseSkillEvent | мㄏノЧ拨";
+	dispbottom "           - м絪腹: " + useskill_id + " | м单: " + useskill_lv + " | ヘ夹GID/AID: " + useskill_target + " | Г夹: " + useskill_x + "," + useskill_y;
 end;
 OnPCAutoSpellFilter:
-	// OnPCAutoSpellFilter 是与技能施放者关联的
-	// 当玩家自动念咒施时，此事件会被触发
-	// 只有技能成功被施放出来了，才会触发此事件
+	// OnPCAutoSpellFilter 琌蒓м琁闽羛
+	// 讽產笆├〨琁ㄆン穦砆郉祇
+	// ΤмΘ砆琁ㄓ穦郉祇ㄆン
 	//
-	// 参数说明
+	// 把计弧
 	// -------------------------------------------------------
-	// useskill_id		施放的技能ID
-	// useskill_lv		被施放的技能等级
-	// useskill_target	被施法目标的GameID或者AccountID，若为 0 则表示这是个对地面施放的技能
-	// useskill_x		被施法的地面X坐标
-	// useskill_y		被施法的地面Y坐标
+	// useskill_id		琁мID
+	// useskill_lv		砆琁м单
+	// useskill_target	砆琁猭ヘ夹GameID┪AccountID璝 0 玥ボ硂琌癸琁м
+	// useskill_x		砆琁猭XГ夹
+	// useskill_y		砆琁猭YГ夹
 	// -------------------------------------------------------
 	
-	dispbottom "[事件演示] OnPCAutoSpellFilter | 技能使用完毕";
-	dispbottom "           - 技能编号: " + useskill_id + " | 技能等级: " + useskill_lv + " | 目标GID/AID: " + useskill_target + " | 地面坐标: " + useskill_x + "," + useskill_y;
+	dispbottom "[ㄆン簍ボ] OnPCAutoSpellFilter | мㄏノЧ拨";
+	dispbottom "           - м絪腹: " + useskill_id + " | м单: " + useskill_lv + " | ヘ夹GID/AID: " + useskill_target + " | Г夹: " + useskill_x + "," + useskill_y;
 end;
 }
 
 -	script	USE_ITEM_EVENT	-1,{
 end;
 OnPCUseItemFilter:
-	// OnPCUseItemFilter 是与物品使用者关联的
-	// 当玩家双击使用“非装备”类型道具时，此事件会被触发
-	// 无论物品最终是否会使用失败，只要玩家双击了物品，就必定触发此事件
+	// OnPCUseItemFilter 琌蒓珇ㄏノ闽羛
+	// 讽產蛮阑ㄏノ¨獶杆称〃摸笵ㄣㄆン穦砆郉祇
+	// 礚阶珇程沧琌穦ㄏノア毖璶產蛮阑珇碞ゲ﹚郉祇ㄆン
 	//
-	// 参数说明
+	// 把计弧
 	// -------------------------------------------------------
-	// useitem_nameid	玩家所使用的物品编号
-	// useitem_idx		玩家所使用物品的背包序号
+	// useitem_nameid	產┮ㄏノ珇絪腹
+	// useitem_idx		產┮ㄏノ珇璉腹
 	//
-	// 问: 什么是背包序号？
-	// 答: 玩家的背包最多可以携带100种物品, 每种物品在背包都有
-	//     一个内在的序号用来标记此物品的位置。
+	// 拜: ぐ琌璉腹
+	// 氮: 產璉程拟盿100销珇, –销珇璉常Τ
+	//     ず腹ノㄓ夹癘珇竚
 	//
-	// 注意: 这个序号每次玩家登录、或者是拾取、存仓后，都可能都
-	//       会变化。不推荐拿“背包序号”来作为识别物品的唯一序号。
+	// 猔種: 硂腹–Ω產祅魁┪琌珺常常
+	//       穦跑てぃ崩¨璉腹〃ㄓ醚珇斑腹
 	//
 	// -------------------------------------------------------
 	
-	dispbottom "[事件演示] OnPCUseItemFilter | 开始使用物品";
-	dispbottom "           - 物品编号: " + useitem_nameid + " | 物品名称: " + getitemname(useitem_nameid) + " | 背包序号: " + useitem_idx;
-	dispbottom "           - 编号: " + getinventoryinfo(useitem_idx, 0) + " | 数量: " + getinventoryinfo(useitem_idx, 1) + " | 装备到哪个位置: " + getinventoryinfo(useitem_idx, 2) + " | 精炼值: " + getinventoryinfo(useitem_idx, 3) + " | 是否鉴定: " + getinventoryinfo(useitem_idx, 4);
-	dispbottom "           - 是否损坏: " + getinventoryinfo(useitem_idx, 5) + " | 卡片1: " + getinventoryinfo(useitem_idx, 6) + " | 卡片2: " + getinventoryinfo(useitem_idx, 7) + " | 卡片3: " + getinventoryinfo(useitem_idx, 8) + " | 卡片4: " + getinventoryinfo(useitem_idx, 9) + " | 租赁到期时间: " + getinventoryinfo(useitem_idx, 10);
+	dispbottom "[ㄆン簍ボ] OnPCUseItemFilter | 秨﹍ㄏノ珇";
+	dispbottom "           - 珇絪腹: " + useitem_nameid + " | 珇嘿: " + getitemname(useitem_nameid) + " | 璉腹: " + useitem_idx;
+	dispbottom "           - 絪腹: " + getinventoryinfo(useitem_idx, 0) + " | 计秖: " + getinventoryinfo(useitem_idx, 1) + " | 杆称竚: " + getinventoryinfo(useitem_idx, 2) + " | 弘芬: " + getinventoryinfo(useitem_idx, 3) + " | 琌懦﹚: " + getinventoryinfo(useitem_idx, 4);
+	dispbottom "           - 琌穕Д: " + getinventoryinfo(useitem_idx, 5) + " | 1: " + getinventoryinfo(useitem_idx, 6) + " | 2: " + getinventoryinfo(useitem_idx, 7) + " | 3: " + getinventoryinfo(useitem_idx, 8) + " | 4: " + getinventoryinfo(useitem_idx, 9) + " | 割戳丁: " + getinventoryinfo(useitem_idx, 10);
 end;
 OnPCUseItemEvent:
-	// OnPCUseItemEvent 是与物品使用者关联的
-	// 当玩家成功使用“非装备”类型道具时，此事件会被触发
-	// 只有当物品被成功使用时，才会触发此事件
+	// OnPCUseItemEvent 琌蒓珇ㄏノ闽羛
+	// 讽產Θㄏノ¨獶杆称〃摸笵ㄣㄆン穦砆郉祇
+	// Τ讽珇砆Θㄏノ穦郉祇ㄆン
 	//
-	// 参数说明
+	// 把计弧
 	// -------------------------------------------------------
-	// useitem_nameid	玩家所使用的物品编号
-	// useitem_idx		玩家所使用物品的背包序号
+	// useitem_nameid	產┮ㄏノ珇絪腹
+	// useitem_idx		產┮ㄏノ珇璉腹
 	//
-	// 问: 什么是背包序号？
-	// 答: 玩家的背包最多可以携带100种物品, 每种物品在背包都有
-	//     一个内在的序号用来标记此物品的位置。
+	// 拜: ぐ琌璉腹
+	// 氮: 產璉程拟盿100销珇, –销珇璉常Τ
+	//     ず腹ノㄓ夹癘珇竚
 	//
-	// 注意: 这个序号每次玩家登录、或者是拾取、存仓后，都可能都
-	//       会变化。不推荐拿“背包序号”来作为识别物品的唯一序号。
+	// 猔種: 硂腹–Ω產祅魁┪琌珺常常
+	//       穦跑てぃ崩¨璉腹〃ㄓ醚珇斑腹
 	// 
 	// -------------------------------------------------------
 	
-	dispbottom "[事件演示] OnPCUseItemEvent | 物品使用完毕";
-	dispbottom "           - 物品编号: " + useitem_nameid + " | 物品名称: " + getitemname(useitem_nameid) + " | 背包序号: " + useitem_idx;
-	dispbottom "           - 编号: " + getinventoryinfo(useitem_idx, 0) + " | 数量: " + getinventoryinfo(useitem_idx, 1) + " | 装备到哪个位置: " + getinventoryinfo(useitem_idx, 2) + " | 精炼值: " + getinventoryinfo(useitem_idx, 3) + " | 是否鉴定: " + getinventoryinfo(useitem_idx, 4);
-	dispbottom "           - 是否损坏: " + getinventoryinfo(useitem_idx, 5) + " | 卡片1: " + getinventoryinfo(useitem_idx, 6) + " | 卡片2: " + getinventoryinfo(useitem_idx, 7) + " | 卡片3: " + getinventoryinfo(useitem_idx, 8) + " | 卡片4: " + getinventoryinfo(useitem_idx, 9) + " | 租赁到期时间: " + getinventoryinfo(useitem_idx, 10);
-	dispbottom "           - 如果背包中没有相应物品, 所有数据将会返回-1";
+	dispbottom "[ㄆン簍ボ] OnPCUseItemEvent | 珇ㄏノЧ拨";
+	dispbottom "           - 珇絪腹: " + useitem_nameid + " | 珇嘿: " + getitemname(useitem_nameid) + " | 璉腹: " + useitem_idx;
+	dispbottom "           - 絪腹: " + getinventoryinfo(useitem_idx, 0) + " | 计秖: " + getinventoryinfo(useitem_idx, 1) + " | 杆称竚: " + getinventoryinfo(useitem_idx, 2) + " | 弘芬: " + getinventoryinfo(useitem_idx, 3) + " | 琌懦﹚: " + getinventoryinfo(useitem_idx, 4);
+	dispbottom "           - 琌穕Д: " + getinventoryinfo(useitem_idx, 5) + " | 1: " + getinventoryinfo(useitem_idx, 6) + " | 2: " + getinventoryinfo(useitem_idx, 7) + " | 3: " + getinventoryinfo(useitem_idx, 8) + " | 4: " + getinventoryinfo(useitem_idx, 9) + " | 割戳丁: " + getinventoryinfo(useitem_idx, 10);
+	dispbottom "           - 狦璉い⊿Τ莱珇, ┮Τ计誹盢穦-1";
 end;
 }
 
 -	script	BEFORE_LOADMAP	-1,{
 end;
 OnPCWillLoadMapEvent:
-	// OnPCWillLoadMapEvent 将关联到想要过图的玩家
-	// 当玩家准备进入地图、或者准备切换地图时，都会触发此事件
-	// 当玩家第一次登陆不触发此命令， 可以使用 processhalt 指令打断过图， 使玩家留在原地。
-	// 参数说明
+	// OnPCWillLoadMapEvent 盢闽羛稱璶筁瓜產
+	// 讽產称秈瓜┪称ち传瓜常穦郉祇ㄆン
+	// 讽產材Ω祅嘲ぃ郉祇㏑ ㄏノ processhalt ゴ耞筁瓜 ㄏ產痙
+	// 把计弧
 	// -------------------------------------------------------
-	// @loadmap_oldmap_id		玩家准备过图时，老地图的地图编号，若为0则表示玩家刚登录，没有老地图
-	// @loadmap_oldmap_name$	玩家准备过图时，老地图的地图名称
-	// @loadmap_oldmap_x		玩家准备过图时，在老地图中所处的x坐标
-	// @loadmap_oldmap_y		玩家准备过图时，在老地图中所处的y坐标
+	// @loadmap_oldmap_id		產称筁瓜ρ瓜瓜絪腹璝0玥ボ產祅魁⊿Τρ瓜
+	// @loadmap_oldmap_name$	產称筁瓜ρ瓜瓜嘿
+	// @loadmap_oldmap_x		產称筁瓜ρ瓜い┮矪xГ夹
+	// @loadmap_oldmap_y		產称筁瓜ρ瓜い┮矪yГ夹
 	// 
-	// @loadmap_newmap_id		玩家准备过图时，目的地地图的地图编号
-	// @loadmap_newmap_name$	玩家准备过图时，目的地地图的地图名称
-	// @loadmap_newmap_x		玩家准备过图时，会在目的地地图的哪个x坐标出现
-	// @loadmap_newmap_y		玩家准备过图时，会在目的地地图的哪个y坐标出现
+	// @loadmap_newmap_id		產称筁瓜ヘ瓜瓜絪腹
+	// @loadmap_newmap_name$	產称筁瓜ヘ瓜瓜嘿
+	// @loadmap_newmap_x		產称筁瓜穦ヘ瓜xГ夹瞷
+	// @loadmap_newmap_y		產称筁瓜穦ヘ瓜yГ夹瞷
 	// -------------------------------------------------------
 	if (@loadmap_oldmap_id == 0){
-		dispbottom "[事件演示] OnPCWillLoadMapEvent | 准备进入 " + @loadmap_newmap_name$ + "," + @loadmap_newmap_x + "," + @loadmap_newmap_y;
+		dispbottom "[ㄆン簍ボ] OnPCWillLoadMapEvent | 称秈 " + @loadmap_newmap_name$ + "," + @loadmap_newmap_x + "," + @loadmap_newmap_y;
 	}
 	else {
-		dispbottom "[事件演示] OnPCWillLoadMapEvent | 准备从 " + @loadmap_oldmap_name$ + "," + @loadmap_oldmap_x + "," + @loadmap_oldmap_y +" 进入 " + @loadmap_newmap_name$ + "," + @loadmap_newmap_x + "," + @loadmap_newmap_y;
+		dispbottom "[ㄆン簍ボ] OnPCWillLoadMapEvent | 称眖 " + @loadmap_oldmap_name$ + "," + @loadmap_oldmap_x + "," + @loadmap_oldmap_y +" 秈 " + @loadmap_newmap_name$ + "," + @loadmap_newmap_x + "," + @loadmap_newmap_y;
 	}
 end;
 }
 
-prontera,127,125,3	script	进入聊天室事件	123,{
-	mes "[BetterRa 演示]";
-	mes "事件名: ^ff0000OnPCInChatroomFilter^000000";
-	mes "直接点击我可以正常对话. ^0000ff[已关闭]双击进入打开仓库.^000000";
+prontera,127,125,3	script	秈册ぱㄆン	123,{
+	mes "[BetterRa 簍ボ]";
+	mes "ㄆン: ^ff0000OnPCInChatroomFilter^000000";
+	mes "钡翴阑иタ盽癸杠. ^0000ff[闽超]蛮阑秈ゴ秨畐.^000000";
 	next;
-	mes "[BetterRa 演示]";
-	mes "此演示NPC的脚本位于服务端的: ^ff0000npc\\BetterRa\\BetterRa_events_dome.txt^000000";
+	mes "[BetterRa 簍ボ]";
+	mes "簍ボNPC竲セ狝叭狠: ^ff0000npc\\BetterRa\\BetterRa_events_dome.txt^000000";
 	close;
 OnInit:
-	// 这里的人数限制必须大于等于 2
-	// 如果设置为 1 的话，那么NPC就已经把聊天室占满了
-	// 此时双击聊天室牌子的话，客户端会直接告诉玩家“聊天室已满员”
+	// 硂ń计ゲ斗单 2
+	// 狦砞竚 1 杠êNPC碞竒р册ぱ骸
+	// 蛮阑册ぱ礟杠め狠穦钡禗產¨册ぱ骸〃
 	//
-	// 所以，为了让下面的 OnPCInChatroomFilter 事件可以触发，
-	// 这里的人数限制必须大于或者等于 2 才可以哟
-	waitingroom "双击打开仓库",2;
+	// ┮琵 OnPCInChatroomFilter ㄆン郉祇
+	// 硂ń计ゲ斗┪单 2 抽
+	waitingroom "蛮阑ゴ秨畐",2;
 	end;
 OnPCInChatroomFilter:
-	// OnPCInChatroomFilter 将关联到进入本NPC聊天室的玩家
-	// 当玩家双击进入本NPC开启的聊天室时，将触发此事件
+	// OnPCInChatroomFilter 盢闽羛秈セNPC册ぱ產
+	// 讽產蛮阑秈セNPC秨币册ぱ盢郉祇ㄆン
 	//
-	// 中断说明
+	// い耞弧
 	// -------------------------------------------------------
-	// 您可以使用 processhalt 指令来中断后续动作
+	// 眤ㄏノ processhalt ㄓい耞尿笆
 	// 
-	// 若使用中断
-	// - 那么客户端将不会打开聊天室窗口
+	// 璝ㄏノい耞
+	// - êめ狠盢ぃ穦ゴ秨册ぱ怠
 	//
-	// 若不用中断
-	// - 那么客户端将成功打开聊天室窗口，玩家可以参与聊天
+	// 璝ぃノい耞
+	// - êめ狠盢Θゴ秨册ぱ怠產把蒓册ぱ
 	// -------------------------------------------------------
 	// 
-	// 事件顺序
+	// ㄆン抖
 	// -------------------------------------------------------
-	// 我们知道 waitingroom 本身自带一个事件，当聊天室中的成员
-	// 数量足够时，就会被触发。
+	// и笵 waitingroom セō盿ㄆン讽册ぱいΘ
+	// 计秖ì镑碞穦砆郉祇
 	// 
-	// 在这里你需要知道的是，若您使用 processhalt 中断了本事件，那么
-	// 这个 rAthena 自带的 waitingroom 事件将不会被触发。
+	// 硂ń惠璶笵琌璝眤ㄏノ processhalt い耞セㄆンê
+	// 硂 rAthena 盿 waitingroom ㄆン盢ぃ穦砆郉祇
 	// -------------------------------------------------------
-	if(strnpcinfo(0) != "进入聊天室事件")
+	if(strnpcinfo(0) != "秈册ぱㄆン")
 		end;
 	processhalt;
 	openstorage;
 	end;
 }
 
-prontera,122,125,4	script	根据玩家隐藏NPC	123,{
-	mes "[根据玩家隐藏NPC]";
-	mes "是否要针对某个玩家隐藏?";
-	mes "我可以使某个玩家看不到我";
-	mes "请输入玩家的玩家名";
+prontera,122,125,4	script	誹產留旅NPC	123,{
+	mes "[誹產留旅NPC]";
+	mes "琌璶皐癸琘產留旅?";
+	mes "иㄏ琘產ぃи";
+	mes "叫块產產";
 	next;
 	input .input$;
-	mes "[根据玩家隐藏NPC演示]";
-	mes "如果已经在视野范围内, 请离开后重新进入范围测试, BetterRa支持 unithide 针对该玩家临时隐藏NPC";
+	mes "[誹產留旅NPC簍ボ]";
+	mes "狦竒跌偿璖瞅ず, 叫置秨穝秈璖瞅代刚, BetterRaや unithide 皐癸赣產羬留旅NPC";
 	close;
 OnInit:
-	waitingroom "根据玩家隐藏NPC",1;
+	waitingroom "誹產留旅NPC",1;
 	end;
 	
 OnDisplay:
@@ -621,67 +621,67 @@ OnDisplay:
 -	script	PC_CHANGE_TITLE	-1,{
 end;
 OnPCChangeTitleFilter:
-	// OnPCChangeTitleFilter 是与触发改变称号请求的玩家关联的
+	// OnPCChangeTitleFilter 琌蒓郉祇э跑嘿腹叫―產闽羛
 	// 
-	// 当符合以下时机时, 就会触发此事件:
-	// - 当玩家在装备窗口的“称号”界面中双击了某个称号时
-	// - 使用setchartitle脚本指令去设置称号时
-	// - 使用GM指令@title去设置称号时
+	// 讽才审, 碞穦郉祇ㄆン:
+	// - 讽產杆称怠¨嘿腹〃い蛮阑琘嘿腹
+	// - ㄏノsetchartitle竲セ砞竚嘿腹
+	// - ㄏノGM@title砞竚嘿腹
 	//
-	// 若下面的 @now_title_id 为 0 则表示玩家双击了 “Title Release”
+	// 璝 @now_title_id  0 玥ボ產蛮阑 ¨Title Release〃
 	// 
-	// 参数说明
+	// 把计弧
 	// -------------------------------------------------------
-	// @trigger_mode	为0表示通过装备面板触发、为1表示通过setchartitle脚本指令触发、为2表示通过GM指令@title触发
-	// @now_title_id	即将变更成的目标称号ID(该值可在事件中被修改)
-	// @pre_title_id	之前的称号ID是多少
+	// @trigger_mode	0ボ硄筁杆称狾郉祇1ボ硄筁setchartitle竲セ郉祇2ボ硄筁GM@title郉祇
+	// @now_title_id	盢跑Θヘ夹嘿腹ID(赣ㄆンい砆э)
+	// @pre_title_id	ぇ玡嘿腹ID琌ぶ
 	// -------------------------------------------------------
 	
 	switch(@trigger_mode){
 		case 0:
-			.@mode_str$ = "装备面板中的称号页面";
+			.@mode_str$ = "杆称狾い嘿腹";
 			break;
 		case 1:
-			.@mode_str$ = "setchartitle脚本指令";
+			.@mode_str$ = "setchartitle竲セ";
 			break;
 		case 2:
-			.@mode_str$ = "GM指令@title";
+			.@mode_str$ = "GM@title";
 			break;
 		default:
-			.@mode_str$ = "奇怪的未知方法";
+			.@mode_str$ = "┣ゼよ猭";
 			break;
 	}
 	
-	// 鉴于 @now_title_id 是可被修改的
-	// 所以你可以用很粗暴的方法，直接修改 @now_title_id 的方式来篡改最终的称号ID
-	// 但是要注意, 采用这种方法的话, 后面别跟 processhalt;
+	// 懦 @now_title_id 琌砆э
+	// ┮ノ彩忌よ猭钡э @now_title_id よΑㄓ縴э程沧嘿腹ID
+	// 琌璶猔種, ノ硂销よ猭杠, 蛤 processhalt;
 	// -------------------------------------------------------
-	// 例如:
+	// ㄒ:
 	// @now_title_id = 1020;
 	// end;
 	// -------------------------------------------------------
 	
 	if (@trigger_mode == 0 && @now_title_id == 0){
-		// 若玩家双击了装备面板中的称号, 那么弹出菜单让玩家选择称号.
-		// @now_title_id 为 0 表示玩家双击的是“Title Release”
+		// 璝產蛮阑杆称狾い嘿腹, ê紆垫虫琵產匡拒嘿腹.
+		// @now_title_id  0 ボ產蛮阑琌¨Title Release〃
 		
-		// 必须要在使用 mes 和 menu 之前调用 processhalt; 否则 processhalt; 会失效哒
+		// ゲ斗璶ㄏノ mes ㎝ menu ぇ玡秸ノ processhalt; 玥 processhalt; 穦ア椠
 		processhalt;
 		
-		mes "[称号事件演示]";
-		mes "您可以在下面选择一个称号.";
-		mes "在 ^ff0000data\\msgstringtable.txt^000000 中可以将 ^0000ffTitle Release^000000 改成 ^0000ff双击选择称号^000000,";
-		mes "这样看起来更合理一些.";
-		switch(select("Junction of life - ID = 1000:Expert - ID = 1001:Dabster - ID = 1002:隐藏我的称号 - ID = 0")){
+		mes "[嘿腹ㄆン簍ボ]";
+		mes "眤匡拒嘿腹.";
+		mes " ^ff0000data\\msgstringtable.txt^000000 い盢 ^0000ffTitle Release^000000 эΘ ^0000ff蛮阑匡拒嘿腹^000000,";
+		mes "硂妓癬ㄓ瞶ㄇ.";
+		switch(select("Junction of life - ID = 1000:Expert - ID = 1001:Dabster - ID = 1002:留旅и嘿腹 - ID = 0")){
 			case 1:
 				setchartitle(1000);
-				end;	// 这里就直接end终止，不然继续执行会有 dispbottom 提示
+				end;	// 硂ń碞钡end沧ゎぃ礛膥尿磅︽穦Τ dispbottom 矗ボ
 			case 2:
 				setchartitle(1001);
-				end;	// 这里就直接end终止，不然继续执行会有 dispbottom 提示
+				end;	// 硂ń碞钡end沧ゎぃ礛膥尿磅︽穦Τ dispbottom 矗ボ
 			case 3:
 				setchartitle(1002);
-				end;	// 这里就直接end终止，不然继续执行会有 dispbottom 提示
+				end;	// 硂ń碞钡end沧ゎぃ礛膥尿磅︽穦Τ dispbottom 矗ボ
 			case 4:
 			default:
 				setchartitle(0);
@@ -689,7 +689,7 @@ OnPCChangeTitleFilter:
 		}
 	}
 	
-	dispbottom "[事件演示] OnPCChangeTitleFilter | 通过“" + .@mode_str$ + "”更换称号, ID从 " + @pre_title_id + " 变为 " + @now_title_id;
+	dispbottom "[ㄆン簍ボ] OnPCChangeTitleFilter | 硄筁¨" + .@mode_str$ + "〃传嘿腹, ID眖 " + @pre_title_id + " 跑 " + @now_title_id;
 end;
 }
 
@@ -697,63 +697,63 @@ end;
 end;
 
 OnPCOpenRouletteFilter:
-	// 当玩家点击打开乐透大转盘的时候会触发此事件
-	// 关于此事件的说明请参阅: doc\BetterRa_events_dome.txt 文档
+	// 讽產翴阑ゴ秨贾硓锣絃穦郉祇ㄆン
+	// 闽ㄆン弧叫把綷: doc\BetterRa_events_dome.txt ゅ郎
 	processhalt;
 	if (is_attach() == 0) {
-		mes "[BetterRa 演示]";
-		mes "^ff0000您点击了乐透大转盘按钮.^000000";
-		mes "此操作被 npc/BetterRa/BetterRa_events_dome.txt 脚本中的 PC_OPEN_ROULETTE 拦截.";
-		mes "若不需要此演示, 请注销对应的脚本.";
-		mes "^0000ff下一次点击转盘将不再拦截您的操作.直至你关闭此对话框, 也可以在脚本本条if外面加上processhalt;来阻止下一次点击转盘的弹出^000000";
-		mes "已将金币银币铜币设置为100个.";
+		mes "[BetterRa 簍ボ]";
+		mes "^ff0000眤翴阑贾硓锣絃秙.^000000";
+		mes "巨砆 npc/BetterRa/BetterRa_events_dome.txt 竲セい PC_OPEN_ROULETTE 膁篒.";
+		mes "璝ぃ惠璶簍ボ, 叫猔綪癸莱竲セ.";
+		mes "^0000ffΩ翴阑锣絃盢ぃ膁篒眤巨.闽超癸杠, 竲セセ兵ifprocesshalt;ㄓゎΩ翴阑锣絃紆^000000";
+		mes "盢刽蝗刽簧刽砞竚100.";
 		close2;
 		roulette_open(0, -1, 671);
-		RouletteGold = 100;   //设置金币为100枚
-		RouletteSilver = 100; //设置银币为100枚
-		RouletteBronze = 100; //设置铜币为100枚
+		RouletteGold = 100;   //砞竚刽100猅
+		RouletteSilver = 100; //砞竚蝗刽100猅
+		RouletteBronze = 100; //砞竚簧刽100猅
 		end;
 	}
 end;
 
 OnPCCloseRouletteEvent:
-	// 当玩家关闭乐透大转盘的时候会触发此事件
-	// 关于此事件的说明请参阅: doc\BetterRa_events.txt 文档
-	dispbottom "[事件演示] OnPCCloseRouletteEvent | 你刚刚关闭了乐透大转盘";
+	// 讽產闽超贾硓锣絃穦郉祇ㄆン
+	// 闽ㄆン弧叫把綷: doc\BetterRa_events.txt ゅ郎
+	dispbottom "[ㄆン簍ボ] OnPCCloseRouletteEvent | 闽超贾硓锣絃";
 end;
 
 OnPCStartRouletteFilter:
-	// 定制转盘摇奖规则
+	// ﹚锣絃穘贱砏玥
 	processhalt;
-	// 注意: 事件被触发成功后 使用 processhalt中断后，下列脚本才会有效！！
+	// 猔種: ㄆン砆郉祇Θ ㄏノ processhaltい耞竲セ穦Τ
 	if(RouletteBronze < 10){
-		dispbottom "你的铜币不足10个";
+		dispbottom "簧刽ぃì10";
 		roulette_generate(2, 0, 0, 0);
 		end;
 	}
 	RouletteBronze -= 10;
 	setarray .@idxcount[0],9,8,7,6,5,4,3;
-	@PrizeStage = rand(7); //一共有7行
-	@PrizeIdx = rand(.@idxcount[@PrizeStage]); //抽中 @PrizeStage 行中的第几个物品,如果索引大于每行的摇奖数量,则会报错.
+	@PrizeStage = rand(7); //Τ7︽
+	@PrizeIdx = rand(.@idxcount[@PrizeStage]); //┾い @PrizeStage ︽い材珇,狦ま–︽穘贱计秖,玥穦厨岿.
 	.@result = (roulette_iteminfo(3, @PrizeStage, @PrizeIdx) == 1 ? 3 : 0);
 	roulette_generate(.@result, @PrizeStage, @PrizeIdx, 0);
 	
-	dispbottom "[事件演示] OnPCStartRouletteFilter | 你当前有金币: "+ RouletteGold +" 个, 银币: " +RouletteSilver+" 个, 铜币: "+ RouletteBronze +"个。";
-	dispbottom "           - 本次摇奖为你扣除 3个铜币 , 已用脚本为你重新定位了转盘的摇奖位置.";
-	dispbottom "           - 你将摇到 第 " + (@PrizeStage+1) + " 行, 第 " + (@PrizeIdx+1) + " 个物品";
-	dispbottom "           - 你摇到的物品为: [" + getitemname(roulette_iteminfo(1, @PrizeStage, @PrizeIdx)) + " x " + roulette_iteminfo(2, @PrizeStage, @PrizeIdx) + " 个], 摇奖结果为脚本控制..";
+	dispbottom "[ㄆン簍ボ] OnPCStartRouletteFilter | 讽玡Τ刽: "+ RouletteGold +" , 蝗刽: " +RouletteSilver+" , 簧刽: "+ RouletteBronze +"";
+	dispbottom "           - セΩ穘贱Ι埃 3簧刽 , ノ竲セ穝﹚锣絃穘贱竚.";
+	dispbottom "           - 盢穘 材 " + (@PrizeStage+1) + " ︽, 材 " + (@PrizeIdx+1) + " 珇";
+	dispbottom "           - 穘珇: [" + getitemname(roulette_iteminfo(1, @PrizeStage, @PrizeIdx)) + " x " + roulette_iteminfo(2, @PrizeStage, @PrizeIdx) + " ], 穘贱挡狦竲セ北..";
 end;
 
 OnPCGetRouletteFilter:
 	processhalt;
-	// 注意: 事件被触发成功后 使用 processhalt中断后，下列脚本才会有效！！
-	// 玩家在转盘中取出物品时会触发这个事件
-	// 参数说明
+	// 猔種: ㄆン砆郉祇Θ ㄏノ processhaltい耞竲セ穦Τ
+	// 產锣絃い珇穦郉祇硂ㄆン
+	// 把计弧
 	// -------------------------------------------------------
-	// @PrizeStage	摇到从下往上数, 第 @PrizeStage 行的物品
-	// @PrizeIdx	摇到从左往右数, 第 @PrizeIdx 个物品
+	// @PrizeStage	穘眖┕计, 材 @PrizeStage ︽珇
+	// @PrizeIdx	穘眖オ┕计, 材 @PrizeIdx 珇
 	// -------------------------------------------------------
-	dispbottom "[事件演示] OnPCGetRouletteFilter | 你拿出了转盘中的第 " + @PrizeStage + " 行, 第 " + @PrizeIdx + " 个物品";
+	dispbottom "[ㄆン簍ボ] OnPCGetRouletteFilter | 锣絃い材 " + @PrizeStage + " ︽, 材 " + @PrizeIdx + " 珇";
 	getitem roulette_iteminfo(1, @PrizeStage, @PrizeIdx),roulette_iteminfo(2, @PrizeStage, @PrizeIdx);
 end;
 

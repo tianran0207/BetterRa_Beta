@@ -34,790 +34,790 @@
 
 // Al De Baran
 //============================================================
-aldebaran,113,70,4	script	制炼工人曼斯特#alde	1_M_02,{
-	mes "[曼斯特]";
-	mes "我家原本住在吉芬";
-	mes "去年冬天才搬家搬到艾尔帕兰";
-	mes "这个地方来..";
+aldebaran,113,70,4	script	芬耙吹疭#alde	1_M_02,{
+	mes "[耙吹疭]";
+	mes "и產セ";
+	mes "ぱ穐產穐︺焊┈孽";
+	mes "硂よㄓ..";
 	next;
-	if (select("关于^3355FF' 精炼 '^000000..:结束对话") == 1) {
-		mes "[曼斯特]";
-		mes "我的父亲";
-		mes "在以铁匠闻名的吉芬";
-		mes "也是个相当有名气的名匠";
-		mes "后来才搬到母亲的故乡这来的";
+	if (select("闽^3355FF' 弘芬 '^000000..:挡癸杠") == 1) {
+		mes "[耙吹疭]";
+		mes "и克";
+		mes "臟籇";
+		mes "琌讽Τ蒩";
+		mes "ㄓ穐ダ克珿秏硂ㄓ";
 		next;
-		mes "[曼斯特]";
-		mes "我有时候也会帮帮父亲的忙";
-		mes "我最近在学习的是";
-		mes "辨别武器等级高低与";
-		mes "精炼的成功率大小之相关性";
+		mes "[耙吹疭]";
+		mes "иΤ穦腊腊克Γ";
+		mes "и程厩策琌";
+		mes "侩猌竟单蔼蒓";
+		mes "弘芬Θ瞯ぇ闽┦";
 		next;
-		mes "[曼斯特]";
-		mes "等级1 的武器";
-		mes "可以成功的精炼到等级7";
-		mes "等级2 的武器可成功的精炼到等级6";
-		mes "等级3 的武器";
-		mes "则可成功的精炼到等级5";
-		mes "至于等级4 的武器";
+		mes "[耙吹疭]";
+		mes "单1 猌竟";
+		mes "Θ弘芬单7";
+		mes "单2 猌竟Θ弘芬单6";
+		mes "单3 猌竟";
+		mes "玥Θ弘芬单5";
+		mes "单4 猌竟";
 		next;
-		mes "[曼斯特]";
-		mes "大约可成功的精炼到等级4";
-		mes "防具之类的话";
-		mes "普通都到等级 4";
-		mes "失败精炼的话";
-		mes "武器受不了那强度就破坏了!!";
+		mes "[耙吹疭]";
+		mes "Θ弘芬单4";
+		mes "ňㄣぇ摸杠";
+		mes "炊硄常单 4";
+		mes "ア毖弘芬杠";
+		mes "猌竟ぃê眏碞瘆Д!!";
 		close;
 	}
-	mes "[曼斯特]";
-	mes "虽然还有许多人";
-	mes "不清楚甚至不知道";
-	mes "我父亲的精炼所在哪里, ";
-	mes "但若是在艾尔帕兰也能打响父亲的名号";
-	mes "那就真的太棒了";
+	mes "[耙吹疭]";
+	mes "瘤礛临Τ砛";
+	mes "ぃ睲贰ぃ笵";
+	mes "и克弘芬┮ń, ";
+	mes "璝琌︺焊┈孽ゴ臫克腹";
+	mes "ê碞痷び次";
 	close;
 }
 
-aldebaran,64,104,4	script	奎特罗#alde	1_M_JOBTESTER,{
-	mes "[奎特罗]";
-	mes "听说最近艾尔帕兰";
-	mes "来了个在吉芬顶顶有名";
-	mes "的铁匠师父 ..";
+aldebaran,64,104,4	script	疭霉#alde	1_M_JOBTESTER,{
+	mes "[疭霉]";
+	mes "弧程︺焊┈孽";
+	mes "ㄓ郴郴Τ";
+	mes "臟畍 ..";
 	next;
-	if (select("有关那位顶顶有名的铁匠师父:结束对话") == 1) {
-		mes "[奎特罗]";
-		mes "我听说";
-		mes "武器等级的高低与";
-		mes "可增加攻击力的大小";
-		mes "有相当程度的关系 ..";
+	if (select("Τ闽ê郴郴Τ臟畍:挡癸杠") == 1) {
+		mes "[疭霉]";
+		mes "и弧";
+		mes "猌竟单蔼蒓";
+		mes "糤ю阑";
+		mes "Τ讽祘闽╰ ..";
 		next;
-		mes "[奎特罗]";
-		mes "等级1 的可以冶炼到等级 2";
-		mes "等级2 的可以冶炼到等级 3";
-		mes "等级3 的可以冶炼到等级 5 !";
-		mes "至于等级4 的则与等级3 一样";
+		mes "[疭霉]";
+		mes "单1 芬单 2";
+		mes "单2 芬单 3";
+		mes "单3 芬单 5 !";
+		mes "单4 玥蒓单3 妓";
 		close;
 	}
-	mes "[奎特罗]";
-	mes "因为我太太的身体状况不太好";
-	mes "所以必须要按时的服用";
-	mes "艾尔帕兰附近才有的特殊药草";
-	mes "我儿子也是个孝顺的好孩子";
-	mes "帮爸爸分担了不少工作..";
-	mes "将来应该也会是个不错的铁匠";
+	mes "[疭霉]";
+	mes "иびびō蔨猵ぃび";
+	mes "┮ゲ斗璶狝ノ";
+	mes "︺焊┈孽Τ疭媚";
+	mes "и琌У抖";
+	mes "腊だ踞ぃぶ..";
+	mes "盢ㄓ莱赣穦琌ぃ岿臟";
 	close;
 }
 
-aldebaran,49,93,4	script	密雷亚	4_M_01,{
-	mes "[密雷亚]";
-	mes "您知道吗? 听说武器的等级";
-	mes "不只到3 而已 ..";
-	mes "还有等级4 的武器呢!!";
+aldebaran,49,93,4	script	盞筽ㄈ	4_M_01,{
+	mes "[盞筽ㄈ]";
+	mes "眤笵盾? 弧猌竟单";
+	mes "ぃ3 τ ..";
+	mes "临Τ单4 猌竟㎡!!";
 	next;
-	mes "[密雷亚]";
-	mes "我还听说, 这种得来不易的";
-	mes "等级 4 的武器, ";
-	mes "只有在您打败魔物首领后, ";
-	mes "才有极小的机率";
-	mes "可以得到这项武器";
+	mes "[盞筽ㄈ]";
+	mes "и临弧, 硂销眔ㄓぃ";
+	mes "单 4 猌竟, ";
+	mes "Τ眤ゴ毖臸烩, ";
+	mes "Τ体审瞯";
+	mes "眔硂兜猌竟";
 	close;
 }
 
-aldebaran,81,61,4	script	拾蛤蜊的女孩#ald	4W_F_01,{
-	mes "[乔丝]";
-	mes "在海边等地方拾蛤蜊";
-	mes "真是一点趣味都没有";
+aldebaran,81,61,4	script	珺叼改#ald	4W_F_01,{
+	mes "[踌捣]";
+	mes "娩单よ珺叼改";
+	mes "痷琌翴届常⊿Τ";
 	next;
-	if (select("关于拾蛤蜊:结束对话") == 1) {
-		mes "[乔丝]";
-		mes "比起在沙滩.. 和水坑来说的话";
-		mes "海水啪搭啪搭的";
-		mes "不断涌起";
-		mes "在海边就只能拾到一些蛤蜊, ";
-		mes "因为大部分的蛤蜊";
-		mes "都藏在底下呢!";
+	if (select("闽珺叼改:挡癸杠") == 1) {
+		mes "[踌捣]";
+		mes "ゑ癬‵舮.. ㎝ㄓ弧杠";
+		mes "霸穎霸穎";
+		mes "ぃ耞疐癬";
+		mes "娩碞珺ㄇ叼改, ";
+		mes "场だ叼改";
+		mes "常旅┏㎡!";
 		next;
-		mes "[乔丝]";
-		mes "还有啊!";
-		mes "有种外壳坚硬";
-		mes "习性很差";
-		mes "不可小觑的";
-		mes "家伙!";
+		mes "[踌捣]";
+		mes "临Τ摆!";
+		mes "Τ销催绊祑";
+		mes "策┦畉";
+		mes "ぃ蝮";
+		mes "產ル!";
 		next;
-		mes "[乔丝]";
-		mes "它们的名字叫做蜗牛, ";
-		mes "在普隆德拉西部地区的";
-		mes "海边附近可以看到它们的踪迹..";
-		mes "要是不小心招惹到它们";
-		mes "那大概只能祈求老天能让您逃过一劫了";
+		mes "[踌捣]";
+		mes "ウ暗浇, ";
+		mes "炊订紈┰﹁场跋";
+		mes "娩ウ萝格..";
+		mes "璶琌ぃみ┷稴ウ";
+		mes "ê阀―ρぱ琵眤発筁";
 		next;
-		mes "[乔丝]";
-		mes "总之, 它们很可怕就是了..";
+		mes "[踌捣]";
+		mes "羆ぇ, ウ┤碞琌..";
 		close;
 	}
-	mes "[乔丝]";
-	mes "哪天我一定要去那个";
-	mes "有名的洞窟去拾蛤蜊!";
-	mes "虽然有些危险..";
-	mes "但要是能去感受一下, 应该也值得吧?";
+	mes "[踌捣]";
+	mes "ぱи﹚璶ê";
+	mes "Τ瑌竇珺叼改!";
+	mes "瘤礛Τㄇ繧..";
+	mes "璶琌稰, 莱赣眔?";
 	close;
 }
 
-aldebaran,46,129,4	script	运河青年#alde	4W_M_01,{
-	mes "[帕那马]";
-	mes "艾尔帕兰在尘世大陆上";
-	mes "算是个名满天下";
-	mes "为人所津津乐道";
-	mes "相当著名的运河之都";
+aldebaran,46,129,4	script	笲猠獵#alde	4W_M_01,{
+	mes "[┈ê皑]";
+	mes "︺焊┈孽剐嘲";
+	mes "衡琌骸ぱ";
+	mes "┮瑉瑉贾笵";
+	mes "讽帝笲猠ぇ常";
 	next;
-	switch(select("关于运河之都:结束对话")) {
+	switch(select("闽笲猠ぇ常:挡癸杠")) {
 	case 1:
-		mes "[帕那马]";
-		mes "运河就是..";
-		mes "为了可以在内陆地区船运";
-		mes "以及灌溉农地 ..";
-		mes "等用途而建造的";
-		mes "人工水路";
+		mes "[┈ê皑]";
+		mes "笲猠碞琌..";
+		mes "ず嘲跋差笲";
+		mes "の拈礍笰 ..";
+		mes "单ノ硚τ硑";
+		mes "隔";
 		next;
-		mes "[帕那马]";
-		mes "一般来说, 运河";
-		mes "属于交通工具的一部份";
-		mes "运河大部分是挖掘陆地或";
-		mes "水路填土后所留下的水路..";
+		mes "[┈ê皑]";
+		mes "ㄓ弧, 笲猠";
+		mes "妮ユ硄ㄣ场";
+		mes "笲猠场だ琌备嘲┪";
+		mes "隔恶┮痙隔..";
 		next;
-		mes "[帕那马]";
-		mes "也有人将";
-		mes "为整修河川而建的人工水路";
-		mes "称为运河";
+		mes "[┈ê皑]";
+		mes "Τ盢";
+		mes "俱猠τ隔";
+		mes "嘿笲猠";
 		close;
 		break;
 	case 2:
-		mes "[帕那马]";
-		mes "水很清澈吧?";
-		mes "既然这里被称做是山谷村";
-		mes "当然就有山谷村应有的特色噜 ..";
+		mes "[┈ê皑]";
+		mes "睲韩?";
+		mes "琂礛硂ń砆嘿暗琌é";
+		mes "讽礛碞Τé莱Τ疭︹翽 ..";
 		mes ".....";
-		mes "好好的休息完后再走吧!";
+		mes "ヰЧǐ!";
 		close;
 		break;
 	}
 }
 
-aldebaran,67,154,4	script	山路青年 艾杰伯克#alde	4W_M_02,{
-	mes "[艾杰伯克]";
-	mes "妙勒尼山脉、斐扬的树林";
-	mes "都是以险峻的地形";
-	mes "而闻名的";
+aldebaran,67,154,4	script	隔獵 ︺狽#alde	4W_M_02,{
+	mes "[︺狽]";
+	mes "М扒ェ创喘攫狶";
+	mes "常琌繧甿";
+	mes "τ籇";
 	next;
-	switch(select("关于妙勒尼山脉:关于斐扬树林:结束对话")) {
+	switch(select("闽М扒ェ:闽创喘攫狶:挡癸杠")) {
 	case 1:
-		mes "[艾杰伯克]";
-		mes "若想从卢恩　米德加尔特王国的首都";
-		mes "普隆德拉以及魔法之都吉芬";
-		mes "到艾尔帕兰这个地方来的话";
-		mes "途中必经之路便是..";
-		mes "妙勒尼山脉!";
+		mes "[︺狽]";
+		mes "璝稱眖縞μ紈焊疭瓣常";
+		mes "炊订紈┰の臸猭ぇ常";
+		mes "︺焊┈孽硂よㄓ杠";
+		mes "硚いゲ竒ぇ隔獽琌..";
+		mes "М扒ェ!";
 		next;
-		mes "[艾杰伯克]";
-		mes "若想从骑士公会与卢恩　米德加尔特王国的";
-		mes "首都普隆德拉..";
-		mes "还有以魔法师与";
-		mes "铁匠闻名的";
-		mes "吉芬";
+		mes "[︺狽]";
+		mes "璝稱眖肕そ穦蒓縞μ紈焊疭瓣";
+		mes "常炊订紈┰..";
+		mes "临Τ臸猭畍蒓";
+		mes "臟籇";
+		mes "";
 		next;
-		mes "[艾杰伯克]";
-		mes "以及修道院";
-		mes "到艾尔帕兰这地方来的话";
-		mes "途中必定要经过";
-		mes "妙勒尼山脉 ..";
-		mes "妙勒尼山脉";
-		mes "山势相当险峻 ..";
+		mes "[︺狽]";
+		mes "の笵皘";
+		mes "︺焊┈孽硂よㄓ杠";
+		mes "硚いゲ﹚璶竒筁";
+		mes "М扒ェ ..";
+		mes "М扒ェ";
+		mes "墩讽繧甿 ..";
 		next;
-		mes "[艾杰伯克]";
-		mes "外表狰狞且凶狠的";
-		mes "先攻魔物大多藏匿在这";
-		mes "要穿越这做山脉相当困难";
-		mes "得吃不少苦头";
+		mes "[︺狽]";
+		mes "瞮礼た";
+		mes "ю臸旅拔硂";
+		mes "璶禫硂暗讽螟";
+		mes "眔ぃぶ璚繷";
 		close;
 	case 2:
-		mes "[艾杰伯克]";
-		mes "从梦罗克的山脉";
-		mes "要到艾尔贝塔以及";
-		mes "斐扬的话";
-		mes "途中必经之路便是";
-		mes "斐扬的树林";
+		mes "[︺狽]";
+		mes "眖冠霉";
+		mes "璶︺焊ī娥の";
+		mes "创喘杠";
+		mes "硚いゲ竒ぇ隔獽琌";
+		mes "创喘攫狶";
 		next;
-		mes "[艾杰伯克]";
-		mes "因为位在艾尔贝塔与斐扬之间的";
-		mes "这座树林的地形";
-		mes "相当复杂, 结构相似";
-		mes "像座迷宫";
-		mes "要是没有精神灌注专心一致的话, ";
-		mes "很可能会在深林中迷路";
+		mes "[︺狽]";
+		mes "︺焊ī娥蒓创喘ぇ丁";
+		mes "硂畒攫狶";
+		mes "讽蝋馒, 挡疼";
+		mes "钩畒癵甤";
+		mes "璶琌⊿Τ弘拈猔盡み璓杠, ";
+		mes "穦瞏狶い癵隔";
 		next;
-		mes "[艾杰伯克]";
-		mes "至于?什么这座树林";
-		mes "会被称为是斐扬树林";
-		mes "而不是艾尔贝塔树林";
-		mes "原因是因为 ..";
+		mes "[︺狽]";
+		mes "?ぐ硂畒攫狶";
+		mes "穦砆嘿琌创喘攫狶";
+		mes "τぃ琌︺焊ī娥攫狶";
+		mes "琌 ..";
 		next;
-		mes "[艾杰伯克]";
-		mes "斐扬是个以弓箭手闻名的都市";
-		mes "为了防止外力入侵";
-		mes "他们选择高耸且险峻的山脉";
-		mes "作为天然屏障";
-		mes "用来抵御外侮";
+		mes "[︺狽]";
+		mes "创喘琌絙も籇常カ";
+		mes "ňゎ獻";
+		mes "匡拒蔼羜繧甿";
+		mes "ぱ礛毁";
+		mes "ノㄓ╄眘玍";
 		next;
-		mes "[艾杰伯克]";
-		mes "我想这大概也就是为什么与外国往来密切的艾尔贝塔";
-		mes "在尘世大陆的名声";
-		mes "会比斐扬响亮的缘故吧!";
+		mes "[︺狽]";
+		mes "и稱硂阀碞琌ぐ蒓瓣┕ㄓ盞ち︺焊ī娥";
+		mes "剐嘲羘";
+		mes "穦ゑ创喘臫獹絫珿!";
 		close;
 	case 3:
-		mes "[艾杰伯克]";
-		mes "这规模相当雄伟的山脉";
-		mes "阻隔了许多";
-		mes "从世界各地前来的旅客:";
-		mes "不过托运河以及炼金术的福, ";
-		mes "使得这个地方一直充满着神秘感, ";
-		mes "还是有不少人想前来一探究竟..";
+		mes "[︺狽]";
+		mes "硂砏家讽动岸";
+		mes "筳砛";
+		mes "眖玡ㄓ:";
+		mes "ぃ筁Λ笲猠の芬砃褐, ";
+		mes "ㄏ眔硂よ骸帝稰, ";
+		mes "临琌Τぃぶ稱玡ㄓ贝╯澈..";
 		close;
 	}
 }
 
-aldebaran,90,170,4	script	插槽青年#alde	1_M_01,{
-	mes "[艾迪尔]";
-	mes "听说在武器与防具中";
-	mes "有个叫做插槽的东西";
-	mes "它的用处就是可以将打败魔物后";
-	mes "从魔物身上得到的魔物卡片插入";
-	mes "使武器与防具拥有该效能:";
+aldebaran,90,170,4	script	础佳獵#alde	1_M_01,{
+	mes "[︺瓆焊]";
+	mes "弧猌竟蒓ňㄣい";
+	mes "Τ暗础佳狥﹁";
+	mes "ウノ矪碞琌盢ゴ毖臸";
+	mes "眖臸ō眔臸础";
+	mes "ㄏ猌竟蒓ňㄣ局Τ赣:";
 	next;
-	switch(select("关于插槽:魔物卡片与插槽的相关性:结束对话")) {
+	switch(select("闽础佳:臸蒓础佳闽┦:挡癸杠")) {
 	case 1:
-		mes "[艾迪尔]";
-		mes "比起在一般商店中贩卖的";
-		mes "从魔物那得到的战利品";
-		mes "之插槽数较多:";
+		mes "[︺瓆焊]";
+		mes "ゑ癬坝┍い砪芥";
+		mes "眖臸ê眔驹珇";
+		mes "ぇ础佳计耕:";
 		next;
-		mes "[艾迪尔]";
-		mes "拥有这项道具的话";
-		mes "可以同时使用两张以上的卡片:";
-		mes "可以使该物";
-		mes "发挥最大的效能:";
+		mes "[︺瓆焊]";
+		mes "局Τ硂兜笵ㄣ杠";
+		mes "ㄏノㄢ眎:";
+		mes "ㄏ赣";
+		mes "祇揣程:";
 		close;
 	case 2:
-		mes "[艾迪尔]";
-		mes "另外, 卡片插入插槽中后, ";
-		mes "便不能取出重复使用:";
-		mes "希望您使用时要特别注意这点:";
-		mes "在插入之前, ";
-		mes "请仔细考虑清楚:";
+		mes "[︺瓆焊]";
+		mes ", 础础佳い, ";
+		mes "獽ぃ蝋ㄏノ:";
+		mes "辨眤ㄏノ璶疭猔種硂翴:";
+		mes "础ぇ玡, ";
+		mes "叫灿σ納睲贰:";
 		close;
 	case 3:
 		mes "[Epithiel]";
-		mes "请问您有从魔物那";
-		mes "得到的卡片吗 ?";
+		mes "叫拜眤Τ眖臸ê";
+		mes "眔盾 ?";
 		close;
 	}
 }
 
-aldebaran,117,181,4	script	朱尔力#alde	1_M_02,{
-	mes "[朱尔力]";
-	mes "在装备道具中";
-	mes "最低等级 ( Level 1 ) ";
-	mes "的武器冶炼时";
-	mes "需要一种名称为";
-	mes "' 强化武器金属-级数一 '之金属";
+aldebaran,117,181,4	script	Χ焊#alde	1_M_02,{
+	mes "[Χ焊]";
+	mes "杆称笵ㄣい";
+	mes "程单 ( Level 1 ) ";
+	mes "猌竟芬";
+	mes "惠璶销嘿";
+	mes "' 眏て猌竟妮-计 'ぇ妮";
 	next;
-	switch(select("关于强化武器金属-级数一:强化武器金属-级数一小帮手:结束对话")) {
+	switch(select("闽眏て猌竟妮-计:眏て猌竟妮-计腊も:挡癸杠")) {
 	case 1:
-		mes "[朱尔力]";
-		mes "强化武器金属-级数一就是.. 从很久以前";
-		mes "在尘世大陆里";
-		mes "使用相当广泛";
-		mes "最为普遍的制炼用";
-		mes "金属";
+		mes "[Χ焊]";
+		mes "眏て猌竟妮-计碞琌.. 眖玡";
+		mes "剐嘲ń";
+		mes "ㄏノ讽約獂";
+		mes "程炊筂芬ノ";
+		mes "妮";
 		next;
-		mes "[朱尔力]";
-		mes "虽然它不比一般钢铁";
-		mes "或各式各样稀有的矿石";
-		mes "的强度";
-		mes "要来的坚硬..";
+		mes "[Χ焊]";
+		mes "瘤礛ウぃゑ葵臟";
+		mes "┪Α妓祡Τ膓ホ";
+		mes "眏";
+		mes "璶ㄓ绊祑..";
 		next;
-		mes "[朱尔力]";
-		mes "但是因为它可以说是";
-		mes "随手可及的资源";
-		mes "因此被民众广泛的使用, 人气相当旺";
+		mes "[Χ焊]";
+		mes "琌ウ弧琌";
+		mes "繦もの戈方";
+		mes "砆チ渤約獂ㄏノ, 蒩讽";
 		next;
-		mes "[朱尔力]";
-		mes "这种金属";
-		mes "可以从魔物身上获得或者向";
-		mes "在有专业技术的铁匠们所在的冶炼工厂里";
-		mes "制作并且贩卖金属的";
-		mes "铁匠购买";
+		mes "[Χ焊]";
+		mes "硂销妮";
+		mes "眖臸ō莉眔┪";
+		mes "Τ盡穨м砃臟┮芬蒁ń";
+		mes "砪芥妮";
+		mes "臟潦禦";
 		next;
-		mes "[朱尔力]";
-		mes "您可以向冶炼工购买";
-		mes "并且使用";
-		mes "等到装备道具提高到某个等级..";
-		mes "原本的武器成为";
-		mes "高等级武器时";
+		mes "[Χ焊]";
+		mes "眤芬潦禦";
+		mes "ㄏノ";
+		mes "单杆称笵ㄣ矗蔼琘单..";
+		mes "セ猌竟Θ";
+		mes "蔼单猌竟";
 		next;
-		mes "[朱尔力]";
-		mes "即使有强化武器金属-级数一..";
-		mes "将不再具有任合作用-";
-		mes "这时您便不再需要它了..";
-		mes "那么请将它转卖出去!!";
-		mes "它大概可以卖到100金币";
-		mes "左右 ?";
+		mes "[Χ焊]";
+		mes "ㄏΤ眏て猌竟妮-计..";
+		mes "盢ぃㄣΤヴノ-";
+		mes "硂眤獽ぃ惠璶ウ..";
+		mes "ê叫盢ウ锣芥!!";
+		mes "ウ阀芥100刽";
+		mes "オ ?";
 		close;
 	case 2:
-		mes "[朱尔力]";
-		mes "听说拥有强化武器金属-级数一的";
-		mes "魔物相当的多";
-		mes "可以说是随手可得的";
-		mes "金属";
-		mes "您要不要找找这种金属呢?";
+		mes "[Χ焊]";
+		mes "弧局Τ眏て猌竟妮-计";
+		mes "臸讽";
+		mes "弧琌繦も眔";
+		mes "妮";
+		mes "眤璶ぃ璶тт硂销妮㎡?";
 		next;
-		mes "[朱尔力]";
-		mes "不久前的假日";
-		mes "我和隔壁酒店主人";
-		mes "一起去打猎的时候 ..";
-		mes "还从野猪宝宝身上";
-		mes "找到这种金属呢!";
+		mes "[Χ焊]";
+		mes "ぃ玡安ら";
+		mes "и㎝筳纠皊┍";
+		mes "癬ゴ聐 ..";
+		mes "临眖偿睫腳腳ō";
+		mes "т硂销妮㎡!";
 		close;
 	case 3:
-		mes "[朱尔力]";
-		mes "请去寻找好的强化武器金属-级数一吧!";
+		mes "[Χ焊]";
+		mes "叫碝т眏て猌竟妮-计!";
 		close;
 	}
 }
 
-aldebaran,121,231,4	script	炼金术青年#alde	1_M_03,{
-	mes "[凯密尔]";
-	mes "炼金者就是古代在艾尔帕兰";
-	mes "以将劣质不值钱的金属以人工手法";
-	mes "制成优质值钱的珍贵金属为目标的";
-	mes "化学家也就是科学者";
-	mes "的另一个代名词";
+aldebaran,121,231,4	script	芬砃獵#alde	1_M_03,{
+	mes "[惩盞焊]";
+	mes "芬碞琌︺焊┈孽";
+	mes "盢借ぃ窥妮も猭";
+	mes "Θ涩借窥禥妮ヘ夹";
+	mes "て厩產碞琌厩";
+	mes "迭";
 	next;
-	switch(select("关于斐扬炼金术:炼金者的意味:. . . . .:结束对话")) {
+	switch(select("闽创喘芬砃:芬種:. . . . .:挡癸杠")) {
 	case 1:
-		mes "[凯密尔]";
-		mes "同样的道理, ";
-		mes "斐扬的";
-		mes "道教中";
-		mes "有一种让人服用后可以长生不老且";
-		mes "升天成仙的";
-		mes "' 丹药 '";
+		mes "[惩盞焊]";
+		mes "妓笵瞶, ";
+		mes "创喘";
+		mes "笵毙い";
+		mes "Τ销琵狝ノネぃρ";
+		mes "どぱΘ";
+		mes "' う媚 '";
 		next;
-		mes "[凯密尔]";
-		mes "就是由这种";
-		mes "提炼金属的方法而来的";
-		mes "斐扬炼金术的主张";
-		mes "正是这种结合化学思想与炼金术的主张";
+		mes "[惩盞焊]";
+		mes "碞琌パ硂销";
+		mes "矗芬妮よ猭τㄓ";
+		mes "创喘芬砃眎";
+		mes "タ琌硂销挡て厩稱蒓芬砃眎";
 		next;
-		mes "[凯密尔]";
-		mes "但是斐扬地区";
-		mes "化学相当不发达";
-		mes "正好与艾尔帕兰完全相反";
-		mes "不只是因为自然环境的因素, ";
-		mes "研究炼金术所需的材料";
-		mes "也相当的缺乏";
+		mes "[惩盞焊]";
+		mes "琌创喘跋";
+		mes "て厩讽ぃ祇笷";
+		mes "タ蒓︺焊┈孽Чは";
+		mes "ぃ琌礛吏挂, ";
+		mes "╯芬砃┮惠";
+		mes "讽";
 		next;
-		mes "[凯密尔]";
-		mes "因此, 现今";
-		mes "在尘世大陆上举世闻名的";
-		mes "'炼金术 '";
-		mes "除了艾尔帕兰以外";
-		mes "没有他处可以与之媲美了 ..";
+		mes "[惩盞焊]";
+		mes ", 瞷さ";
+		mes "剐嘲羭籇";
+		mes "'芬砃 '";
+		mes "埃︺焊┈孽";
+		mes "⊿Τ矪蒓ぇ稡 ..";
 		close;
 	case 2:
-		mes "[凯密尔]";
-		mes "炼金者";
-		mes "能将化学方面的知识融会贯通";
-		mes "混合各式各样的物质";
-		mes "调和调配出";
-		mes "富有机能的道具";
+		mes "[惩盞焊]";
+		mes "芬";
+		mes "盢て厩よ醚磕穦砮硄";
+		mes "睼Α妓借";
+		mes "秸㎝秸皌";
+		mes "碔Τ审笵ㄣ";
 		close;
 	case 3:
-		mes "[凯密尔]";
-		mes "说这些好像有些乏味";
-		mes "那么我们现在就来说说";
-		mes "有关魔物卡片与插槽的相关性吧..";
-		mes "我想您应该已经知道";
-		mes "每张魔物卡片";
+		mes "[惩盞焊]";
+		mes "弧硂ㄇ钩Τㄇ";
+		mes "êи瞷碞ㄓ弧弧";
+		mes "Τ闽臸蒓础佳闽┦..";
+		mes "и稱眤莱赣竒笵";
+		mes "–眎臸";
 		next;
-		mes "[凯密尔]";
-		mes "都有特定的装备位置";
-		mes "也就是特定的插槽..";
-		mes "一定要将该卡片装备在同种类的插槽上";
-		mes "才能使它发挥作用";
-		mes "举例来说, 如果您得到的是波利卡片..";
+		mes "[惩盞焊]";
+		mes "常Τ疭﹚杆称竚";
+		mes "碞琌疭﹚础佳..";
+		mes "﹚璶盢赣杆称销摸础佳";
+		mes "ㄏウ祇揣ノ";
+		mes "羭ㄒㄓ弧, 狦眤眔琌猧..";
 		next;
-		mes "[凯密尔]";
-		mes "波利卡片的正面上写着";
-		mes "LUK + 1 的效能";
-		mes "且标记的装备位置在";
- 		mes "'铠甲'";
-		mes "的话";
+		mes "[惩盞焊]";
+		mes "猧タ糶帝";
+		mes "LUK + 1 ";
+		mes "夹癘杆称竚";
+ 		mes "'馴ヒ'";
+		mes "杠";
 		next;
-		mes "[凯密尔]";
-		mes "即使您硬是将它插在";
-		mes "短剑类的插槽上";
-		mes "也是枉然-";
-		mes "它并不会有任何的作用";
+		mes "[惩盞焊]";
+		mes "ㄏ眤祑琌盢ウ础";
+		mes "祏糃摸础佳";
+		mes "琌狿礛-";
+		mes "ウぃ穦Τヴノ";
 		next;
-		mes "[凯密尔]";
-		mes "还有, 大部分商店中所";
-		mes "贩卖的铠甲类";
-		mes "也会有没有插槽";
-		mes "的情形存在";
-		mes "只有从魔物那";
-		mes "取得的战利品";
-		mes "才能与之发生作用";
+		mes "[惩盞焊]";
+		mes "临Τ, 场だ坝┍い┮";
+		mes "砪芥馴ヒ摸";
+		mes "穦Τ⊿Τ础佳";
+		mes "薄";
+		mes "Τ眖臸ê";
+		mes "眔驹珇";
+		mes "蒓ぇ祇ネノ";
 		next;
-		mes "[凯密尔]";
-		mes "啊, 对了, 将魔物卡片";
-		mes "插入装备的方法是";
-		mes "打开解除装备的";
-		mes "道具细目表";
-		mes "将滑鼠游标在所欲解除的卡片上";
-		mes "点两下";
+		mes "[惩盞焊]";
+		mes "摆, 癸, 盢臸";
+		mes "础杆称よ猭琌";
+		mes "ゴ秨秆埃杆称";
+		mes "笵ㄣ灿ヘ";
+		mes "盢菲公村夹┮饼秆埃";
+		mes "翴ㄢ";
 		next;
-		mes "[凯密尔]";
-		mes "则会出现标示";
-		mes "它与哪样装备可以配合使用的细目表";
-		mes "您可以很轻易的就装备完成";
+		mes "[惩盞焊]";
+		mes "玥穦瞷夹ボ";
+		mes "ウ蒓妓杆称皌ㄏノ灿ヘ";
+		mes "眤淮碞杆称ЧΘ";
 		close;
 	case 4:
-		mes "[凯密尔]";
-		mes "如果说在尘世大陆上最著名的炼金术-";
-		mes "非艾尔帕兰炼金者公会莫属!!";
-		mes "炼金者公会万岁万万岁!!";
+		mes "[惩盞焊]";
+		mes "狦弧剐嘲程帝芬砃-";
+		mes "獶︺焊┈孽芬そ穦馋妮!!";
+		mes "芬そ穦蒃烦蒃蒃烦!!";
 		close;
 	}
 }
 
-aldebaran,86,228,4	script	小朋友#alde	1_M_SIZ,{
-	mes "[贝贝]";
-	mes "前几天我带着饲养的";
-	mes "小猪宝宝";
-	mes "' 贝贝猪 '";
-	mes "到妙勒尼山脉那";
-	mes "去散步..";
-	mes "贝贝猪是小山猪的一种";
-	mes "相当的可爱";
-	mes "身上有着粉红色的毛发";
+aldebaran,86,228,4	script	狟ね#alde	1_M_SIZ,{
+	mes "[īī]";
+	mes "玡ぱи盿帝箎緄";
+	mes "睫腳腳";
+	mes "' īī睫 '";
+	mes "М扒ェê";
+	mes "床˙..";
+	mes "īī睫琌睫销";
+	mes "讽稲";
+	mes "ōΤ帝︹を祇";
 	next;
-	switch(select("贝贝猪的故事:关于妙勒尼山脉的气氛:结束对话")) {
+	switch(select("īī睫珿ㄆ:闽М扒ェ蒩猑:挡癸杠")) {
 	case 1:
-		mes "[贝贝]";
-		mes "我们沿着山路";
-		mes "一路往上走去";
-		mes "有株有着美丽外表的花, ";
-		mes "没想到它是个巨大的植物怪, ";
-		mes "居然想吃掉我和贝贝猪";
+		mes "[īī]";
+		mes "и猽帝隔";
+		mes "隔┕ǐ";
+		mes "ΤΤ帝腞, ";
+		mes "⊿稱ウ琌エ从┣, ";
+		mes "﹡礛稱奔и㎝īī睫";
 		next;
-		mes "[贝贝]";
-		mes "我害怕的赶紧躲开";
-		mes "然后拿起路上的石头";
-		mes "朝它丢去( 虽然当时我很害怕 )";
-		mes "那家伙居然丝毫没感觉的样子";
-		mes "真是个强悍的家伙啊!";
+		mes "[īī]";
+		mes "и甡┤鱼候跟秨";
+		mes "礛癬隔ホ繷";
+		mes "绰ウメ( 瘤礛讽и甡┤ )";
+		mes "ê產ル﹡礛捣睝⊿稰谋妓";
+		mes "痷琌眏產ル摆!";
 		next;
-		mes "[贝贝]";
-		mes "更令人惊讶的是";
-		mes "它居然有着和人一般的脸";
-		mes "这是真的 !";
-		mes "走近一点";
-		mes "它就会张开血盆大口像要咬您似的!";
+		mes "[īī]";
+		mes "誥砓琌";
+		mes "ウ﹡礛Τ帝㎝羪";
+		mes "硂琌痷 !";
+		mes "ǐ翴";
+		mes "ウ碞穦眎秨﹀钩璶玶眤!";
 		close;
 	case 2:
-		mes "[贝贝]";
-		mes "我原本以为妙勒尼山脉那有各式各样美丽的植物";
-		mes "没想到还有可怕的昆虫";
-		mes "和动物";
-		mes "花 . 虫 .. 特别是蜜蜂和蝴蝶";
-		mes "随意触碰它们的翅膀可是会惹祸上身的";
+		mes "[īī]";
+		mes "иセМ扒ェêΤΑ妓腞从";
+		mes "⊿稱临Τ┤︿";
+		mes "㎝笆";
+		mes " . ︿ .. 疭琌籩噶㎝焦胶";
+		mes "繦種郉窱ウ籋琌穦稴鹤ō";
 		next;
-		mes "[贝贝]";
-		mes "虽然说大部分的野生动物. 昆虫等";
-		mes "不会主动攻击我们";
-		mes "但是一招惹上它们";
-		mes "那可不是开玩笑的 ..";
+		mes "[īī]";
+		mes "瘤礛弧场だ偿ネ笆. ︿单";
+		mes "ぃ穦笆ю阑и";
+		mes "琌┷稴ウ";
+		mes "êぃ琌秨 ..";
 		close;
 	case 3:
-		mes "[贝贝]";
-		mes "说到这, 我家的贝贝猪到哪去了啊.. ?";
-		mes "贝贝猪 ! 快点过来 !";
+		mes "[īī]";
+		mes "弧硂, и產īī睫摆.. ?";
+		mes "īī睫 ! е翴筁ㄓ !";
 		close;
 	}
 }
 
-aldebaran,159,242,4	script	昆虫叔叔#alde	2_M_SWORDMASTER,{
-	mes "[西特龙]";
-	mes "沿着妙勒尼山脉 ..";
-	mes "一路走上去的话";
-	mes "大家都知道 !";
-	mes "依照习性与谋生能力的高低";
-	mes "昆虫也可以被分为好多种 ..";
-	mes "这些您知道吗 ?";
+aldebaran,159,242,4	script	︿#alde	2_M_SWORDMASTER,{
+	mes "[﹁疭纒]";
+	mes "猽帝М扒ェ ..";
+	mes "隔ǐ杠";
+	mes "產常笵 !";
+	mes "ㄌ酚策┦蒓垦ネ蔼";
+	mes "︿砆だ销 ..";
+	mes "硂ㄇ眤笵盾 ?";
 	next;
-	if (select("关于昆虫:结束对话") == 1) {
-		mes "[西特龙]";
-		mes "花虫或是. 蝴蝶 .. 等";
-		mes "在花丛之间穿梭飞舞";
-		mes "采集花蜜";
-		mes "脚上沾满花粉";
-		mes "飞来飞去";
-		mes "?花完成散布花粉的工作";
-		mes "真是可爱..";
+	if (select("闽︿:挡癸杠") == 1) {
+		mes "[﹁疭纒]";
+		mes "︿┪琌. 焦胶 .. 单";
+		mes "翺ぇ丁濒籖";
+		mes "栋籩";
+		mes "竲猤骸";
+		mes "ㄓ";
+		mes "?ЧΘ床ガ";
+		mes "痷琌稲..";
 		next;
-		mes "[西特龙]";
-		mes "啊, 话虽如此";
-		mes "但是也不能小看这些家伙";
-		mes "千万别忽略了";
-		mes "它们为了生存";
-		mes "也各有各的战斗能力";
-		mes "不断的使自己进化再进化";
+		mes "[﹁疭纒]";
+		mes "摆, 杠瘤";
+		mes "琌ぃ硂ㄇ產ル";
+		mes "蒃┛菠";
+		mes "ウネ";
+		mes "Τ驹ゆ";
+		mes "ぃ耞ㄏ秈て秈て";
 		next;
-		mes "[西特龙]";
-		mes "另外, 有种以这类昆虫为食的";
-		mes "肉食性昆虫";
-		mes "像是螳螂或蜘蛛";
-		mes "以及蜈蚣等";
-		mes "代表性的昆虫";
+		mes "[﹁疭纒]";
+		mes ", Τ销硂摸︿";
+		mes "ψ┦︿";
+		mes "钩琌廉礁┪籮碉";
+		mes "の讣癎单";
+		mes "┦︿";
 		next;
-		mes "[西特龙]";
-		mes "有些魔物以昆虫的型态出现";
-		mes "它们拥有着高等级力量";
-		mes "力量强大";
-		mes "像是蜈蚣或蜘蛛";
-		mes "或者是脐螬等未知的家伙!";
+		mes "[﹁疭纒]";
+		mes "Τㄇ臸︿篈瞷";
+		mes "ウ局Τ帝蔼单秖";
+		mes "秖眏";
+		mes "钩琌讣癎┪籮碉";
+		mes "┪琌吕頬单ゼ產ル!";
 		next;
-		mes "[西特龙]";
-		mes "要特别小心 !";
-		mes "您得离它们远一点 !";
-		mes "因为还好有一点可以庆幸的是";
-		mes "这些家伙";
-		mes "它们的视力并不好";
+		mes "[﹁疭纒]";
+		mes "璶疭み !";
+		mes "眤眔置ウ环翴 !";
+		mes "临Τ翴紋┋琌";
+		mes "硂ㄇ產ル";
+		mes "ウ跌ぃ";
 		next;
-		mes "[西特龙]";
-		mes "您走远一点的话";
-		mes "它们就会看不到您..";
+		mes "[﹁疭纒]";
+		mes "眤ǐ环翴杠";
+		mes "ウ碞穦ぃ眤..";
 		close;
 	}
-	mes "[西特龙]";
-	mes "再美看起来再柔弱的";
-	mes "昆虫";
-	mes "也千万不要掉以轻心";
-	mes "否则可是会惹上大麻烦喔 -";
-	mes "千万别小觑";
-	mes "妙勒尼山脉的大自然 ..";
+	mes "[﹁疭纒]";
+	mes "癬ㄓ琗畓";
+	mes "︿";
+	mes "蒃ぃ璶奔淮み";
+	mes "玥琌穦稴陈沸翅 -";
+	mes "蒃蝮";
+	mes "М扒ェ礛 ..";
 	close;
 }
 
-aldebaran,60,70,4	script	小姐#alde	1_F_04,{
-	mes "[塞尔维亚]";
-	mes "听说在这艾尔帕兰村落某个地方有卡普拉总公司";
-	mes "所以才远从普隆得拉到艾尔帕兰来";
-	mes "可是 .. 可是 .. 哎哟";
+aldebaran,60,70,4	script	﹋#alde	1_F_04,{
+	mes "[峨焊蝴ㄈ]";
+	mes "弧硂︺焊┈孽辅琘よΤ炊┰羆そ";
+	mes "┮环眖炊订眔┰︺焊┈孽ㄓ";
+	mes "琌 .. 琌 .. 玼抽";
 	next;
-	mes "[塞尔维亚]";
-	mes "我找寻卡普拉服务中心总公司";
-	mes "已经五个小时, 不, 超过了...";
-	mes "到底它在哪里呢.. 真是~";
-	mes "我看起来虽然聪明, ";
-	mes "但其实是个不折不扣的大路痴";
+	mes "[峨焊蝴ㄈ]";
+	mes "ит碝炊┰狝叭いみ羆そ";
+	mes "竒き, ぃ, 禬筁...";
+	mes "┏ウń㎡.. 痷琌~";
+	mes "и癬ㄓ瘤礛羙, ";
+	mes "ㄤ龟琌ぃчぃΙ隔扶";
 	next;
-	mes "[塞尔维亚]";
-	mes "啊, 不过我知道一个";
-	mes "应该还蛮有用的小道消息";
-	mes "想不想知道啊 ?";
+	mes "[峨焊蝴ㄈ]";
+	mes "摆, ぃ筁и笵";
+	mes "莱赣临芞Τノ笵";
+	mes "稱ぃ稱笵摆 ?";
 	next;
-	if (select("继续对话:取消") == 1) {
-		mes "[塞尔维亚]";
-		mes "购买装备道具或是";
-		mes "从魔物身上得到";
-		mes "战利品时";
+	if (select("膥尿癸杠:") == 1) {
+		mes "[峨焊蝴ㄈ]";
+		mes "潦禦杆称笵ㄣ┪琌";
+		mes "眖臸ō眔";
+		mes "驹珇";
 		next;
-		mes "[塞尔维亚]";
-		mes "虽然名称上它是装备道具";
-		mes "但是也有可能无法完成装备的动作";
-		mes "这个时候呢..  可以使用!!";
-		mes "那就是^3355FF放大镜!! ^000000";
+		mes "[峨焊蝴ㄈ]";
+		mes "瘤礛嘿ウ琌杆称笵ㄣ";
+		mes "琌Τ礚猭ЧΘ杆称笆";
+		mes "硂㎡..  ㄏノ!!";
+		mes "ê碞琌^3355FF描!! ^000000";
 		next;
-		mes "[塞尔维亚]";
-		mes "使用特殊眼镜的话";
-		mes "即使身边没有铁匠";
-		mes "您也可以轻易的鉴识该道具喔!";
+		mes "[峨焊蝴ㄈ]";
+		mes "ㄏノ疭泊描杠";
+		mes "ㄏō娩⊿Τ臟";
+		mes "眤淮懦醚赣笵ㄣ翅!";
 		close;
 	}
-	mes "[塞尔维亚]";
-	mes "真是 .....";
+	mes "[峨焊蝴ㄈ]";
+	mes "痷琌 .....";
 	close;
 }
 
-aldebaran,93,80,4	script	长腿少年	1_M_02,{
-	mes "[裘卡缇]";
-	mes "艾尔帕兰都市里到处都有流着清澈的水的水道";
-	mes "水流潺潺, 呈现一片秀丽的美好景观";
-	mes "但. 是 . 呢";
+aldebaran,93,80,4	script	籐ぶ	1_M_02,{
+	mes "[甘絳]";
+	mes "︺焊┈孽常カń矪常Τ瑈帝睲韩笵";
+	mes "瑈茧茧, 瞷╭腞春芠";
+	mes ". 琌 . ㎡";
 	next;
-	mes "[裘卡缇]";
-	mes "昨天晚上, 就在我偷偷要去会女友的途中";
-	mes "我的脚却不小心踩进了水沟里去";
-	mes "害我们原本应该是美丽浪漫的约会完全泡汤了";
+	mes "[甘絳]";
+	mes "琎ぱ边, 碞и敖敖璶穦ね硚い";
+	mes "и竲玱ぃみ津秈肪ń";
+	mes "甡иセ莱赣琌腞憨穦Ч獁傣";
 	next;
-	if (select("就只是这样:结束对话.") == 1) {
-		mes "[裘卡缇]";
-		mes "这是我昨天听我女友";
-		mes "也就是防御道具店老板的小女儿说的";
-		mes "比起在武器店或是防御道具店";
-		mes "所贩卖的商品";
+	if (select("碞琌硂妓:挡癸杠.") == 1) {
+		mes "[甘絳]";
+		mes "硂琌и琎ぱиね";
+		mes "碞琌ň眘笵ㄣ┍ρ狾弧";
+		mes "ゑ癬猌竟┍┪琌ň眘笵ㄣ┍";
+		mes "┮砪芥坝珇";
 		next;
-		mes "[裘卡缇]";
-		mes "有些从魔物身上取得的战利品";
-		mes "的性能";
-		mes "还比较高呢";
+		mes "[甘絳]";
+		mes "Τㄇ眖臸ō眔驹珇";
+		mes "┦";
+		mes "临ゑ耕蔼㎡";
 		next;
-		mes "[裘卡缇]";
-		mes "换句话来说";
-		mes "应该就是' 功能多多 ' 的意思吧 ?";
-		mes "虽然我其实";
-		mes "不太确定这话的真实性..";
+		mes "[甘絳]";
+		mes "传杠ㄓ弧";
+		mes "莱赣碞琌'  ' 種 ?";
+		mes "瘤礛иㄤ龟";
+		mes "ぃび谔﹚硂杠痷龟┦..";
 		close;
 	}
-	mes "[裘卡缇]";
-	mes "呜呜呜 ..";
-	mes "您一定认为我是个头脑简单";
-	mes "四肢发达的蠢蛋是吗?";
+	mes "[甘絳]";
+	mes "躲躲躲 ..";
+	mes "眤﹚粄и琌繷福虏虫";
+	mes "祇笷镍矹琌盾?";
 	close;
 }
 
-aldebaran,180,46,4	script	东方人#alde	4_M_ORIENT01,{
-	mes "[河朱祚]";
-	mes "我是从叫做斐扬的森林之都来的观光客";
-	mes "这里.. 到处都有流水";
-	mes "让人感觉好清凉喔";
+aldebaran,180,46,4	script	狥よ#alde	4_M_ORIENT01,{
+	mes "[猠Χ]";
+	mes "и琌眖暗创喘此狶ぇ常ㄓ芠";
+	mes "硂ń.. 矪常Τ瑈";
+	mes "琵稰谋睲睤翅";
 	next;
-	mes "[河朱祚]";
-	mes "不过.. 这水 ..";
-	mes "可以生饮吗 ?";
-	mes "其实 ..... 我已经喝过了 ..";
+	mes "[猠Χ]";
+	mes "ぃ筁.. 硂 ..";
+	mes "ネ都盾 ?";
+	mes "ㄤ龟 ..... и竒耻筁 ..";
 	next;
-	if (select("继续对话:结束对话.") == 1) {
-		mes "[河朱祚]";
-		mes "我现在正在旅游, 打算踏遍整个尘世大陆";
-		mes "这是我到达艾尔帕兰前";
-		mes "一位高级魔法师告诉我的";
+	if (select("膥尿癸杠:挡癸杠.") == 1) {
+		mes "[猠Χ]";
+		mes "и瞷タ村, ゴ衡今筂俱剐嘲";
+		mes "硂琌и笷︺焊┈孽玡";
+		mes "蔼臸猭畍禗и";
 		next;
-		mes "[河朱祚]";
-		mes "对付没有实体的 ^3355FF念属性^000000 魔物";
-		mes "使用无属性攻击或是魔法";
-		mes "是不容易对魔物产生伤害的";
+		mes "[猠Χ]";
+		mes "癸⊿Τ龟蔨 ^3355FF├妮┦^000000 臸";
+		mes "ㄏノ礚妮┦ю阑┪琌臸猭";
+		mes "琌ぃ甧癸臸玻ネ端甡";
 		next;
-		mes "[河朱祚]";
-		mes "希望这对您会有帮助";
-		mes "那么..";
+		mes "[猠Χ]";
+		mes "辨硂癸眤穦Τ腊";
+		mes "ê..";
 		close;
 	}
-	mes "[河朱祚]";
-	mes "不知道是不是因为艾尔帕兰这个地方";
-	mes "四周的环境相当的干净";
-	mes "所以水的味道尝起来也特别的甘甜";
-	mes "即使是喝有船在行走的的河里的水也没关系的样子";
+	mes "[猠Χ]";
+	mes "ぃ笵琌ぃ琌︺焊┈孽硂よ";
+	mes "㏄吏挂讽瞓";
+	mes "┮笵沽癬ㄓ疭ヌ并";
+	mes "ㄏ琌耻Τ差︽ǐ猠ń⊿闽╰妓";
 	close;
 }
 
-aldebaran,212,122,4	script	艾尔帕兰老百姓#alde	4W_M_01,{
-	mes "[石林德]";
-	mes "欢迎光临 ! 这里是艾尔帕兰!";
-	mes "我们艾尔帕兰老百姓非常地欢迎您";
+aldebaran,212,122,4	script	︺焊┈孽ρκ﹎#alde	4W_M_01,{
+	mes "[ホ狶紈]";
+	mes "舧羬 ! 硂ń琌︺焊┈孽!";
+	mes "и︺焊┈孽ρκ﹎獶盽舧眤";
 	mes ". . . . .";
 	next;
-	mes "[石林德]";
-	mes "太隆重了是吗 ? 因为是市民代表嘛 ..";
-	mes "嗯, 那么就我一个人.. 热烈地竭诚地 ..";
+	mes "[ホ狶紈]";
+	mes "び订琌盾 ? 琌カチ估 ..";
+	mes "垛, ê碞и.. 荐疨很港 ..";
 	next;
-	mes "[石林德]";
-	mes "欢迎您的到来!";
+	mes "[ホ狶紈]";
+	mes "舧眤ㄓ!";
 	next;
-	if (select("继续对话:结束对话.") == 1) {
-		mes "[石林德]";
-		mes "啊, 这么说来您大概是遇上了";
-		mes "那些有趣的家伙了吧!";
-		mes "这是几天前的事";
-		mes "包围着艾尔帕兰的";
+	if (select("膥尿癸杠:挡癸杠.") == 1) {
+		mes "[ホ狶紈]";
+		mes "摆, 硂弧ㄓ眤阀琌笿";
+		mes "êㄇΤ届產ル!";
+		mes "硂琌ぱ玡ㄆ";
+		mes "瞅帝︺焊┈孽";
 		next;
-		mes "[石林德]";
-		mes "妙勒尼山脉树林附近";
-		mes "我看到了戴着天使般翅膀的波利 !";
-		mes "是真的!";
+		mes "[ホ狶紈]";
+		mes "М扒ェ攫狶";
+		mes "и拦帝ぱㄏ籋猧 !";
+		mes "琌痷!";
 		next;
-		mes "[石林德]";
-		mes "它混杂在其他普通的波利群中";
-		mes "蹦蹦跳跳的";
-		mes "听说它叫做天使波利 ..";
-		mes "不知道它到底是何方神圣?";
+		mes "[ホ狶紈]";
+		mes "ウ睼馒ㄤ炊硄猧竤い";
+		mes "论论铬铬";
+		mes "弧ウ暗ぱㄏ猧 ..";
+		mes "ぃ笵ウ┏琌よ蒾?";
 		close;
 	}
-	mes "[石林德]";
-	mes "艾尔帕兰是个相当洁净, 并且周围被美丽的妙勒尼山脉";
-	mes "所环绕着的迷人都市";
-	mes "诚挚的欢迎您来到";
-	mes "艾尔帕兰城市";
+	mes "[ホ狶紈]";
+	mes "︺焊┈孽琌讽稀瞓, ㏄瞅砆腞М扒ェ";
+	mes "┮吏露帝癵常カ";
+	mes "港及舧眤ㄓ";
+	mes "︺焊┈孽カ";
 	close;
 }
 
-aldebaran,146,124,4	script	村落少女	4W_F_01,{
-	mes "[坎夏普特]";
-	mes "听说这个世界上存在着一个叫做 ^3355FF' 刺客公会 '^000000 的地方";
-	mes "他们把人不知鬼不觉地杀人秘诀传授给人家";
-	mes "那个地方 ..";
+aldebaran,146,124,4	script	辅ぶ	4W_F_01,{
+	mes "[Б甃炊疭]";
+	mes "弧硂帝暗 ^3355FF' そ穦 '^000000 よ";
+	mes "рぃ碍ぃ谋炳砕肚甭倒產";
+	mes "êよ ..";
 	next;
-	mes "[坎夏普特]";
-	mes "应该是非法的吧 ?";
+	mes "[Б甃炊疭]";
+	mes "莱赣琌獶猭 ?";
 	mes ". . . . .";
-	mes "是非法的也要付学费啊?";
+	mes "琌獶猭璶厩禣摆?";
 	next;
-	if (select("继续对话:结束对话.") == 1) {
-		mes "[坎夏普特]";
-		mes "有翅膀的魔物的飞行能力";
-		mes "大部分";
-		mes "移动与攻击速度都很快";
-		mes "因此您要攻击对方";
-		mes "相当的困难";
+	if (select("膥尿癸杠:挡癸杠.") == 1) {
+		mes "[Б甃炊疭]";
+		mes "Τ籋臸︽";
+		mes "场だ";
+		mes "簿笆蒓ю阑硉常е";
+		mes "眤璶ю阑癸よ";
+		mes "讽螟";
 		next;
-		mes "[坎夏普特]";
-		mes "所以呢, 要对付这些魔物的时候";
-		mes "就必须要有更灵活的灵巧度 (DEX) ";
-		mes "对吧?";
+		mes "[Б甃炊疭]";
+		mes "┮㎡, 璶癸硂ㄇ臸";
+		mes "碞ゲ斗璶Τ艶艶ォ (DEX) ";
+		mes "癸?";
 		close;
 	}
-	mes "[坎夏普特]";
-	mes "这世上没有白吃的午餐";
-	mes "当然啦, 也许可以免费接受教育";
-	mes "不过倒也不一定啦";
-	mes "嗯嗯嗯..";
+	mes "[Б甃炊疭]";
+	mes "硂⊿Τフと繺";
+	mes "讽礛罢, 砛禣钡毙▅";
+	mes "ぃ筁ぃ﹚罢";
+	mes "垛垛垛..";
 	close;
 }
 
-aldebaran,143,136,4	script	钟楼怪人#A	89,{
-	mes "[本佐民 豪]";
-	mes "我是'地乐会'所属艾尔帕兰钟塔管理人, 大家都叫我'钟楼怪人'您看起来好像对钟塔很感兴趣的样子?要不要我告诉您一些有关钟塔的故事.";
+aldebaran,143,136,4	script	牧加┣#A	89,{
+	mes "[セ︴チ 花]";
+	mes "и琌'贾穦'┮妮︺焊┈孽牧娥恨瞶, 產常и'牧加┣'眤癬ㄓ钩癸牧娥稰砍届妓?璶ぃ璶и禗眤ㄇΤ闽牧娥珿ㄆ.";
 	next;
-	if (select("听取有关钟塔的故事:结束对话") == 1) {
-		mes "[本佐民 豪]";
-		mes "透过钟塔的母钟将好几个钟连成一个这就是所谓的'屋间连通传送门系统'装置";
+	if (select("Τ闽牧娥珿ㄆ:挡癸杠") == 1) {
+		mes "[セ︴チ 花]";
+		mes "硓筁牧娥ダ牧盢牧硈Θ硂碞琌┮孔'丁硈硄肚癳╰参'杆竚";
 		next;
-		mes "[本佐民 豪]";
-		mes "在钟塔里的传送门虽然互相有连结, 但是里头也有些'随机传送门'装置, 这种装置会让您被送往不明的地方去, 如果您和同伴打算一起进入钟塔内的话, 可千万得小心随机传送门的装置喔.. ";
+		mes "[セ︴チ 花]";
+		mes "牧娥ń肚癳瘤礛がΤ硈挡, 琌ń繷Τㄇ'繦审肚癳'杆竚, 硂销杆竚穦琵眤砆癳┕ぃよ, 狦眤㎝︸ゴ衡癬秈牧娥ず杠, 蒃眔み繦审肚癳杆竚翅.. ";
 		next;
-		mes "[本佐民 豪]";
-		mes "给您一些暗示吧!随机传送门在迷您地图上会以绿色的标记标示出来, 只要看着迷您地图上的标示小心一点就可以避免了, 希望您玩的愉快, 哈哈哈...";
+		mes "[セ︴チ 花]";
+		mes "倒眤ㄇ穞ボ!繦审肚癳癵眤瓜穦厚︹夹癘夹ボㄓ, 璶帝癵眤瓜夹ボみ翴碞磷, 辨眤磖е, ...";
 		close;
 	}
 	close;
@@ -825,330 +825,330 @@ aldebaran,143,136,4	script	钟楼怪人#A	89,{
 
 // Inside Al De Baran
 //============================================================
-aldeba_in,232,241,4	script	艾尔帕兰小市民#alde	48,{
-	mes "[艾尔帕兰小市民]";
-	mes "我的名字跟人家与众不同, 我说的话也许无趣";
-	mes "但是请不要怕我, 我其实是个好人..";
+aldeba_in,232,241,4	script	︺焊┈孽カチ#alde	48,{
+	mes "[︺焊┈孽カチ]";
+	mes "и蛤產蒓渤ぃ, и弧杠砛礚届";
+	mes "琌叫ぃ璶┤и, иㄤ龟琌..";
 	next;
-	mes "[艾尔帕兰小市民]";
-	mes "虽然我有着和一般人与众不同的心脏..";
-	mes "那是像机车一般低贱的二行程心脏";
-	mes "我不知道这样的心脏跳动的声音是不是很刺耳..";
-	mes "但为了艾尔帕兰的未来, 我一定会坚持下去的";
+	mes "[︺焊┈孽カチ]";
+	mes "瘤礛иΤ帝㎝蒓渤ぃみ纽..";
+	mes "ê琌钩审ó解︽祘み纽";
+	mes "иぃ笵硂妓み纽铬笆羘琌ぃ琌φ..";
+	mes "︺焊┈孽ゼㄓ, и﹚穦绊";
 	next;
-	if (select("听听他的故事.:结束对话") == 1) {
-		mes "[艾尔帕兰小市民]";
-		mes "..已经过了三年了..";
-		mes "我哥哥九九六当选艾尔帕兰代表短距离赛跑选手至今已经三年了..";
-		mes "那时大家都尊称他为' 艾尔帕兰的大嘴鸟'";
-		mes "他可是个名符其实的长跑健将呢..";
+	if (select("珿ㄆ.:挡癸杠") == 1) {
+		mes "[︺焊┈孽カチ]";
+		mes "..竒筁..";
+		mes "иせ讽匡︺焊┈孽祏禯置辽禲匡もさ竒..";
+		mes "ê產常碙嘿' ︺焊┈孽糒尘'";
+		mes "琌才ㄤ龟禲胺盢㎡..";
 		next;
-		mes "[艾尔帕兰小市民]";
-		mes "艾尔帕兰隔四年举办一次的' 艾尔帕兰大会'";
-		mes "有许多为了看我哥哥一眼从世界各地来的疯狂赛跑迷..";
-		mes "害得作为哥哥经纪人的我都快要发疯了";
-		mes "那时他受喜爱的程度真是无远弗届..";
+		mes "[︺焊┈孽カチ]";
+		mes "︺焊┈孽筳羭快Ω' ︺焊┈孽穦'";
+		mes "Τ砛и泊眖ㄓ浩╣辽禲癵..";
+		mes "甡眔竒и常е璶祇浩";
+		mes "ê尺稲祘痷琌礚环ケ..";
 		next;
-		mes "[艾尔帕兰小市民]";
-		mes "但是, 毕竟这世界上没有什么是永恒的..";
-		mes "我哥竟然被有一个住在叫做斐扬森林里一个村落的少女给打败";
-		mes "输掉了那一场比赛";
+		mes "[︺焊┈孽カチ]";
+		mes "琌, 拨澈硂⊿Τぐ琌ッ..";
+		mes "и澈礛砆Τ暗创喘此狶ń辅ぶ倒ゴ毖";
+		mes "块奔ê初ゑ辽";
 		next;
-		mes "[艾尔帕兰小市民]";
-		mes "我哥自从那次比赛之后太过热衷于训练而心脏病发";
-		mes "现在只能在病床上看着我";
+		mes "[︺焊┈孽カチ]";
+		mes "и眖êΩゑ辽ぇび筁荐癑癡絤τみ纽痜祇";
+		mes "瞷痜帝и";
 		next;
-		mes "[艾尔帕兰小市民]";
-		mes "我是艾尔帕兰的未来也是我哥哥的希望!";
-		mes "等着瞧!我一定会把斐扬的' 飞毛腿　河帕那' 给打败的!";
+		mes "[︺焊┈孽カチ]";
+		mes "и琌︺焊┈孽ゼㄓ琌и辨!";
+		mes "单帝罖!и﹚穦р创喘' を籐猠┈ê' 倒ゴ毖!";
 		close;
 	}
-	mes "[艾尔帕兰小市民]";
-	mes "我有一天一定会去环游世界!";
-	mes "打从港口之都艾尔贝塔向远望去的大海会有多么好看呢..";
-	mes "等明年田径比赛结束之后我一定要跟我哥哥去环游世界!";
+	mes "[︺焊┈孽カチ]";
+	mes "иΤぱ﹚穦吏村!";
+	mes "ゴ眖翠ぇ常︺焊ī娥环辨穦Τ㎡..";
+	mes "单バ畖ゑ辽挡ぇи﹚璶蛤и吏村!";
 	close;
 }
 
-aldeba_in,223,121,4	script	凶悍的大叔	1_M_SMITH,{
-	mes "[凶悍的大叔]";
-	mes "喂喂, 您怎么可以随意闯进人家的家里来!";
-	mes "真是太莫名其妙了! ";
-	mes "您凭什么闯进我家里来跟我说话啊?";
+aldeba_in,223,121,4	script	た	1_M_SMITH,{
+	mes "[た]";
+	mes "侈侈, 眤繦種卖秈產產ńㄓ!";
+	mes "痷琌び馋ㄤМ! ";
+	mes "眤咎ぐ卖秈и產ńㄓ蛤и弧杠摆?";
 	next;
-	mes "[凶悍的大叔]";
-	mes "嘿嘿嘿 … 我知道了, 我知道了";
-	mes "我把虚拟世界和现实世界给搞混了..";
+	mes "[た]";
+	mes "糑糑糑  и笵, и笵";
+	mes "ир店览㎝瞷龟倒穌睼..";
 	next;
-	if (select("- 继续:-离开") == 1) {
-		mes "[凶悍的大叔]";
-		mes "年轻人, 我不知道您是否知道";
-		mes "在这世界里存在着佣兵系统";
-		mes "而我也是属于佣兵中的其中一种 ..";
+	if (select("- 膥尿:-置秨") == 1) {
+		mes "[た]";
+		mes "淮, иぃ笵眤琌笵";
+		mes "硂ń帝╰参";
+		mes "τи琌妮いㄤい销 ..";
 		next;
-		mes "[凶悍的大叔]";
-		mes "佣兵的意义和佣兵系统其实很容易了解";
-		mes "其实就是花钱找个战争的伙伴..";
-		mes "越有实力身价也会越高..";
+		mes "[た]";
+		mes "種竡㎝╰参ㄤ龟甧秆";
+		mes "ㄤ龟碞琌窥т驹ル︸..";
+		mes "禫Τ龟ō刹穦禫蔼..";
 		next;
-		mes "[凶悍的大叔]";
-		mes "不要再说这么无聊的话了!";
-		mes "我把可以挑选好佣兵的办法";
-		mes "简单的说给您听";
+		mes "[た]";
+		mes "ぃ璶弧硂礚册杠!";
+		mes "ир珼匡快猭";
+		mes "虏虫弧倒眤";
 		next;
-		mes "[凶悍的大叔]";
-		mes "首先要看一看鼻头干不干净";
-		mes "好佣兵的鼻头一向都";
-		mes "湿湿地, 如果干干地";
-		mes "那就代表他感冒了  ..";
+		mes "[た]";
+		mes "璶惑繷ぃ瞓";
+		mes "惑繷常";
+		mes "楞楞, 狦";
+		mes "ê碞稰玙  ..";
 		next;
-		mes "[凶悍的大叔]";
-		mes "还有脚腕是一定要细才";
-		mes "作为佣兵还是要有细脚腕和白净的脖子才可以!";
-		mes "再加上具有柔顺的长直头发或者花点钱烫头发就是最好不过的了?!";
+		mes "[た]";
+		mes "临Τ竲得琌﹚璶灿";
+		mes "临琌璶Τ灿竲得㎝フ瞓蹭!";
+		mes "ㄣΤ琗抖繷祇┪翴窥縎繷祇碞琌程ぃ筁?!";
 		next;
-		mes "[凶悍的大叔]";
-		mes "最后作为佣兵..其实就是一种服务..!";
-		mes "为了让消费者心花怒放";
-		mes "时时刻刻跟在您的身边, 不吝给予批评指教的, 这才是真正的佣兵!";
-		mes "当然也别忘了要适时贴心的递上湿的手巾!";
+		mes "[た]";
+		mes "程..ㄤ龟碞琌销狝叭..!";
+		mes "琵禣み";
+		mes "ㄨㄨ蛤眤ō娩, ぃ倒ぉу蝶毙, 硂琌痷タ!";
+		mes "讽礛а璶屿禟み患楞も!";
 		close;
 	}
-	mes "[凶悍的大叔]";
-	mes "还不赶快滚出去?";
-	mes "如果是员警就把搜索票拿出来..";
-	mes "如果您是我们家族的一份子的话, 就给我看在您屁股上的斑点!";
+	mes "[た]";
+	mes "临ぃ鱼е簎?";
+	mes "狦琌牡碞р穓布ㄓ..";
+	mes "狦眤琌и產壁杠, 碞倒и眤Ь闯翴!";
 	close;
 }
 
-aldeba_in,219,61,4	script	形象良好的大叔	4_M_MANAGER,{
-	mes "[形象良好的大叔]";
-	mes "别再听住在隔壁的凶悍大叔说的话了..";
-	mes "前年他为了要摘在私立佣兵训练内树上的果子";
-	mes "在从树上摔下来头撞到地上, 才会变成现在这个样子..";
+aldeba_in,219,61,4	script	禜▆	4_M_MANAGER,{
+	mes "[禜▆]";
+	mes "筳纠た弧杠..";
+	mes "玡璶篕╬ミ癡絤ず攫狦";
+	mes "眖攫篖ㄓ繷疾, 穦跑Θ瞷硂妓..";
 	next;
-	mes "[形象良好的大叔]";
-	mes "再这样继续谈下去我也快要疯了..";
-	mes "唉呦, 头痛啊!";
+	mes "[禜▆]";
+	mes "硂妓膥尿酵ие璶浩..";
+	mes "绥, 繷礹摆!";
 	close;
 }
 
-aldeba_in,152,47,4	script	大题小作的青年	4W_M_01,{
-	mes "[小题大作的青年]";
-	mes "不不不..不好了!";
-	mes "我家养的宝贝小鸡";
-	mes "不见了!!";
+aldeba_in,152,47,4	script	肈獵	4W_M_01,{
+	mes "[肈獵]";
+	mes "ぃぃぃ..ぃ!";
+	mes "и產緄腳ī蔓";
+	mes "ぃǎ!!";
 	next;
-	if (select("小鸡的名字叫做什么呢?:. . . . .") == 1) {
-		mes "[小题大作的青年]";
-		mes "叫做' 了不起的小鸡 ' ..";
-		mes "唉唷, 这下子可怎么办才好~";
-		mes "求求您帮我找找我可爱的小鸡吧 ~";
+	if (select("蔓暗ぐ㎡?:. . . . .") == 1) {
+		mes "[肈獵]";
+		mes "暗' ぃ癬蔓 ' ..";
+		mes ", 硂快~";
+		mes "――眤腊итти稲蔓 ~";
 		next;
-		if (select("什么嘛!这名字太普通了不是吗?:. . . . .") == 1) {
-			mes "[小题大作的青年]";
-			mes "您说这是什么话啊!";
-			mes "我们家 ' 了不起的小鸡 ' 可是这世界上独一无二的耶";
-			mes "它超级无敌可爱的说!! 真是不懂欣赏 ?";
+		if (select("ぐ估!硂び炊硄ぃ琌盾?:. . . . .") == 1) {
+			mes "[肈獵]";
+			mes "眤弧硂琌ぐ杠摆!";
+			mes "и產 ' ぃ癬蔓 ' 琌硂縒礚瑿";
+			mes "ウ禬礚寄稲弧!! 痷琌ぃ来猋洁 ?";
 			close;
 		}
-		mes "[小题大作的青年]";
-		mes "您说这是什么话啊!";
-		mes "我们家 ' 了不起的小鸡 ' 可是这世界上独一无二的耶";
-		mes "它超级无敌可爱的说!! 真是不懂欣赏 ?";
+		mes "[肈獵]";
+		mes "眤弧硂琌ぐ杠摆!";
+		mes "и產 ' ぃ癬蔓 ' 琌硂縒礚瑿";
+		mes "ウ禬礚寄稲弧!! 痷琌ぃ来猋洁 ?";
 		close;
 	}
-	mes "[小题大作的青年]";
-	mes "您不要把人看扁了!";
-	mes "我家没有兄弟姊妹, 所以我一直把它当作我的弟弟一样看待!";
-	mes "呜哇哇哇哇 ; ; ; ; ;";
+	mes "[肈獵]";
+	mes "眤ぃ璶р!";
+	mes "и產⊿Τ﹏ゝ, ┮ирウ讽и妓!";
+	mes "躲珃珃珃珃 ; ; ; ; ;";
 	close;
 }
 
-aldeba_in,156,179,4	script	酒店娱乐伙伴#alde	1_M_PUBMASTER,{
-	mes "[娱乐伙伴]";
-	mes "在艾尔帕兰有间卡普拉总公司..";
-	mes "在那公司女上班族们偶尔会到我们酒店来玩";
-	mes "她们都非常地开朗活泼";
+aldeba_in,156,179,4	script	皊┍甌贾ル︸#alde	1_M_PUBMASTER,{
+	mes "[甌贾ル︸]";
+	mes "︺焊┈孽Τ丁炊┰羆そ..";
+	mes "êそ痁壁案焊穦и皊┍ㄓ";
+	mes "常獶盽秨尖";
 	next;
-	mes "[娱乐伙伴]";
-	mes "那么现在就进入我们小小测验!";
-	mes "也就是测验您理想对象是谁的'感谢娱乐伙伴'的时间 !";
-	mes "哈…哈 …是男是女都无所谓";
+	mes "[甌贾ル︸]";
+	mes "ê瞷碞秈и代喷!";
+	mes "碞琌代喷眤瞶稱癸禜琌街'稰谅甌贾ル︸'丁 !";
+	mes " 琌╧琌常礚┮孔";
 	next;
-	mes "[娱乐伙伴]";
-	mes "只要选出平时您觉得…觉得…";
-	mes "哇!她很亲切很有魅力的 ~";
-	mes "…卡普拉小姐就行了!";
+	mes "[甌贾ル︸]";
+	mes "璶匡キ眤谋眔谋眔";
+	mes "珃!克ちΤ緔 ~";
+	mes "炊┰﹋碞︽!";
 	next;
-	if (select("喔喔, 一定很有趣!:唉呀, 我才不要玩.") == 1) {
-		mes "[娱乐伙伴]";
-		mes "那么, 要慎重的选择喔!";
-		mes "选选看哪个最合您的意吧!";
+	if (select("翅翅, ﹚Τ届!:, иぃ璶.") == 1) {
+		mes "[甌贾ル︸]";
+		mes "ê, 璶稸匡拒翅!";
+		mes "匡匡程眤種!";
 		next;
-		mes "[娱乐伙伴]";
-		mes "我们的原先的卡普拉小姐古典的蓝色头发非常地优雅";
-		mes "号码 (1) ^3355FF' 狄波萝太 '^000000 !!";
-		mes "文静的形象吸引许多顽皮的高中男生 !";
-		mes "号码 (2)  ^5533FF' 泰依琳 '^000000 !!";
-		mes "重点是柔顺的长直头发, 相当温柔! 打从斐扬来的";
-		mes "号码 (3)  ^555555' 绣灵 '^000000 !!";
+		mes "[甌贾ル︸]";
+		mes "и炊┰﹋ㄥ屡︹繷祇獶盽涩懂";
+		mes "腹絏 (1) ^3355FF' ╢猧炮び '^000000 !!";
+		mes "ゅ繰禜ま砛箈ブ蔼い╧ネ !";
+		mes "腹絏 (2)  ^5533FF' ㄌ礩 '^000000 !!";
+		mes "翴琌琗抖繷祇, 讽放琗! ゴ眖创喘ㄓ";
+		mes "腹絏 (3)  ^555555' 赂艶 '^000000 !!";
 		next;
-		mes "[娱乐伙伴]";
-		mes "男性般的俏丽短头发让她显得更活泼更有活力..";
-		mes "号码 (4)  ^1133DD' 妣妮 '^000000 !!";
-		mes "又冷静又稳重的上班族形象 ! 很配高级的眼镜框的";
-		mes "号码 (5)  ^33FF55' 克拉丽丝 '^000000 !!";
-		mes "扎着辫子, 嫩嫩地 ~ 看起来很年轻但其实是蛮成熟的 !";
-		mes "号码 (6)  ^AAAA00' 德帛硫 '^000000 !!";
+		mes "[甌贾ル︸]";
+		mes "╧┦玁腞祏繷祇琵陪眔尖Τ..";
+		mes "腹絏 (4)  ^1133DD' Лゞ '^000000 !!";
+		mes "繰铆痁壁禜 ! 皌蔼泊描";
+		mes "腹絏 (5)  ^33FF55' ┰腞捣 '^000000 !!";
+		mes "ゃ帝膢, 灌灌 ~ 癬ㄓ淮ㄤ龟琌芞Θ剪 !";
+		mes "腹絏 (6)  ^AAAA00' 紈┉哺 '^000000 !!";
 		next;
-		mes "[娱乐伙伴]";
-		mes "赞助 : 卡普拉服务中心";
-		mes "…琼达代理公司";
-		mes "解说完毕了 ~ ";
+		mes "[甌贾ル︸]";
+		mes "觅 : 炊┰狝叭いみ";
+		mes "茫笷瞶そ";
+		mes "秆弧Ч拨 ~ ";
 		next;
-		switch(select("(1)狄波萝太:(2)泰依琳:(3)绣灵:(4)妣妮:(5)克拉丽丝:(6)德帛硫")) {
+		switch(select("(1)╢猧炮び:(2)ㄌ礩:(3)赂艶:(4)Лゞ:(5)┰腞捣:(6)紈┉哺")) {
 		case 1:
-			mes "[娱乐伙伴]";
-			mes "喔喔, 相当念旧的您";
-			mes "可真是个固执的人 !";
-			mes "要能接受新文物! 逃避现实是没有用的!";
+			mes "[甌贾ル︸]";
+			mes "翅翅, 讽├侣眤";
+			mes "痷琌㏕磅 !";
+			mes "璶钡穝ゅ! 発磷瞷龟琌⊿Τノ!";
 			close;
 		case 2:
-			mes "[娱乐伙伴]";
-			mes "您怎么一点都无法集中精神啊 !";
-			mes "如果您的伙伴也是跟您一样不能集中精神的话  ..";
-			mes "那可是会打扰到身边的人的耶 !";
+			mes "[甌贾ル︸]";
+			mes "眤翴常礚猭栋い弘摆 !";
+			mes "狦眤ル︸琌蛤眤妓ぃ栋い弘杠  ..";
+			mes "ê琌穦ゴ署ō娩瑿 !";
 			close;
 		case 3:
-			mes "[娱乐伙伴]";
-			mes "一直过着糜烂的生活";
-			mes "会被人家说成没有活力";
-			mes "要为人生订定未来的目标, 朝目标迈进才是啊 !";
+			mes "[甌贾ル︸]";
+			mes "筁帝罶年ネ";
+			mes "穦砆產弧Θ⊿Τ";
+			mes "璶ネ璹﹚ゼㄓヘ夹, 绰ヘ夹邻秈琌摆 !";
 			close;
 		case 4:
-			mes "[娱乐伙伴]";
-			mes "您要作梦作到什么时候啊";
-			mes "难不成您打算这样一直寻找您梦寐以求的对象 ?";
-			mes "面对现实吧 !";
+			mes "[甌贾ル︸]";
+			mes "眤璶冠ぐ摆";
+			mes "螟ぃΘ眤ゴ衡硂妓碝т眤冠碖―癸禜 ?";
+			mes "癸瞷龟 !";
 			close;
 		case 5:
-			mes "[娱乐伙伴]";
-			mes "我跟诚心的对您说一句话";
-			mes "请您打开心胸好吗 !";
-			mes "别只是一个人孤单的玩乐!";
+			mes "[甌贾ル︸]";
+			mes "и蛤港み癸眤弧杠";
+			mes "叫眤ゴ秨み盾 !";
+			mes "琌﹖虫贾!";
 			close;
 		case 6:
-			mes "[娱乐伙伴]";
-			mes "喔 …喔喔  !";
-			mes "渴望拥有幼小情人的您 !";
-			mes "这…这是犯罪的心理 ! ";
+			mes "[甌贾ル︸]";
+			mes "翅 翅翅  !";
+			mes "戴辨局Τギ薄眤 !";
+			mes "硂硂琌デ竜み瞶 ! ";
 			close;
 		}
 	}
-	mes "[娱乐伙伴]";
-	mes "哇哇 !! 昨天连夜作的";
-	mes "您看看喜不喜欢啊!!";
-	mes "讨厌啦～您";
+	mes "[甌贾ル︸]";
+	mes "珃珃 !! 琎ぱ硈";
+	mes "眤尺ぃ尺舧摆!!";
+	mes "癚菇罢°眤";
 	close;
 }
 
-aldeba_in,84,166,4	script	卡普拉服务中心#alde	4_F_KAFRA1,{
+aldeba_in,84,166,4	script	炊┰狝叭いみ#alde	4_F_KAFRA1,{
 	cutin "kafra_01",2;
-	mes "[卡普拉狄波萝太]";
-	mes "欢迎光临!";
-	mes "卡普拉服务中心第一代卡普拉";
-	mes "我是 ' 狄波萝太 ' !请多多关照";
+	mes "[炊┰╢猧炮び]";
+	mes "舧羬!";
+	mes "炊┰狝叭いみ材炊┰";
+	mes "и琌 ' ╢猧炮び ' !叫闽酚";
 	next;
-	mes "[卡普拉狄波萝太]";
-	mes "我们卡普拉服务中心为了时时刻刻满足客";
-	mes "人的要求";
-	mes "秉持诚实、信用、正直三大原则..";
-	mes "正确确实的服务训练和管理而全力以赴的";
+	mes "[炊┰╢猧炮び]";
+	mes "и炊┰狝叭いみㄨㄨ骸ì";
+	mes "璶―";
+	mes "港龟獺ノタ玥..";
+	mes "タ谔谔龟狝叭癡絤㎝恨瞶τ璾";
 	next;
-	if (select("出售卡普拉使用券:请慢走!") == 1) {
+	if (select("扳炊┰ㄏノㄩ:叫篊ǐ!") == 1) {
 		if (countitem(1084) == 0) {
-			mes "[卡普拉狄波萝太]";
-			mes "抱歉,";
-			mes "不过您没有";
-			mes "卡普拉使用券.";
+			mes "[炊┰╢猧炮び]";
+			mes "╆簆,";
+			mes "ぃ筁眤⊿Τ";
+			mes "炊┰ㄏノㄩ.";
 			close2;
 			cutin "",255;
 			end;
 		}
 		else {
 			set .@kafrapassmoney,countitem(1084)*2000;
-			mes "[卡普拉狄波萝太]";
-			mes "让我看看...";
+			mes "[炊┰╢猧炮び]";
+			mes "琵и...";
 			if (countitem(1084) == 1) {
-				mes "您有1张卡普拉使用券.";
-				mes "您可以用它换取 2000 Zeny. 您是不是想把卡普拉使用券卖给我们公司呢?";
+				mes "眤Τ1眎炊┰ㄏノㄩ.";
+				mes "眤ノウ传 2000 Zeny. 眤琌ぃ琌稱р炊┰ㄏノㄩ芥倒иそ㎡?";
 			}
 			else {
-				mes "您有 "+ countitem(1084) +" 卡普拉使用券.";
-				mes "如果您想把它卖给我们的话, 您能获得 "+ .@kafrapassmoney +" zeny. 您是不是想把卡普拉使用券卖给我们公司呢?";
+				mes "眤Τ "+ countitem(1084) +" 炊┰ㄏノㄩ.";
+				mes "狦眤稱рウ芥倒и杠, 眤莉眔 "+ .@kafrapassmoney +" zeny. 眤琌ぃ琌稱р炊┰ㄏノㄩ芥倒иそ㎡?";
 			}
 			next;
-			if (select("- 是:- 否") == 1) {
+			if (select("- 琌:- ") == 1) {
 				if (countitem(1084) == 0) {
-					mes "[卡普拉狄波萝太]";
-					mes "抱歉, 不过您没有卡普拉使用券.";
+					mes "[炊┰╢猧炮び]";
+					mes "╆簆, ぃ筁眤⊿Τ炊┰ㄏノㄩ.";
 					close2;
 					cutin "",255;
 					end;
 				}
 				delitem 1084,countitem(1084); //Kapra's_Pass
 				set Zeny, Zeny + .@kafrapassmoney;
-				mes "[卡普拉狄波萝太]";
-				mes "谢谢.";
+				mes "[炊┰╢猧炮び]";
+				mes "谅谅.";
 			}
 			close2;
 			cutin "",255;
 			end;
 		}
 	}
-	mes "[卡普拉狄波萝太]";
-	mes "谢谢,";
-	mes "祝您生活愉快.";
+	mes "[炊┰╢猧炮び]";
+	mes "谅谅,";
+	mes "眤ネ磖е.";
 	close2;
 	cutin "",255;
 	end;
 }
 
 
-aldeba_in,83,245,4	script	卡普拉服务中心#2alde	4_F_KAFRA2,{
+aldeba_in,83,245,4	script	炊┰狝叭いみ#2alde	4_F_KAFRA2,{
 	cutin "kafra_02",2;
-	mes "[卡普拉泰依琳]";
-	mes "..... 大姐[普萝太]老是这样!";
-	mes "太挑剔了. ";
-	mes "总公司应该跟分公司要有差别";
-	mes "应该要有自己的风格. ";
+	mes "[炊┰ㄌ礩]";
+	mes "..... ﹋[炊炮び]ρ琌硂妓!";
+	mes "び珼. ";
+	mes "羆そ莱赣蛤だそ璶Τ畉";
+	mes "莱赣璶Τ. ";
 	next;
-	mes "[卡普拉泰依琳]";
-	mes "那!欢迎光临喔~ 我是泰依琳. ";
-	mes "请您以后也要继续惠顾我们卡普拉服务中";
-	mes "心 ..";
-	mes "请您不要忘了我泰依琳. ";
+	mes "[炊┰ㄌ礩]";
+	mes "ê!舧羬翅~ и琌ㄌ礩. ";
+	mes "叫眤璶膥尿磃臮и炊┰狝叭い";
+	mes "み ..";
+	mes "叫眤ぃ璶аиㄌ礩. ";
 	next;
-	switch(select("卡普拉小姐!我支持您喔!:嘿嘿嘿")) {
+	switch(select("炊┰﹋!иや眤翅!:糑糑糑")) {
 	case 1:
-		mes "[卡普拉泰依琳]";
-		mes "哇塞!";
-		mes "真是太感谢您了 ~";
-		mes "麻烦您... 请在这边签名. ";
+		mes "[炊┰ㄌ礩]";
+		mes "珃峨!";
+		mes "痷琌び稰谅眤 ~";
+		mes "陈沸眤... 叫硂娩帽. ";
 		next;
-		mes "[卡普拉泰依琳]";
-		mes "嘿嘿... 您不用确认物品的清单了...";
-		mes "没用的, ";
-		mes "我已经在您心底做了记号了. ";
+		mes "[炊┰ㄌ礩]";
+		mes "糑糑... 眤ぃノ谔粄珇睲虫...";
+		mes "⊿ノ, ";
+		mes "и竒眤み┏暗癘腹. ";
 		next;
 		break;
 	case 2:
-		mes "[卡普拉泰依琳]";
-		mes "什么?";
+		mes "[炊┰ㄌ礩]";
+		mes "ぐ?";
 		mes ". . . . .";
-		mes "就只会说这些台词";
-		mes "您未免太无聊了吧..";
+		mes "碞穦弧硂ㄇ迭";
+		mes "眤ゼび礚册..";
 		next;
 		break;
 	}
@@ -1157,46 +1157,46 @@ aldeba_in,83,245,4	script	卡普拉服务中心#2alde	4_F_KAFRA2,{
 	end;
 }
 
-aldeba_in,24,245,4	script	卡普拉绣灵#alde	4_F_KAFRA3,{
+aldeba_in,24,245,4	script	炊┰赂艶#alde	4_F_KAFRA3,{
 	cutin "kafra_03",2;
-	mes "[卡普拉绣灵]";
-	mes "嗨-我是卡普拉No . 1绣灵. ";
-	mes "欢迎您到这里艾尔帕兰的卡普拉总公司来 !";
+	mes "[炊┰赂艶]";
+	mes "顿-и琌炊┰No . 1赂艶. ";
+	mes "舧眤硂ń︺焊┈孽炊┰羆そㄓ !";
 	next;
-	mes "[卡普拉绣灵]";
-	mes "我们卡普拉服务中心时时刻刻都陪伴在您们身边!";
-	mes "有着五千八百年的传统的卡普拉服务中心..";
-	mes "铛铛铛铛铛铛铛铛…";
+	mes "[炊┰赂艶]";
+	mes "и炊┰狝叭いみㄨㄨ常抄︸眤ō娩!";
+	mes "Τ帝きκ肚参炊┰狝叭いみ..";
+	mes "臠臠臠臠臠臠臠臠";
 	next;
-	switch(select("五千八百年 ?!真不敢相信了 !:好姐姐别吵了:您有没有男朋友 ?")) {
+	switch(select("きκ ?!痷ぃ幢獺 !:﹋﹋:眤Τ⊿Τ╧狟ね ?")) {
 	case 1:
-		mes "[卡普拉绣灵]";
-		mes "您给我听清楚了 ! 我背这台词已经背了一个星期了!";
-		mes "我跟其他的卡普拉人员不一样, 我记性不好 !";
-		mes ".....咦..我现在是在说什么啊..";
+		mes "[炊┰赂艶]";
+		mes "眤倒и睲贰 ! и璉硂迭竒璉琍戳!";
+		mes "и蛤ㄤ炊┰ぃ妓, и癘┦ぃ !";
+		mes ".....玿..и瞷琌弧ぐ摆..";
 		next;
-		mes "[卡普拉绣灵]";
-		mes "嘻嘻嘻, 客人.. 这是在作秀..";
-		mes "是的.. 我们.. 这是我们这里卡普拉服务中心为客人.. 表演的~";
-		mes "梦幻秀! ( .. 不过一次只有一个人表演喔)";
+		mes "[炊┰赂艶]";
+		mes "糎糎糎, .. 硂琌╭..";
+		mes "琌.. и.. 硂琌и硂ń炊┰狝叭いみ.. 簍~";
+		mes "冠ほ╭! ( .. ぃ筁ΩΤ簍翅)";
 		break;
 	case 2:
-		mes "[卡普拉绣灵]";
+		mes "[炊┰赂艶]";
 		mes ". . . . .";
-		mes "我加入卡普拉服务中心以前";
-		mes "是属于卡普拉警备队的一员..";
-		mes "我的专长是攻击!!";
-		mes "..可是我决心过宁静且优雅的日子..";
-		mes "顾客 .. 请您不要刺激我..";
+		mes "и炊┰狝叭いみ玡";
+		mes "琌妮炊┰牡称钉..";
+		mes "и盡琌ю阑!!";
+		mes "..琌и∕み筁蓃繰涩懂ら..";
+		mes "臮 .. 叫眤ぃ璶縀и..";
 		break;
 	case 3:
-		mes "[卡普拉绣灵]";
-		mes "真是的, 我们卡普拉服务人员不能有男朋友";
-		mes "这可真是~莫名其妙的规则啊!";
+		mes "[炊┰赂艶]";
+		mes "痷琌, и炊┰狝叭ぃΤ╧狟ね";
+		mes "硂痷琌~馋ㄤМ砏玥摆!";
 		mes ". . . . .";
 		mes ". . . . . . . . . .";
 		next;
-		mes "骗您的啦! 嘿嘿!";
+		mes "腇眤罢! 糑糑!";
 		break;
 	}
 	close2;
@@ -1204,43 +1204,43 @@ aldeba_in,24,245,4	script	卡普拉绣灵#alde	4_F_KAFRA3,{
 	end;
 }
 
-aldeba_in,142,238,4	script	卡普拉服务中心#3alde	4_F_KAFRA4,{
+aldeba_in,142,238,4	script	炊┰狝叭いみ#3alde	4_F_KAFRA4,{
 	cutin "kafra_04",2;
-	mes "[卡普拉妣妮]";
-	mes "欢迎光临!我是卡普拉妣妮?";
-	mes "我告诉您一个别人不知道的卡普拉超级秘";
-	mes "密!";
+	mes "[炊┰Лゞ]";
+	mes "舧羬!и琌炊┰Лゞ?";
+	mes "и禗眤ぃ笵炊┰禬";
+	mes "盞!";
 	next;
-	mes "[卡普拉妣妮]";
-	mes "其实啊..我们这里卡普拉服务中心";
-	mes "以前的招牌不是卡普拉服务中心. ";
-	mes "那么, 本来是什么呢?";
+	mes "[炊┰Лゞ]";
+	mes "ㄤ龟摆..и硂ń炊┰狝叭いみ";
+	mes "玡┷礟ぃ琌炊┰狝叭いみ. ";
+	mes "ê, セㄓ琌ぐ㎡?";
 	next;
-	mes "[卡普拉妣妮]";
-	mes "铛铛铛铛铛铛铛铛!";
-	mes "真是令人吃惊不是嘛!";
-	mes "卡! 普! ( 铃铃铃铃..)";
-	mes "啊, 是我的手机.. 请等一下?";
+	mes "[炊┰Лゞ]";
+	mes "臠臠臠臠臠臠臠臠!";
+	mes "痷琌誥ぃ琌估!";
+	mes "! 炊! ( 筧筧筧筧..)";
+	mes "摆, 琌иも审.. 叫单?";
 	next;
-	mes "[卡普拉妣妮]";
-	mes "是的, 我是卡普拉妣妮?";
-	mes "啊, 是本部部长啊!是!是!....";
-	mes "是!";
-	mes "什么?!";
+	mes "[炊┰Лゞ]";
+	mes "琌, и琌炊┰Лゞ?";
+	mes "摆, 琌セ场场摆!琌!琌!....";
+	mes "琌!";
+	mes "ぐ?!";
 	next;
-	mes "[卡普拉妣妮]";
-	mes "啊, 不是的!";
-	mes "啊.. 不是这样的!!";
-	mes "是!我知道了!!";
+	mes "[炊┰Лゞ]";
+	mes "摆, ぃ琌!";
+	mes "摆.. ぃ琌硂妓!!";
+	mes "琌!и笵!!";
 	next;
-	mes "[卡普拉妣妮]";
-	mes "卡嚓!";
-	mes "嘿嘿嘿";
+	mes "[炊┰Лゞ]";
+	mes "炖!";
+	mes "糑糑糑";
 	next;
-	mes "[卡普拉妣妮]";
-	mes "呃.... 请客人您";
-	mes "把刚才听到的对话内容";
-	mes "请.. 请您把它忘掉. 嘿嘿";
+	mes "[炊┰Лゞ]";
+	mes ".... 叫眤";
+	mes "р癸杠ず甧";
+	mes "叫.. 叫眤рウа奔. 糑糑";
 	emotion ET_SWEAT;
 	close2;
 	cutin "",255;
@@ -1248,28 +1248,28 @@ aldeba_in,142,238,4	script	卡普拉服务中心#3alde	4_F_KAFRA4,{
 }
 
 
-aldeba_in,91,244,4	script	卡普拉服务中心#4alde	4_F_KAFRA6,{
+aldeba_in,91,244,4	script	炊┰狝叭いみ#4alde	4_F_KAFRA6,{
 	cutin "kafra_06",2;
-	mes "[卡普拉德帛硫]";
-	mes "因为我是新进人员, 虽然和您们认识";
-	mes "不久, 不过我一定会尽心尽力为您们服务";
-	mes "的!";
-	mes "往后还请多多指教 ~";
+	mes "[炊┰紈┉哺]";
+	mes "и琌穝秈, 瘤礛㎝眤粄醚";
+	mes "ぃ, ぃ筁и﹚穦荷み荷眤狝叭";
+	mes "!";
+	mes "┕临叫毙 ~";
 	next;
-	if (select("几岁?:结束对话.") == 1) {
-		mes "[卡普拉德帛硫]";
+	if (select("烦?:挡癸杠.") == 1) {
+		mes "[炊┰紈┉哺]";
 		mes ". . . . .";
-		mes "哎呦 !!";
-		mes "不要把人家当小孩子看嘛!!";
+		mes "玼绥 !!";
+		mes "ぃ璶р產讽估!!";
 		close2;
 		cutin "",255;
 		end;
 	}
-	mes "[卡普拉德帛硫]";
-	mes "我们卡普拉服务中心";
-	mes "将会提供大家一个最棒!最贴心!";
-	mes "的完善服务. ";
-	mes "很感谢您的使用. ";
+	mes "[炊┰紈┉哺]";
+	mes "и炊┰狝叭いみ";
+	mes "盢穦矗ㄑ產程次!程禟み!";
+	mes "Ч到狝叭. ";
+	mes "稰谅眤ㄏノ. ";
 	close2;
 	cutin "",255;
 	end;
@@ -1279,7 +1279,7 @@ aldeba_in,91,244,4	script	卡普拉服务中心#4alde	4_F_KAFRA6,{
 // Kafra Special Reserve Point NPCs
 //============================================================
 // Special Reserve ----------------------------------------------
-aldeba_in,79,161,7	script	卡普拉 职员#reserve1	4_F_KAFRA3,{
+aldeba_in,79,161,7	script	炊┰ 戮#reserve1	4_F_KAFRA3,{
 	if (checkweight(1201,1) == 0) {
 		mes "^3355FFWait a minute! Right now,";
 		mes "you're carrying too many items";
@@ -1288,418 +1288,418 @@ aldeba_in,79,161,7	script	卡普拉 职员#reserve1	4_F_KAFRA3,{
 		mes "your things in Kafra Storage.";
 		close;
 	}
-	mes "[卡普拉 职员]";
-	mes "欢迎, ^6666FF" + strcharinfo(0) + "^000000.  在这里您可以将您的特别储备点用来兑换一些酷酷的奖励.";
+	mes "[炊┰ 戮]";
+	mes "舧, ^6666FF" + strcharinfo(0) + "^000000.  硂ń眤盢眤疭纗称翴ノㄓ传ㄇ慌慌贱纘.";
 	next;
-	mes "[卡普拉 职员]";
-	mes "每个卡普拉都会和你交易金额不等的储备点.  我可以交易储备点从 ^2222FF100 pts 到 3000 pts^000000的物品.";
+	mes "[炊┰ 戮]";
+	mes "–炊┰常穦㎝ユ肂ぃ单纗称翴.  иユ纗称翴眖 ^2222FF100 pts  3000 pts^000000珇.";
 	next;
-	mes "[卡普拉 职员]";
+	mes "[炊┰ 戮]";
 	if ((MaxWeight - Weight) < 11000) {
-		mes "呃, 但是我认为你现在不能带太多的东西. 看起来你的背包里面的东西太多了.";
+		mes ", 琌и粄瞷ぃ盿び狥﹁. 癬ㄓ璉ń狥﹁び.";
 		next;
-		mes "[卡普拉 职员]";
-		mes "请把你的东西存入卡普拉仓库. 想要使用这项服务, 你的背包至少留出 ^FF00001,100^000000 的负重空间";
+		mes "[炊┰ 戮]";
+		mes "叫р狥﹁炊┰畐. 稱璶ㄏノ硂兜狝叭, 璉ぶ痙 ^FF00001,100^000000 璽丁";
 		close;
 	}
 	.@total = RESRVPTS;
-	mes "让我看看...";
+	mes "琵и...";
 	mes strcharinfo(0) +"...";
-	mes "喔, 你总共有";
-	mes .@total +" 特别储备点.";
-	mes "现在你想换什么";
+	mes "翅, 羆Τ";
+	mes .@total +" 疭纗称翴.";
+	mes "瞷稱传ぐ";
 	next;
 	setarray .@select_price[0], 516, 100,7, 200,15, 300,25, 400,35, 500,50, 600,60, 700,75, 800,85, 900,100, 1000;// <item_id>,<points required>,<item quantity>
-	.@s = select( "100- 储备点换 7个 蕃薯:200- 储备点换 15个 蕃薯:300- 储备点换 25个 蕃薯:400- 储备点换 35个 蕃薯:500- 储备点换 50个 蕃薯:600- 储备点换 60个 蕃薯:700- 储备点换 75个 蕃薯:" +
-			"800- 储备点换 85个 蕃薯:900- 储备点换 100个 蕃薯:1000- 储备点换1次彩票抽奖!:下一个:取消" );
+	.@s = select( "100- 纗称翴传 7 炕力:200- 纗称翴传 15 炕力:300- 纗称翴传 25 炕力:400- 纗称翴传 35 炕力:500- 纗称翴传 50 炕力:600- 纗称翴传 60 炕力:700- 纗称翴传 75 炕力:" +
+			"800- 纗称翴传 85 炕力:900- 纗称翴传 100 炕力:1000- 纗称翴传1Ω眒布┾贱!::" );
 	if (.@s == 11) {
 		setarray .@select_price[0], 501, 1100,7, 1300,15, 1500,25, 1700,35, 1900,50, 2100,60, 2300,75, 2500,85, 2800,100, 3000;
-		.@s = select( "1100- 储备点换 7个 红色药水:1300- 储备点换 15个 红色药水:1500- 储备点换 25个 红色药水:1700- 储备点换 35个 红色药水:1900- 储备点换 50个 红色药水:2100- 储备点换 60个 红色药水:" +
-				"2300- 储备点换 75个 红色药水:2500- 储备点换 85个 红色药水:2800- 储备点换 100个 红色药水:3000- 储备点换 彩票抽奖机会!:下一个:取消" );
+		.@s = select( "1100- 纗称翴传 7 ︹媚:1300- 纗称翴传 15 ︹媚:1500- 纗称翴传 25 ︹媚:1700- 纗称翴传 35 ︹媚:1900- 纗称翴传 50 ︹媚:2100- 纗称翴传 60 ︹媚:" +
+				"2300- 纗称翴传 75 ︹媚:2500- 纗称翴传 85 ︹媚:2800- 纗称翴传 100 ︹媚:3000- 纗称翴传 眒布┾贱审穦!::" );
 		.@choose_sub_select = 1;
 	}
 	if (.@s != 12) {// cancel
-		mes "[卡普拉 职员]";
+		mes "[炊┰ 戮]";
 		.@index_points = .@s * 2 - 1;
 		.@index_quantity = .@s * 2;
 		if (.@total < .@select_price[.@index_points]) {
 			.@points = .@select_price[.@index_points] - .@total;
-			mes "很抱歉, 你没有足够的特殊储备点数来交换这些物品, 这些物品需要比你现在拥有的多出 ^0000FF"+ .@points +"^000000 点数.";
+			mes "╆簆, ⊿Τì镑疭纗称翴计ㄓユ传硂ㄇ珇, 硂ㄇ珇惠璶ゑ瞷局Τ ^0000FF"+ .@points +"^000000 翴计.";
 			close;
 		}
 		.@total = .@total - .@select_price[.@index_points];
-		mes "交换完成后, 你还有 ^AC0000"+ .@total +"^000000 特殊储备点";
-		mes "你是否要完成这次的交换?";
+		mes "ユ传ЧΘ, 临Τ ^AC0000"+ .@total +"^000000 疭纗称翴";
+		mes "琌璶ЧΘ硂Ωユ传?";
 		next;
-		if (select( "交换.", "取消" ) == 1) {
+		if (select( "ユ传.", "" ) == 1) {
 			RESRVPTS = .@total;
 			if (.@s < 10)
 				getitem .@select_price[0], .@select_price[.@index_quantity];
 			else {
-				mes "[卡普拉 职员]";
+				mes "[炊┰ 戮]";
 				if (.@choose_sub_select == 0) {
-					mes "^0000FF第一次抽奖挑战!!^000000";
-					mes "现在是考验你运气的时候了";
+					mes "^0000FF材Ω┾贱珼驹!!^000000";
+					mes "瞷琌σ喷笲蒩";
 				}
 				else {
-					mes "呃, 喔...";
-					mes "现在是卡片啦抽奖时间~";
-					mes "让我们看看你今天的运气. 准备好了吗?";
+					mes ", 翅...";
+					mes "瞷琌罢┾贱丁~";
+					mes "琵иさぱ笲蒩. 称盾?";
 				}
 				next;
-				mes "[卡普拉 职员]";
-				mes "你要多少次旋转彩票机? 你可以旋转1到5次.";
+				mes "[炊┰ 戮]";
+				mes "璶ぶΩ臂锣眒布审? 臂锣15Ω.";
 				next;
 				while( input(.@input,1,5) != 0 ) {
-					mes "[卡普拉 职员]";
-					mes "哈...?";
-					mes "请你选择1~5之间的数字.";
+					mes "[炊┰ 戮]";
+					mes "...?";
+					mes "叫匡拒1~5ぇ丁计.";
 					next;
 				}
 				.@choose_prize = rand(1,20);
 				while( .@input != .@random_while ) {
 					.@sound_word = rand(1,3);
 					if (.@sound_word == 1) {
-						mes "^3355FF嘀~~~~~...";
+						mes "^3355FF箍~~~~~...";
 						mes "DuangDuangDuang!^000000";
 					}
 					else if (.@sound_word == 2) {
-						mes "^3355FF咔嚓咔嚓咔嚓~~~~~";
-						mes "唰~~~~~~~~~~~^000000";
+						mes "^3355FF炖炖炖~~~~~";
+						mes "詜~~~~~~~~~~~^000000";
 					}
 					else if (.@sound_word == 3) {
-						mes "^3355FF咚咚咚咚~~~";
-						mes "噗~~~~~~~^000000";
+						mes "^3355FF㎞㎞㎞㎞~~~";
+						mes "糚~~~~~~~^000000";
 					}
 					next;
 					.@random_while++;
 				}
-				mes "[卡普拉 职员]";
+				mes "[炊┰ 戮]";
 				if (.@choose_sub_select == 0) {
-					mes "呃, 出了什么事! 让我们看看你赢了什么, 喔, 天那!!";
+					mes ", ぐㄆ! 琵и墓ぐ, 翅, ぱê!!";
 					next;
-					mes "[卡普拉 职员]";
+					mes "[炊┰ 戮]";
 					if (.@choose_prize <= 10) {
 						getitem 516,100;// Sweet_Potato
-						mes "嗯？四等奖？你得了第四奖！";
-						mes "好吧, 这并不是特别糟糕.";
-						mes "那是100个番薯!";
-						mes "当他们切片，然后油炸，他们是一个伟大的零食时，与您的朋友喝酒~";
+						mes "垛单贱眔材贱";
+						mes ", 硂ぃ琌疭罺縷.";
+						mes "ê琌100礷力!";
+						mes "讽ち礛猳琌岸箂蒓眤狟ね耻皊~";
 					}
 					else if (.@choose_prize <= 15) {
 						getitem 602,4;// Wing_Of_Butterfly
-						mes "这是第三奖！4只蝴蝶翅膀~当你遇到麻烦时，只要挥动其中一只就可以把你带走…到你安全的地方。";
+						mes "硂琌材贱4焦胶籋~讽笿陈沸璶揣笆ㄤい碞р盿ǐよ";
 					}
 					else if (.@choose_prize <= 19) {
 						getitem 2403,1;// Shoes
-						mes "二等奖！一双崭新闪亮的鞋子！其优雅的设计和耐用性与我们的最高建议。我们希望你喜欢你的新鞋。";
+						mes "单贱蛮柜穝皗獹綾ㄤ涩懂砞璸㎝瑻ノ┦蒓и程蔼某и辨尺舧穝綾";
 					}
 					else if (.@choose_prize == 20) {
 						getitem 2328,1;// Wooden_Mail
-						mes "哇…! 一等奖! 你获得了一等奖!!";
+						mes "珃! 单贱! 莉眔单贱!!";
 						next;
-						mes "一套木制信件! 今天一定是你的幸运日, 冒险家! ";
+						mes "甅れ獺ン! さぱ﹚琌┋笲ら, 玙繧產! ";
 					}
 				}
 				else {
-					mes "好像有什么东西出来了！可能是什么呢？哦，你获得了…";
+					mes "钩Τぐ狥﹁ㄓ琌ぐ㎡瓳莉眔";
 					next;
-					mes "[卡普拉 职员]";
+					mes "[炊┰ 戮]";
 					if (.@choose_prize <= 10) {
 						getitem 501,100;// Red_Potion
-						mes "四等奖...?!";
-						mes "哈! 100 个红色药水.";
-						mes "等等.. 那实际上相当不错";
-						mes "不错! 呀~ 你现在可以把成绩跟你的朋友分享了";
+						mes "单贱...?!";
+						mes "! 100 ︹媚.";
+						mes "单单.. ê龟悔讽ぃ岿";
+						mes "ぃ岿! ~ 瞷рΘ罿蛤狟ねだㄉ";
 					}
 					else if (.@choose_prize <= 16) {
 						getitem 2201,1;// Sunglasses
-						mes "三等奖!";
-						mes "你自己的一双温和的太阳镜！它会让你在看起来很酷的战争中发挥优势，或者当你玩扑克的时候。";
+						mes "单贱!";
+						mes "蛮放㎝び锭描ウ穦琵癬ㄓ慌驹い祇揣涩墩┪讽シ";
 					}
 					else if (.@choose_prize <= 19) {
 						getitem 2226,1;// Cap
-						mes "二等奖!";
-						mes "一个帽子?";
-						mes "嗯，这些都很好的防御，但我不太觉得这是一定如何时尚的帽子";
+						mes "单贱!";
+						mes "碪?";
+						mes "垛硂ㄇ常ň眘иぃび谋眔硂琌﹚﹟碪";
 					}
 					else if (.@choose_prize == 20) {
 						getitem 505,3;// Blue_Potion
-						mes "哇, 天呐...!";
-						mes "一等奖!";
-						mes "3 蓝色药水~";
-						mes "有了这些你就可以多使用一些技能了";
+						mes "珃, ぱ...!";
+						mes "单贱!";
+						mes "3 屡︹媚~";
+						mes "Τ硂ㄇ碞ㄏノㄇм";
 					}
 				}
 			}
 			next;
 		}
 	}
-	mes "[卡普拉 职员]";
-	mes "好吧。请使用我们的服务，收集更多的特殊保留点，以获得更好的回报。谢谢惠顾。";
+	mes "[炊┰ 戮]";
+	mes "叫ㄏノи狝叭Μ栋疭玂痙翴莉眔厨谅谅磃臮";
 	close;
 }
 
-aldeba_in,88,161,3	script	卡普拉 职员#reserve2	4_F_KAFRA3,{
-	mes "[卡普拉  职员]";
-	mes "欢迎光临~ "+strcharinfo(0)+" 顾客";
-	mes "现在我们卡普拉中心, 为了顾客们特别举办感谢活动";
+aldeba_in,88,161,3	script	炊┰ 戮#reserve2	4_F_KAFRA3,{
+	mes "[炊┰  戮]";
+	mes "舧羬~ "+strcharinfo(0)+" 臮";
+	mes "瞷и炊┰いみ, 臮疭羭快稰谅笆";
 	next;
-	mes "[卡普拉  职员]";
-	mes "可利用目前所搜集的卡普拉点数, 来可抽奖品的^FF0000特别卡普拉 ^529DFF奖品嘉年华!^000000";
-	mes "我们卡普拉公司, 这一次特地把奖品给加强了";
+	mes "[炊┰  戮]";
+	mes "ノヘ玡┮穓栋炊┰翴计, ㄓ┾贱珇^FF0000疭炊┰ ^529DFF贱珇古地!^000000";
+	mes "и炊┰そ, 硂Ω疭р贱珇倒眏";
 	next;
-	mes "[卡普拉  职员]";
-	mes "请问您要参加吗?";
+	mes "[炊┰  戮]";
+	mes "叫拜眤璶把盾?";
 	next;
-	if(select("我要参加:我不参加")==1) {
-		mes "[卡普拉 职员]";
+	if(select("и璶把:иぃ把")==1) {
+		mes "[炊┰ 戮]";
 		if ((MaxWeight - Weight) < 11000) {
-			mes "....喔 亲爱的... 你这是带了多少东西?...?";
-			mes "我想你拿不下我所给你的奖励~";
+			mes "....翅 克稲... 硂琌盿ぶ狥﹁?...?";
+			mes "и稱ぃи┮倒贱纘~";
 			next;
-			mes "[卡普拉 职员]";
-			mes "请把你的东西存入卡普拉仓库. 想要使用这项服务, 你的背包至少留出 ^FF000011,000^000000 的负重空间";
+			mes "[炊┰ 戮]";
+			mes "叫р狥﹁炊┰畐. 稱璶ㄏノ硂兜狝叭, 璉ぶ痙 ^FF000011,000^000000 璽丁";
 			close;
 
 		}
-		mes "顾客您累计的点数是^FF0000"+RESRVPTS+"^000000 点~";
-		mes "在下列项目中, 请您选择您想要的商品";
+		mes "臮眤仓璸翴计琌^FF0000"+RESRVPTS+"^000000 翴~";
+		mes "兜ヘい, 叫眤匡拒眤稱璶坝珇";
 		next;
 		setarray .@points[1],5000,7000,10000;
-		.@s = select( "5000p = 第1阶段, 机会机会!", "7000p = 第2阶段, 机会机会!", "10000p = 第3阶段, 机会机会!", "取消" );
+		.@s = select( "5000p = 材1顶琿, 审穦审穦!", "7000p = 材2顶琿, 审穦审穦!", "10000p = 材3顶琿, 审穦审穦!", "" );
 		if (.@s != 4) {
-			mes "[卡普拉 职员]";
+			mes "[炊┰ 戮]";
 			if (RESRVPTS < .@points[.@s]) {
-				mes "[卡普拉  职员]";
-				mes "对不起~ 顾客~";
-				mes "顾客您所选择的机会, 因累计点数不够所以不能参与~";
-				mes "请顾客再确认一次累计点数之后, 再做选择~";
+				mes "[炊┰  戮]";
+				mes "癸ぃ癬~ 臮~";
+				mes "臮眤┮匡拒审穦, 仓璸翴计ぃ镑┮ぃ把蒓~";
+				mes "叫臮谔粄Ω仓璸翴计ぇ, 暗匡拒~";
 				close;
 			}
 			RESRVPTS = RESRVPTS - .@points[.@s];
 			mes "^0000FF"+ F_GetNumSuffix(.@s) +" Lottery Chance!!^000000";
 			next;
-			mes "[卡普拉服务中心]";
-			mes "您有绝佳的好运抽到来自天堂的好礼!!";
+			mes "[炊┰狝叭いみ]";
+			mes "眤Τ荡ㄎ笲┾ㄓぱ绑搂!!";
 			next;
-			mes "[卡普拉服务中心]";
-			mes "别放弃这个好机会! 亲爱的! 您准备好了吗?";
+			mes "[炊┰狝叭いみ]";
+			mes "斌硂审穦! 克稲! 眤称盾?";
 			next;
 			.@sound_word = rand(1,3);
 			if (.@sound_word == 1)
 				mes "'duang~ duang~'";
 			else if (.@sound_word == 2)
-				mes "'喔喔...'";
+				mes "'翅翅...'";
 			else if (.@sound_word == 3)
-				mes "'咕噜.. 咕噜.. 当啷!'";
+				mes "'〣翽.. 〣翽.. 讽豭!'";
 			next;
-			mes "[卡普拉 职员]";
-			mes "要出现了~ 让我们看看你获得了什么~";
-			mes "猜~猜~是~什~么~";
+			mes "[炊┰ 戮]";
+			mes "璶瞷~ 琵и莉眔ぐ~";
+			mes "瞦~瞦~琌~ぐ~~";
 			next;
-			mes "[卡普拉 职员]";
-			mes "^FF0000噢, 我的天那! 这是!!^000000";
+			mes "[炊┰ 戮]";
+			mes "^FF0000揪, иぱê! 硂琌!!^000000";
 			next;
-			mes "[卡普拉 职员]";
+			mes "[炊┰ 戮]";
 			.@choose_prize = rand(1,20);
 			if (.@s == 1) {
 				if (.@choose_prize < 15) {
 					getitem 501,150;// Red_Potion
-					mes "太遗憾了！你得了第四奖！奖品是 ^00FF00150 红色药水~^000000";
+					mes "び框狙眔材贱贱珇琌 ^00FF00150 ︹媚~^000000";
 					next;
-					mes "[卡普拉 职员]";
-					mes "哇~ 150药水！足够和你的朋友分享了~";
+					mes "[炊┰ 戮]";
+					mes "珃~ 150媚ì镑㎝狟ねだㄉ~";
 				}
 				else if (.@choose_prize < 18) {
 					getitem 645,15;// Center_Potion
-					mes "第三~~";
-					mes "三等奖!";
-					mes "奖励是 ^00FF0015 集中药水~^000000";
+					mes "材~~";
+					mes "单贱!";
+					mes "贱纘琌 ^00FF0015 栋い媚~^000000";
 					next;
-					mes "[卡普拉 职员]";
-					mes "当我们需要专注于某事时，我们总是使用它。然而，过量对身体不好~~";
+					mes "[炊┰ 戮]";
+					mes "讽и惠璶盡猔琘ㄆи羆琌ㄏノウ礛τ筁秖癸ō蔨ぃ~~";
 				}
 				else if (.@choose_prize < 20) {
 					getitem 505,3;// Blue_Potion
-					mes "第二~~";
-					mes "二等奖~~";
-					mes "奖励是 ^00FF003 蓝色药水~^000000";
+					mes "材~~";
+					mes "单贱~~";
+					mes "贱纘琌 ^00FF003 屡︹媚~^000000";
 					next;
-					mes "[卡普拉 职员]";
-					mes "比集中药剂好！过量对身体不好~";
+					mes "[炊┰ 戮]";
+					mes "ゑ栋い媚警筁秖癸ō蔨ぃ~";
 				}
 				else if (.@choose_prize == 20) {
 					getitem 608,1;// Seed_Of_Yggdrasil
-					mes "哇~！第一个…第一！！！恭喜你获得了第一名~ ~ ~奖品是";
-					mes "你的奖品是 ^00FF001 天地树芽~^000000";
+					mes "珃~材材尺莉眔材~ ~ ~贱珇琌";
+					mes "贱珇琌 ^00FF001 ぱ攫~^000000";
 					next;
-					mes "[卡普拉 职员]";
-					mes "你今天的运气真好. ";
+					mes "[炊┰ 戮]";
+					mes "さぱ笲蒩痷. ";
 				}
 			}
 			else if (.@s == 2) {
 				if (.@choose_prize < 15) {
 					getitem 504,10;// White_Potion
-					mes "太遗憾了!";
-					mes "你获得了四等奖!!";
-					mes "奖品是 ^00FF0010 白色药水~^000000";
+					mes "び框狙!";
+					mes "莉眔单贱!!";
+					mes "贱珇琌 ^00FF0010 フ︹媚~^000000";
 					next;
-					mes "[卡普拉 职员]";
-					mes "魔药中最伟大的！在昏倒之前使用它~";
+					mes "[炊┰ 戮]";
+					mes "臸媚い程岸ぇ玡ㄏノウ~";
 				}
 				else if (.@choose_prize < 18) {
 					getitem 656,15;// Awakening_Potion
-					mes "第三~~";
-					mes "三等奖!";
-					mes "你的奖品是 ^00FF0015 觉醒药水~^000000";
+					mes "材~~";
+					mes "单贱!";
+					mes "贱珇琌 ^00FF0015 谋眶媚~^000000";
 					next;
-					mes "[卡普拉 职员]";
-					mes "觉醒药水比集中药剂好！过量对身体不好~~";
+					mes "[炊┰ 戮]";
+					mes "谋眶媚ゑ栋い媚警筁秖癸ō蔨ぃ~~";
 				}
 				else if (.@choose_prize < 20) {
 					getitem 657,10;// Berserk_Potion
-					mes "第二~~";
-					mes "二等奖~~";
-					mes "奖品是 ^00FF0010 菠色克药水~^000000";
+					mes "材~~";
+					mes "单贱~~";
+					mes "贱珇琌 ^00FF0010 翟︹媚~^000000";
 					next;
-					mes "[卡普拉 职员]";
-					mes "过量可能导致疯狂~";
+					mes "[炊┰ 戮]";
+					mes "筁秖旧璓浩╣~";
 				}
 				else if (.@choose_prize == 20) {
 					getitem 608,1;// Seed_Of_Yggdrasil
 					getitem 607,1;// Yggdrasilberry
-					mes "哇喔~!! 第一... 第一!!!";
-					mes "恭喜你~~ 你获得了一等奖~";
-					mes "奖品是 ^00FF003 天地树果实~^000000";
-					mes "奖品是 ^00FF002 天地树芽~^000000";
+					mes "珃翅~!! 材... 材!!!";
+					mes "尺~~ 莉眔单贱~";
+					mes "贱珇琌 ^00FF003 ぱ攫狦龟~^000000";
+					mes "贱珇琌 ^00FF002 ぱ攫~^000000";
 					next;
-					mes "[卡普拉 职员]";
-					mes "你今天的运气真好. ";
+					mes "[炊┰ 戮]";
+					mes "さぱ笲蒩痷. ";
 				}
 			}
 			else if (.@s == 3) {
 				if (.@choose_prize < 15) {
 					getitem 504,30;// White_Potion
-					mes "太遗憾了!";
-					mes "你获得了四等奖!!";
-					mes "奖品是 ^00FF0010 白色药水~^000000";
+					mes "び框狙!";
+					mes "莉眔单贱!!";
+					mes "贱珇琌 ^00FF0010 フ︹媚~^000000";
 					next;
-					mes "[卡普拉 职员]";
-					mes "魔药中最伟大的！在昏倒之前使用它~";
+					mes "[炊┰ 戮]";
+					mes "臸媚い程岸ぇ玡ㄏノウ~";
 				}
 				else if (.@choose_prize < 18) {
 					getitem 505,10;// Blue_Potion
-					mes "第三~~";
-					mes "三等奖!";
-					mes "你的奖品是 ^00FF0010 蓝色药水~^000000";
+					mes "材~~";
+					mes "单贱!";
+					mes "贱珇琌 ^00FF0010 屡︹媚~^000000";
 					next;
-					mes "[卡普拉 职员]";
-					mes "当你精神失落的时候, 你可以尝试使用它. ";
+					mes "[炊┰ 戮]";
+					mes "讽弘ア辅, 沽刚ㄏノウ. ";
 				}
 				else if (.@choose_prize < 20) {
 					getitem 608,1;// Seed_Of_Yggdrasil
 					getitem 526,10;// Royal_Jelly
-					mes "第二~~";
-					mes "二等奖~~";
-					mes "奖品是 ^00FF001 天地树芽~^000000";
-					mes "奖品是 ^00FF0010 蜂胶~^000000";
+					mes "材~~";
+					mes "单贱~~";
+					mes "贱珇琌 ^00FF001 ぱ攫~^000000";
+					mes "贱珇琌 ^00FF0010 噶溅~^000000";
 					next;
-					mes "[卡普拉 职员]";
-					mes "这是多么健康的食物啊!~";
+					mes "[炊┰ 戮]";
+					mes "硂琌胺眃摆!~";
 				}
 				else if (.@choose_prize == 20) {
 					getitem 607,3;// Yggdrasilberry
 					getitem 608,2;// Seed_Of_Yggdrasil
-					mes "哇喔~!! 第一... 第一!!!";
-					mes "恭喜你~~ 你获得了一等奖~";
-					mes "奖品是 ^00FF003 天地树果实~^000000";
-					mes "奖品是 ^00FF002 天地树芽~^000000";
+					mes "珃翅~!! 材... 材!!!";
+					mes "尺~~ 莉眔单贱~";
+					mes "贱珇琌 ^00FF003 ぱ攫狦龟~^000000";
+					mes "贱珇琌 ^00FF002 ぱ攫~^000000";
 					next;
-					mes "[卡普拉 职员]";
-					mes "你今天的运气真好~";
+					mes "[炊┰ 戮]";
+					mes "さぱ笲蒩痷~";
 				}
 			}
-			mes "恭喜你~~";
+			mes "尺~~";
 			close;
 		}
 	}
-	mes "[卡普拉 职员]";
-	mes "这样就好了~";
-	mes "收集更多的~更多的储备点~感谢您使用卡普拉公司的服务~ ~";
+	mes "[炊┰ 戮]";
+	mes "硂妓碞~";
+	mes "Μ栋~纗称翴~稰谅眤ㄏノ炊┰そ狝叭~ ~";
 	close;
 }
 
 // Inside Clock Tower
 //============================================================
-c_tower3,10,249,4	script	看门人#ct	4_M_02,{
+c_tower3,10,249,4	script	#ct	4_M_02,{
 	//Key_Of_Clock_Tower
-	callfunc "F_ClockTowerGate","第四层",7026,"c_tower4",185,44; 
+	callfunc "F_ClockTowerGate","材糷",7026,"c_tower4",185,44; 
 }
 
-alde_dun03,264,16,4	script	看门人#ct1	4W_F_01,{
+alde_dun03,264,16,4	script	#ct1	4W_F_01,{
 	//Underground_Key
-	callfunc "F_ClockTowerGate","地下四楼",7027,"alde_dun04",79,267; 
+	callfunc "F_ClockTowerGate","加",7027,"alde_dun04",79,267; 
 }
 
 function	script	F_ClockTowerGate	{
 	.@floor$ = getarg(0);
 	.@item_req = getarg(1);
 
-	mes "[看门人]";
-	mes "您从哪来?冒险家, 这里是艾尔帕兰钟塔, ";
-	mes "我是艾尔帕兰最好的看门人, ";
-	mes "看守这个钟楼的"+.@floor$+", ";
-	mes "我不会让您进去, 请回到您来的地方. ";
+	mes "[]";
+	mes "眤眖ㄓ?玙繧產, 硂ń琌︺焊┈孽牧娥, ";
+	mes "и琌︺焊┈孽程, ";
+	mes "硂牧加"+.@floor$+", ";
+	mes "иぃ穦琵眤秈, 叫眤ㄓよ. ";
 	next;
-	switch(select("关于钟楼:关于"+.@floor$+":我要到"+.@floor$+":结束")) {
+	switch(select("闽牧加:闽"+.@floor$+":и璶"+.@floor$+":挡")) {
 	case 1:
-		mes "[看门人]";
-		mes "艾尔帕兰是练金术士的出生地, 很久以前, 他们是3个传说的炼金术士布鲁克·萨莫尔, 菲利浦·沃尔滋和..";
+		mes "[]";
+		mes "︺焊┈孽琌絤砃ネ, 玡, 琌3肚弧芬砃ガ緗履馋焊, 滇║焊逮㎝..";
 		next;
-		mes "[看门人]";
-		mes "罗梅罗·斯拜索罗尔!这座钟楼就是他们的杰作. 在这层钟楼里您会有一些相当奇异的感觉, 这是钟楼的特征. ";
+		mes "[]";
+		mes "霉宾霉吹霉焊!硂畒牧加碞琌狽. 硂糷牧加ń眤穦Τㄇ讽奢稰谋, 硂琌牧加疭┖. ";
 		next;
-		mes "[看门人]";
-		mes "这里被神秘古老的魔法所控制, 您在这里随便转转就能感到这些东西. ";
+		mes "[]";
+		mes "硂ń砆ρ臸猭┮北, 眤硂ń繦獽锣锣碞稰硂ㄇ狥﹁. ";
 		next;
-		mes "[看门人]";
-		mes "千万要小心, 等待您的也许是无法预料的灾难甚至会出现看门人变的魔物. 请您自己一定要小心...";
+		mes "[]";
+		mes "蒃璶み, 单眤砛琌礚猭箇╝螟穦瞷跑臸. 叫眤﹚璶み...";
 		close;
 	case 2:
-		mes "[看门人]";
-		mes "古老的炼金术士使用炼金术士的魔法封住了第4层的入口, 如果坚持要进的话就跨进这扇门, 等待您的是魔鬼和强悍的敌人!";
+		mes "[]";
+		mes "ρ芬砃ㄏノ芬砃臸猭材4糷, 狦绊璶秈杠碞阁秈硂, 单眤琌臸碍㎝眏寄!";
 		next;
-		mes "[看门人]";
-		mes "进入里面需要一把钥匙, 传说那把钥匙在变成魔物的钟塔看门人的身上, 他经常会在这里附近游荡. ";
+		mes "[]";
+		mes "秈ń惠璶р芲巴, 肚弧êр芲巴跑Θ臸牧娥ō, 竒盽穦硂ń村亢. ";
 		next;
-		mes "[看门人]";
-		mes "钥匙是古老炼金术的精华, 据说使用那把钥匙的时候要是就会释放出所有的能量, 并且从这个世界上消失. ";
+		mes "[]";
+		mes "芲巴琌ρ芬砃弘地, 誹弧ㄏノêр芲巴璶琌碞穦睦┮Τ秖, 眖硂ア. ";
 		next;
-		mes "[看门人]";
-		mes "勇敢的冒险家, 如果您拥有了这把钥匙请把它交给我, 只有拥有这把钥匙的人才能让这扇门将如您的愿望而开启!这样您就能进入这里. ";
+		mes "[]";
+		mes "玦幢玙繧產, 狦眤局Τ硂р芲巴叫рウユ倒и, Τ局Τ硂р芲巴琵硂盢眤篅辨τ秨币!硂妓眤碞秈硂ń. ";
 		next;
-		mes "[看门人]";
-		mes "期待着您能成功的回来!";
+		mes "[]";
+		mes "戳帝眤Θㄓ!";
 		mes ". . . . .";
 		close;
 	case 3:
 		if (countitem(.@item_req) > 0) {
-			mes "[看门人]";
-			mes "唔……我已经感觉到您是一个不平常的人, 您似乎已经通过了考验. 那么现在, 请您进来吧, 诸神会保佑勇敢的战士的...";
+			mes "[]";
+			mes "и竒稰谋眤琌ぃキ盽, 眤竒硄筁σ喷. ê瞷, 叫眤秈ㄓ, 窖穦玂玦幢驹...";
 			close2;
 			delitem .@item_req,1; 
 			warp getarg(2),getarg(3),getarg(4);
 			end;
 		}
 		else {
-			mes "[看门人]";
-			mes "很不幸您没有通过考验, 您不能进入这扇门 ..不要太遗憾, 这是炼金术士之灵的意思!请再努力一些吧!";
+			mes "[]";
+			mes "ぃ┋眤⊿Τ硄筁σ喷, 眤ぃ秈硂 ..ぃ璶び框狙, 硂琌芬砃ぇ艶種!叫ㄇ!";
 			close;
 		}
 	case 4:
-		mes "[看门人]";
-		mes "这个钟楼是3个古老的炼金术士的家, 虽然他们的精神和肉体都离开了我们, 但在里面胡作非为的人会受到神的诅咒的. ";
+		mes "[]";
+		mes "硂牧加琌3ρ芬砃產, 瘤礛弘㎝ψ蔨常置秨и, ń璊獶穦禔〨. ";
 		close;
 	}
 }

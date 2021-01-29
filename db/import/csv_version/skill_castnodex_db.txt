@@ -4,14 +4,14 @@
 //        1 - skill's cast time is not affected by dex
 //        2 - skill's cast time is not affected by statuses (Suffragium, etc)
 //        4 - skill's cast time is not affected by item bonuses (equip, cards)
-//     1024 - æŠ€èƒ½çš„å†·å´åœ¨æŠ€èƒ½é‡Šæ”¾æˆåŠŸåæ‰å¼€å§‹è®¡æ—¶
+//     1024 - ¡@€è¡@ôğáDØ{îà§ø¡@¡@€è¡@¡@ÔİìîñiáÂÎoÁíÎ·åM¼d€å¡@æ¦¢J¡@
 //
 // Delay: 0 - everything affects the skill's delay
 //        1 - skill's delay is not affected by dex
 //        2 - skill's delay is not affected by Magic Strings / Bragi
 //        4 - skill's delay is not affected by item bonuses (equip, cards)
-//     1024 - æŠ€èƒ½çš„å»¶è¿Ÿåœ¨æŠ€èƒ½é‡Šæ”¾æˆåŠŸåæ‰å¼€å§‹è®¡æ—¶
-//     2048 - å–æ¶ˆæŠ€èƒ½åæ‘‡ (é‡Šæ”¾æŠ€èƒ½æ—¶ç©å®¶ä¸åšä»»ä½•åŠ¨ä½œ)
+//     1024 - ¡@€è¡@ôğáDÅwâY¡@¡@¡@€è¡@¡@ÔİìîñiáÂÎoÁíÎ·åM¼d€å¡@æ¦¢J¡@
+//     2048 - îíÑïÖÇ¡@€è¡@ÁíÎ·¡@ (¡@Ôİìî¡@€è¡@Ãë¨ï¡@ôe¦·ÓGÁç²B´«ÒFòKÎpÒFœ)
 //
 // Note: Values are bit fields, add them up to combine their effects.
 // Note: Delay setting '1' only makes sense when delay_dependon_dex is enabled.

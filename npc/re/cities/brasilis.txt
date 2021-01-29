@@ -20,51 +20,51 @@
 // Brasilis Transportation :: brasilis_trans
 //============================================================
 /* Pre-Renewal coordinates: alberta,247,115,3 */
-alberta,246,82,3	script	布兰妮号 船员#bra2	100,{
-	mes "[布兰妮号 船员]";
-	mes "嘿, 你有听过一个叫巴西的地方吗?";
-	mes "那理有点像沙漠都市梦罗克般炎热、多雨. 是个非常神秘的地方.";
+alberta,246,82,3	script	ガ孽ゞ腹 差#bra2	100,{
+	mes "[ガ孽ゞ腹 差]";
+	mes "糑, Τ筁ぺ﹁よ盾?";
+	mes "ê瞶Τ翴钩‵簔常カ冠霉荐獴. 琌獶盽よ.";
 	next;
-	mes "[布兰妮号 船员]";
-	mes "我们最近发现了一条新的远洋航线, 不容易去到那边.";
+	mes "[ガ孽ゞ腹 差]";
+	mes "и程祇瞷兵穝环瑅絬, ぃ甧ê娩.";
 	if (VIP_SCRIPT) {
 		set .@cost, vip_status(VIP_STATUS_ACTIVE)?1000:10000;
-	mes "往返需 10,000 ! , VIP的话只要1,000! 如何?"; //custom translation (VIP)
+	mes "┕惠 10,000 ! , VIP杠璶1,000! ?"; //custom translation (VIP)
 	} else {
 		set .@cost,10000;
-		mes "往返需 10,000 ! 如何?";
+		mes "┕惠 10,000 ! ?";
 	}
 	next;
-	switch(select("去巴西!:我要留在这.")) {
+	switch(select("ぺ﹁!:и璶痙硂.")) {
 	case 1:
 		if (Zeny < .@cost) {
-			mes "[布兰妮号 船员]";
+			mes "[ガ孽ゞ腹 差]";
 			mes "I said "+callfunc("F_InsertComma",.@cost)+" zeny.";
 			close;
 		}
 		else {
-			mes "[布兰妮号 船员]";
-			mes "酷喔~!! 出发~!";
+			mes "[ガ孽ゞ腹 差]";
+			mes "慌翅~!! 祇~!";
 			set Zeny, Zeny-.@cost;
 			close2;
 			warp "brasilis",314,60;
 			end;
 		}
 	case 2:
-		mes "[布兰妮号 船员]";
-		mes "如果你感到兴趣, 告诉我带你过去.";
+		mes "[ガ孽ゞ腹 差]";
+		mes "狦稰砍届, 禗и盿筁.";
 		close;
 	}
 }
 
-brasilis,316,57,3	script	布兰妮号 船员#bra1	4W_SAILOR,{
-	mes "[布兰妮号 船员]";
-	mes "我的船要驶回艾尔贝塔, 你想搭船吗?";
+brasilis,316,57,3	script	ガ孽ゞ腹 差#bra1	4W_SAILOR,{
+	mes "[ガ孽ゞ腹 差]";
+	mes "и差璶緋︺焊ī娥, 稱穎差盾?";
 	next;
-	switch(select("搭船.:不搭船~.")) {
+	switch(select("穎差.:ぃ穎差~.")) {
 	case 1:
-		mes "[布兰妮号 船员]";
-		mes "当然还是自己的家最好.";
+		mes "[ガ孽ゞ腹 差]";
+		mes "讽礛临琌產程.";
 		close2;
 		if (checkre(0))
 			warp "alberta",243,82;
@@ -72,70 +72,70 @@ brasilis,316,57,3	script	布兰妮号 船员#bra1	4W_SAILOR,{
 			warp "alberta",244,115;
 		end;
 	case 2:
-		mes "[布兰妮号 船员]";
-		mes "好的, 随便你. 当我们回来会在见到你.";
+		mes "[ガ孽ゞ腹 差]";
+		mes ", 繦獽. 讽иㄓ穦ǎ.";
 		close;
 	}
 }
 
 // Generic Brasilis NPCs
 //============================================================
-brasilis,155,165,3	script	告示牌#bra1	4_BULLETIN_BOARD2,{
-	mes ":: 美术博物馆 ::";
+brasilis,155,165,3	script	ボ礟#bra1	4_BULLETIN_BOARD2,{
+	mes ":: 砃痴繻 ::";
 	close;
 }
 
-brasilis,191,239,3	script	告示牌#bra2	4_BULLETIN_BOARD2,{
-	mes ":: 韦拉斯纪念碑 ::";
+brasilis,191,239,3	script	ボ礟#bra2	4_BULLETIN_BOARD2,{
+	mes ":: ┰吹├窸 ::";
 	close;
 }
 
-brasilis,240,247,3	script	告示牌#bra3	4_BULLETIN_BOARD2,{
-	mes ":: 市集 ::";
+brasilis,240,247,3	script	ボ礟#bra3	4_BULLETIN_BOARD2,{
+	mes ":: カ栋 ::";
 	mes " ";
-	mes "- 药水与武器 -";
+	mes "- 媚蒓猌竟 -";
 	close;
 }
 
-brasilis,303,309,3	script	告示牌#bra4	4_BULLETIN_BOARD2,{
-	mes ":: 丛林缆车 ::";
+brasilis,303,309,3	script	ボ礟#bra4	4_BULLETIN_BOARD2,{
+	mes ":: 翺狶苐ó ::";
 	mes "";
-	mes "- 心脏弱的玩家禁入 -";
+	mes "- み纽畓產窽 -";
 	close;
 }
 
-brasilis,278,137,3	script	告示牌#bra5	4_BULLETIN_BOARD2,{
-	mes ":: 巴西　大饭店 ::";
+brasilis,278,137,3	script	ボ礟#bra5	4_BULLETIN_BOARD2,{
+	mes ":: ぺ﹁逗┍ ::";
 	close;
 }
 
-brasilis,137,77,5	script	霜淇淋宝贝	4_M_03,{
-	mes "[霜淇淋宝贝]";
-	mes "来哟~来哟~";
-	mes "冰淇淋是炎热夏天最佳消暑良伴~";
-	mes "只要 ^3355FF100 Zeny^000000~";
-	mes "霜淇淋~";
-	mes "霜淇淋来了!";
+brasilis,137,77,5	script	流睳睴腳ī	4_M_03,{
+	mes "[流睳睴腳ī]";
+	mes "ㄓ抽~ㄓ抽~";
+	mes "睳睴琌荐甃ぱ程ㄎ椿▆︸~";
+	mes "璶 ^3355FF100 Zeny^000000~";
+	mes "流睳睴~";
+	mes "流睳睴ㄓ!";
 	next;
-	switch(select("给我一个!:关于霜淇淋?:取消交易.")) {
+	switch(select("倒и!:闽流睳睴?:ユ.")) {
 	case 1:
-		mes "[霜淇淋宝贝]";
-		mes "清凉美味的霜淇淋由于太受欢迎, .";
-		mes "所以每人只能限购 5个-";
+		mes "[流睳睴腳ī]";
+		mes "睲睤流睳睴パび舧, .";
+		mes "┮–潦 5-";
 		next;
 		while(1) {
 			input .@input; //,1,5;
 			if (.@input == 0) {
-				mes "[霜淇淋宝贝]";
-				mes "不买?";
-				mes "为了下一位排队购买霜淇淋的人, 请让位好吗.";
+				mes "[流睳睴腳ī]";
+				mes "ぃ禦?";
+				mes "逼钉潦禦流睳睴, 叫琵盾.";
 				close;
 			}
 			else if ((.@input < 0) || (.@input > 5)) {
-				mes "[霜淇淋宝贝]";
-				mes "喔喔.";
-				mes "你有点贪心喔.";
-				mes "吃超过5个的话, 到了晚上你的肠胃就会跟你作对吧?.";
+				mes "[流睳睴腳ī]";
+				mes "翅翅.";
+				mes "Τ翴砱み翅.";
+				mes "禬筁5杠, 边竮璆碞穦蛤癸?.";
 				next;
 			}
 			else
@@ -143,35 +143,35 @@ brasilis,137,77,5	script	霜淇淋宝贝	4_M_03,{
 		}
 		set .@icecream_hap,.@input*100;
 		if (Zeny < .@icecream_hap) {
-			mes "[霜淇淋宝贝]";
-			mes "??您的金币似乎不足?.";
-			mes "每个是 ^3355FF100 Zeny^000000~ !";
+			mes "[流睳睴腳ī]";
+			mes "??眤刽ぃì?.";
+			mes "–琌 ^3355FF100 Zeny^000000~ !";
 			close;
 		}
 		if (!checkweight(536,.@input)) {
-			mes "[霜淇淋宝贝]";
-			mes "你携带太多物品.";
-			mes "请减少一些携带品在购买.";
+			mes "[流睳睴腳ī]";
+			mes "拟盿び珇.";
+			mes "叫搭ぶㄇ拟盿珇潦禦.";
 			close;
 		}
 		set Zeny, Zeny - .@icecream_hap;
 		getitem 536,.@input; //Ice_Cream
 		close;
 	case 2:
-		mes "[霜淇淋宝贝]";
-		mes "'霜淇淋...";
-		mes "等等,";
-		mes "你不知道什么是霜淇淋?";
-		mes "你该不会是...";
-		mes "生活在天龙国吧?";
+		mes "[流睳睴腳ī]";
+		mes "'流睳睴...";
+		mes "单单,";
+		mes "ぃ笵ぐ琌流睳睴?";
+		mes "赣ぃ穦琌...";
+		mes "ネぱ纒瓣?";
 		next;
-		mes "[霜淇淋宝贝]";
-		mes "所谓'霜淇淋'就是...冷冻的冰品.";
-		mes "因热量高营养丰富, 适当的吃才有益健康.";
+		mes "[流睳睴腳ī]";
+		mes "┮孔'流睳睴'碞琌...珇.";
+		mes "荐秖蔼犁緄ぅ碔, 屿讽Τ痲胺眃.";
 		close;
 	case 3:
-		mes "[霜淇淋宝贝]";
-		mes "不要错过品尝美味的冰淇淋喔~!";
+		mes "[流睳睴腳ī]";
+		mes "ぃ璶岿筁珇沽睳睴翅~!";
 		close;
 	}
 }

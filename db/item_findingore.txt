@@ -3,23 +3,23 @@
 // Structure of Database:
 // GroupID,ItemID,Rate
 
-IG_FindingOre,714,3		// 华丽金属
-IG_FindingOre,756,20	// 神之金属原石
-IG_FindingOre,757,20	// 铝原石
-IG_FindingOre,969,2		// 黄金
-IG_FindingOre,984,10	// 神之金属
-IG_FindingOre,985,10	// 铝
-IG_FindingOre,990,30	// 火灵矿石
-IG_FindingOre,991,30	// 水灵矿石
-IG_FindingOre,992,30	// 风灵矿石
-IG_FindingOre,993,30	// 地灵矿石
-IG_FindingOre,994,15	// 火灵原石
-IG_FindingOre,995,15	// 水灵原石
-IG_FindingOre,996,15	// 风灵原石
-IG_FindingOre,997,15	// 土灵原石
-IG_FindingOre,998,80	// 铁
-IG_FindingOre,999,50	// 钢铁
-IG_FindingOre,1002,100	// 铁矿石
-IG_FindingOre,1003,60	// 煤矿
-IG_FindingOre,1010,95	// 强化武器金属-级数一
-IG_FindingOre,1011,55	// 强化武器金属-级数二
+IG_FindingOre,714,3		// 地腞妮
+IG_FindingOre,756,20	// ぇ妮ホ
+IG_FindingOre,757,20	// 綯ホ
+IG_FindingOre,969,2		// 独
+IG_FindingOre,984,10	// ぇ妮
+IG_FindingOre,985,10	// 綯
+IG_FindingOre,990,30	// 艶膓ホ
+IG_FindingOre,991,30	// 艶膓ホ
+IG_FindingOre,992,30	// 艶膓ホ
+IG_FindingOre,993,30	// 艶膓ホ
+IG_FindingOre,994,15	// 艶ホ
+IG_FindingOre,995,15	// 艶ホ
+IG_FindingOre,996,15	// 艶ホ
+IG_FindingOre,997,15	// 艶ホ
+IG_FindingOre,998,80	// 臟
+IG_FindingOre,999,50	// 葵臟
+IG_FindingOre,1002,100	// 臟膓ホ
+IG_FindingOre,1003,60	// 费膓
+IG_FindingOre,1010,95	// 眏て猌竟妮-计
+IG_FindingOre,1011,55	// 眏て猌竟妮-计

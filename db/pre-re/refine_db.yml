@@ -1,21 +1,21 @@
 ###########################################################################
 # Pre-Renewal Refine Database
 ###########################################################################
-# StatsPerLevel 精炼每增加一级固定增加多少bonus奖励
-# RandomBonusStartLevel 当精炼等级大于该参数时，每大于一级增加 0~RandomBonusValue 倍固定伤害
-# RandomBonusValue 精炼增加的固定伤害值
-# Costs 消耗
-#    - Type 精炼类型
-#    - Price 相应精炼类型，每次精炼消耗的Zeny数量
-#    - Material 相应精炼类型，每次精炼消耗的精炼材料
-#    - Breakable 是否在精炼过程中损坏
-# Rates 概率
-#    - Level 精炼后的等级
-#    - Bonus 精炼后增加的攻击力（实际增加 Bonus / 100）、防御力（实际增加 (Bonus + 50)/ 100）
-#    - NormalChance 使用 铝/神金（混沌金属/魔力之石） 精炼时的成功率 （百分率）
-#    - EnrichedChance 使用 浓缩铝/浓缩神金（高密度混沌金属/高密度魔力之石） 精炼时的成功率 （百分率）
-#    - EventNormalChance 当 conf 配置中 event_refine_chance 打开时，使用 铝/神金（混沌金属/魔力之石） 精炼时的陈功率 （百分率）
-#    - EventEnrichedChance 当 conf 配置中 event_refine_chance 打开时，使用 浓缩铝/浓缩神金（高密度混沌金属/高密度魔力之石） 精炼时的陈功率 （百分率）
+# StatsPerLevel 弘芬–糤㏕﹚糤ぶbonus贱纘
+# RandomBonusStartLevel 讽弘芬单赣把计–糤 0~RandomBonusValue ㏕﹚端甡
+# RandomBonusValue 弘芬糤㏕﹚端甡
+# Costs 
+#    - Type 弘芬摸
+#    - Price 莱弘芬摸–Ω弘芬Zeny计秖
+#    - Material 莱弘芬摸–Ω弘芬弘芬
+#    - Breakable 琌弘芬筁祘い穕Д
+# Rates 阀瞯
+#    - Level 弘芬单
+#    - Bonus 弘芬糤ю阑龟悔糤 Bonus / 100ň眘龟悔糤 (Bonus + 50)/ 100
+#    - NormalChance ㄏノ 綯/睼≒妮/臸ぇホ 弘芬Θ瞯 κだ瞯
+#    - EnrichedChance ㄏノ 緻罽綯/緻罽蔼盞睼≒妮/蔼盞臸ぇホ 弘芬Θ瞯 κだ瞯
+#    - EventNormalChance 讽 conf 皌竚い event_refine_chance ゴ秨ㄏノ 綯/睼≒妮/臸ぇホ 弘芬朝瞯 κだ瞯
+#    - EventEnrichedChance 讽 conf 皌竚い event_refine_chance ゴ秨ㄏノ 緻罽綯/緻罽蔼盞睼≒妮/蔼盞臸ぇホ 弘芬朝瞯 κだ瞯
 
 Armor:
   StatsPerLevel: 66

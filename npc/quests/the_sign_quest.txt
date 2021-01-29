@@ -3096,7 +3096,7 @@ OnTouch_:
 /* Currently broken.
 prt_maze02,25,161,0	script	#music	-1,7,7,{
 OnTouch_:
-	soundeffect "effect\\Â¼Â®Â¾Ã§Ã€Ã‡ Â¾Ã®Â½Ã˜Â½Ã….wav",1;
+	soundeffect "effect\\¿ýÃf¼®²õ¡@×J ¼®¥f³°¡@³°¡@.wav",1;
 	end;
 }
 */

@@ -115,46 +115,46 @@ moc_para01,48,177,3	script	91-99 Mission Board	857,{
 		mes "Which monster will you hunt or have you finished hunting?";
 		next;
 		switch(select("^0000FFSolider^000000:^0000FFFreezer^000000:^0000FFHeater^000000")) {
-			case 1: callsub L_Quest,4181,"Solider",90000,"¼Ö¸®´õÄ«µå","There is a monster that only can be found on ^8B4513Turtle Island^000000.";
-			case 2: callsub L_Quest,4182,"Freezer",94000,"ÇÁ¸®ÀúÄ«µå","There is a monster that only can be found on ^8B4513Turtle Island^000000.";
-			case 3: callsub L_Quest,4183,"Heater",114000,"È÷ÅÍÄ«µå","There is a monster that only can be found on ^8B4513Turtle Island^000000.";
+			case 1: callsub L_Quest,4181,"Solider",90000,"¸ë©²¤ï¾¥ÀQ","There is a monster that only can be found on ^8B4513Turtle Island^000000.";
+			case 2: callsub L_Quest,4182,"Freezer",94000,"¾õ©²¾ú¾¥ÀQ","There is a monster that only can be found on ^8B4513Turtle Island^000000.";
+			case 3: callsub L_Quest,4183,"Heater",114000,"Ïs½Y¾¥ÀQ","There is a monster that only can be found on ^8B4513Turtle Island^000000.";
 		}
 	case 2:
 		mes "^8B4513Glast Heim^000000.";
 		mes "Which monster will you hunt or have you finished hunting?";
 		next;
 		switch(select("^0000FFInjustice^000000:^0000FFRybio^000000:^0000FFDark Priest^000000")) {
-			case 1: callsub L_Quest,4184,"Injustice",96000,"ÀÎÀú½ºÆ¼½ºÄ«µå","There is a monster only found in ^8B4513Glast Heim prison^000000.";
-			case 2: callsub L_Quest,4185,"Rybio",96000,"¸®ºñ¿ÀÄ«µå","There is a monster only found in ^8B4513Glast Heim prison^000000.";
-			case 3: callsub L_Quest,4186,"Dark Priest",146000,"´ÙÅ©ÇÁ¸®½ºÆ®Ä«µå","There is a monster only found in ^8B4513Glast Heim prison^000000.";
+			case 1: callsub L_Quest,4184,"Injustice",96000,"¨c¾ú½¦µÓ½¦¾¥ÀQ","There is a monster only found in ^8B4513Glast Heim prison^000000.";
+			case 2: callsub L_Quest,4185,"Rybio",96000,"©²«p©V¾¥ÀQ","There is a monster only found in ^8B4513Glast Heim prison^000000.";
+			case 3: callsub L_Quest,4186,"Dark Priest",146000,"«P¹A¾õ©²½¦ÄÆ¾¥ÀQ","There is a monster only found in ^8B4513Glast Heim prison^000000.";
 		}
 	case 3:
 		mes "^8B4513Rachel / Veins^000000.";
 		mes "Which monster will you hunt or have you finished hunting?";
 		next;
 		switch(select("^0000FFStapo^000000:^0000FFRoween^000000:^0000FFSiroma^000000")) {
-			case 1: callsub L_Quest,4187,"Stapo",96000,"½ºÅÂÆ÷Ä«µå","There is a monster only found in ^8B4513Veins^000000.";
-			case 2: callsub L_Quest,4188,"Roween",102000,"·Î¿ìÀ©Ä«µå","There is a monster only found in ^8B4513Rachel^000000.";
-			case 3: callsub L_Quest,4189,"Siroma",110000,"½Ã·Î¸¶Ä«µå","There is a monster only found in ^8B4513Ice Dungeon^000000.";
+			case 1: callsub L_Quest,4187,"Stapo",96000,"½¦©È¾¹¾¥ÀQ","There is a monster only found in ^8B4513Veins^000000.";
+			case 2: callsub L_Quest,4188,"Roween",102000,"ªÍ§ÖÂX¾¥ÀQ","There is a monster only found in ^8B4513Rachel^000000.";
+			case 3: callsub L_Quest,4189,"Siroma",110000,"ÁBªÍ¥I¾¥ÀQ","There is a monster only found in ^8B4513Ice Dungeon^000000.";
 		}
 	case 4:
 		mes "^8B4513Expansion Cities^000000.";
 		mes "Which monster will you hunt or have you finished hunting?";
 		next;
 		switch(select("^0000FFShinobi^000000:^0000FFEvil Nymph^000000")) {
-			case 1: callsub L_Quest,4190,"Shinobi",102000,"½Ã³ëºñÄ«µå","There is a monster only found in ^8B4513Amatsu Dungeon^000000.";
-			case 2: callsub L_Quest,4191,"Evil Nymph",108000,"¿ä¼±³àÄ«µå","There is a monster only found in ^8B4513Kunlun Dungeon^000000.";
+			case 1: callsub L_Quest,4190,"Shinobi",102000,"ÁBÃ¥«p¾¥ÀQ","There is a monster only found in ^8B4513Amatsu Dungeon^000000.";
+			case 2: callsub L_Quest,4191,"Evil Nymph",108000,"¦j«æ¨ª¾¥ÀQ","There is a monster only found in ^8B4513Kunlun Dungeon^000000.";
 		}
 	case 5:
 		mes "Other Regions.";
 		mes "Which monster will you hunt or have you finished hunting?";
 		next;
 		switch(select("^0000FFDeviruchi^000000:^0000FFMineral^000000:^0000FFKaho^000000:^0000FFNeraid^000000:^0000FFDisguise^000000")) {
-			case 1: callsub L_Quest,4192,"Deviruchi",110000,"µ¥ºñ·çÄ¡Ä«µå","There is a monster only found in ^8B4513Geffen Dungeon^000000.";
-			case 2: callsub L_Quest,4193,"Mineral",138000,"¹Ì³×¶ö","There is a monster only found in ^8B4513Einbech Dungeon^000000.";
-			case 3: callsub L_Quest,4194,"Kaho",118000,"Ä«È£Ä«µå","There is a monster found in ^8B4513Nogg Road Magma 1^000000.";
-			case 4: callsub L_Quest,4195,"Neraid",96000,"³×·¹ÀÌµåÄ«µå","There is a monster only found in ^8B4513Comodo Dungeon^000000.";
-			case 5: callsub L_Quest,4196,"Disguise",134000,"µð½º°¡ÀÌÁîÄ«µå","There is a monster only found in ^8B4513Niflheim^000000.";
+			case 1: callsub L_Quest,4192,"Deviruchi",110000,"³æ«p­·¼±¾¥ÀQ","There is a monster only found in ^8B4513Geffen Dungeon^000000.";
+			case 2: callsub L_Quest,4193,"Mineral",138000,"©T°Í¾j","There is a monster only found in ^8B4513Einbech Dungeon^000000.";
+			case 3: callsub L_Quest,4194,"Kaho",118000,"¾¥ÆT¾¥ÀQ","There is a monster found in ^8B4513Nogg Road Magma 1^000000.";
+			case 4: callsub L_Quest,4195,"Neraid",96000,"°Í¶º¼´ÀQ¾¥ÀQ","There is a monster only found in ^8B4513Comodo Dungeon^000000.";
+			case 5: callsub L_Quest,4196,"Disguise",134000,"¥p½¦°Ú¼´¥O¾¥ÀQ","There is a monster only found in ^8B4513Niflheim^000000.";
 		}
 	}
 	end;

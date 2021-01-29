@@ -25,252 +25,252 @@
 //= 2.0 Bug fixes (bugreport:7928) [DeadlySilence]
 //============================================================
 
-geffen,59,143,0	script	米拉	4_F_02,{
-	mes "[米拉]";
-	mes "欢迎来到吉芬,";
-	mes "魔法之城!";
+geffen,59,143,0	script	μ┰	4_F_02,{
+	mes "[μ┰]";
+	mes "舧ㄓ,";
+	mes "臸猭ぇ!";
 	next;
-	mes "[米拉]";
-	mes "我并不怎么了解魔法, 但你是否尝试过魔法的威力呢? ^CC6600蜂蜜^000000!";
+	mes "[μ┰]";
+	mes "иぃ秆臸猭, 琌沽刚筁臸猭㎡? ^CC6600噶籩^000000!";
 	next;
-	mes "[米拉]";
-	mes "这太美味了. 我不太清楚这是否是春药, 但我知道这东西能够减轻你的疲劳, 并且能够治愈你身上的创伤!";
+	mes "[μ┰]";
+	mes "硂び. иぃび睲贰硂琌琌琄媚, и笵硂狥﹁镑搭淮痟骋, 镑獀稶ō承端!";
 	next;
-	mes "[米拉]";
-	mes "黄蜂聚集在草原, 并遵从黄蜂女王的命令采集花蜜.蜂蜜便是由他们所采集的花蜜制制作出来的.";
+	mes "[μ┰]";
+	mes "独噶籈栋, 宽眖独噶㏑栋籩.噶籩獽琌パ┮栋籩ㄓ.";
 	next;
-	mes "[米拉]";
-	mes "但那不是全部.有一种特殊的蜂蜜只能为黄蜂女王而制：";
-	mes "^CC6600蜂皇浆^000000!";
+	mes "[μ┰]";
+	mes "êぃ琌场.Τ销疭噶籩独噶τ";
+	mes "^CC6600噶歼^000000!";
 	next;
-	mes "[米拉]";
-	mes "没什么能与蜂皇浆相媲美, 并且我觉得他比普通蜂蜜对你更具效果!";
+	mes "[μ┰]";
+	mes "⊿ぐ蒓噶歼稡, и谋眔ゑ炊硄噶籩癸ㄣ狦!";
 	close;
 }
 
-geffen,156,190,0	script	欧沃克	4_KID01,{
-	mes "[欧沃克]";
-	mes "有兴趣...";
-	mes "很有兴趣!";
-	mes "哦!让我告诉你!";
-	mes "这不可思议的故事~";
+geffen,156,190,0	script	稼║	4_KID01,{
+	mes "[稼║]";
+	mes "Τ砍届...";
+	mes "Τ砍届!";
+	mes "瓳!琵и禗!";
+	mes "硂ぃ某珿ㄆ~";
 	next;
-	mes "[欧沃克]";
-	mes "当我研究魔法的时候, 我发现了这个魔法卷轴.上面描述这个颗魔法之树“ 伊格德拉西尔-天地树”（北欧神话中的宇宙树）.";
+	mes "[稼║]";
+	mes "讽и╯臸猭, и祇瞷硂臸猭禸.磞瓃硂聋臸猭ぇ攫¨ レ紈┰﹁焊-ぱ攫〃稼杠い﹝攫.";
 	next;
-	mes "[欧沃克]";
-	mes "天地树果实及种子连接着世界上所有的生物.按卷轴上的记载, 天地树与创世纪有着密不可分的关系.";
+	mes "[稼║]";
+	mes "ぱ攫狦龟の销硈钡帝┮Τネ.禸癘更, ぱ攫蒓承Τ帝盞ぃだ闽╰.";
 	next;
-	mes "[欧沃克]";
-	mes "我也听到一些传闻说在克魔岛附近.我们必须要找到他们, 我非常确定!";
+	mes "[稼║]";
+	mes "иㄇ肚籇弧臸畄.иゲ斗璶т, и獶盽谔﹚!";
 	close;
 }
 
-geffen_in,164,109,0	script	Wizard 斯坦扎	1_M_WIZARD,{
-	mes "[斯坦扎]";
-	mes "我感觉到周围充满了强大的灵魂.你能感觉到吗?";
+geffen_in,164,109,0	script	Wizard 吹㈱ゃ	1_M_WIZARD,{
+	mes "[吹㈱ゃ]";
+	mes "и稰谋㏄瞅骸眏艶活.稰谋盾?";
 	next;
-	mes "[斯坦扎]";
+	mes "[吹㈱ゃ]";
 	if (BaseJob == Job_Mage)
-		mes "看来你已经学会了不可思议之术.魔法.... 那是统治";
+		mes "ㄓ竒厩穦ぃ某ぇ砃.臸猭.... ê琌参獀";
 	else if (BaseJob == Job_Acolyte) {
-		mes "哦...";
-		mes "我看你在设法装备神圣之力.我认为神圣之力可能考虑过一种来自不可思议的力量.";
+		mes "瓳...";
+		mes "и砞猭杆称蒾ぇ.и粄蒾ぇσ納筁销ㄓぃ某秖.";
 	}
 	else if (Class == Job_Novice)
-		mes "虽然你现在可能无法使用魔法或其他强力的技能.这个知识可能对你的将来有所帮助, 初新者...";
+		mes "瘤礛瞷礚猭ㄏノ臸猭┪ㄤ眏м.硂醚癸盢ㄓΤ┮腊, 穝...";
 	else 
-		mes "虽然你不是正式的魔法使,你可以使用来自虚空之力的技能, 你能明白吗?";
+		mes "瘤礛ぃ琌タΑ臸猭ㄏ,ㄏノㄓ店ぇм, フ盾?";
 	next;
-	mes "[斯坦扎]";
-	mes "如果你意图使用不可思议之力去伤害他人, 或藐视自然之母的规则, 那么这种力量将会自然的违背你的意图, 你将自食其果!";
+	mes "[吹㈱ゃ]";
+	mes "狦種瓜ㄏノぃ某ぇ端甡, ┪缕跌礛ぇダ砏玥, ê硂销秖盢穦礛笻璉種瓜, 盢ㄤ狦!";
 	next;
-	mes "[斯坦扎]";
-	mes "但有件东西能够保护施法者, 遵从安全使用有把握的魔法技能.他们都将会非常杰出, 奇迹之石被称为宝石.";
+	mes "[吹㈱ゃ]";
+	mes "Τン狥﹁镑玂臔琁猭, 宽眖ㄏノΤр搐臸猭м.常盢穦獶盽狽, 格ぇホ砆嘿腳ホ.";
 	next;
-	mes "[斯坦扎]";
-	mes "宝石...";
-	mes "如果你希望百分百的使用你的能力, 记住这件东西.";
+	mes "[吹㈱ゃ]";
+	mes "腳ホ...";
+	mes "狦辨κだκㄏノ, 癘硂ン狥﹁.";
 	close;
 }
 
-geffen,147,26,0	script	拉尔菲	4W_M_01,{
-	mes "[拉尔菲]";
-	mes "在这个世界的某处, 有一把罕见的魔杖能将精神之力转换为物质之力, 这把杖来自 ^990000毁灭之力^000000...";
+geffen,147,26,0	script	┰焊滇	4W_M_01,{
+	mes "[┰焊滇]";
+	mes "硂琘矪, Τр╱ǎ臸盢弘ぇ锣传借ぇ, 硂рㄓ ^990000反防ぇ^000000...";
 	next;
-	mes "[拉尔菲]";
-	mes "拥有了它, 你将越发强大... 即便像我一样的弱者, 哈哈哈哈哈,";
-	mes "我必须获得它!";
+	mes "[┰焊滇]";
+	mes "局Τウ, 盢禫祇眏... 獽钩и妓畓, ,";
+	mes "иゲ斗莉眔ウ!";
 	next;
 	emotion ET_SURPRISE;
-	mes "[拉尔菲]";
-	mes "...好家伙!";
-	mes "自从来了之后";
-	mes "你在听我说话吗?";
+	mes "[┰焊滇]";
+	mes "...產ル!";
+	mes "眖ㄓぇ";
+	mes "и弧杠盾?";
 	next;
-	mes "[拉尔菲]";
-	mes "你是否发生了?";
-	mes "听到任何关于这事的消息?";
-	mes "啊哈哈哈哈哈哈 ";
+	mes "[┰焊滇]";
+	mes "琌祇ネ?";
+	mes "ヴ闽硂ㄆ?";
+	mes "摆 ";
 	next;
-	mes "[拉尔菲]";
-	mes "好吧...";
-	mes "我并没有说什么.但是, 如果..";
-	mes "我做到了!忘记他吧!";
-	mes "无论是~";
+	mes "[┰焊滇]";
+	mes "...";
+	mes "и⊿Τ弧ぐ.琌, 狦..";
+	mes "и暗!а癘!";
+	mes "礚阶琌~";
 	next;
-	mes "[拉尔菲]";
-	mes "...男孩, 这是很尴尬的一件事.";
+	mes "[┰焊滇]";
+	mes "...╧, 硂琌廓Ъンㄆ.";
 	close;
 }
 
-geffen,111,48,0	script	斯坦西	4W_F_01,{
+geffen,111,48,0	script	吹㈱﹁	4W_F_01,{
 	if (getequipid(EQI_HEAD_TOP) == 2299) {
-		mes "[斯坦西]";
-		mes "哦...!";
-		mes "你带着兽人头盔吗?喔~真酷啊~~";
+		mes "[吹㈱﹁]";
+		mes "瓳...!";
+		mes "盿帝脋繷帛盾?翅~痷慌摆~~";
 		next;
-		mes "[斯坦西]";
+		mes "[吹㈱﹁]";
 		if (Sex == SEX_MALE) {
-			mes "你看起来真...";
-			mes "坚强而又男子气~";
+			mes "癬ㄓ痷...";
+			mes "绊眏τ╧蒩~";
 		}
 		else {
-			mes "哦~!";
-			mes "我很嫉妒!";
+			mes "瓳~!";
+			mes "и耳И!";
 		}
 		close;
 	}
 	else if (getequipid(EQI_HEAD_TOP) == 5094) {
-		mes "[斯坦西]";
-		mes "哦...";
-		mes "喔...";
+		mes "[吹㈱﹁]";
+		mes "瓳...";
+		mes "翅...";
 		next;
-		mes "[斯坦西]";
-		mes "那个...";
-		mes "那是个头盔";
-		mes "兽人英雄的!";
+		mes "[吹㈱﹁]";
+		mes "ê...";
+		mes "ê琌繷帛";
+		mes "脋璣动!";
 		next;
-		mes "[斯坦西]";
+		mes "[吹㈱﹁]";
 		if (Sex == SEX_MALE) {
-			mes "它是...";
-			mes "这就像你所包围这难以置信的阳刚气息! 哦~! 对于女孩来说, 这是无法被抗拒的!";
+			mes "ウ琌...";
+			mes "硂碞钩┮瞅硂螟竚獺锭蒩! 瓳~! 癸ㄓ弧, 硂琌礚猭砆к┶!";
 			next;
 			emotion ET_THROB;
-			mes "[斯坦西]";
-			mes "我也不例外.";
+			mes "[吹㈱﹁]";
+			mes "иぃㄒ.";
 		}
 		else {
-			mes "天那, 你一定很强壮!";
-			mes "但我认为只有兽人部落一员才能穿那些?";
+			mes "ぱê, ﹚眏Ё!";
+			mes "и粄Τ脋场辅êㄇ?";
 		}
 		close;
 	}
 	else {
-		mes "[斯坦西]";
-		mes "你好~!";
-		mes "哦, 是你吗";
-		mes "冒险家?";
+		mes "[吹㈱﹁]";
+		mes "~!";
+		mes "瓳, 琌盾";
+		mes "玙繧產?";
 		next;
-		mes "[斯坦西]";
-		mes "你见过任何兽人来自半人部落? 如果你去了, 从这里出发!我觉得你能在森林的深处发现兽人的!";
+		mes "[吹㈱﹁]";
+		mes "ǎ筁ヴ脋ㄓ场辅? 狦, 眖硂ń祇!и谋眔此狶瞏矪祇瞷脋!";
 		next;
-		mes "[斯坦西]";
-		mes "我听说兽人们有自己的语言及习俗. 据说就像我们人类一样.. 这是否意味这兽人和人类一样...?";
+		mes "[吹㈱﹁]";
+		mes "и弧脋Τ粂ēの策玌. 誹弧碞钩и摸妓.. 硂琌種硂脋㎝摸妓...?";
 		next;
-		mes "[斯坦西]";
-		mes "你知道, 他们在那窃窃私语的说些什么, 哦, 我真的很想知道!";
+		mes "[吹㈱﹁]";
+		mes "笵, ê叛叛╬粂弧ㄇぐ, 瓳, и痷稱笵!";
 		close;
 	}
 }
 	
-geffen_in,34,170,0	script	西奥多	1_M_01,{
-	mes "[西奥多]";
-	mes "你好!";
-	mes "难道不是一种";
-	mes "太好了";
-	mes "今天?";
+geffen_in,34,170,0	script	﹁而	1_M_01,{
+	mes "[﹁而]";
+	mes "!";
+	mes "螟笵ぃ琌销";
+	mes "び";
+	mes "さぱ?";
 	next;
-	mes "[西奥多]";
-	mes "好, 我不知道.我一直在努力的学习成为一个魔导师.我已经搞了一夜, 这种痛苦的感觉真神奇啊.";
+	mes "[﹁而]";
+	mes ", иぃ笵.и厩策Θ臸旧畍.и竒穌, 硂销礹璚稰谋痷摆.";
 	next;
-	mes "[西奥多]";
-	mes "*叹气...*";
-	mes "我在使用魔法时特别担心他们的缺陷.";
+	mes "[﹁而]";
+	mes "*鼓蒩...*";
+	mes "иㄏノ臸猭疭踞み炒.";
 	next;
-	mes "[西奥多]";
-	mes "哦!真是烦人, 我最后一次去探索的时候被敌人发现了.这怪物破坏了我所有的魔法!我连碰都没碰到他!";
+	mes "[﹁而]";
+	mes "瓳!痷琌沸, и程Ω贝砆寄祇瞷.硂┣瘆Ди┮Τ臸猭!и硈窱常⊿窱!";
 	next;
-	mes "[西奥多]";
-	mes "在此之后, 我意识到, 我需要某种形式的长距离武器以对付远距离的敌人.这可以远攻击距离...";
+	mes "[﹁而]";
+	mes "ぇ, и種醚, и惠璶琘销Α禯置猌竟癸环禯置寄.硂环ю阑禯置...";
 	next;
-	mes "[西奥多]";
-	mes "某种...";
-	mes "锋利而又刺耳的";
-	mes "发射器, 最好用木材去制作它.";
+	mes "[﹁而]";
+	mes "琘销...";
+	mes "網τφ";
+	mes "祇甮竟, 程ノれウ.";
 	next;
-	mes "[西奥多]";
-	mes "但是那里可以呢?";
-	mes "我找到了某些东西";
-	mes "像什么?!";
+	mes "[﹁而]";
+	mes "琌êń㎡?";
+	mes "ит琘ㄇ狥﹁";
+	mes "钩ぐ?!";
 	close;
 }
 
-geffen,146,148,4	script	可疑的男人	4W_M_03,6,6,{
+geffen,146,148,4	script	好╧	4W_M_03,6,6,{
 	end;
 
 OnTouch:
 	mes "[?]";
 	mes "^333333*Psssst!*";
-	mes "嘿, 你!";
-	mes "你想得到一些伟大的东西吗? 来吧!^000000";
+	mes "糑, !";
+	mes "稱眔ㄇ岸狥﹁盾? ㄓ!^000000";
 	next;
-	mes "[可疑的男人]";
+	mes "[好╧]";
 	if (Sex == SEX_MALE)
-		mes "嘿, 硬汉.";
+		mes "糑, 祑簙.";
 	else
-		mes "好, 好, 好. 你不是漂亮估量.今天就是你的幸运日了!";
+		mes ", , . ぃ琌簘獹︳秖.さぱ碞琌┋笲ら!";
 	next;
-	mes "[可疑的男人]";
-	mes "告诉我你想要什么吧, 我会切断你与我国之间的高额产品交易.";
+	mes "[好╧]";
+	mes "禗и稱璶ぐ, и穦ち耞蒓и瓣ぇ丁蔼肂玻珇ユ.";
 	next;
-	switch(select("给我些药水, 那么我可以为你治疗些HP.:恩, 你有小刀吗?:你有好披风吗?:你在这旁边还有什么东西吗?")) {
+	switch(select("倒иㄇ媚, êи獀励ㄇHP.:, Τ盾?:Τ┸盾?:硂娩临Τぐ狥﹁盾?")) {
 	case 1:
-		mes "[可疑的男人]";
-		mes "?磕阏业揭┘亮?";
-		mes "也!我找到我要的东西啦!";
+		mes "[好╧]";
+		mes "?絎霧穨处獹?";
+		mes "!ити璶狥﹁罢!";
 		next;
-		mes "[可疑的男人]";
-		mes "这就是!高品质的红药水!! 一旦你喝了它, 它便开始起效, 当它碰到你的嘴唇那一刻, 你将无法停止. 这东西真是妙不可言.";
+		mes "[好╧]";
+		mes "硂碞琌!蔼珇借媚!! ス耻ウ, ウ獽秨﹍癬, 讽ウ窱糒瓸êㄨ, 盢礚猭氨ゎ. 硂狥﹁痷琌Мぃē.";
 		next;
-		mes "[可疑的男人]";
-		mes "来吧, 花花公子.这是最后一瓶红药了.我从我朋友的朋友那搞到的.你知道, 这是个绝对便宜的好东西, 你不要错过.";
+		mes "[好╧]";
+		mes "ㄓ, そ.硂琌程瞺媚.и眖и狟ね狟ねê穌.笵, 硂琌荡癸獽﹜狥﹁, ぃ璶岿筁.";
 		next;
-		select("恩, 我能买一瓶白药代替它吗?");
-		mes "[可疑的男人]";
-		mes "白色药剂?噢, 那些根本不存在.但是, 呃, 如果有人出售这种东西, 把它给我, 这样我就可以测试他们的区别.但是, 是的, 我得到了真正的东西.";
+		select(", и禦瞺フ媚蠢ウ盾?");
+		mes "[好╧]";
+		mes "フ︹媚警?揪, êㄇセぃ.琌, , 狦Τ扳硂销狥﹁, рウ倒и, 硂妓и碞代刚跋.琌, 琌, и眔痷タ狥﹁.";
 		next;
-		mes "[可疑的男人]";
-		mes "你可以通过喝红药来恢复你的HP.我会卖你, 我只收 ^FF3333500 zeny^000000!";
+		mes "[好╧]";
+		mes "硄筁耻媚ㄓ蝋HP.и穦芥, иΜ ^FF3333500 zeny^000000!";
 		next;
-		mes "[可疑的男人]";
-		mes "现在! 有多便宜. 由于他们的需求量很大, 我可以卖你100个.";
-		mes "他们在同一时间.";
+		mes "[好╧]";
+		mes "瞷! Τ獽﹜. パ惠―秖, и芥100.";
+		mes "丁.";
 		next;
 		while(1) {
 			input .@input;
 			if (.@input == 0) {
-				mes "[可疑的男人]";
+				mes "[好╧]";
 				if (Sex == SEX_MALE)
-					mes "恩, 小子.你真伤透了我的心.我的意思是, 这种价格, 我基本是在做慈善义卖了!";
+					mes ", .痷端硓иみ.и種琌, 硂销刹, и膀セ琌暗稯到竡芥!";
 				else
-					mes "等等!你并没有让我告诉你红药会帮助你增加你的负重, 等等!";
+					mes "单单!⊿Τ琵и禗媚穦腊糤璽, 单单!";
 				close;
 			}
 			else if (.@input > 100) {
-				mes "[可疑的男人]";
-				mes "哇啊";
-				mes "我能让你买很多.我的意思是, 这东西不像你知道的那样, 有些奇妙的东西在其中呢!";
+				mes "[好╧]";
+				mes "珃摆";
+				mes "и琵禦.и種琌, 硂狥﹁ぃ钩笵ê妓, ΤㄇМ狥﹁ㄤい㎡!";
 				next;
 			}
 			else
@@ -278,69 +278,69 @@ OnTouch:
 		}
 		set .@Red_potion_hap,.@input * 500;
 		if (Zeny < .@Red_potion_hap) {
-			mes "[可疑的男人]";
-			mes "哦, 兄弟~";
-			mes "是你吗";
-			mes "新兵?";
-			mes "那样不好.";
+			mes "[好╧]";
+			mes "瓳, ~";
+			mes "琌盾";
+			mes "穝?";
+			mes "ê妓ぃ.";
 			next;
-			mes "[可疑的男人]";
-			mes "^333333我必须找些替代这些垃圾的东西.^000000 *啊哼* 我的意思是, 再来一次!";
+			mes "[好╧]";
+			mes "^333333иゲ斗тㄇ蠢硂ㄇ︰В狥﹁.^000000 *摆* и種琌, ㄓΩ!";
 			close;
 		}
 		set Zeny, Zeny - .@Red_potion_hap;
 		getitem 501,.@input; //Red_Potion
 		break;
 	case 2:
-		mes "[可疑的男人]";
+		mes "[好╧]";
 		if (Sex == SEX_MALE) {
-			mes "像你这样强壮的男孩要这把小刀干什么?";
+			mes "钩硂妓眏Ё╧璶硂рぐ?";
 			next;
-			mes "[可疑的男人]";
-			mes "现在...";
-			mes "真的是你吗";
-			mes "需要一把 ^FF3333男人的匕首^000000.";
+			mes "[好╧]";
+			mes "瞷...";
+			mes "痷琌盾";
+			mes "惠璶р ^FF3333╧^000000.";
 		}
 		else {
-			mes "漂亮的女人喜欢你?现在就来, 厨师小刀只为那些弱者准备.";
+			mes "簘獹尺舧?瞷碞ㄓ, 紁畍êㄇ畓称.";
 			next;
-			mes "[可疑的男人]";
-			mes "现在...";
-			mes "真的是你吗";
+			mes "[好╧]";
+			mes "瞷...";
+			mes "痷琌盾";
 			mes "?";
-			mes "^FF3333法式小刀^000000 会符合你的品位";
+			mes "^FF3333猭Α^000000 穦才珇";
 		}
 		next;
-		mes "[可疑的男人]";
-		mes "我叫它...";
-		mes "我自己发明了它.我之卖9400 Zeny!";
+		mes "[好╧]";
+		mes "иウ...";
+		mes "и祇ウ.иぇ芥9400 Zeny!";
 		next;
-		select("你现在就给我吗?");
-		mes "[可疑的男人]";
-		mes "刀鞘?";
-		mes "哇, 你问得太多了, 好吧, 好吧.";
+		select("瞷碞倒и盾?");
+		mes "[好╧]";
+		mes "繲?";
+		mes "珃, 拜眔び, , .";
 		next;
-		mes "[可疑的男人]";
-		mes "自从我喜欢上你, 我会给你优惠!";
-		mes "为了讨价还价?";
+		mes "[好╧]";
+		mes "眖и尺舧, и穦倒涩磃!";
+		mes "癚刹临刹?";
 		next;
-		mes "[可疑的男人]";
-		mes "有没有办法可以通过这个行动!现在, 有多少是你想要的?";
+		mes "[好╧]";
+		mes "Τ⊿Τ快猭硄筁硂︽笆!瞷, Τぶ琌稱璶?";
 		next;
 		while(1) {
 			input .@input;
 			if (.@input == 0) {
-				mes "[可疑的男人]";
-				mes "朋友, 有多少机会在你一生中错过, 我希望你能赢次彩票呢!";
-				mes "你也许会";
-				mes "通过.";
+				mes "[好╧]";
+				mes "狟ね, Τぶ审穦ネい岿筁, и辨墓Ω眒布㎡!";
+				mes "砛穦";
+				mes "硄筁.";
 				close;
 
 			}
 			else if (.@input > 100) {
-				mes "[可疑的男人]";
+				mes "[好╧]";
 				mes "WOW!";
-				mes "我不能卖你太多的匕首!";
+				mes "иぃ芥び!";
 				next;
 			}
 			else
@@ -348,51 +348,51 @@ OnTouch:
 		}
 		set .@Main_gauche_hap,.@input * 9400;
 		if (Zeny < .@Main_gauche_hap) {
-			mes "[可疑的男人]";	
-			mes "没有足够的钱吗?";
-			mes "在你眼前就是最适合你的交易, 还不抓紧时间?";
+			mes "[好╧]";	
+			mes "⊿Τì镑窥盾?";
+			mes "泊玡碞琌程屿ユ, 临ぃъ候丁?";
 			close;
 		}
 		set Zeny,Zeny-.@Main_gauche_hap;
 		getitem 1207,.@input; //Main_Gauche
 		break;
 	case 3:
-		mes "[可疑的男人]";
+		mes "[好╧]";
 		if (Sex == SEX_MALE)
-			mes "披风?那是老新闻了, 你知道什么是最后一种装备吗?";
+			mes "┸?ê琌ρ穝籇, 笵ぐ琌程销杆称盾?";
 		else
-			mes "为何像你这样的美女穿这种没有时尚风格的服饰呢?你知道怎么该让自己变的更漂亮?";
+			mes "钩硂妓硂销⊿Τ﹟狝耿㎡?笵赣琵跑簘獹?";
 		next;
-		mes "[可疑的男人]";
-		mes "那很对!";
-		mes "啊哈!穿这些衣服能够尽快的赢得他人的尊重!";
+		mes "[好╧]";
+		mes "ê癸!";
+		mes "摆!硂ㄇ︾狝镑荷е墓眔碙!";
 		next;
-		mes "[可疑的男人]";
-		mes "如果你有那件物品, 你将不在害怕怪物!";
+		mes "[好╧]";
+		mes "狦Τêン珇, 盢ぃ甡┤┣!";
 		next;
-		select("这个并没有被打开吗...? ");
-		mes "[可疑的男人]";
-		mes "哈哈, 你说什么?你不必打开他!";
+		select("硂⊿Τ砆ゴ秨盾...? ");
+		mes "[好╧]";
+		mes ", 弧ぐ?ぃゲゴ秨!";
 		next;
-		mes "[可疑的男人]";
-		mes "先生...";
-		mes "我在这件装备上投入那么大的时间和精力, 你相信我只卖920 zeny吗?";
+		mes "[好╧]";
+		mes "ネ...";
+		mes "и硂ン杆称щê丁㎝弘, 獺и芥920 zeny盾?";
 		next;
-		mes "[可疑的男人]";
-		mes "显然, 这比交易是不容你错过的哦?";
+		mes "[好╧]";
+		mes "陪礛, 硂ゑユ琌ぃ甧岿筁瓳?";
 		next;
 		while(1) {
 			input .@input;
 			if (.@input == 0) {
-				mes "[可疑的男人]";
-				mes "奥...";
-				mes "这是否与这件装备有什么关系呢?";
+				mes "[好╧]";
+				mes "而...";
+				mes "硂琌蒓硂ン杆称Τぐ闽╰㎡?";
 				close;
 			}
 			else if (.@input > 100) {
-				mes "[可疑的男人]";
-				mes "哇哦~!";
-				mes "我不能卖你那么多!如果你想试着那样的话把那箱子给我拿来好吗?";
+				mes "[好╧]";
+				mes "珃瓳~!";
+				mes "иぃ芥ê!狦稱刚帝ê妓杠рê絚倒иㄓ盾?";
 				next;
 			}
 			else
@@ -400,285 +400,285 @@ OnTouch:
 		}
 		set .@Hood__hap,.@input * 930;
 		if (Zeny < .@Hood__hap) {
-			mes "[可疑的男人]";
-			mes "哦, 傻瓜!";
-			mes "没什么钱吗?";
+			mes "[好╧]";
+			mes "瓳, 短ナ!";
+			mes "⊿ぐ窥盾?";
 			close;
 		}
 		set Zeny,Zeny-.@Hood__hap;
 		getitem 2501,.@input; //Hood
 		break;
 	case 4:
-		mes "[可疑的男人]";
-		mes "先生...";
-		mes "你一定要问我这是否可能, 嗯, 让我立即告诉你.除了我提供的货物之外, 其他没有任何地方销售这个产品呢!";
+		mes "[好╧]";
+		mes "ネ...";
+		mes "﹚璶拜и硂琌, 垛, 琵иミ禗.埃и矗ㄑ砯ぇ, ㄤ⊿Τヴよ綪扳硂玻珇㎡!";
 		next;
-		mes "[可疑的男人]";
-		mes "你应该相信我!";
+		mes "[好╧]";
+		mes "莱赣獺и!";
 		close;
 	}
-	mes "[可疑的男人]";
-	mes "当我有很好的项目的时候, 你就不需要再找别人了!";
+	mes "[好╧]";
+	mes "讽иΤ兜ヘ, 碞ぃ惠璶т!";
 	next;
-	mes "[可疑的男人]";
-	mes "请时不时的回来看看, 并且多买些我的东西.我很清楚我亲爱的客户们需要些什么, 呵呵~";
+	mes "[好╧]";
+	mes "叫ぃㄓ, 禦ㄇи狥﹁.и睲贰и克稲め惠璶ㄇぐ, ~";
 	close;
 }
 
-geffen_in,22,125,1	script	克鲁帕	1_M_HOF,{
-	mes "[克鲁帕]";
-	mes "哦~~~!";
-	mes "你的裙子真好看呀~";
-	mes "法师!";
+geffen_in,22,125,1	script	緗┈	1_M_HOF,{
+	mes "[緗┈]";
+	mes "瓳~~~!";
+	mes "溉痷~";
+	mes "猭畍!";
 	next;
 	if (Class == Job_Mage) {
-		mes "^3355FF总有一天, 你发誓!你将用你的鲜血来报复这个好战的法师!总会有一天的.....^000000";
+		mes "^3355FF羆Τぱ, 祇粆!盢ノ翧﹀ㄓ厨蝋硂驹猭畍!羆穦Τぱ.....^000000";
 		close;
 	}
 	else if (Class == Job_Wizard) {
-		select("其实, 我是一名法师.");
-		mes "[克鲁帕]";
-		mes "我好怕怕啊~";
-		mes "法师?呃..";
+		select("ㄤ龟, и琌猭畍.");
+		mes "[緗┈]";
+		mes "и┤┤摆~";
+		mes "猭畍?..";
 		next;
-		mes "[克鲁帕]";
-		mes "大家都知道他们的情报, 来吧, 聪明的人.告诉我如何刁难你吧!哈哈";
+		mes "[緗┈]";
+		mes "產常笵薄厨, ㄓ, 羙.禗и螟!";
 		next;
-		switch(select("流星雨! ：魔戒! ：容情.")) {
+		switch(select("瑈琍獴! 臸з! 甧薄.")) {
 		case 1:
-			mes "[克鲁帕]";
-			mes "恩?";
-			mes "你刚才说什么?";
+			mes "[緗┈]";
+			mes "?";
+			mes "弧ぐ?";
 			next;
-			mes "[克鲁帕]";
+			mes "[緗┈]";
 			mes "...";
 			next;
-			mes "[克鲁帕]";
+			mes "[緗┈]";
 			mes "...";
 			mes "......";
 			next;
-			mes "[克鲁帕]";
+			mes "[緗┈]";
 			mes "Ooooooooh";
 			mes "?";
 			emotion ET_SURPRISE;
 			next;
-			mes "[克鲁帕]";
-			mes "救救我.";
+			mes "[緗┈]";
+			mes "毕毕и.";
 			specialeffect EF_METEORSTORM;
 			close;
 		case 2:
-			mes "[克鲁帕]";
-			mes "哈哈哈哈哈!";
-			mes "愚蠢的法师!只有那只怪物才能解决这个问题!";
+			mes "[緗┈]";
+			mes "!";
+			mes "稭镍猭畍!Τê┣秆∕硂拜肈!";
 			next;
-			mes "[克鲁帕]";
-			mes "哦, 亲爱的领主...";
-			mes "你是认真的吗...";
+			mes "[緗┈]";
+			mes "瓳, 克稲烩...";
+			mes "琌粄痷盾...";
 			next;
 			specialeffect EF_LORD;
-			mes "[克鲁帕]";
-			mes "啊~!";
-			mes "啊哈!";
+			mes "[緗┈]";
+			mes "摆~!";
+			mes "摆!";
 			close;
 		case 3:
 			mes "["+strcharinfo(0)+"]";
-			mes "不...";
-			mes "我只能使用";
-			mes "我的力量是正义的.";
+			mes "ぃ...";
+			mes "иㄏノ";
+			mes "и秖琌タ竡.";
 			next;
-			mes "[克鲁帕]";
-			mes "哈哈!";
-			mes "好...";
-			mes "没什么事!";
+			mes "[緗┈]";
+			mes "!";
+			mes "...";
+			mes "⊿ぐㄆ!";
 			close;
 		}
 	}
 	else if (Class == Job_Sage) {
-		select("其实, 先生, 我是一名贤者.");
-		mes "[克鲁帕]";
-		mes "啊...";
-		mes "传说?";
+		select("ㄤ龟, ネ, и琌藉.");
+		mes "[緗┈]";
+		mes "摆...";
+		mes "肚弧?";
 		emotion ET_QUESTION;
 		next;
-		mes "[克鲁帕]";
-		mes "我不知道那是什么.但我想不应该是个半坏的法师.";
+		mes "[緗┈]";
+		mes "иぃ笵ê琌ぐ.и稱ぃ莱赣琌Д猭畍.";
 		next;
-		mes "[克鲁帕]";
-		mes "哦...";
-		mes "想和我喝一杯吗?";
+		mes "[緗┈]";
+		mes "瓳...";
+		mes "稱㎝и耻狹盾?";
 		close;
 	}
 	else {
-		mes "[克鲁帕]";
-		mes "稍等...";
-		mes "你不是法师!";
-		mes "我还没醉!";
+		mes "[緗┈]";
+		mes "祔单...";
+		mes "ぃ琌猭畍!";
+		mes "и临⊿綤!";
 		next;
-		mes "[克鲁帕]";
-		mes "我痛恨激情的魔法, 永远学习, 永远咛唱然后搞些没用的垃圾.";
+		mes "[緗┈]";
+		mes "и礹縀薄臸猭, ッ环厩策, ッ环纚佰礛穌ㄇ⊿ノ︰В.";
 		next;
-		mes "[克鲁帕]";
-		mes "这就是我们的工作, 审查媒体, 毁掉我们的教育体系, 造成空气污染, 启动战争, 普及说唱音乐...";
+		mes "[緗┈]";
+		mes "硂碞琌и, 糵琩碈蔨, 反奔и毙▅蔨╰, 硑Θ蒩γ琕, 币笆驹, 炊の弧佰贾...";
 		close;
 	}
 }
 
-geffen_in,59,61,1	script	斯盖乐	1_M_PUBMASTER,{
-	mes "[斯盖乐]";
-	mes "你好 你好.";
-	mes "你不在看吗?";
-	mes "为了艾瑞克!";
+geffen_in,59,61,1	script	吹籠贾	1_M_PUBMASTER,{
+	mes "[吹籠贾]";
+	mes " .";
+	mes "ぃ盾?";
+	mes "︺风!";
 	next;
-	if (select("艾瑞克? 谁在那里?:是的. 是的, 我是.") == 1) {
-		mes "[斯盖乐]";
-		mes "噢, 我明白了.他只是有些人在我的房间左边.他总是工作的某种项目.";
+	if (select("︺风? 街êń?:琌. 琌, и琌.") == 1) {
+		mes "[吹籠贾]";
+		mes "揪, иフ.琌Τㄇи┬丁オ娩.羆琌琘销兜ヘ.";
 		next;
-		mes "[斯盖乐]";
-		mes "这些使耳朵听错的魔法.我猜他一直在寻找投资者, 以帮助他完成建设无论他的决策.";
+		mes "[吹籠贾]";
+		mes "硂ㄇㄏφΨ岿臸猭.и瞦碝тщ戈, 腊ЧΘ砞礚阶∕郸.";
 		close;
 	}
-	mes "[斯盖乐]";
-	mes "哦, 好吧, 在我左边的那见屋子里, 你能找到艾瑞克.他会非常高兴知道有人对他想造的建筑感兴趣.";
+	mes "[吹籠贾]";
+	mes "瓳, , иオ娩êǎń, т︺风.穦獶盽蔼砍笵Τ癸稱硑诞稰砍届.";
 	next;
-	mes "[斯盖乐]";
-	mes "从我有记忆的那刻起, 他似乎就已经灰心了.他认为再也无法完成他那梦想中的项目了.";
+	mes "[吹籠贾]";
+	mes "眖иΤ癘拘êㄨ癬, 碞竒ηみ.粄礚猭ЧΘê冠稱い兜ヘ.";
 	next;
-	mes "[斯盖乐]";
-	mes "我很高兴听到你是这样过来的, 年轻的小伙子.";
+	mes "[吹籠贾]";
+	mes "и蔼砍琌硂妓筁ㄓ, 淮ル.";
 	close;
 }
 
-geffen_in,27,134,5	script	小姐#elen	4_F_02,{
-	mes "[艾仑奥瑞]";
-	mes "这个地方....";
-	mes "的确有";
-	mes "气氛.";
+geffen_in,27,134,5	script	﹋#elen	4_F_02,{
+	mes "[︺ㄚ而风]";
+	mes "硂よ....";
+	mes "谔Τ";
+	mes "蒩猑.";
 	next;
-	mes "[艾仑奥瑞]";
-	mes "我不想和你多说关于魔法师的事.";
+	mes "[︺ㄚ而风]";
+	mes "иぃ稱㎝弧闽臸猭畍ㄆ.";
 	next;
-	mes "[艾仑奥瑞]";
-	mes "恩...";
-	mes "我能够";
-	mes "为您做些什么吗?";
+	mes "[︺ㄚ而风]";
+	mes "...";
+	mes "и镑";
+	mes "眤暗ㄇぐ盾?";
 	next;
-	if (select("我能喝点什么吗?:你对我的东西感兴趣吗?") == 1) {
-		mes "[艾仑奥瑞]";
-		mes "好...";
-		mes "如果你是在找酒的话, 告诉你酒已经被特里斯坦王取缔了.";
+	if (select("и耻翴ぐ盾?:癸и狥﹁稰砍届盾?") == 1) {
+		mes "[︺ㄚ而风]";
+		mes "...";
+		mes "狦琌т皊杠, 禗皊竒砆疭ń吹㈱絣.";
 		next;
-		mes "[艾仑奥瑞]";
-		mes "尽管如此, 人们设法喝一些酒的仿制品, 我们在这里提供这种服务.";
+		mes "[︺ㄚ而风]";
+		mes "荷恨, 砞猭耻ㄇ皊ラ珇, и硂ń矗ㄑ硂销狝叭.";
 		next;
-		mes "[艾仑奥瑞]";
-		mes "我真的很想知道哪能找到提供真酒的地方.我听说那里简直像个天堂!";
+		mes "[︺ㄚ而风]";
+		mes "и痷稱笵т矗ㄑ痷皊よ.и弧êń虏钩ぱ绑!";
 		close;
 	}
 	switch(rand(1,4)) {
 	case 1:
-		mes "[艾仑奥瑞]";
-		mes "聊天...?";
-		mes "我听说他们开启了个新的航线.";
-		mes "在那做城市!";
+		mes "[︺ㄚ而风]";
+		mes "册ぱ...?";
+		mes "и弧秨币穝絬.";
+		mes "ê暗カ!";
 		next;
-		mes "[艾仑奥瑞]";
-		mes "他们打算将这艘飞船弄飞起来, 与此同时, 还有许多周边厂商在为他们提供帮助.";
+		mes "[︺ㄚ而风]";
+		mes "ゴ衡盢硂看差癬ㄓ, 蒓, 临Τ砛㏄娩蒁坝矗ㄑ腊.";
 		next;
-		mes "[艾仑奥瑞]";
-		mes "卡普拉公司终于有竞争对手啦!哈哈哈";
+		mes "[︺ㄚ而风]";
+		mes "炊┰そ沧Τ膙癸も罢!";
 		break;
 	case 2:
-		mes "[艾仑奥瑞]";
-		mes "你听说过吗?";
-		mes "这个王国里飘荡着时尚的气息.";
+		mes "[︺ㄚ而风]";
+		mes "弧筁盾?";
+		mes "硂瓣ń钠亢帝﹟蒩.";
 		next;
-		mes "[艾仑奥瑞]";
-		mes "这个可爱的泰迪熊帽子我怎么从来没见捏?";
+		mes "[︺ㄚ而风]";
+		mes "硂稲瓆旱碪и眖ㄓ⊿ǎ?";
 		next;
-		mes "[艾仑奥瑞]";
-		mes "当然, 并非每一个流行的风格适合我的口味.我的意思是, 我看到有走动了蘑菇头, 并且我听到有人一直在做钓鱼帽?";
+		mes "[︺ㄚ而风]";
+		mes "讽礛, 獶–瑈︽屿и.и種琌, иΤǐ笆抹郏繷, иΤ暗敞辰碪?";
 		next;
-		mes "[艾仑奥瑞]";
-		mes "我猜";
-		mes "那些帽子";
-		mes "的款式合我的胃口.";
+		mes "[︺ㄚ而风]";
+		mes "и瞦";
+		mes "êㄇ碪";
+		mes "蹿Αи璆.";
 		break;
 	case 3:
-		mes "[艾仑奥瑞]";
-		mes "聊天, 恩?";
+		mes "[︺ㄚ而风]";
+		mes "册ぱ, ?";
 		next;
-		mes "[艾仑奥瑞]";
-		mes "好...";
-		mes "我听说这人在某处....";
+		mes "[︺ㄚ而风]";
+		mes "...";
+		mes "и弧硂琘矪....";
 		next;
-		mes "[艾仑奥瑞]";
+		mes "[︺ㄚ而风]";
 		if (Sex == SEX_MALE)
-			mes "告诉我, 你是否听说过 "+strcharinfo(0)+"? 他应该就是那位英雄!";
+			mes "禗и, 琌弧筁 "+strcharinfo(0)+"? 莱赣碞琌ê璣动!";
 		else
-			mes "告诉我, 你是否听说过 "+strcharinfo(0)+"? 有人说她是这里最漂亮的MM!";
+			mes "禗и, 琌弧筁 "+strcharinfo(0)+"? Τ弧琌硂ń程簘獹MM!";
 		break;
 	case 4:
 		switch(rand(1,2)) {
 		case 1:
-			mes "[艾仑奥瑞]";
-			mes "聊天, 恩?";
-			mes "等等...";
+			mes "[︺ㄚ而风]";
+			mes "册ぱ, ?";
+			mes "单单...";
 			next;
-			mes "[艾仑奥瑞]";
-			mes "呃...";
-			mes "哦...";
-			mes "我的头...";
-			mes "破了...";
+			mes "[︺ㄚ而风]";
+			mes "...";
+			mes "瓳...";
+			mes "и繷...";
+			mes "瘆...";
 			next;
-			mes "[威廉的灵魂]";
-			mes "^990000离我的女儿远点, 短命的!";
-			mes "听到我说话了吗?!^000000";
+			mes "[稧艶活]";
+			mes "^990000置и环翴, 祏㏑!";
+			mes "и弧杠盾?!^000000";
 			next;
-			mes "[艾仑奥瑞]";
-			mes "*咳嗽*";
-			mes "哦...!";
-			mes "真对不起!";
-			mes "我一定是";
-			mes "感冒了!";
-			mes "或者其他!";
+			mes "[︺ㄚ而风]";
+			mes "*珁孤*";
+			mes "瓳...!";
+			mes "痷癸ぃ癬!";
+			mes "и﹚琌";
+			mes "稰玙!";
+			mes "┪ㄤ!";
 			next;
 			mes "^3355FFWeird...";
-			mes "她的声音";
-			mes "来自深处";
+			mes "羘";
+			mes "ㄓ瞏矪";
 			mes "...";
 			break;
 		case 2:
-			mes "[威廉的灵魂]";
-			mes "^990000你这个杂种?≡谖彝诔瞿阊劬χ? 停止在看我的女儿!^000000";
+			mes "[稧艶活]";
+			mes "^990000硂馒销?≥寇耈郘拢霮? 氨ゎи!^000000";
 			next;
 			mes "["+strcharinfo(0)+"]";
 			if (Sex == SEX_MALE) {
-				mes "恩...?";
-				mes "再来一次?";
+				mes "...?";
+				mes "ㄓΩ?";
 				next;
-				mes "[艾仑奥瑞]";
-				mes "恩...?";
-				mes "哦, 爸爸又要OOXX我了, 这种事时常发生在我和我妹妹身上!";
+				mes "[︺ㄚ而风]";
+				mes "...?";
+				mes "瓳, 璶OOXXи, 硂销ㄆ盽祇ネи㎝иゝゝō!";
 				next;
 				mes "["+strcharinfo(0)+"]";
-				mes "没开玩笑吧?";
-				mes "诶.";
+				mes "⊿秨?";
+				mes "銶.";
 				next;
-				mes "[艾仑奥瑞]";
+				mes "[︺ㄚ而风]";
 				mes "Yeah...";
-				mes "告诉我些关于它的事情.";
+				mes "禗иㄇ闽ウㄆ薄.";
 				break;
 			}
 			else {
-				mes "等等~";
-				mes "但, 但我是个女孩子.";
+				mes "单单~";
+				mes ", и琌.";
 				next;
-				mes "[威廉的灵魂]";
-				mes "^990000你难道不明白 ^FF0000I 你站在这里^000000 ^990000的原因吗?!^000000";
+				mes "[稧艶活]";
+				mes "^990000螟笵ぃフ ^FF0000I 硂ń^000000 ^990000盾?!^000000";
 				next;
-				mes "^3355FF哇~!";
-				mes "她怎么了?";
-				mes "吓唬所有人?!^000000";
+				mes "^3355FF珃~!";
+				mes "?";
+				mes "纞颁┮Τ?!^000000";
 				break;
 			}
 		}
@@ -687,716 +687,716 @@ geffen_in,27,134,5	script	小姐#elen	4_F_02,{
 	close;
 }
 
-geffen_in,70,67,3	script	小姐#elise	4_F_01,{
-	mes "[伊丽纱]";
-	mes "你好~";
-	mes "我能帮你什么吗?";
-	mes "有什么事吗?";
+geffen_in,70,67,3	script	﹋#elise	4_F_01,{
+	mes "[レ腞]";
+	mes "~";
+	mes "и腊ぐ盾?";
+	mes "Τぐㄆ盾?";
 	next;
-	if (select("能给我来杯喝的吗?:你对什么感兴趣吗?") == 1) {
-		mes "[伊丽纱]";
-		mes "啊...";
-		mes "喝点什么?";
+	if (select("倒иㄓ狹耻盾?:癸ぐ稰砍届盾?") == 1) {
+		mes "[レ腞]";
+		mes "摆...";
+		mes "耻翴ぐ?";
 		next;
-		mes "[伊丽纱]";
-		mes "这里的工作真枯燥!";
+		mes "[レ腞]";
+		mes "硂ń痷琝狸!";
 		next;
-		mes "[伊丽纱]";
-		mes "这里跟本就没什么水!";
+		mes "[レ腞]";
+		mes "硂ń蛤セ碞⊿ぐ!";
 		next;
-		mes "[伊丽纱]";
-		mes "国王是可怕的, 他统治着这里.";
+		mes "[レ腞]";
+		mes "瓣琌┤, 参獀帝硂ń.";
 		close;
 	}
 	switch(rand(1,4)) {
 	case 1:
-		mes "[伊丽纱]";
-		mes "你知道";
-		mes "有什么奇怪的?";
+		mes "[レ腞]";
+		mes "笵";
+		mes "Τぐ┣?";
 		next;
-		mes "[伊丽纱]";
-		mes "我下楼到普隆德拉圣殿, 我可以宣誓就职.";
-		mes "一个牧师结婚的女祭司.";
+		mes "[レ腞]";
+		mes "и加炊订紈┰蒾返, и粆碞戮.";
+		mes "畍挡盉步.";
 		next;
-		mes "[伊丽纱]";
-		mes "我真的不知道是否牧师可以结婚, 但是国王认为可以, ";
-		mes "我猜想, 它没关系!";
+		mes "[レ腞]";
+		mes "и痷ぃ笵琌畍挡盉, 琌瓣粄, ";
+		mes "и瞦稱, ウ⊿闽╰!";
 		break;
 	case 2:
-		mes "[伊丽纱]";
-		mes "我不喜欢刻板的人, 但你有没有注意到剑士和骑士";
-		mes "往往是典型...";
+		mes "[レ腞]";
+		mes "иぃ尺舧ㄨ狾, Τ⊿Τ猔種糃㎝肕";
+		mes "┕┕琌ㄥ...";
 		next;
-		mes "[伊丽纱]";
-		mes "...INT 挑战?";
-		mes "所有他们见到的";
-		mes "都是些被毁掉的东西!";
+		mes "[レ腞]";
+		mes "...INT 珼驹?";
+		mes "┮Τǎ";
+		mes "常琌ㄇ砆反奔狥﹁!";
 		break;
 	case 3:
-		mes "[伊丽纱]";
-		mes "谣言?";
-		mes "Hmmmm, 好...";
+		mes "[レ腞]";
+		mes "亮ē?";
+		mes "Hmmmm, ...";
 		next;
-		mes "[伊丽纱]";
-		mes "你知道我们王国";
-		mes "的名字是吗?";
-		mes "什么什么王国?";
+		mes "[レ腞]";
+		mes "笵и瓣";
+		mes "琌盾?";
+		mes "ぐぐ瓣?";
 		next;
-		mes "[伊丽纱]";
-		mes "这个国家的名字好像更改过呢!'";
+		mes "[レ腞]";
+		mes "硂瓣產钩э筁㎡!'";
 		next;
-		mes "[伊丽纱]";
-		mes "显然这是一个明智的决定, 因为太多的人不断混淆我们大陆与我们的王国.奇怪,";
+		mes "[レ腞]";
+		mes "陪礛硂琌醇∕﹚, びぃ耞睼瞔и嘲蒓и瓣.┣,";
 		break;
 	case 4:
 		switch(rand(1,2)) {
 		case 1:
-			mes "[伊丽纱]";
-			mes "谣言...?";
-			mes "Hmmmm, 好...";
+			mes "[レ腞]";
+			mes "亮ē...?";
+			mes "Hmmmm, ...";
 			next;
-			mes "[伊丽纱]";
-			mes "真有趣...";
-			mes "我能不能想太多, 每件事都看上去很模糊...";
+			mes "[レ腞]";
+			mes "痷Τ届...";
+			mes "иぃ稱び, –ンㄆ常家絢...";
 			next;
 			mes "...";
 			next;
 			mes "...";
 			mes "......";
 			next;
-			mes "[威廉的灵魂]";
-			mes "^990000离我的女儿远点, 在我吃了你之前!^000000";
+			mes "[稧艶活]";
+			mes "^990000置и环翴, иぇ玡!^000000";
 			next;
 			mes "["+strcharinfo(0)+"]";
 			if (Sex == SEX_MALE) {
-				mes "遵命!";
+				mes "宽㏑!";
 				next;
 				mes "^3355FFThat was scary...!";
-				mes "它看起来像一个父亲的爱永远持续下去, 甚至在来世.^000000";
+				mes "ウ癬ㄓ钩克稲ッ环尿, ㄓ.^000000";
 			}
 			else {
-				mes "但...";
-				mes "我是个女孩!";
+				mes "...";
+				mes "и琌!";
 				next;
-				mes "[威廉的灵魂]";
-				mes "^990000什么...?!";
-				mes "这更糟糕!^000000";
+				mes "[稧艶活]";
+				mes "^990000ぐ...?!";
+				mes "硂罺縷!^000000";
 				next;
-				mes "^3355FF真可怕...!";
-				mes "它看起来像一个父亲的爱永远持续下去, 即使在来世.^000000";
+				mes "^3355FF痷┤...!";
+				mes "ウ癬ㄓ钩克稲ッ环尿, ㄏㄓ.^000000";
 			}
 			break;
 		case 2:
-			mes "[威廉的灵魂]";
-			mes "^990000你怎敢尝试拿起我的宝贝女儿!你想品尝愤怒的父亲的愤怒!^000000";
+			mes "[稧艶活]";
+			mes "^990000幢沽刚癬и腳ī!稱珇沽极克极!^000000";
 			next;
-			mes "[伊丽纱]";
-			mes "哇...!";
-			mes "真对不起!";
+			mes "[レ腞]";
+			mes "珃...!";
+			mes "痷癸ぃ癬!";
 			next;
-			mes "[伊丽纱]";
-			mes "只是";
-			mes "我父亲的灵魂,";
-			mes "上帝宽恕他的灵魂, ";
-			mes "真是很过分.";
+			mes "[レ腞]";
+			mes "琌";
+			mes "и克艶活,";
+			mes "糴艶活, ";
+			mes "痷琌筁だ.";
 			next;
-			mes "^3355FF你只有一步之遥.";
-			mes "万分小心.^000000";
+			mes "^3355FFΤ˙ぇ换.";
+			mes "蒃だみ.^000000";
 			break;
 		}
 	}
 	close;
 }
 
-geffen_in,79,76,2	script	商人大卫	2_M_PHARMACIST,{
-	mes "[商人大卫]";
-	mes "我记得在回到";
-	mes "吉芬后有段时间真的很无聊.";
+geffen_in,79,76,2	script	坝矫	2_M_PHARMACIST,{
+	mes "[坝矫]";
+	mes "и癘眔";
+	mes "Τ琿丁痷礚册.";
 	next;
-	mes "[商人大卫]";
-	mes "但是, 现在有魔法师和巫师, 并蓬勃发展";
-	mes "经济是这里特色!";
+	mes "[坝矫]";
+	mes "琌, 瞷Τ臸猭畍㎝畍, 酱玨祇甶";
+	mes "竒蕾琌硂ń疭︹!";
 	next;
-	switch(select("法师?:经济?:你是谁?")) {
+	switch(select("猭畍?:竒蕾?:琌街?")) {
 	case 1:
 		if (BaseJob == Job_Mage) {
-			mes "[商人大卫]";
-			mes "你了解那个仪式吗?";
+			mes "[坝矫]";
+			mes "秆ê祸Α盾?";
 		}
 		else {
-			mes "[商人大卫]";
-			mes "魔法师和巫师总是携带书籍和学习魔术.这就是他们的方式.";
+			mes "[坝矫]";
+			mes "臸猭畍㎝畍羆琌拟盿膟㎝厩策臸砃.硂碞琌よΑ.";
 			next;
-			mes "[商人大卫]";
-			mes "有一个魔术学校在西北部分城市的新手有兴趣成为魔法师.在那里, 他们可以学到基本的魔术.";
+			mes "[坝矫]";
+			mes "Τ臸砃厩﹁场だカ穝もΤ砍届Θ臸猭畍.êń, 厩膀セ臸砃.";
 			next;
-			mes "[商人大卫]";
-			mes "魔法师将可以进入精英军团哦!";
+			mes "[坝矫]";
+			mes "臸猭畍盢秈弘璣瓁刮瓳!";
 			next;
-			mes "[商人大卫]";
-			mes "进入那个军团, 才有机会学会更加强大的魔法!";
+			mes "[坝矫]";
+			mes "秈ê瓁刮, Τ审穦厩穦眏臸猭!";
 		}
 		break;
 	case 2:
 		if (Class == Job_Blacksmith) {
-			mes "[商人大卫]";
-			mes "经济?";
-			mes "为什么, 这一切得益于铁匠!但是, 你应该知道, 已经不应该吗?";
+			mes "[坝矫]";
+			mes "竒蕾?";
+			mes "ぐ, 硂ち眔痲臟!琌, 莱赣笵, 竒ぃ莱赣盾?";
 		}
 		else {
-			mes "[商人大卫]";
-			mes "我们可以感谢铁匠, 但是他们总是很脏!";
+			mes "[坝矫]";
+			mes "и稰谅臟, 琌羆琌纽!";
 			next;
-			mes "[商人大卫]";
-			mes "但非常勤奋!";
+			mes "[坝矫]";
+			mes "獶盽对灸!";
 			next;
-			mes "[商人大卫]";
-			mes "冒险者将一直在铁匠身上花费许多钱, 当然他们是为了他们能拥有更精良的装备.";
+			mes "[坝矫]";
+			mes "玙繧盢臟ō禣砛窥, 讽礛琌局Τ弘▆杆称.";
 		}
 		break;
 	case 3:
-		mes "[商人大卫]";
-		mes "我?嗯, 我是世界上最牛B, 最娴熟的街头工匠!";
+		mes "[坝矫]";
+		mes "и?垛, и琌程B, 程糭剪刁繷!";
 		next;
-		select("...^EE0000突破^000000!");
+		select("...^EE0000瘆^000000!");
 		if (Class == Job_Swordman) {
-			mes "[商人大卫]";
-			mes "哇, 哇";
-			mes "这只是个玩笑!";
-			mes "别在意!";
+			mes "[坝矫]";
+			mes "珃, 珃";
+			mes "硂琌!";
+			mes "種!";
 		}
 		else {
-			mes "[商人大卫]";
-			mes "突破?";
-			mes "但你不能做这种事情!不能!";
+			mes "[坝矫]";
+			mes "瘆?";
+			mes "ぃ暗硂销ㄆ薄!ぃ!";
 		}
 		break;
 	}
 	close;
 }
 	
-geffen_in,114,73,5	script	汉斯	4_M_SEAMAN,{
-	mes "[汉斯]";
-	mes "卢恩─米德加尔特王国是无比广阔的!最近怎样, 年轻人?";
+geffen_in,114,73,5	script	簙吹	4_M_SEAMAN,{
+	mes "[簙吹]";
+	mes "縞μ紈焊疭瓣琌礚ゑ約溜!程妓, 淮?";
 	next;
-	mes "[汉斯]";
-	mes "这格芬肯定是奇怪的.但是, 值得在这里的旅行的方式从斯楚瓦尔兹贝特共和国.";
+	mes "[簙吹]";
+	mes "硂﹚琌┣.琌, 眔硂ń︽よΑ眖吹贰ニ焊ī疭㎝瓣.";
 	next;
 	if (select("Schwarzwald Republic?:So, why are you traveling?") == 1) {
-		mes "[汉斯]";
-		mes "你...";
-		mes "你知道";
-		mes "斯楚瓦尔兹贝特共和国么?";
+		mes "[簙吹]";
+		mes "...";
+		mes "笵";
+		mes "吹贰ニ焊ī疭㎝瓣?";
 		next;
-		mes "[汉斯]";
-		mes "你知道, 我们的盟友卢恩─米德加尔特王国.嗯...我们的首都朱诺?";
+		mes "[簙吹]";
+		mes "笵, и幅ね縞μ紈焊疭瓣.垛...и常Χ空?";
 		next;
-		mes "[汉斯]";
-		mes "你应该真正的";
-		mes "该了解";
-		mes "世界大事了!";
+		mes "[簙吹]";
+		mes "莱赣痷タ";
+		mes "赣秆";
+		mes "ㄆ!";
 		close;
 	}
-	mes "[汉斯]";
-	mes "哦, 这是笔好生意!";
+	mes "[簙吹]";
+	mes "瓳, 硂琌掸ネ種!";
 	next;
-	mes "[汉斯]";
-	mes "进出口生意的确不怎么好做呢!";
+	mes "[簙吹]";
+	mes "秈ネ種谔ぃ暗㎡!";
 	next;
-	mes "[汉斯]";
+	mes "[簙吹]";
 	if (BaseJob == Job_Merchant)
-		mes "我们在一个黄金时代, 你不也正在这时代中做买卖吗?";
+		mes "и独, ぃタ硂い暗禦芥盾?";
 	else if (Class == Job_Novice) {
-		mes "我想...";
-		mes "这个价格未免太高了吧!";
+		mes "и稱...";
+		mes "硂刹ゼび蔼!";
 	}
 	else
-		mes "随便...";
+		mes "繦獽...";
 	next;
-	mes "[汉斯]";
-	mes "你去过其中的一些新的土地?他们是真的很有趣, 你可以学到很多新东西从这些外国文化.";
+	mes "[簙吹]";
+	mes "筁ㄤいㄇ穝?琌痷Τ届, 厩穝狥﹁眖硂ㄇ瓣ゅて.";
 	next;
-	mes "[汉斯]";
-	mes "不过, 如果你要去旅游, 我个人建议您访问我的故乡的朱诺.这很美丽, 你是知道的.";
+	mes "[簙吹]";
+	mes "ぃ筁, 狦璶村, и某眤砐拜и珿秏Χ空.硂腞, 琌笵.";
 	close;
 }
 
-geffen_in,39,127,2	script	心理顾问	4_M_BIBI,{
-	mes "[心理顾问]";
-	mes "奥...";
-	mes "别告诉我, 你是为了那笔钱而来的.";
-	mes "我知道, 我能预见未来, 你想算什么命?";
+geffen_in,39,127,2	script	み瞶臮拜	4_M_BIBI,{
+	mes "[み瞶臮拜]";
+	mes "而...";
+	mes "禗и, 琌ê掸窥τㄓ.";
+	mes "и笵, и箇ǎゼㄓ, 稱衡ぐ㏑?";
 	next;
-	switch(select("命运!:爱情!:财运!:仕途!:未来!:流行!")) {
+	switch(select("㏑笲!:稲薄!:癩笲!:硚!:ゼㄓ!:瑈︽!")) {
 	case 1:
-		mes "[心理顾问]";
+		mes "[み瞶臮拜]";
 		switch(rand(1,5)) {
 		case 1:
-			mes "生命...?";
-			mes "哦, 让我和你的灵魂尝试着沟通下.";
+			mes "ネ㏑...?";
+			mes "瓳, 琵и㎝艶活沽刚帝肪硄.";
 			next;
-			mes "[心理顾问]";
-			mes "恩...";
-			mes "恩, 你将活很久, 很久!";
+			mes "[み瞶臮拜]";
+			mes "...";
+			mes ", 盢, !";
 			next;
-			mes "[心理顾问]";
-			mes "^333333*咳嗽!*^0000009岁!";
+			mes "[み瞶臮拜]";
+			mes "^333333*珁孤!*^0000009烦!";
 			next;
-			mes "[心理顾问]";
-			mes "在你的一生中, 你也会很顺利, 很成功的!";
+			mes "[み瞶臮拜]";
+			mes "ネい, 穦抖, Θ!";
 			next;
-			mes "[心理顾问]";
-			mes "你可能不太明白我在说些什么吧?";
+			mes "[み瞶臮拜]";
+			mes "ぃびフи弧ㄇぐ?";
 			next;
 			break;
 		case 2:
-			mes "恩...";
-			mes "我能告诉你什么?赶快让我先和你的灵魂沟通下!";
+			mes "...";
+			mes "и禗ぐ?鱼е琵и㎝艶活肪硄!";
 			next;
-			mes "[心理顾问]";
-			mes "好!我搞定啦!";
-			mes "你的梦想";
-			mes "将成为现实!";
+			mes "[み瞶臮拜]";
+			mes "!и穌﹚罢!";
+			mes "冠稱";
+			mes "盢Θ瞷龟!";
 			next;
-			mes "[心理顾问]";
-			mes "当然, 我不知道到底是哪个梦想将成为现实, 但希望良好的梦想, 你已经将成为现实, 而不是您的任何奇怪的恶梦...";
+			mes "[み瞶臮拜]";
+			mes "讽礛, иぃ笵┏琌冠稱盢Θ瞷龟, 辨▆冠稱, 竒盢Θ瞷龟, τぃ琌眤ヴ┣碿冠...";
 			next;
-			mes "[心理顾问]";
-			mes "当然, 我不知道到底是哪个梦想将成为现实, 但希望, 你的梦想已经成为现实, 而不是您的任何怪异恶梦?";
+			mes "[み瞶臮拜]";
+			mes "讽礛, иぃ笵┏琌冠稱盢Θ瞷龟, 辨, 冠稱竒Θ瞷龟, τぃ琌眤ヴ┣奢碿冠?";
 			next;
 			break;
 		case 3:
-			mes "我感觉到, 您可能即将作出的决定, 您可能会感到遗憾.我必须告诉你放慢, 并确认一次.";
+			mes "и稰谋, 眤盢∕﹚, 眤穦稰框狙.иゲ斗禗篊, 谔粄Ω.";
 			next;
-			mes "[心理顾问]";
-			mes "虽然压力可能很高, 请记住, 任何决定在兴奋的时候做的决定通常是错误的.深呼吸和放松.";
+			mes "[み瞶臮拜]";
+			mes "瘤礛溃蔼, 叫癘, ヴ∕﹚砍灸暗∕﹚硄盽琌岿粇.瞏㊣㎝猀.";
 			next;
-			mes "[心理顾问]";
-			mes "即使您正在运行的时间, 最好的东西慢慢计划, 这样, 你不要浪费您的任何努力, 或者代价高昂的错误.";
+			mes "[み瞶臮拜]";
+			mes "ㄏ眤タ笲︽丁, 程狥﹁篊篊璸, 硂妓, ぃ璶禣眤ヴ, ┪刹蔼岿粇.";
 			next;
-			mes "[心理顾问]";
-			mes "请记住";
-			mes "冷静耐心是";
-			mes "克服危机的关键.";
+			mes "[み瞶臮拜]";
+			mes "叫癘";
+			mes "繰瑻み琌";
+			mes "狝审闽龄.";
 			next;
 			break;
 		case 4:
-			mes "我感觉到, 你正在经历着丧失人生方向.如果你优先考虑的安全和幸福?";
+			mes "и稰谋, タ竒菌帝赤アネよ.狦涩σ納㎝┋褐?";
 			next;
-			mes "[心理顾问]";
-			mes "我建议你想得充分和仔细, 然后再决定什么道路是最适合您.请记住, 你只能从您了解的得到错误.";
+			mes "[み瞶臮拜]";
+			mes "и某稱眔だ㎝灿, 礛∕﹚ぐ笵隔琌程屿眤.叫癘, 眖眤秆眔岿粇.";
 			next;
-			mes "[心理顾问]";
-			mes "如果你仔细计划和执行积极的, 建设性的行动, 以良好的态度, ";
-			mes "你可以拥有这一切!";
+			mes "[み瞶臮拜]";
+			mes "狦灿璸㎝磅︽縩体, 砞┦︽笆, ▆篈, ";
+			mes "局Τ硂ち!";
 			next;
 			break;
 		case 5:
 			mes "Hmm...";
-			mes "我感觉到, 你已经与接近你的某人争吵.有人为您付出代价.";
+			mes "и稰谋, 竒蒓钡琘.Τ眤刹.";
 			next;
-			mes "[心理顾问]";
-			mes "我感觉到, 你已经与接近你的某人争吵.有人为您付出代价.";
+			mes "[み瞶臮拜]";
+			mes "и稰谋, 竒蒓钡琘.Τ眤刹.";
 			next;
-			mes "[心理顾问]";
-			mes "尝试弥补, 如果您由衷道歉你会感到自豪的.难道为了友谊不值得吗?我想是这样.";
+			mes "[み瞶臮拜]";
+			mes "沽刚辣干, 狦眤パ癑笵簆穦稰花.螟笵ね剿ぃ眔盾?и稱琌硂妓.";
 			next;
 		}
-		mes "[心理顾问]";
-		mes "好吧, 我希望我解决任何你已经对未来的怀疑.这毕竟是我的工作是一个专业心理顾问.随时回来~";
+		mes "[み瞶臮拜]";
+		mes ", и辨и秆∕ヴ竒癸ゼㄓ输好.硂拨澈琌и琌盡穨み瞶臮拜.繦ㄓ~";
 		close;
 	case 2:
-		mes "[心理顾问]";
+		mes "[み瞶臮拜]";
 		switch(rand(1,4)) {
 		case 1:
-			mes "你想知道您爱的财富?然后就有人认为你喜欢!来吧, 你能告诉我!";
+			mes "稱笵眤稲癩碔?礛碞Τ粄尺舧!ㄓ, 禗и!";
 			next;
-			mes "[心理顾问]";
-			mes "哦, 对了";
-			mes "嗯, 我感觉有一个强有力的能源来自你的灵魂.这恐吓推动了弱者和骨气.";
+			mes "[み瞶臮拜]";
+			mes "瓳, 癸";
+			mes "垛, и稰谋Τ眏Τ方ㄓ艶活.硂纞崩笆畓㎝癌蒩.";
 			next;
-			mes "[心理顾问]";
-			mes "所以基本上, 我预见, 您只能吸引真正强大的人.你知道, 像专业运动员, 健美选手, 建筑工人, 这样的人.";
+			mes "[み瞶臮拜]";
+			mes "┮膀セ, и箇ǎ, 眤ま痷タ眏.笵, 钩盡穨笲笆, 胺匡も, 诞, 硂妓.";
 			next;
-			mes "[心理顾问]";
-			mes "所以, 如果这是你想要, 恭喜!财富会对你的微笑.";
+			mes "[み瞶臮拜]";
+			mes "┮, 狦硂琌稱璶, 尺!癩碔穦癸稬.";
 			next;
-			mes "[心理顾问]";
-			mes "但是, 如果这是相反的你想要, 那么, 对不起.财富会对你嘲讽.但改变命运为时不晚!";
+			mes "[み瞶臮拜]";
+			mes "琌, 狦硂琌は稱璶, ê, 癸ぃ癬.癩碔穦癸糐控.э跑㏑笲ぃ边!";
 			next;
 			break;
 		case 2:
 			mes "Looooove, eh? ";
-			mes "让我接触下";
-			mes "精神是第二位的.";
+			mes "琵и钡郉";
+			mes "弘琌材.";
 			next;
-			mes "[心理顾问]";
-			mes "?∈セ鸾祷?我不知道他们会再一次爱上你, 或许有人会回来报复...";
+			mes "[み瞶臮拜]";
+			mes "?苶毛?иぃ笵穦Ω稲, ┪砛Τ穦ㄓ厨蝋...";
 			next;
-			mes "[心理顾问]";
-			mes "但是, 圣火一定会重新出现在您的生活.不知何故.所以, 如果这是个好消息, 恭喜!但是, 如果这是个坏消息, 请小心!";
+			mes "[み瞶臮拜]";
+			mes "琌, 蒾﹚穦穝瞷眤ネ.ぃ珿.┮, 狦硂琌, 尺!琌, 狦硂琌Д, 叫み!";
 			next;
 			break;
 		case 3:
 			mes "Um...";
 			if (Sex == SEX_MALE)
-				mes "你这个女孩";
+				mes "硂";
 			else
-				mes "这名男孩";
-			mes "目前看来";
-			mes "是适合你的!";
+				mes "硂╧";
+			mes "ヘ玡ㄓ";
+			mes "琌屿!";
 			next;
-			switch(select("你知道什么?:大错特错:我还单身!")) {
+			switch(select("笵ぐ?:岿疭岿:и临虫ō!")) {
 			case 1:
-				mes "[心理顾问]";
-				mes "嗯...";
-				mes "我们灵异师是相当准确的在这种事情.它的那么好地看到, 你真的很高兴与您的合作伙伴!";
+				mes "[み瞶臮拜]";
+				mes "垛...";
+				mes "и艶奢畍琌讽谔硂销ㄆ薄.ウê, 痷蔼砍蒓眤ル︸!";
 				close;
 			case 2:
-				mes "[心理顾问]";
-				mes "你没有让我说完这句话.我的意思是说...";
+				mes "[み瞶臮拜]";
+				mes "⊿Τ琵и弧Ч硂杠.и種琌弧...";
 				next;
-				mes "[心理顾问]"				;
+				mes "[み瞶臮拜]"				;
 				if (Sex == SEX_MALE)
-					mes "像你这样的女孩";
+					mes "钩硂妓";
 				else
-					mes "像你这样的男孩";
-				mes "目前看到的是适合你如果你想活, 其余的生活在极度的痛苦!";
+					mes "钩硂妓╧";
+				mes "ヘ玡琌屿狦稱, ㄤネ体礹璚!";
 				next;
-				mes "[心理顾问]";
-				mes "但即使你打破, 做到这一点, 尽快和尽量好的朋友后, 这一问题.";
+				mes "[み瞶臮拜]";
+				mes "ㄏゴ瘆, 暗硂翴, 荷е㎝荷秖狟ね, 硂拜肈.";
 				next;
-				mes "[心理顾问]";
-				mes "这将做出更好的人, 你们两位.但是, 这只是我怎么想的.";
+				mes "[み瞶臮拜]";
+				mes "硂盢暗, ㄢ.琌, 硂琌и稱.";
 				close;
 			case 3:
-				mes "[心理顾问]";
-				mes "噢...";
-				mes "嗯, 我很抱歉.";
-				mes "有时候, 我的未来和目前相混合.你知道, 因为我一直在寻找的未来... ?";
+				mes "[み瞶臮拜]";
+				mes "揪...";
+				mes "垛, и╆簆.";
+				mes "Τ, иゼㄓ㎝ヘ玡睼.笵, и碝тゼㄓ... ?";
 				next;
-				mes "[心理顾问]";
+				mes "[み瞶臮拜]";
 				if (Sex == SEX_MALE) {
-					mes "我的意思是说";
-					mes "^3355FF你和完美的女人将很快坠入爱河^ 000000 .是的, 我的意思!";
+					mes "и種琌弧";
+					mes "^3355FF㎝Ч盢е糦稲猠^ 000000 .琌, и種!";
 				}
 				else {
-					mes "我的意思是说";
-					mes "^3355FF你将很快被一个完美的人席卷^ 000000 .是的, 我出来打酱油的!";
+					mes "и種琌弧";
+					mes "^3355FF盢е砆Ч畊^ 000000 .琌, иㄓゴ骆猳!";
 				}
 				close;
 			}
 			break;
 		case 4:
-			mes "寻找浪漫, 对吧?生活也可以多一点的兴奋.";
+			mes "碝т憨, 癸?ネ翴砍灸.";
 			next;
-			mes "[心理顾问]";
-			mes "这是奇怪的, 我预见三角恋爱中你的未来.不, 等待!爱情...";
-			mes "十角恋?";
+			mes "[み瞶臮拜]";
+			mes "硂琌┣, и箇ǎà攀稲いゼㄓ.ぃ, 单!稲薄...";
+			mes "à攀?";
 			next;
-			mes "[心理顾问]";
-			mes "是什么形状与11双方?现在, 你不能指望我知道, 我的脑袋顶部是什么形状, 我是一个精神学家, 而不是一个数学家!";
+			mes "[み瞶臮拜]";
+			mes "琌ぐ蒓11蛮よ?瞷, ぃ辨и笵, и福砋郴场琌ぐ, и琌弘厩產, τぃ琌计厩產!";
 			next;
 		}
-		mes "[心理顾问]";
-		mes "爱情始终是有趣!即使在这种暗淡的世界中, 爱的辉光包围着我们.";
+		mes "[み瞶臮拜]";
+		mes "稲薄﹍沧琌Τ届!ㄏ硂销穞睭い, 稲谨瞅帝и.";
 		close;
 	case 3:
-		mes "[心理顾问]";
+		mes "[み瞶臮拜]";
 		switch(rand(1,3)) {
 		case 1:
-			mes "钱吗?嗯, 你必须给我些钱.毕竟, 我坐在这里一整天, 给这项服务是免费的!";
+			mes "窥盾?垛, ゲ斗倒иㄇ窥.拨澈, иГ硂ń俱ぱ, 倒硂兜狝叭琌禣!";
 			next;
-			mes "[心理顾问]";
-			mes "嗯...";
-			mes "嗯, 神告诉我, 你可能不会赢得彩票, 不管你买了多少.我很抱歉, 但它是真实的.";
+			mes "[み瞶臮拜]";
+			mes "垛...";
+			mes "垛, 禗и, ぃ穦墓眔眒布, ぃ恨禦ぶ.и╆簆, ウ琌痷龟.";
 			next;
-			mes "[心理顾问]";
-			mes "买一生的彩票, 这可能是相当巨额款项!";
+			mes "[み瞶臮拜]";
+			mes "禦ネ眒布, 硂琌讽エ肂蹿兜!";
 			next;
 			break;
 		case 2:
-			mes "啊.让我接触精神的世界.他们通常有健全的财务咨询, 尽管事实上没有任何类型的经济在那边.";
+			mes "摆.琵и钡郉弘.硄盽Τ胺癩叭玹高, 荷恨ㄆ龟⊿Τヴ摸竒蕾ê娩.";
 			next;
-			mes "[心理顾问]";
-			mes "首先, 必须负责你自己的钱和使用预算, 有一个很好的经验法则, 你每赚十个仲尼, 把钱存起来或以后投资.";
+			mes "[み瞶臮拜]";
+			mes ", ゲ斗璽砫窥㎝ㄏノ箇衡, Τ竒喷猭玥, –寥ヲェ, р窥癬ㄓ┪щ戈.";
 			next;
-			mes "[心理顾问]";
-			mes "而且不管您怎么做, 心理顾问在卢恩─米德加尔特王国是不工作的.真正的现金, 显然是在发现新的国家.为什么我不这样做?!";
+			mes "[み瞶臮拜]";
+			mes "τぃ恨眤暗, み瞶臮拜縞μ紈焊疭瓣琌ぃ.痷タ瞷, 陪礛琌祇瞷穝瓣產.ぐиぃ硂妓暗?!";
 			next;
 			break;
 		case 3:
-			mes "所以, 你想了解钱, 嗯?让我的精神境界超自然...";
+			mes "┮, 稱秆窥, 垛?琵и弘挂禬礛...";
 			next;
-			mes "[心理顾问]";
-			mes "啊.他们告诉我, 最好是准备好所有东西.当然, 你必须确保您的远征不超过您的预算.";
+			mes "[み瞶臮拜]";
+			mes "摆.禗и, 程琌称┮Τ狥﹁.讽礛, ゲ斗谔玂眤环┖ぃ禬筁眤箇衡.";
 			next;
-			mes "[心理顾问]";
-			mes "不过, 您也应避免赌博.我的意思是你应该储蓄和谨慎投资.不要被有风险能快速致富的办法诱惑!";
+			mes "[み瞶臮拜]";
+			mes "ぃ筁, 眤莱磷戒痴.и種琌莱赣纗籛㎝略稸щ戈.ぃ璶砆Τ繧е硉璓碔快猭护碽!";
 			next;
-			mes "[心理顾问]";
-			mes "另一方面, 致富不是能快速获得就好了, 只要你知道自己在做什么.就够了, 不是吗?";
+			mes "[み瞶臮拜]";
+			mes "よ, 璓碔ぃ琌е硉莉眔碞, 璶笵暗ぐ.碞镑, ぃ琌盾?";
 			next;
 		}
-		mes "[心理顾问]";
-		mes "嗯, 你需要钱生活, 但没有钱是不能单独生活.不要忘了, 还有其他一些重要的事情.尽量不强调了, 好吗?";
+		mes "[み瞶臮拜]";
+		mes "垛, 惠璶窥ネ, ⊿Τ窥琌ぃ虫縒ネ.ぃ璶а, 临Τㄤㄇ璶ㄆ薄.荷秖ぃ眏秸, 盾?";
 		close;
 	case 4:
-		mes "[心理顾问]";
+		mes "[み瞶臮拜]";
 		switch(rand(1,4)) {
 		case 1:
-			mes "您的等级?你还在上学?我很深刻的印象!你的眼睛告诉我你是相当成熟的年龄.好吧, 让我接触你的精神...";
+			mes "眤单?临厩?и瞏ㄨ禜!泊氟禗и琌讽Θ剪闹., 琵и钡郉弘...";
 			next;
-			mes "[心理顾问]";
-			mes "哼?所有的灵魂说,  '你学习? '好吧, 我想回答您的问题, 还有一个问题!";
+			mes "[み瞶臮拜]";
+			mes "?┮Τ艶活弧,  '厩策? ', и稱氮眤拜肈, 临Τ拜肈!";
 			next;
 			break;
 		case 2:
-			mes "你问我关于您的等级?这是奇怪的.我的意思是, 他们只问你的报告卡在学校, 对不对?";
+			mes "拜и闽眤单?硂琌┣.и種琌, 拜厨厩, 癸ぃ癸?";
 			next;
-			mes "[心理顾问]";
-			mes "教育是非常重要的, 但不要气馁如果您的等级不够您想要的.";
+			mes "[み瞶臮拜]";
+			mes "毙▅琌獶盽璶, ぃ璶蒩緆狦眤单ぃ镑眤稱璶.";
 			next;
-			mes "[心理顾问]";
-			mes "也许你的学习缝合是没有真正的学校支持你, 或者是你不感兴趣的.可以理解的.";
+			mes "[み瞶臮拜]";
+			mes "砛厩策羅琌⊿Τ痷タ厩や, ┪琌ぃ稰砍届.瞶秆.";
 			next;
-			mes "[心理顾问]";
-			mes "神告诉我, 你应该尝试不同的学习方式, 这样您就可以确保你的职责, 你想要的.";
+			mes "[み瞶臮拜]";
+			mes "禗и, 莱赣沽刚ぃ厩策よΑ, 硂妓眤碞谔玂戮砫, 稱璶.";
 			next;
-			mes "[心理顾问]";
-			mes "是啊...";
-			mes "今天的精神";
-			mes "非常懒惰";
+			mes "[み瞶臮拜]";
+			mes "琌摆...";
+			mes "さぱ弘";
+			mes "獶盽胕磌";
 			next;
 			break;
 		case 3:
 			mes "^FF0000F MINUS^000000!";
 			mes "Hahahahahahaha~!";
 			next;
-			mes "[心理顾问]";
-			mes "噢, 对不起, 我只是喜欢这样做.好吧, 请让我的灵魂真正的在这个时候升起...";
+			mes "[み瞶臮拜]";
+			mes "揪, 癸ぃ癬, и琌尺舧硂妓暗., 叫琵и艶活痷タ硂ど癬...";
 			next;
-			mes "[心理顾问]";
-			mes "嗯.神今天非常的粗鲁.他们说,  '如果你担心这样的成绩, 你为什么不问你的老师?'";
+			mes "[み瞶臮拜]";
+			mes "垛.さぱ獶盽彩緗.弧,  '狦踞み硂妓Θ罿, ぐぃ拜ρ畍?'";
 			next;
-			mes "[心理顾问]";
-			mes "现在我想想, 他们确实有责任.你为什么不问你的老师, 教授或任何看到如果您有任何问题的?";
+			mes "[み瞶臮拜]";
+			mes "瞷и稱稱, 谔龟Τ砫ヴ.ぐぃ拜ρ畍, 毙甭┪ヴ狦眤Τヴ拜肈?";
 			next;
-			mes "[心理顾问]";
-			mes "我的意思是, 他们正在向您提供帮助.以及, 我的服务是免费的.所以....";
+			mes "[み瞶臮拜]";
+			mes "и種琌, タ眤矗ㄑ腊.の, и狝叭琌禣.┮....";
 			next;
 			break;
 		case 4:
-			mes "噢酷了!";
-			mes "我感觉到, 你很快就会得到直线A的...";
-			mes "努力吧!";
+			mes "揪慌!";
+			mes "и稰谋, е碞穦眔絬A...";
+			mes "!";
 			next;
-			mes "[心理顾问]";
-			mes "现在, 我不能告诉你你的真实成绩.您可能注定要得到一个A在每一个阶级或主题, 但如果我告诉你,  ...";
+			mes "[み瞶臮拜]";
+			mes "瞷, иぃ禗痷龟Θ罿.眤猔﹚璶眔A–顶┪肈, 狦и禗,  ...";
 			next;
-			mes "[心理顾问]";
-			mes "你可能会获得自信, 放松学习, 我的意思是, 我必须实际上是在今后实际看到它, 你知道吗?";
+			mes "[み瞶臮拜]";
+			mes "穦莉眔獺, 猀厩策, и種琌, иゲ斗龟悔琌さ龟悔ウ, 笵盾?";
 			next;
-			mes "[心理顾问]";
-			mes "而是担心时间的悖论, 你为什么不承认自己的命运?";
+			mes "[み瞶臮拜]";
+			mes "τ琌踞み丁阶, ぐぃ┯粄㏑笲?";
 			next;
 		}
-		mes "[心理顾问]";
-		mes "那么, 在任何情况下, 专注于你的研究很艰难, 但可以获得奖励.我希望你做好你选择~";
+		mes "[み瞶臮拜]";
+		mes "ê, ヴ薄猵, 盡猔╯羮螟, 莉眔贱纘.и辨暗匡拒~";
 		close;
 	case 5:
-		mes "未来?我觉得这是隐含的, 我告诉你, 谨慎是你对未来选择的具体领域";
+		mes "ゼㄓ?и谋眔硂琌留, и禗, 略稸琌癸ゼㄓ匡拒ㄣ蔨烩办";
 		next;
-		mes "[心理顾问]";
-		mes "我猜你想知道的未来一般.让我的精神爆发, 我们会看到他们怎么说, 好吗?";
+		mes "[み瞶臮拜]";
+		mes "и瞦稱笵ゼㄓ.琵и弘脄祇, и穦弧, 盾?";
 		next;
-		mes "[心理顾问]";
+		mes "[み瞶臮拜]";
 		switch(rand(1,4)) {
 		case 1:
-			mes "嗯...";
-			mes "在未来, 性, 暴力, 以及摇滚是完全废除.人类经历了全面和平与极度厌倦的时代.";
+			mes "垛...";
+			mes "ゼㄓ, ┦, 忌, の穘簎琌Ч紀埃.摸竒菌㎝キ蒓体菇.";
 			next;
-			mes "[心理顾问]";
-			mes "我不知道如何在未来将出现, 但最好不要很快!";
+			mes "[み瞶臮拜]";
+			mes "иぃ笵ゼㄓ盢瞷, 程ぃ璶е!";
 			next;
 			break;
 		case 2:
-			mes "在未来, 保护地球是由一个巨大的机器人：: Plutonium Overdrive Ignition Negatron G a.k.a POING.";
+			mes "ゼㄓ, 玂臔瞴琌パエ审竟: Plutonium Overdrive Ignition Negatron G a.k.a POING.";
 			next;
-			mes "[心理顾问]";
-			mes "POING打败了很多Kylorian是入侵多年的, 直到终于打败博士自大'机械霸王： Nyxltron 47 .";
+			mes "[み瞶臮拜]";
+			mes "POINGゴ毖Kylorian琌獻, 沧ゴ毖痴'审瘪臦 Nyxltron 47 .";
 			next;
-			mes "[心理顾问]";
-			mes "幸运的是, 医生Pyeus驱动器Gravitron点火阴荷系统正是时候.";
+			mes "[み瞶臮拜]";
+			mes "┋笲琌, 洛ネPyeus臱笆竟Gravitron翴潮颤╰参タ琌.";
 			next;
-			mes "[心理顾问]";
-			mes "因此,  POING再次上升, 重生为自动英雄：上帝,  POING .当然,  Nyxltron 47被摧毁.";
+			mes "[み瞶臮拜]";
+			mes ",  POINGΩど, ネ笆璣动,  POING .讽礛,  Nyxltron 47砆篟反.";
 			next;
-			mes "[心理顾问]";
-			mes "这可能是最重要的事情对你了解的未来.相信我, 其余的是无聊.";
+			mes "[み瞶臮拜]";
+			mes "硂琌程璶ㄆ薄癸秆ゼㄓ.獺и, ㄤ琌礚册.";
 			next;
 			break;
 		case 3:
-			mes "在未来, 相信与否, 互联网将是一个巨大的大脑.我不知道, 但相信我, 这个大脑的巨大的.";
+			mes "ゼㄓ, 獺蒓, が羛蔍盢琌エ福.иぃ笵, 獺и, 硂福エ.";
 			next;
-			mes "[心理顾问]";
-			mes "由于一些互联网期刊, 这个大脑变得和平, 并决定不接管世界, 因为它有原来的计划.";
+			mes "[み瞶臮拜]";
+			mes "パㄇが羛蔍戳, 硂福跑眔㎝キ, ∕﹚ぃ钡恨, ウΤㄓ璸.";
 			next;
-			mes "[心理顾问]";
-			mes "是...";
-			mes "这种奇怪的事情肯定大脑成为一个很好的来源, 一个充满爱的人对人类, 只要人民保持书面个人作品在互联网上.";
+			mes "[み瞶臮拜]";
+			mes "琌...";
+			mes "硂销┣ㄆ薄﹚福Θㄓ方, 骸稲癸摸, 璶チ玂珇が羛蔍.";
 			next;
 			break;
 		case 4:
-			mes "在未来, 基因工程, 各种植物.";
-			mes "许多种!这是疯了, 我告诉你!";
+			mes "ゼㄓ, 膀祘, 销从.";
+			mes "砛销!硂琌浩, и禗!";
 			next;
-			mes "[心理顾问]";
-			mes "最后, 他们创造树木生长模仿名人.今天, 它看起来像一个科学的奇迹, 并威胁到好莱坞.";
+			mes "[み瞶臮拜]";
+			mes "程, 承硑攫れネ家ラ.さぱ, ウ癬ㄓ钩厩格, 弟鄂.";
 			next;
-			mes "[心理顾问]";
-			mes "然而, 谁购买这些树木是谁穿那些真正的俗气的衬衫...";
+			mes "[み瞶臮拜]";
+			mes "礛τ, 街潦禦硂ㄇ攫れ琌街êㄇ痷タ玌蒩浓璵...";
 			next;
-			mes "[心理顾问]";
-			mes "你知道, 那种与跛脚的幽默感如果将这个词'猫邻strophic ' , 有这个小小猫打扮像一个疯狂的科学家或一些东西.";
+			mes "[み瞶臮拜]";
+			mes "笵, ê销蒓禵竲纐稰狦盢硂迭'窟綟strophic ' , Τ硂窟ゴш钩浩╣厩產┪ㄇ狥﹁.";
 			next;
 		}
-		mes "[心理顾问]";
-		mes "嗯...";
-		mes "这是我的预测.你能否有真正争辩的智慧, 精神的世界?";
+		mes "[み瞶臮拜]";
+		mes "垛...";
+		mes "硂琌и箇代.Τ痷タ臛醇紌, 弘?";
 		close;
 	case 6:
-		mes "时装... ?";
-		mes "这是什么必须做的事项, 超自然?嗯, 嗯, 让我的灵魂接触.?≡谡饫? 我们去...";
+		mes "杆... ?";
+		mes "硂琌ぐゲ斗暗ㄆ兜, 禬礛?垛, 垛, 琵и艶活钡郉.?≥睥墚? и...";
 		next;
-		mes "[心理顾问]";
+		mes "[み瞶臮拜]";
 		switch(rand(1,5)) {
 		case 1:
 			mes "...";
 			next;
-			mes "[心理顾问]";
+			mes "[み瞶臮拜]";
 			mes "...";
 			mes "......";
 			next;
-			mes "[心理顾问]";
-			mes "我看到的东西...";
-			mes "看起来, 好像字母a. ..";
+			mes "[み瞶臮拜]";
+			mes "и狥﹁...";
+			mes "癬ㄓ, 钩ダa. ..";
 			next;
-			mes "[心理顾问]";
+			mes "[み瞶臮拜]";
 			mes "A...";
-			mes "字母a. ..鱼?";
-			mes "在某人的头?";
+			mes "ダa. ..辰?";
+			mes "琘繷?";
 			next;
-			mes "[心理顾问]";
+			mes "[み瞶臮拜]";
 			mes "...";
-			mes "这是最可怕的设想!";
+			mes "硂琌程┤砞稱!";
 			next;
 			break;
 		case 2:
-			mes "我感觉很好!他美丽幻想穿衣服呢!但是, 请记住...";
+			mes "и稰谋!腞ほ稱︾狝㎡!琌, 叫癘...";
 			next;
-			mes "[心理顾问]";
-			mes "不管有多少仲尼您可以把您的衣柜变得看起来愚蠢, 除非你的东西你穿.";
+			mes "[み瞶臮拜]";
+			mes "ぃ恨Τぶヲェ眤р眤︾螥跑眔癬ㄓ稭镍, 埃獶狥﹁.";
 			next;
-			mes "[心理顾问]";
-			mes "现在, 这里的一个很好的例子不匹配的服装.想像一下, 一些身穿十字军冠, 精灵的耳环和一个铁戒指.";
+			mes "[み瞶臮拜]";
+			mes "瞷, 硂ńㄒぃで皌狝杆.稱钩, ㄇō瓁玜, 弘艶φ吏㎝臟з.";
 			next;
-			mes "[心理顾问]";
-			mes "相反看很酷, 看起来有点像一个邪恶的幽灵王子.";
+			mes "[み瞶臮拜]";
+			mes "は慌, 癬ㄓΤ翴钩ǜ碿艶.";
 			next;
 			break;
 		case 3:
-			mes "我预测...";
-			mes "这牛仔帽将是非常受女性欢迎的";
-			mes "超级新手";
-			mes "很快!";
+			mes "и箇代...";
+			mes "硂碪盢琌獶盽┦舧";
+			mes "禬穝も";
+			mes "е!";
 			next;
-			mes "[心理顾问]";
-			mes "来吧, 你不同意吗?牛仔帽期待伟大的超级新手!";
+			mes "[み瞶臮拜]";
+			mes "ㄓ, ぃ種盾?碪戳岸禬穝も!";
 			next;
 			break;
 		case 4:
-			mes "有时候, 这是一个可爱的想法遵循的主题.一样, 如果你佩戴天使翼和翼天使同一时间举行. ";
+			mes "Τ, 硂琌稲稱猭宽碻肈.妓, 狦ㄘ拦ぱㄏ羖㎝羖ぱㄏ丁羭︽. ";
 			next;
-			mes "[心理顾问]";
-			mes "当然, 这可能是太昂贵了对大多数人来说, 但你的想法呢.";
+			mes "[み瞶臮拜]";
+			mes "讽礛, 硂琌び禥癸计ㄓ弧, 稱猭㎡.";
 			next;
 			break;
 		case 5:
-			mes "我现在预测, 桑布雷罗将是非常受欢迎的一个大规模组织, 冰城成立的一个协会, 其中的成员只穿着宽边帽.";
+			mes "и瞷箇代, ガ筽霉盢琌獶盽舧砏家舱麓, Θミ穦, ㄤいΘ帝糴娩碪.";
 			next;
-			mes "[心理顾问]";
-			mes "或者是它的羽毛帽是要暴涨受欢迎?这两个帽子只是时尚, 特别是在冰城...";
+			mes "[み瞶臮拜]";
+			mes "┪琌ウπを碪琌璶忌害舧?硂ㄢ碪琌﹟, 疭琌...";
 			next;
 		}
-		mes "[心理顾问]";
-		mes "嗯...";
-		mes "我们其实并不是真正的训练方式非常重要, 但是我希望我至少有一点点帮助你.";
+		mes "[み瞶臮拜]";
+		mes "垛...";
+		mes "иㄤ龟ぃ琌痷タ癡絤よΑ獶盽璶, 琌и辨иぶΤ翴翴腊.";
 		close;
 	}
 }
 	
-geffen_in,109,72,2	script	怪物学者	4_F_01,{
-	mes "[埃斯厄尔斯]";
-	mes "您好, 我的驻地专家怪物易学在这里格芬.有什么特别, 你很好奇吗?";
+geffen_in,109,72,2	script	┣厩	4_F_01,{
+	mes "[甁吹ぬ焊吹]";
+	mes "眤, и緉盡產┣厩硂ń.Τぐ疭, 盾?";
 	next;
-	switch(select("这个区域的怪物.:怪物的新闻.:怪物的时代:杰勒比结晶理论.")) {
+	switch(select("硂跋办┣.:┣穝籇.:┣:狽扒ゑ挡垂瞶阶.")) {
 	case 1:
-		mes "[埃斯厄尔斯]";
-		mes "那么您可能已经知道, 因为巫师和魔法师列车格芬, 妖怪往往远离城市.因此, 累了冒险家, 欢迎在这里休息.";
+		mes "[甁吹ぬ焊吹]";
+		mes "ê眤竒笵, 畍㎝臸猭畍ó, Н┣┕┕环置カ., 仓玙繧產, 舧硂ńヰ.";
 		next;
-		mes "[埃斯厄尔斯]";
-		mes "不过, 如果你想寻求强大的怪物, 你可以过桥的西和打击柯达.";
+		mes "[甁吹ぬ焊吹]";
+		mes "ぃ筁, 狦稱碝―眏┣, 筁爵﹁㎝ゴ阑琠笷.";
 		next;
-		mes "[埃斯厄尔斯]";		
+		mes "[甁吹ぬ焊吹]";		
 		if (BaseLevel > 40)
-			mes "你看起来足够强大的那种挑战.但是, 如果你看到任何人更加胆大妄为跨西方桥梁, 您可能会想要给他们一个警告.";
+			mes "癬ㄓì镑眏ê销珼驹.琌, 狦ヴ義阁﹁よ爵辩, 眤穦稱璶倒牡.";
 		else 
-			mes "嗯, 但是如果你打算去那里, 你最好不要单独前往.我真的建议您做好了准备, 如果你一定打击这些类型的怪物.";
+			mes "垛, 琌狦ゴ衡êń, 程ぃ璶虫縒玡┕.и痷某眤暗称, 狦﹚ゴ阑硂ㄇ摸┣.";
 		break;
 	case 2:
-		mes "[埃斯厄尔斯]";
-		mes "最近的消息吗?";
-		mes "那么, 朱诺怪物现在博物馆向公众开放.他们有迷人的展览和各种怪物现展出!";
+		mes "[甁吹ぬ焊吹]";
+		mes "程盾?";
+		mes "ê, Χ空┣瞷痴繻そ渤秨.Τ癵甶凝㎝销┣瞷甶!";
 		next;
-		mes "[埃斯厄尔斯]";
-		mes "我的意思是, 我读过有关的各种怪物在普隆德拉和朱诺图书馆, 并遇到了一些在野外, 但现在我有机会看到一些强大的怪物在现实生活中!";
+		mes "[甁吹ぬ焊吹]";
+		mes "и種琌, и弄筁Τ闽销┣炊订紈┰㎝Χ空瓜繻, 笿ㄇ偿, 瞷иΤ审穦ㄇ眏┣瞷龟ネい!";
 		next;
-		mes "[埃斯厄尔斯]";
-		mes "令人兴奋的是探索所取得的卢恩─米德加尔特王国的冒险家";
+		mes "[甁吹ぬ焊吹]";
+		mes "砍灸琌贝┮眔縞μ紈焊疭瓣玙繧產";
 		next;
-		mes "[埃斯厄尔斯]";
-		mes "当一项新的土地被发现, 还有独特的怪物通常是土著人, 以这方面的工作.";
+		mes "[甁吹ぬ焊吹]";
+		mes "讽兜穝砆祇瞷, 临Τ縒疭┣硄盽琌帝, 硂よ.";
 		next;
-		mes "[埃斯厄尔斯]";
-		mes "因此, 新的怪物基本上是所有被发现的时间!各种各样的生物漫游这个世界确实很迷人.";
+		mes "[甁吹ぬ焊吹]";
+		mes ", 穝┣膀セ琌┮Τ砆祇瞷丁!销妓ネ憨村硂谔龟癵.";
 		break;
 	case 3:
-		mes "[埃斯厄尔斯]";
-		mes "事实是, 已经存在的怪物自古以来.时代的怪兽时的力量是怪物的高峰.";
+		mes "[甁吹ぬ焊吹]";
+		mes "ㄆ龟琌, 竒┣ㄓ.┣脋秖琌┣蔼畃.";
 		next;
-		mes "[埃斯厄尔斯]";
-		mes "他们已经困扰人类很长一段时间, 但完全被歼灭了巨大的人类之间的战争和怪物.";
+		mes "[甁吹ぬ焊吹]";
+		mes "竒署摸琿丁, Ч砆蔫防エ摸ぇ丁驹㎝┣.";
 		next;
-		mes "[埃斯厄尔斯]";
-		mes "然而, 由于平衡的性质已经发生了变化, 该怪物不可避免地回来了.没有太多人知道这一点, 但大多数的怪物是温柔的动物一次.这是可悲的, 真的...";
+		mes "[甁吹ぬ焊吹]";
+		mes "礛τ, パキ颗┦借竒祇ネ跑て, 赣┣ぃ磷ㄓ.⊿Τび笵硂翴, 计┣琌放琗笆Ω.硂琌磀, 痷...";
 		break;
 	case 4:
-		mes "[埃斯厄尔斯]";
-		mes "啊, 果冻";
-		mes "看来, 几乎每一个怪物周围组成果冻.但它只是一个结晶一些怪物, 还是...更多吗?";
+		mes "[甁吹ぬ焊吹]";
+		mes "摆, 狦";
+		mes "ㄓ, –┣㏄瞅舱Θ狦.ウ琌挡垂ㄇ┣, 临琌...盾?";
 		next;
-		mes "[埃斯厄尔斯]";
-		mes "从我们研究古代的怪物和研究最近发现的怪物, 但似乎痕迹果冻无法找到更有力的野兽.";
+		mes "[甁吹ぬ焊吹]";
+		mes "眖и╯┣㎝╯程祇瞷┣, 勃格狦礚猭тΤ偿脋.";
 		next;
-		mes "[埃斯厄尔斯]";
-		mes "尽管如此, 可我们认为, 可能有一些关系果冻和怪物, 但它可能是很难相信有任何.";
+		mes "[甁吹ぬ焊吹]";
+		mes "荷恨, и粄, Τㄇ闽╰狦㎝┣, ウ琌螟獺Τヴ.";
 		next;
-		mes "[埃斯厄尔斯]";
-		mes "这有可能是果冻可能与一个怪物的个性和力量.因此, 如果您混合果冻东西, 你会建立一个更强大怪物.";
+		mes "[甁吹ぬ焊吹]";
+		mes "硂Τ琌狦蒓┣┦㎝秖., 狦眤睼狦狥﹁, 穦ミ眏┣.";
 		next;
-		mes "[埃斯厄尔斯]";
-		mes "当然, 做这样的实验似乎危险.您或许能够发挥一些非?膳碌墓治锶谌胧澜?..";
+		mes "[甁吹ぬ焊吹]";
+		mes "讽礛, 暗硂妓龟喷繧.眤┪砛镑祇揣ㄇ獶?刊窵褂獀钪扣膅膇?..";
 		break;
 	}
 	close;
@@ -1404,23 +1404,23 @@ geffen_in,109,72,2	script	怪物学者	4_F_01,{
 
 // Lvl 4 weapon quest related NPC ------------------------------------------------------
 
-geffen,203,146,5	script	市民	97,{
-	mes "[市民]";
-	mes "这有一个精湛的武器师傅";
-	mes "就是德巴兰有四个儿子的人";
-	mes "不幸的是, 他失去了所有他的儿子, ";
-	mes "为国家的战斗中";
-	mes "幸存下来的父亲独自从悲剧.";
+geffen,203,146,5	script	カチ	97,{
+	mes "[カチ]";
+	mes "硂Τ弘达猌竟畍撑";
+	mes "碞琌紈ぺ孽Τ";
+	mes "ぃ┋琌, ア┮Τ, ";
+	mes "瓣產驹ゆい";
+	mes "┋ㄓ克縒眖磀粿.";
 	next;
-	mes "[市民]";
-	mes "怎么和父亲说这些";
-	mes "由于事件发生后,  武器铁匠师傅";
-	mes "退出他的工作, 并躲在某处.";
-	mes "在这之后, 没有人能看到以往任何时候都强大的武器, ";
-	mes "他和他的两个儿子都是在发展研究中.";
+	mes "[カチ]";
+	mes "㎝克弧硂ㄇ";
+	mes "パㄆン祇ネ,  猌竟臟畍撑";
+	mes "癶, 跟琘矪.";
+	mes "硂ぇ, ⊿Τ┕ヴ常眏猌竟, ";
+	mes "㎝ㄢ常琌祇甶╯い.";
 	next;
-	mes "[市民]";
-	mes "我不认为他的四个儿子";
-	mes "带着焦虑去了天堂.";
+	mes "[カチ]";
+	mes "иぃ粄";
+	mes "盿帝礘納ぱ绑.";
 	close;
 }

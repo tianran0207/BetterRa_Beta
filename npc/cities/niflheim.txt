@@ -28,26 +28,26 @@
 //= 1.5 Added dummy "OnMyMobDead" event to Cursed Spirit. [L0ne_W0lf]
 //============================================================
 
-niflheim,52,147,3	script	柯资#nif	796,{
-	mes "[柯资]";
-	mes "活着的人不准进来";
-	mes "这里 -! 不允许";
-	mes "活着的人通行-!";
+niflheim,52,147,3	script	琠戈#nif	796,{
+	mes "[琠戈]";
+	mes "帝ぃ秈ㄓ";
+	mes "硂ń -! ぃす砛";
+	mes "帝硄︽-!";
 	close;
 }
 
-niflheim,195,211,6	script	其甘提阿#nif	796,3,3,{
+niflheim,195,211,6	script	ㄤヌ矗#nif	796,3,3,{
 	if (isequipped(5038) || isequipped(2257) || isequipped(2256)) {
 		mes "[" + strcharinfo(0) + "]";
 		mes "What's up?";
 		next;
-		mes "[其甘提阿]";
+		mes "[ㄤヌ矗]";
 		mes "Just...";
 		mes "Come over here.";
 		mes "I have something";
 		mes "I must do for you.";
 		next;
-		mes "[其甘提阿]";
+		mes "[ㄤヌ矗]";
 		mes "Your horn is crooked.";
 		mes "Always make sure your horn";
 		mes "is worn straight and neat.";
@@ -55,146 +55,146 @@ niflheim,195,211,6	script	其甘提阿#nif	796,3,3,{
 		mes "looking at you.";
 		close;
 	}
-	mes "[其甘提阿]";
-	mes "死灵骑士总是看的一清二楚";
+	mes "[ㄤヌ矗]";
+	mes "艶肕羆琌睲贰";
 	close;
 
 OnTouch_:
 	if (isequipped(5038) || isequipped(2257) || isequipped(2256)) {
-		mes "[其甘提阿]";
-		mes "嘿, 等一下!";
+		mes "[ㄤヌ矗]";
+		mes "糑, 单!";
 		close;
 	}
 	end;
 }
 
-nif_in,16,27,1	script	死鸡#nif	800,{
+nif_in,16,27,1	script	蔓#nif	800,{
 	percentheal -5,0;
-	mes "[瞎眼鸡]";
-	mes "活着的时候被人们吃掉了, ";
-	mes "现在换我来吃你了, 咕咕咕, ";
-	mes "啊啊, 没想到死了后还会有这种世界, 咕咕咕";
+	mes "[組泊蔓]";
+	mes "帝砆奔, ";
+	mes "瞷传иㄓ, 〣〣〣, ";
+	mes "摆摆, ⊿稱临穦Τ硂销, 〣〣〣";
 	close;
 }
 
-nif_in,16,30,4	script	死的 吸血蝙蝠#nif	799,{
+nif_in,16,30,4	script	 ﹀娇交#nif	799,{
 	percentheal -5,0;
-	mes "[帕豆曼]";
-	mes "不管活着或死了, 人类的血";
-	mes "还是很好喝, ";
-	mes "什么? 你也想要";
-	mes "被我吸血吗?";
+	mes "[┈ě耙]";
+	mes "ぃ恨帝┪, 摸﹀";
+	mes "临琌耻, ";
+	mes "ぐ? 稱璶";
+	mes "砆и﹀盾?";
 	close;
 }
 
-nif_in,156,93,5	script	小孩#niflheim	793,{
-	mes "[阿拉克娜 安]";
-	mes "这里, 是哪里呢...? 睡一觉起来, ";
-	mes "就来到这里了... 我妈妈, ";
-	mes "没有看到我妈妈吗? 嗯...? 呜呜呜...";
-	mes "我想要回家...";
+nif_in,156,93,5	script	#niflheim	793,{
+	mes "[┰甊 ]";
+	mes "硂ń, 琌ń㎡...? 何谋癬ㄓ, ";
+	mes "碞ㄓ硂ń... и洱洱, ";
+	mes "⊿Τи洱洱盾? 垛...? 躲躲躲...";
+	mes "и稱璶產...";
 	next;
-	switch(select("关于魔女...:关于诅咒...:停止对话")){
+	switch(select("闽臸...:闽禔〨...:氨ゎ癸杠")){
 	case 1:
-		mes "[阿拉克娜 安]";
-		mes "魔女...? 我不知道所谓的魔女...";
-		mes "虽然在童话书里有读过, ";
-		mes "不过不知道真的有没有那种人, ";
-		mes "如果有的话一定很可怕啊...";
+		mes "[┰甊 ]";
+		mes "臸...? иぃ笵┮孔臸...";
+		mes "瘤礛担杠ńΤ弄筁, ";
+		mes "ぃ筁ぃ笵痷Τ⊿Τê销, ";
+		mes "狦Τ杠﹚┤摆...";
 		next;
-		mes "[阿拉克娜 安]";
-		mes "可是为什么会这么冷呢...?";
+		mes "[┰甊 ]";
+		mes "琌ぐ穦硂㎡...?";
 		if (Sex == 1) 
-			mes "哥哥你不会冷吗? 好奇怪... 呼唷";
+			mes "ぃ穦盾? ┣... ㊣";
 		else
-			mes "姊姊你不会冷吗? 好奇怪... 呼唷";
-		mes "想回到我温暖的家, ";
-		mes "帮帮忙吧... 嗯...? 嗯...?";
+			mes "﹏﹏ぃ穦盾? ┣... ㊣";
+		mes "稱и放穢產, ";
+		mes "腊腊Γ... 垛...? 垛...?";
 		close;
 	case 2:
-		mes "[阿拉克娜 安]";
-		mes "诅咒... 想起奶奶曾经";
-		mes "所说过的话, 她说有种方法";
-		mes "可以躲避无法以祝福";
-		mes "解开的狠毒诅咒";
+		mes "[┰甊 ]";
+		mes "禔〨... 稱癬イイ纯竒";
+		mes "┮弧筁杠, 弧Τ销よ猭";
+		mes "跟磷礚猭褐";
+		mes "秆秨瑀禔〨";
 		next;
-		mes "[阿拉克娜 安]";
-		mes "克拉图(Klaatu)...";
-		mes "北拉塔(Verata).....";
-		mes "再来是... 什么... 什么的...? 是什么啦?";
-		mes "最后面记不起来了";
+		mes "[┰甊 ]";
+		mes "┰瓜(Klaatu)...";
+		mes "┰娥(Verata).....";
+		mes "ㄓ琌... ぐ... ぐ...? 琌ぐ罢?";
+		mes "程癘ぃ癬ㄓ";
 		next;
-		mes "[阿拉克娜 安]";
-		mes "她还说过按照顺序念那3种咒文的话, ";
-		mes "可以从被诅咒的命运中逃过, ";
-		mes "现在已不太记得她主要在";
-		mes "讲什么了... 我也忘了";
+		mes "[┰甊 ]";
+		mes "临弧筁酚抖├ê3销〨ゅ杠, ";
+		mes "眖砆禔〨㏑笲い発筁, ";
+		mes "瞷ぃび癘眔璶";
+		mes "量ぐ... иа";
 		close;
 	case 3:
-		mes "[阿拉克娜 安]";
-		mes "好冷... 好冷喔... 想要回到";
-		mes "家里... 方便的话带我一起走..";
-		mes "这里太可怕了啦.....";
-		mes "拜托你帮帮忙... 救救我...";
+		mes "[┰甊 ]";
+		mes "... 翅... 稱璶";
+		mes "產ń... よ獽杠盿и癬ǐ..";
+		mes "硂ńび┤罢.....";
+		mes "Λ腊腊Γ... 毕毕и...";
 		close;
 	}
 }
 
-niflheim,350,258,1	script	被诅咒的 灵魂#nif	802,{
-	killmonster "niflheim","被诅咒的 灵魂#nif::OnMyMobDead";
-	mes "[艾书 布路斯]";
-	mes "在你身上感受到强烈的诅咒啊啊啊, ";
-	mes "我拒绝你的存在啊啊啊啊, ";
-	mes "不退回去否则会死啊啊啊, ";
-	mes "不准动我的书啊啊啊";
+niflheim,350,258,1	script	砆禔〨 艶活#nif	802,{
+	killmonster "niflheim","砆禔〨 艶活#nif::OnMyMobDead";
+	mes "[︺ ガ隔吹]";
+	mes "ō稰眏疨禔〨摆摆摆, ";
+	mes "и┶荡摆摆摆摆, ";
+	mes "ぃ癶玥穦摆摆摆, ";
+	mes "ぃ笆и摆摆摆";
 	next;
 	emotion ET_FRET;
-	switch(select("拿起第一本书:拿起第二本书:拿起第三本书:乖乖的退回去")) {
+	switch(select("癬材セ:癬材セ:癬材セ:癶")) {
 	case 1:
-		monster "niflheim",349,259,"Rideword",1478,1,"飞行魔书#nif::OnMyMobDead";
-		mes "[艾书 布路斯]";
-		mes "不要随便动我的书啊啊!!";
-		mes "喀哈啊啊! 诅咒你被咬被撕被抓伤!!";
-		mes "永远被埋在束缚的诅咒里!!";
+		monster "niflheim",349,259,"Rideword",1478,1,"︽臸#nif::OnMyMobDead";
+		mes "[︺ ガ隔吹]";
+		mes "ぃ璶繦獽笆и摆摆!!";
+		mes "池摆摆! 禔〨砆玶砆脊砆ъ端!!";
+		mes "ッ环砆甀浚禔〨ń!!";
 		close;
 	case 2:
-		mes "[艾书 布路斯]";
-		mes "我说过不准动我的书啊啊...";
-		mes "给我滚远一点..";
-		mes "不要妨碍我休息啊啊啊!";
+		mes "[︺ ガ隔吹]";
+		mes "и弧筁ぃ笆и摆摆...";
+		mes "倒и簎环翴..";
+		mes "ぃ璶Й锚иヰ摆摆摆!";
 		close2;
 		warp "niflheim",34,162;
 		end;
 	case 3:
-		mes "[艾书 布路斯]";
-		mes "喀哈哈啊啊.... 相当有胆量";
-		mes "的家伙啊啊...!! 来...";
-		mes "开始念咒文吧啊啊啊...!!";
+		mes "[︺ ガ隔吹]";
+		mes "池摆摆.... 讽Τ義秖";
+		mes "產ル摆摆...!! ㄓ...";
+		mes "秨﹍├〨ゅ摆摆摆...!!";
 		emotion ET_KIK;
 		next;
-		if(select("克罗柏(Clover):克拉图(Klaatu):克雷易托思(Kleitos)")==2)
+		if(select("霉琭(Clover):┰瓜(Klaatu):筽Λ(Kleitos)")==2)
 			set .@spell,.@spell+1;
-		if(select("北利特(Verit):北利塔司(Veritas):北拉塔 (Verata)")==3)
+		if(select("疭(Verit):娥(Veritas):┰娥 (Verata)")==3)
 			set .@spell,.@spell+1;
-		if(select("内塔易(Necktie):内克利司(Necklace):内罗(Nero):^FFFFFF尼图(Nictu)^000000")==4)
+		if(select("ず娥(Necktie):ず(Necklace):ず霉(Nero):^FFFFFFェ瓜(Nictu)^000000")==4)
 			set .@spell,.@spell+1;
 		if (.@spell == 3) {
 			switch(rand(1,5)) {
 			case 1:
 				if (morison_meat < 15) {
 					set morrison_meat,15;
-					mes "[艾书 布路斯]";
+					mes "[︺ ガ隔吹]";
 					mes "You... You broke the curse!";
 					mes "How did you know that spell?!";
 					next;
-					mes "[艾书 布路斯]";
+					mes "[︺ ガ隔吹]";
 					mes "I suppose you expect for me to";
 					mes "melt in agony about now, don't";
 					mes "you? Well... Sorry to disappoint";
 					mes "you, mortal, but I can never die!";
 					close;
 				}
-				mes "[艾书 布路斯]";
+				mes "[︺ ガ隔吹]";
 				mes "...! You cast the correct spell?!";
 				mes "...!...";
 				mes "But...You're still cursed...";
@@ -203,56 +203,56 @@ niflheim,350,258,1	script	被诅咒的 灵魂#nif	802,{
 			case 2:
 				if (thai_head == 1) {
 					set thai_head,2;
-					mes "[艾书 布路斯]";
+					mes "[︺ ガ隔吹]";
 					mes "What's...";
 					mes "this feeling?";
 					next;
-					mes "[艾书 布路斯]";
+					mes "[︺ ガ隔吹]";
 					mes "No...!";
 					mes "NOOOOOOOOOOOOOOOO!";
 					next;
-					mes "[艾书 布路斯]";
+					mes "[︺ ガ隔吹]";
 					mes "Why did your spell have to work?!";
 					close;
 				}
-				mes "[艾书 布路斯]";
+				mes "[︺ ガ隔吹]";
 				mes "You...";
 				mes "cast the correct spell?!";
 				next;
-				mes "[艾书 布路斯]";
+				mes "[︺ ガ隔吹]";
 				mes "Hoho~";
 				mes "But you're still cursed...";
 				close;
 			case 3:
 				if (thai_head == 8) {
 					set thai_head,7;
-					mes "[艾书 布路斯]";
+					mes "[︺ ガ隔吹]";
 					mes "You... You broke the curse!";
 					mes "Who taught you that spell?!";
 					next;
-					mes "[艾书 布路斯]";
+					mes "[︺ ガ隔吹]";
 					mes "I suppose you expect for me to";
 					mes "melt in agony about now, don't";
 					mes "you? Well... Sorry to disappoint";
 					mes "you, mortal, but I can never die!";
 					next;
-					mes "[艾书 布路斯]";
+					mes "[︺ ガ隔吹]";
 					mes "So long as I'm...";
 					mes "still...";
 					mes "cursed.";
 					next;
-					mes "[艾书 布路斯]";
+					mes "[︺ ガ隔吹]";
 					mes "NOOOOOOOOOO!";
 					close;
 				}
-				mes "[艾书 布路斯]";
+				mes "[︺ ガ隔吹]";
 				mes "...! You cast the correct spell?!";
 				mes "...!...";
 				mes "But...You're still cursed...";
 				mes "Umhaaaaaaaaaaaaaaaaa.....!";
 				close;
 			case 4:
-				mes "[艾书 布路斯]";
+				mes "[︺ ガ隔吹]";
 				mes "...! You cast the correct spell?!";
 				mes "...!...";
 				mes "But...You're still cursed...";
@@ -260,22 +260,22 @@ niflheim,350,258,1	script	被诅咒的 灵魂#nif	802,{
 				close;
 			}
 		}
-		monster "niflheim",345,259,"Orc Skeleton",1462,1,"被诅咒的 灵魂#nif::OnMyMobDead";
-		monster "niflheim",347,261,"Orc Skeleton",1462,1,"被诅咒的 灵魂#nif::OnMyMobDead";
-		monster "niflheim",344,253,"Orc Skeleton",1462,1,"被诅咒的 灵魂#nif::OnMyMobDead";
-		monster "niflheim",346,251,"Orc Skeleton",1462,1,"被诅咒的 灵魂#nif::OnMyMobDead";
-		monster "niflheim",349,249,"Orc Skeleton",1462,1,"被诅咒的 灵魂#nif::OnMyMobDead";
-		monster "niflheim",350,260,"Orc Skeleton",1462,1,"被诅咒的 灵魂#nif::OnMyMobDead";
-		monster "niflheim",353,256,"Orc Skeleton",1462,1,"被诅咒的 灵魂#nif::OnMyMobDead";
-		mes "[艾书 布路斯]";
-		mes "哈哈哈啊啊啊!!! 咒文错了!";
-		mes "你即将要面临死亡了喔喔喔, ";
-		mes "愿你一辈子都受到诅咒吧啊啊啊...!!";
+		monster "niflheim",345,259,"Orc Skeleton",1462,1,"砆禔〨 艶活#nif::OnMyMobDead";
+		monster "niflheim",347,261,"Orc Skeleton",1462,1,"砆禔〨 艶活#nif::OnMyMobDead";
+		monster "niflheim",344,253,"Orc Skeleton",1462,1,"砆禔〨 艶活#nif::OnMyMobDead";
+		monster "niflheim",346,251,"Orc Skeleton",1462,1,"砆禔〨 艶活#nif::OnMyMobDead";
+		monster "niflheim",349,249,"Orc Skeleton",1462,1,"砆禔〨 艶活#nif::OnMyMobDead";
+		monster "niflheim",350,260,"Orc Skeleton",1462,1,"砆禔〨 艶活#nif::OnMyMobDead";
+		monster "niflheim",353,256,"Orc Skeleton",1462,1,"砆禔〨 艶活#nif::OnMyMobDead";
+		mes "[︺ ガ隔吹]";
+		mes "摆摆摆!!! 〨ゅ岿!";
+		mes "盢璶羬翅翅翅, ";
+		mes "篅晋常禔〨摆摆摆...!!";
 		close;
 	case 4:
-		mes "[艾书 布路斯]";
-		mes "喀哈啊啊! 想的不错啊啊啊啊...";
-		mes "我会帮你祈祷活着回去啊啊啊....";
+		mes "[︺ ガ隔吹]";
+		mes "池摆摆! 稱ぃ岿摆摆摆摆...";
+		mes "и穦腊毛帝摆摆摆....";
 		close;
 	}
 

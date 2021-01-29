@@ -18,27 +18,27 @@
 
 // Guild Flags (Outside Castle)
 //============================================================
--	script	拉兹立克斯#1::OutsideFlagsPR3	722,{
+-	script	┰ミ吹#1::OutsideFlagsPR3	722,{
 
 	set .@GID, GetCastleData("prtg_cas03",1);
 
 	if (.@GID == 0) {
-		mes "[ 神圣卢恩米德加兹王国条例 ]";
+		mes "[ 蒾縞μ紈瓣兵ㄒ ]";
 		mes " ";
-		mes "1. 按照神圣卢恩米德加兹王国的条例,";
-		mes "我们正式声明此城堡没有正式拥有者.";
+		mes "1. 酚蒾縞μ紈瓣兵ㄒ,";
+		mes "иタΑ羘躇⊿ΤタΑ局Τ.";
 		mes " ";
-		mes "2. 经过所有试炼,";
-		mes "并且破坏了华丽金属的勇士.";
-		mes "将会得到国王授予的城堡拥有权";
+		mes "2. 竒筁┮Τ刚芬,";
+		mes "瘆Д地腞妮玦.";
+		mes "盢穦眔瓣甭ぉ躇局Τ舦";
 		close;
 	}
 	if (getcharid(2) == .@GID) {
-		mes "[ 回声 ]";
-		mes "勇士们...";
-		mes "想要回到你们的勇气所在之地吗?";
+		mes "[ 羘 ]";
+		mes "玦...";
+		mes "稱璶玦蒩┮ぇ盾?";
 		next;
-		if(select("返回公会城堡.:取消.") == 1) {
+		if(select("そ穦躇.:.") == 1) {
 			close2;
 			if (getcharid(2) == GetCastleData("prtg_cas03",1)) {
 				warp "prtg_cas03",181,215;
@@ -48,14 +48,14 @@
 		}
 		close;
 	}
-	mes "[ 神圣卢恩米德加兹王国条例 ]";
+	mes "[ 蒾縞μ紈瓣兵ㄒ ]";
 	mes " ";
-	mes "1. 按照神圣卢恩米德加兹王国的条例,";
-	mes "我们批准该地区作为公会 ^ff0000"+GetGuildName(.@GID)+"^000000 的私有领地.";
+	mes "1. 酚蒾縞μ紈瓣兵ㄒ,";
+	mes "иу赣跋そ穦 ^ff0000"+GetGuildName(.@GID)+"^000000 ╬Τ烩.";
 	mes " ";
-	mes "2. ^ff0000"+GetGuildName(.@GID)+"^000000 公会的领袖为:";
+	mes "2. ^ff0000"+GetGuildName(.@GID)+"^000000 そ穦烩砈:";
 	mes "^ff0000"+GetGuildMaster(.@GID)+"^000000";
-	mes "对此结果有意见的人，请用你手中的武器说话，证明你的勇气，捍卫你的光荣！";
+	mes "癸挡狦Τ種ǎ叫ノもい猌竟弧杠谍玦蒩矫篴";
 	close;
 
 OnRecvCastlePt03:
@@ -63,14 +63,14 @@ OnRecvCastlePt03:
 	end;
 }
 
-prt_gld,147,140,4	duplicate(OutsideFlagsPR3)	拉兹立克斯#1-2	722
-prt_gld,147,136,4	duplicate(OutsideFlagsPR3)	拉兹立克斯#2	722
-prt_gld,158,140,4	duplicate(OutsideFlagsPR3)	拉兹立克斯#3	722
-prt_gld,158,136,4	duplicate(OutsideFlagsPR3)	拉兹立克斯#4	722
+prt_gld,147,140,4	duplicate(OutsideFlagsPR3)	┰ミ吹#1-2	722
+prt_gld,147,136,4	duplicate(OutsideFlagsPR3)	┰ミ吹#2	722
+prt_gld,158,140,4	duplicate(OutsideFlagsPR3)	┰ミ吹#3	722
+prt_gld,158,136,4	duplicate(OutsideFlagsPR3)	┰ミ吹#4	722
 
 // Guild Flags (Inside Castle)
 //============================================================
--	script	拉兹立克斯#5::InsideFlagsPR3	722,{
+-	script	┰ミ吹#5::InsideFlagsPR3	722,{
 	end;
 
 OnRecvCastlePt03:
@@ -78,36 +78,36 @@ OnRecvCastlePt03:
 	end;
 }
 
-prtg_cas03,168,28,4	duplicate(InsideFlagsPR3)	拉兹立克斯#5-2	722
-prtg_cas03,182,28,4	duplicate(InsideFlagsPR3)	拉兹立克斯#6	722
-prtg_cas03,43,50,4	duplicate(InsideFlagsPR3)	拉兹立克斯#7	722
-prtg_cas03,48,50,4	duplicate(InsideFlagsPR3)	拉兹立克斯#8	722
-prtg_cas03,43,58,4	duplicate(InsideFlagsPR3)	拉兹立克斯#9	722
-prtg_cas03,48,58,4	duplicate(InsideFlagsPR3)	拉兹立克斯#10	722
-prtg_cas03,158,210,4	duplicate(InsideFlagsPR3)	拉兹立克斯#11	722
-prtg_cas03,169,210,4	duplicate(InsideFlagsPR3)	拉兹立克斯#12	722
-prtg_cas03,162,201,4	duplicate(InsideFlagsPR3)	拉兹立克斯#13	722
-prtg_cas03,165,201,4	duplicate(InsideFlagsPR3)	拉兹立克斯#14	722
+prtg_cas03,168,28,4	duplicate(InsideFlagsPR3)	┰ミ吹#5-2	722
+prtg_cas03,182,28,4	duplicate(InsideFlagsPR3)	┰ミ吹#6	722
+prtg_cas03,43,50,4	duplicate(InsideFlagsPR3)	┰ミ吹#7	722
+prtg_cas03,48,50,4	duplicate(InsideFlagsPR3)	┰ミ吹#8	722
+prtg_cas03,43,58,4	duplicate(InsideFlagsPR3)	┰ミ吹#9	722
+prtg_cas03,48,58,4	duplicate(InsideFlagsPR3)	┰ミ吹#10	722
+prtg_cas03,158,210,4	duplicate(InsideFlagsPR3)	┰ミ吹#11	722
+prtg_cas03,169,210,4	duplicate(InsideFlagsPR3)	┰ミ吹#12	722
+prtg_cas03,162,201,4	duplicate(InsideFlagsPR3)	┰ミ吹#13	722
+prtg_cas03,165,201,4	duplicate(InsideFlagsPR3)	┰ミ吹#14	722
 
 // Guild Flag (Town)
 //============================================================
-prontera,143,203,2	duplicate(InsideFlagsPR3)	拉兹立克斯#15	722
+prontera,143,203,2	duplicate(InsideFlagsPR3)	┰ミ吹#15	722
 
 // Kafra Employee
 //============================================================
-prtg_cas03,181,215,4	duplicate(guildkafra)	卡普拉 职员#prtg_cas03	117
+prtg_cas03,181,215,4	duplicate(guildkafra)	炊┰ 戮#prtg_cas03	117
 
 // Steward
 //============================================================
-prtg_cas03,51,100,4	duplicate(cm)	斯提克#prtg_cas03	55
+prtg_cas03,51,100,4	duplicate(cm)	吹矗#prtg_cas03	55
 
 // Treasure Room Exit
 //============================================================
 prtg_cas03,193,130,0	script	#Lever_PR03	111,{
 	mes " ";
-	mes "这里有一个小小的控制杆, 去拉一下吗?";
+	mes "硂ńΤ北, ┰盾?";
 	next;
-	if(select("上前拉杆.:算了.") == 1) {
+	if(select("玡┰.:衡.") == 1) {
 		close2;
 		warp "prtg_cas03",51,101;
 		end;
@@ -121,7 +121,7 @@ prtg_cas03,5,70,0	duplicate(gdlever)	#prtg_cas03	111
 
 // Guild Treasure Spawns
 //============================================================
-prtg_cas03,189,132,0	duplicate(Gld_Trea_Spawn)	公会宝箱#prtg_cas03	-1
+prtg_cas03,189,132,0	duplicate(Gld_Trea_Spawn)	そ穦腳絚#prtg_cas03	-1
 
 // AGIT Manager
 //============================================================
@@ -129,4 +129,4 @@ prtg_cas03,17,221,0	duplicate(Gld_Agit_Manager)	Agit#prtg_cas03	-1
 
 // Guardians
 //============================================================
-prtg_cas03,51,100,4	duplicate(Gld_Guard_Template)	城堡监护人#prtg_cas03	-1
+prtg_cas03,51,100,4	duplicate(Gld_Guard_Template)	躇菏臔#prtg_cas03	-1

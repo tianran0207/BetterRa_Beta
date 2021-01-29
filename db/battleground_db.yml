@@ -60,7 +60,7 @@ Header:
 
 Body:
   - Id: 1
-    Name: 提耶拉峡谷
+    Name: 矗瑿┰甽é
     MinPlayers: 6
     MinLevel: 80
     JobRestrictions:
@@ -101,7 +101,7 @@ Body:
           ActiveEvent: start#bat_a02::OnCroixActive
           Variable: $@TierraBG2_id2
   - Id: 2
-    Name: 瀑拉毕乌斯
+    Name: 聄┰拨疩吹
     MinPlayers: 6
     MinLevel: 80
     JobRestrictions:
@@ -142,7 +142,7 @@ Body:
           ActiveEvent: start#bat_b02::OnCroixActive
           Variable: $@FlaviusBG2_id2
   - Id: 3
-    Name: KVM (Lv80以上)
+    Name: KVM (Lv80)
     MinPlayers: 5
     MinLevel: 80
     Locations:
@@ -185,7 +185,7 @@ Body:
           ActiveEvent: KvM02_BG::OnCroixActive
           Variable: $@KvM02BG_id2
   - Id: 5
-    Name: KVM (小于 Lv59)
+    Name: KVM ( Lv59)
     MinPlayers: 5
     MaxLevel: 59
     Locations:

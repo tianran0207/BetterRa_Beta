@@ -1,4 +1,4 @@
-prontera,142,125,3	script	化妆台测试	123,{
+prontera,142,125,3	script	てЗ代刚	123,{
 	stylistui();
 	end;
 OnPCStylistChangeEvent:
@@ -49,7 +49,7 @@ OnPCStylistChangeEvent:
 		}
 	}
 	if (.@zeny > Zeny || countitem(6046) < .@count){
-		dispbottom "您的金币或道具不够";
+		dispbottom "眤刽┪笵ㄣぃ镑";
 		end;
 	}
 	Zeny -= .@zeny;
@@ -62,9 +62,9 @@ OnPCStylistChangeEvent:
 	if (@stylist_cloth_color > 0)
 		setlook LOOK_CLOTHES_COLOR,@stylist_cloth_color;
 	if (.@idx)
-		mail getcharid(0), "系统邮件", "造型设计取件", "您在造型设计定制的头饰到货了", 0, .@mailitem, .@hatcount;
+		mail getcharid(0), "╰参秎ン", "硑砞璸ン", "眤硑砞璸﹚繷耿砯", 0, .@mailitem, .@hatcount;
 	end;
 OnInit:
-	waitingroom "化妆台测试",1;
+	waitingroom "てЗ代刚",1;
 	end;
 }

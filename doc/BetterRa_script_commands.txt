@@ -1,176 +1,176 @@
-//===== BetterRa 文档 =======================================
-//= BetterRa 脚本指令说明文件
-//===== 作者: ================================================
-//= BetterRa 开发团队
-//===== 最后更新: ============================================
+//===== BetterRa ゅ郎 =======================================
+//= BetterRa 竲セ弧ゅン
+//===== : ================================================
+//= BetterRa 秨祇刮钉
+//===== 程穝: ============================================
 //= 20161005
-//===== 文档简介: ============================================
-//= BetterRa 是基于 rAthena 进行二次开发的, 在 rAthena 官方支
-//= 持的脚本指令基础上, BetterRa 也拓展了一些脚本指令, 请参阅
-//= 下面的说明, 它会重点介绍脚本指令的参数和用法.
+//===== ゅ郎虏ざ: ============================================
+//= BetterRa 琌膀 rAthena 秈︽Ω秨祇,  rAthena ﹛よや
+//= 竲セ膀娄, BetterRa ┹甶ㄇ竲セ, 叫把綷
+//= 弧, ウ穦翴ざ残竲セ把计㎝ノ猭.
 //============================================================
 
-脚本指令别名表
+竲セ
 --------------
 
-为了兼容一些其他服务端的脚本, 部分脚本指令拥有别名, 使用别名和使用原名的语法和效果是一样的.
+甧ㄇㄤ狝叭狠竲セ, 场だ竲セ局Τ, ㄏノ㎝ㄏノ粂猭㎝狦琌妓.
 
-┌──────────────────────────────┬─────────────────────────────┐
-│ 指令原名 (推荐使用)          │ 指令的别名                  │
-├──────────────────────────────┼─────────────────────────────┤
-│ *itemexists                  │ *existitem                  │
-├──────────────────────────────┼─────────────────────────────┤
-│ *setrenttime                 │ *resume                     │
-├──────────────────────────────┼─────────────────────────────┤
-│ *getequipexpiretick          │ *isrental                   │
-├──────────────────────────────┼─────────────────────────────┤
-│ *gethotkey                   │ *get_hotkey                 │
-├──────────────────────────────┼─────────────────────────────┤
-│ *sethotkey                   │ *set_hotkey                 │
-├──────────────────────────────┼─────────────────────────────┤
-│ *recalculatestat             │ *statuscalc 或 *status_calc │
-├──────────────────────────────┼─────────────────────────────┤
-│ *copynpc                     │ *dupnpc                     │
-└──────────────────────────────┴─────────────────────────────┘
+
+  (崩ㄏノ)                             
+
+ *itemexists                   *existitem                  
+
+ *setrenttime                  *resume                     
+
+ *getequipexpiretick           *isrental                   
+
+ *gethotkey                    *get_hotkey                 
+
+ *sethotkey                    *set_hotkey                 
+
+ *recalculatestat              *statuscalc ┪ *status_calc 
+
+ *copynpc                      *dupnpc                     
+
 
 
-脚本指令说明
+竲セ弧
 ------------
 
-*warpparty2 "<目标地图名称>",<x>,<y>,<队伍编号>,{"<来自的地图名称>"};
+*warpparty2 "<ヘ夹瓜嘿>",<x>,<y>,<钉ヮ絪腹>,{"<ㄓ瓜嘿>"};
 
-用法和 warpparty 一样, 都是将指定队伍的全部队员统一传送到指定的目的地. 如果指定了最后一个参数, 那么只有位于“来自的地图名称”的队员会被传送.
+ノ猭㎝ warpparty 妓, 常琌盢﹚钉ヮ场钉参肚癳﹚ヘ. 狦﹚程把计, êΤ¨ㄓ瓜嘿〃钉穦砆肚癳.
 
-两者之间的区别在于: 
-	warpparty 对已经死亡的队友则无效(死亡的队友会被留在原地), 而 warpparty2 对已经死亡的队友有效(会被立刻以 1HP 的血量复活, 并一起被传送走).
-
----------------------------------------
-
-*getheaddir({<角色编号>});
-
-获取角色的脑袋朝向
-
-朝向编号:
-	0为正前方
-	1为向右看
-	2为向左看
-
-返回值:
-	脑袋朝向
+ㄢぇ丁跋: 
+	warpparty 癸竒钉ね玥礚(钉ね穦砆痙), τ warpparty2 癸竒钉ねΤ(穦砆ミㄨ 1HP ﹀秖蝋, 癬砆肚癳ǐ).
 
 ---------------------------------------
 
-*getbodydir({<角色编号>});
+*getheaddir({<à︹絪腹>});
 
-获取角色身体的朝向
+莉à︹福砋绰
 
-朝向编号:
-	DIR_NORTH 北 
-	DIR_NORTHWEST 西北 
-	DIR_WEST 西 
-	DIR_SOUTHWEST 西南 
-	DIR_SOUTH 南 
-	DIR_SOUTHEAST 东南 
-	DIR_EAST 东 
-	DIR_NORTHEAST 东北
+绰絪腹:
+	0タ玡よ
+	1
+	2オ
 
-返回值:
-	身体朝向
+:
+	福砋绰
 
 ---------------------------------------
 
-*setheaddir <朝向编号>{,<角色编号>};
+*getbodydir({<à︹絪腹>});
 
-用于调整角色的脑袋朝向.
+莉à︹ō蔨绰
 
-朝向编号:
-	0为正前方
-	1为向右看
-	2为向左看
+绰絪腹:
+	DIR_NORTH  
+	DIR_NORTHWEST ﹁ 
+	DIR_WEST ﹁ 
+	DIR_SOUTHWEST ﹁玭 
+	DIR_SOUTH 玭 
+	DIR_SOUTHEAST 狥玭 
+	DIR_EAST 狥 
+	DIR_NORTHEAST 狥
 
----------------------------------------
-
-*setbodydir <朝向编号>{,<角色编号>};
-
-用于调整角色身体的朝向.
-
-朝向编号:
-	DIR_NORTH 北 
-	DIR_NORTHWEST 西北 
-	DIR_WEST 西 
-	DIR_SOUTHWEST 西南 
-	DIR_SOUTH 南 
-	DIR_SOUTHEAST 东南 
-	DIR_EAST 东 
-	DIR_NORTHEAST 东北
+:
+	ō蔨绰
 
 ---------------------------------------
 
-*party_leave {<角色编号>};
+*setheaddir <绰絪腹>{,<à︹絪腹>};
 
-用于让指定的角色立刻退出队伍.
+ノ秸俱à︹福砋绰.
 
-返回值:
-	若指定角色不在线或不在队伍中, 则返回 0, 成功则返回 1
-
----------------------------------------
-
-*openbank {<角色编号>};
-
-用于让指定的角色立刻打开银行界面(只对拥有账号随身银行的客户端版本有效).
-
-返回值:
-	若指定角色不在线, 则返回 0, 成功则返回 1
+绰絪腹:
+	0タ玡よ
+	1
+	2オ
 
 ---------------------------------------
 
-*instance_users <副本的实例编号>;
+*setbodydir <绰絪腹>{,<à︹絪腹>};
 
-用于获取指定的副本实例中的参与人数.
+ノ秸俱à︹ō蔨绰.
 
-返回值:
-	成功直接返回副本中的人数, 副本不存在或副本中无人存在则返回 0
+绰絪腹:
+	DIR_NORTH  
+	DIR_NORTHWEST ﹁ 
+	DIR_WEST ﹁ 
+	DIR_SOUTHWEST ﹁玭 
+	DIR_SOUTH 玭 
+	DIR_SOUTHEAST 狥玭 
+	DIR_EAST 狥 
+	DIR_NORTHEAST 狥
+
+---------------------------------------
+
+*party_leave {<à︹絪腹>};
+
+ノ琵﹚à︹ミㄨ癶钉ヮ.
+
+:
+	璝﹚à︹ぃ絬┪ぃ钉ヮい, 玥 0, Θ玥 1
+
+---------------------------------------
+
+*openbank {<à︹絪腹>};
+
+ノ琵﹚à︹ミㄨゴ秨蝗︽(癸局Τ姐腹繦ō蝗︽め狠セΤ).
+
+:
+	璝﹚à︹ぃ絬, 玥 0, Θ玥 1
+
+---------------------------------------
+
+*instance_users <捌セ龟ㄒ絪腹>;
+
+ノ莉﹚捌セ龟ㄒい把蒓计.
+
+:
+	Θ钡捌セい计, 捌セぃ┪捌セい礚玥 0
 
 ---------------------------------------
 
 *mesclear;
 
-清空当前NPC的对话框内容, 借此你可以在无需玩家点击"Next"按钮的情况下, 使用 mes 指令来刷新对话窗口的内容.
+睲讽玡NPC癸杠ず甧, 礚惠產翴阑"Next"秙薄猵, ㄏノ mes ㄓ穝癸杠怠ず甧.
 
 ---------------------------------------
 
-*cap_value <数值>,<最小值>,<最大值>;
+*cap_value <计>,<程>,<程>;
 
-用来确保数值变量不会低于最小值, 超过最大值. 
+ノㄓ谔玂计跑秖ぃ穦程, 禬筁程. 
 
-返回值:
-	如果低于最小值则直接返回最小值, 如果超过最大值则直接返回最大值, 如果在两者之间则原样返回数值.
-
----------------------------------------
-
-*mobremove <魔物的GID>;
-
-根据GID移除一个魔物(只是移除, 不会让魔物死亡), 合适用来编写副本剧情.
+:
+	狦程玥钡程, 狦禬筁程玥钡程, 狦ㄢぇ丁玥妓计.
 
 ---------------------------------------
 
-*getsameipinfo {<"IP地址">};
+*mobremove <臸GID>;
 
-获得某个IP在线的玩家数以及玩家的角色编号等信息.
-
-如果执行成功的话, 会赋予以下数组在线玩家的信息:
-
-$@sameip_aid[]		使用指定IP在线的玩家账号编号数组(AccountID)
-$@sameip_cid[]		使用指定IP在线的玩家角色编号数组(CharID)
-$@sameip_name$[]	使用指定IP在线的玩家角色名数组
-
-$@sameip_amount 目前使用指定IP登录的玩家个数.
+誹GID簿埃臸(琌簿埃, ぃ穦琵臸), 屿ノㄓ絪糶捌セ粿薄.
 
 ---------------------------------------
 
-*logout <登出理由编号>{,"<角色名称>"|<账号编号>|<角色编号>};
+*getsameipinfo {<"IP">};
 
-使指定的角色立刻登出游戏(踢下线), 这里的"登出理由编号"只能做参考, 不同的理由编号会让客户端给玩家显示不同的提示文本(下面的信息会在以后汉化):
+莉眔琘IP絬產计の產à︹絪腹单獺.
+
+狦磅︽Θ杠, 穦结ぉ计舱絬產獺:
+
+$@sameip_aid[]		ㄏノ﹚IP絬產姐腹絪腹计舱(AccountID)
+$@sameip_cid[]		ㄏノ﹚IP絬產à︹絪腹计舱(CharID)
+$@sameip_name$[]	ㄏノ﹚IP絬產à︹计舱
+
+$@sameip_amount ヘ玡ㄏノ﹚IP祅魁產计.
+
+---------------------------------------
+
+*logout <祅瞶パ絪腹>{,"<à︹嘿>"|<姐腹絪腹>|<à︹絪腹>};
+
+ㄏ﹚à︹ミㄨ祅村栏(金絬), 硂ń"祅瞶パ絪腹"暗把σ, ぃ瞶パ絪腹穦琵め狠倒產陪ボぃ矗ボゅセ(獺穦簙て):
 
 	0 = BAN_UNFAIR
 	1 = server closed -> MsgStringTable[4]
@@ -204,471 +204,471 @@ $@sameip_amount 目前使用指定IP登录的玩家个数.
 
 ---------------------------------------
 
-*searcharray <数组变量>,<要查询的内容>;
+*searcharray <计舱跑秖>,<璶琩高ず甧>;
 
-查询数组中第一次出现待查询内容的索引序号, 使用它来搜索数组内容很方便(用法比较丰富, 以后再举例细说).
+琩高计舱い材Ω瞷琩高ず甧ま腹, ㄏノウㄓ穓计舱ず甧よ獽(ノ猭ゑ耕ぅ碔, 羭ㄒ灿弧).
 
-返回值:
-	若查不到结果则返回 -1, 否则返回大于等于 0 的序号
+:
+	璝琩ぃ挡狦玥 -1, 玥单 0 腹
 
 ---------------------------------------
 
-*getinventorylist {<角色编号>,<类型>};
-*getcartlist {<角色编号>,<类型>};
-*getstoragelist {<角色编号>,<类型>};
+*getinventorylist {<à︹絪腹>,<摸>};
+*getcartlist {<à︹絪腹>,<摸>};
+*getstoragelist {<à︹絪腹>,<摸>};
 
-返回背包、手推车、仓库清单。
+璉も崩ó畐睲虫
 
-在原来返回的数组基础上, BetterRa 新增了以下返回数组:
+ㄓ计舱膀娄, BetterRa 穝糤计舱:
 
-	- @inventorylist_idx[] 背包位置序号.
-	- @inventorylist_uid$[] 装备唯一编号(字符串类型数组).
-	- @inventorylist_favorite[] 是否被玩家收藏.
-	- @inventorylist_equipswich[] 快速切换装备的位置.
+	- @inventorylist_idx[] 璉竚腹.
+	- @inventorylist_uid$[] 杆称斑絪腹(才﹃摸计舱).
+	- @inventorylist_favorite[] 琌砆產Μ旅.
+	- @inventorylist_equipswich[] е硉ち传杆称竚.
 
-类型: 因每次获取清单都会有大量的变量被赋值, 经常调用会导致服务器卡顿问题, 
-      特添加返回类型, 可通过 | 运算返回多组数据
+摸: –Ω莉睲虫常穦Τ秖跑秖砆结, 竒盽秸ノ穦旧璓狝叭竟箉拜肈, 
+      疭睰摸, 硄筁 | 笲衡舱计誹
 	  
-	- INV_ID           物品ID - @inventorylist_id[]
-	- INV_AMOUNT       物品数量 - @inventorylist_amount[]
-	- INV_EQUIP        现装备位置 - @inventorylist_equip[]
-	- INV_REFINE       精炼等级 - @inventorylist_refine[]
-	- INV_IDENTIFY     是否鉴定 - @inventorylist_identify[]
-	- INV_ATTRIBUTE    属性 - @inventorylist_attribute[]
-	- INV_EXPIRE       租赁时间 - @inventorylist_expire[]
-	- INV_BOUND        绑定 - @inventorylist_bound[]
-	- INV_CARD         卡片 - @inventorylist_card[]
-	- INV_OPTION       随机属性 - @inventorylist_option_id[] @inventorylist_option_value[] inventorylist_option_parameter[]
-	- INV_IDX          位置序列 - @inventorylist_idx[]
-	- INV_FAVORITE     是否收藏 - @inventorylist_favorite[]
-	- INV_UID          物品UID - @inventorylist_uid$[] 或 @inventorylist_uid[]
-	- INV_TRADABLE     是否可交易 - @inventorylist_tradable[]
-	- INV_EQUIPSWITCH  切换位置 - @inventorylist_equipswich[]
-	- INV_ALL          获取所有(默认)
+	- INV_ID           珇ID - @inventorylist_id[]
+	- INV_AMOUNT       珇计秖 - @inventorylist_amount[]
+	- INV_EQUIP        瞷杆称竚 - @inventorylist_equip[]
+	- INV_REFINE       弘芬单 - @inventorylist_refine[]
+	- INV_IDENTIFY     琌懦﹚ - @inventorylist_identify[]
+	- INV_ATTRIBUTE    妮┦ - @inventorylist_attribute[]
+	- INV_EXPIRE       割丁 - @inventorylist_expire[]
+	- INV_BOUND        竕﹚ - @inventorylist_bound[]
+	- INV_CARD          - @inventorylist_card[]
+	- INV_OPTION       繦审妮┦ - @inventorylist_option_id[] @inventorylist_option_value[] inventorylist_option_parameter[]
+	- INV_IDX          竚 - @inventorylist_idx[]
+	- INV_FAVORITE     琌Μ旅 - @inventorylist_favorite[]
+	- INV_UID          珇UID - @inventorylist_uid$[] ┪ @inventorylist_uid[]
+	- INV_TRADABLE     琌ユ - @inventorylist_tradable[]
+	- INV_EQUIPSWITCH  ち传竚 - @inventorylist_equipswich[]
+	- INV_ALL          莉┮Τ(纐粄)
 
-例: 获取背包物品id、数量和背包中的序列
+ㄒ: 莉璉珇id计秖㎝璉い
 	getinventorylist getcharid(0),INV_ID|INV_AMOUNT|INV_IDX;
 
-注意:
-	背包位置序号每一次登录、每一次玩家在自己的背包中增删物品(包括但不限: 
-	存仓、存手推车、丢弃、购买和使用道具等操作)都可能会导致背包位置序号有变化. 
-	所以请注意在一段连续、玩家不可能会停下来做其他动作的脚本中去使用“背包位置序号”. 
-	否则, 只要你在 getinventorylist 之后, 还给玩家空隙去进行道具的增删, 
-	那么 @inventorylist_idx[] 中的数据将不再可靠.
+猔種:
+	璉竚腹–Ω祅魁–Ω產璉い糤珇(珹ぃ: 
+	も崩óメ斌潦禦㎝ㄏノ笵ㄣ单巨)常穦旧璓璉竚腹Τ跑て. 
+	┮叫猔種琿硈尿產ぃ穦氨ㄓ暗ㄤ笆竲セいㄏノ¨璉竚腹〃. 
+	玥, 璶 getinventorylist ぇ, 临倒產回秈︽笵ㄣ糤, 
+	ê @inventorylist_idx[] い计誹盢ぃ綼.
 	
 ---------------------------------------
 
-*searchinventory <物品ID>{,<条件>{,<角色ID>}};
-*searchcart <物品ID>{,<条件>{,<角色ID>}};
-*searchstorage <物品ID>{,<条件>{,<仓库ID>{,<角色ID>}}};
-*searchguildstorage <物品ID>{,<条件>{,<角色ID>}};
+*searchinventory <珇ID>{,<兵ン>{,<à︹ID>}};
+*searchcart <珇ID>{,<兵ン>{,<à︹ID>}};
+*searchstorage <珇ID>{,<兵ン>{,<畐ID>{,<à︹ID>}}};
+*searchguildstorage <珇ID>{,<兵ン>{,<à︹ID>}};
 
-过滤并查找背包、手推车、仓库中的物品.
+筁耾琩т璉も崩ó畐い珇.
 
-条件: (多个条件相加或使用与运算)
-	- 1  未精炼过的道具
-	- 2  非租赁道具
-	- 4  非绑定道具
-	- 8  没有卡片和附魔的道具
-	- 16 没有随机属性标签的道具
+兵ン: (兵ン┪ㄏノ蒓笲衡)
+	- 1  ゼ弘芬筁笵ㄣ
+	- 2  獶割笵ㄣ
+	- 4  獶竕﹚笵ㄣ
+	- 8  ⊿Τ㎝臸笵ㄣ
+	- 16 ⊿Τ繦审妮┦夹帽笵ㄣ
 
-返回数组:
-	- @inventorylist_idx[] 背包位置序号
-	- @inventorylist_amount[] 背包中的数量
-	- @inventorylist_count 上面数组的成员数
+计舱:
+	- @inventorylist_idx[] 璉竚腹
+	- @inventorylist_amount[] 璉い计秖
+	- @inventorylist_count 计舱Θ计
 	
-例: 
+ㄒ: 
 	searchinventory 501,1|2|4|8|16;
 	
-返回值:
-	操作成功返回物品在背包中的总数量 (@inventorylist_amount[]的和)
-	当仓库被占用或找不到仓库则返回 -1
+:
+	巨Θ珇璉い羆计秖 (@inventorylist_amount[]㎝)
+	讽畐砆ノ┪тぃ畐玥 -1
 
 ---------------------------------------
 
-*delinventory <背包位置序号>,<要移除的数量>;
+*delinventory <璉竚腹>,<璶簿埃计秖>;
 
-移除指定背包序号指定数量的道具. 
+簿埃﹚璉腹﹚计秖笵ㄣ. 
 
-这里的背包位置序号可以通过 getinventorylist 脚本指令的 @inventorylist_idx[] 数组来获得.
+硂ń璉竚腹硄筁 getinventorylist 竲セ @inventorylist_idx[] 计舱ㄓ莉眔.
 
-返回值:
-	操作成功则返回 1, 失败或没那么多道具可以删则返回 0
-
----------------------------------------
-
-*countinventory <背包位置序号>;
-
-根据指定背包序号, 获取该道具在背包中的数量.
-
-返回值:
-	直接返回物品的数量, 若改背包序号的物品不存在则返回 0
+:
+	巨Θ玥 1, ア毖┪⊿ê笵ㄣ玥 0
 
 ---------------------------------------
 
-*identifybyidx <背包位置序号>;
+*countinventory <璉竚腹>;
 
-根据指定的背包序号, 对该道具进行鉴定操作.
+誹﹚璉腹, 莉赣笵ㄣ璉い计秖.
 
----------------------------------------
-
-*equipinventory <背包位置序号>;
-
-穿戴指定背包位置的装备.
-
-这里的背包位置序号可以通过 getinventorylist 脚本指令的 @inventorylist_idx[] 数组来获得.
-
-返回值:
-	操作操作成功则返回 1, 失败则返回 0
+:
+	钡珇计秖, 璝э璉腹珇ぃ玥 0
 
 ---------------------------------------
 
-*unequipinventory <背包位置序号>;
+*identifybyidx <璉竚腹>;
 
-脱下指定背包位置的装备.
-
-这里的背包位置序号可以通过 getinventorylist 脚本指令的 @inventorylist_idx[] 数组来获得.
-
-返回值:
-	操作操作成功则返回 1, 失败则返回 0
+誹﹚璉腹, 癸赣笵ㄣ秈︽懦﹚巨.
 
 ---------------------------------------
 
-*getinventoryinfo <背包位置序号>,<要查看的信息类型>{,<角色ID>};
-*getcartinfo <手推车位置序号>,<要查看的信息类型>{,<角色ID>};
-*getstorageinfo <仓库位置序号>,<要查看的信息类型>{,<仓库ID>{,<角色ID>}};
-*getguildstorageinfo <仓库位置序号>,<要查看的信息类型>{,<角色ID>};
+*equipinventory <璉竚腹>;
 
-查看背包、手推车、仓库、公会仓库相应位置的道具信息.
+拦﹚璉竚杆称.
 
-这里的背包位置序号可以通过 getinventorylist 脚本指令的 @inventorylist_idx[] 数组来获得.
+硂ń璉竚腹硄筁 getinventorylist 竲セ @inventorylist_idx[] 计舱ㄓ莉眔.
 
-要查看的信息类型:
-	0 	- 物品编号
-	1 	- 堆叠数量
-	2 	- 装备的穿戴位置(如果为 0 则表示还没穿戴在身上, 位置请参考 EQP_* 开头的常量)
-	3 	- 精炼值
-	4 	- 是否已经鉴定(1为已鉴定, 0为未鉴定)
-	5 	- 属性(说是属性, 其实最常用是用来判断物品是否损坏, 若损坏则返回1, 没坏则返回 0)
-	6 	- 第一个卡槽的卡片编号
-	7 	- 第二个卡槽的卡片编号
-	8 	- 第三个卡槽的卡片编号
-	9 	- 第四个卡槽的卡片编号
-	10	- 过期时间(Unix时间戳, 0 表示永不过期)
-	11	- 绑定类型
-	12	- 装备的唯一编号(unique_id)
-	13	- 装备的换装穿戴位置(equipSwitch)
-	16  - 是否被玩家收藏.
+:
+	巨巨Θ玥 1, ア毖玥 0
+
+---------------------------------------
+
+*unequipinventory <璉竚腹>;
+
+叉﹚璉竚杆称.
+
+硂ń璉竚腹硄筁 getinventorylist 竲セ @inventorylist_idx[] 计舱ㄓ莉眔.
+
+:
+	巨巨Θ玥 1, ア毖玥 0
+
+---------------------------------------
+
+*getinventoryinfo <璉竚腹>,<璶琩獺摸>{,<à︹ID>};
+*getcartinfo <も崩ó竚腹>,<璶琩獺摸>{,<à︹ID>};
+*getstorageinfo <畐竚腹>,<璶琩獺摸>{,<畐ID>{,<à︹ID>}};
+*getguildstorageinfo <畐竚腹>,<璶琩獺摸>{,<à︹ID>};
+
+琩璉も崩ó畐そ穦畐莱竚笵ㄣ獺.
+
+硂ń璉竚腹硄筁 getinventorylist 竲セ @inventorylist_idx[] 计舱ㄓ莉眔.
+
+璶琩獺摸:
+	0 	- 珇絪腹
+	1 	- 帮舼计秖
+	2 	- 杆称拦竚(狦 0 玥ボ临⊿拦ō, 竚叫把σ EQP_* 秨繷盽秖)
+	3 	- 弘芬
+	4 	- 琌竒懦﹚(1懦﹚, 0ゼ懦﹚)
+	5 	- 妮┦(弧琌妮┦, ㄤ龟程盽ノ琌ノㄓ耞珇琌穕Д, 璝穕Д玥1, ⊿Д玥 0)
+	6 	- 材佳絪腹
+	7 	- 材佳絪腹
+	8 	- 材佳絪腹
+	9 	- 材佳絪腹
+	10	- 筁戳丁(Unix丁耊, 0 ボッぃ筁戳)
+	11	- 竕﹚摸
+	12	- 杆称斑絪腹(unique_id)
+	13	- 杆称传杆拦竚(equipSwitch)
+	16  - 琌砆產Μ旅.
 
 	
-	.@uid$ = getinventoryinfo(背包序号, 11);	
-	.@uid = getinventoryinfo(背包序号, 11);		
+	.@uid$ = getinventoryinfo(璉腹, 11);	
+	.@uid = getinventoryinfo(璉腹, 11);		
 	
-返回值:
-	失败则返回 -1, 成功则返回你所查询的信息的值
+:
+	ア毖玥 -1, Θ玥┮琩高獺
 
 ---------------------------------------
 
-*putcartbyidx <背包位置序号>,<数量>{,<是否触发事件>{,<角色ID>}};
-*putstoragebyidx <背包位置序号>,<数量>{,<仓库ID>{,<是否触发事件>{,<角色ID>}}};
-*putguildstoragebyidx <仓库位置序号>,<数量>{,<是否触发事件>{,<角色ID>}};
+*putcartbyidx <璉竚腹>,<计秖>{,<琌郉祇ㄆン>{,<à︹ID>}};
+*putstoragebyidx <璉竚腹>,<计秖>{,<畐ID>{,<琌郉祇ㄆン>{,<à︹ID>}}};
+*putguildstoragebyidx <畐竚腹>,<计秖>{,<琌郉祇ㄆン>{,<à︹ID>}};
 
-将背包中的物品放入手推车、仓库或公会仓库 
+盢璉い珇も崩ó畐┪そ穦畐 
 
-是否触发事件,为全局事件 OnPCStorageAddFilter OnPCCartAddFilter OnPCCartAddFilter, 默认触发。
+琌郉祇ㄆン,Ыㄆン OnPCStorageAddFilter OnPCCartAddFilter OnPCCartAddFilter, 纐粄郉祇
 
-返回值:
-	成功返回 1, 失败返回 0
-
----------------------------------------
-
-*getcartbyidx <手推车位置序号>,<数量>{,<是否触发事件>{,<角色ID>}};
-*getstoragebyidx <仓库位置序号>,<数量>{,<仓库ID>{,<是否触发事件>{,<角色ID>}}};
-*getguildstoragebyidx <仓库位置序号>,<数量>{,<是否触发事件>{,<角色ID>}};
-
-将手推车、仓库或公会仓库的物品拿到背包中
-
-返回值:
-	成功返回 1, 失败返回 0
+:
+	Θ 1, ア毖 0
 
 ---------------------------------------
 
-*delinventorybyidx <背包位置序号>,<数量>{,<是否触发事件>{,<角色ID>}};
-*delcartbyidx <手推车位置序号>,<数量>{,<是否触发事件>{,<角色ID>}};
-*delstoragebyidx <仓库位置序号>,<数量>{,<仓库ID>{,<是否触发事件>{,<角色ID>}}};
-*delguildstoragebyidx <仓库位置序号>,<数量>{,<是否触发事件>{,<角色ID>}};
+*getcartbyidx <も崩ó竚腹>,<计秖>{,<琌郉祇ㄆン>{,<à︹ID>}};
+*getstoragebyidx <畐竚腹>,<计秖>{,<畐ID>{,<琌郉祇ㄆン>{,<à︹ID>}}};
+*getguildstoragebyidx <畐竚腹>,<计秖>{,<琌郉祇ㄆン>{,<à︹ID>}};
 
-将背包、手推车、仓库或公会仓库中的物品删除
+盢も崩ó畐┪そ穦畐珇璉い
 
-返回值:
-	成功返回 1, 失败返回 0
-
----------------------------------------
-
-*viewequip <对方的账号编号>{,<是否强制查看>};
-
-查看指定账号在线角色的装备信息(这里只需要提供账号编号, 程序会根据账号编号找到他目前在线的角色).
-
-是否强制查看:
-	0	- 如果对方禁止其他玩家查看装备, 那么就不查看
-	1	- 就算对方禁止其它玩家查看他的装备, 也强制进行查看
-
-返回值:
-	若指定的目标不在线则返回 -1, 若查看成功则返回 1, 若查看失败(比如对方禁止查看)则返回 0
+:
+	Θ 1, ア毖 0
 
 ---------------------------------------
 
-*itemexists <物品编号>;
-*itemexists "物品名称";
-*existitem <物品编号>;
-*existitem "物品名称";
+*delinventorybyidx <璉竚腹>,<计秖>{,<琌郉祇ㄆン>{,<à︹ID>}};
+*delcartbyidx <も崩ó竚腹>,<计秖>{,<琌郉祇ㄆン>{,<à︹ID>}};
+*delstoragebyidx <畐竚腹>,<计秖>{,<畐ID>{,<琌郉祇ㄆン>{,<à︹ID>}}};
+*delguildstoragebyidx <畐竚腹>,<计秖>{,<琌郉祇ㄆン>{,<à︹ID>}};
 
-确认服务器的 item_db 中是否存在指定物品, 在由玩家输入一些物品编号来执行功能时, 先使用该指令判断一下可以防止直接 getitem 或者 delitem 导致地图服务器终端显示报错信息.
+盢璉も崩ó畐┪そ穦畐い珇埃
 
-返回值:
-	若服务器中不存在此道具则返回0, 若物品存在且可叠加则返回"正数"的物品编号, 若不可堆叠则返回"负数"的物品编号.
-
----------------------------------------
-
-*setrenttime <装备位置编号>,<增减的时间秒数>{,<角色编号>};
-*resume <装备位置编号>,<增减的时间秒数>{,<角色编号>};
-
-增加/减少指定位置装备的租赁时间(如果要减少租赁时间的话, 第二个参数请使用负数).
-
-装备位置编号: 是指 EQI_* 开头的位置常量.
-
-返回值:
-	如果指定的装备位置无效或者没有装备则返回 -1, 返回 0 表示此物品不是租赁道具(永不过期), 如果返回大于 0 的数则表示此物品是租赁道具(返回值就是它被您增减时间之后, 剩余时间的秒数)	
+:
+	Θ 1, ア毖 0
 
 ---------------------------------------
 
-*battleignore <开关标记>{,<角色编号>};
+*viewequip <癸よ姐腹絪腹>{,<琌眏琩>};
 
-将指定的角色设置为魔物无视状态(魔物会无视此玩家的存在, 因此不会攻击该玩家, 或许可以叫无敌状态), 避免被魔物攻击.
+琩﹚姐腹絬à︹杆称獺(硂ń惠璶矗ㄑ姐腹絪腹, 祘穦誹姐腹絪腹тヘ玡絬à︹).
 
-开关标记:
-	0 关闭无视(角色会被魔物看见), 1 打开无视(角色不会被魔物看见, 也不会被攻击)
+琌眏琩:
+	0	- 狦癸よ窽ゎㄤ產琩杆称, ê碞ぃ琩
+	1	- 碞衡癸よ窽ゎㄤウ產琩杆称, 眏秈︽琩
 
----------------------------------------
-
-*getequipexpiretick <装备位置编号>{,<角色编号>};
-*isrental <装备位置编号>{,<角色编号>};
-
-获得指定位置装备的租赁到期剩余秒数.
-
-返回值:
-	如果指定的装备位置无效或者没有装备则返回 -1, 返回 0 表示此物品不是租赁道具(永不过期), 如果返回大于 0 的数则表示此物品是租赁道具(返回值就是它剩余时间的秒数)	
+:
+	璝﹚ヘ夹ぃ絬玥 -1, 璝琩Θ玥 1, 璝琩ア毖(ゑ癸よ窽ゎ琩)玥 0
 
 ---------------------------------------
 
-*sc_check <状态编号>{,<gid>};
+*itemexists <珇絪腹>;
+*itemexists "珇嘿";
+*existitem <珇絪腹>;
+*existitem "珇嘿";
 
-用于判断指定的状态(Buff)是否存在, 并取得状态参数.
+谔粄狝叭竟 item_db い琌﹚珇, パ產块ㄇ珇絪腹ㄓ磅︽, ㄏノ赣耞ňゎ钡 getitem ┪ delitem 旧璓瓜狝叭竟沧狠陪ボ厨岿獺.
 
-当返回值为1的时候, 可以通过以下变量来读取状态的参数:
+:
+	璝狝叭竟いぃ笵ㄣ玥0, 璝珇舼玥"タ计"珇絪腹, 璝ぃ帮舼玥"璽计"珇絪腹.
 
-@sc_val1		状态的第1个参数(如果是技能对应的状态的话, 往往这个参数都是技能等级)
-@sc_val2		状态的第2个参数
-@sc_val3		状态的第3个参数
-@sc_val4		状态的第4个参数
-@sc_tickleft	状态的剩余时间(单位为毫秒)
+---------------------------------------
 
-返回值:
-	0 表示玩家身上没有你指定的状态(Buff), 1 表示玩家身上拥有你指定的状态(Buff)
+*setrenttime <杆称竚絪腹>,<糤搭丁计>{,<à︹絪腹>};
+*resume <杆称竚絪腹>,<糤搭丁计>{,<à︹絪腹>};
+
+糤/搭ぶ﹚竚杆称割丁(狦璶搭ぶ割丁杠, 材把计叫ㄏノ璽计).
+
+杆称竚絪腹: 琌 EQI_* 秨繷竚盽秖.
+
+:
+	狦﹚杆称竚礚┪⊿Τ杆称玥 -1,  0 ボ珇ぃ琌割笵ㄣ(ッぃ筁戳), 狦 0 计玥ボ珇琌割笵ㄣ(碞琌ウ砆眤糤搭丁ぇ, 逞丁计)	
+
+---------------------------------------
+
+*battleignore <秨闽夹癘>{,<à︹絪腹>};
+
+盢﹚à︹砞竚臸礚跌篈(臸穦礚跌產, ぃ穦ю阑赣產, ┪砛礚寄篈), 磷砆臸ю阑.
+
+秨闽夹癘:
+	0 闽超礚跌(à︹穦砆臸ǎ), 1 ゴ秨礚跌(à︹ぃ穦砆臸ǎ, ぃ穦砆ю阑)
+
+---------------------------------------
+
+*getequipexpiretick <杆称竚絪腹>{,<à︹絪腹>};
+*isrental <杆称竚絪腹>{,<à︹絪腹>};
+
+莉眔﹚竚杆称割戳逞计.
+
+:
+	狦﹚杆称竚礚┪⊿Τ杆称玥 -1,  0 ボ珇ぃ琌割笵ㄣ(ッぃ筁戳), 狦 0 计玥ボ珇琌割笵ㄣ(碞琌ウ逞丁计)	
+
+---------------------------------------
+
+*sc_check <篈絪腹>{,<gid>};
+
+ノ耞﹚篈(Buff)琌, 眔篈把计.
+
+讽1, 硄筁跑秖ㄓ弄篈把计:
+
+@sc_val1		篈材1把计(狦琌м癸莱篈杠, ┕┕硂把计常琌м单)
+@sc_val2		篈材2把计
+@sc_val3		篈材3把计
+@sc_val4		篈材4把计
+@sc_tickleft	篈逞丁(虫睝)
+
+:
+	0 ボ產ō⊿Τ﹚篈(Buff), 1 ボ產ō局Τ﹚篈(Buff)
 
 ---------------------------------------
 
 *when_pcmove_doevent;
 
-当玩家的角色在下一次移动时, 触发 OnPCMoveFilter 事件.
+讽產à︹Ω簿笆, 郉祇 OnPCMoveFilter ㄆン.
 
-注意: 只有当 conf/battle/extend.conf 的 pc_move_event_trigger_type 选项为 1 时, 该脚本指令才会有价值.
+猔種: Τ讽 conf/battle/extend.conf  pc_move_event_trigger_type 匡兜 1 , 赣竲セ穦Τ刹.
 
 ---------------------------------------
 
 *processhalt;
 *halt;
 
-在部分支持的事件处理脚本中使用后, 能够在事件脚本结束时, 中断源代码的后续逻辑. 
-此功能仅供脚本专家们使用, 没弄明白它的工作逻辑之前, 请慎重使用.
+场だやㄆン矪瞶竲セいㄏノ, 镑ㄆン竲セ挡, い耞方絏尿呸胯. 
+度ㄑ竲セ盡產ㄏノ, ⊿フウ呸胯ぇ玡, 叫稸ㄏノ.
 
-真心话:
-	由于事件队列机制的影响, 这个功能远比想象的要鸡肋, 只是为了兼容一下 SeAr, 能不用就尽量别用吧.
+痷み杠:
+	パㄆン钉审紇臫, 硂环ゑ稱禜璶蔓ω, 琌甧 SeAr, ぃノ碞荷秖ノ.
 
-该指令特定情况下会失效:
-	该指令的使用流程中, 在使用 processhalt 之前不能出现 sleep、sleep2、next、close2、menu、
-	select、prompt、input、progressbar 等会导致脚本暂停的指令, 否则它的中断效果将失效.
+赣疭﹚薄猵穦ア:
+	赣ㄏノ瑈祘い, ㄏノ processhalt ぇ玡ぃ瞷 sleepsleep2nextclose2menu
+	selectpromptinputprogressbar 单穦旧璓竲セ既氨, 玥ウい耞狦盢ア.
 	
-	主要原因是: 如果你执行了这些指令, 那么服务端需要等待客户端或者玩家做出响应, 
-	而一旦出现这种情况服务端会立刻将此事件认为“执行告一段落”, 然后就立刻去判断是否需要中断, 
-	但是由于你 processhalt 写在了这些会导致脚本暂停的指令后面, 
-	所以在还没来得及执行 processhalt 的时候服务端就会认为不需要中断而结束.
+	璶琌: 狦磅︽硂ㄇ, ê狝叭狠惠璶单め狠┪產暗臫莱, 
+	τス瞷硂销薄猵狝叭狠穦ミㄨ盢ㄆン粄¨磅︽琿辅〃, 礛碞ミㄨ耞琌惠璶い耞, 
+	琌パ processhalt 糶硂ㄇ穦旧璓竲セ既氨, 
+	┮临⊿ㄓ眔の磅︽ processhalt 狝叭狠碞穦粄ぃ惠璶い耞τ挡.
 
-失效可能会带来效果错乱:
-	此外如果错误的使用了 processhalt 的执行顺序, 也会影响到下一次此事件的触发效果,
-	下一次触发此事件时不管是否执行过 processhalt, 都会被认为需要中断.
+ア穦盿ㄓ狦岿睹:
+	狦岿粇ㄏノ processhalt 磅︽抖, 穦紇臫Ωㄆン郉祇狦,
+	Ω郉祇ㄆンぃ恨琌磅︽筁 processhalt, 常穦砆粄惠璶い耞.
 
-事件队列机制的影响说明:
-	举个例子, 我们可能需要使用 processhalt 在特定的情况下中断 OnPCEquipFilter 事件,
-	以达到禁止玩家穿戴装备的目的. 但是只这么做是不完善的,  在特定情况下可能完全失效.
+ㄆン钉审紇臫弧:
+	羭ㄒ, и惠璶ㄏノ processhalt 疭﹚薄猵い耞 OnPCEquipFilter ㄆン,
+	笷窽ゎ產拦杆称ヘ. 琌硂暗琌ぃЧ到,  疭﹚薄猵Чア.
 	
-	为了避免一个玩家同时执行多个脚本带来的冲突, rAthena 的脚本引擎实现了一个“事件队列”功能,
-	此功能能够当玩家在执行某个脚本的时候, 将接下来可能需要玩家执行的脚本预先存放到队列里面,
-	等玩家执行完上个脚本再继续触发执行下一个脚本的内容.
+	磷產磅︽竲セ盿ㄓ≧, rAthena 竲セま篮龟瞷¨ㄆン钉〃,
+	镑讽產磅︽琘竲セ, 盢钡ㄓ惠璶產磅︽竲セ箇钉ń,
+	单產磅︽Ч竲セ膥尿郉祇磅︽竲セず甧.
 	
-	这将导致出现一种情况, 如果玩家在和 NPC 对话的情况下去穿戴装备的话, 
-	那么此时 OnPCEquipFilter 事件将会被放进队列中而不会立刻执行. 
-	您的脚本代码无法对 OnPCEquipFilter 事件进行 processhalt 处理, 
-	进而地图服务器会认为玩家穿戴装备这个事情没有被中断, 而允许成功穿戴装备.
+	硂盢旧璓瞷销薄猵, 狦產㎝ NPC 癸杠薄猵拦杆称杠, 
+	ê OnPCEquipFilter ㄆン盢穦砆秈钉いτぃ穦ミㄨ磅︽. 
+	眤竲セ絏礚猭癸 OnPCEquipFilter ㄆン秈︽ processhalt 矪瞶, 
+	秈τ瓜狝叭竟穦粄產拦杆称硂ㄆ薄⊿Τ砆い耞, τす砛Θ拦杆称.
 
-支持的事件以及其中断作用说明请见: doc\BetterRa_events.txt
+やㄆンのㄤい耞ノ弧叫ǎ: doc\BetterRa_events.txt
 
 ---------------------------------------
 
-*script4each "{<脚本>}",<覆盖范围>{,<参数>...};
-*script4each "NPCNAME::EVENT",<覆盖范围>{,<参数>...};
-*script4eachmob "{<脚本>}",<覆盖范围>{,<参数>...};
-*script4eachmob "NPCNAME::EVENT",<覆盖范围>{,<参数>...};
-*script4eachnpc "{<脚本>}",<覆盖范围>{,<参数>...};
-*script4eachnpc "NPCNAME::EVENT",<覆盖范围>{,<参数>...};
+*script4each "{<竲セ>}",<滦籠璖瞅>{,<把计>...};
+*script4each "NPCNAME::EVENT",<滦籠璖瞅>{,<把计>...};
+*script4eachmob "{<竲セ>}",<滦籠璖瞅>{,<把计>...};
+*script4eachmob "NPCNAME::EVENT",<滦籠璖瞅>{,<把计>...};
+*script4eachnpc "{<竲セ>}",<滦籠璖瞅>{,<把计>...};
+*script4eachnpc "NPCNAME::EVENT",<滦籠璖瞅>{,<把计>...};
 
-对指定范围的玩家、魔物、NPC执行相同的一段脚本，在"{<脚本>}或NPCNAME::EVENT"中使用 $@gid 来获取和脚本关联的玩家、魔物、NPC的 GID. 阵营魔物同样可以使用本指令.
+癸﹚璖瞅產臸NPC磅︽琿竲セ"{<竲セ>}┪NPCNAME::EVENT"いㄏノ $@gid ㄓ莉㎝竲セ闽羛產臸NPC GID. 皚犁臸妓ㄏノセ.
 
-全服				  - script4each "{<脚本>}或NPCNAME::EVENT",0;
-指定地图			- script4each "{<脚本>}或NPCNAME::EVENT",SFE_MAP,"地图名";
-指定区域			- script4each "{<脚本>}或NPCNAME::EVENT",SFE_MAP_RANGE,"地图名",中心坐标x,中心坐标y,范围;
-指定地图上的队伍	- script4each "{<脚本>}或NPCNAME::EVENT",SFE_MAP_PARTY,"地图名",队伍编号;
-指定地图上的公会	- script4each "{<脚本>}或NPCNAME::EVENT",SFE_MAP_GUILD,"地图名",公会编号;
-指定区域			- script4each "{<脚本>}或NPCNAME::EVENT",SFE_MAP_AREA,"地图名",坐标x0,坐标y0,坐标x1,坐标y1;
-指定队伍			- script4each "{<脚本>}或NPCNAME::EVENT",SFE_PARTY,队伍编号;
-指定公会			- script4each "{<脚本>}或NPCNAME::EVENT",SFE_GUILD,公会编号;
-指定地图上的阵营	- script4each "{<脚本>}或NPCNAME::EVENT",SFE_MAP_TRIBE,"地图名",Tribe阵营编号;
-指定阵营			- script4each "{<脚本>}或NPCNAME::EVENT",SFE_TRIBE,Tribe阵营编号;
-指定地图上的阵营	- script4each "{<脚本>}或NPCNAME::EVENT",SFE_MAP_BG,"地图名",BG阵营编号;
-指定阵营			- script4each "{<脚本>}或NPCNAME::EVENT",SFE_BG,BG阵营编号;
+狝				  - script4each "{<竲セ>}┪NPCNAME::EVENT",0;
+﹚瓜			- script4each "{<竲セ>}┪NPCNAME::EVENT",SFE_MAP,"瓜";
+﹚跋办			- script4each "{<竲セ>}┪NPCNAME::EVENT",SFE_MAP_RANGE,"瓜",いみГ夹x,いみГ夹y,璖瞅;
+﹚瓜钉ヮ	- script4each "{<竲セ>}┪NPCNAME::EVENT",SFE_MAP_PARTY,"瓜",钉ヮ絪腹;
+﹚瓜そ穦	- script4each "{<竲セ>}┪NPCNAME::EVENT",SFE_MAP_GUILD,"瓜",そ穦絪腹;
+﹚跋办			- script4each "{<竲セ>}┪NPCNAME::EVENT",SFE_MAP_AREA,"瓜",Г夹x0,Г夹y0,Г夹x1,Г夹y1;
+﹚钉ヮ			- script4each "{<竲セ>}┪NPCNAME::EVENT",SFE_PARTY,钉ヮ絪腹;
+﹚そ穦			- script4each "{<竲セ>}┪NPCNAME::EVENT",SFE_GUILD,そ穦絪腹;
+﹚瓜皚犁	- script4each "{<竲セ>}┪NPCNAME::EVENT",SFE_MAP_TRIBE,"瓜",Tribe皚犁絪腹;
+﹚皚犁			- script4each "{<竲セ>}┪NPCNAME::EVENT",SFE_TRIBE,Tribe皚犁絪腹;
+﹚瓜皚犁	- script4each "{<竲セ>}┪NPCNAME::EVENT",SFE_MAP_BG,"瓜",BG皚犁絪腹;
+﹚皚犁			- script4each "{<竲セ>}┪NPCNAME::EVENT",SFE_BG,BG皚犁絪腹;
 
-例:
+ㄒ:
 	script4eachmob "{unittalk $@gid,\"123456\";}",1,"prontera";
 
-	等价于
+	单刹
 	script4eachmob "NPCNAME::OnTalk",1,"prontera";
 	end;
 OnTalk:
 	unittalk $@gid,"123456";
 
-注意: 
-	如果<脚本>中有使用到大括号的话, 需要在大括号的左侧使用 \ 来进行转义, 例如:
+猔種: 
+	狦<竲セ>いΤㄏノ珹腹杠, 惠璶珹腹オ凹ㄏノ \ ㄓ秈︽锣竡, ㄒ:
 	script4each "{ if (BaseLevel >= 10) \{ getitem 501, 10;\} }",0;
 
-警告:
-	目前 script4each 所执行的脚本中, 禁止出现会导致脚本进入暂停状态的指令.
-	比如 sleep、sleep2、next、close2、menu、select、prompt、input、progressbar 等, 他们的特点是执行这些指令时, 
-	都需要等待客户端/玩家返回一定的信息或做出选择才能继续往下执行.
+牡:
+	ヘ玡 script4each ┮磅︽竲セい, 窽ゎ瞷穦旧璓竲セ秈既氨篈.
+	ゑ sleepsleep2nextclose2menuselectpromptinputprogressbar 单, 疭翴琌磅︽硂ㄇ, 
+	常惠璶单め狠/產﹚獺┪暗匡拒膥尿┕磅︽.
 
 ---------------------------------------
 
-*gethotkey <快捷键位置编号>{,<要获取的数据类型>};
-*get_hotkey <快捷键位置编号>{,<要获取的数据类型>};
+*gethotkey <е倍龄竚絪腹>{,<璶莉计誹摸>};
+*get_hotkey <е倍龄竚絪腹>{,<璶莉计誹摸>};
 
-获取指定快捷键位置的信息, 快捷键位置编号必须大于 0 小于等于 MAX_HOTKEYS (这是个常量, 脚本中可以直接使用).
+莉﹚е倍龄竚獺, е倍龄竚絪腹ゲ斗 0 单 MAX_HOTKEYS (硂琌盽秖, 竲セい钡ㄏノ).
 
-要获取的数据类型:
-	0	- 获取快捷键的类型 (0 表示该位置的快捷键上放的是一个物品, 1 表示该位置的快捷键上放的是一个技能)
-	1	- 获取技能编号或物品的编号
-	2	- 获取登记在快捷键上的技能等级
+璶莉计誹摸:
+	0	- 莉е倍龄摸 (0 ボ赣竚е倍龄琌珇, 1 ボ赣竚е倍龄琌м)
+	1	- 莉м絪腹┪珇絪腹
+	2	- 莉祅癘е倍龄м单
 
-返回值:
-	如果参数不合法则返回 -1, 否则返回的是你想要获取的数据内容
-
----------------------------------------
-
-*sethotkey <快捷键位置编号>,<快捷键的类型>,<物品编号/技能编号>,<技能等级>;
-*set_hotkey <快捷键位置编号>,<快捷键的类型>,<物品编号/技能编号>,<技能等级>;
-
-设置玩家快捷键上的内容, 快捷键位置编号必须大于 0 小于等于 MAX_HOTKEYS (这是个常量, 脚本中可以直接使用).
-
-快捷键的类型:
-	0	- 这个快捷键位置想放置一个物品 (若使用该值, 则最末尾的"技能等级"参数无意义, 请直接给"技能等级"参数传 0 )
-	1	- 这个快捷键位置想放置一个技能
-
-返回值:
-	设置成功则返回 1, 设置失败则返回 0
+:
+	狦把计ぃ猭玥 -1, 玥琌稱璶莉计誹ず甧
 
 ---------------------------------------
 
-*bonus_script_remove "<要移除的脚本代码>"{,<角色编号>};
+*sethotkey <е倍龄竚絪腹>,<е倍龄摸>,<珇絪腹/м絪腹>,<м单>;
+*set_hotkey <е倍龄竚絪腹>,<е倍龄摸>,<珇絪腹/м絪腹>,<м单>;
 
-移除指定的 bonus_script 效果
+砞竚產е倍龄ず甧, е倍龄竚絪腹ゲ斗 0 单 MAX_HOTKEYS (硂琌盽秖, 竲セい钡ㄏノ).
 
----------------------------------------
+е倍龄摸:
+	0	- 硂е倍龄竚稱竚珇 (璝ㄏノ赣, 玥程ソЮ"м单"把计礚種竡, 叫钡倒"м单"把计肚 0 )
+	1	- 硂е倍龄竚稱竚м
 
-*setpolicyid <行为策略编号>{,<角色编号>};
-
-设置指定玩家的行为策略编号, 配合 conf/policies.conf 中定义的规则来使用.
-
-行为策略编号:
-	即在 conf/policies.conf 定义的 policy_id 编号.
-
-返回值:
-	设置成功则返回 1, 设置失败则返回 0
+:
+	砞竚Θ玥 1, 砞竚ア毖玥 0
 
 ---------------------------------------
 
-*getpolicyid {<角色编号>};
+*bonus_script_remove "<璶簿埃竲セ絏>"{,<à︹絪腹>};
 
-获得指定玩家的行为策略编号, 配合 conf/policies.conf 中定义的规则来使用.
-
-返回值:
-	设置成功则返回行为策略编号, 设置失败则返回 -1
+簿埃﹚ bonus_script 狦
 
 ---------------------------------------
 
-*getpolicyinfo <行为策略信息编号>{,<角色编号>};
+*setpolicyid <︽郸菠絪腹>{,<à︹絪腹>};
 
-获得指定玩家当前的行为策略详情, 配合 conf/policies.conf 中定义的规则来使用.
+砞竚﹚產︽郸菠絪腹, 皌 conf/policies.conf い﹚竡砏玥ㄓㄏノ.
 
-行为策略信息编号(与 conf/policies.conf 中的字段对应):
+︽郸菠絪腹:
+	 conf/policies.conf ﹚竡 policy_id 絪腹.
+
+:
+	砞竚Θ玥 1, 砞竚ア毖玥 0
+
+---------------------------------------
+
+*getpolicyid {<à︹絪腹>};
+
+莉眔﹚產︽郸菠絪腹, 皌 conf/policies.conf い﹚竡砏玥ㄓㄏノ.
+
+:
+	砞竚Θ玥︽郸菠絪腹, 砞竚ア毖玥 -1
+
+---------------------------------------
+
+*getpolicyinfo <︽郸菠獺絪腹>{,<à︹絪腹>};
+
+莉眔﹚產讽玡︽郸菠冈薄, 皌 conf/policies.conf い﹚竡砏玥ㄓㄏノ.
+
+︽郸菠獺絪腹(蒓 conf/policies.conf い琿癸莱):
 	0	- base_exp_rate
 	1	- job_exp_rate
 	2	- drop_rate
 	3	- look_head_top
 	4	- bind_group_id
 
-返回值:
-	成功则获得你想要查询的信息的值, 失败则返回 -1
+:
+	Θ玥莉眔稱璶琩高獺, ア毖玥 -1
 
 ---------------------------------------
 
-*setchartitle <称号ID>{,<角色编号>};
+*setchartitle <嘿腹ID>{,<à︹絪腹>};
 
-设置指定玩家的称号ID, 该指令只在客户端版本号大于等于 20150513 的时候有效.
+砞竚﹚產嘿腹ID, 赣め狠セ腹单 20150513 Τ.
 
-称号ID:
-	这个称号的ID在客户端的 data\luafiles514\lua files\datainfo\titletable.lub 中获取. 例如: 1000
+嘿腹ID:
+	硂嘿腹IDめ狠 data\luafiles514\lua files\datainfo\titletable.lub い莉. ㄒ: 1000
 
-返回值:
-	设置成功则返回 1, 设置失败则返回 0
-
----------------------------------------
-
-*getchartitle {<角色编号>};
-
-获得指定玩家的称号ID, 该指令只在客户端版本号大于等于 20150513 的时候有效.
-
-返回值:
-	设置成功则返回目标玩家的称号ID(若为 0 则表示此玩家没有称号), 设置失败则返回 -1
+:
+	砞竚Θ玥 1, 砞竚ア毖玥 0
 
 ---------------------------------------
 
-*query_multidb "拓展数据库的连接名称","SQL查询语句"{, <数组变量1>{, <数组变量2>{, ...}}};
+*getchartitle {<à︹絪腹>};
 
-对拓展数据库执行SQL查询, 用法和 query_sql 类似, 只是多了一个"拓展数据库的连接名称"参数, 用来指定要操作的拓展数据库.
+莉眔﹚產嘿腹ID, 赣め狠セ腹单 20150513 Τ.
 
-拓展数据库的定义:
-	在默认情况下, rAthena 提供的脚本指令只能操作主数据库(query_sql)和日志数据库(query_logsql), 但如果我们需要操作第三个数据库(比如 DiscuzX 论坛数据库) 的时候, rAthena 自带的指令就无能为力了. 为了拓展脚本的能力, BetterRa 能够允许你通过 conf/multidb_athena.conf 配置文件来定义拓展数据库, 并使用 query_multidb 对其进行操作.
+:
+	砞竚Θ玥ヘ夹產嘿腹ID(璝 0 玥ボ產⊿Τ嘿腹), 砞竚ア毖玥 -1
 
-返回值:
-	与 query_sql、query_logsql 类似, 不再敷述
+---------------------------------------
+
+*query_multidb "┹甶计誹畐硈钡嘿","SQL琩高粂"{, <计舱跑秖1>{, <计舱跑秖2>{, ...}}};
+
+癸┹甶计誹畐磅︽SQL琩高, ノ猭㎝ query_sql 摸, 琌"┹甶计誹畐硈钡嘿"把计, ノㄓ﹚璶巨┹甶计誹畐.
+
+┹甶计誹畐﹚竡:
+	纐粄薄猵, rAthena 矗ㄑ竲セ巨计誹畐(query_sql)㎝らв计誹畐(query_logsql), 狦и惠璶巨材计誹畐(ゑ DiscuzX 阶韭计誹畐) , rAthena 盿碞礚. ┹甶竲セ, BetterRa 镑す砛硄筁 conf/multidb_athena.conf 皌竚ゅンㄓ﹚竡┹甶计誹畐, ㄏノ query_multidb 癸ㄤ秈︽巨.
+
+:
+	蒓 query_sqlquery_logsql 摸, ぃ寂瓃
 
 ---------------------------------------
 
@@ -676,345 +676,345 @@ OnTalk:
 *statuscalc;
 *status_calc;
 
-该指令的原名 recalculatestat 是 rAthena 的官方自带脚本指令, 在此为了兼容一些脚本, 赋予了 statuscalc 和 status_calc 两个别名给它.
+赣 recalculatestat 琌 rAthena ﹛よ盿竲セ, 甧ㄇ竲セ, 结ぉ statuscalc ㎝ status_calc ㄢ倒ウ.
 
 ---------------------------------------
 
-*getequipidx <装备位置编号>,{<角色编号>};
+*getequipidx <杆称竚絪腹>,{<à︹絪腹>};
 
-用来获取穿戴在指定位置的装备的“背包位置序号”.
+ノㄓ莉拦﹚竚杆称¨璉竚腹〃.
 
-注意: “装备位置编号”和 getequipid 一样, 是 EQI_* 开头的常量(而不是 EQP_* 开头的常量).
+猔種: ¨杆称竚絪腹〃㎝ getequipid 妓, 琌 EQI_* 秨繷盽秖(τぃ琌 EQP_* 秨繷盽秖).
 
-返回值:
-	-1	- 在指定的位置找不到装备
-	-2	- 装备位置编号无效
-	其他大于等于 0 的数值, 则表示成功, 返回值就是所查位置装备的“背包位置序号”.
+:
+	-1	- ﹚竚тぃ杆称
+	-2	- 杆称竚絪腹礚
+	ㄤ单 0 计, 玥ボΘ, 碞琌┮琩竚杆称¨璉竚腹〃.
 
 ---------------------------------------
 
-*bounditembyidx <背包序号>,<绑定类型>{,<角色ID>};
-*bounditembypos <装备编号>,<绑定类型>{,<角色ID>};
+*bounditembyidx <璉腹>,<竕﹚摸>{,<à︹ID>};
+*bounditembypos <杆称絪腹>,<竕﹚摸>{,<à︹ID>};
 
-绑定 背包序号/装备编号 指定道具的道具
+竕﹚ 璉腹/杆称絪腹 ﹚笵ㄣ笵ㄣ
 
-绑定类型: 
-	BOUND_NONE    不绑定
-	BOUND_ACCOUNT 账号绑定
-	BOUND_GUILD   公会绑定
-	BOUND_PARTY   队伍绑定
-	BOUND_CHAR    角色绑定
+竕﹚摸: 
+	BOUND_NONE    ぃ竕﹚
+	BOUND_ACCOUNT 姐腹竕﹚
+	BOUND_GUILD   そ穦竕﹚
+	BOUND_PARTY   钉ヮ竕﹚
+	BOUND_CHAR    à︹竕﹚
 	
 ---------------------------------------
 
-*setoptionbyidx <背包序号>,<Random Option ID数组>,<Random Option value数组>,<Random Option param数组>;
-*setoptionbypos <装备编号>,<Random Option ID数组>,<Random Option value数组>,<Random Option param数组>;
+*setoptionbyidx <璉腹>,<Random Option ID计舱>,<Random Option value计舱>,<Random Option param计舱>;
+*setoptionbypos <杆称絪腹>,<Random Option ID计舱>,<Random Option value计舱>,<Random Option param计舱>;
 
-设置 背包序号/装备编号 指定道具的 Random Option 属性.
+砞竚 璉腹/杆称絪腹 ﹚笵ㄣ Random Option 妮┦.
 
-装备编号: 是指 EQI_* 开头的位置常量.
+杆称絪腹: 琌 EQI_* 秨繷竚盽秖.
 
-此选项会在 picklog 日志表中留下道具的变化痕迹.
-
----------------------------------------
-
-*resetoptionbyidx <背包序号>;
-*resetoptionbypos <装备编号>;
-
-清空 背包序号/装备编号 指定物品的 Random Option 内容.
-
-此选项会在 picklog 日志表中留下道具的变化痕迹.
-
-返回值:
-	操作成功则返回 1, 失败则返回 0
+匡兜穦 picklog らвい痙笵ㄣ跑て勃格.
 
 ---------------------------------------
 
-*getoptionbyidx <背包序号>;
-*getoptionbypos <装备编号>;
+*resetoptionbyidx <璉腹>;
+*resetoptionbypos <杆称絪腹>;
 
-获取 背包序号/装备编号 指定道具的 Random Option 属性的值.
+睲 璉腹/杆称絪腹 ﹚珇 Random Option ず甧.
 
-调用指令后, 装备的 Random Option 属性的值保存在三个数组中 @option_id @option_value @option_param
+匡兜穦 picklog らвい痙笵ㄣ跑て勃格.
 
----------------------------------------
-
-*getidxrandomoption(<背包序号>,<Random Option序号>,<要修改的数据类型>{,<角色编号>});
-*getposrandomoption(<装备编号>,<Random Option序号>,<要修改的数据类型>{,<角色编号>});
-
-获取 背包序号/装备编号 指定道具的 Random Option 属性的值.
-
-装备编号: 是指 EQI_* 开头的位置常量.
-
-要修改的数据类型:
-	ROA_ID - 随机属性的ID, 要和 db/re/item_randomopt_db.txt 中的对应
-	ROA_VALUE - 随机属性的值
-	ROA_PARAM - 随机属性的参数(这个参数的作用取决于item_randomopt_db.txt中如何使用ROA_PARAM, 目前看来所有官方的随机属性都没有用到这个参数)
-
-返回值:
-	操作成功则返回查询的值, 失败则返回 -1, 如果因为请求的<类型>无效而失败则返回 0
+:
+	巨Θ玥 1, ア毖玥 0
 
 ---------------------------------------
 
-*setidxrandomoption(<背包序号>,<Random Option序号>,<id>,<value>,<param>{,<角色编号>});
-*setposrandomoption(<装备编号>,<Random Option序号>,<id>,<value>,<param>{,<角色编号>});
+*getoptionbyidx <璉腹>;
+*getoptionbypos <杆称絪腹>;
 
-设置 背包序号/装备编号 指定道具的 Random Option 属性.
+莉 璉腹/杆称絪腹 ﹚笵ㄣ Random Option 妮┦.
 
-装备编号: 是指 EQI_* 开头的位置常量.
-
-如果被设定的道具未被穿戴, 那么会先告诉客户端该道具被删除, 
-然后完成对道具的属性修改后, 再告诉客户端你获得了一个新道具, 此时聊天栏会有个提示.
-
-如果被设定的道具已被穿戴, 那么会先将装备脱下, 然后告诉客户端该道具被删除, 
-接着完成对道具的属性修改后, 再告诉客户端你获得了一个新道具, 并自动将装备穿戴上.
-
-该道具的背包序号不会因为该指令的操作而被修改.
-
-此选项会在 picklog 日志表中留下道具的变化痕迹.
-
-返回值:
-	操作成功则返回 1, 失败则返回 0
+秸ノ, 杆称 Random Option 妮┦玂计舱い @option_id @option_value @option_param
 
 ---------------------------------------
 
-*getiteminfo(<物品编号>,<类型>)
+*getidxrandomoption(<璉腹>,<Random Option腹>,<璶э计誹摸>{,<à︹絪腹>});
+*getposrandomoption(<杆称絪腹>,<Random Option腹>,<璶э计誹摸>{,<à︹絪腹>});
 
-在原来类型的基础上, BetterRa 新增了以下类型:
+莉 璉腹/杆称絪腹 ﹚笵ㄣ Random Option 妮┦.
 
-17 - 是否可精炼, 1表示可以精炼, 0表示不能精炼
-18 - 交易限制掩码, 将返回该物品在 item_trade 数据库中第二列定义的值
-19 - 不会因玩家主动使用而被消耗, 1表示是, 0表示否
-20 - 不会被技能当做消耗品而消耗, 1表示是, 0表示否
-21 - 是否为宠物捕捉道具, 0表示否, 若是则返回能捕获的魔物编号
-22 - 是否在其使用脚本中调用了 callfunc 指令, 1表示是, 0表示否 (复兴前版本返回 -1)
+杆称絪腹: 琌 EQI_* 秨繷竚盽秖.
+
+璶э计誹摸:
+	ROA_ID - 繦审妮┦ID, 璶㎝ db/re/item_randomopt_db.txt い癸莱
+	ROA_VALUE - 繦审妮┦
+	ROA_PARAM - 繦审妮┦把计(硂把计ノ∕item_randomopt_db.txtいㄏノROA_PARAM, ヘ玡ㄓ┮Τ﹛よ繦审妮┦常⊿Τノ硂把计)
+
+:
+	巨Θ玥琩高, ア毖玥 -1, 狦叫―<摸>礚τア毖玥 0
 
 ---------------------------------------
 
-*duplicate("<复制出来的新NPC所在地图名称>,<X坐标>,<Y坐标>,<朝向编号>","duplicate(<来源NPC名称>)","<复制出来的新NPC名称>","<角色编号>");
-*duplicate("<复制出来的新NPC所在地图名称>,<X坐标>,<Y坐标>,<朝向编号>%TAB%duplicate(<来源NPC名称>)%TAB%<复制出来的新NPC名称>%TAB%<角色编号>");
-*copynpc("<复制出来的新NPC所在地图名称>,<X坐标>,<Y坐标>,<朝向编号>","duplicate(<来源NPC名称>)","<复制出来的新NPC名称>","<角色编号>");
-*copynpc("<复制出来的新NPC所在地图名称>,<X坐标>,<Y坐标>,<朝向编号>%TAB%duplicate(<来源NPC名称>)%TAB%<复制出来的新NPC名称>%TAB%<角色编号>");
-*dupnpc("<复制出来的新NPC所在地图名称>,<X坐标>,<Y坐标>,<朝向编号>","duplicate(<来源NPC名称>)","<复制出来的新NPC名称>","<角色编号>");
+*setidxrandomoption(<璉腹>,<Random Option腹>,<id>,<value>,<param>{,<à︹絪腹>});
+*setposrandomoption(<杆称絪腹>,<Random Option腹>,<id>,<value>,<param>{,<à︹絪腹>});
 
-将一个指定的NPC复制到一个新的位置.
-主要的参数是4个字符串, 这四个字符串与使用 duplicate 进行静态复制时候的四个用 %TAB% 分隔的内容是一样的.
-脚本指令可以将NPC复制到副本中, 复制到副本中名称会改变, 请使用 instance_npcname 获得NPC的真实名称.
+砞竚 璉腹/杆称絪腹 ﹚笵ㄣ Random Option 妮┦.
 
-假设有以下NPC, 我们想把它复制一个新的出来:
+杆称絪腹: 琌 EQI_* 秨繷竚盽秖.
 
-	prontera,146,99,2    script    PVP管理员::PVPCOPYTEST    917,{
-		mes "[PVP管理员]";
-		mes "场地正在修理, 请稍后再来...";
+狦砆砞﹚笵ㄣゼ砆拦, ê穦禗め狠赣笵ㄣ砆埃, 
+礛ЧΘ癸笵ㄣ妮┦э, 禗め狠莉眔穝笵ㄣ, 册ぱ逆穦Τ矗ボ.
+
+狦砆砞﹚笵ㄣ砆拦, ê穦盢杆称叉, 礛禗め狠赣笵ㄣ砆埃, 
+钡帝ЧΘ癸笵ㄣ妮┦э, 禗め狠莉眔穝笵ㄣ, 笆盢杆称拦.
+
+赣笵ㄣ璉腹ぃ穦赣巨τ砆э.
+
+匡兜穦 picklog らвい痙笵ㄣ跑て勃格.
+
+:
+	巨Θ玥 1, ア毖玥 0
+
+---------------------------------------
+
+*getiteminfo(<珇絪腹>,<摸>)
+
+ㄓ摸膀娄, BetterRa 穝糤摸:
+
+17 - 琌弘芬, 1ボ弘芬, 0ボぃ弘芬
+18 - ユ被絏, 盢赣珇 item_trade 计誹畐い材﹚竡
+19 - ぃ穦產笆ㄏノτ砆, 1ボ琌, 0ボ
+20 - ぃ穦砆м讽暗珇τ, 1ボ琌, 0ボ
+21 - 琌胐笵ㄣ, 0ボ, 璝琌玥莉臸絪腹
+22 - 琌ㄤㄏノ竲セい秸ノ callfunc , 1ボ琌, 0ボ (蝋砍玡セ -1)
+
+---------------------------------------
+
+*duplicate("<蝋ㄓ穝NPC┮瓜嘿>,<XГ夹>,<YГ夹>,<绰絪腹>","duplicate(<ㄓ方NPC嘿>)","<蝋ㄓ穝NPC嘿>","<à︹絪腹>");
+*duplicate("<蝋ㄓ穝NPC┮瓜嘿>,<XГ夹>,<YГ夹>,<绰絪腹>%TAB%duplicate(<ㄓ方NPC嘿>)%TAB%<蝋ㄓ穝NPC嘿>%TAB%<à︹絪腹>");
+*copynpc("<蝋ㄓ穝NPC┮瓜嘿>,<XГ夹>,<YГ夹>,<绰絪腹>","duplicate(<ㄓ方NPC嘿>)","<蝋ㄓ穝NPC嘿>","<à︹絪腹>");
+*copynpc("<蝋ㄓ穝NPC┮瓜嘿>,<XГ夹>,<YГ夹>,<绰絪腹>%TAB%duplicate(<ㄓ方NPC嘿>)%TAB%<蝋ㄓ穝NPC嘿>%TAB%<à︹絪腹>");
+*dupnpc("<蝋ㄓ穝NPC┮瓜嘿>,<XГ夹>,<YГ夹>,<绰絪腹>","duplicate(<ㄓ方NPC嘿>)","<蝋ㄓ穝NPC嘿>","<à︹絪腹>");
+
+盢﹚NPC蝋穝竚.
+璶把计琌4才﹃, 硂才﹃蒓ㄏノ duplicate 秈︽繰篈蝋ノ %TAB% だ筳ず甧琌妓.
+竲セ盢NPC蝋捌セい, 蝋捌セい嘿穦э跑, 叫ㄏノ instance_npcname 莉眔NPC痷龟嘿.
+
+安砞ΤNPC, и稱рウ蝋穝ㄓ:
+
+	prontera,146,99,2    script    PVP恨瞶::PVPCOPYTEST    917,{
+		mes "[PVP恨瞶]";
+		mes "初タ瞶, 叫祔ㄓ...";
 		close;
 	}
 
-通常的做法是在脚本中, 使用 duplicate 指令进行静态复制, 如:
+硄盽暗猭琌竲セい, ㄏノ duplicate 秈︽繰篈蝋, :
 
-	prontera,156,99,2	duplicate(PVPCOPYTEST)	PVP管理员#1	917
+	prontera,156,99,2	duplicate(PVPCOPYTEST)	PVP恨瞶#1	917
 
-现在你可以使用 copynpc 脚本指令, 将上面这一行静态复制代码按 %TAB% 分割为4个字段, 然后以字符串形式传递给 copynpc 脚本指令, 如:
+瞷ㄏノ copynpc 竲セ, 盢硂︽繰篈蝋絏 %TAB% だ澄4琿, 礛才﹃Α肚患倒 copynpc 竲セ, :
 
-	copynpc "prontera,156,99,2","duplicate(PVPCOPYTEST)","PVP管理员#1","917";
+	copynpc "prontera,156,99,2","duplicate(PVPCOPYTEST)","PVP恨瞶#1","917";
 
-同时此函数支持返回复制出来的新NPC的GID, 方便你使用 unit 系列指令对其进行操作, 如:
+ㄧ计や蝋ㄓ穝NPCGID, よ獽ㄏノ unit ╰癸ㄤ秈︽巨, :
 	
-	.@gid = copynpc("prontera,156,99,2	duplicate(PVPCOPYTEST)	PVP管理员#1	917");
-	.@gid = copynpc("prontera,156,99,2","duplicate(PVPCOPYTEST)","PVP管理员#1","917");
+	.@gid = copynpc("prontera,156,99,2	duplicate(PVPCOPYTEST)	PVP恨瞶#1	917");
+	.@gid = copynpc("prontera,156,99,2","duplicate(PVPCOPYTEST)","PVP恨瞶#1","917");
 	unittalk .@gid, "My GID is : " + .@gid;
 	
-如何在副本中使用:
+捌セいㄏノ:
 
 	.@w1 = instance_mapname("1@tower") + ",156,99,2";
 	.@w2 = "duplicate(PVPCOPYTEST)";
-	.@w3 = "PVP管理员::0";
+	.@w3 = "PVP恨瞶::0";
 	.@w4 = "917";
 	
 	copynpc .@w1, .@w2, .@w3, .@w4;
-	npctalk "我是复制自 PVPCOPYTEST 的NPC", instance_npcname("PVPCOPYTEST::1");
+	npctalk "и琌蝋 PVPCOPYTEST NPC", instance_npcname("PVPCOPYTEST::1");
 	
-注意: 1. NPC名称中必须带有 ::XXX 才能复制成功, XXX最好为数字
-	  2. 当在副本中复制多个相同的NPC时, 通过修改 ::XXX 来避免NPC名称重复
-	  3. 可以通过 instance_npcname("来源NPC名称::XXX"); 获取NPC的真实名称. 
+猔種: 1. NPC嘿いゲ斗盿Τ ::XXX 蝋Θ, XXX程计
+	  2. 讽捌セい蝋NPC, 硄筁э ::XXX ㄓ磷NPC嘿蝋
+	  3. 硄筁 instance_npcname("ㄓ方NPC嘿::XXX"); 莉NPC痷龟嘿. 
  
-	// 复制相同源生成的NPC
-	copynpc instance_mapname("1@tower") + ",156,100,2", "duplicate(PVPCOPYTEST)", "PVP管理员::1", "917";
-	copynpc instance_mapname("1@tower") + ",156,101,2", "duplicate(PVPCOPYTEST)", "PVP管理员::2", "917";
-	copynpc instance_mapname("1@tower") + ",156,102,2", "duplicate(PVPCOPYTEST)", "PVP管理员::3", "917";
-	copynpc instance_mapname("1@tower") + ",156,103,2", "duplicate(PVPCOPYTEST)", "PVP管理员::4", "917";
+	// 蝋方ネΘNPC
+	copynpc instance_mapname("1@tower") + ",156,100,2", "duplicate(PVPCOPYTEST)", "PVP恨瞶::1", "917";
+	copynpc instance_mapname("1@tower") + ",156,101,2", "duplicate(PVPCOPYTEST)", "PVP恨瞶::2", "917";
+	copynpc instance_mapname("1@tower") + ",156,102,2", "duplicate(PVPCOPYTEST)", "PVP恨瞶::3", "917";
+	copynpc instance_mapname("1@tower") + ",156,103,2", "duplicate(PVPCOPYTEST)", "PVP恨瞶::4", "917";
 	sleep 3000;
-	// 移除相同源生成的NPC
+	// 簿埃方ネΘNPC
 	unloadcopynpc instance_npcname("PVPCOPYTEST::1");
 	unloadcopynpc instance_npcname("PVPCOPYTEST::2");
 	unloadcopynpc instance_npcname("PVPCOPYTEST::3");
 	unloadcopynpc instance_npcname("PVPCOPYTEST::4");
 
-返回值:
-	复制成功, 则返回复制出来的新NPC的GID, 失败则返回 0
+:
+	蝋Θ, 玥蝋ㄓ穝NPCGID, ア毖玥 0
 
 ---------------------------------------
 
-*unloadduplicate "<NPC名称>";
-*unloadcopynpc "<NPC名称>";
+*unloadduplicate "<NPC嘿>";
+*unloadcopynpc "<NPC嘿>";
 
-卸载掉复制的NPC, 具体使用方法请查看指令 copynpc
+更奔蝋NPC, ㄣ蔨ㄏノよ猭叫琩 copynpc
 
-如果是副本中的NPC请先用 instance_npcname 指令返回NPC名字, 也可以通过 strnpcinfo(3) 获取NPC名称.
+狦琌捌セいNPC叫ノ instance_npcname NPC, 硄筁 strnpcinfo(3) 莉NPC嘿.
 
 ---------------------------------------
 
-*getareagid("<地图名>",<查询的单位类型>,<x0>,<y0>,<x1>,<y1>,<返回数组>);
-*getareagid("<地图名>",<查询的单位类型>,<中心坐标x>,<中心坐标y>,<半径>,<返回数组>);
-*getareagid("<地图名>",<查询的单位类型>,<返回数组>);
+*getareagid("<瓜>",<琩高虫摸>,<x0>,<y0>,<x1>,<y1>,<计舱>);
+*getareagid("<瓜>",<琩高虫摸>,<いみГ夹x>,<いみГ夹y>,<畖>,<计舱>);
+*getareagid("<瓜>",<琩高虫摸>,<计舱>);
 
-当地图名为 this 时, 表示为执行脚本的玩家所在的地图, 此时脚本必须关联玩家.
+讽瓜 this , ボ磅︽竲セ產┮瓜, 竲セゲ斗闽羛產.
 
-查询的单位类型:
-	BL_PC		- 玩家单位
-	BL_MOB		- 魔物单位
-	BL_PET		- 宠物单位
-	BL_HOM		- 人工生命体单位
-	BL_MER		- 佣兵单位
-	BL_ITEM		- 物品单位 (拿到了也暂时用不上)
-	BL_SKILL	- 技能单位 (拿到了也暂时用不上)
-	BL_NPC		- NPC单位
-	BL_CHAT		- 聊天室单位 (拿到了也暂时用不上)
-	BL_ELEM		- 元素精灵单位 (拿到了也暂时用不上)
+琩高虫摸:
+	BL_PC		- 產虫
+	BL_MOB		- 臸虫
+	BL_PET		- 胐虫
+	BL_HOM		- ネ㏑蔨虫
+	BL_MER		- 虫
+	BL_ITEM		- 珇虫 (既ノぃ)
+	BL_SKILL	- м虫 (既ノぃ)
+	BL_NPC		- NPC虫
+	BL_CHAT		- 册ぱ虫 (既ノぃ)
+	BL_ELEM		- じ弘艶虫 (既ノぃ)
 
-返回数组:
-	填写一个你希望查到的 GID 存储的数字类型数组的变量名, 比如 .@gids
+计舱:
+	恶糶辨琩 GID 纗计摸计舱跑秖, ゑ .@gids
 	
-	注意: 这里给定的变量名, 务必要考虑执行该指令的时候, 脚本是否关联了玩家, 
-	如果没有关联的话需要使用和玩家无关的变量类型, 比如 $@ 开头的变量
+	猔種: 硂ń倒﹚跑秖, 叭ゲ璶σ納磅︽赣, 竲セ琌闽羛產, 
+	狦⊿Τ闽羛杠惠璶ㄏノ㎝產礚闽跑秖摸, ゑ $@ 秨繷跑秖
 	
-举个例子:
+羭ㄒ:
 prontera,150,90,4	script	getareagid_test	123,{
 	.@result = getareagid("this", BL_NPC, .@gids);
 	if (.@result < 0) {
-		dispbottom "执行 getareagid 时发生了错误, 返回值为: " + .@result;
+		dispbottom "磅︽ getareagid 祇ネ岿粇, : " + .@result;
 	}
 	
 	for (.@i = 0; .@i < .@result; .@i++) {
-		dispbottom ".@gids[" + .@i + "] = " + .@gids[.@i] + " NPC名称为: " + getunitname(.@gids[.@i]);
+		dispbottom ".@gids[" + .@i + "] = " + .@gids[.@i] + " NPC嘿: " + getunitname(.@gids[.@i]);
 	}
 }
 
-返回值:
-	返回大于 0 的数值: 表示找到了单位, 返回的数值为找到的单位个数
-	返回 -1 : 指定地图为 this 但是没有关联玩家
-	返回 -2 : 给定的地图名字是无效的, 找不到地图
-	返回 -3 : 传递的参数个数不对, 必须是3个、6个或者7个参数
-	返回 -4 : 给定的"返回数组"类型不对, 不能是一个字符串或数值常量, 也不能是字符串数组
-	返回 -5 : 给定的"返回数组"是一个需要依赖玩家的变量类型, 但是没有关联玩家 (比如 . 或 .@ 开头的数字类型数组)
+:
+	 0 计: ボт虫, 计т虫计
+	 -1 : ﹚瓜 this 琌⊿Τ闽羛產
+	 -2 : 倒﹚瓜琌礚, тぃ瓜
+	 -3 : 肚患把计计ぃ癸, ゲ斗琌36┪7把计
+	 -4 : 倒﹚"计舱"摸ぃ癸, ぃ琌才﹃┪计盽秖, ぃ琌才﹃计舱
+	 -5 : 倒﹚"计舱"琌惠璶ㄌ苦產跑秖摸, 琌⊿Τ闽羛產 (ゑ . ┪ .@ 秨繷计摸计舱)
 	
 ---------------------------------------
 
-mail_create <发件人名>,<题目>,<内容>{,<ZENY>}
-mail_additem、mail_additem2、mail_additem3、mail_additembound、mail_additembound2、mail_additembound3 与相应的getitem指令参数相同
-mail_send {<收件人CID 或 收件人名>} 通过CID发送邮件只能发送给在线玩家
+mail_create <祇ン>,<肈ヘ>,<ず甧>{,<ZENY>}
+mail_additemmail_additem2mail_additem3mail_additemboundmail_additembound2mail_additembound3 蒓莱getitem把计
+mail_send {<ΜンCID ┪ Μン>} 硄筁CID祇癳秎ン祇癳倒絬產
 
-发送邮件指令, 注意mail_create\mail_additem*\mail_send 指令必须连续使用.否则有可能造成发送邮件物品错误的情况.
-当你创建完邮件并添加物品到邮件后, 可以连续使用 mail_send 来进行群发..
-
----------------------------------------
-
-*sendmail(<收件人角色编号>,"<发送者名称>","<标题>","<内容>"{,<附件中的金币>{,<附件一的物品编号>,<附件一的物品数量>{,<附件二的物品编号>,<附件二的物品数量>{,<附件三的物品编号>,<附件三的物品数量>{,<附件四的物品编号>,<附件四的物品数量>{,<附件五的物品编号>,<附件五的物品数量>}}}}}});
-*sendmail2(<收件人角色编号>,"<发送者名称>","<标题>","<内容>"{,<附件中的金币>{,<附件一的物品编号>,<附件一的物品数量>,<附件一是否已鉴定>,<附件一的精炼值>,<附件一的属性>,<附件一的第一张卡片>,<附件一的第二张卡片>,<附件一的第三张卡片>,<附件一的第四张卡片>{,<附件二的物品编号>,<附件二的物品数量>,<附件二是否已鉴定>,<附件二的精炼值>,<附件二的属性>,<附件二的第一张卡片>,<附件二的第二张卡片>,<附件二的第三张卡片>,<附件二的第四张卡片>{,<附件三的物品编号>,<附件三的物品数量>,<附件三是否已鉴定>,<附件三的精炼值>,<附件三的属性>,<附件三的第一张卡片>,<附件三的第二张卡片>,<附件三的第三张卡片>,<附件三的第四张卡片>{,<附件四的物品编号>,<附件四的物品数量>,<附件四是否已鉴定>,<附件四的精炼值>,<附件四的属性>,<附件四的第一张卡片>,<附件四的第二张卡片>,<附件四的第三张卡片>,<附件四的第四张卡片>{,<附件五的物品编号>,<附件五的物品数量>,<附件五是否已鉴定>,<附件五的精炼值>,<附件五的属性>,<附件五的第一张卡片>,<附件五的第二张卡片>,<附件五的第三张卡片>,<附件五的第四张卡片>}}}}}});
-*sendmail3(<收件人角色编号>,"<发送者名称>","<标题>","<内容>"{,<附件中的金币>{,<附件一的物品编号>,<附件一的物品数量>,<附件一是否已鉴定>,<附件一的精炼值>,<附件一的属性>,<附件一的第一张卡片>,<附件一的第二张卡片>,<附件一的第三张卡片>,<附件一的第四张卡片>,<附件一的RandomIDArray>,<附件一的RandomValueArray>,<附件一的RandomParamArray>{,<附件二的物品编号>,<附件二的物品数量>,<附件二是否已鉴定>,<附件二的精炼值>,<附件二的属性>,<附件二的第一张卡片>,<附件二的第二张卡片>,<附件二的第三张卡片>,<附件二的第四张卡片>,<附件二的RandomIDArray>,<附件二的RandomValueArray>,<附件二的RandomParamArray>{,<附件三的物品编号>,<附件三的物品数量>,<附件三是否已鉴定>,<附件三的精炼值>,<附件三的属性>,<附件三的第一张卡片>,<附件三的第二张卡片>,<附件三的第三张卡片>,<附件三的第四张卡片>,<附件三的RandomIDArray>,<附件三的RandomValueArray>,<附件三的RandomParamArray>{,<附件四的物品编号>,<附件四的物品数量>,<附件四是否已鉴定>,<附件四的精炼值>,<附件四的属性>,<附件四的第一张卡片>,<附件四的第二张卡片>,<附件四的第三张卡片>,<附件四的第四张卡片>,<附件四的RandomIDArray>,<附件四的RandomValueArray>,<附件四的RandomParamArray>{,<附件五的物品编号>,<附件五的物品数量>,<附件五是否已鉴定>,<附件五的精炼值>,<附件五的属性>,<附件五的第一张卡片>,<附件五的第二张卡片>,<附件五的第三张卡片>,<附件五的第四张卡片>,<附件五的RandomIDArray>,<附件五的RandomValueArray>,<附件五的RandomParamArray>}}}}}});
-
-使用该指令, 可以给指定的玩家发送一封邮件. 三个不同版本的指令其实只是支持的参数有所不同.
-
-版本区别:
-	sendmail 	可以发送简单的附件(无任何卡片或者精练值的道具, 药水等)
-	sendmail2	可以发送比较复杂的附件(可设定卡片、精炼值等)
-	sendmail3	除了卡片和精炼值之外, 还可以支持 Random Options (随机属性)
-
-演示脚本:
-	关于这一系列的指令使用方法, 可以参考 npc\BetterRa\BetterRa_sendmail.txt 演示脚本
-
-注意事项:
-	这一系列的指令不会去尝试判断收件人角色编号是否合法, 需要自己做判断.
-	若客户端不支持RODEX的话, 那么附件只有第一个会有效.
+祇癳秎ン, 猔種mail_create\mail_additem*\mail_send ゲ斗硈尿ㄏノ.玥Τ硑Θ祇癳秎ン珇岿粇薄猵.
+讽承Ч秎ン睰珇秎ン, 硈尿ㄏノ mail_send ㄓ秈︽竤祇..
 
 ---------------------------------------
 
-getservantgid <类型>{,<角色编号>};
+*sendmail(<Μンà︹絪腹>,"<祇癳嘿>","<夹肈>","<ず甧>"{,<ンい刽>{,<ン珇絪腹>,<ン珇计秖>{,<ン珇絪腹>,<ン珇计秖>{,<ン珇絪腹>,<ン珇计秖>{,<ン珇絪腹>,<ン珇计秖>{,<ンき珇絪腹>,<ンき珇计秖>}}}}}});
+*sendmail2(<Μンà︹絪腹>,"<祇癳嘿>","<夹肈>","<ず甧>"{,<ンい刽>{,<ン珇絪腹>,<ン珇计秖>,<ン琌懦﹚>,<ン弘芬>,<ン妮┦>,<ン材眎>,<ン材眎>,<ン材眎>,<ン材眎>{,<ン珇絪腹>,<ン珇计秖>,<ン琌懦﹚>,<ン弘芬>,<ン妮┦>,<ン材眎>,<ン材眎>,<ン材眎>,<ン材眎>{,<ン珇絪腹>,<ン珇计秖>,<ン琌懦﹚>,<ン弘芬>,<ン妮┦>,<ン材眎>,<ン材眎>,<ン材眎>,<ン材眎>{,<ン珇絪腹>,<ン珇计秖>,<ン琌懦﹚>,<ン弘芬>,<ン妮┦>,<ン材眎>,<ン材眎>,<ン材眎>,<ン材眎>{,<ンき珇絪腹>,<ンき珇计秖>,<ンき琌懦﹚>,<ンき弘芬>,<ンき妮┦>,<ンき材眎>,<ンき材眎>,<ンき材眎>,<ンき材眎>}}}}}});
+*sendmail3(<Μンà︹絪腹>,"<祇癳嘿>","<夹肈>","<ず甧>"{,<ンい刽>{,<ン珇絪腹>,<ン珇计秖>,<ン琌懦﹚>,<ン弘芬>,<ン妮┦>,<ン材眎>,<ン材眎>,<ン材眎>,<ン材眎>,<ンRandomIDArray>,<ンRandomValueArray>,<ンRandomParamArray>{,<ン珇絪腹>,<ン珇计秖>,<ン琌懦﹚>,<ン弘芬>,<ン妮┦>,<ン材眎>,<ン材眎>,<ン材眎>,<ン材眎>,<ンRandomIDArray>,<ンRandomValueArray>,<ンRandomParamArray>{,<ン珇絪腹>,<ン珇计秖>,<ン琌懦﹚>,<ン弘芬>,<ン妮┦>,<ン材眎>,<ン材眎>,<ン材眎>,<ン材眎>,<ンRandomIDArray>,<ンRandomValueArray>,<ンRandomParamArray>{,<ン珇絪腹>,<ン珇计秖>,<ン琌懦﹚>,<ン弘芬>,<ン妮┦>,<ン材眎>,<ン材眎>,<ン材眎>,<ン材眎>,<ンRandomIDArray>,<ンRandomValueArray>,<ンRandomParamArray>{,<ンき珇絪腹>,<ンき珇计秖>,<ンき琌懦﹚>,<ンき弘芬>,<ンき妮┦>,<ンき材眎>,<ンき材眎>,<ンき材眎>,<ンき材眎>,<ンきRandomIDArray>,<ンきRandomValueArray>,<ンきRandomParamArray>}}}}}});
 
-获得相应类型的跟随者的GID.
+ㄏノ赣, 倒﹚產祇癳秎ン. ぃセㄤ龟琌や把计Τ┮ぃ.
 
-查询的单位类型:
-	BL_PC		- 玩家单位
-	BL_PET		- 宠物单位
-	BL_HOM		- 人工生命体单位
-	BL_MER		- 佣兵单位
+セ跋:
+	sendmail 	祇癳虏虫ン(礚ヴ┪弘絤笵ㄣ, 媚单)
+	sendmail2	祇癳ゑ耕蝋馒ン(砞﹚弘芬单)
+	sendmail3	埃㎝弘芬ぇ, 临や Random Options (繦审妮┦)
+
+簍ボ竲セ:
+	闽硂╰ㄏノよ猭, 把σ npc\BetterRa\BetterRa_sendmail.txt 簍ボ竲セ
+
+猔種ㄆ兜:
+	硂╰ぃ穦沽刚耞Μンà︹絪腹琌猭, 惠璶暗耞.
+	璝め狠ぃやRODEX杠, êンΤ材穦Τ.
 
 ---------------------------------------
 
-unitremove <GID>,<特效编号>;
+getservantgid <摸>{,<à︹絪腹>};
 
-用于移除某个GID实体, 并播放某个动画.
-可以移除:  - 玩家单位
-           - 魔物单位
-           - 宠物单位
-           - 人工生命体单位
-           - 佣兵单位
-           - 物品单位 (拿到了也暂时用不上)
-           - 技能单位 (拿到了也暂时用不上)
-           - NPC单位
-		   - 元素精灵单位 (拿到了也暂时用不上)
+莉眔莱摸蛤繦GID.
+
+琩高虫摸:
+	BL_PC		- 產虫
+	BL_PET		- 胐虫
+	BL_HOM		- ネ㏑蔨虫
+	BL_MER		- 虫
+
+---------------------------------------
+
+unitremove <GID>,<疭絪腹>;
+
+ノ簿埃琘GID龟蔨, 冀琘笆礶.
+簿埃:  - 產虫
+           - 臸虫
+           - 胐虫
+           - ネ㏑蔨虫
+           - 虫
+           - 珇虫 (既ノぃ)
+           - м虫 (既ノぃ)
+           - NPC虫
+		   - じ弘艶虫 (既ノぃ)
 		   
-特效编号:  
-	0: 没有特效
-	1: 登出特效
-	2: 瞬移特效
-	3: 死亡特效
+疭絪腹:  
+	0: ⊿Τ疭
+	1: 祅疭
+	2: 俐簿疭
+	3: 疭
 
 ---------------------------------------
 
-tribe_setteam <阵营编号>;
-tribe_setteam <GID>,<阵营编号>;
+tribe_setteam <皚犁絪腹>;
+tribe_setteam <GID>,<皚犁絪腹>;
 
-设置玩家或魔物的阵营组. 不同的阵营组之间是有仇恨的, 也就是说 魔物和魔物之间可以打, 默认阵营为0;
-阵营系统只有在拥有tribe这个 mapflag 标签的时候才有效
+砞竚產┪臸皚犁舱. ぃ皚犁舱ぇ丁琌Τこ, 碞琌弧 臸㎝臸ぇ丁ゴ, 纐粄皚犁0;
+皚犁╰参Τ局Τtribe硂 mapflag 夹帽Τ
 
 ---------------------------------------
 
 tribe_getteam {<GID>};
 
-通过GID获取某个实体的阵营编号.
+硄筁GID莉琘龟蔨皚犁絪腹.
 
 ---------------------------------------
 
-tribe_mobteam <阵营编号>;
+tribe_mobteam <皚犁絪腹>;
 
-设置通过 monster, areamonster 召唤出来的魔物的阵营编号..必须在monster或areamonster之后使用.
+砞竚硄筁 monster, areamonster 酬ㄓ臸皚犁絪腹..ゲ斗monster┪areamonsterぇㄏノ.
 
-例子:(召唤并设置10个波利为阵营1)
+ㄒ:(酬砞竚10猧皚犁1)
 	monster "prontera",0,0,"Quest Poring",1002,10;
 	tribe_mobteam 1;
 
 ---------------------------------------
 
-tribe_monster <阵营编号>,"<地图名字>",<x坐标>,<y坐标>,"<魔物名字>",<魔物ID>,"<事件标签>";
+tribe_monster <皚犁絪腹>,"<瓜>",<xГ夹>,<yГ夹>,"<臸>",<臸ID>,"<ㄆン夹帽>";
 
-召唤一个怪物并返回新招换的魔物的魔物ID. 可通过 playerattached 判断是否是玩家杀死的魔物。
+酬┣穝┷传臸臸ID. 硄筁 playerattached 耞琌琌產炳臸
 
-事件返回变量:
+ㄆン跑秖:
 	
-	注意: 因事件在遇到玩家正在运行时会排队, 所以与玩家关联时使用全局变量返回值会被其他击杀覆盖, 
-	如果你开启了 disable_mobdead_queue 则无需顾虑此问题可以直接使用全局变量
+	猔種: ㄆン笿產タ笲︽穦逼钉, ┮蒓產闽羛ㄏノЫ跑秖穦砆ㄤ阑炳滦籠, 
+	狦秨币 disable_mobdead_queue 玥礚惠臮納拜肈钡ㄏノЫ跑秖
 	
-	如果是玩家杀死, 则返回:
-		killedgid			被杀死魔物的GID
-		killedrid			被杀死魔物的魔物编号(MobID)
-		killerrid			杀死魔物的实体GID
+	狦琌產炳, 玥:
+		killedgid			砆炳臸GID
+		killedrid			砆炳臸臸絪腹(MobID)
+		killerrid			炳臸龟蔨GID
 	
-	如果是魔物杀死, 则返回: 
-		$killedgid			被杀死魔物的GID
-		$killedrid			被杀死魔物的魔物编号(MobID)
-		$killerrid			杀死魔物的实体GID
+	狦琌臸炳, 玥: 
+		$killedgid			砆炳臸GID
+		$killedrid			砆炳臸臸絪腹(MobID)
+		$killerrid			炳臸龟蔨GID
 
-例子:
+ㄒ:
 
 	tribe_monster .@tribe_id,"prontera",100,100,"Food Depot",1910,"Feed Depot#1::OnMyMobDead";
 	end;
@@ -1024,303 +1024,303 @@ tribe_monster <阵营编号>,"<地图名字>",<x坐标>,<y坐标>,"<魔物名字>",<魔物ID>,"<事
 
 ---------------------------------------
 
-unitsteppath <GID>,"<路点名>"{,<寻路AI>,{<参数>,{<"事件名称">}}};
-unitsteppath <GID>,<路点编号>{,<寻路AI>,{<参数>,{<"事件名称">}}};
+unitsteppath <GID>,"<隔翴>"{,<碝隔AI>,{<把计>,{<"ㄆン嘿">}}};
+unitsteppath <GID>,<隔翴絪腹>{,<碝隔AI>,{<把计>,{<"ㄆン嘿">}}};
 
-给魔物设置自动行走路径, 设置自动行走路径后, 魔物将会按照路径的坐标一个一个的按照顺序走下去,直到走到重点为止.
+倒臸砞竚笆︽ǐ隔畖, 砞竚笆︽ǐ隔畖, 臸盢穦酚隔畖Г夹酚抖ǐ,ǐ翴ゎ.
 
-"<路点名>"\<路点编号> 为 step_path.txt 中的第一个字段.
+"<隔翴>"\<隔翴絪腹>  step_path.txt い材琿.
 
-寻路AI:
-	PH_WALKBACK: 离开路径<参数>格或遇到障碍时, 不再追踪, 自动行走返回路径. (默认)
-	PH_WARPBACK: 离开路径直到失去目标后, 传送回路径继续走完路径.
-	PH_IGNOREWALK: 永远不追踪目标, 但如果目标在攻击(拾取)范围内, 依然会攻击(拾取).
-	PH_IGNOREALL: 永远不做任何其他事情, 一路走到路点结束.
-	PH_ASTARTWALK: 离开路径后, 调用A*算法计算路径, 并走到最终规定的路点终点.
-	PH_ASTARTWALKBACK: 离开路径后, 调用A*算法计算返回路径.
+碝隔AI:
+	PH_WALKBACK: 置秨隔畖<把计>┪笿毁锚, ぃ發萝, 笆︽ǐ隔畖. (纐粄)
+	PH_WARPBACK: 置秨隔畖アヘ夹, 肚癳隔畖膥尿ǐЧ隔畖.
+	PH_IGNOREWALK: ッ环ぃ發萝ヘ夹, 狦ヘ夹ю阑(珺)璖瞅ず, ㄌ礛穦ю阑(珺).
+	PH_IGNOREALL: ッ环ぃ暗ヴㄤㄆ薄, 隔ǐ隔翴挡.
+	PH_ASTARTWALK: 置秨隔畖, 秸ノA*衡猭璸衡隔畖, ǐ程沧砏﹚隔翴沧翴.
+	PH_ASTARTWALKBACK: 置秨隔畖, 秸ノA*衡猭璸衡隔畖.
 
-<参数> 默认为 25, 为 PH_WALKBACK 提供返回距离， 当魔物离开路径 <参数> 格时，魔物不在追踪返回路径。
-<"事件名称"> 为路径点走完以后调用的事件，魔物路径寻路失败也会执行此命令, 事件可通过 $@steppath_gid 获得触发事件魔物的GID, $@steppath_fail 返回到达终点.
+<把计> 纐粄 25,  PH_WALKBACK 矗ㄑ禯置 讽臸置秨隔畖 <把计> 臸ぃ發萝隔畖
+<"ㄆン嘿"> 隔畖翴ǐЧ秸ノㄆン臸隔畖碝隔ア毖穦磅︽㏑, ㄆン硄筁 $@steppath_gid 莉眔郉祇ㄆン臸GID, $@steppath_fail 笷沧翴.
 
 ---------------------------------------
 
 *bot_login <char_id>;
-*bot_login "<玩家名>";
-*bot_login <account_id>,<char_id>,<性别>;
+*bot_login "<產>";
+*bot_login <account_id>,<char_id>,<┦>;
 
-	登陆一个数据库中已有的账号. 
-	登陆过程中, 脚本暂停等待登陆完成后, 脚本关联会转移至登陆的BOT账号
+	祅嘲计誹畐いΤ姐腹. 
+	祅嘲筁祘い, 竲セ既氨单祅嘲ЧΘ, 竲セ闽羛穦锣簿祅嘲BOT姐腹
 	
-返回值:
-	返回 BOT 的 AID
+:
+	 BOT  AID
 
 ---------------------------------------
 
-*bot_adduseskill <技能ID>,<技能等级>{,<使用间隔>{,<优先级>{,<使用条件>{,<参数1>{,<参数2>{,<角色ID>}}}}}};
+*bot_adduseskill <мID>,<м单>{,<ㄏノ丁筳>{,<涩>{,<ㄏノ兵ン>{,<把计1>{,<把计2>{,<à︹ID>}}}}}};
 
-	添加技能到使用列表, 在满足条件时, 机器人会自动释放技能.
+	睰мㄏノ, 骸ì兵ン, 审竟穦笆睦м.
 
-使用间隔:
-	技能释放后, 需要间隔多久才能再次释放.
+ㄏノ丁筳:
+	м睦, 惠璶丁筳Ω睦.
 
-优先级:
-	优先级较高的技能满足条件会优先释放.
+涩:
+	涩耕蔼м骸ì兵ン穦涩睦.
 
-使用条件:
-	always				无条件 ( 默认, 没有参数 ).
-	myhpinrate			当自己的 HP 在限定范围内 ( 小于 <参数1> 或大于 <参数2> 时 ).
-	myspinrate			当自己的 HP 在限定范围内 ( 小于 <参数1> 或大于 <参数2> 时 ).
-	mystatuson			当自己拥有指定状态时 ( <参数1> 为指定的状态ID ).
-	mystatusoff			当自己失去指定状态时 ( <参数1> 为指定的状态ID ).
-	friendhpinrate		当队友(包括自己)的 HP 在限定范围内 ( 小于 <参数1> 或大于 <参数2> 时 ).
-	friendstatuson		当队友(包括自己)拥有指定状态时 ( <参数1> 为指定的状态ID ).
-	friendstatusoff		当队友(包括自己)失去指定状态时 ( <参数1> 为指定的状态ID ).
-	attackedgt			当攻击自己的敌人超过指定数量时 ( <参数1> 为攻击自己的数量 ).
-	closedattacked		当被近距离攻击时 ( 没有参数 ).
-	longrangeattacked	当被远距离攻击时 ( 没有参数 ).
-	afterskill			当使用指定技能后 ( <参数1> 为指定的技能ID ).
-	mobincount			当可视范围内魔物数量在限定范围内 ( 小于 <参数1> 或大于 <参数2> 时 ).
-	itemlessthan		当背包中指定物品数量在小于指定数值时 ( 物品ID为 <参数1> 的物品小于 <参数2> 个时 ).
+ㄏノ兵ン:
+	always				礚兵ン ( 纐粄, ⊿Τ把计 ).
+	myhpinrate			讽 HP ﹚璖瞅ず (  <把计1> ┪ <把计2>  ).
+	myspinrate			讽 HP ﹚璖瞅ず (  <把计1> ┪ <把计2>  ).
+	mystatuson			讽局Τ﹚篈 ( <把计1> ﹚篈ID ).
+	mystatusoff			讽ア﹚篈 ( <把计1> ﹚篈ID ).
+	friendhpinrate		讽钉ね(珹) HP ﹚璖瞅ず (  <把计1> ┪ <把计2>  ).
+	friendstatuson		讽钉ね(珹)局Τ﹚篈 ( <把计1> ﹚篈ID ).
+	friendstatusoff		讽钉ね(珹)ア﹚篈 ( <把计1> ﹚篈ID ).
+	attackedgt			讽ю阑寄禬筁﹚计秖 ( <把计1> ю阑计秖 ).
+	closedattacked		讽砆禯置ю阑 ( ⊿Τ把计 ).
+	longrangeattacked	讽砆环禯置ю阑 ( ⊿Τ把计 ).
+	afterskill			讽ㄏノ﹚м ( <把计1> ﹚мID ).
+	mobincount			讽跌璖瞅ず臸计秖﹚璖瞅ず (  <把计1> ┪ <把计2>  ).
+	itemlessthan		讽璉い﹚珇计秖﹚计 ( 珇ID <把计1> 珇 <把计2>  ).
 
 ---------------------------------------
 
-*bot_adduseitem <物品ID>{,<使用延时>{,<优先级>{,<使用条件>{,<参数1>{,<参数2>{,<角色ID>}}}}}};
+*bot_adduseitem <珇ID>{,<ㄏノ┑>{,<涩>{,<ㄏノ兵ン>{,<把计1>{,<把计2>{,<à︹ID>}}}}}};
 
-	添加物品到使用列表, 在满足条件时, 机器人会自动使用物品.
+	睰珇ㄏノ, 骸ì兵ン, 审竟穦笆ㄏノ珇.
 
-使用间隔:
-	物品使用后, 需要间隔多久才能再次使用.
+ㄏノ丁筳:
+	珇ㄏノ, 惠璶丁筳Ωㄏノ.
 	
-优先级:
-	优先级较高的物品满足条件会优先使用.
+涩:
+	涩耕蔼珇骸ì兵ン穦涩ㄏノ.
 
-使用条件:
-	具体条件请参照 bot_adduseskill 指令
-
----------------------------------------
-
-*bot_addevent <"事件名称">{,<触发延迟>{,<优先级>{,<触发条件>{,<参数1>{,<参数2>{,<角色ID>}}}}}};
-
-	机器人触发事件, 在满足条件时, 机器人会自动使用物品.
-
-触发间隔:
-	间隔多久检测一次事件满足条件, 默认 1000 毫秒.
-
-优先级:
-	优先级较高的事件满足条件会优先触发.
-
-触发条件:
-	具体条件请参照 bot_adduseskill 指令
+ㄏノ兵ン:
+	ㄣ蔨兵ン叫把酚 bot_adduseskill 
 
 ---------------------------------------
 
-*bot_addlootitem <物品ID>{,<拾取别人的战利品>{,<角色ID>}};
+*bot_addevent <"ㄆン嘿">{,<郉祇┑筐>{,<涩>{,<郉祇兵ン>{,<把计1>{,<把计2>{,<à︹ID>}}}}}};
 
-	添加物品到拾取列表, 当打怪完成后会拾取附近的道具, 默认拾取别人的战利品
+	审竟郉祇ㄆン, 骸ì兵ン, 审竟穦笆ㄏノ珇.
 
----------------------------------------
+郉祇丁筳:
+	丁筳浪代Ωㄆン骸ì兵ン, 纐粄 1000 睝.
 
-*bot_addattackmob <魔物ID>{,<优先级>{,<角色ID>}};
+涩:
+	涩耕蔼ㄆン骸ì兵ン穦涩郉祇.
 
-	添加魔物到攻击列表, 当选择魔物时, 优先选择优先度高的魔物
-	当魔物列表中有魔物时, 则不会攻击攻击列表中没有的魔物
-
----------------------------------------
-
-*bot_addmode <模式>{,<参数>{,<角色ID>}};
-
-	添加机器人的模式
-
-模式:
-	BOT_IDEA             - 闲置状态, 可通过 bot_run 移除此状态.
-	BOT_SKILL_ATK        - 使用技能攻击
-	BOT_WEAPON_ATK       - 使用普通攻击
-	BOT_SUPPORT_SELF     - 使用技能辅助自己
-	BOT_SUPPORT_FRIEND   - 使用技能辅助队友
-	BOT_NO_WALK          - 不自动寻路 (遇敌依然会走过去攻击)
-	BOT_FOLLOW_WALK      - 跟随指定的AID (参数为被跟随玩家的AID)
-	BOT_RANDOM_WALK      - 范围内没有敌人时, 使用随机寻路寻找敌人
-	BOT_ASTAR_WALK       - 范围内没有敌人时, 使用A*路寻找敌人 (优先级大于 BOT_RANDOM_WALK)
-	BOT_IGNORE_TOUCH     - 无视传送点和NPC触发对话
-	BOT_IGNORE_SAME_ELE  - 无视同属性的敌人 (参数为修正值, 参数为50时, 属性修正低于50的魔物不打)
-	BOT_ALWAYS_MASTER    - 只攻击敌人的主人
-	BOT_COUNTERATTACK    - 对正在攻击机器人的实体进行反击
-	BOT_OFFLINE          - 采用离线挂机模式
+郉祇兵ン:
+	ㄣ蔨兵ン叫把酚 bot_adduseskill 
 
 ---------------------------------------
 
-*bot_delmode <模式>{,<角色ID>};
+*bot_addlootitem <珇ID>{,<珺驹珇>{,<à︹ID>}};
 
-	移除机器人的模式
-
-模式: 
-	请查看 bot_addmode 指令
+	睰珇珺, 讽ゴ┣ЧΘ穦珺笵ㄣ, 纐粄珺驹珇
 
 ---------------------------------------
 
-*bot_hasmode <模式>{,<角色ID>};
+*bot_addattackmob <臸ID>{,<涩>{,<à︹ID>}};
 
-	判断机器人是否有相关的模式, 判断多个模式可以相加
-
-模式: 
-	请查看 bot_addmode 指令
+	睰臸ю阑, 讽匡拒臸, 涩匡拒涩蔼臸
+	讽臸いΤ臸, 玥ぃ穦ю阑ю阑い⊿Τ臸
 
 ---------------------------------------
 
-*bot_setdelay <类型>,<最小延迟>,<最大延迟>{,<角色ID>};
+*bot_addmode <家Α>{,<把计>{,<à︹ID>}};
 
-	为机器人动作增加随机延迟, 可以看起来更像是玩家
+	睰审竟家Α
 
-类型:
-	BOT_DELAY_LOOT		拾取物品延迟(默认: 300ms ~ 800ms)
-	BOT_DELAY_CHOOSE	选择敌人延迟(默认: 800ms ~ 1300ms)
-	BOT_DELAY_SKILL		使用技能延迟(默认: 0ms ~ 300ms, 如果想秒 7 请去掉随机延迟)
+家Α:
+	BOT_IDEA             - 秪竚篈, 硄筁 bot_run 簿埃篈.
+	BOT_SKILL_ATK        - ㄏノмю阑
+	BOT_WEAPON_ATK       - ㄏノ炊硄ю阑
+	BOT_SUPPORT_SELF     - ㄏノм徊
+	BOT_SUPPORT_FRIEND   - ㄏノм徊钉ね
+	BOT_NO_WALK          - ぃ笆碝隔 (笿寄ㄌ礛穦ǐ筁ю阑)
+	BOT_FOLLOW_WALK      - 蛤繦﹚AID (把计砆蛤繦產AID)
+	BOT_RANDOM_WALK      - 璖瞅ず⊿Τ寄, ㄏノ繦审碝隔碝т寄
+	BOT_ASTAR_WALK       - 璖瞅ず⊿Τ寄, ㄏノA*隔碝т寄 (涩 BOT_RANDOM_WALK)
+	BOT_IGNORE_TOUCH     - 礚跌肚癳翴㎝NPC郉祇癸杠
+	BOT_IGNORE_SAME_ELE  - 礚跌妮┦寄 (把计タ, 把计50, 妮┦タ50臸ぃゴ)
+	BOT_ALWAYS_MASTER    - ю阑寄
+	BOT_COUNTERATTACK    - 癸タю阑审竟龟蔨秈︽は阑
+	BOT_OFFLINE          - ノ置絬珽审家Α
 
 ---------------------------------------
 
-*bot_trade <类型>;
-*bot_trade <类型>,<背包序号>,<交易数量>;
-*bot_trade <类型>,<ZENY数量>;
+*bot_delmode <家Α>{,<à︹ID>};
 
-	当BOT收到交易请求时, 可以通过这个指令操作BOT交易
+	簿埃审竟家Α
 
-类型:
-	BOT_ACT_ACCEPT  同意交易并进入交易窗口
-	BOT_ACT_REFUSE  拒绝交易
-	BOT_ACT_ADDITEM 在交易窗口中添加道具(必须在交易窗口下使用, 否则无效果)
-	BOT_ACT_ZENY    在交易窗口中添加ZENY(必须在交易窗口下使用, 否则无效果)
-	BOT_ACT_OK      确认交易
+家Α: 
+	叫琩 bot_addmode 
+
+---------------------------------------
+
+*bot_hasmode <家Α>{,<à︹ID>};
+
+	耞审竟琌Τ闽家Α, 耞家Α
+
+家Α: 
+	叫琩 bot_addmode 
+
+---------------------------------------
+
+*bot_setdelay <摸>,<程┑筐>,<程┑筐>{,<à︹ID>};
+
+	审竟笆糤繦审┑筐, 癬ㄓ钩琌產
+
+摸:
+	BOT_DELAY_LOOT		珺珇┑筐(纐粄: 300ms ~ 800ms)
+	BOT_DELAY_CHOOSE	匡拒寄┑筐(纐粄: 800ms ~ 1300ms)
+	BOT_DELAY_SKILL		ㄏノм┑筐(纐粄: 0ms ~ 300ms, 狦稱 7 叫奔繦审┑筐)
+
+---------------------------------------
+
+*bot_trade <摸>;
+*bot_trade <摸>,<璉腹>,<ユ计秖>;
+*bot_trade <摸>,<ZENY计秖>;
+
+	讽BOTΜユ叫―, 硄筁硂巨BOTユ
+
+摸:
+	BOT_ACT_ACCEPT  種ユ秈ユ怠
+	BOT_ACT_REFUSE  ┶荡ユ
+	BOT_ACT_ADDITEM ユ怠い睰笵ㄣ(ゲ斗ユ怠ㄏノ, 玥礚狦)
+	BOT_ACT_ZENY    ユ怠い睰ZENY(ゲ斗ユ怠ㄏノ, 玥礚狦)
+	BOT_ACT_OK      谔粄ユ
 	
-注意: 该指令需要配合 OnBOTRecvActEvent 脚本事件一起使用
+猔種: 赣惠璶皌 OnBOTRecvActEvent 竲セㄆン癬ㄏノ
 
 ---------------------------------------
 
-*bot_party <类型>;
+*bot_party <摸>;
 
-	当BOT收到加入队伍请求时, 可以通过这个指令操作BOT接受或拒绝申请
+	讽BOTΜ钉ヮ叫―, 硄筁硂巨BOT钡┪┶荡ビ叫
 
-类型:
-	BOT_ACT_ACCEPT  同意加入
-	BOT_ACT_REFUSE  拒绝加入
+摸:
+	BOT_ACT_ACCEPT  種
+	BOT_ACT_REFUSE  ┶荡
 	
-注意: 该指令需要配合 OnBOTRecvActEvent 脚本事件一起使用
+猔種: 赣惠璶皌 OnBOTRecvActEvent 竲セㄆン癬ㄏノ
 
 ---------------------------------------
 
-*bot_guild <类型>;
+*bot_guild <摸>;
 
-	当BOT收到加入公会请求时, 可以通过这个指令操作BOT接受或拒绝申请
+	讽BOTΜそ穦叫―, 硄筁硂巨BOT钡┪┶荡ビ叫
 	
-类型:
-	BOT_ACT_ACCEPT  同意加入
-	BOT_ACT_REFUSE  拒绝加入
+摸:
+	BOT_ACT_ACCEPT  種
+	BOT_ACT_REFUSE  ┶荡
 		
-注意: 该指令需要配合 OnBOTRecvActEvent 脚本事件一起使用
+猔種: 赣惠璶皌 OnBOTRecvActEvent 竲セㄆン癬ㄏノ
 
 ---------------------------------------
 
-*bot_reset {<类型>{,<角色ID>}};
+*bot_reset {<摸>{,<à︹ID>}};
 
-	重置机器人相关信息, 多个重置将类型相加即可
+	竚审竟闽獺, 竚盢摸
 
-类型: 
-	BOT_REST_SKILL  - 重置技能列表
-	BOT_REST_ITEM   - 重置物品列表
-	BOT_REST_EVENT  - 重置事件列表
-	BOT_REST_LOOT   - 重置拾取列表
-	BOT_REST_MOB    - 重置魔物列表
-	BOT_REST_MODE   - 重置机器人模式, 并将机器人设置为闲置(BOT_IDEA)状态
-	BOT_REST_ALL    - 重置以上所有
+摸: 
+	BOT_REST_SKILL  - 竚м
+	BOT_REST_ITEM   - 竚珇
+	BOT_REST_EVENT  - 竚ㄆン
+	BOT_REST_LOOT   - 竚珺
+	BOT_REST_MOB    - 竚臸
+	BOT_REST_MODE   - 竚审竟家Α, 盢审竟砞竚秪竚(BOT_IDEA)篈
+	BOT_REST_ALL    - 竚┮Τ
 	  
 ---------------------------------------
 
-*is_bot {<角色ID>};
+*is_bot {<à︹ID>};
 
-	用于判断玩家是否是机器人
+	ノ耞產琌琌审竟
 	
-注意:当对玩家使用除bot_stop以外的指令时, 玩家则会被判定为机器人
+猔種:讽癸產ㄏノ埃bot_stop, 產玥穦砆﹚审竟
 
-返回: 0 时玩家不是BOT, 1 时BOT为闲置(BOT_IDEA)状态, 2 时BOT为运行状态
-
----------------------------------------
-
-*bot_run {<运行时长>{,<角色ID>}}};
-
-	启动机器人, 用于移除机器人的闲置(BOT_IDEA)状态, 效果等同于 bot_delmode(BOT_IDEA).
-
-返回: -1 没有机器人的相关配置
-      -2 角色已死亡
-	  -3 角色处于挂店或开启仓库的状态
-
-例子: 请查看 npc\BetterRa\BetterRa_bot.txt
+: 0 產ぃ琌BOT, 1 BOT秪竚(BOT_IDEA)篈, 2 BOT笲︽篈
 
 ---------------------------------------
 
-*bot_pause {<角色ID>};
+*bot_run {<笲︽>{,<à︹ID>}}};
 
-	暂停机器人, 用于为机器人添加闲置(BOT_IDEA)状态, 效果等同于 bot_addmode(BOT_IDEA).
+	币笆审竟, ノ簿埃审竟秪竚(BOT_IDEA)篈, 狦单 bot_delmode(BOT_IDEA).
+
+: -1 ⊿Τ审竟闽皌竚
+      -2 à︹
+	  -3 à︹矪珽┍┪秨币畐篈
+
+ㄒ: 叫琩 npc\BetterRa\BetterRa_bot.txt
 
 ---------------------------------------
 
-*bot_stop {<是否登出>{,<角色ID>}};
+*bot_pause {<à︹ID>};
 
-	释放一个机器人
+	既氨审竟, ノ审竟睰秪竚(BOT_IDEA)篈, 狦单 bot_addmode(BOT_IDEA).
+
+---------------------------------------
+
+*bot_stop {<琌祅>{,<à︹ID>}};
+
+	睦审竟
 	
-是否登出:
-	1 - 登出
-	0 - 保持在线, 如果BOT为离线挂机则无效果
+琌祅:
+	1 - 祅
+	0 - 玂絬, 狦BOT置絬珽审玥礚狦
 	
 ---------------------------------------
 
-*openchat "<标题>"{,<人数上限>{,"<密码>"{,<角色ID>}}};
+*openchat "<夹肈>"{,<计>{,"<盞絏>"{,<à︹ID>}}};
 
-开启一个聊天窗口
-
----------------------------------------
-
-*openvending "<商店名称>"{,<物品ID>,<物品数量>,<物品售价>{,<物品ID>,<物品数量>,<物品售价>...{,<角色ID>}}};
-
-开启一个贩卖商店, 手推车中必须有这些物品.
+秨币册ぱ怠
 
 ---------------------------------------
 
-*openbuying "<商店名称>"{,<物品ID>,<物品数量>,<物品售价>{,<物品ID>,<物品数量>,<物品售价>...{,<角色ID>}}}
+*openvending "<坝┍嘿>"{,<珇ID>,<珇计秖>,<珇扳刹>{,<珇ID>,<珇计秖>,<珇扳刹>...{,<à︹ID>}}};
 
-开启一个采购商店, 最多只能同时采购 3 个物品.
+秨币砪芥坝┍, も崩óいゲ斗Τ硂ㄇ珇.
 
 ---------------------------------------
 
-*http_get "<URL>",<超时时间(秒)>,<获取后是否当做NPC文件加载>{,<保存数字>};
+*openbuying "<坝┍嘿>"{,<珇ID>,<珇计秖>,<珇扳刹>{,<珇ID>,<珇计秖>,<珇扳刹>...{,<à︹ID>}}}
 
-发送GET指令. 通过 OnHTTPReceivedEvent 事件返回GET内容, 注意本指令不支持HTTPS链接..
+秨币潦坝┍, 程潦 3 珇.
 
-<获取后是否当做NPC文件加载> 0为否, 1为是, 加载的脚本可以为网络上的加密脚本
-<保存数字> 可以保存玩家的CID或者AID 可以在 OnHTTPReceivedEvent 事件后 $@http_num 变量返回, 用于绑定角色
+---------------------------------------
 
-注意!!加载脚本设置为是的时候 将不会触发事件, 直接会被加载...
+*http_get "<URL>",<禬丁()>,<莉琌讽暗NPCゅン更>{,<玂计>};
 
-OnHTTPReceivedEvent 事件返回变量:
+祇癳GET. 硄筁 OnHTTPReceivedEvent ㄆンGETず甧, 猔種セぃやHTTPS渺钡..
+
+<莉琌讽暗NPCゅン更> 0, 1琌, 更竲セ蔍蹈盞竲セ
+<玂计> 玂產CID┪AID  OnHTTPReceivedEvent ㄆン $@http_num 跑秖, ノ竕﹚à︹
+
+猔種!!更竲セ砞竚琌 盢ぃ穦郉祇ㄆン, 钡穦砆更...
+
+OnHTTPReceivedEvent ㄆン跑秖:
 	
-	$@http_code           HTTP 返回代码（200 404 301 302 502等）
-	$@http_name$          HTTP header 返回名(数组),
-	$@http_val$           HTTP header 值(数组),
-	$@http_header_count   HTTP header 数组长度.
+	$@http_code           HTTP 絏200 404 301 302 502单
+	$@http_name$          HTTP header (计舱),
+	$@http_val$           HTTP header (计舱),
+	$@http_header_count   HTTP header 计舱.
 
-	$@http_url$     为 http_get脚本指令中的 <URL>
-	$@http_host$    为 http_get脚本指令中的 <网址>
-	$@http_folder$  为 http_get脚本指令中的 <网址剩余部分>
-	$@http_num      为 http_get脚本指令中的 <保存数字>
-	$@http_str$     为返回的内容
+	$@http_url$      http_get竲セい <URL>
+	$@http_host$     http_get竲セい <蔍>
+	$@http_folder$   http_get竲セい <蔍逞场だ>
+	$@http_num       http_get竲セい <玂计>
+	$@http_str$     ず甧
 	
-授权例子: 
-	http_get("http://www.example.com/login.php?account=name&passworld=123456",3,0); 登陆后端获取的IP地址并落地并返回yes
+甭舦ㄒ: 
+	http_get("http://www.example.com/login.php?account=name&passworld=123456",3,0); 祅嘲狠莉IP辅yes
 
 	OnHTTPReceivedEvent:
 		
-		//判定网址和登陆页面, 并判断返回内容是否为yes(为yes则为登陆成功)..
+		//﹚蔍㎝祅嘲, 耞ず甧琌yes(yes玥祅嘲Θ)..
 		if($@http_host$ == "www.example.com" && compare($@http_folder$,"login.php") && $@http_str$ == "yes"){
 			
-			//在后端用登陆时的IP决定是否返回NPC脚本
+			//狠ノ祅嘲IP∕﹚琌NPC竲セ
 			http_get("http://www.example.com/script.php?npc=test0.txt",3,1);
 			http_get("http://www.example.com/script.php?npc=test1.txt",3,1);
 			http_get("http://www.example.com/script.php?npc=test2.txt",3,1);
@@ -1329,105 +1329,105 @@ OnHTTPReceivedEvent 事件返回变量:
 	
 ---------------------------------------
 
-*callshop "<商店名字>",<配置>,"<过滤文本>";
+*callshop "<坝┍>",<皌竚>,"<筁耾ゅセ>";
 
-配置为10时, 为打开向NPC出售的贩卖菜单, 菜单可以使用过滤文本.
-过滤为本: "type:物品类型{,物品类型}..;item:物品ID{,物品ID}..;"
-例: callshop "shoptest",10, "type:6;item:501,502;" 弹出贩卖菜单, 菜单只显示卡片\红色药水\赤色药水, 如果玩家身上有相应物品时才会被显示...
-
----------------------------------------
-
-*unit_Astar_walkto <GID>,<x坐标>,<y坐标>{,<自动释放>{,<寻路AI>,{<参数>,{<"事件名称">}}}};
-
-全图寻路，玩家、魔物或NPC可行走至地图上的任意一点。
-<自动释放> 默认为1，如果需要被多次调用可以将自动释放设置为 0， 将会一直存在路点系统中。
-
-寻路AI:
-	PH_WALKBACK: 离开路径<参数>格或遇到障碍时, 不再追踪, 自动行走返回路径. (默认)
-	PH_WARPBACK: 离开路径直到失去目标后, 传送回路径继续走完路径.
-	PH_IGNOREWALK: 永远不追踪目标, 但如果目标在攻击(拾取)范围内, 依然会攻击(拾取).
-	PH_IGNOREALL: 永远不做任何其他事情, 一路走到路点结束.
-	PH_ASTARTWALK: 离开路径后, 调用A*算法计算路径, 并走到最终规定的路点终点).
-	PH_ASTARTWALKBACK: 离开路径后, 调用A*算法计算返回路径.
-
-<参数> 默认为 25, 为 PH_WALKBACK 提供返回距离， 当魔物离开路径 <参数> 格时，魔物不在追踪返回路径。
-<"事件名称"> 为路径点走完以后调用的事件，魔物路径寻路失败也会执行此命令。可通过$@gid获得触发事件魔物的GID
+皌竚10, ゴ秨NPC扳砪芥垫虫, 垫虫ㄏノ筁耾ゅセ.
+筁耾セ: "type:珇摸{,珇摸}..;item:珇ID{,珇ID}..;"
+ㄒ: callshop "shoptest",10, "type:6;item:501,502;" 紆砪芥垫虫, 垫虫陪ボ\︹媚\í︹媚, 狦產ōΤ莱珇穦砆陪ボ...
 
 ---------------------------------------
 
-*unit_cross_map_walkto <GID>,"<地图名>",<x坐标>,<y坐标>{,<寻路AI>,{<参数>,{<"事件名称">}}};
+*unit_Astar_walkto <GID>,<xГ夹>,<yГ夹>{,<笆睦>{,<碝隔AI>,{<把计>,{<"ㄆン嘿">}}}};
 
-穿越地图的全图寻路，玩家、魔物或NPC可通过传送点走至指定地图上的任意一点。
-<自动释放> 默认为1，如果需要被多次调用可以将自动释放设置为 0， 将会一直存在路点系统中。
+瓜碝隔產臸┪NPC︽ǐ瓜ヴ種翴
+<笆睦> 纐粄1狦惠璶砆Ω秸ノ盢笆睦砞竚 0 盢穦隔翴╰参い
 
-寻路AI:
-	PH_WALKBACK: 离开路径<参数>格或遇到障碍时, 不再追踪, 自动行走返回路径. (默认)
-	PH_WARPBACK: 离开路径直到失去目标后, 传送回路径继续走完路径.
-	PH_IGNOREWALK: 永远不追踪目标, 但如果目标在攻击(拾取)范围内, 依然会攻击(拾取).
-	PH_IGNOREALL: 永远不做任何其他事情, 一路走到路点结束.
-	PH_ASTARTWALK: 离开路径后, 调用A*算法计算路径, 并走到最终规定的路点终点.
-	PH_ASTARTWALKBACK: 离开路径后, 调用A*算法计算返回路径.
+碝隔AI:
+	PH_WALKBACK: 置秨隔畖<把计>┪笿毁锚, ぃ發萝, 笆︽ǐ隔畖. (纐粄)
+	PH_WARPBACK: 置秨隔畖アヘ夹, 肚癳隔畖膥尿ǐЧ隔畖.
+	PH_IGNOREWALK: ッ环ぃ發萝ヘ夹, 狦ヘ夹ю阑(珺)璖瞅ず, ㄌ礛穦ю阑(珺).
+	PH_IGNOREALL: ッ环ぃ暗ヴㄤㄆ薄, 隔ǐ隔翴挡.
+	PH_ASTARTWALK: 置秨隔畖, 秸ノA*衡猭璸衡隔畖, ǐ程沧砏﹚隔翴沧翴).
+	PH_ASTARTWALKBACK: 置秨隔畖, 秸ノA*衡猭璸衡隔畖.
 
-<参数> 默认为 25, 为 PH_WALKBACK 提供返回距离， 当魔物离开路径 <参数> 格时，魔物不在追踪返回路径。
-<"事件名称"> 为路径点走完以后调用的事件，魔物路径寻路失败也会执行此命令。可通过$@gid获得触发事件魔物的GID
-
----------------------------------------
-
-*mobstaypos <GID>,<x坐标>,<y坐标>{,<追踪距离>};
-
-将魔物固定于一点，被固定的魔物只能在坐标点周围活动。
-<追踪距离> 当目标大于追踪距离时则返回。
+<把计> 纐粄 25,  PH_WALKBACK 矗ㄑ禯置 讽臸置秨隔畖 <把计> 臸ぃ發萝隔畖
+<"ㄆン嘿"> 隔畖翴ǐЧ秸ノㄆン臸隔畖碝隔ア毖穦磅︽㏑硄筁$@gid莉眔郉祇ㄆン臸GID
 
 ---------------------------------------
 
-*instance_name {<副本ID>};
+*unit_cross_map_walkto <GID>,"<瓜>",<xГ夹>,<yГ夹>{,<碝隔AI>,{<把计>,{<"ㄆン嘿">}}};
 
-获取玩家所拥有的副本的名字。副本ID 通过 instance_id 指令获取。
+禫瓜瓜碝隔產臸┪NPC硄筁肚癳翴ǐ﹚瓜ヴ種翴
+<笆睦> 纐粄1狦惠璶砆Ω秸ノ盢笆睦砞竚 0 盢穦隔翴╰参い
+
+碝隔AI:
+	PH_WALKBACK: 置秨隔畖<把计>┪笿毁锚, ぃ發萝, 笆︽ǐ隔畖. (纐粄)
+	PH_WARPBACK: 置秨隔畖アヘ夹, 肚癳隔畖膥尿ǐЧ隔畖.
+	PH_IGNOREWALK: ッ环ぃ發萝ヘ夹, 狦ヘ夹ю阑(珺)璖瞅ず, ㄌ礛穦ю阑(珺).
+	PH_IGNOREALL: ッ环ぃ暗ヴㄤㄆ薄, 隔ǐ隔翴挡.
+	PH_ASTARTWALK: 置秨隔畖, 秸ノA*衡猭璸衡隔畖, ǐ程沧砏﹚隔翴沧翴.
+	PH_ASTARTWALKBACK: 置秨隔畖, 秸ノA*衡猭璸衡隔畖.
+
+<把计> 纐粄 25,  PH_WALKBACK 矗ㄑ禯置 讽臸置秨隔畖 <把计> 臸ぃ發萝隔畖
+<"ㄆン嘿"> 隔畖翴ǐЧ秸ノㄆン臸隔畖碝隔ア毖穦磅︽㏑硄筁$@gid莉眔郉祇ㄆン臸GID
 
 ---------------------------------------
 
-*magicshield <种族>,<护盾血量>,<持续时间>;
+*mobstaypos <GID>,<xГ夹>,<yГ夹>{,<發萝禯置>};
 
-在持续时间内，抵挡相应种族的伤害。
+盢臸㏕﹚翴砆㏕﹚臸Г夹翴㏄瞅笆
+<發萝禯置> 讽ヘ夹發萝禯置玥
 
-参数<种族>: 
-	RC_Angel		天使系
-	RC_Brute		动物系
-	RC_DemiHuman	人形系
-	RC_Demon		恶魔系
-	RC_Dragon		龙系
-	RC_Fish			鱼贝系
-	RC_Formless		无形系
-	RC_Insect		昆虫系
-	RC_Plant		植物系
-	RC_Player		玩家
-	RC_Undead		不死系
-	RC_All			所有种族
+---------------------------------------
+
+*instance_name {<捌セID>};
+
+莉產┮局Τ捌セ捌セID 硄筁 instance_id 莉
+
+---------------------------------------
+
+*magicshield <销壁>,<臔﹀秖>,<尿丁>;
+
+尿丁ず╄咀莱销壁端甡
+
+把计<销壁>: 
+	RC_Angel		ぱㄏ╰
+	RC_Brute		笆╰
+	RC_DemiHuman	╰
+	RC_Demon		碿臸╰
+	RC_Dragon		纒╰
+	RC_Fish			辰ī╰
+	RC_Formless		礚╰
+	RC_Insect		︿╰
+	RC_Plant		从╰
+	RC_Player		產
+	RC_Undead		ぃ╰
+	RC_All			┮Τ销壁
 	
 ---------------------------------------
 
-*getbonus <类型>,<参数或变量>{,<参数或变量>{,<参数或变量>{,<参数或变量>{,<参数或变量>}}}};
-*getcharbonus <类型>,<参数或变量>,<角色ID>;
-*getcharbonus <类型>,<参数或变量>,<参数或变量>,<角色ID>;
-*getcharbonus <类型>,<参数或变量>,<参数或变量>,<参数或变量>,<角色ID>;
-*getcharbonus <类型>,<参数或变量>,<参数或变量>,<参数或变量>,<参数或变量>,<角色ID>;
-*getcharbonus <类型>,<参数或变量>,<参数或变量>,<参数或变量>,<参数或变量>,<参数或变量>,<角色ID>;
+*getbonus <摸>,<把计┪跑秖>{,<把计┪跑秖>{,<把计┪跑秖>{,<把计┪跑秖>{,<把计┪跑秖>}}}};
+*getcharbonus <摸>,<把计┪跑秖>,<à︹ID>;
+*getcharbonus <摸>,<把计┪跑秖>,<把计┪跑秖>,<à︹ID>;
+*getcharbonus <摸>,<把计┪跑秖>,<把计┪跑秖>,<把计┪跑秖>,<à︹ID>;
+*getcharbonus <摸>,<把计┪跑秖>,<把计┪跑秖>,<把计┪跑秖>,<把计┪跑秖>,<à︹ID>;
+*getcharbonus <摸>,<把计┪跑秖>,<把计┪跑秖>,<把计┪跑秖>,<把计┪跑秖>,<把计┪跑秖>,<à︹ID>;
 
-用来获取 bonus 的参数，当参数填写变量时则获取相应位置上的参数。
+ノㄓ莉 bonus 把计讽把计恶糶跑秖玥莉莱竚把计
 
-注: 
-	getcharbonus 用法与getbonus相同, 只是最后一个参数为玩家的角色ID, 用来获取指定玩家的 bonus 参数
-	当 bf 参数为 -1 时 则忽略 bf参数, 获取的结果为所有满足条件之和
+猔: 
+	getcharbonus ノ猭蒓getbonus, 琌程把计產à︹ID, ノㄓ莉﹚產 bonus 把计
+	讽 bf 把计 -1  玥┛菠 bf把计, 莉挡狦┮Τ骸ì兵ンぇ㎝
 	
-例：
+ㄒ
 
 	getbonus bAddEle,Ele_Dark,.@val;
-	dispbottom "你对属性 Ele_Dark 增加 "+.@val+" 的伤害";
+	dispbottom "癸妮┦ Ele_Dark 糤 "+.@val+" 端甡";
 	getbonus bAddEle,Ele_Dark,.@val,BF_SHORT;	
-	dispbottom "近距离物理攻击时, 你对属性 Ele_Dark 增加 "+.@val+" 的伤害";
+	dispbottom "禯置瞶ю阑, 癸妮┦ Ele_Dark 糤 "+.@val+" 端甡";
 	
 	
-支持的 Bonus 列表:
+や Bonus :
 	bonus2 bAddEle,e,x;
 	bonus3 bAddEle,e,x,bf;
 	bonus2 bMagicAddEle,e,x;
@@ -1469,277 +1469,277 @@ OnHTTPReceivedEvent 事件返回变量:
 	
 ---------------------------------------
 
-*bonus_minfix <类型>,<参数或变量>{,<参数或变量>{,<参数或变量>{,<参数或变量>{,<参数或变量>}}}},<最小值>;
-*bonus_maxfix <类型>,<参数或变量>{,<参数或变量>{,<参数或变量>{,<参数或变量>{,<参数或变量>}}}},<最大值>;
+*bonus_minfix <摸>,<把计┪跑秖>{,<把计┪跑秖>{,<把计┪跑秖>{,<把计┪跑秖>{,<把计┪跑秖>}}}},<程>;
+*bonus_maxfix <摸>,<把计┪跑秖>{,<把计┪跑秖>{,<把计┪跑秖>{,<把计┪跑秖>{,<把计┪跑秖>}}}},<程>;
 
-此指令可用在 OnPCStatCalcEvent 事件下面用来修正相应的bonus数值。
+ノ OnPCStatCalcEvent ㄆンノㄓタ莱bonus计
 
-例:
-	bonus_maxfix bAddEle,Ele_Dark,.@val,BF_SHORT,80; // 近距离攻击时的暗属性修正不能大于80%, .@val 获取最终的值
-	bonus_minfix bAddEle,Ele_Dark,.@val,10; // 暗属性修正不能小于10%, .@val 获取最终的值
+ㄒ:
+	bonus_maxfix bAddEle,Ele_Dark,.@val,BF_SHORT,80; // 禯置ю阑穞妮┦タぃ80%, .@val 莉程沧
+	bonus_minfix bAddEle,Ele_Dark,.@val,10; // 穞妮┦タぃ10%, .@val 莉程沧
 	
-支持的 Bonus 列表同getbonus.
+や Bonus getbonus.
 
 ---------------------------------------
 
-*bonus_ratefix <类型>,<最大值>{,<角色ID>};
+*bonus_ratefix <摸>,<程>{,<à︹ID>};
 
-此指令可用在 OnPCStatCalcEvent 事件下面用来修正相应的bonus数值。
+ノ OnPCStatCalcEvent ㄆンノㄓタ莱bonus计
 
-例：
-	bonus_ratefix bAddEle,50; // bAddEle属性修正不能大于50%
+ㄒ
+	bonus_ratefix bAddEle,50; // bAddEle妮┦タぃ50%
 	
-支持的 Bonus 列表同getbonus.
+や Bonus getbonus.
 	
 ---------------------------------------
 
-*getrateidx <概率数组>;
-*getrateidx <概率>{,<概率>{,<概率>....}};
+*getrateidx <阀瞯计舱>;
+*getrateidx <阀瞯>{,<阀瞯>{,<阀瞯>....}};
 
-根据提供的概率返回该概率值在数组中的位置，被概率值越大选中的概率越大。
+誹矗ㄑ阀瞯赣阀瞯计舱い竚砆阀瞯禫匡い阀瞯禫
 
-例：
+ㄒ
 	setarray .@item[0],501,502,503;
 	setarray .@rate[0],1000,20,10;
 	getitem .@item[getrateidx(.@rate)],1;
 	
-	// 有 1000/(1000+20+10) 的概率获得红色药水(501)
-	// 有 20/(1000+20+10) 的概率获得赤色药水(502)
-	// 有 10/(1000+20+10) 的概率获得黄色药水(503)
+	// Τ 1000/(1000+20+10) 阀瞯莉眔︹媚(501)
+	// Τ 20/(1000+20+10) 阀瞯莉眔í︹媚(502)
+	// Τ 10/(1000+20+10) 阀瞯莉眔独︹媚(503)
 	
 ---------------------------------------
 
-*readstatus <参数>;
+*readstatus <把计>;
 
-获取属性的总量。
+莉妮┦羆秖
 
-参数: 
-    bStr:  获取玩家所拥有的 STR 总数值
-	bAgi:  获取玩家所拥有的 AGI 总数值
-	bVit:  获取玩家所拥有的 VIT 总数值
-	bInt:  获取玩家所拥有的 INT 总数值
-	bDex:  获取玩家所拥有的 DEX 总数值
-	bLuk:  获取玩家所拥有的 LUK 总数值
+把计: 
+    bStr:  莉產┮局Τ STR 羆计
+	bAgi:  莉產┮局Τ AGI 羆计
+	bVit:  莉產┮局Τ VIT 羆计
+	bInt:  莉產┮局Τ INT 羆计
+	bDex:  莉產┮局Τ DEX 羆计
+	bLuk:  莉產┮局Τ LUK 羆计
 	
 ---------------------------------------
 
-*getareamember <团队类型>,{<范围>{,<角色ID>}};
+*getareamember <刮钉摸>,{<璖瞅>{,<à︹ID>}};
 
-获取指定玩家范围内同组队、公会、战场成员数量及AID
+莉﹚產璖瞅ず舱钉そ穦驹初Θ计秖のAID
 
-类型：
-	PARTY_AREA:  范围内的队伍成员
-	GUILD_AREA:  范围内的公会成员
-	BG_AREA:     范围内的战场成员
+摸
+	PARTY_AREA:  璖瞅ず钉ヮΘ
+	GUILD_AREA:  璖瞅ずそ穦Θ
+	BG_AREA:     璖瞅ず驹初Θ
 
-返回值:
-	成员数数量
+:
+	Θ计计秖
 
-返回变量:
-	@member_aid 储存成员AID
+跑秖:
+	@member_aid 纗ΘAID
 
 ---------------------------------------
 
-*getmapmember <团队类型>,"<地图名>",<团队ID>;
+*getmapmember <刮钉摸>,"<瓜>",<刮钉ID>;
 
-获取地图内指定组队、公会、战场成员数量及AID
+莉瓜ず﹚舱钉そ穦驹初Θ计秖のAID
 
-类型：
-	PARTY_AREA:  范围内的队伍成员
-	GUILD_AREA:  范围内的公会成员
-	BG_AREA:     范围内的战场成员
+摸
+	PARTY_AREA:  璖瞅ず钉ヮΘ
+	GUILD_AREA:  璖瞅ずそ穦Θ
+	BG_AREA:     璖瞅ず驹初Θ
 
-返回值:
-	成员数数量
+:
+	Θ计计秖
 
-返回变量:
-	$@member_aid 储存成员AID
+跑秖:
+	$@member_aid 纗ΘAID
 	
 ---------------------------------------
 
-*addatkevent <攻击类型>,<概率>,<次数>,"<事件>",<触发时间间隔>{,<角色ID>};
+*addatkevent <ю阑摸>,<阀瞯>,<Ω计>,"<ㄆン>",<郉祇丁丁筳>{,<à︹ID>};
 
-添加攻击事件, 达到攻击触发的事件条件后, 事件将会自动触发..
+睰ю阑ㄆン, 笷ю阑郉祇ㄆン兵ン, ㄆン盢穦笆郉祇..
 
-攻击类型:
-按攻击范围:
-	BF_SHORT:  近距离攻击
-	BF_LONG:   远距离攻击
-	默认:   BF_SHORT+BF_LONG
-按攻击类型:
-	BF_WEAPON: 物理攻击
-	BF_MAGIC:  魔法攻击
-	BF_MISC:   混合攻击
-	默认:   BF_WEAPON
-按技能类型:
-	BF_NORMAL: 普通攻击
-	BF_SKILL:  技能攻击
-	默认:   如果攻击类型是 BF_WEAPON (only) BF_NORMAL, 否则 BF_SKILL+BF_NORMAL.
+ю阑摸:
+ю阑璖瞅:
+	BF_SHORT:  禯置ю阑
+	BF_LONG:   环禯置ю阑
+	纐粄:   BF_SHORT+BF_LONG
+ю阑摸:
+	BF_WEAPON: 瞶ю阑
+	BF_MAGIC:  臸猭ю阑
+	BF_MISC:   睼ю阑
+	纐粄:   BF_WEAPON
+м摸:
+	BF_NORMAL: 炊硄ю阑
+	BF_SKILL:  мю阑
+	纐粄:   狦ю阑摸琌 BF_WEAPON (only) BF_NORMAL, 玥 BF_SKILL+BF_NORMAL.
 
-概率: 为千分率, 触发事件的概率
-次数: 攻击打到次数后触发事件
-触发时间间隔: 每次触发时间后隔多少毫秒以后才可以触发下一次
+阀瞯: だ瞯, 郉祇ㄆン阀瞯
+Ω计: ю阑ゴΩ计郉祇ㄆン
+郉祇丁丁筳: –Ω郉祇丁筳ぶ睝郉祇Ω
 
-注意!! 如果概率和次数同时被填写, 那么两个条件必须都满足才会触发...
-事件: 被触发的事件名, 格式为"NPCNAME::EVENTNAME"..
+猔種!! 狦阀瞯㎝Ω计砆恶糶, êㄢ兵ンゲ斗常骸ì穦郉祇...
+ㄆン: 砆郉祇ㄆン, Α"NPCNAME::EVENTNAME"..
 
-注意!!!!!!!!如果概率和次数都填写0的话, 每次攻击都会触发事件, 这两个参数请根据情况填写, 如果事件触发太频繁, 可能会因为事件下的代码调用过于频繁造成服务器CPU资源被大量占用的情况..
-
----------------------------------------
-
-*delatkevent <攻击类型>{,<角色ID>};
-
-删除按攻击类型触发的事件的条件.
+猔種!!!!!!!!狦阀瞯㎝Ω计常恶糶0杠, –Ωю阑常穦郉祇ㄆン, 硂ㄢ把计叫誹薄猵恶糶, 狦ㄆン郉祇び繵羉, 穦ㄆン絏秸ノ筁繵羉硑Θ狝叭竟CPU戈方砆秖ノ薄猵..
 
 ---------------------------------------
 
+*delatkevent <ю阑摸>{,<à︹ID>};
 
-*getatkevent <攻击类型>,<标签>{,<角色ID>};
+埃ю阑摸郉祇ㄆン兵ン.
 
-获得按攻击类型触发的事件的条件.
+---------------------------------------
 
-<标签>:
-	为 1 时, 返回 攻击过多少次, 当达到最高次时清零, 并触发事件.
-	为 2 时, 返回 addatkevent指令中第2个参数(<概率>)
-	为 3 时, 返回 addatkevent指令中第3个参数(<次数>)
-	为 4 时, 返回 addatkevent指令中第4个参数("<事件>")
-	为 5 时, 返回 addatkevent指令中第5个参数(<触发时间间隔>)
+
+*getatkevent <ю阑摸>,<夹帽>{,<à︹ID>};
+
+莉眔ю阑摸郉祇ㄆン兵ン.
+
+<夹帽>:
+	 1 ,  ю阑筁ぶΩ, 讽笷程蔼Ω睲箂, 郉祇ㄆン.
+	 2 ,  addatkeventい材2把计(<阀瞯>)
+	 3 ,  addatkeventい材3把计(<Ω计>)
+	 4 ,  addatkeventい材4把计("<ㄆン>")
+	 5 ,  addatkeventい材5把计(<郉祇丁丁筳>)
 
 ---------------------------------------
 
 *gettarget{<GID>};
 
-获取正在攻击目标的GID..
+莉タю阑ヘ夹GID..
 
 ---------------------------------------
 
-*unitskillfixed <GID>,<技能ID>,<念咒修正>,<伤害修正>,<修正类型>{,<持续时间>};
+*unitskillfixed <GID>,<мID>,<├〨タ>,<端甡タ>,<タ摸>{,<尿丁>};
 
-持续时间内, 对技能的念咒时间, 伤害进行修正, 如果设置修正类型为 0, 则直接增加修正的相应数量. 
+尿丁ず, 癸м├〨丁, 端甡秈︽タ, 狦砞竚タ摸 0, 玥钡糤タ莱计秖. 
 
-技能ID:
-	如果技能ID为-1, 对所有技能攻击进行修正
-	如果技能ID为-2, 对所有普通攻击进行修正
-	如果技能ID为-3, 对所有普通攻击和技能攻击进行修正
+мID:
+	狦мID-1, 癸┮Τмю阑秈︽タ
+	狦мID-2, 癸┮Τ炊硄ю阑秈︽タ
+	狦мID-3, 癸┮Τ炊硄ю阑㎝мю阑秈︽タ
 
-修正类型(掩码计算:选择多项掩码相加):
-	&0: 念咒和伤害在原有基础上累加(优先级小于下列所有)
-	&1: 念咒直接修正(<念咒修正>提供的数据就是念咒总时长, 优先级大于 &4)
-	&2: 伤害直接修正(<伤害修正>提供的数据就是技能总伤害, 优先级大于 &8)
-	&4: 念咒根据百分比修正(<念咒修正>提供修正的百分比)
-	&8: 伤害修正根据百分比修正(<伤害修正>提供修正的百分比)
+タ摸(被絏璸衡:匡拒兜被絏):
+	&0: ├〨㎝端甡Τ膀娄仓(涩┮Τ)
+	&1: ├〨钡タ(<├〨タ>矗ㄑ计誹碞琌├〨羆, 涩 &4)
+	&2: 端甡钡タ(<端甡タ>矗ㄑ计誹碞琌м羆端甡, 涩 &8)
+	&4: ├〨誹κだゑタ(<├〨タ>矗ㄑタκだゑ)
+	&8: 端甡タ誹κだゑタ(<端甡タ>矗ㄑタκだゑ)
 
-例:
-	unitskillfixed 19,1000,5000000,3; //将下一次火箭术技能的念咒修改为1秒, 伤害修改为 5000000
-	unitskillfixed 19,1000,5000000,0; //将下一次火箭术技能的念咒累加1秒, 伤害累加 5000000
-	unitskillfixed 19,1000,5000000,2; //将下一次火箭术技能的念咒累加1秒, 伤害修改为 5000000
+ㄒ:
+	unitskillfixed 19,1000,5000000,3; //盢Ω絙砃м├〨э1, 端甡э 5000000
+	unitskillfixed 19,1000,5000000,0; //盢Ω絙砃м├〨仓1, 端甡仓 5000000
+	unitskillfixed 19,1000,5000000,2; //盢Ω絙砃м├〨仓1, 端甡э 5000000
 
 ---------------------------------------
 
 *unitskillfixedreset <GID>;
 
-将之前的修正清零.
+盢ぇ玡タ睲箂.
 
 ---------------------------------------
 
 *gettarget {<GID>};
 
-获取正在攻击目标的GID。
+莉タю阑ヘ夹GID
 
 ---------------------------------------
 
-*homattack <攻击类型>;
+*homattack <ю阑摸>;
 
-开启关闭生命体自动攻击, 因为在2017年的一次更新中禁用了生命体自动攻击, 所以添加此指令.
+秨币闽超ネ㏑蔨笆ю阑, 2017Ω穝い窽ノネ㏑蔨笆ю阑, ┮睰.
 
-<攻击类型> 0: 关闭
-           1: 只会普通攻击
-           2：普通攻击和单体技能
-           3：普通攻击和群体技能
+<ю阑摸> 0: 闽超
+           1: 穦炊硄ю阑
+           2炊硄ю阑㎝虫蔨м
+           3炊硄ю阑㎝竤蔨м
 		   
 ---------------------------------------
 
-*mobdrop <GID>,<魔物ID>{,<掉落倍率>{,<最大掉落概率>}}
+*mobdrop <GID>,<臸ID>{,<奔辅瞯>{,<程奔辅阀瞯>}}
 
-模拟魔物掉落, 该魔物数据库中的掉落物品会依次计算掉落（多个物品可以同时掉落）, 
-掉落位置为<GID>所在的位置，如果<GID>为 0 则物品直接给予脚本相关联的玩家，对于玩家来说AID既是GID。
-掉落概率 = 魔物数据库中物品的掉落概率 x <掉落倍率> / 100
-<最大掉落概率>用来约束最终掉落概率
+家览臸奔辅, 赣臸计誹畐い奔辅珇穦ㄌΩ璸衡奔辅珇奔辅, 
+奔辅竚<GID>┮竚狦<GID> 0 玥珇钡倒ぉ竲セ闽羛產癸產ㄓ弧AID琂琌GID
+奔辅阀瞯 = 臸计誹畐い珇奔辅阀瞯 x <奔辅瞯> / 100
+<程奔辅阀瞯>ノㄓ程沧奔辅阀瞯
 
 ---------------------------------------
 
-*sortarray <数组>{,<标签>};
-*sortarray <参考数组>,<排序数组>,<标签>;
+*sortarray <计舱>{,<夹帽>};
+*sortarray <把σ计舱>,<逼计舱>,<夹帽>;
 
-对数组进行排序。
+癸计舱秈︽逼
 
-<标签>(掩码选项)
-	&1 : 正序排列
-	&2 : 倒序排列
-	&4 : 根据<参考数组>的值对<排序数组>的值进行排序
-	&8 : 根据<参考数组>的值对<参考数组>的键进行排序, 此时<参考数组>正常进行排序, <排序数组>为对键重排的结果的存储数组
+<夹帽>(被絏匡兜)
+	&1 : タ逼
+	&2 : 逼
+	&4 : 誹<把σ计舱>癸<逼计舱>秈︽逼
+	&8 : 誹<把σ计舱>癸<把σ计舱>龄秈︽逼, <把σ计舱>タ盽秈︽逼, <逼计舱>癸龄逼挡狦纗计舱
 
-说明：
-	键为中括号里面的数字值为变量中保存的数字，.@example[键] = 值;
-	排序键值不受限制
+弧
+	龄い珹腹ń计跑秖い玂计.@example[龄] = ;
+	逼龄ぃ
 	
-例1：
+ㄒ1
 	.@example[100005] = 1;
 	.@example[982254] = 2;
 	.@example[852742] = 3;
 	.@example[758787] = 4;
 	
-	sortarray(.@example, .@result, 1 | 8);  //根据.@example值的顺序对.@exampl的键进行正序排序
-	// .@example 为 1,2,3,4
-	// .@result 为 100005,982254,852742,758787
+	sortarray(.@example, .@result, 1 | 8);  //誹.@example抖癸.@exampl龄秈︽タ逼
+	// .@example  1,2,3,4
+	// .@result  100005,982254,852742,758787
 	
-	sortarray(.@example, 2); //对值进行反序排序
-	// .@example 为 4,3,2,1
-例2：
+	sortarray(.@example, 2); //癸秈︽は逼
+	// .@example  4,3,2,1
+ㄒ2
 	setarray .@example[10],10,1,3,8,9,5,7,2,4,6,0;
 	
-	sortarray(.@example); //对值进行正序排序
-	// .@example 为 0,1,2,3,4,5,6,7,8,9,10
-	sortarray(.@example, 2); //对值进行反序排序
-	// .@example 为 10,9,8,7,6,5,4,3,2,1,0
-例3：
+	sortarray(.@example); //癸秈︽タ逼
+	// .@example  0,1,2,3,4,5,6,7,8,9,10
+	sortarray(.@example, 2); //癸秈︽は逼
+	// .@example  10,9,8,7,6,5,4,3,2,1,0
+ㄒ3
 	setarray .@example[0],5,1,4,2,3;
 	setarray .@result[0],10,20,30,40,50;
 	
-	sortarray(.@example, .@result, 2 | 4); //根据.@example值的顺序对.@result的值进行反序排序
-	// .@example 为 5,4,3,2,1 
-	// .@result 为 10,30,50,40,20
+	sortarray(.@example, .@result, 2 | 4); //誹.@example抖癸.@result秈︽は逼
+	// .@example  5,4,3,2,1 
+	// .@result  10,30,50,40,20
 	
-	sortarray(.@example, .@result, 1 | 4); //根据.@example值的顺序对.@result的值进行正序排序
-	// .@example 为 1,2,3,4,5
-	// .@result 为 20,40,50,30,10
+	sortarray(.@example, .@result, 1 | 4); //誹.@example抖癸.@result秈︽タ逼
+	// .@example  1,2,3,4,5
+	// .@result  20,40,50,30,10
 	
-例4：
+ㄒ4
 	setarray .@example[0],5,1,4,2,3;
 	setarray .@result[0],0,0,0,0,0;
 	
-	sortarray(.@example, .@result, 2 | 8); //根据.@example值的顺序对.@exampl的键进行反序排序
-	// .@example 为 5,4,3,2,1
-	// .@result 为 0,2,4,3,1
+	sortarray(.@example, .@result, 2 | 8); //誹.@example抖癸.@exampl龄秈︽は逼
+	// .@example  5,4,3,2,1
+	// .@result  0,2,4,3,1
 
 ---------------------------------------
 
 *npcshopattach "<name>"{,<flag>};
 
-拓展 OnSellItem 事件添加返回 @sold_idx 数组，返回物品在背包中的序列。
+┹甶 OnSellItem ㄆン睰 @sold_idx 计舱珇璉い
 
 ---------------------------------------
 
-*getdaytick("<标准时间格式>");
-*getdaytick(<年>,<月>,<日>{,<时>{,<分>{,<秒>}}});
+*getdaytick("<夹丁Α>");
+*getdaytick(<>,<る>,<ら>{,<>{,<だ>{,<>}}});
 
-根据所提供的时间返回时间戳。从1970年1月1日至提供时间。
-标准时间格式为 "年-月-日 时:分:秒" 或 "年-月-日"
+誹┮矗ㄑ丁丁耊眖19701る1ら矗ㄑ丁
+夹丁Α "-る-ら :だ:" ┪ "-る-ら"
 
-返回值:
-	返回时间戳, 时间戳为数字
+:
+	丁耊, 丁耊计
 	
-例:
+ㄒ:
 	getdaytick("2018-12-31");
 	getdaytick(2018,12,31);
 	getdaytick("2018-12-31 5:23:31");
@@ -1748,527 +1748,527 @@ OnHTTPReceivedEvent 事件返回变量:
 
 *unitmasterid(<gid>);
 
-获得GID对应的主人的GID, 支持宠物、魔物、生命体、佣兵、元素精灵、技能
+莉眔GID癸莱GID, や胐臸ネ㏑蔨じ弘艶м
 
-返回值:
-	主人的GID，如果没有找到主人的话则返回0
-
----------------------------------------
-
-*is_attach({<角色ID>});
-
-获取玩家是否跟脚本有关联, 一般用来判断玩家是否正在跟NPC对话
-一般用在脚本外使用, 如果在脚本外获取 GID 则使用 getattachnpc 指令
-
-例:
-501,Vip_list,VIP菜单,11,10,,70,,,,,0xFFFFFFFF,63,2,,,,,,{ if (is_attach()) dispbottom "使用VIP菜单请先关闭与 "+getunitname(is_attach())+" 的交谈"; },{},{}
-
-prontera,153,179,5	script	is_attach测试	56,{
-	mes "正在与NPC对话,请不要点击关闭,并尝试使用VIP菜单";
-	close;
-}
-
-返回值:
-	正在对话则返回上层关联 NPC 的 GID , 没有在对话返回0;
+:
+	GID狦⊿Τт杠玥0
 
 ---------------------------------------
 
-*getattachnpc({<角色ID>});
+*is_attach({<à︹ID>});
 
-获得玩家当前激活的 NPC 的 GID.
+莉產琌蛤竲セΤ闽羛, ノㄓ耞產琌タ蛤NPC癸杠
+ノ竲セㄏノ, 狦竲セ莉 GID 玥ㄏノ getattachnpc 
 
-prontera,153,179,5	script	getattachnpc测试	56,{
-	mes "正在与NPC对话, NPC 名称: "+getunitname(getattachnpc());
+ㄒ:
+501,Vip_list,VIP垫虫,11,10,,70,,,,,0xFFFFFFFF,63,2,,,,,,{ if (is_attach()) dispbottom "ㄏノVIP垫虫叫闽超蒓 "+getunitname(is_attach())+" ユ酵"; },{},{}
+
+prontera,153,179,5	script	is_attach代刚	56,{
+	mes "タ蒓NPC癸杠,叫ぃ璶翴阑闽超,沽刚ㄏノVIP垫虫";
 	close;
 }
 
-返回值:
-	NPC 的 GID , 没有在对话返回0;
+:
+	タ癸杠玥糷闽羛 NPC  GID , ⊿Τ癸杠0;
+
+---------------------------------------
+
+*getattachnpc({<à︹ID>});
+
+莉眔產讽玡縀 NPC  GID.
+
+prontera,153,179,5	script	getattachnpc代刚	56,{
+	mes "タ蒓NPC癸杠, NPC 嘿: "+getunitname(getattachnpc());
+	close;
+}
+
+:
+	NPC  GID , ⊿Τ癸杠0;
 	
 ---------------------------------------
 
-*unitskilluse <GID>,<技能ID>,<技能等级>{,<目标GID>,<吟唱时间>{,<是否可打断>}};
-*unitskilluse <GID>,"<技能名称>",<技能等级>{,<目标GID>,<吟唱时间>{,<是否可打断>}};
+*unitskilluse <GID>,<мID>,<м单>{,<ヘ夹GID>,<佰丁>{,<琌ゴ耞>}};
+*unitskilluse <GID>,"<м嘿>",<м单>{,<ヘ夹GID>,<佰丁>{,<琌ゴ耞>}};
 
-对目标使用技能, 效果类似于unitskilluseid, 但指令会自动判断地面技能还是目标技能, 当使用技能为地面技能时将会以目标为中心释放技能。
-当是否打断被省略时，技能会根据 skill_db.txt 中的 castcancel 来判断是否可打断。
+癸ヘ夹ㄏノм, 狦摸unitskilluseid, 穦笆耞м临琌ヘ夹м, 讽ㄏノмм盢穦ヘ夹いみ睦м
+讽琌ゴ耞砆菠м穦誹 skill_db.txt い castcancel ㄓ耞琌ゴ耞
 
 ---------------------------------------
 
-* mobskill <魔物GID>,<技能ID>,<技能等级>,<咏唱时间(秒)>,<是否可打断>,<目标类型>{,<偏移x>,<偏移y>};
-* mobskill <魔物GID>,<"技能名称">,<技能等级>,<咏唱时间(秒)>,<是否可打断>,<目标类型>{,<偏移x>,<偏移y>};
+* mobskill <臸GID>,<мID>,<м单>,<碟佰丁()>,<琌ゴ耞>,<ヘ夹摸>{,<熬簿x>,<熬簿y>};
+* mobskill <臸GID>,<"м嘿">,<м单>,<碟佰丁()>,<琌ゴ耞>,<ヘ夹摸>{,<熬簿x>,<熬簿y>};
 
-魔物使用技能, 如果怪物正在咏唱则取消目前释放的技能, 此指令对写脚本的人非常友好.
-作者kuku
+臸ㄏノм, 狦┣タ碟佰玥ヘ玡睦м, 癸糶竲セ獶盽ね.
+kuku
 
-<是否可打断>
-   0: 不可打断
-   1: 可以打断
+<琌ゴ耞>
+   0: ぃゴ耞
+   1: ゴ耞
 
-<目标类型>
-   0: 自己
-   1: 怪物当前目标
-   2: 怪物的主人
-   3: 随机目标
+<ヘ夹摸>
+   0: 
+   1: ┣讽玡ヘ夹
+   2: ┣
+   3: 繦审ヘ夹
    
-<偏移x> 地面技能相对于目标坐标x轴的偏移量
-<偏移y> 地面技能相对于目标坐标y轴的偏移量
+<熬簿x> м癸ヘ夹Г夹x禸熬簿秖
+<熬簿y> м癸ヘ夹Г夹y禸熬簿秖
 
 ---------------------------------------
 
-*sleep3 <时间>
+*sleep3 <丁>
 
-延时函数, 不会丢失与玩家的关联, 但是玩家与脚本没有关联也不会报错.
+┑ㄧ计, ぃ穦メア蒓產闽羛, 琌產蒓竲セ⊿Τ闽羛ぃ穦厨岿.
 
 ---------------------------------------
 
 *unitgettarget(<GID>);
 *gettarget(<GID>);
 
-获取GID对象正在攻击的目标的GID.
+莉GID癸禜タю阑ヘ夹GID.
 
 ---------------------------------------
 
 *when_progressbar_abort_doevent;
-*when_progressbar_abort_doevent(<角色ID>);
+*when_progressbar_abort_doevent(<à︹ID>);
 
-使用此脚本后 progressbar 被打断后的事件 OnPCProgressAbortEvent 才会被触发.
-
----------------------------------------
-
-*isequippedcnt2(<物品ID>{,<物品ID>{,<物品ID>{,<物品ID>}}});
-
-用法同 isequippedcnt 可以支持任何物品ID, 主要用于拓展附魔道具. 
-
-返回值:
-	返回数量
+ㄏノ竲セ progressbar 砆ゴ耞ㄆン OnPCProgressAbortEvent 穦砆郉祇.
 
 ---------------------------------------
 
-*isequipped2(<物品ID>{,<物品ID>{,<物品ID>{,<物品ID>}}})
+*isequippedcnt2(<珇ID>{,<珇ID>{,<珇ID>{,<珇ID>}}});
 
-用法同 isequipped 可以支持任何物品ID, 主要用于拓展附魔道具. 
+ノ猭 isequippedcnt やヴ珇ID, 璶ノ┹甶臸笵ㄣ. 
 
-返回值:
-	返回数量
-
----------------------------------------
-
-*instance_enter_left {<角色编号>};
-
-返回上次离开副本的位置..必须在 BatterRA.conf 中配置 instance_leave_record 才能生效
-该函数通过解析 instance_record$ 得到副本信息, 可自行判断变量中数据的合法性
-不是同一个副本不会被传入, 可用于掉线重进进入副本, 也可用于离开副本后重回副本
-
-返回值：
-	参考 instance_enter
+:
+	计秖
 
 ---------------------------------------
 
-*instance_record {<标签>{,<角色ID>}};
+*isequipped2(<珇ID>{,<珇ID>{,<珇ID>{,<珇ID>}}})
 
-可用来检查变量 instance_record$ 保存的数据是现在玩家正在进行的副本
-可用于获取变量 instance_record$ 中保存的地图、X坐标、Y坐标
+ノ猭 isequipped やヴ珇ID, 璶ノ┹甶臸笵ㄣ. 
 
-<标签>
-	留空 ：检查 instance_record$ 保存的数据是现在玩家正在进行的副本, 合法返回1, 否则返回0
-	1 : 返回副本的原地图 可通过 instance_map函数获取副本地图, 失败返回0
-	2 ：返回X坐标, 失败返回0
-	3 ：返回Y坐标, 失败返回0
+:
+	计秖
 
 ---------------------------------------
 
-*getmobdmglog(<魔物GID>,<CID变量>,<伤害变量>{,<最大获取数量>{,<根据伤害降序排序>})};
+*instance_enter_left {<à︹絪腹>};
 
-用来获取对魔物造成伤害排名数据, 数据存入<存储变量>, 玩家下线, 死亡后重新开始则该玩家的相应数据会被清空。
-此指令最多只能获得30个伤害数据。
+Ω置秨捌セ竚..ゲ斗 BatterRA.conf い皌竚 instance_leave_record ネ
+赣ㄧ计硄筁秆猂 instance_record$ 眔捌セ獺, ︽耞跑秖い计誹猭┦
+ぃ琌捌セぃ穦砆肚, ノ奔絬秈秈捌セ, ノ置秨捌セ捌セ
 
-<CID变量>
-	用于存储玩家CID
+
+	把σ instance_enter
+
+---------------------------------------
+
+*instance_record {<夹帽>{,<à︹ID>}};
+
+ノㄓ浪琩跑秖 instance_record$ 玂计誹琌瞷產タ秈︽捌セ
+ノ莉跑秖 instance_record$ い玂瓜XГ夹YГ夹
+
+<夹帽>
+	痙 浪琩 instance_record$ 玂计誹琌瞷產タ秈︽捌セ, 猭1, 玥0
+	1 : 捌セ瓜 硄筁 instance_mapㄧ计莉捌セ瓜, ア毖0
+	2 XГ夹, ア毖0
+	3 YГ夹, ア毖0
+
+---------------------------------------
+
+*getmobdmglog(<臸GID>,<CID跑秖>,<端甡跑秖>{,<程莉计秖>{,<誹端甡逼>})};
+
+ノㄓ莉癸臸硑Θ端甡逼计誹, 计誹<纗跑秖>, 產絬, 穝秨﹍玥赣產莱计誹穦砆睲
+程莉眔30端甡计誹
+
+<CID跑秖>
+	ノ纗產CID
 	
-<伤害变量>
-	用于存储伤害数值
+<端甡跑秖>
+	ノ纗端甡计
 	
-<根据伤害降序排序>
-	0 : 否 (根据玩家伤害顺序排序)
-	1 : 是 (默认自动排序)
+<誹端甡逼>
+	0 :  (誹產端甡抖逼)
+	1 : 琌 (纐粄笆逼)
 
-返回值:
-	返回<存储变量>中数据的个数。
-
----------------------------------------
-
-*charid2rid(角色ID);
-
-返回角色ID(charid)对应的账号ID(rid, gid, aid)
-
-返回值:
-	返回AID
+:
+	<纗跑秖>い计誹计
 
 ---------------------------------------
 
-*unithide <GID>,<角色ID>{,<特效编号>};
+*charid2rid(à︹ID);
 
-临时隐藏某个GID，隐藏只针对<角色ID>，当玩家离开再回来时还可以看到这个目标。
-可通过NPC事件 OnDisplay 配合长期对某个玩家隐藏/显示指定NPC，OnDisplay使用方法参见 npc\BetterRa\BetterRa_event_demo.txt
+à︹ID(charid)癸莱姐腹ID(rid, gid, aid)
 
-特效编号:  
-	0: 没有特效
-	1: 登出特效
-	2: 瞬移特效(默认)
-	3: 死亡特效
+:
+	AID
 
 ---------------------------------------
 
-*unitshow <GID>,<角色ID>;
+*unithide <GID>,<à︹ID>{,<疭絪腹>};
 
-临时显示某个GID，显示只针对<角色ID>，当玩家离开再回来时还是看不到这个目标。
-可通过NPC事件 OnDisplay 配合长期对某个玩家隐藏/显示指定NPC，OnDisplay使用方法参见 npc\BetterRa\BetterRa_event_demo.txt
+羬留旅琘GID留旅皐癸<à︹ID>讽產置秨ㄓ临硂ヘ夹
+硄筁NPCㄆン OnDisplay 皌戳癸琘產留旅/陪ボ﹚NPCOnDisplayㄏノよ猭把ǎ npc\BetterRa\BetterRa_event_demo.txt
 
----------------------------------------
-
-*preg_match(<匹配正则>,<匹配文本>{,<索引位置>});
-
-此指令为官方指令，BetterRA支持取出匹配子项，匹配文本被保存在 $@p$[0] 中。
-子项被保存在$@p$[1]、$@p$[2]、$@p$[3]、$@p$[4].....中
-
-返回值：
-	匹配数量(即$@p$数组成员数)
+疭絪腹:  
+	0: ⊿Τ疭
+	1: 祅疭
+	2: 俐簿疭(纐粄)
+	3: 疭
 
 ---------------------------------------
 
-*showvending("<NPC名称>",<是否显示>{,"<招牌名称>"});
+*unitshow <GID>,<à︹ID>;
 
-使指定<NPC名称>头上显示露天商店的招牌, 点击招牌可触发NPC
+羬陪ボ琘GID陪ボ皐癸<à︹ID>讽產置秨ㄓ临琌ぃ硂ヘ夹
+硄筁NPCㄆン OnDisplay 皌戳癸琘產留旅/陪ボ﹚NPCOnDisplayㄏノよ猭把ǎ npc\BetterRa\BetterRa_event_demo.txt
 
-是否显示:
-	0 - 隐藏招牌
-	1 - 显示招牌
+---------------------------------------
+
+*preg_match(<で皌タ玥>,<で皌ゅセ>{,<ま竚>});
+
+﹛よBetterRAやで皌兜で皌ゅセ砆玂 $@p$[0] い
+兜砆玂$@p$[1]$@p$[2]$@p$[3]$@p$[4].....い
+
+
+	で皌计秖($@p$计舱Θ计)
+
+---------------------------------------
+
+*showvending("<NPC嘿>",<琌陪ボ>{,"<┷礟嘿>"});
+
+ㄏ﹚<NPC嘿>繷陪ボ臩ぱ坝┍┷礟, 翴阑┷礟郉祇NPC
+
+琌陪ボ:
+	0 - 留旅┷礟
+	1 - 陪ボ┷礟
 	
-别名: showvend
+: showvend
 
-用法:
+ノ猭:
 prontera,150,150,4	shop	Vend_Title_Test	48,501:-1
 
 -	script	NPC_Vend	-1,{
 	end;
 	OnInit:
-		showvending("Vend_Title_Test", 1, "有招牌的商店");
+		showvending("Vend_Title_Test", 1, "Τ┷礟坝┍");
 	end;
 }
 
-返回值:
-	操作成功则返回 1, 失败则返回 0
+:
+	巨Θ玥 1, ア毖玥 0
 
 ---------------------------------------
 
-*showbuying("<NPC名称>",<是否显示>{,"<招牌名称>"});
+*showbuying("<NPC嘿>",<琌陪ボ>{,"<┷礟嘿>"});
 
-使指定<NPC名称>头上显示采购商店的招牌, 点击招牌可触发NPC
+ㄏ﹚<NPC嘿>繷陪ボ潦坝┍┷礟, 翴阑┷礟郉祇NPC
 
-是否显示:
-	0 - 隐藏招牌
-	1 - 显示招牌
+琌陪ボ:
+	0 - 留旅┷礟
+	1 - 陪ボ┷礟
 
-用法:
+ノ猭:
 prontera,150,150,4	shop	Buy_Title_Test	48,501:-1
 
 -	script	NPC_BUY	-1,{
 	end;
 	OnInit:
-		showbuying("Buy_Title_Test", 1, "有招牌的商店");
+		showbuying("Buy_Title_Test", 1, "Τ┷礟坝┍");
 	end;
 }
 
-返回值:
-	操作成功则返回 1, 失败则返回 0
+:
+	巨Θ玥 1, ア毖玥 0
 
 ---------------------------------------
 
-*killaroundmonster <GID>,<范围>,<魔物mode>;
+*killaroundmonster <GID>,<璖瞅>,<臸mode>;
 
-杀死GID范围内的魔物, 带有<魔物mode>的魔物不会被炸死
+炳GID璖瞅ず臸, 盿Τ<臸mode>臸ぃ穦砆
 
-<魔物mode>参数可以多选, 用|连接
+<臸mode>把计匡, ノ|硈钡
 
-注意：指令对无敌的魔物(UMOB_DMGIMMUNE)、华丽水晶和守护石无效
+猔種癸礚寄臸(UMOB_DMGIMMUNE)地腞垂㎝臔ホ礚
 
-列：
-    killaroundmonster getcharid(3),10,MD_MVP; //杀死除了MVP之外的10格范围内的魔物
+
+    killaroundmonster getcharid(3),10,MD_MVP; //炳埃MVPぇ10璖瞅ず臸
 	
 ---------------------------------------
 
-*isloggedin2 <角色ID>;
+*isloggedin2 <à︹ID>;
 
-获取玩家是否在线, 在线则返回账号ID (account id) 不在线则返回 0
-
----------------------------------------
-
-*unitatkeventmark <GID>,<标记值>;
-
-指令为 OnPCAttackFilter 事件的标记指令, 用于标记玩家、魔物、宠物、生命体、佣兵等。
-当被标记的魔物被攻击时会强制触发 OnPCAttackFilter 事件, 无视 BetterRA.conf 中 attack_event 配置,
-事件中返回的 dmg_mark 为此处设定的 <标记值>
+莉產琌絬, 絬玥姐腹ID (account id) ぃ絬玥 0
 
 ---------------------------------------
 
-*unitatkedeventmark <GID>,<标记值>;
+*unitatkeventmark <GID>,<夹癘>;
 
-指令为 OnPCAttackedFilter 事件的标记指令, 用于标记玩家、魔物、宠物、生命体、佣兵等。
-当被标记的魔物被攻击时会强制触发 OnPCAttackedFilter 事件, 无视 BetterRA.conf 中 attacked_event 配置,
-事件中返回的 dmg_mark 为此处设定的 <标记值>
-
----------------------------------------
-
-*setcell "<地图名称>",<x1>,<y1>,<x2>,<y2>,<类型>,<开关>;
-
-加入新类型 CELL_SAFEZONE 设置安全区, 安全区外的玩家或魔物不可以以安全区内的玩家为目标(包括GVG, PVP地图)
+ OnPCAttackFilter ㄆン夹癘, ノ夹癘產臸胐ネ㏑蔨单
+讽砆夹癘臸砆ю阑穦眏郉祇 OnPCAttackFilter ㄆン, 礚跌 BetterRA.conf い attack_event 皌竚,
+ㄆンい dmg_mark 矪砞﹚ <夹癘>
 
 ---------------------------------------
 
-*checkcell ("<地图名称>",<x坐标>,<y坐标>,<类型>);
+*unitatkedeventmark <GID>,<夹癘>;
 
-加入新类型 CELL_CHKSAFEZONE 安全区检查
-
----------------------------------------
-
-*setquesttime <任务ID>,<时间(秒)>{,<角色ID>};
-
-设置任务到期时间, 如果玩家没有任务时, 赋予任务并设置到期时间, 到期时间无视 quest_db.txt 中的第二项
-当玩家有该任务时, 则只设置任务到期时间
+ OnPCAttackedFilter ㄆン夹癘, ノ夹癘產臸胐ネ㏑蔨单
+讽砆夹癘臸砆ю阑穦眏郉祇 OnPCAttackedFilter ㄆン, 礚跌 BetterRA.conf い attacked_event 皌竚,
+ㄆンい dmg_mark 矪砞﹚ <夹癘>
 
 ---------------------------------------
 
-*runitemscript <物品ID>,{<类型>{,<角色ID>}};
+*setcell "<瓜嘿>",<x1>,<y1>,<x2>,<y2>,<摸>,<秨闽>;
 
-运行物品的脚本..
+穝摸 CELL_SAFEZONE 砞竚跋, 跋產┪臸ぃ跋ず產ヘ夹(珹GVG, PVP瓜)
 
-<类型>:
+---------------------------------------
+
+*checkcell ("<瓜嘿>",<xГ夹>,<yГ夹>,<摸>);
+
+穝摸 CELL_CHKSAFEZONE 跋浪琩
+
+---------------------------------------
+
+*setquesttime <ヴ叭ID>,<丁()>{,<à︹ID>};
+
+砞竚ヴ叭戳丁, 狦產⊿Τヴ叭, 结ぉヴ叭砞竚戳丁, 戳丁礚跌 quest_db.txt い材兜
+讽產Τ赣ヴ叭, 玥砞竚ヴ叭戳丁
+
+---------------------------------------
+
+*runitemscript <珇ID>,{<摸>{,<à︹ID>}};
+
+笲︽珇竲セ..
+
+<摸>:
  0 - Script
  1 - OnEquip_Script
  2 - OnUnequip_Script
 
-成功返回1, 失败返回0
+Θ1, ア毖0
 
 ---------------------------------------
 
 *pcisdead {<GID>};
 
-检查玩家是否死亡, 死亡返回 1, 未死亡或者不在线时返回 0 
+浪琩產琌,  1, ゼ┪ぃ絬 0 
 
 ---------------------------------------
 
-*unitdamage <GID>,<伤害值>{,<打击次数>};
-*unitdamagerate <GID>,<伤害扣除MAXHP比例>{,<打击次数>};
+*unitdamage <GID>,<端甡>{,<ゴ阑Ω计>};
+*unitdamagerate <GID>,<端甡Ι埃MAXHPゑㄒ>{,<ゴ阑Ω计>};
 
-使目标受到伤害值, 可以显示伤害数字, 当受到伤害为玩家时, 多次打击没有黄色伤害值.
-
----------------------------------------
-
-*unitsleep <GID>,<时间毫秒>;
-
-延迟一定时间, 指令与GID绑定, 当GID在延迟过程中不存在时返回 0
+ㄏヘ夹端甡, 陪ボ端甡计, 讽端甡產, Ωゴ阑⊿Τ独︹端甡.
 
 ---------------------------------------
 
-*unitsleepend <GID>,<时间毫秒>;
+*unitsleep <GID>,<丁睝>;
 
-延迟一定时间, 指令与GID绑定, 当GID在延迟过程中不存在时脚本停止
+┑筐﹚丁, 蒓GID竕﹚, 讽GID┑筐筁祘いぃ 0
 
 ---------------------------------------
 
-*unitspecialeffect <GID>,<特效ID>{,<发送目标>{{,<目标GID>}});
+*unitsleepend <GID>,<丁睝>;
 
-使指定实体<GID>显示一个特效效果, 类似于 specialeffect 不过他可以显示给任何目标
+┑筐﹚丁, 蒓GID竕﹚, 讽GID┑筐筁祘いぃ竲セ氨ゎ
 
-发送目标
-   AREA - 发送给可视范围内的玩家(默认)
-   SELF - 发送给自己, 如果指定<目标GID> 则特效只能指定玩家看到
-   PARTY_AREA - 发送给可视范围内的指定队伍
-   GUILD_AREA - 发送给可视范围内的指定公会
-   BG_AREA - 发送给可视范围内的指定BG队伍
+---------------------------------------
+
+*unitspecialeffect <GID>,<疭ID>{,<祇癳ヘ夹>{{,<ヘ夹GID>}});
+
+ㄏ﹚龟蔨<GID>陪ボ疭狦, 摸 specialeffect ぃ筁陪ボ倒ヴヘ夹
+
+祇癳ヘ夹
+   AREA - 祇癳倒跌璖瞅ず產(纐粄)
+   SELF - 祇癳倒, 狦﹚<ヘ夹GID> 玥疭﹚產
+   PARTY_AREA - 祇癳倒跌璖瞅ず﹚钉ヮ
+   GUILD_AREA - 祇癳倒跌璖瞅ず﹚そ穦
+   BG_AREA - 祇癳倒跌璖瞅ず﹚BG钉ヮ
    
 ---------------------------------------
 
-*specialeffectnum(<特效ID>,<特效参数>{,<发送目标>{,<源GID>{,<目标GID>}}});
-*specialeffectnum(<特效ID>,<特效参数>{,<发送目标>{,"<源NPC名>"{,<目标GID>}}});
+*specialeffectnum(<疭ID>,<疭把计>{,<祇癳ヘ夹>{,<方GID>{,<ヘ夹GID>}}});
+*specialeffectnum(<疭ID>,<疭把计>{,<祇癳ヘ夹>{,"<方NPC>"{,<ヘ夹GID>}}});
 
-使目标显示一个带参数的特效效果, 如果指定 <源GID>("<源NPC名>") 则特效会显示在指定的源实体上
+ㄏヘ夹陪ボ盿把计疭狦, 狦﹚ <方GID>("<方NPC>") 玥疭穦陪ボ﹚方龟蔨
 
-发送目标
-   AREA - 发送给可视范围内的玩家(默认)
-   SELF - 发送给自己, 如果指定<目标GID> 则特效只能指定玩家看到
-   PARTY_AREA - 发送给可视范围内的指定队伍
-   GUILD_AREA - 发送给可视范围内的指定公会
-   BG_AREA - 发送给可视范围内的指定BG队伍
-
----------------------------------------
-
-*removespecialeffect(<特效ID>{,<发送目标>{,<源GID>{,<目标GID>}}});
-*removespecialeffect(<特效ID>{,<发送目标>{,"<源NPC名>"{,<目标GID>}}});
-
-移除目标身上的一个特效效果, 如果指定 <源GID>("<源NPC名>") 则特效会显示在指定的源实体上
-
-发送目标
-   AREA - 发送给可视范围内的玩家(默认)
-   SELF - 发送给自己, 如果指定<目标GID> 则特效只能指定玩家看到
-   PARTY_AREA - 发送给可视范围内的指定队伍
-   GUILD_AREA - 发送给可视范围内的指定公会
-   BG_AREA - 发送给可视范围内的指定BG队伍
-
-注意: 本指令只在 20181002 以上客户端有效. 
+祇癳ヘ夹
+   AREA - 祇癳倒跌璖瞅ず產(纐粄)
+   SELF - 祇癳倒, 狦﹚<ヘ夹GID> 玥疭﹚產
+   PARTY_AREA - 祇癳倒跌璖瞅ず﹚钉ヮ
+   GUILD_AREA - 祇癳倒跌璖瞅ず﹚そ穦
+   BG_AREA - 祇癳倒跌璖瞅ず﹚BG钉ヮ
 
 ---------------------------------------
 
-*getcomputeruid {<角色ID>};
+*removespecialeffect(<疭ID>{,<祇癳ヘ夹>{,<方GID>{,<ヘ夹GID>}}});
+*removespecialeffect(<疭ID>{,<祇癳ヘ夹>{,"<方NPC>"{,<ヘ夹GID>}}});
 
-获取玩家机器码, 只有客户端加载了防外挂dll才可以使用
+簿埃ヘ夹ō疭狦, 狦﹚ <方GID>("<方NPC>") 玥疭穦陪ボ﹚方龟蔨
 
----------------------------------------
+祇癳ヘ夹
+   AREA - 祇癳倒跌璖瞅ず產(纐粄)
+   SELF - 祇癳倒, 狦﹚<ヘ夹GID> 玥疭﹚產
+   PARTY_AREA - 祇癳倒跌璖瞅ず﹚钉ヮ
+   GUILD_AREA - 祇癳倒跌璖瞅ず﹚そ穦
+   BG_AREA - 祇癳倒跌璖瞅ず﹚BG钉ヮ
 
-*getsameuidinfo {<玩家机器码>};
-
-获得某个机器码在线的玩家数以及玩家的角色编号等信息.
-
-如果执行成功的话, 会赋予以下数组在线玩家的信息:
-
-$@sameuid_aid[]		使用指定机器码在线的玩家账号编号数组(AccountID)
-$@sameuid_cid[]		使用指定机器码在线的玩家角色编号数组(CharID)
-$@sameuid_name$[]	使用指定机器码在线的玩家角色名数组
-
-$@sameuid_amount 使用指定机器码登录的玩家个数.
+猔種: セ 20181002 め狠Τ. 
 
 ---------------------------------------
 
-*countrentitem(<物品ID>{,<账号ID>})
-*countrentitem2(<物品ID>,<鉴定>,<精炼>,<属性>,<卡片1>,<卡片2>,<卡片3>,<卡片4>{,<账号ID>})
-*countrentitem3(<物品ID>,<鉴定>,<精炼>,<属性>,<卡片1>,<卡片2>,<卡片3>,<卡片4>,<RandomIDArray>,<RandomValueArray>,<RandomParamArray>{,<accountID>})
-*countrentitem3("<item name>",<鉴定>,<精炼>,<属性>,<卡片1>,<卡片2>,<卡片3>,<卡片4>,<RandomIDArray>,<RandomValueArray>,<RandomParamArray>{,<accountID>})
+*getcomputeruid {<à︹ID>};
 
-指令用于获取租赁物品的数量, 可以用于制作的时候, 通过 (countitem - countrentitem) 计算出非租赁物品的数量, 用法请参考 countitem
+莉產审竟絏, Τめ狠更ň珽dllㄏノ
 
 ---------------------------------------
 
-*monster     "<地图名>",<x>,<y>,"<显示的名称>",<魔物ID>,<数量>{,"<死亡触发标签>",<体型>,<AI>};
-*areamonster "<地图名>",<x1>,<y1>,<x2>,<y2>,"<显示的名称>",<魔物ID>,<数量>{,"<死亡触发标签>",<体型>,<AI>};
+*getsameuidinfo {<產审竟絏>};
 
-指令返返回最后一个召唤魔物的GID, 召唤失败返回0, 此指令只在原指令上做了返回ID的优化, 便于写脚本
+莉眔琘审竟絏絬產计の產à︹絪腹单獺.
+
+狦磅︽Θ杠, 穦结ぉ计舱絬產獺:
+
+$@sameuid_aid[]		ㄏノ﹚审竟絏絬產姐腹絪腹计舱(AccountID)
+$@sameuid_cid[]		ㄏノ﹚审竟絏絬產à︹絪腹计舱(CharID)
+$@sameuid_name$[]	ㄏノ﹚审竟絏絬產à︹计舱
+
+$@sameuid_amount ㄏノ﹚审竟絏祅魁產计.
 
 ---------------------------------------
 
-*getbrokencount({<角色ID>});
+*countrentitem(<珇ID>{,<姐腹ID>})
+*countrentitem2(<珇ID>,<懦﹚>,<弘芬>,<妮┦>,<1>,<2>,<3>,<4>{,<姐腹ID>})
+*countrentitem3(<珇ID>,<懦﹚>,<弘芬>,<妮┦>,<1>,<2>,<3>,<4>,<RandomIDArray>,<RandomValueArray>,<RandomParamArray>{,<accountID>})
+*countrentitem3("<item name>",<懦﹚>,<弘芬>,<妮┦>,<1>,<2>,<3>,<4>,<RandomIDArray>,<RandomValueArray>,<RandomParamArray>{,<accountID>})
 
-获取背包中损坏装备的数量。
+ノ莉割珇计秖, ノ, 硄筁 (countitem - countrentitem) 璸衡獶割珇计秖, ノ猭叫把σ countitem
+
+---------------------------------------
+
+*monster     "<瓜>",<x>,<y>,"<陪ボ嘿>",<臸ID>,<计秖>{,"<郉祇夹帽>",<蔨>,<AI>};
+*areamonster "<瓜>",<x1>,<y1>,<x2>,<y2>,"<陪ボ嘿>",<臸ID>,<计秖>{,"<郉祇夹帽>",<蔨>,<AI>};
+
+程酬臸GID, 酬ア毖0, 暗ID涩て, 獽糶竲セ
+
+---------------------------------------
+
+*getbrokencount({<à︹ID>});
+
+莉璉い穕Д杆称计秖
 
 ---------------------------------------
 
 *mobattached();
 
-脚本是否与魔物相关联, 是则返回魔物GID, 否则返回 0;
-一般用于 OnTouchNPC 获取关联魔物, 与 getattachedrid + getunittype 用法相同。
+竲セ琌蒓臸闽羛, 琌玥臸GID, 玥 0;
+ノ OnTouchNPC 莉闽羛臸, 蒓 getattachedrid + getunittype ノ猭
 
 ---------------------------------------
 
-*setgroupid <权限等级>{,<角色ID>};
-*setgroupid <权限等级>{,<"角色名">};
+*setgroupid <舦单>{,<à︹ID>};
+*setgroupid <舦单>{,<"à︹">};
 
-赋予玩家新的权限等级, 玩家不在线会失败并报错.
+结ぉ產穝舦单, 產ぃ絬穦ア毖厨岿.
 
 ---------------------------------------
 
-getunitstatus <GID>,<类型>;
-getunitstatus <类型>;
+getunitstatus <GID>,<摸>;
+getunitstatus <摸>;
 
-获得相应GID (玩家、魔物、宠物、生命体、佣兵、元素、NPC) 的战斗属性.
+莉眔莱GID (產臸胐ネ㏑蔨じNPC) 驹ゆ妮┦.
 
-类型:
-	STATUS_HP			血量
-	STATUS_SP			蓝量
-	STATUS_MAXHP		最大血量
-	STATUS_MAXSP		最大蓝量
-	STATUS_STR			总力量值
-	STATUS_AGI			总敏捷值
-	STATUS_VIT			总体力值
-	STATUS_INT			总智力值
-	STATUS_DEX			总灵巧值
-	STATUS_LUK			总幸运值
-	STATUS_ATK			总物攻
-	STATUS_ATK_L		物攻(左值) 或 除玩家外获得最小物攻
-	STATUS_ATK_R 		物攻(右值) 或 除玩家外获得最大物攻
-	STATUS_MATK			总魔攻
-	STATUS_MATK_L		魔攻(左值) 或 除玩家外获得最小魔攻
-	STATUS_MATK_R		魔攻(右值) 或 除玩家外获得最大魔攻
-	STATUS_SPEED		移动速度
-	STATUS_ADELAY		攻击后延迟
-	STATUS_AMOTION		攻击后行走延迟
-	STATUS_DMOTION		被攻击后延迟
+摸:
+	STATUS_HP			﹀秖
+	STATUS_SP			屡秖
+	STATUS_MAXHP		程﹀秖
+	STATUS_MAXSP		程屡秖
+	STATUS_STR			羆秖
+	STATUS_AGI			羆庇倍
+	STATUS_VIT			羆蔨
+	STATUS_INT			羆醇
+	STATUS_DEX			羆艶ォ
+	STATUS_LUK			羆┋笲
+	STATUS_ATK			羆ю
+	STATUS_ATK_L		ю(オ) ┪ 埃產莉眔程ю
+	STATUS_ATK_R 		ю() ┪ 埃產莉眔程ю
+	STATUS_MATK			羆臸ю
+	STATUS_MATK_L		臸ю(オ) ┪ 埃產莉眔程臸ю
+	STATUS_MATK_R		臸ю() ┪ 埃產莉眔程臸ю
+	STATUS_SPEED		簿笆硉
+	STATUS_ADELAY		ю阑┑筐
+	STATUS_AMOTION		ю阑︽ǐ┑筐
+	STATUS_DMOTION		砆ю阑┑筐
 	STATUS_MODE			MODE
-	STATUS_HIT			命中率
-	STATUS_FLEE_L		回避率
-	STATUS_FLEE_R		完全回避
-	STATUS_CRI			暴击率
-	STATUS_DEF_L		物防(左值)
-	STATUS_DEF_R		物防(右值)
-	STATUS_MDEF_L		魔防(左值)
-	STATUS_MDEF_R		魔防(右值)
-	STATUS_ATK_ELE		攻击属性
-	STATUS_ATK_RANGE	攻击范围
-	STATUS_DEF_ELE		防御属性
-	STATUS_DEF_ELE_LV 	防御属性等级
-	STATUS_SIZE			体型
-	STATUS_RACE			种族
-	STATUS_CLASS		职业(外观ID)
-	STATUS_ASPD			攻速
+	STATUS_HIT			㏑い瞯
+	STATUS_FLEE_L		磷瞯
+	STATUS_FLEE_R		Ч磷
+	STATUS_CRI			忌阑瞯
+	STATUS_DEF_L		ň(オ)
+	STATUS_DEF_R		ň()
+	STATUS_MDEF_L		臸ň(オ)
+	STATUS_MDEF_R		臸ň()
+	STATUS_ATK_ELE		ю阑妮┦
+	STATUS_ATK_RANGE	ю阑璖瞅
+	STATUS_DEF_ELE		ň眘妮┦
+	STATUS_DEF_ELE_LV 	ň眘妮┦单
+	STATUS_SIZE			蔨
+	STATUS_RACE			销壁
+	STATUS_CLASS		戮穨(芠ID)
+	STATUS_ASPD			ю硉
 	
-返回值:
-	相应的战斗属性
+:
+	莱驹ゆ妮┦
 
 ----------------------------------------
 
-*skf_src_status <类型>;
+*skf_src_status <摸>;
 
-获取攻击者的基础属性, 用于自定义技能公式, 必须在 skill_formula_db.yml 文件中使用..
+莉ю阑膀娄妮┦, ノ﹚竡мそΑ, ゲ斗 skill_formula_db.yml ゅンいㄏノ..
 
-类型:
-	参考 getunitstatus 指令
-
-----------------------------------------
-
-*skf_target_status <类型>;
-
-获取目标(被攻击者)的基础属性, 用于自定义技能公式, 必须在 skill_formula_db.yml 文件中使用..
-
-类型:
-	参考 getunitstatus 指令
+摸:
+	把σ getunitstatus 
 
 ----------------------------------------
 
-*skf_attr_fix <伤害>;
+*skf_target_status <摸>;
 
-计算本次伤害的属性修正, 用于自定义技能公式, 必须在 skill_formula_db.yml 中的 Formula 部分使用..
+莉ヘ夹(砆ю阑)膀娄妮┦, ノ﹚竡мそΑ, ゲ斗 skill_formula_db.yml ゅンいㄏノ..
+
+摸:
+	把σ getunitstatus 
 
 ----------------------------------------
 
-*skf_card_fix <伤害>,<攻击类型>{,<NK>{,<左手右手>}};
+*skf_attr_fix <端甡>;
 
-计算本次伤害的 BONUS 修正, 用于自定义技能公式, 必须在 skill_formula_db.yml 中的 Formula 部分使用..
+璸衡セΩ端甡妮┦タ, ノ﹚竡мそΑ, ゲ斗 skill_formula_db.yml い Formula 场だㄏノ..
 
-攻击类型:
-按攻击范围:
-	BF_SHORT:  近距离攻击
-	BF_LONG:   远距离攻击
-	默认:   BF_SHORT+BF_LONG
-按攻击类型:
-	BF_WEAPON: 物理攻击
-	BF_MAGIC:  魔法攻击
-	BF_MISC:   混合攻击
-	默认:   BF_WEAPON
-按技能类型:
-	BF_NORMAL: 普通攻击
-	BF_SKILL:  技能攻击
-	默认:   如果攻击类型是 BF_WEAPON (only) BF_NORMAL, 否则 BF_SKILL+BF_NORMAL.
+----------------------------------------
+
+*skf_card_fix <端甡>,<ю阑摸>{,<NK>{,<オもも>}};
+
+璸衡セΩ端甡 BONUS タ, ノ﹚竡мそΑ, ゲ斗 skill_formula_db.yml い Formula 场だㄏノ..
+
+ю阑摸:
+ю阑璖瞅:
+	BF_SHORT:  禯置ю阑
+	BF_LONG:   环禯置ю阑
+	纐粄:   BF_SHORT+BF_LONG
+ю阑摸:
+	BF_WEAPON: 瞶ю阑
+	BF_MAGIC:  臸猭ю阑
+	BF_MISC:   睼ю阑
+	纐粄:   BF_WEAPON
+м摸:
+	BF_NORMAL: 炊硄ю阑
+	BF_SKILL:  мю阑
+	纐粄:   狦ю阑摸琌 BF_WEAPON (only) BF_NORMAL, 玥 BF_SKILL+BF_NORMAL.
 	
-NK: 为 skill_db.txt 中的 NK项 填写-1为技能默认
+NK:  skill_db.txt い NK兜 恶糶-1м纐粄
 	0x01 - No damage skill
 	0x02 - Has splash area
 	0x04 - Damage should be split among targets
@@ -2277,9 +2277,9 @@ NK: 为 skill_db.txt 中的 NK项 填写-1为技能默认
 	0x20 - Skill ignores target's defense (misc type always ignores)
 	0x40 - Skill ignores target's flee (magic type always ignores)
 	0x80 - Skill ignores target's def cards
-	0x100 - Skill can critical (蓝色框框显示伤害)
+	0x100 - Skill can critical (屡︹陪ボ端甡)
 
-<左手右手>
+<オもも>
 BF_MISC and BF_MAGIC ignore flag value
 	3: Calculates attacker bonuses in both hands.
 	2: Calculates attacker bonuses in right-hand only.
@@ -2287,45 +2287,45 @@ BF_MISC and BF_MAGIC ignore flag value
 
 ----------------------------------------
 
-*atcommand <"GM指令">{,<标签>};
-*useatcmd <"GM指令">{,<标签>};
+*atcommand <"GM">{,<夹帽>};
+*useatcmd <"GM">{,<夹帽>};
 
-让玩家使用一个GM指令, atcommand忽略指令权限, 添加标签参数, 控制是否显示指令输出信息 (绿色字)
+琵產ㄏノGM, atcommand┛菠舦, 睰夹帽把计, 北琌陪ボ块獺 (厚︹)
 
-标签:
-	1 不输出GM指令信息
-	0 或 忽略 输出GM指令标签
-
-----------------------------------------
-
-*progressbar_unit("<颜色>",<秒>{,<GID>});
-
-在GID对应的目标头上显示一个读条进度
-与 progressbar(progressbar_npc)不同的是, 脚本不会暂停, 而是会继续运行
-如果GID不存在则进度会显示在与脚本关联的玩家头上
+夹帽:
+	1 ぃ块GM獺
+	0 ┪ ┛菠 块GM夹帽
 
 ----------------------------------------
 
-*getvariableofpc(<变量>,<玩家AID>{,<默认值>});
+*progressbar_unit("<肅︹>",<>{,<GID>});
 
-脚本返回指定玩家的变量, 如果玩家不存在则返回默认值
+GID癸莱ヘ夹繷陪ボ弄兵秈
+蒓 progressbar(progressbar_npc)ぃ琌, 竲セぃ穦既氨, τ琌穦膥尿笲︽
+狦GIDぃ玥秈穦陪ボ蒓竲セ闽羛產繷
 
-例子:
+----------------------------------------
 
-//将返回玩家名为 player 的 @var 变量, 如果玩家不存在则返回0
+*getvariableofpc(<跑秖>,<產AID>{,<纐粄>});
+
+竲セ﹚產跑秖, 狦產ぃ玥纐粄
+
+ㄒ:
+
+//盢產 player  @var 跑秖, 狦產ぃ玥0
 	.@v = getvariableofpc(@var, getcharid(CHAR_ID_ACCOUNT, "player"));
 
-//设置玩家名为 player 的 @var 变量为 1
+//砞竚產 player  @var 跑秖 1
 	set(getvariableofpc(@var, getcharid(CHAR_ID_ACCOUNT, "player")), 1);
 
 ----------------------------------------
 
-*getcalendartime(<时>,<分>{,<月份的第几天>{,<每周的第几天>}});
+*getcalendartime(<>,<だ>{,<る材ぱ>{,<–㏄材ぱ>}});
 
-指令返回下次出现指定时间的时间戳
+Ω瞷﹚丁丁耊
 
-月份的第几天介于 1 至 31 之间, 默认值为 -1 即忽略月份.
-每周的第几天的值为:
+る材ぱざ 1  31 ぇ丁, 纐粄 -1 ┛菠る.
+–㏄材ぱ:
 	0 - SUNDAY
 	1 - MONDAY
 	2 - TUESDAY
@@ -2334,64 +2334,64 @@ BF_MISC and BF_MAGIC ignore flag value
 	5 - FRIDAY
 	6 - SATURDAY
 
-如果设置每周的第几天与每月的第几天冲突
-如果想获取每周第几天某个时段的时间戳, 则每月的第几天必须为 -1. 否则返回 -1.
+狦砞竚–㏄材ぱ蒓–る材ぱ≧
+狦稱莉–㏄材ぱ琘琿丁耊, 玥–る材ぱゲ斗 -1. 玥 -1.
 
-例子:
-	getcalendartime(19, 00); // 获得下次 19:00 的时间戳
-	getcalendartime(19, 00, 6); // 获得下次 6号 19:00的时间戳
-	getcalendartime(19, 10, -1, 1); // 获得下次 周一 19:10 的时间戳
+ㄒ:
+	getcalendartime(19, 00); // 莉眔Ω 19:00 丁耊
+	getcalendartime(19, 00, 6); // 莉眔Ω 6腹 19:00丁耊
+	getcalendartime(19, 10, -1, 1); // 莉眔Ω ㏄ 19:10 丁耊
 	
 ----------------------------------------
 
-*sprintf(<格式文本>{,参数{,参数{, ...}}});
+*sprintf(<Αゅセ>{,把计{,把计{, ...}}});
 
-C语言样式的sprintf. 将参数带入格式并输出最终字符串.
+C粂ē妓Αsprintf. 盢把计盿Α块程沧才﹃.
 
-格式字符串可以使用以下结构：
+Α才﹃ㄏノ挡疼
 
-  %[参数排序符][flags][width]specifier
+  %[把计逼才][flags][width]specifier
 
-格式文本支持以下说明符:
+Αゅセや弧才:
 
-%%: 输出一个 '%' (特殊情况，不支持参数、标志、宽度)
-%d, %i: 有符号十进制整数
-%u: 无符号十进制整数
-%x: 无符号十六进制整数
-%X: 无符号十六进制整数（大写字母）
-%o: 有符号八进制
-%s: 字符的字符串
-%c: 字符（仅使用字符串的第一个字符）
+%%: 块 '%' (疭薄猵ぃや把计夹в糴)
+%d, %i: Τ才腹秈俱计
+%u: 礚才腹秈俱计
+%x: 礚才腹せ秈俱计
+%X: 礚才腹せ秈俱计糶ダ
+%o: Τ才腹秈
+%s: 才才﹃
+%c: 才度ㄏノ才﹃材才
 
-格式文本不支持以下说明符：
+Αゅセぃや弧才
 
-%n (出于安全考虑不支持)
-%f, %F, %e, %E, %g, %G (脚本引擎不支持浮点类型)
-%p (脚本引擎不支持指针)
-%a, %A (不支持, 请分别使用 0x%x 和 0x%X 替代)
+%n (σ納ぃや)
+%f, %F, %e, %E, %g, %G (竲セま篮ぃや疊翴摸)
+%p (竲セま篮ぃや皐)
+%a, %A (ぃや, 叫だㄏノ 0x%x ㎝ 0x%X 蠢)
 
-参数排序符:
+把计逼才:
 
-可以通过 'x$' 指定格式文本中的说明符分别使用哪个参数 ( x 是一个数字, 代表引用第几个参数),
-他可以将参数重新排序 (这在翻译字符串中可能有用，因为句子顺序可能与原始顺序不同). 
+硄筁 'x$' ﹚Αゅセい弧才だㄏノ把计 ( x 琌计, まノ材把计),
+盢把计穝逼 (硂陆亩才﹃いΤノ抖蒓﹍抖ぃ). 
 
-例子:
-	// 当翻译成其他语言时, 可能因为参数的顺序不同, 而需要颠倒参数的情况, 可以通过 'x$' 重新排序参数
-	mes(sprintf("Hello, It's %d minutes after %d o'clock.", gettime(DT_MINUTE), gettime(DT_HOUR))); // 例句
-	mes(sprintf("你好, 现在是 %2$d点 %1$d分", gettime(DT_MINUTE), gettime(DT_HOUR))); // 译句
+ㄒ:
+	// 讽陆亩Θㄤ粂ē, 把计抖ぃ, τ惠璶腁把计薄猵, 硄筁 'x$' 穝逼把计
+	mes(sprintf("Hello, It's %d minutes after %d o'clock.", gettime(DT_MINUTE), gettime(DT_HOUR))); // ㄒ
+	mes(sprintf(", 瞷琌 %2$d翴 %1$dだ", gettime(DT_MINUTE), gettime(DT_HOUR))); // 亩
 
-格式文本支持的 flags（标识）有:
+Αゅセや flags夹醚Τ:
 
-- (减号): 在给定的字段宽度内左对齐，默认是右对齐（参见 width 子说明符）
-+ (加好): 强制在结果之前显示加号或减号（+ 或 -），即正数前面会显示 + 号。默认情况下，只有负数前面会显示一个 - 号。
-(空格): 如果没有写入任何符号，则在该值前面插入一个空格。
-0 (零): 在指定填充 padding 的数字左边放置零（0），而不是空格（参见 width 子说明符）
+- (搭腹): 倒﹚琿糴ずオ癸霍纐粄琌癸霍把ǎ width 弧才
++ (): 眏挡狦ぇ玡陪ボ腹┪搭腹+ ┪ -タ计玡穦陪ボ + 腹纐粄薄猵Τ璽计玡穦陪ボ - 腹
+(): 狦⊿Τ糶ヴ才腹玥赣玡础
+0 (箂): ﹚恶 padding 计オ娩竚箂0τぃ琌把ǎ width 弧才
 
-	mes(sprintf("现在的温度是 %+d 摄氏度", 25)); // 数值前面保留 '+' 号
-	.@map_name$ = sprintf("quiz_%02d", .@i); // 位数不组宽度 2, 在前面填充 0, 所以输出 "quiz_00"
+	mes(sprintf("瞷放琌 %+d 尼ん", 25)); // 计玡玂痙 '+' 腹
+	.@map_name$ = sprintf("quiz_%02d", .@i); // 计ぃ舱糴 2, 玡恶 0, ┮块 "quiz_00"
 
-可以在参数中指定字段宽度，以确保至少填充多少个字符。如果使用('*')作为指定宽度，
-则宽度将作为sprintf()函数的参数读取
+把计い﹚琿糴谔玂ぶ恶ぶ才狦ㄏノ('*')﹚糴
+玥糴盢sprintf()ㄧ计把计弄
 
 	sprintf("%04d", 10) // Returns "0010"
 	sprintf("%0*d", 5, 10) // Returns "00010"
@@ -2400,9 +2400,9 @@ C语言样式的sprintf. 将参数带入格式并输出最终字符串.
 	sprintf("%10s", "Hello") // Returns "     Hello";
 	sprintf("%-10s", "Hello") // Returns "Hello    ";
 
-精度 ('.precision') 和 长度 ('hh', 'h', 'l', 'll', 'L', 'z', 'j', 't') 未实现, 脚本引擎不需要.
+弘 ('.precision') ㎝  ('hh', 'h', 'l', 'll', 'L', 'z', 'j', 't') ゼ龟瞷, 竲セま篮ぃ惠璶.
 
-例子:
+ㄒ:
 	.@format$ = "The %s contains %d monkeys";
 	dispbottom(sprintf(.@format$, "zoo", 5));
 	//prints "The zoo contains 5 monkeys"
@@ -2412,499 +2412,499 @@ C语言样式的sprintf. 将参数带入格式并输出最终字符串.
 	
 ----------------------------------------
 
-*mesf <格式文本>{,参数{,参数{, ...}}};
+*mesf <Αゅセ>{,把计{,把计{, ...}}};
 
-在NPC对话框打印一句话, 同 mes,具体使用方法参见 sprintf
+NPC癸杠ゴ杠,  mes,ㄣ蔨ㄏノよ猭把ǎ sprintf
 
-例句:
+ㄒ:
 
-	mesf("你好, 我是 %s, 一名等级为 %d 的 %s", strcharinfo(PC_NAME), BaseLevel, jobname(Class));
+	mesf(", и琌 %s, 单 %d  %s", strcharinfo(PC_NAME), BaseLevel, jobname(Class));
 	// is equivalent to:
-	mes(sprintf("你好, 我是 %s, 一名等级为 %d 的 %s", strcharinfo(PC_NAME), BaseLevel, jobname(Class)));
+	mes(sprintf(", и琌 %s, 单 %d  %s", strcharinfo(PC_NAME), BaseLevel, jobname(Class)));
 
-指令是 mes() 和 sprintf() 的简化版.
+琌 mes() ㎝ sprintf() 虏て.
 
 ----------------------------------------
 
-*consolemes("<类型>","<格式文本>"{,<参数>{,<参数>{, ...}}})
+*consolemes("<摸>","<Αゅセ>"{,<把计>{,<把计>{, ...}}})
 
-在控制台打印文本, 第2个参数往后使用的是类似于sprintf的格式
+北ゴゅセ, 材2把计┕ㄏノ琌摸sprintfΑ
 
-<类型>:
-	MSG_DEBUG		调试信息
-	MSG_ERROR		错误信息
-	MSG_WARNING		警告信息
-	MSG_INFORMATION	普通信息
-	MSG_STATUS 		状态信息
-	MSG_NOTICE 		注意信息
+<摸>:
+	MSG_DEBUG		秸刚獺
+	MSG_ERROR		岿粇獺
+	MSG_WARNING		牡獺
+	MSG_INFORMATION	炊硄獺
+	MSG_STATUS 		篈獺
+	MSG_NOTICE 		猔種獺
 Example:
 
-	consolemes(CONSOLEMES_DEBUG, "%s 点击了我!", strcharinfo(PC_NAME));
-	consolemes(CONSOLEMES_DEBUG, "\033[0;32mHello World"); // 支持颜色代码
+	consolemes(CONSOLEMES_DEBUG, "%s 翴阑и!", strcharinfo(PC_NAME));
+	consolemes(CONSOLEMES_DEBUG, "\033[0;32mHello World"); // や肅︹絏
 
 ----------------------------------------
 	
-*setequipedcard <装备位置编号>,<第几个卡槽>,<物品ID>{,<角色ID>};
+*setequipedcard <杆称竚絪腹>,<材佳>,<珇ID>{,<à︹ID>};
 
-在已装备的道具中设置相应卡槽中的物品, 不会在窗口提示卸下再穿上装备.
-如果 卡片ID 为 0 则拆下相应卡槽的道具
-注意: 设置卡槽不会对背包中任何道具增加或删除
+杆称笵ㄣい砞竚莱佳い珇, ぃ穦怠矗ボ杆称.
+狦 ID  0 玥╊莱佳笵ㄣ
+猔種: 砞竚佳ぃ穦癸璉いヴ笵ㄣ糤┪埃
 
-<装备位置编号> 是指 EQI_* 开头的位置常量
-<第几个卡槽> 从0开始 0~3的数字
-<物品ID> 为你想要插入卡槽的物品, 可以是任何物品
-
-----------------------------------------
-
-*abs(<数字>);
-
-返回数字绝对值
+<杆称竚絪腹> 琌 EQI_* 秨繷竚盽秖
+<材佳> 眖0秨﹍ 0~3计
+<珇ID> 稱璶础佳珇, 琌ヴ珇
 
 ----------------------------------------
 
-*addmobskill <GID>,"<技能格式>";
+*abs(<计>);
 
-给指定GID的魔物增加一个技能, 不影响其他魔物, <技能格式> 参见 mob_skill_db.txt 文本格式
-注意: 一个魔物最多只能有50个技能
+计荡癸
 
-例子:
+----------------------------------------
+
+*addmobskill <GID>,"<мΑ>";
+
+倒﹚GID臸糤м, ぃ紇臫ㄤ臸, <мΑ> 把ǎ mob_skill_db.txt ゅセΑ
+猔種: 臸程Τ50м
+
+ㄒ:
 // monster "prontera",155,106,"12345",1029,1;
 // addmobskill $@mobid,"1029,Scorpion@NPC_FIREATTACK,attack,14,10,10000,0,0,yes,target,always,0,,,,,,,"; 
 
 ----------------------------------------
 
-*delmobskill <GID>,<技能ID>;
+*delmobskill <GID>,<мID>;
 
-给指定GID的魔物删除技能, 魔物拥有的指定技能都会被删除
+倒﹚GID臸埃м, 臸局Τ﹚м常穦砆埃
 
-特殊情况:
-技能ID为0, 还原魔物为原版的技能列表
-技能ID为1, 则删除该魔物的所有技能
+疭薄猵:
+мID0, 临臸м
+мID1, 玥埃赣臸┮Τм
 
 ----------------------------------------
 
-*mapcutin "<地图名称>","<文件名>",<位置>;
+*mapcutin "<瓜嘿>","<ゅン>",<竚>;
 
-给指定地图上的所有玩家都显示同一张照片, 参数参考 cutin
+倒﹚瓜┮Τ產常陪ボ眎酚, 把计把σ cutin
 
 ----------------------------------------
 
 *end2;
 
-只结束脚本不影响NPC对话和商店
+挡竲セぃ紇臫NPC癸杠㎝坝┍
 
 ----------------------------------------
 
-*battle_check(<GID>,<GID>,<关系掩码>)
+*battle_check(<GID>,<GID>,<闽╰被絏>)
 
-判断两个GID之间是否是所提供的敌对/友好关系
+耞ㄢGIDぇ丁琌琌┮矗ㄑ寄癸/ね闽╰
 
-战斗关系掩码:
-	BCT_SELF		= 0x010000, ///< 自己, 如果两个GID为相同时, 返回真
-	BCT_ENEMY		= 0x020000, ///< 敌对
-	BCT_PARTY		= 0x040000, ///< 队友
-	BCT_GUILDALLY	= 0x080000, ///< 公会盟友关系, 但非同公会
-	BCT_NEUTRAL		= 0x100000, ///< 中立
-	BCT_SAMEGUILD	= 0x200000, ///< 同公会, 非公会盟友
+驹ゆ闽╰被絏:
+	BCT_SELF		= 0x010000, ///< , 狦ㄢGID, 痷
+	BCT_ENEMY		= 0x020000, ///< 寄癸
+	BCT_PARTY		= 0x040000, ///< 钉ね
+	BCT_GUILDALLY	= 0x080000, ///< そ穦幅ね闽╰, 獶そ穦
+	BCT_NEUTRAL		= 0x100000, ///< いミ
+	BCT_SAMEGUILD	= 0x200000, ///< そ穦, 獶そ穦幅ね
 
-	BCT_GUILD		= BCT_SAMEGUILD|BCT_GUILDALLY,	///< 公会成员和盟友
-	BCT_NOGUILD		= BCT_ALL&~BCT_GUILD,			///< 非公会同盟
-	BCT_NOPARTY		= BCT_ALL&~BCT_PARTY,			///< 非队友
-	BCT_NOENEMY		= BCT_ALL&~BCT_ENEMY,			///< 非敌对
+	BCT_GUILD		= BCT_SAMEGUILD|BCT_GUILDALLY,	///< そ穦Θ㎝幅ね
+	BCT_NOGUILD		= BCT_ALL&~BCT_GUILD,			///< 獶そ穦幅
+	BCT_NOPARTY		= BCT_ALL&~BCT_PARTY,			///< 獶钉ね
+	BCT_NOENEMY		= BCT_ALL&~BCT_ENEMY,			///< 獶寄癸
 
-返回值:
-  返回 0 两者无任何关系, 不能作为目标(例 玩家和NPC 魔物和魔物之间), 
-  返回 1 关系成立
-  返回 -1 关系不成立
+:
+   0 ㄢ礚ヴ闽╰, ぃヘ夹(ㄒ 產㎝NPC 臸㎝臸ぇ丁), 
+   1 闽╰Θミ
+   -1 闽╰ぃΘミ
 
 ----------------------------------------
 
-*instance_addmap(<"地图名称">{{,<是否复制NPC>},<副本ID>});
+*instance_addmap(<"瓜嘿">{{,<琌蝋NPC>},<捌セID>});
 
-在副本中添加任意地图, 副本中不能同时存在两个同样的地图, 可以删除副本地图后重新加入
+捌セい睰ヴ種瓜, 捌セいぃㄢ妓瓜, 埃捌セ瓜穝
 
-是否复制NPC: (默认复制)
-	为 1 时 复制 
-	为 0 时 不复制
+琌蝋NPC: (纐粄蝋)
+	 1  蝋 
+	 0  ぃ蝋
 
-返回值:
-	成功返回 1 失败返回 0
+:
+	Θ 1 ア毖 0
 	
 ----------------------------------------
 
-*instance_delmap(<"地图名称">,<副本ID>);
+*instance_delmap(<"瓜嘿">,<捌セID>);
 
-删除副本中已存在的地图
+埃捌セい瓜
 
-返回值:
-	成功返回 1 失败返回 0
-
-----------------------------------------
-
-*itemlist <物品数组>{,<角色ID>};
-
-生成一个物品选择框, 返回选中的物品ID, 失败返回 0 
+:
+	Θ 1 ア毖 0
 
 ----------------------------------------
 
-*skilllist <技能数组>{,<角色ID>};
+*itemlist <珇计舱>{,<à︹ID>};
 
-生成一个物品选择框, 返回选中的技能ID, 失败返回 0
-
-----------------------------------------
-
-*getconstantstr <"常量前缀">,<常量值>;
-
-通过数值获取常量的字符串, 加常量前缀可以增加获得常量字符串的准确度
-
-例:
-	dispbottom getconstantstr("b",2010); // 输出 bUnbreakableHelm
-
-返回值:
-	成功返回常量字符串, 失败返回空白字符串
+ネΘ珇匡拒, 匡い珇ID, ア毖 0 
 
 ----------------------------------------
 
-*next_dropitem_special <是否绑定>,<租赁时长>,<掉落光环颜色>;
+*skilllist <м计舱>{,<à︹ID>};
 
-下一次掉落在地上的物品, 会按照本次设定的特殊要求掉落
-对玩家和魔物掉落同样有效, 如果只想对 makeitem、makeitem2、makeitem3 有效, 请在此指令下紧接着使用makeitem
+ネΘ珇匡拒, 匡いмID, ア毖 0
 
-是否绑定:
-	1 为绑定 0为不绑定
+----------------------------------------
+
+*getconstantstr <"盽秖玡后">,<盽秖>;
+
+硄筁计莉盽秖才﹃, 盽秖玡后糤莉眔盽秖才﹃谔
+
+ㄒ:
+	dispbottom getconstantstr("b",2010); // 块 bUnbreakableHelm
+
+:
+	Θ盽秖才﹃, ア毖フ才﹃
+
+----------------------------------------
+
+*next_dropitem_special <琌竕﹚>,<割>,<奔辅吏肅︹>;
+
+Ω奔辅珇, 穦酚セΩ砞﹚疭璶―奔辅
+癸產㎝臸奔辅妓Τ, 狦稱癸 makeitemmakeitem2makeitem3 Τ, 叫候钡帝ㄏノmakeitem
+
+琌竕﹚:
+	1 竕﹚ 0ぃ竕﹚
 	
-租赁时长:
-	单位 秒
+割:
+	虫 
 	
-掉落光环颜色:
-	// -1 - 默认光环
-	//  0 - 无光效
-	//  1 - 客户端定义的光效
-	//  2 - 白色柱形掉落光效
-	//  3 - 蓝色柱形掉落光效
-	//  4 - 黄色柱形掉落光效
-	//  5 - 紫色柱形掉落光效
-	//  6 - 橙色柱形掉落光效
+奔辅吏肅︹:
+	// -1 - 纐粄吏
+	//  0 - 礚
+	//  1 - め狠﹚竡
+	//  2 - フ︹琖奔辅
+	//  3 - 屡︹琖奔辅
+	//  4 - 独︹琖奔辅
+	//  5 - 档︹琖奔辅
+	//  6 - 卷︹琖奔辅
 
 ----------------------------------------
 
-*unitdefratefixed <GID>,<倍率>{,<倍率分母>{,<最小伤害>{,<最大伤害>}}};
+*unitdefratefixed <GID>,<瞯>{,<瞯だダ>{,<程端甡>{,<程端甡>}}};
 
-使对应的对象获得的伤害变为倍率后的伤害, 最小伤害不低于<最小伤害>, 最大伤害不高于<最大伤害> 
+ㄏ癸莱癸禜莉眔端甡跑瞯端甡, 程端甡ぃ<程端甡>, 程端甡ぃ蔼<程端甡> 
 
-例:
+ㄒ:
 	monster "prontera",155,106,"12345",1002,1;
 	unitdefratefixed $@mobid[0],1000,10000;
 
-<倍率分母> 默认 100
+<瞯だダ> 纐粄 100
 
 ----------------------------------------
 
-*settitleicon <GID>,<图标组ID>,<标题>;
+*settitleicon <GID>,<瓜夹舱ID>,<夹肈>;
 
-使某个GID显示图标和标题, 对任意单位都有效
-用于玩家时不能正常显示图标, 指令可以屏蔽掉公会队伍等信息
-用于其他单位时, 可在名字上面显示额外的文字, 并在左侧显示标题
+ㄏ琘GID陪ボ瓜夹㎝夹肈, 癸ヴ種虫常Τ
+ノ產ぃタ盽陪ボ瓜夹, 姜奔そ穦钉ヮ单獺
+ノㄤ虫, 陪ボ肂ゅ, オ凹陪ボ夹肈
 
 ---------------------------------------
 
-*setinventoryinfo <背包位置序号>,<要设置的类型>,<要设置的数字>{,<角色ID>};
-*setequipedinfo <装备位置编号>,<要设置的类型>,<要设置的数字>{,<角色ID>};
+*setinventoryinfo <璉竚腹>,<璶砞竚摸>,<璶砞竚计>{,<à︹ID>};
+*setequipedinfo <杆称竚絪腹>,<璶砞竚摸>,<璶砞竚计>{,<à︹ID>};
 
-改变背包中的物品/装备相应的数据, 将指定指定背包/装备的 <要设置的类型> 改变为 <要设置的数字>
-注意!! 如果设置多项内容, 必须连续使用指令, 否则可能会造成设置失败的问题
-注意!! 设置完成后不会立即改变背包中的内容, 必须紧跟着使用 refreshinventory 刷新一下道具装备才会改变
+э跑璉い珇/杆称莱计誹, 盢﹚﹚璉/杆称 <璶砞竚摸> э跑 <璶砞竚计>
+猔種!! 狦砞竚兜ず甧, ゲ斗硈尿ㄏノ, 玥穦硑Θ砞竚ア毖拜肈
+猔種!! 砞竚ЧΘぃ穦ミэ跑璉いず甧, ゲ斗候蛤帝ㄏノ refreshinventory 穝笵ㄣ杆称穦э跑
 
-要设置的类型:
-	0 	- 物品编号
-	1 	- 堆叠数量
-	2 	- 装备的穿戴位置(如果为 0 则表示还没穿戴在身上, 位置请参考 EQP_* 开头的常量)
-	3 	- 精炼值
-	4 	- 是否已经鉴定(1为已鉴定, 0为未鉴定)
-	5 	- 属性(说是属性, 其实最常用是用来判断物品是否损坏, 若损坏则返回1, 没坏则返回 0)
-	6 	- 第一个卡槽的卡片编号
-	7 	- 第二个卡槽的卡片编号
-	8 	- 第三个卡槽的卡片编号
-	9 	- 第四个卡槽的卡片编号
-	10	- 过期时间(Unix时间戳, 0 表示永不过期)
-	11	- 绑定类型
-	12	- 装备的唯一编号(unique_id)
-	13	- 装备的换装穿戴位置(equipSwitch)
-	16  - 是否被玩家收藏.
+璶砞竚摸:
+	0 	- 珇絪腹
+	1 	- 帮舼计秖
+	2 	- 杆称拦竚(狦 0 玥ボ临⊿拦ō, 竚叫把σ EQP_* 秨繷盽秖)
+	3 	- 弘芬
+	4 	- 琌竒懦﹚(1懦﹚, 0ゼ懦﹚)
+	5 	- 妮┦(弧琌妮┦, ㄤ龟程盽ノ琌ノㄓ耞珇琌穕Д, 璝穕Д玥1, ⊿Д玥 0)
+	6 	- 材佳絪腹
+	7 	- 材佳絪腹
+	8 	- 材佳絪腹
+	9 	- 材佳絪腹
+	10	- 筁戳丁(Unix丁耊, 0 ボッぃ筁戳)
+	11	- 竕﹚摸
+	12	- 杆称斑絪腹(unique_id)
+	13	- 杆称传杆拦竚(equipSwitch)
+	16  - 琌砆產Μ旅.
 	
-设置物品的 option 格式如下:
-特例格式: setinventoryinfo <背包位置序号>,<Random Option序号>,<id>,<value>,<param>{,<角色ID>};
-特例格式: setequipedinfo <装备位置编号>,<Random Option序号>,<id>,<value>,<param>{,<角色ID>};
+砞竚珇 option Α:
+疭ㄒΑ: setinventoryinfo <璉竚腹>,<Random Option腹>,<id>,<value>,<param>{,<à︹ID>};
+疭ㄒΑ: setequipedinfo <杆称竚絪腹>,<Random Option腹>,<id>,<value>,<param>{,<à︹ID>};
 
 ---------------------------------------
 
-*refreshinventory {<背包位置序号>{,<角色ID>}};
-*refreshequip {<装备位置编号>{,<角色ID>}};
+*refreshinventory {<璉竚腹>{,<à︹ID>}};
+*refreshequip {<杆称竚絪腹>{,<à︹ID>}};
 
-刷新背包中的内容, 如果不提供参数, 则刷新所有的内容.
+穝璉いず甧, 狦ぃ矗ㄑ把计, 玥穝┮Τず甧.
 
-如果刷新 setinventoryinfo 设置的物品时, 必须提供 <背包位置序号>, 否则刷新无效
-如果刷新 setequipedinfo 设置的装备时, 必须提供 <装备位置编号>, 否则刷新无效
-
----------------------------------------
-
-*getskillinfo <类型>,<技能ID>{,<其他参数>};
-
-获取技能信息
-
-类型:
-	1 	- 返回技能施放类型 0 为地面技能, 1 为伤害技能, 2 为无伤害技能
-	2	- 返回技能名称 skill_db 中的 name
-	3	- 返回技能说明 skill_db 中的 desc
-	4	- 返回技能树种的最大等级 <其他参数> 传入职业代码
-	5	- 返回技能攻击类型 返回 BF_WEAPON BF_MAGIC BF_MISC skill_db 中的 attack type
-	6	- 返回打击类型 skill_db 中的 hit
-	7	- 返回技能类型1 skill_db 中的 inf
-	8	- 返回技能属性 skill_db 中的 element <其他参数> 传入技能等级
-	9	- 返回技能伤害类型 skill_db 中的 nk
-	10	- 返回技能最大等级 skill_db 中的 max
-	11	- 返回技能攻击距离 skill_db 中的 range <其他参数> 传入技能等级
-	12	- 返回技能溅射范围 skill_db 中的 splash <其他参数> 传入技能等级
-	13	- 返回技能打击次数 skill_db 中的 list_num <其他参数> 传入技能等级
-	14	- 返回技能吟唱时间 skill_cast_db 中的 CastingTime <其他参数> 传入技能等级
-	15	- 返回技能公共延迟 skill_cast_db 中的 AfterCastActDelay <其他参数> 传入技能等级
-	16	- 返回技能攻击僵直 skill_cast_db 中的 AfterCastWalkDelay <其他参数> 传入技能等级
-	17	- 返回技能时刻参数 skill_cast_db 中的 Duration1 <其他参数> 传入技能等级
-	18	- 返回技能时刻参数 skill_cast_db 中的 Duration2 <其他参数> 传入技能等级
-	19	- 返回技能吟唱计算 skill_castnodex_db 中的 Cast
-	20	- 返回技能延迟计算 skill_castnodex_db 中的 Delay
-	21	- 返回技能施法期间防御降低倍率 skill_db 中的 cast_def_rate
-	22	- 返回技能使用限制 skill_nocast_db 中的 Flag
-	23	- 返回地面技能单位ID skill_unit_db 中的 Unit id  <其他参数> 传入 Flag
-	24	- 返回技能类型2 skill_db 中的 inf2
-	25	- 返回技能是否可被打断 skill_db 中的 castcancel
-	26	- 返回技能最大数量 skill_db 中的 maxcount <其他参数> 传入技能等级
-	27	- 返回技能击退距离 skill_db 中的 Blowcount <其他参数> 传入技能等级
-	28	- 返回地面技能标记 skill_unit_db 中的 Flag
-	29	- 返回技能冷却 skill_cast_db 中的 Cool Down <其他参数> 传入技能等级
-	30	- 返回地面技能目标 skill_unit_db 中的 Target
-	31	- 返回技能类型3 skill_db 中的 inf3
-	32	- 返回技能消耗的HP skill_require_db 中的 HPCost <其他参数> 传入技能等级
-	33	- 返回技能有多少HP才可能使用 skill_require_db 中的 MaxHPTrigger <其他参数> 传入技能等级
-	34	- 返回技能消耗的SP skill_require_db 中的 SPCost <其他参数> 传入技能等级
-	35	- 返回技能消耗的百分比HP skill_require_db 中的 HPRateCost <其他参数> 传入技能等级
-	36	- 返回技能消耗的百分比SP skill_require_db 中的 SPRateCost <其他参数> 传入技能等级
-	37	- 返回技能消耗的Zeny skill_require_db 中的 ZenyCost <其他参数> 传入技能等级
-	38	- 返回技能所需的武器类型 skill_require_db 中的 RequiredWeapons
-	39	- 返回技能所需的弹药类型 skill_require_db 中的 RequiredAmmoTypes
-	40	- 返回技能所需的弹药数量 skill_require_db 中的 RequiredAmmoAmount <其他参数> 传入技能等级
-	41	- 返回技能所需的特殊状态 skill_require_db 中的 RequiredState
-	42	- 预留
-	43	- 返回技能所需的一般状态个数 skill_require_db 中的 RequiredStatuses 个数
-	44	- 返回技能所需气球个数 skill_require_db 中的 SpiritSphereCost
-	45	- 返回技能所需物品ID skill_require_db 中的 RequiredItemID <其他参数> 传入第几项消耗品
-	46	- 返回技能所需物品数量 skill_require_db 中的 RequiredItemAmount <其他参数> 传入第几项消耗品
+狦穝 setinventoryinfo 砞竚珇, ゲ斗矗ㄑ <璉竚腹>, 玥穝礚
+狦穝 setequipedinfo 砞竚杆称, ゲ斗矗ㄑ <杆称竚絪腹>, 玥穝礚
 
 ---------------------------------------
 
-*getequipinfo {<获取类型>};
+*getskillinfo <摸>,<мID>{,<ㄤ把计>};
 
- 在装备的 item_script 中使用可以获得装备在背包中的IDX 和 装备ID
+莉м獺
 
-<获取类型>:
-
-	- INV_ID   装备ID
-	- INV_IDX  装备在背包中的IDX(默认)
+摸:
+	1 	- м琁摸 0 м, 1 端甡м, 2 礚端甡м
+	2	- м嘿 skill_db い name
+	3	- м弧 skill_db い desc
+	4	- м攫销程单 <ㄤ把计> 肚戮穨絏
+	5	- мю阑摸  BF_WEAPON BF_MAGIC BF_MISC skill_db い attack type
+	6	- ゴ阑摸 skill_db い hit
+	7	- м摸1 skill_db い inf
+	8	- м妮┦ skill_db い element <ㄤ把计> 肚м单
+	9	- м端甡摸 skill_db い nk
+	10	- м程单 skill_db い max
+	11	- мю阑禯置 skill_db い range <ㄤ把计> 肚м单
+	12	- м聁甮璖瞅 skill_db い splash <ㄤ把计> 肚м单
+	13	- мゴ阑Ω计 skill_db い list_num <ㄤ把计> 肚м单
+	14	- м佰丁 skill_cast_db い CastingTime <ㄤ把计> 肚м单
+	15	- мそ┑筐 skill_cast_db い AfterCastActDelay <ㄤ把计> 肚м单
+	16	- мю阑圾 skill_cast_db い AfterCastWalkDelay <ㄤ把计> 肚м单
+	17	- мㄨ把计 skill_cast_db い Duration1 <ㄤ把计> 肚м单
+	18	- мㄨ把计 skill_cast_db い Duration2 <ㄤ把计> 肚м单
+	19	- м佰璸衡 skill_castnodex_db い Cast
+	20	- м┑筐璸衡 skill_castnodex_db い Delay
+	21	- м琁猭戳丁ň眘瞯 skill_db い cast_def_rate
+	22	- мㄏノ skill_nocast_db い Flag
+	23	- м虫ID skill_unit_db い Unit id  <ㄤ把计> 肚 Flag
+	24	- м摸2 skill_db い inf2
+	25	- м琌砆ゴ耞 skill_db い castcancel
+	26	- м程计秖 skill_db い maxcount <ㄤ把计> 肚м单
+	27	- м阑癶禯置 skill_db い Blowcount <ㄤ把计> 肚м单
+	28	- м夹癘 skill_unit_db い Flag
+	29	- м玱 skill_cast_db い Cool Down <ㄤ把计> 肚м单
+	30	- мヘ夹 skill_unit_db い Target
+	31	- м摸3 skill_db い inf3
+	32	- мHP skill_require_db い HPCost <ㄤ把计> 肚м单
+	33	- мΤぶHPㄏノ skill_require_db い MaxHPTrigger <ㄤ把计> 肚м单
+	34	- мSP skill_require_db い SPCost <ㄤ把计> 肚м单
+	35	- мκだゑHP skill_require_db い HPRateCost <ㄤ把计> 肚м单
+	36	- мκだゑSP skill_require_db い SPRateCost <ㄤ把计> 肚м单
+	37	- мZeny skill_require_db い ZenyCost <ㄤ把计> 肚м单
+	38	- м┮惠猌竟摸 skill_require_db い RequiredWeapons
+	39	- м┮惠紆媚摸 skill_require_db い RequiredAmmoTypes
+	40	- м┮惠紆媚计秖 skill_require_db い RequiredAmmoAmount <ㄤ把计> 肚м单
+	41	- м┮惠疭篈 skill_require_db い RequiredState
+	42	- 箇痙
+	43	- м┮惠篈计 skill_require_db い RequiredStatuses 计
+	44	- м┮惠蒩瞴计 skill_require_db い SpiritSphereCost
+	45	- м┮惠珇ID skill_require_db い RequiredItemID <ㄤ把计> 肚材兜珇
+	46	- м┮惠珇计秖 skill_require_db い RequiredItemAmount <ㄤ把计> 肚材兜珇
 
 ---------------------------------------
 
-*getcardinfo {<获取类型>};
+*getequipinfo {<莉摸>};
 
- 在卡片的 item_script 中使用可以获得卡片在装备卡槽中的IDX 和 卡片ID
+ 杆称 item_script いㄏノ莉眔杆称璉いIDX ㎝ 杆称ID
 
-<获取类型>:
-	- INV_ID   卡片ID
-	- INV_IDX  卡片在装备卡槽中的IDX(默认)
+<莉摸>:
 
----------------------------------------
-
-*getrandomoptinfo(<获取类型>);
-
-官方指令, 请查看 doc\script_commands.txt
+	- INV_ID   杆称ID
+	- INV_IDX  杆称璉いIDX(纐粄)
 
 ---------------------------------------
 
-*mobaggroswitch <GID>,<开关状态>;
+*getcardinfo {<莉摸>};
 
-打开或关闭指定魔物的仇恨系统, 当战斗配置 mob_aggro_all_mob 关闭时有效
+  item_script いㄏノ莉眔杆称佳いIDX ㎝ ID
 
-<开关状态>:
-	- 1 开启魔物的仇恨系统
-	- 0 关闭魔物的仇恨系统
-
----------------------------------------
-
-*instance_id(<模式>{,<角色ID>});
-
-获取副本ID, 可通过角色ID获取角色的副本ID, 当模式为 IM_NONE 时, 不判定副本模式
+<莉摸>:
+	- INV_ID   ID
+	- INV_IDX  杆称佳いIDX(纐粄)
 
 ---------------------------------------
 
-*broadcast_item(<玩家AID>,<物品ID1>,<物品ID2>,<公告类型>);
+*getrandomoptinfo(<莉摸>);
 
-弹出一条物品广播
+﹛よ, 叫琩 doc\script_commands.txt
 
-公告类型：
-	- 0 和 1 公告 msgstring.txt 中的 1629 行
-	- 2 公告  msgstring.txt 中的 1870 行, 此时 <物品ID2> 无效
+---------------------------------------
+
+*mobaggroswitch <GID>,<秨闽篈>;
+
+ゴ秨┪闽超﹚臸こ╰参, 讽驹ゆ皌竚 mob_aggro_all_mob 闽超Τ
+
+<秨闽篈>:
+	- 1 秨币臸こ╰参
+	- 0 闽超臸こ╰参
+
+---------------------------------------
+
+*instance_id(<家Α>{,<à︹ID>});
+
+莉捌セID, 硄筁à︹ID莉à︹捌セID, 讽家Α IM_NONE , ぃ﹚捌セ家Α
+
+---------------------------------------
+
+*broadcast_item(<產AID>,<珇ID1>,<珇ID2>,<そ摸>);
+
+紆兵珇約冀
+
+そ摸
+	- 0 ㎝ 1 そ msgstring.txt い 1629 ︽
+	- 2 そ  msgstring.txt い 1870 ︽,  <珇ID2> 礚
 
 ----------------------------------------
 
-*getmapinfo("<地图名称>",<类型>{,<角色ID>});
+*getmapinfo("<瓜嘿>",<摸>{,<à︹ID>});
 
-获取地图相关的信息, 当地图名称为 "this" 时表示获取关联(指定)玩家所在地图的地图信息
+莉瓜闽獺, 讽瓜嘿 "this" ボ莉闽羛(﹚)產┮瓜瓜獺
 
-类型:
-	- 1: 地图ID
-	- 2: 地图名称
-	- 3: 地图的副本ID
-	- 4: 地图宽度
-	- 5: 地图长度
-	- 6: 地图魔物刷新数据 (返回条数, 魔物ID和数量存在数组 $@spawn_mobid, $@spawn_amount 中)
+摸:
+	- 1: 瓜ID
+	- 2: 瓜嘿
+	- 3: 瓜捌セID
+	- 4: 瓜糴
+	- 5: 瓜
+	- 6: 瓜臸穝计誹 (兵计, 臸ID㎝计秖计舱 $@spawn_mobid, $@spawn_amount い)
 
 ----------------------------------------
 
-*getmobspawninfo(<魔物ID>);
+*getmobspawninfo(<臸ID>);
 
-获取魔物在哪些地图生成
+莉臸ㄇ瓜ネΘ
 	
-如果执行成功的话, 会赋予以下数组魔物生成的信息:
+狦磅︽Θ杠, 穦结ぉ计舱臸ネΘ獺:
 
-	$@spawn_mapname$[]		地图名称
-	$@spawn_amount[]		生成数量
+	$@spawn_mapname$[]		瓜嘿
+	$@spawn_amount[]		ネΘ计秖
 	
-指令返回获取到的个数, 即变量的成员数量
+莉计, 跑秖Θ计秖
 
 ----------------------------------------
 
-*getbossinfo({"<地图名>"{,<魔物ID>}});
+*getbossinfo({"<瓜>"{,<臸ID>}});
 
-获取使用 boss_monster 标签召唤出来的魔物的信息
-当地图名为 "all" 时为所有地图, "this" 时为关联玩家所在地图
+莉ㄏノ boss_monster 夹帽酬ㄓ臸獺
+讽瓜 "all" ┮Τ瓜, "this" 闽羛產┮瓜
 	
-如果执行成功的话, 会赋予以下数组魔物生成的信息:
+狦磅︽Θ杠, 穦结ぉ计舱臸ネΘ獺:
 
-	$@boss_gid[]		魔物的gid(可通过 getmobdata 获取其他信息)
-	$@boss_spawn[]		魔物重生倒数(毫秒, 0 表示已重生)
+	$@boss_gid[]		臸gid(硄筁 getmobdata 莉ㄤ獺)
+	$@boss_spawn[]		臸ネ计(睝, 0 ボネ)
 	
-指令返回获取到的个数, 即变量的成员数量
+莉计, 跑秖Θ计秖
 
 ----------------------------------------
 
-*checktrade({<角色ID>});
+*checktrade({<à︹ID>});
 
-检查玩家是否正在交易, 并返回交易对方的 AID
-
-----------------------------------------
-
-*checkcashshop({<角色ID>});
-
-检查玩家是否正在使用 cashshop 现金商城
+浪琩產琌タユ, ユ癸よ AID
 
 ----------------------------------------
 
-*checkmailwriting({<角色ID>});
+*checkcashshop({<à︹ID>});
 
-检查玩家是否正在写邮件
-
-----------------------------------------
-
-*checkrefineui({<角色ID>});
-
-检查玩家是否正在使用精炼UI
+浪琩產琌タㄏノ cashshop 瞷坝
 
 ----------------------------------------
 
-*unitaura <GID>,<特效ID>{,<间隔时间>};
+*checkmailwriting({<à︹ID>});
 
-为指定实体增加一个光环特效, 如果是短特效则每过间隔时间播放一次特效
-
-----------------------------------------
-
-*unitdelaura <GID>,<特效ID>;
-
-为指定实体移除一个光环特效
-在客户端版本大于 20181002 会直接移除特效
+浪琩產琌タ糶秎ン
 
 ----------------------------------------
 
-*disablenpc "<NPC名称>"{,<角色ID>};
-*enablenpc "<NPC名称>"{,<角色ID>};
-*hideonnpc "<NPC名称>"{,<角色ID>};
-*hideoffnpc "<NPC名称>"{,<角色ID>};
-*cloakonnpc "<NPC名称>"{,<角色ID>};
-*cloakoffnpc "<NPC名称>"{,<角色ID>};
+*checkrefineui({<à︹ID>});
 
-从之前指令基础上增加了对单个玩家的支持, 单个玩家支持只对当前登陆有效
-如果想让此长期有效则需使用 OnPCLoginEvent 对NPC进行隐藏
+浪琩產琌タㄏノ弘芬UI
 
 ----------------------------------------
 
-*disableontouch "<NPC名称>"{,<角色ID>};
-*enableontouch "<NPC名称>"{,<角色ID>};
+*unitaura <GID>,<疭ID>{,<丁筳丁>};
 
-开启或关闭NPC的 OnTouch 触发, 可针对角色使用
-本指令 覆盖 disablenpc enablenpc hideonnpc hideoffnpc cloakonnpc cloakoffnpc 的默认触发配置
+﹚龟蔨糤吏疭, 狦琌祏疭玥–筁丁筳丁冀Ω疭
 
 ----------------------------------------
 
-*setwall "<地图名>",<x>,<y>,<长度>,<角度>,<是否可以穿透攻击>,"<墙名字>"{,<召唤魔物ID>,"<召唤魔物名字>"};
-*setwallline "<地图名>",<x0>,<y0>,<x1>,<y1>,<是否可以穿透攻击>,"<墙名字>"{,<召唤魔物ID>,"<召唤魔物名字>"};
-*setwallcircle "<地图名>",<x>,<y>,<半径>,<是否可以穿透攻击>,"<墙名字>"{,<召唤魔物ID>,"<召唤魔物名字>"};
+*unitdelaura <GID>,<疭ID>;
 
-在地图上生成一堵墙, 可在墙的坐标点召唤不能被攻击的魔物作为标记
-
-指令 setwall 为原版指令
-指令 setwallline 由坐标 (x0,y0) 到 (x1,y1) 画直线, 画线, 本指令采用 Bresenham 算法
-指令 setwallcircle 以坐标 (x,y) 为圆心, 以<半径>画圆, 本指令采用 Bresenham 算法
-
-当生成副本时, 副本源地图上如果有墙时, 墙可以被复制到副本中, 副本中的墙可以通过 delwall 删除
-本指令经过优化, 可以在副本中随意使用, 在执行 @reloadscript 墙会被释放通过 OnInit 重新画墙, 副本中的墙也会被重置
+﹚龟蔨簿埃吏疭
+め狠セ 20181002 穦钡簿埃疭
 
 ----------------------------------------
 
-*delwall "<墙名字>"{,<副本ID>};
+*disablenpc "<NPC嘿>"{,<à︹ID>};
+*enablenpc "<NPC嘿>"{,<à︹ID>};
+*hideonnpc "<NPC嘿>"{,<à︹ID>};
+*hideoffnpc "<NPC嘿>"{,<à︹ID>};
+*cloakonnpc "<NPC嘿>"{,<à︹ID>};
+*cloakoffnpc "<NPC嘿>"{,<à︹ID>};
 
-通过墙名字删除墙, 当删除副本中的墙时, 必须加入副本ID
-
-----------------------------------------
-
-*checkwall "<墙名字>"{,<副本ID>};
-
-查询墙是否存在, 当查询副本中的墙时, 必须加入副本ID
-
-----------------------------------------
-
-*delwallmap "<地图名>";
-
-删除地图上的所有墙
+眖ぇ玡膀娄糤癸虫產や, 虫產や癸讽玡祅嘲Τ
+狦稱琵戳Τ玥惠ㄏノ OnPCLoginEvent 癸NPC秈︽留旅
 
 ----------------------------------------
 
-*getlinexy <x0>,<y0>,<x1>,<y1>,<返回x坐标数组>,<返回y坐标数组>;
+*disableontouch "<NPC嘿>"{,<à︹ID>};
+*enableontouch "<NPC嘿>"{,<à︹ID>};
 
-获得坐标 (x0,y0) 到 (x1,y1) 直线上的坐标, 并存入<返回x坐标数组>,<返回y坐标数组>中
-----------------------------------------
-
-*getcirclexy <x>,<y>,<半径>,<返回x坐标数组>,<返回y坐标数组>;
-
-获得坐标 (x,y) 为圆心, 以<半径>圆的坐标, 并存入<返回x坐标数组>,<返回y坐标数组>中
+秨币┪闽超NPC OnTouch 郉祇, 皐癸à︹ㄏノ
+セ 滦籠 disablenpc enablenpc hideonnpc hideoffnpc cloakonnpc cloakoffnpc 纐粄郉祇皌竚
 
 ----------------------------------------
 
-*array_keys <数组>,<存入数组>;
+*setwall "<瓜>",<x>,<y>,<>,<à>,<琌硓ю阑>,"<鲤>"{,<酬臸ID>,"<酬臸>"};
+*setwallline "<瓜>",<x0>,<y0>,<x1>,<y1>,<琌硓ю阑>,"<鲤>"{,<酬臸ID>,"<酬臸>"};
+*setwallcircle "<瓜>",<x>,<y>,<畖>,<琌硓ю阑>,"<鲤>"{,<酬臸ID>,"<酬臸>"};
 
-获取数组中所有值非0(非空字符串)的键, 并将键存入指定的数组中, 主要用于以玩家的aid或cid作为键值的数组(.@damage[getcharid(0)] += 100)
+瓜ネΘ棒鲤, 鲤Г夹翴酬ぃ砆ю阑臸夹癘
 
-什么是键? 
-	数组变量[键] = 值; 其中键即中括号中改的内容
+ setwall 
+ setwallline パГ夹 (x0,y0)  (x1,y1) 礶絬, 礶絬, セノ Bresenham 衡猭
+ setwallcircle Г夹 (x,y) 蛾み, <畖>礶蛾, セノ Bresenham 衡猭
 
-例: 
+讽ネΘ捌セ, 捌セ方瓜狦Τ鲤, 鲤砆蝋捌セい, 捌セい鲤硄筁 delwall 埃
+セ竒筁涩て, 捌セい繦種ㄏノ, 磅︽ @reloadscript 鲤穦砆睦硄筁 OnInit 穝礶鲤, 捌セい鲤穦砆竚
+
+----------------------------------------
+
+*delwall "<鲤>"{,<捌セID>};
+
+硄筁鲤埃鲤, 讽埃捌セい鲤, ゲ斗捌セID
+
+----------------------------------------
+
+*checkwall "<鲤>"{,<捌セID>};
+
+琩高鲤琌, 讽琩高捌セい鲤, ゲ斗捌セID
+
+----------------------------------------
+
+*delwallmap "<瓜>";
+
+埃瓜┮Τ鲤
+
+----------------------------------------
+
+*getlinexy <x0>,<y0>,<x1>,<y1>,<xГ夹计舱>,<yГ夹计舱>;
+
+莉眔Г夹 (x0,y0)  (x1,y1) 絬Г夹, <xГ夹计舱>,<yГ夹计舱>い
+----------------------------------------
+
+*getcirclexy <x>,<y>,<畖>,<xГ夹计舱>,<yГ夹计舱>;
+
+莉眔Г夹 (x,y) 蛾み, <畖>蛾Г夹, <xГ夹计舱>,<yГ夹计舱>い
+
+----------------------------------------
+
+*array_keys <计舱>,<计舱>;
+
+莉计舱い┮Τ獶0(獶才﹃)龄, 盢龄﹚计舱い, 璶ノ產aid┪cid龄计舱(.@damage[getcharid(0)] += 100)
+
+ぐ琌龄? 
+	计舱跑秖[龄] = ; ㄤい龄い珹腹いэず甧
+
+ㄒ: 
 	.@test[5] = 1;
 	.@test[3] = 2;
 	.@test[1024] = 9918;
@@ -2912,25 +2912,25 @@ Example:
 	array_keys .@test,.@idx;
 	for (.@i = 0; .@i < getarraysize(.@idx); .@i++)
 		dispbottom "key: "+.@idx[.@i]+" value: "+.@test[.@idx[.@i]];
-	// 输出:
+	// 块:
 	// 	key: 5 value: 1;
 	// 	key: 3 value: 2;
 	// 	key: 1024 value: 9918;
 	// 	key: 789523 value: 12345678;
 	
-返回值: 
-	获取到键的数量
+: 
+	莉龄计秖
 
 ----------------------------------------
 
-*getarrayindex <数组>;
+*getarrayindex <计舱>;
 
-获取数组变量中的 key 值, 一般用在函数调用中获取传参 getarg() 的源变量中括号中的数字
+莉计舱跑秖い key , ノㄧ计秸ノい莉肚把 getarg() 方跑秖い珹腹い计
 
-什么是键? 
-	数组变量[键] = 值; 其中键即中括号中改的内容
+ぐ琌龄? 
+	计舱跑秖[龄] = ; ㄤい龄い珹腹いэず甧
 
-例子:
+ㄒ:
 	getarrayindex(.@foo[42]); // 42
 	
 	getindex(.@foo[36]);
@@ -2940,64 +2940,64 @@ Example:
 
 ----------------------------------------
 
-*countnameditem(<物品ID>, "<角色名>")
-*countnameditem(<物品ID>, <角色ID>)
-*countnameditem("<物品名>", "<角色名>")
-*countnameditem("<物品名>", <角色ID>)
+*countnameditem(<珇ID>, "<à︹>")
+*countnameditem(<珇ID>, <à︹ID>)
+*countnameditem("<珇>", "<à︹>")
+*countnameditem("<珇>", <à︹ID>)
 
-获取身上有多少个署名物品, 具体参考 getnameditem. 
+莉ōΤぶ竝珇, ㄣ蔨把σ getnameditem. 
 
 ---------------------------------------
 
-*getguildinfo(<信息类型>{,<公会ID>})
-*getguildinfo(<信息类型>{,"<公会名称>"})
+*getguildinfo(<獺摸>{,<そ穦ID>})
+*getguildinfo(<獺摸>{,"<そ穦嘿>"})
 
-获取指定类型的公会相关数据
+莉﹚摸そ穦闽计誹
 
-<信息类型>:
-	GUILDINFO_NAME          - 公会名称
-	GUILDINFO_ID            - 公会ID
-	GUILDINFO_LEVEL         - 公会等级
-	GUILDINFO_EXP           - 公会经验
-	GUILDINFO_NEXT_EXP      - 距离下一级升级的经验
-	GUILDINFO_SKILL_POINTS  - 公会剩余技能点数
-	GUILDINFO_ONLINE        - 公会在线人数
-	GUILDINFO_AV_LEVEL      - 公会成员平均等级
-	GUILDINFO_MAX_MEMBERS   - 公会最大成员数
-	GUILDINFO_MASTER_NAME   - 公会会长名称
-	GUILDINFO_MASTER_CID    - 公会会长角色ID
+<獺摸>:
+	GUILDINFO_NAME          - そ穦嘿
+	GUILDINFO_ID            - そ穦ID
+	GUILDINFO_LEVEL         - そ穦单
+	GUILDINFO_EXP           - そ穦竒喷
+	GUILDINFO_NEXT_EXP      - 禯置ど竒喷
+	GUILDINFO_SKILL_POINTS  - そ穦逞м翴计
+	GUILDINFO_ONLINE        - そ穦絬计
+	GUILDINFO_AV_LEVEL      - そ穦ΘキА单
+	GUILDINFO_MAX_MEMBERS   - そ穦程Θ计
+	GUILDINFO_MASTER_NAME   - そ穦穦嘿
+	GUILDINFO_MASTER_CID    - そ穦穦à︹ID
 
-例子:
+ㄒ:
 	getguildinfo(GUILDINFO_MASTER_NAME, getcharid(2, "Haru"))
 
 ---------------------------------------
 
-*gettimer(<类型>{,<角色ID>{,"<事件>"}})
+*gettimer(<摸>{,<à︹ID>{,"<ㄆン>"}})
 
-返回由 addtimer() 创建的玩家时钟的相关信息. 如果未指定事件则为所有事件
+パ addtimer() 承產牧闽獺. 狦ゼ﹚ㄆン玥┮Τㄆン
 
-<类型>:
-	TIMER_COUNT       - 玩家有多少个 "<事件>" 相关的时钟.
-    TIMER_TICK_NEXT   - 玩家触发下一次 "<事件>" 还有多少毫秒.
-    TIMER_TICK_LAST	  - 玩家触发最后一次 "<事件>" 还有多少毫秒.
+<摸>:
+	TIMER_COUNT       - 產Τぶ "<ㄆン>" 闽牧.
+    TIMER_TICK_NEXT   - 產郉祇Ω "<ㄆン>" 临Τぶ睝.
+    TIMER_TICK_LAST	  - 產郉祇程Ω "<ㄆン>" 临Τぶ睝.
 
 ---------------------------------------
 
-*setnpcdistance(<距离>)
+*setnpcdistance(<禯置>)
 
-指令玩家距必须靠近NPC多少格之内才可以点击, 一般使用在 OnInit 事件下设置.
+產禯ゲ斗綼NPCぶぇず翴阑, ㄏノ OnInit ㄆン砞竚.
 
-例子:
+ㄒ:
 	OnInit:
 		setnpcdistance(1);
 
 ---------------------------------------
 
-*getdatatype(<参数>)
+*getdatatype(<把计>)
 
-返回给定<参数>的原始类型. 返回的类型是掩码类型.
+倒﹚<把计>﹍摸. 摸琌被絏摸.
 
-返回类型:
+摸:
 	DATATYPE_NIL
 	DATATYPE_STR
 	DATATYPE_INT
@@ -3006,55 +3006,55 @@ Example:
 	DATATYPE_VAR
 	DATATYPE_LABEL
 
-例子:
+ㄒ:
 	getdatatype() // DATATYPE_NIL
 	getdatatype("foo") // DATATYPE_STR
 	getdatatype(@foo$) // (DATATYPE_VAR | DATATYPE_STR)
 
 ---------------------------------------
 
-*tostring(<参数>)
+*tostring(<把计>)
 
-将给定的参数转换为字符串类型.
+盢倒﹚把计锣传才﹃摸.
 
-例子:
+ㄒ:
 	tostring(DATATYPE_VAR) // "DATATYPE_VAR"
 	tostring(.@foo) // ".@foo"
 	
 ---------------------------------------
 
-*chr(<数字>)
+*chr(<计>)
 
-返回整数对应的 ASCII 字符.
+俱计癸莱 ASCII 才.
 
-例子:
+ㄒ:
     chr(99); //returns "c"
 
 ---------------------------------------
 
-*ord(<字符>)
+*ord(<才>)
 
-返回字符对应的 ASCII 数值.
+才癸莱 ASCII 计.
 
-例子:
+ㄒ:
     ord("c"); //returns 99
 
 ---------------------------------------
 
-*log10(<数值>)
+*log10(<计>)
 
-返回传入数值 log 10 的结果.
+肚计 log 10 挡狦.
 
-例子:
+ㄒ:
 	.@i = log10(100); // 2
 
 ---------------------------------------
 
-*swap(<变量>,<变量>)
+*swap(<跑秖>,<跑秖>)
 
-交换两个变量的值, 两边必须同时为整数或字符串类型.
+ユ传ㄢ跑秖, ㄢ娩ゲ斗俱计┪才﹃摸.
 
-例子:
+ㄒ:
 	.@var1 = 111;
 	.@var2 = 222;
 	swap(.@var1, .@var2);
@@ -3065,163 +3065,163 @@ Example:
 
 *unitiswalking({<GID>})
 
-指令检查一个单位是否在行走. 省略 GID 则为关联玩家
+浪琩虫琌︽ǐ. 菠 GID 玥闽羛產
 
-返回值:
-	1 为正在行走, 0 为没有行走
-
----------------------------------------
-
-*mercenary_delete({<角色ID>,<忠诚更新>})
-
-删除指定玩家的佣兵.
-
-忠诚更新:
-    0 - 佣兵忠诚增加 1，类似于合同结束 (默认).
-    1 - 佣兵忠诚降低 1，类似于佣兵死亡.
-	2 - 佣兵忠诚不变.
+:
+	1 タ︽ǐ, 0 ⊿Τ︽ǐ
 
 ---------------------------------------
 
-*msgtable(<信息ID>{,<颜色代码>})
+*mercenary_delete({<à︹ID>,<┚港穝>})
 
-显示一条 msgtable.txt 中的字符串
+埃﹚產.
 
-颜色代码:
-	COLOR_DEFAULT       - 默认
-	COLOR_RED           - 红色
-	COLOR_WHITE         - 白色
-	COLOR_YELLOW        - 黄色
-	COLOR_CYAN          - 青色
-	COLOR_LIGHT_GREEN   - 浅绿
+┚港穝:
+    0 - ┚港糤 1摸挡 (纐粄).
+    1 - ┚港 1摸.
+	2 - ┚港ぃ跑.
 
 ---------------------------------------
 
-*monster     "<地图名>",<x>,<y>,"<显示名称>",<魔物ID>,<数量>{,"<触发事件>",<体型大小>,<魔物ai>};
-*areamonster "<地图名>",<x1>,<y1>,<x2>,<y2>,"<显示名称>",<魔物ID>,<数量>{,"<地图名>",<体型大小>,<魔物ai>};
-*bg_monster <战场分组>,"<地图名>",<x>,<y>,"<显示名称>",<魔物ID>，"<触发事件>";
-*tribe_monster <阵营编号>,"<地图名字>",<x>,<y>,"<魔物名字>",<魔物ID>,"<事件标签>";
-*guardian "<地图名>",<x>,<y>,"<显示名称>",魔物ID>{,"<触发事件>"{,<guardian index>}};
+*msgtable(<獺ID>{,<肅︹絏>})
 
-可通过 playerattached 判断是否是玩家杀死的魔物。
+陪ボ兵 msgtable.txt い才﹃
 
-事件返回变量:
-	
-	注意: 因事件在遇到玩家正在运行时会排队, 所以与玩家关联时使用全局变量返回值会被其他击杀覆盖, 
-	如果你开启了 disable_mobdead_queue 则无需顾虑此问题可以直接使用全局变量
-	
-	如果是玩家杀死, 则返回:
-		killedgid			被杀死魔物的GID
-		killedrid			被杀死魔物的魔物编号(MobID)
-		killerrid			杀死魔物的实体GID
-	
-	如果是魔物杀死, 则返回: 
-		$killedgid			被杀死魔物的GID
-		$killedrid			被杀死魔物的魔物编号(MobID)
-		$killerrid			杀死魔物的实体GID
+肅︹絏:
+	COLOR_DEFAULT       - 纐粄
+	COLOR_RED           - ︹
+	COLOR_WHITE         - フ︹
+	COLOR_YELLOW        - 独︹
+	COLOR_CYAN          - 獵︹
+	COLOR_LIGHT_GREEN   - 睱厚
 
 ---------------------------------------
 
-*dual_weapon <开关>{,<角色ID>};
+*monster     "<瓜>",<x>,<y>,"<陪ボ嘿>",<臸ID>,<计秖>{,"<郉祇ㄆン>",<蔨>,<臸ai>};
+*areamonster "<瓜>",<x1>,<y1>,<x2>,<y2>,"<陪ボ嘿>",<臸ID>,<计秖>{,"<瓜>",<蔨>,<臸ai>};
+*bg_monster <驹初だ舱>,"<瓜>",<x>,<y>,"<陪ボ嘿>",<臸ID>"<郉祇ㄆン>";
+*tribe_monster <皚犁絪腹>,"<瓜>",<x>,<y>,"<臸>",<臸ID>,"<ㄆン夹帽>";
+*guardian "<瓜>",<x>,<y>,"<陪ボ嘿>",臸ID>{,"<郉祇ㄆン>"{,<guardian index>}};
 
-允许玩家双持武器, 如果打开两次双持后, 必须关闭两次才会取消玩家双持.
+硄筁 playerattached 耞琌琌產炳臸
 
-<开关>: 
-	1为开 0为关
+ㄆン跑秖:
+	
+	猔種: ㄆン笿產タ笲︽穦逼钉, ┮蒓產闽羛ㄏノЫ跑秖穦砆ㄤ阑炳滦籠, 
+	狦秨币 disable_mobdead_queue 玥礚惠臮納拜肈钡ㄏノЫ跑秖
+	
+	狦琌產炳, 玥:
+		killedgid			砆炳臸GID
+		killedrid			砆炳臸臸絪腹(MobID)
+		killerrid			炳臸龟蔨GID
+	
+	狦琌臸炳, 玥: 
+		$killedgid			砆炳臸GID
+		$killedrid			砆炳臸臸絪腹(MobID)
+		$killerrid			炳臸龟蔨GID
 
-----------------------------------------
+---------------------------------------
 
-*inventory_mark <类型>{,<参数>};
+*dual_weapon <秨闽>{,<à︹ID>};
 
-对一个物品增加标记, 此指令用于物品脚本、卡片脚本或随机属性脚本中, 指令只用于标记物品, 对逻辑判断无效。
+す砛產蛮猌竟, 狦ゴ秨ㄢΩ蛮, ゲ斗闽超ㄢΩ穦產蛮.
 
-类型: 
-	EquipLoc           更改装备穿戴位置, <参数> 为穿戴位置
-	EquipBound         更改装备绑定类型, <参数> 为绑定类型 (BOUND_NONE BOUND_ACCOUNT BOUND_GUILD BOUND_PARTY BOUND_CHAR)
-	EquipIgnoreFunc    无效装备指定属性, <参数> 无效
-	EquipIgnoreClass   移除装备职业限制, <参数> 无效
-
-----------------------------------------
-
-*itempreview <背包位置序号>;
-
-刷新正在打开浏览的物品说明
-本指令只能在客户端版本大于 20170726 之后的版本才能使用 
-
-----------------------------------------
-
-*getskillsc(<技能ID>);
-
-获取技能使用后给玩家附加的状态ID, 可用于BOT相关的状态条件
-
-----------------------------------------
-
-*pctalk <目标>,"<信息内容>"{,<角色ID>};
-
-发送一条聊天信息给指定目标或群组
-
-<目标>
-	0       - 公开发言
-	队伍ID  - 队伍发言(队伍ID必须是发言玩家自己的队伍)
-	公会ID  - 公会发言(公会ID必须是发言玩家自己的公会)
-	玩家AID - 私聊玩家(玩家必须在线)
+<秨闽>: 
+	1秨 0闽
 
 ----------------------------------------
 
-*pcjoinchat <GID>{,<角色ID>};
+*inventory_mark <摸>{,<把计>};
 
-加入一个与指定GID的玩家或NPC相关的聊天室
+癸珇糤夹癘, ノ珇竲セ竲セ┪繦审妮┦竲セい, ノ夹癘珇, 癸呸胯耞礚
+
+摸: 
+	EquipLoc           э杆称拦竚, <把计> 拦竚
+	EquipBound         э杆称竕﹚摸, <把计> 竕﹚摸 (BOUND_NONE BOUND_ACCOUNT BOUND_GUILD BOUND_PARTY BOUND_CHAR)
+	EquipIgnoreFunc    礚杆称﹚妮┦, <把计> 礚
+	EquipIgnoreClass   簿埃杆称戮穨, <把计> 礚
 
 ----------------------------------------
 
-*unitblown <GID>,<坐标X>,<坐标Y>{,<是否检查>};
+*itempreview <璉竚腹>;
 
-移动个体到指定的坐标, 移动玩家时没有黑屏的传送动画, 移动过程中检查路径, 遇到墙会移动失败
+穝タゴ秨聅凝珇弧
+セめ狠セ 20170726 ぇセㄏノ 
 
-是否检查:
-	是否检查玩家移动到目标点的路径(默认: 2)
-	1 - A*检查是否能移动到终点
-	2 - 简单检查
-	3 - 长距检查
+----------------------------------------
+
+*getskillsc(<мID>);
+
+莉мㄏノ倒產篈ID, ノBOT闽篈兵ン
+
+----------------------------------------
+
+*pctalk <ヘ夹>,"<獺ず甧>"{,<à︹ID>};
+
+祇癳兵册ぱ獺倒﹚ヘ夹┪竤舱
+
+<ヘ夹>
+	0       - そ秨祇ē
+	钉ヮID  - 钉ヮ祇ē(钉ヮIDゲ斗琌祇ē產钉ヮ)
+	そ穦ID  - そ穦祇ē(そ穦IDゲ斗琌祇ē產そ穦)
+	產AID - ╬册產(產ゲ斗絬)
+
+----------------------------------------
+
+*pcjoinchat <GID>{,<à︹ID>};
+
+蒓﹚GID產┪NPC闽册ぱ
+
+----------------------------------------
+
+*unitblown <GID>,<Г夹X>,<Г夹Y>{,<琌浪琩>};
+
+簿笆蔨﹚Г夹, 簿笆產⊿Τ堵肚癳笆礶, 簿笆筁祘い浪琩隔畖, 笿鲤穦簿笆ア毖
+
+琌浪琩:
+	琌浪琩產簿笆ヘ夹翴隔畖(纐粄: 2)
+	1 - A*浪琩琌簿笆沧翴
+	2 - 虏虫浪琩
+	3 - 禯浪琩
 	
 ----------------------------------------
 
-*unitmove <GID>,<坐标X>,<坐标Y>;
+*unitmove <GID>,<Г夹X>,<Г夹Y>;
 
-移动个体到指定的坐标, 移动玩家时没有黑屏的传送动画, 不做任何检查, 甚至可以移动到无法移动的坐标
-当魔物移动到无法移动的格子时, 请先禁止其移动, 否则移动足够多次数后服务端会报错
-
-----------------------------------------
-
-refineui_result <背包位置序号>,<动画类型>,<精炼后等级>;
-
-指令用于自定义精炼UI, 播放精炼动画, 并修改物品精炼值
-
-动画类型:
-	0 - 精炼成功
-	1 - 精炼失败, 装备消失
-	2 - 精炼失败, 精炼降级
-	3 - 精炼失败, 精炼被铁匠的祝福保级
-	
-注意: 
-	1 - 当 OnPCRefineUIFilter 事件被打断后才可以使用该指令
-	2 - 精炼成功或精炼失败, 都会将物品精炼等级直接设置为 <精炼后等级>
-	3 - 此精炼不消耗任何道具, 请使用 delitem 删除精炼材料
+簿笆蔨﹚Г夹, 簿笆產⊿Τ堵肚癳笆礶, ぃ暗ヴ浪琩, 簿笆礚猭簿笆Г夹
+讽臸簿笆礚猭簿笆, 叫窽ゎㄤ簿笆, 玥簿笆ì镑Ω计狝叭狠穦厨岿
 
 ----------------------------------------
 
-*getitemcombo(<物品ID>,<索引>,<返回数组>{,<角色ID>});
+refineui_result <璉竚腹>,<笆礶摸>,<弘芬单>;
 
-返回物品所绑定的套装属性
+ノ﹚竡弘芬UI, 冀弘芬笆礶, э珇弘芬
 
-注意:
-	该指令不会重置返回数组, 请在传入返回数组时重置该数组
-
-返回值:
-	数组中所保存的物品数量
+笆礶摸:
+	0 - 弘芬Θ
+	1 - 弘芬ア毖, 杆称ア
+	2 - 弘芬ア毖, 弘芬
+	3 - 弘芬ア毖, 弘芬砆臟褐玂
 	
-例子:
-	// 运行与物品ID为24090绑定的所有套装效果
+猔種: 
+	1 - 讽 OnPCRefineUIFilter ㄆン砆ゴ耞ㄏノ赣
+	2 - 弘芬Θ┪弘芬ア毖, 常穦盢珇弘芬单钡砞竚 <弘芬单>
+	3 - 弘芬ぃヴ笵ㄣ, 叫ㄏノ delitem 埃弘芬
+
+----------------------------------------
+
+*getitemcombo(<珇ID>,<ま>,<计舱>{,<à︹ID>});
+
+珇┮竕﹚甅杆妮┦
+
+猔種:
+	赣ぃ穦竚计舱, 叫肚计舱竚赣计舱
+
+:
+	计舱い┮玂珇计秖
+	
+ㄒ:
+	// 笲︽蒓珇ID24090竕﹚┮Τ甅杆狦
 	while(getitemcombo(24090, .@idx++, .@combo)){
 		.@combo_str$ = "";
 		for (.@i = 0; .@i < getarraysize(.@combo); .@i++)
@@ -3233,46 +3233,46 @@ refineui_result <背包位置序号>,<动画类型>,<精炼后等级>;
 
 ----------------------------------------
 
-*runcomboscript <套装数组>{,<角色ID>};
+*runcomboscript <甅杆计舱>{,<à︹ID>};
 
-运行套装数组所保存的套装效果
+笲︽甅杆计舱┮玂甅杆狦
 
-返回值:
-	运行成功返回 1 失败返回 0
+:
+	笲︽Θ 1 ア毖 0
 
-例子:
+ㄒ:
 	setarray .@combo[0],24090,24091,24092;
 	runcomboscript .@combo;
 
 ----------------------------------------
 
-*startsellitem <物品ID>,<数量>{,<价格>};
+*startsellitem <珇ID>,<计秖>{,<刹>};
 
-为 NPC 绑定的兑换商店增加一个可兑换道具, 并将兑换商店置于编辑状态
+ NPC 竕﹚传坝┍糤传笵ㄣ, 盢传坝┍竚絪胯篈
 
-数量:
-	当数量为 -1 时为不限兑换数量商店
+计秖:
+	讽计秖 -1 ぃ传计秖坝┍
 	
 ----------------------------------------
 
-*sellitemcurrency <物品ID>,<数量>{,<精炼等级>};
+*sellitemcurrency <珇ID>,<计秖>{,<弘芬单>};
 
-为兑换物品添加一项所需道具, 只能在兑换商店处于编辑状态时使用
+传珇睰兜┮惠笵ㄣ, 传坝┍矪絪胯篈ㄏノ
 	
 ----------------------------------------
 
 *endsellitem;
 
-完成兑换道具添加, 结束道具添加的编辑状态
+ЧΘ传笵ㄣ睰, 挡笵ㄣ睰絪胯篈
 
 ----------------------------------------
 
-*bartershop {<NPC ID>{,<角色ID>}};
+*bartershop {<NPC ID>{,<à︹ID>}};
 
-为指定角色开启一个兑换商店UI
+﹚à︹秨币传坝┍UI
 
-例子:
-	// 使用 红色药水x2 赤色药水x4 黄色药水x8 和 100000Z 兑换一张波利卡片 
+ㄒ:
+	// ㄏノ ︹媚x2 í︹媚x4 独︹媚x8 ㎝ 100000Z 传眎猧 
 	prontera,156,116,0	script	test	56,{
 		bartershop;
 		end;
@@ -3285,143 +3285,143 @@ refineui_result <背包位置序号>,<动画类型>,<精炼后等级>;
 	}
 
 
-扩展:	简易NPC兑换商店可以直接通过商店模式打开一个兑换商店
-		简易兑换商店只能通过一样物品兑换另一样物品
+耎甶:	虏NPC传坝┍钡硄筁坝┍家Αゴ秨传坝┍
+		虏传坝┍硄筁妓珇传妓珇
 
-简易NPC兑换商店例子: 50个红色药水兑换一张波利卡片.....
-	prontera,156,118,0	bartershop	简易兑换商店	65,4001:501:50,4002:502:50,4003:503:50
-
-----------------------------------------
-
-*query_sql_asyn("SQL脚本"{, <变量>{, <变量>{, ...}}});
-
-用法同 query_sql 运行sql指令时不会卡服务器, 如果多个查询并发执行, 则会排队依次查询
+虏NPC传坝┍ㄒ: 50︹媚传眎猧.....
+	prontera,156,118,0	bartershop	虏传坝┍	65,4001:501:50,4002:502:50,4003:503:50
 
 ----------------------------------------
 
-*rfifo_int <读取位置>,<字节数>;
+*query_sql_asyn("SQL竲セ"{, <跑秖>{, <跑秖>{, ...}}});
 
-当 OnPCSocketRecvFilter 事件接收到封包时, 可以用本指令获取‘接收封包’中对应位置的数字数据.
+ノ猭 query_sql 笲︽sqlぃ穦狝叭竟, 狦琩高祇磅︽, 玥穦逼钉ㄌΩ琩高
 
-<字节数>
-	1 - 读取字节型数据
-	2 - 读取短整型数据
-	4 - 读取整数型数据
-	8 - 读取长整型数据
+----------------------------------------
+
+*rfifo_int <弄竚>,<竊计>;
+
+讽 OnPCSocketRecvFilter ㄆン钡Μ, ノセ莉ˉ钡Μˇい癸莱竚计计誹.
+
+<竊计>
+	1 - 弄竊计誹
+	2 - 弄祏俱计誹
+	4 - 弄俱计计誹
+	8 - 弄俱计誹
 	
-指令返回获取到的数字数据
+莉计计誹
 
 ----------------------------------------
 
-*rfifo_str <读取位置>;
+*rfifo_str <弄竚>;
 
-当 OnPCSocketRecvFilter 事件接收到封包时, 可以用本指令获取‘接收封包’中的文本数据.
+讽 OnPCSocketRecvFilter ㄆン钡Μ, ノセ莉ˉ钡Μˇいゅセ计誹.
 
-指令返回获取到的文本数据
-
-----------------------------------------
-
-*wfifo_int <写入位置>,<写入数字>,<字节数>;
-
-当 OnPCSocketRecvFilter 事件接收到封包时, 可以用本指令改写‘发送封包’的数字数据
-使用该指令后 ‘发送封包’ 将在事件结束后发送给客户端, 可通过 fifo_debug 取消发送.
-
-<字节数>
-	1 - 读取字节型数据
-	2 - 读取短整型数据
-	4 - 读取整数型数据
-	8 - 读取长整型数据
+莉ゅセ计誹
 
 ----------------------------------------
 
-*wfifo_str <写入位置>,<写入文本>{,<写入长度>};
+*wfifo_int <糶竚>,<糶计>,<竊计>;
 
-当 OnPCSocketRecvFilter 事件接收到封包时, 可以用本指令改写‘发送封包’的文本数据
-使用该指令后 ‘发送封包’ 将在事件结束后发送给客户端, 可通过 fifo_debug 取消发送.
-如果 <写入长度> 大于 <写入文本> 长度, 则填充空字符.
+讽 OnPCSocketRecvFilter ㄆン钡Μ, ノセэ糶ˉ祇癳ˇ计计誹
+ㄏノ赣 ˉ祇癳ˇ 盢ㄆン挡祇癳倒め狠, 硄筁 fifo_debug 祇癳.
+
+<竊计>
+	1 - 弄竊计誹
+	2 - 弄祏俱计誹
+	4 - 弄俱计计誹
+	8 - 弄俱计誹
+
+----------------------------------------
+
+*wfifo_str <糶竚>,<糶ゅセ>{,<糶>};
+
+讽 OnPCSocketRecvFilter ㄆン钡Μ, ノセэ糶ˉ祇癳ˇゅセ计誹
+ㄏノ赣 ˉ祇癳ˇ 盢ㄆン挡祇癳倒め狠, 硄筁 fifo_debug 祇癳.
+狦 <糶>  <糶ゅセ> , 玥恶才.
 
 ----------------------------------------
 
-*fifo_debug <掩码>;
+*fifo_debug <被絏>;
 
-将 ‘发送封包’ 或 ‘接收封包’ 打印到控制台, 或是禁止事件结束后发送 ‘发送封包’ 给客户端.
+盢 ˉ祇癳ˇ ┪ ˉ钡Μˇ ゴ北, ┪琌窽ゎㄆン挡祇癳 ˉ祇癳ˇ 倒め狠.
 
-<掩码>
-	&1 - 打印接收封包
-	&2 - 打印发送封包
-	&4 - 取消将 wfifo_int wfifo_str 两个指令整理的封包发送给客户端
+<被絏>
+	&1 - ゴ钡Μ
+	&2 - ゴ祇癳
+	&4 - 盢 wfifo_int wfifo_str ㄢ俱瞶祇癳倒め狠
 
 ----------------------------------------
---         以下功能为付费功能         --
--- 收费功能可在官网直接下载测试端测试 --
+--         禣         --
+-- Μ禣﹛蔍钡更代刚狠代刚 --
 ----------------------------------------
 
-*unitskilltowide <GID>,<技能ID>,<技能等级>,<扩散方向>,<步进长度>,<步进范围>,<步进延时>;
-*unitskilltowide <GID>,"<技能名称>",<技能等级>,<扩散方向>,<步进长度>,<步进范围>,<步进延时>;
-*unitskilltowide2 <GID>,<技能ID>,<技能等级>,<扩散方向>,<步进长度>,<步进范围>,<步进延时>;
-*unitskilltowide2 <GID>,"<技能名称>",<技能等级>,<扩散方向>,<步进长度>,<步进范围>,<步进延时>;
+*unitskilltowide <GID>,<мID>,<м单>,<耎床よ>,<˙秈>,<˙秈璖瞅>,<˙秈┑>;
+*unitskilltowide <GID>,"<м嘿>",<м单>,<耎床よ>,<˙秈>,<˙秈璖瞅>,<˙秈┑>;
+*unitskilltowide2 <GID>,<мID>,<м单>,<耎床よ>,<˙秈>,<˙秈璖瞅>,<˙秈┑>;
+*unitskilltowide2 <GID>,"<м嘿>",<м单>,<耎床よ>,<˙秈>,<˙秈璖瞅>,<˙秈┑>;
 
-使魔物释放大规模的魔法攻击, 这个指令只能释放地面技能, 下面有个例子可以直观感受一下
+ㄏ臸睦砏家臸猭ю阑, 硂睦м, Τㄒ芠稰
 
-扩散方式(掩码选项)
-	&1 东-西方向
-	&2 南-北方向
-	&4 西南-东北方向
-	&8 东南-西北方向
+耎床よΑ(被絏匡兜)
+	&1 狥-﹁よ
+	&2 玭-よ
+	&4 ﹁玭-狥よ
+	&8 狥玭-﹁よ
 	
-实现方式
-	unitskilltowide 是通过召唤魔物释放技能后瞬间删除实现的
-	unitskilltowide2 是通过无视技能释放距离咏唱等, 连续释放实现的
+龟瞷よΑ
+	unitskilltowide 琌硄筁酬臸睦м俐丁埃龟瞷
+	unitskilltowide2 琌硄筁礚跌м睦禯置碟佰单, 硈尿睦龟瞷
 	
-例:
+ㄒ:
 	unitskilltowide getcharid(3),21,5,15,2,15,1000;
 	sleep2 2000;
 	unitskilltowide getcharid(3),21,5,15,2,15,0;
 	
 ---------------------------------------
 
-*unitskilltoAOE <GID>,<技能ID>,<技能等级>,<范围>{,<最大数量>};
+*unitskilltoAOE <GID>,<мID>,<м单>,<璖瞅>{,<程计秖>};
 
-指令对周围的敌人使用相同的技能, 这个指令只能释放目标锁定技能
-
----------------------------------------
-
-*roulette_bonus <物品ID>{,<角色ID>};
-
-设置幸运大转盘的 bonus 物品。该指令只有打开转盘的时候有效。
-bonus 物品必须为当前摇奖中的物品时才会显示。
-可以配合 OnPCStartRouletteFilter 事件，重定义转盘规则。
+癸㏄瞅寄ㄏノм, 硂睦ヘ夹玛﹚м
 
 ---------------------------------------
 
-*roulette_iteminfo <标签>,<行>,<列>{,<角色ID>};
+*roulette_bonus <珇ID>{,<à︹ID>};
 
-获得幸运大转盘中物品信息。行数从下往上数。
-可以配合 OnPCStartRouletteFilter 事件, 重定义转盘规则。
-
-<标签>: 
-	1 : 物品ID
-	2 : 获得物品的数量
-	3 : flag 对应数据库转盘数据中的flag
+砞竚┋笲锣絃 bonus 珇赣Τゴ秨锣絃Τ
+bonus 珇ゲ斗讽玡穘贱い珇穦陪ボ
+皌 OnPCStartRouletteFilter ㄆン﹚竡锣絃砏玥
 
 ---------------------------------------
 
-*roulette_open {<行>{,<列>{,<bonus物品>{,<角色ID>}}}};
+*roulette_iteminfo <夹帽>,<︽>,<>{,<à︹ID>};
 
-打开幸运大转盘, 并且定位到相应位置，如果列为-1时，下次摇奖行会定位到 (行+1)，或设置bonus物品。行数从下往上数
-bonus 物品必须为当前摇奖中的物品时才会显示。
-可以配合 OnPCStartRouletteFilter 事件，重定义转盘规则。
+莉眔┋笲锣絃い珇獺︽计眖┕计
+皌 OnPCStartRouletteFilter ㄆン, ﹚竡锣絃砏玥
+
+<夹帽>: 
+	1 : 珇ID
+	2 : 莉眔珇计秖
+	3 : flag 癸莱计誹畐锣絃计誹いflag
 
 ---------------------------------------
 
-*roulette_generate <结果>,<行>,<列>,<bonus物品>{,<角色ID>};
+*roulette_open {<︽>{,<>{,<bonus珇>{,<à︹ID>}}}};
 
-转盘开始转动, 停在指定的位置, 并显示当前摇奖的bonus物品。行数从下往上数
-bonus 物品必须为当前摇奖中的物品时才会显示。
-可以配合 OnPCStartRouletteFilter 事件，重定义转盘规则。
+ゴ秨┋笲锣絃, ﹚莱竚狦-1Ω穘贱︽穦﹚ (︽+1)┪砞竚bonus珇︽计眖┕计
+bonus 珇ゲ斗讽玡穘贱い珇穦陪ボ
+皌 OnPCStartRouletteFilter ㄆン﹚竡锣絃砏玥
 
-<结果>:
-	0 : 成功 下次摇奖行会定位到(行+1)
-	1 : 提示失败, 不会摇奖
-	2 : 提示没有足够的硬币, 不会摇奖
-	3 : 失败 下次摇奖会定位到第一行
+---------------------------------------
+
+*roulette_generate <挡狦>,<︽>,<>,<bonus珇>{,<à︹ID>};
+
+锣絃秨﹍锣笆, 氨﹚竚, 陪ボ讽玡穘贱bonus珇︽计眖┕计
+bonus 珇ゲ斗讽玡穘贱い珇穦陪ボ
+皌 OnPCStartRouletteFilter ㄆン﹚竡锣絃砏玥
+
+<挡狦>:
+	0 : Θ Ω穘贱︽穦﹚(︽+1)
+	1 : 矗ボア毖, ぃ穦穘贱
+	2 : 矗ボ⊿Τì镑祑刽, ぃ穦穘贱
+	3 : ア毖 Ω穘贱穦﹚材︽

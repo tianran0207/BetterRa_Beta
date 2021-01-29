@@ -18,34 +18,34 @@
 
 // Auction House warpers
 //============================================================
-moc_ruins,78,173,6	script	拍卖行向导#moc	98,{
+moc_ruins,78,173,6	script	╃芥︽旧#moc	98,{
 	callfunc "F_AuctionWarper",1;
 }
 
-prontera,218,120,4	script	拍卖行向导#prt	117,{
+prontera,218,120,4	script	╃芥︽旧#prt	117,{
 	callfunc "F_AuctionWarper",2;
 }
 
-yuno,129,116,0	script	拍卖行向导#yuno	90,{
+yuno,129,116,0	script	╃芥︽旧#yuno	90,{
 	callfunc "F_AuctionWarper",3;
 }
 
-lighthalzen,205,169,6	script	拍卖行向导#lhz	833,{
+lighthalzen,205,169,6	script	╃芥︽旧#lhz	833,{
 	callfunc "F_AuctionWarper",4;
 }
 
 function	script	F_AuctionWarper	{
-	mes "[拍卖行向导]";
-	mes "你好, 请问是否想要前往拍卖大厅?";
+	mes "[╃芥︽旧]";
+	mes ", 叫拜琌稱璶玡┕╃芥芔?";
 	next;
-	if (select("是的:不要") == 1) {
+	if (select("琌:ぃ璶") == 1) {
 		.@num = getarg(0);
 		if (.@num == 1 || .@num == 4) {
-			mes "[拍卖行向导]";
-			mes "好的! 希望你能找到想买的东西~";
+			mes "[╃芥︽旧]";
+			mes "! 辨т稱禦狥﹁~";
 		} else {
-			mes "[拍卖行向导]";
-			mes "请享受这让人怦然心动的拍卖会.";
+			mes "[╃芥︽旧]";
+			mes "叫ㄉ硂琵蘽礛み笆╃芥穦.";
 		}
 		close2;
 		switch(.@num) {
@@ -59,27 +59,27 @@ function	script	F_AuctionWarper	{
 			warp "auction_02",43,24; end;
 		}
 	}
-	mes "[拍卖行向导]";
-	mes "好吧, 下次见.";
-	mes "如果您改变了主意, 欢迎再来.";
+	mes "[╃芥︽旧]";
+	mes ", Ωǎ.";
+	mes "狦眤э跑種, 舧ㄓ.";
 	close;
 }
 
 // Sign posts
 //============================================================
 -	script	Information Post#dum::AuctionSign	-1,{
-	mes "[告示板]";
-	mes "和附近的“拍卖行向导”对话,";
-	mes "可以传送值拍卖大厅.";
-	mes "在那里你可以拍卖自己的物品,";
-	mes "或者竞拍其他人正在拍卖中的物品.";
+	mes "[ボ狾]";
+	mes "㎝¨╃芥︽旧〃癸杠,";
+	mes "肚癳╃芥芔.";
+	mes "êń╃芥珇,";
+	mes "┪膙╃ㄤタ╃芥い珇.";
 	close;
 }
 
-moc_ruins,76,176,6	duplicate(AuctionSign)	告示板#moc	837
-prontera,216,120,4	duplicate(AuctionSign)	告示板#prt	837
-yuno,131,116,0	duplicate(AuctionSign)	告示板#yuno	837
-lighthalzen,207,169,6	duplicate(AuctionSign)	告示板#lhz	837
+moc_ruins,76,176,6	duplicate(AuctionSign)	ボ狾#moc	837
+prontera,216,120,4	duplicate(AuctionSign)	ボ狾#prt	837
+yuno,131,116,0	duplicate(AuctionSign)	ボ狾#yuno	837
+lighthalzen,207,169,6	duplicate(AuctionSign)	ボ狾#lhz	837
 
 // Warps
 //============================================================
@@ -91,32 +91,32 @@ auction_02,43,17,0	warp	auction_enterance_lhz	1,1,lighthalzen,209,169
 // Auction House NPCs
 //============================================================
 -	script	Auction Broker#dum::AuctionBroker	-1,{
-	mes "[拍卖师]";
-	mes "欢迎来到拍卖大厅.";
-	mes "请问是否想了解正在拍卖的好东西呢?";
+	mes "[╃芥畍]";
+	mes "舧ㄓ╃芥芔.";
+	mes "叫拜琌稱秆タ╃芥狥﹁㎡?";
 	next;
-	if (select("是的:不要") == 1) {
-		mes "[拍卖师]";
-		mes "好的, 在开价之前, 请仔细了解它们.";
+	if (select("琌:ぃ璶") == 1) {
+		mes "[╃芥畍]";
+		mes ", 秨刹ぇ玡, 叫灿秆ウ.";
 		OpenAuction;
 		close;
 	}
-	mes "[拍卖师]";
-	mes "好吧, 如果您改变了主意, 欢迎再来.";
+	mes "[╃芥畍]";
+	mes ", 狦眤э跑種, 舧ㄓ.";
 	close;
 }
 
-auction_01,182,68,6	duplicate(AuctionBroker)	拍卖师#moc1	98
-auction_01,182,75,0	duplicate(AuctionBroker)	拍卖师#moc2	99
-auction_01,177,75,2	duplicate(AuctionBroker)	拍卖师#moc3	98
-auction_01,177,68,4	duplicate(AuctionBroker)	拍卖师#moc4	99
-auction_01,21,74,4	duplicate(AuctionBroker)	拍卖师#prt1	117
-auction_01,27,78,4	duplicate(AuctionBroker)	拍卖师#prt2	116
-auction_01,16,78,4	duplicate(AuctionBroker)	拍卖师#prt3	115
-auction_02,158,47,6	duplicate(AuctionBroker)	拍卖师#yuno1	90
-auction_02,145,47,2	duplicate(AuctionBroker)	拍卖师#yuno2	90
-auction_02,151,54,0	duplicate(AuctionBroker)	拍卖师#yuno3	90
-auction_02,152,41,4	duplicate(AuctionBroker)	拍卖师#yuno4	90
-auction_02,57,46,2	duplicate(AuctionBroker)	拍卖师#lhz1	874
-auction_02,31,46,6	duplicate(AuctionBroker)	拍卖师#lhz2	874
-auction_02,43,65,4	duplicate(AuctionBroker)	拍卖师#lhz3	833
+auction_01,182,68,6	duplicate(AuctionBroker)	╃芥畍#moc1	98
+auction_01,182,75,0	duplicate(AuctionBroker)	╃芥畍#moc2	99
+auction_01,177,75,2	duplicate(AuctionBroker)	╃芥畍#moc3	98
+auction_01,177,68,4	duplicate(AuctionBroker)	╃芥畍#moc4	99
+auction_01,21,74,4	duplicate(AuctionBroker)	╃芥畍#prt1	117
+auction_01,27,78,4	duplicate(AuctionBroker)	╃芥畍#prt2	116
+auction_01,16,78,4	duplicate(AuctionBroker)	╃芥畍#prt3	115
+auction_02,158,47,6	duplicate(AuctionBroker)	╃芥畍#yuno1	90
+auction_02,145,47,2	duplicate(AuctionBroker)	╃芥畍#yuno2	90
+auction_02,151,54,0	duplicate(AuctionBroker)	╃芥畍#yuno3	90
+auction_02,152,41,4	duplicate(AuctionBroker)	╃芥畍#yuno4	90
+auction_02,57,46,2	duplicate(AuctionBroker)	╃芥畍#lhz1	874
+auction_02,31,46,6	duplicate(AuctionBroker)	╃芥畍#lhz2	874
+auction_02,43,65,4	duplicate(AuctionBroker)	╃芥畍#lhz3	833

@@ -1,15 +1,15 @@
-# 仓库、背包配置文件
+# 畐璉皌竚ゅン
 ##########################################################################
-#	- ID                       (数值类型) 仓库的唯一编号, 用于 'openstorage2' 脚本指令, 这样地图服务器才知道应该打开哪个仓库.
-#	  Name                     (字符串类型) 仓库的名称, 这个名称会显示在客户端仓库窗口的标题栏中.
-#	  Table                    (字符串类型) 此仓库对应的数据库表名称. 附加数据表的格式与自带的 storage 表一样.
-#	  Type                     (字符串类型) 仓库对应 STORAGE_DB, 背包对应 INVENTORY_DB, 省略默认为 STORAGE_DB
-#	  Max                      (数值类型) *可选* 用来设置仓库能存放的物品种类上限. 若未设置的话, 则会采用源代码中 MAX_STORAGE 宏定
+#	- ID                       (计摸) 畐斑絪腹, ノ 'openstorage2' 竲セ, 硂妓瓜狝叭竟笵莱赣ゴ秨畐.
+#	  Name                     (才﹃摸) 畐嘿, 硂嘿穦陪ボめ狠畐怠夹肈逆い.
+#	  Table                    (才﹃摸) 畐癸莱计誹畐嘿. 计誹Α蒓盿 storage 妓.
+#	  Type                     (才﹃摸) 畐癸莱 STORAGE_DB, 璉癸莱 INVENTORY_DB, 菠纐粄 STORAGE_DB
+#	  Max                      (计摸) *匡* ノㄓ砞竚畐珇销摸. 璝ゼ砞竚杠, 玥穦ノ方絏い MAX_STORAGE Щ﹚
 ###########################################################################
-# 扩展仓库通过 'openstorage2' 指令打开, 扩展背包通过 mapflag 标记切换, 具体请查看 doc/BetterRa_mapflags.txt
-# 使用之前必须确认 Table 对应的数据库是否存在, 如果不存在可以通过复制 storage 和 inventory 的结构创建.
-# 扩展仓库中的 'Max' 对 'vip_storage_increase' 无效, 背包大小固定为, MAX_INVENTORY, 在定制中更改.
-# 玩家默认读入 ID 为 0 的背包, 默认表定义在 conf\inter_athena.conf 中的 inventory_db 配置
+# 耎甶畐硄筁 'openstorage2' ゴ秨, 耎甶璉硄筁 mapflag 夹癘ち传, ㄣ蔨叫琩 doc/BetterRa_mapflags.txt
+# ㄏノぇ玡ゲ斗谔粄 Table 癸莱计誹畐琌, 狦ぃ硄筁蝋 storage ㎝ inventory 挡疼承.
+# 耎甶畐い 'Max' 癸 'vip_storage_increase' 礚, 璉㏕﹚, MAX_INVENTORY, ﹚いэ.
+# 產纐粄弄 ID  0 璉, 纐粄﹚竡 conf\inter_athena.conf い inventory_db 皌竚
 ###########################################################################
 
 Header:
@@ -18,15 +18,15 @@ Header:
 
 Body:
   - ID: 0
-    Name: "个人仓库"
+    Name: "畐"
     Table: storage
     
 #  - ID: 1
-#    Name: "扩展仓库"
+#    Name: "耎甶畐"
 #    Type: STORAGE_DB
 #    Table: storage2
 #  - ID: 101
-#    Name: "扩展背包"
+#    Name: "耎甶璉"
 #    Type: INVENTORY_DB
 #    Table: inventory2
 

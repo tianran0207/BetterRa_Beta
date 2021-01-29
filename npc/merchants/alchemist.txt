@@ -20,39 +20,39 @@
 //= 1.8 Moved Craft Book Merchant to Renewal path. [Euphy]
 //============================================================ 
 
-alde_alche,24,188,3	script	公会销售员	740,{
+alde_alche,24,188,3	script	そ穦綪扳	740,{
 	if (checkweight(1201,1) == 0) {
-		mes "- 请等等! -";
-		mes "- 你身上携带了太多物品了 -";
-		mes "- 先把东西多余的东西 -";
-		mes "- 寄放在卡普拉仓库之后 -";
-		mes "- 再回来吧! -";
+		mes "- 叫单单! -";
+		mes "- ō拟盿び珇 -";
+		mes "- р狥﹁狥﹁ -";
+		mes "- 盚炊┰畐ぇ -";
+		mes "- ㄓ! -";
 		close;
 	}
-	mes "[葛伯 纱普]";
-	mes "欢迎来到炼金术师组织，";
-	mes "需要什么服务吗?";
+	mes "[腐 炊]";
+	mes "舧ㄓ芬砃畍舱麓";
+	mes "惠璶ぐ狝叭盾?";
 	next;
-	switch (select("购买制药物品:购买制作说明书:取消")) {
+	switch (select("潦禦媚珇:潦禦弧:")) {
 	case 1:
-		mes "[葛伯 纱普]";
-		mes "请问需要什么物品";
+		mes "[腐 炊]";
+		mes "叫拜惠璶ぐ珇";
 		next;
-		if (select("药钵 - 8 Zeny:停止交易") == 1) {
-			mes "[葛伯 纱普]";
-			mes "请问需要几个?";
-			mes "如想要停止交易请写 '0' ";
+		if (select("媚糙 - 8 Zeny:氨ゎユ") == 1) {
+			mes "[腐 炊]";
+			mes "叫拜惠璶?";
+			mes "稱璶氨ゎユ叫糶 '0' ";
 			next;
 			while(1) {
 				input .@input,0,2001;
 				if (.@input == 0) {
-					mes "[葛伯 纱普]";
-					mes "交易已经取消，下次再说吧";
+					mes "[腐 炊]";
+					mes "ユ竒Ω弧";
 					close;
 				}
 				else if (.@input < 1 || .@input > 2000) {
-					mes "[葛伯 纱普]";
-					mes "单次购买数量必须是1至2000个之间的数";
+					mes "[腐 炊]";
+					mes "虫Ω潦禦计秖ゲ斗琌12000ぇ丁计";
 					next;
 				}
 				else {
@@ -62,35 +62,35 @@ alde_alche,24,188,3	script	公会销售员	740,{
 			set .@sell,.@input * 8;
 			set .@item_weight,.@input * 10;
 			if (Zeny < .@sell) {
-				mes "[葛伯 纱普]";
-				mes "金额不足噢";
-				mes "请确认一下所携带的金额";
+				mes "[腐 炊]";
+				mes "肂ぃì揪";
+				mes "叫谔粄┮拟盿肂";
 				close;
 			}
 			if ((MaxWeight - Weight) < .@item_weight) {
-				mes "[葛伯 纱普]";
-				mes "看样子都不能带走啊，";
-				mes "请确认一下所携带的物品量和负重";
+				mes "[腐 炊]";
+				mes "妓常ぃ盿ǐ摆";
+				mes "叫谔粄┮拟盿珇秖㎝璽";
 				close;
 			}
 			set Zeny, Zeny-.@sell;
 			getitem 7134,.@input; //Medicine_Bowl
-			mes "[葛伯 纱普]";
-			mes "感谢你的购买，";
-			mes "愿你做出实用的药";
+			mes "[腐 炊]";
+			mes "稰谅潦禦";
+			mes "篅暗龟ノ媚";
 			close;
 		}
-		mes "[葛伯 纱普]";
-		mes "好吧~";
-		mes "如果你需要制药相关的道具，可以随时找我~";
+		mes "[腐 炊]";
+		mes "~";
+		mes "狦惠璶媚闽笵ㄣ繦ти~";
 		close;
 	case 2:
-		mes "[葛伯 纱普]";
-		mes "请问需要哪些物品?";
-		mes "一般的制作说明书是100,000金币，";
-		mes "比较特殊的几种制作说明书除外";
+		mes "[腐 炊]";
+		mes "叫拜惠璶ㄇ珇?";
+		mes "弧琌100,000刽";
+		mes "ゑ耕疭销弧埃";
 		next;
-		switch(select("一般药水制作说明书:酒精制作说明书:火烟瓶制作说明书:盐酸制作说明书:植物瓶制作说明书:刺锤瓶制作说明书:护贝药制作说明书:纤细药水制作说明书:取消交易")) {
+		switch(select("媚弧:皊弘弧:废瞺弧:芉荒弧:从瞺弧:凌瞺弧:臔ī媚弧:胖灿媚弧:ユ")) {
 		case 1:
 			callsub S_SellManual,7144,100000; //Normal_Potion_Book
 			break;
@@ -116,14 +116,14 @@ alde_alche,24,188,3	script	公会销售员	740,{
 			callsub S_SellManual,7133,240000; //Slim_Potion_Create_Book
 			break;
 		case 9:
-			mes "[葛伯 纱普]";
-			mes "好吧~";
-			mes "如果你需要制药相关说明书的话，可以随时找我~";
+			mes "[腐 炊]";
+			mes "~";
+			mes "狦惠璶媚闽弧杠繦ти~";
 			close;
 		}
 	case 3:
-		mes "[葛伯 纱普]";
-		mes "好滴，祝你有个美好的一天~";
+		mes "[腐 炊]";
+		mes "簑Τぱ~";
 		close;
 	}
 
@@ -132,24 +132,24 @@ S_SellManual:
 	.@zeny_req = getarg(1);
 
 	if (Zeny < .@zeny_req) {
-		mes "[葛伯 纱普]";
-		mes "金额不足噢";
-		mes "请确认一下所携带的金额";
+		mes "[腐 炊]";
+		mes "肂ぃì揪";
+		mes "叫谔粄┮拟盿肂";
 		close;
 	}
-	mes "[葛伯 纱普]";
+	mes "[腐 炊]";
 	mes ""+getitemname(.@item_id)+"?";
-	mes "购买这本说明书需要 "+.@zeny_req+" zeny.";
+	mes "潦禦硂セ弧惠璶 "+.@zeny_req+" zeny.";
 	next;
-	if (select("确定购买:不买了") == 1) {
+	if (select("谔﹚潦禦:ぃ禦") == 1) {
 		set Zeny, Zeny-.@zeny_req;
 		getitem .@item_id,1;
-		mes "[葛伯 纱普]";
-		mes "谢谢惠顾~";
-		mes "愿你做出实用的药";
+		mes "[腐 炊]";
+		mes "谅谅磃臮~";
+		mes "篅暗龟ノ媚";
 		close;
 	}
-	mes "[葛伯 纱普]";
-	mes "好的，那么请下次再来吧！";
+	mes "[腐 炊]";
+	mes "ê叫Ωㄓ";
 	close;
 }

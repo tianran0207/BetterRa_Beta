@@ -35,33 +35,33 @@
 
 // Entrance
 //============================================================
-gef_fild10,242,202,0	script	裂痕的碎片	406,{
+gef_fild10,242,202,0	script	吊勃窰	406,{
 
 	set .@party_id,getcharid(1);
-	set .@md_name$,"兽人的记忆";
+	set .@md_name$,"脋癘拘";
 
 	if (!instance_check_party(.@party_id,2,30,80)) {
-		mes "你必须加入一个至少有两个人的队伍.";
-		mes "而且队员的基础等级必须都在 ^ff000030 ~ 80^000000 之间, 才能够进入.";
+		mes "ゲ斗ぶΤㄢ钉ヮ.";
+		mes "τ钉膀娄单ゲ斗常 ^ff000030 ~ 80^000000 ぇ丁, 镑秈.";
 		close;
 	}
 
 	set .@orctime,checkquest(12059,PLAYTIME);
 	if (.@orctime == -1) {
 		if (is_party_leader() == true) {
-			mes "已经确认队伍状态.";
-			mes "你要预约并进入 "+.@md_name$+" 吗?";
+			mes "竒谔粄钉ヮ篈.";
+			mes "璶箇秈 "+.@md_name$+" 盾?";
 			next;
-			switch(select("预约创建 "+.@md_name$+":进入副本:取消")) {
+			switch(select("箇承 "+.@md_name$+":秈捌セ:")) {
 			case 1:
 				if (instance_create(.@md_name$) < 0) {
-					mes "队伍名称: "+ getpartyname(.@party_id);
-					mes "队长名称: "+strcharinfo(0);
-					mes "^0000ff"+.@md_name$+" ^000000 - 副本预约失败.";
+					mes "钉ヮ嘿: "+ getpartyname(.@party_id);
+					mes "钉嘿: "+strcharinfo(0);
+					mes "^0000ff"+.@md_name$+" ^000000 - 捌セ箇ア毖.";
 					close;
 				}
-				mes "^0000ff"+.@md_name$+"^000000- 开始预约副本";
-				mes "预约确认后, 请选择 '进入副本' 菜单, 来进入 "+.@md_name$+" 副本.";
+				mes "^0000ff"+.@md_name$+"^000000- 秨﹍箇捌セ";
+				mes "箇谔粄, 叫匡拒 '秈捌セ' 垫虫, ㄓ秈 "+.@md_name$+" 捌セ.";
 				close;
 			case 2:
 				callsub L_Enter,0;
@@ -69,39 +69,39 @@ gef_fild10,242,202,0	script	裂痕的碎片	406,{
 				close;
 			}
 		}
-		if(select("进入 " + .@md_name$ + ":取消") == 2)
+		if(select("秈 " + .@md_name$ + ":") == 2)
 			end;
 		callsub L_Enter,1;
 	} else if (.@orctime == 0 || .@orctime == 1) {
-		mes "若副本已经开放, 那么请进入副本.";
+		mes "璝捌セ竒秨, ê叫秈捌セ.";
 		next;
-		if(select("进入 "+.@md_name$+":取消") == 2)
+		if(select("秈 "+.@md_name$+":") == 2)
 			close;
 		callsub L_Enter,0;
 	} else if (.@orctime == 2) {
-		mes "^0000ff上次进入 兽人的记忆 副本的 魔力负面效果已经消散了. 您可以重新创建副本然后再次进入.^000000";
+		mes "^0000ffΩ秈 脋癘拘 捌セ 臸璽狦竒床. 眤穝承捌セ礛Ω秈.^000000";
 		erasequest 12059;
-		// 下面这个变量得重置，否则来过一次之后,
-		// 每次和 库鲁格 对话都将显示最后一句话. [Sola丶小克]
+		// 硂跑秖眔竚玥ㄓ筁Ωぇ,
+		// –Ω㎝ 畐緗 癸杠常盢陪ボ程杠. [Sola]
 		set yong_odun,0;
 		close;
 	}
-	mes "若您想预约创建副本的话, 您必须加入一个至少有两个人的队伍, 并且成为队长才可以.";
+	mes "璝眤稱箇承捌セ杠, 眤ゲ斗ぶΤㄢ钉ヮ, Θ钉.";
 	close;
 L_Enter:
-	switch(instance_enter("兽人的记忆")) {
+	switch(instance_enter("脋癘拘")) {
 	case IE_OTHER:
-		mes "很抱歉, 发生了未知错误";
+		mes "╆簆, 祇ネゼ岿粇";
 		close;
 	case IE_NOINSTANCE:
-		mes "兽人的记忆 副本不存在.";
-		mes "可能是副本已被超过了时间限制, 或者被队长主动销毁. 您可以请队长重新预约创建副本, 如果队长预约失败的话, 请在两小时之后再尝试重新进入.";
+		mes "脋癘拘 捌セぃ.";
+		mes "琌捌セ砆禬筁丁, ┪砆钉笆綪反. 眤叫钉穝箇承捌セ, 狦钉箇ア毖杠, 叫ㄢぇ沽刚穝秈.";
 		close;
 	case IE_NOMEMBER:
-		mes "您必须先加入队伍才能进入副本.";
+		mes "眤ゲ斗钉ヮ秈捌セ.";
 		close;
 	case IE_OK:
-		mapannounce "gef_fild10", getpartyname( getcharid(1) ) +" 队伍的 "+strcharinfo(0)+" 已经进入 兽人的记忆.",bc_map,"0x00ff99";
+		mapannounce "gef_fild10", getpartyname( getcharid(1) ) +" 钉ヮ "+strcharinfo(0)+" 竒秈 脋癘拘.",bc_map,"0x00ff99";
 		if (checkquest(12059) == -1) setquest 12059;
 		//warp "1@orcs",179,15;
 		if (getarg(0) == 0) close;
@@ -110,59 +110,59 @@ L_Enter:
 
 }
 
-gef_fild10,238,202,6	script	狂傲的科学家#orc	865,{
+gef_fild10,238,202,6	script	╣镀厩產#orc	865,{
 	if (BaseLevel < 50) {
-		mes "科学家似乎没注意到你, 而且独自一个人喃喃自语...";
+		mes "厩產⊿猔種, τ縒充充粂...";
 		close;
 	}
 	if (mad == 0) {
-		mes "[狂傲的科学家]";
-		mes "哈哈, 没有兽人敢靠近我!";
-		mes "裂痕的力量果然是不可战胜的啊!!";
+		mes "[╣镀厩產]";
+		mes ", ⊿Τ脋幢綼и!";
+		mes "吊勃秖狦礛琌ぃ驹衊摆!!";
 		next;
-		switch(select("兽人不敢攻击你?:真会吹牛!")) {
+		switch(select("脋ぃ幢ю阑?:痷穦!")) {
 		case 1:
-			mes "[狂傲的科学家]";
-			mes "难以置信是吧! 但是千真万确.";
-			mes "我是调查梦罗克附近时空裂痕的学者.";
-			mes "根据我的研究, 在裂痕中所发现的矿石, 隐藏着强大力量!";
+			mes "[╣镀厩產]";
+			mes "螟竚獺琌! 琌痷蒃谔.";
+			mes "и琌秸琩冠霉吊勃厩.";
+			mes "誹и╯, 吊勃い┮祇瞷膓ホ, 留旅帝眏秖!";
 			next;
 			break;
 		case 2:
-			mes "[狂傲的科学家]";
-			mes "唉你这小小年纪, 还真多疑...哼?";
+			mes "[╣镀厩產]";
+			mes "硂, 临痷好...?";
 			next;
 			break;
 		}
-		select("喔? 难道是时空旅行吗?");
-		mes "[狂傲的科学家]";
-		mes "哟呵, 你很聪明嘛!";
-		mes "就在刚刚, 我体验了时空旅行! 看到放在我身旁的石像吗? 这可不是一般的石像!";
+		select("翅? 螟笵琌︽盾?");
+		mes "[╣镀厩產]";
+		mes "抽, 羙估!";
+		mes "碞, и蔨喷︽! иōホ钩盾? 硂ぃ琌ホ钩!";
 		next;
-		mes "[狂傲的科学家]";
-		mes "里面融合了现代科学的精随, 以及在裂痕所发现的矿石所隐含的无限魔力呢! 你要不要亲自体验看看?";
+		mes "[╣镀厩產]";
+		mes "ń磕瞷厩弘繦, の吊勃┮祇瞷膓ホ┮留礚臸㎡! 璶ぃ璶克蔨喷?";
 		next;
-		select("...嗯, 这听起来并不合法?");
-		mes "[狂傲的科学家]";
-		mes "哈哈哈, 当然是非法的, 不过为了达成目的有时要不择手段! 如何? 要试试看吗? 很有趣哟! 可以体验与兽人聊天, 呵呵!";
+		select("...垛, 硂癬ㄓぃ猭?");
+		mes "[╣镀厩產]";
+		mes ", 讽礛琌獶猭, ぃ筁笷ΘヘΤ璶ぃ拒も琿! ? 璶刚刚盾? Τ届抽! 蔨喷蒓脋册ぱ, !";
 		next;
-		mes "[狂傲的科学家]";
-		mes "或许你们刚一见面, 兽人就会下达一堆行动指示, 你就假装配合即可. 而且兽人们每次都说重复的话, 我都快背起来了, 呵呵!";
+		mes "[╣镀厩產]";
+		mes "┪砛ǎ, 脋碞穦笷帮︽笆ボ, 碞安杆皌. τ脋–Ω常弧蝋杠, и常е璉癬ㄓ, !";
 		next;
-		switch(select("好啊...我要怎么做呢?:我要是守法的好公民.")) {
+		switch(select("摆...и璶暗㎡?:и璶琌猭そチ.")) {
 		case 1:
-			mes "[狂傲的科学家]";
-			mes "很好! 请你把手放在旁边的莫内石像上! 进去之后好好表现吧! 呵呵!";
+			mes "[╣镀厩產]";
+			mes "! 叫рも娩馋ずホ钩! 秈ぇ瞷! !";
 			set mad,1;
 			close;
 		case 2:
-			mes "[狂傲的科学家]";
-			mes "不去拉倒! 哼!";
+			mes "[╣镀厩產]";
+			mes "ぃ┰! !";
 			close;
 		}
 	} else if (mad == 1) {
-		mes "[狂傲的科学家]";
-		mes "嗯? 想要体验时空旅行的话, 就把手放在莫内石像上!";
+		mes "[╣镀厩產]";
+		mes "垛? 稱璶蔨喷︽杠, 碞рも馋ずホ钩!";
 		close;
 	} else {
 		set mad,1;
@@ -186,7 +186,7 @@ OnDisable:
 
 OnEnable:
 	enablenpc instance_npcname("#Resurrect Monsters1");
-	monster instance_mapname("1@orcs"),0,0,"兽人战士",1023,30,instance_npcname("#Resurrect Monsters1")+"::OnMyMobDead";
+	monster instance_mapname("1@orcs"),0,0,"脋驹",1023,30,instance_npcname("#Resurrect Monsters1")+"::OnMyMobDead";
 	end;
 
 OnMyMobDead:
@@ -195,24 +195,24 @@ OnMyMobDead:
 	if (.@mob_dead_num > 0) {
 		set .@mob_ran,rand(1,30);
 		if (.@mob_ran > 29) {
-			monster .@map$,0,0,"兽人战士",1023,.@mob_dead_num,instance_npcname("#Resurrect Monsters1")+"::OnMyMobDead";
+			monster .@map$,0,0,"脋驹",1023,.@mob_dead_num,instance_npcname("#Resurrect Monsters1")+"::OnMyMobDead";
 		}
 		else if ((.@mob_ran > 28) && (.@mob_ran < 30)) {
-			monster .@map$,0,0,"兽人战士长",1213,.@mob_dead_num,instance_npcname("#Resurrect Monsters1")+"::OnMyMobDead";
+			monster .@map$,0,0,"脋驹",1213,.@mob_dead_num,instance_npcname("#Resurrect Monsters1")+"::OnMyMobDead";
 			if (rand(1,10) == 9) {
-				mapannounce .@map$, "兽人战士长: 我们需要更多的武装抵抗力量! 赶快在这里多多抓壮丁!",bc_map,"0xff4444";
+				mapannounce .@map$, "脋驹: и惠璶猌杆╄к秖! 鱼е硂ńъЁ!",bc_map,"0xff4444";
 			}
 		}
 		else if ((.@mob_ran > 26) && (.@mob_ran < 29)) {
-			areamonster .@map$,41,91,51,81,"兽人战士长",1213,.@mob_dead_num,instance_npcname("#Resurrect Monsters1")+"::OnMyMobDead";
+			areamonster .@map$,41,91,51,81,"脋驹",1213,.@mob_dead_num,instance_npcname("#Resurrect Monsters1")+"::OnMyMobDead";
 			if (rand(1,10) == 9) {
-				mapannounce .@map$, "兽人战士长在哪!? 让他们来剿灭这些敌人!",bc_map,"0xff4444";
+				mapannounce .@map$, "脋驹!? 琵ㄓ断防硂ㄇ寄!",bc_map,"0xff4444";
 			}
 		}
 		else {
-			areamonster .@map$,17,187,27,177,"兽人战士长",1213,.@mob_dead_num,instance_npcname("#Resurrect Monsters1")+"::OnMyMobDead";
+			areamonster .@map$,17,187,27,177,"脋驹",1213,.@mob_dead_num,instance_npcname("#Resurrect Monsters1")+"::OnMyMobDead";
 			if (rand(1,5) == 3) {
-				mapannounce .@map$, "警告: 兽人军队已经在第四区域集结",bc_map,"0x77ff77";
+				mapannounce .@map$, "牡: 脋瓁钉竒材跋办栋挡",bc_map,"0x77ff77";
 			}
 			if (rand(1,100) == 50) {
 				initnpctimer;
@@ -222,13 +222,13 @@ OnMyMobDead:
 	end;
 
 OnTimer10:
-	mapannounce instance_mapname("1@orcs"), "兽人守护队长的呼吁: 看来这场战役会比我想像中的要长嘛. 召唤钟乳巨石怪!",bc_map,"0xff4444";
+	mapannounce instance_mapname("1@orcs"), "脋臔钉㊣: ㄓ硂初驹穦ゑи稱钩い璶估. 酬牧ㄅエホ┣!",bc_map,"0xff4444";
 	end;
 
 OnTimer4010:
 	set .@map$, instance_mapname("1@orcs");
-	mapannounce .@map$, "钟乳石傀儡们从地底深处源源不断地冒出来.",bc_map,"0x77ff77";
-	areamonster .@map$,17,187,27,177,"钟乳巨石怪",1278,20,instance_npcname("#Resurrect Monsters1")+"::OnMyMobDead";
+	mapannounce .@map$, "牧ㄅホ橙纖眖┏瞏矪方方ぃ耞玙ㄓ.",bc_map,"0x77ff77";
+	areamonster .@map$,17,187,27,177,"牧ㄅエホ┣",1278,20,instance_npcname("#Resurrect Monsters1")+"::OnMyMobDead";
 	stopnpctimer;
 	end;
 }
@@ -246,7 +246,7 @@ OnDisable:
 
 OnEnable:
 	enablenpc instance_npcname("#Resurrect Monsters2");
-	monster instance_mapname("1@orcs"),0,0,"驯化之狼",1106,15,instance_npcname("#Resurrect Monsters2")+"::OnMyMobDead";
+	monster instance_mapname("1@orcs"),0,0,"攻てぇ疶",1106,15,instance_npcname("#Resurrect Monsters2")+"::OnMyMobDead";
 	end;
 
 OnMyMobDead:
@@ -254,12 +254,12 @@ OnMyMobDead:
 	set .@mob_dead_num, 15 - mobcount(.@map$,instance_npcname("#Resurrect Monsters2")+"::OnMyMobDead");
 	if (rand(1,30) > 15) {
 		if (.@mob_dead_num > 0) {
-			monster .@map$,0,0,"驯化之狼",1106,.@mob_dead_num,instance_npcname("#Resurrect Monsters2")+"::OnMyMobDead";
+			monster .@map$,0,0,"攻てぇ疶",1106,.@mob_dead_num,instance_npcname("#Resurrect Monsters2")+"::OnMyMobDead";
 		}
 	}
 	else {
 		if (.@mob_dead_num > 0) {
-			areamonster .@map$,17,187,27,177,"驯化之狼",1106,.@mob_dead_num,instance_npcname("#Resurrect Monsters2")+"::OnMyMobDead";
+			areamonster .@map$,17,187,27,177,"攻てぇ疶",1106,.@mob_dead_num,instance_npcname("#Resurrect Monsters2")+"::OnMyMobDead";
 		}
 	}
 	end;
@@ -278,7 +278,7 @@ OnDisable:
 
 OnEnable:
 	enablenpc instance_npcname("#Resurrect Monsters3");
-	monster instance_mapname("1@orcs"),0,0,"兽人弓箭手",1189,15,instance_npcname("#Resurrect Monsters3")+"::OnMyMobDead";
+	monster instance_mapname("1@orcs"),0,0,"脋絙も",1189,15,instance_npcname("#Resurrect Monsters3")+"::OnMyMobDead";
 	end;
 
 OnMyMobDead:
@@ -287,20 +287,20 @@ OnMyMobDead:
 	set .@mob_ran,rand(1,30);
 	if (.@mob_ran > 29) {
 		if (.@mob_dead_num > 0) {
-			monster .@map$,0,0,"兽人弓箭手",1189,.@mob_dead_num,instance_npcname("#Resurrect Monsters3")+"::OnMyMobDead";
+			monster .@map$,0,0,"脋絙も",1189,.@mob_dead_num,instance_npcname("#Resurrect Monsters3")+"::OnMyMobDead";
 		}
 	}
 	else if ((.@mob_ran > 26) && (.@mob_ran < 30)) {
 		if (.@mob_dead_num > 0) {
-			areamonster .@map$,43,155,47,159,"兽人弓箭手",1189,.@mob_dead_num,instance_npcname("#Resurrect Monsters3")+"::OnMyMobDead";
+			areamonster .@map$,43,155,47,159,"脋絙も",1189,.@mob_dead_num,instance_npcname("#Resurrect Monsters3")+"::OnMyMobDead";
 			if (rand(1,3) == 3) {
-				mapannounce .@map$, "兽人战士长: 从背后攻击他们! 切断他们的供给!",bc_map,"0xff4444";
+				mapannounce .@map$, "脋驹: 眖璉ю阑! ち耞ㄑ倒!",bc_map,"0xff4444";
 			}
 		}
 	}
 	else {
 		if (.@mob_dead_num > 0) {
-			areamonster .@map$,17,187,27,177,"兽人弓箭手",1189,.@mob_dead_num,instance_npcname("#Resurrect Monsters3")+"::OnMyMobDead";
+			areamonster .@map$,17,187,27,177,"脋絙も",1189,.@mob_dead_num,instance_npcname("#Resurrect Monsters3")+"::OnMyMobDead";
 		}
 	}
 	end;
@@ -311,14 +311,14 @@ OnMyMobDead:
 
 OnInstanceInit:
 	enablenpc instance_npcname("#Resurrect Monsters4");
-	areamonster instance_mapname("1@orcs"),98,35,178,115,"疟蚊",1627,10,instance_npcname("#Resurrect Monsters4")+"::OnMyMobDead";
+	areamonster instance_mapname("1@orcs"),98,35,178,115,"耗癆",1627,10,instance_npcname("#Resurrect Monsters4")+"::OnMyMobDead";
 	end;
 
 OnMyMobDead:
 	set .@map$, instance_mapname("1@orcs");
 	set .@mob_dead_num, 10 - mobcount(.@map$,instance_npcname("#Resurrect Monsters4")+"::OnMyMobDead");
 	if (.@mob_dead_num > 0) {
-		monster .@map$,0,0,"疟蚊",1627,.@mob_dead_num,instance_npcname("#Resurrect Monsters4")+"::OnMyMobDead";
+		monster .@map$,0,0,"耗癆",1627,.@mob_dead_num,instance_npcname("#Resurrect Monsters4")+"::OnMyMobDead";
 	}
 	end;
 
@@ -327,66 +327,66 @@ OnDisable:
 	end;
 }
 
-1@orcs,180,29,4	script	库鲁格#1-1	433,{
-	donpcevent instance_npcname("库鲁格#1-2")+"::OnEnable";
+1@orcs,180,29,4	script	畐緗#1-1	433,{
+	donpcevent instance_npcname("畐緗#1-2")+"::OnEnable";
 	end;
 }
 
-1@orcs,180,29,4	script	库鲁格#1-2	433,{
+1@orcs,180,29,4	script	畐緗#1-2	433,{
 	end;
 
 OnInstanceInit:
-	disablenpc instance_npcname("库鲁格#1-2");
+	disablenpc instance_npcname("畐緗#1-2");
 	end;
 
 OnEnable:
-	disablenpc instance_npcname("库鲁格#1-1");
-	enablenpc instance_npcname("库鲁格#1-2");
+	disablenpc instance_npcname("畐緗#1-1");
+	enablenpc instance_npcname("畐緗#1-2");
 	initnpctimer;
 	end;
 
 OnTimer10:
-	mapannounce instance_mapname("1@orcs"), "库鲁格: 该死... 你怎么那么久!! 我没有那么多时间!!",bc_map,"0xffff00";
+	mapannounce instance_mapname("1@orcs"), "畐緗: 赣... ê!! и⊿Τê丁!!",bc_map,"0xffff00";
 	end;
 
 OnTimer5710:
-	mapannounce instance_mapname("1@orcs"), "库鲁格: 依照原先计划要帮我们同伴们打开大门, 但因你们耽误时间, 害我们被兽人女巫发现! 现在事情变得很棘手.",bc_map,"0xffff00";
+	mapannounce instance_mapname("1@orcs"), "畐緗: ㄌ酚璸璶腊и︸ゴ秨, 粇丁, 甡и砆脋祇瞷! 瞷ㄆ薄跑眔雌も.",bc_map,"0xffff00";
 	end;
 
 OnTimer14610:
-	mapannounce instance_mapname("1@orcs"), "兽人守护队长的呼吁: 感觉到敌人在附近, 赶快把侦查兵力派到入口附近去!!",bc_map,"0xff4444";
+	mapannounce instance_mapname("1@orcs"), "脋臔钉㊣: 稰谋寄, 鱼ер盎琩!!",bc_map,"0xff4444";
 	end;
 
 OnTimer20210:
-	mapannounce instance_mapname("1@orcs"), "库鲁格: 不妙了... 敌人快要冲过来了, 要仔细听我的指挥.",bc_map,"0xffff00";
+	mapannounce instance_mapname("1@orcs"), "畐緗: ぃМ... 寄е璶≧筁ㄓ, 璶灿и揣.",bc_map,"0xffff00";
 	end;
 
 OnTimer24910:
-	mapannounce instance_mapname("1@orcs"), "库鲁格: 占领此区的女巫, 把1楼分成4个区域后用魔法给封印了, 以每个区域派驻一个可以解除封印的兽人守护兵.",bc_map,"0xffff00";
+	mapannounce instance_mapname("1@orcs"), "畐緗: 烩跋, р1加だΘ4跋办ノ臸猭倒, –跋办緉秆埃脋臔.",bc_map,"0xffff00";
 	end;
 
 OnTimer34310:
-	mapannounce instance_mapname("1@orcs"), "库鲁格: 去把他们找出来后消灭掉, 那么魔法阵就会解除, 然后可以进入下一个区域了.",bc_map,"0xffff00";
+	mapannounce instance_mapname("1@orcs"), "畐緗: ртㄓ防奔, ê臸猭皚碞穦秆埃, 礛秈跋办.",bc_map,"0xffff00";
 	end;
 
 OnTimer39710:
-	mapannounce instance_mapname("1@orcs"), "库鲁格: 要注意的是除了魔力封印的兽人, 尽量别惊动其它兽人, 否则更厉害的兽人突击队, 会守住通往二层的最后区域.",bc_map,"0xffff00";
+	mapannounce instance_mapname("1@orcs"), "畐緗: 璶猔種琌埃臸脋, 荷秖誥笆ㄤウ脋, 玥糉甡脋阑钉, 穦硄┕糷程跋办.",bc_map,"0xffff00";
 	end;
 
 OnTimer49210:
-	mapannounce instance_mapname("1@orcs"), "库鲁格: 最糟的情形是往2楼的入口有可能被封锁, 建议尽量别硬碰硬, 最好迂回前进.",bc_map,"0xffff00";
+	mapannounce instance_mapname("1@orcs"), "畐緗: 程罺薄琌┕2加Τ砆玛, 某荷秖祑窱祑, 程ū玡秈.",bc_map,"0xffff00";
 	end;
 
 OnTimer56310:
-	mapannounce instance_mapname("1@orcs"), "任务: 请悄悄地靠近后, 将'魔力封印的兽人'消灭掉吧! 尽量避免大规摸的冲突, 这样才能顺利抵达2楼.",bc_map,"0x44ffff";
+	mapannounce instance_mapname("1@orcs"), "ヴ叭: 叫綼, 盢'臸脋'防奔! 荷秖磷砏篘≧, 硂妓抖╄笷2加.",bc_map,"0x44ffff";
 	donpcevent instance_npcname("#Resurrect Monsters1")+"::OnEnable";
 	donpcevent instance_npcname("#Resurrect Monsters2")+"::OnEnable";
 	donpcevent instance_npcname("#Resurrect Monsters3")+"::OnEnable";
-	disablenpc instance_npcname("库鲁格#1-2");
+	disablenpc instance_npcname("畐緗#1-2");
 	end;
 
 OnTimer60000:
-	areamonster instance_mapname("1@orcs"),137,83,143,89,"魔力封印的兽人",1023,1,instance_npcname("B1 Area Mobs")+"::OnMyMobDead";
+	areamonster instance_mapname("1@orcs"),137,83,143,89,"臸脋",1023,1,instance_npcname("B1 Area Mobs")+"::OnMyMobDead";
 	stopnpctimer;
 	end;
 
@@ -399,7 +399,7 @@ OnInstanceInit:
 
 OnEnable:
 	enablenpc instance_npcname("B1 Area 1");
-	areamonster instance_mapname("1@orcs"),103,105,109,111,"魔力封印的兽人",1023,1,instance_npcname("B1 Area Mobs")+"::OnMyMobDead1";
+	areamonster instance_mapname("1@orcs"),103,105,109,111,"臸脋",1023,1,instance_npcname("B1 Area Mobs")+"::OnMyMobDead1";
 	end;
 
 OnTouch_:
@@ -412,11 +412,11 @@ OnContinue:
 	end;
 
 OnTimer10300:
-	mapannounce instance_mapname("1@orcs"), "库鲁格的耳语: 这里的兽人都曾经是我的同伴. 只是从那时开始, 他们受到兽人女巫的魔法控制, 失却了自己本来的心性.",bc_map,"0xff4499";
+	mapannounce instance_mapname("1@orcs"), "畐緗φ粂: 硂ń脋常纯竒琌и︸. 琌眖ê秨﹍, 脋臸猭北, ア玱セㄓみ┦.",bc_map,"0xff4499";
 	end;
 
 OnTimer18700:
-	mapannounce instance_mapname("1@orcs"), "库鲁格的耳语: 唯有杀死女巫, 我们才能拯救余下的部落成员, 重建美好和谐的幸福家园.",bc_map,"0xff4499";
+	mapannounce instance_mapname("1@orcs"), "畐緗φ粂: 斑Τ炳, и珸毕场辅Θ, ㎝坑┋褐產堕.",bc_map,"0xff4499";
 	stopnpctimer;
 	end;
 }
@@ -428,7 +428,7 @@ OnInstanceInit:
 
 OnEnable:
 	enablenpc instance_npcname("B1 Area 2");
-	areamonster instance_mapname("1@orcs"),32,40,38,46,"魔力封印的兽人",1023,1,instance_npcname("B1 Area Mobs")+"::OnMyMobDead2";
+	areamonster instance_mapname("1@orcs"),32,40,38,46,"臸脋",1023,1,instance_npcname("B1 Area Mobs")+"::OnMyMobDead2";
 	end;
 
 OnTouch_:
@@ -441,11 +441,11 @@ OnContinue:
 	end;
 
 OnTimer30300:
-	mapannounce instance_mapname("1@orcs"), "库鲁格的耳语: 我看到了我族人们的尸体. 好像兽人女巫利用他们来进行她的邪恶仪式, 这场景是多么地令人痛彻心扉啊.",bc_map,"0xff4499";
+	mapannounce instance_mapname("1@orcs"), "畐緗φ粂: ии壁蔨. 钩脋ノㄓ秈︽ǜ碿祸Α, 硂初春琌礹过み磛摆.",bc_map,"0xff4499";
 	end;
 
 OnTimer37600:
-	mapannounce instance_mapname("1@orcs"), "库鲁格的耳语: ... 这都是我的错. 是我开启了这扇罪恶之门.",bc_map,"0xff4499";
+	mapannounce instance_mapname("1@orcs"), "畐緗φ粂: ... 硂常琌и岿. 琌и秨币硂竜碿ぇ.",bc_map,"0xff4499";
 	stopnpctimer;
 	end;
 }
@@ -457,7 +457,7 @@ OnInstanceInit:
 
 OnEnable:
 	enablenpc instance_npcname("B1 Area 3");
-	areamonster instance_mapname("1@orcs"),19,177,25,183,"魔力封印的兽人",1023,1,instance_npcname("B1 Area Mobs")+"::OnMyMobDead3";
+	areamonster instance_mapname("1@orcs"),19,177,25,183,"臸脋",1023,1,instance_npcname("B1 Area Mobs")+"::OnMyMobDead3";
 	end;
 
 OnTouch_:
@@ -470,11 +470,11 @@ OnContinue:
 	end;
 
 OnTimer30300:
-	mapannounce instance_mapname("1@orcs"), "请在这里继续加油吧!",bc_map,"0xff4499";
+	mapannounce instance_mapname("1@orcs"), "叫硂ń膥尿猳!",bc_map,"0xff4499";
 	end;
 
 OnTimer32700:
-	mapannounce instance_mapname("1@orcs"), "等我们平安度过这一关之后, 我们可以在二层的地下室稍为休息.",bc_map,"0xff4499";
+	mapannounce instance_mapname("1@orcs"), "单иキ筁硂闽ぇ, и糷祔ヰ.",bc_map,"0xff4499";
 	stopnpctimer;
 	end;
 }
@@ -528,7 +528,7 @@ OnInstanceInit:
 
 OnEnable:
 	enablenpc instance_npcname("#2Resurrect Monsters1");
-	monster instance_mapname("2@orcs"),0,0,"复仇兽人",1152,30,instance_npcname("#2Resurrect Monsters1")+"::OnMyMobDead";
+	monster instance_mapname("2@orcs"),0,0,"蝋こ脋",1152,30,instance_npcname("#2Resurrect Monsters1")+"::OnMyMobDead";
 	end;
 
 OnDisable:
@@ -542,21 +542,21 @@ OnMyMobDead:
 	if (.@mob_dead_num > 0) {
 		set .@mob_ran,rand(1,30);
 		if (.@mob_ran > 29) {
-			monster .@map$,0,0,"复仇兽人",1152,.@mob_dead_num,instance_npcname("#2Resurrect Monsters1")+"::OnMyMobDead";
+			monster .@map$,0,0,"蝋こ脋",1152,.@mob_dead_num,instance_npcname("#2Resurrect Monsters1")+"::OnMyMobDead";
 		}
 		else if ((.@mob_ran > 28) && (.@mob_ran < 30)) {
-			monster .@map$,0,0,"兽人战士长",1213,.@mob_dead_num,instance_npcname("#2Resurrect Monsters1")+"::OnMyMobDead";
+			monster .@map$,0,0,"脋驹",1213,.@mob_dead_num,instance_npcname("#2Resurrect Monsters1")+"::OnMyMobDead";
 		}
 		else if ((.@mob_ran > 26) && (.@mob_ran < 29)) {
-			areamonster .@map$,157,112,167,122,"兽人战士长",1213,.@mob_dead_num,instance_npcname("#2Resurrect Monsters1")+"::OnMyMobDead";
+			areamonster .@map$,157,112,167,122,"脋驹",1213,.@mob_dead_num,instance_npcname("#2Resurrect Monsters1")+"::OnMyMobDead";
 			if (rand(1,10) == 9) {
-				mapannounce .@map$, "警告: 部分兵力开始往三号区域集结了.",bc_map,"0xff4444";
+				mapannounce .@map$, "牡: 场だ秨﹍┕腹跋办栋挡.",bc_map,"0xff4444";
 			}
 		}
 		else {
-			areamonster .@map$,173,13,183,23,"兽人战士长",1213,.@mob_dead_num,instance_npcname("#2Resurrect Monsters1")+"::OnMyMobDead";
+			areamonster .@map$,173,13,183,23,"脋驹",1213,.@mob_dead_num,instance_npcname("#2Resurrect Monsters1")+"::OnMyMobDead";
 			if (rand(1,5) == 3) {
-				mapannounce .@map$, "警告: 兽人兵力开始在女巫的祭坛处集结.",bc_map,"0x77ff77";
+				mapannounce .@map$, "牡: 脋秨﹍步韭矪栋挡.",bc_map,"0x77ff77";
 			}
 			if (rand(1,70) == 50) {
 				initnpctimer;
@@ -566,13 +566,13 @@ OnMyMobDead:
 	end;
 
 OnTimer10:
-	mapannounce instance_mapname("2@orcs"), "从某处来的声音: 傻逼们... 难道你们觉得祭坛会崩塌在你们这种三脚猫的攻击之下吗?",bc_map,"0xff4444";
+	mapannounce instance_mapname("2@orcs"), "眖琘矪ㄓ羘: 短笹... 螟笵谋眔步韭穦盰厄硂销竲窟ю阑ぇ盾?",bc_map,"0xff4444";
 	end;
 
 OnTimer4010:
 	set .@map$, instance_mapname("2@orcs");
-	mapannounce .@map$, "[ 恶灵们被一种未知的力量召唤出来 ]",bc_map,"0x77ff77";
-	areamonster .@map$,167,25,177,35,"恶灵",1475,30,instance_npcname("#2Resurrect Monsters1")+"::OnMyMobDead";
+	mapannounce .@map$, "[ 碿艶砆销ゼ秖酬ㄓ ]",bc_map,"0x77ff77";
+	areamonster .@map$,167,25,177,35,"碿艶",1475,30,instance_npcname("#2Resurrect Monsters1")+"::OnMyMobDead";
 	stopnpctimer;
 	end;
 }
@@ -586,7 +586,7 @@ OnInstanceInit:
 
 OnEnable:
 	enablenpc instance_npcname("#2Resurrect Monsters3");
-	monster instance_mapname("2@orcs"),0,0,"兽人腐尸",1153,15,instance_npcname("#2Resurrect Monsters3")+"::OnMyMobDead";
+	monster instance_mapname("2@orcs"),0,0,"脋籊",1153,15,instance_npcname("#2Resurrect Monsters3")+"::OnMyMobDead";
 	end;
 
 OnMyMobDead:
@@ -595,20 +595,20 @@ OnMyMobDead:
 	set .@mob_ran,rand(1,30);
 	if (.@mob_ran > 29) {
 		if (.@mob_dead_num > 0) {
-			monster .@map$,0,0,"兽人弓箭手",1189,.@mob_dead_num,instance_npcname("#2Resurrect Monsters3")+"::OnMyMobDead";
+			monster .@map$,0,0,"脋絙も",1189,.@mob_dead_num,instance_npcname("#2Resurrect Monsters3")+"::OnMyMobDead";
 		}
 	}
 	else if ((.@mob_ran > 6) && (.@mob_ran < 30)) {
 		if (.@mob_dead_num > 0) {
-			areamonster .@map$,168,10,184,26,"兽人弓箭手",1189,.@mob_dead_num,instance_npcname("#2Resurrect Monsters3")+"::OnMyMobDead";
+			areamonster .@map$,168,10,184,26,"脋絙も",1189,.@mob_dead_num,instance_npcname("#2Resurrect Monsters3")+"::OnMyMobDead";
 			if (rand(1,15) == 3) {
-				mapannounce .@map$, "警告: 兽人弓箭手战队开始在祭坛处集结.",bc_map,"0xff4444";
+				mapannounce .@map$, "牡: 脋絙も驹钉秨﹍步韭矪栋挡.",bc_map,"0xff4444";
 			}
 		}
 	}
 	else {
 		if (.@mob_dead_num > 0) {
-			areamonster .@map$,168,21,184,21,"兽人弓箭手",1189,.@mob_dead_num,instance_npcname("#2Resurrect Monsters3")+"::OnMyMobDead";
+			areamonster .@map$,168,21,184,21,"脋絙も",1189,.@mob_dead_num,instance_npcname("#2Resurrect Monsters3")+"::OnMyMobDead";
 		}
 	}
 	end;
@@ -623,79 +623,79 @@ OnDisable:
 
 OnInstanceInit:
 	enablenpc instance_npcname("#2Resurrect Monsters4");
-	monster instance_mapname("2@orcs"),0,0,"疟蚊",1627,10,instance_npcname("#2Resurrect Monsters4")+"::OnMyMobDead";
+	monster instance_mapname("2@orcs"),0,0,"耗癆",1627,10,instance_npcname("#2Resurrect Monsters4")+"::OnMyMobDead";
 	end;
 
 OnMyMobDead:
 	set .@map$, instance_mapname("2@orcs");
 	set .@mob_dead_num, 10 - mobcount(.@map$,instance_npcname("#2Resurrect Monsters4")+"::OnMyMobDead");
 	if (.@mob_dead_num > 0) {
-		monster .@map$,0,0,"疟蚊",1627,1,instance_npcname("#2Resurrect Monsters4")+"::OnMyMobDead";
+		monster .@map$,0,0,"耗癆",1627,1,instance_npcname("#2Resurrect Monsters4")+"::OnMyMobDead";
 	}
 	end;
 }
 
-2@orcs,35,169,4	script	库鲁格#2-1	433,{
-	donpcevent instance_npcname("库鲁格#2-2")+"::OnEnable";
+2@orcs,35,169,4	script	畐緗#2-1	433,{
+	donpcevent instance_npcname("畐緗#2-2")+"::OnEnable";
 	end;
 }
 
-2@orcs,35,169,4	script	库鲁格#2-2	433,{
+2@orcs,35,169,4	script	畐緗#2-2	433,{
 	end;
 
 OnInstanceInit:
-	disablenpc instance_npcname("库鲁格#2-2");
+	disablenpc instance_npcname("畐緗#2-2");
 	end;
 
 OnEnable:
-	disablenpc instance_npcname("库鲁格#2-1");
-	enablenpc instance_npcname("库鲁格#2-2");
+	disablenpc instance_npcname("畐緗#2-1");
+	enablenpc instance_npcname("畐緗#2-2");
 	initnpctimer;
 	end;
 
 OnTimer10:
-	mapannounce instance_mapname("2@orcs"), "库鲁格的耳语: 我将会告诉你如何通往女巫的祭坛.",bc_map,"0xffff00";
+	mapannounce instance_mapname("2@orcs"), "畐緗φ粂: и盢穦禗硄┕步韭.",bc_map,"0xffff00";
 	end;
 
 OnTimer3510:
-	mapannounce instance_mapname("2@orcs"), "库鲁格的耳语: 你看到那些照亮通道的火把了吗? 增强它们的火焰就可以开启下一层区域.",bc_map,"0xffff00";
+	mapannounce instance_mapname("2@orcs"), "畐緗φ粂: êㄇ酚獹硄笵р盾? 糤眏ウ礙碞秨币糷跋办.",bc_map,"0xffff00";
 	end;
 
 OnTimer10710:
-	mapannounce instance_mapname("2@orcs"), "库鲁格的耳语: 当然魔物们不会让你如此轻而易举地就摸到火把的.",bc_map,"0xffff00";
+	mapannounce instance_mapname("2@orcs"), "畐緗φ粂: 讽礛臸ぃ穦琵淮τ羭碞篘р.",bc_map,"0xffff00";
 	end;
 
 OnTimer16310:
-	mapannounce instance_mapname("2@orcs"), "库鲁格的耳语: 但你仍需要尽可能地把战斗控制在最小规模, 这样女巫就不会发现你们, 从而不会动用她的亲卫队来看守祭坛.",bc_map,"0xffff00";
+	mapannounce instance_mapname("2@orcs"), "畐緗φ粂: ご惠璶荷р驹ゆ北程砏家, 硂妓碞ぃ穦祇瞷, 眖τぃ穦笆ノ克矫钉ㄓ步韭.",bc_map,"0xffff00";
 	end;
 
 OnTimer21910:
-	mapannounce instance_mapname("2@orcs"), "库鲁格的耳语: 不过, 只有队长可以增强火把的火焰, 所以请保护好你们的队长吧.",bc_map,"0xffff00";
+	mapannounce instance_mapname("2@orcs"), "畐緗φ粂: ぃ筁, Τ钉糤眏р礙, ┮叫玂臔钉.",bc_map,"0xffff00";
 	end;
 
 OnTimer23910:
-	mapannounce instance_mapname("2@orcs"), "任务: 点亮火把以开启下一层区域. 火把只能按照一定的顺序进行点亮, 请小心行事.",bc_map,"0x4444ff";
+	mapannounce instance_mapname("2@orcs"), "ヴ叭: 翴獹р秨币糷跋办. р酚﹚抖秈︽翴獹, 叫み︽ㄆ.",bc_map,"0x4444ff";
 	donpcevent instance_npcname("#2Resurrect Monsters1")+"::OnEnable";
 	donpcevent instance_npcname("#2Resurrect Monsters3")+"::OnEnable";
-	donpcevent instance_npcname("火把#1-1")+"::OnEnable";
-	disablenpc instance_npcname("库鲁格#2-2");
+	donpcevent instance_npcname("р#1-1")+"::OnEnable";
+	disablenpc instance_npcname("畐緗#2-2");
 	end;
 }
 
-2@orcs,26,164,0	script	火把#1-1	844,{
+2@orcs,26,164,0	script	р#1-1	844,{
 	if (is_party_leader() == false) end;
 	progressbar "ffff00",5;
 	setarray .@id[0], atoi(charat(strnpcinfo(2),0)), atoi(charat(strnpcinfo(2),2));
 	if (.@id[1] == 4)
 		donpcevent instance_npcname("#Warp2-"+.@id[0])+"::OnEnable";
 	else
-		donpcevent instance_npcname("火把#"+.@id[0]+"-"+(.@id[1]+1))+"::OnEnable";
+		donpcevent instance_npcname("р#"+.@id[0]+"-"+(.@id[1]+1))+"::OnEnable";
 	initnpctimer;
 	disablenpc instance_npcname(strnpcinfo(0));
 	end;
 
 OnInstanceInit:
-	if (strnpcinfo(0) != "火把#2-1" && strnpcinfo(0) != "火把#3-1")
+	if (strnpcinfo(0) != "р#2-1" && strnpcinfo(0) != "р#3-1")
 		disablenpc instance_npcname(strnpcinfo(0));
 	end;
 
@@ -712,9 +712,9 @@ OnTimer2000:
 	stopnpctimer;
 	end;
 }
-2@orcs,55,155,0	duplicate(火把#1-1)	火把#1-2	844
-2@orcs,108,146,0	duplicate(火把#1-1)	火把#1-3	844
-2@orcs,98,171,0	duplicate(火把#1-1)	火把#1-4	844
+2@orcs,55,155,0	duplicate(р#1-1)	р#1-2	844
+2@orcs,108,146,0	duplicate(р#1-1)	р#1-3	844
+2@orcs,98,171,0	duplicate(р#1-1)	р#1-4	844
 
 2@orcs,48,100,0	script	#Warp2-1	45,3,3,{
 OnInstanceInit:
@@ -723,8 +723,8 @@ OnInstanceInit:
 
 OnEnable:
 	set .@map$, instance_mapname("2@orcs");
-	monster .@map$,109,156,"兽人守护队长",1981,1,instance_npcname("#Mobs Control")+"::OnMyMobDead1";
-	mapannounce .@map$, "兽人守护队长: 哎呀!! 好像我又将有一个新玩伴啊. 有本事就来挑战我试试看!!",bc_map,"0xff8888";
+	monster .@map$,109,156,"脋臔钉",1981,1,instance_npcname("#Mobs Control")+"::OnMyMobDead1";
+	mapannounce .@map$, "脋臔钉: 玼!! 钩и盢Τ穝︸摆. Τセㄆ碞ㄓ珼驹и刚刚!!",bc_map,"0xff8888";
 	end;
 
 OnContinue:
@@ -733,7 +733,7 @@ OnContinue:
 	end;
 
 OnTimer10000:
-	areamonster instance_mapname("2@orcs"),28,158,40,170,"兽人守护队长",1981,1,instance_npcname("#Mobs Control")+"::OnMyMobDead1";
+	areamonster instance_mapname("2@orcs"),28,158,40,170,"脋臔钉",1981,1,instance_npcname("#Mobs Control")+"::OnMyMobDead1";
 	stopnpctimer;
 	end;
 
@@ -742,10 +742,10 @@ OnTouch_:
 	end;
 }
 
-2@orcs,35,92,0	duplicate(火把#1-1)	火把#2-1	844
-2@orcs,32,70,0	duplicate(火把#1-1)	火把#2-2	844
-2@orcs,70,31,0	duplicate(火把#1-1)	火把#2-3	844
-2@orcs,84,51,0	duplicate(火把#1-1)	火把#2-4	844
+2@orcs,35,92,0	duplicate(р#1-1)	р#2-1	844
+2@orcs,32,70,0	duplicate(р#1-1)	р#2-2	844
+2@orcs,70,31,0	duplicate(р#1-1)	р#2-3	844
+2@orcs,84,51,0	duplicate(р#1-1)	р#2-4	844
 
 2@orcs,101,55,0	script	#Warp2-2	45,3,3,{
 OnInstanceInit:
@@ -754,8 +754,8 @@ OnInstanceInit:
 
 OnEnable:
 	set .@map$, instance_mapname("2@orcs");
-	monster .@map$,67,64,"兽人神射手",1982,1,instance_npcname("#Mobs Control")+"::OnMyMobDead2";
-	mapannounce .@map$, "兽人神射手: 嘿! 你这一路干得挺漂亮的嘛, 但是你这花拳绣腿的家伙现在就要栽在我手上了...",bc_map,"0xff8888";
+	monster .@map$,67,64,"脋甮も",1982,1,instance_npcname("#Mobs Control")+"::OnMyMobDead2";
+	mapannounce .@map$, "脋甮も: 糑! 硂隔眔簘獹估, 琌硂赂籐產ル瞷碞璶иも...",bc_map,"0xff8888";
 	end;
 
 OnContinue:
@@ -764,7 +764,7 @@ OnContinue:
 	end;
 
 OnTimer10000:
-	areamonster instance_mapname("2@orcs"),40,91,52,103,"兽人神射手",1982,1,instance_npcname("#Mobs Control")+"::OnMyMobDead2";
+	areamonster instance_mapname("2@orcs"),40,91,52,103,"脋甮も",1982,1,instance_npcname("#Mobs Control")+"::OnMyMobDead2";
 	stopnpctimer;
 	end;
 
@@ -773,10 +773,10 @@ OnTouch_:
 	end;
 }
 
-2@orcs,142,145,0	duplicate(火把#1-1)	火把#3-1	844
-2@orcs,162,134,0	duplicate(火把#1-1)	火把#3-2	844
-2@orcs,144,117,0	duplicate(火把#1-1)	火把#3-3	844
-2@orcs,136,98,0	duplicate(火把#1-1)	火把#3-4	844
+2@orcs,142,145,0	duplicate(р#1-1)	р#3-1	844
+2@orcs,162,134,0	duplicate(р#1-1)	р#3-2	844
+2@orcs,144,117,0	duplicate(р#1-1)	р#3-3	844
+2@orcs,136,98,0	duplicate(р#1-1)	р#3-4	844
 
 2@orcs,167,104,0	script	#Warp2-3	45,3,3,{
 OnInstanceInit:
@@ -785,31 +785,31 @@ OnInstanceInit:
 
 OnEnable:
 	set .@map$, instance_mapname("2@orcs");
-	monster .@map$,152,147,"堕落的兽人怨魂",1983,1,instance_npcname("#Mobs Control")+"::OnMyMobDead3";
-	mapannounce .@map$, "堕落的兽人怨魂: 好浓的肉香! 让我感觉到前所未有的饥饿! 真想尝尝滑滑软软的人肉啊!!",bc_map,"0xff8888";
+	monster .@map$,152,147,"糧辅脋活",1983,1,instance_npcname("#Mobs Control")+"::OnMyMobDead3";
+	mapannounce .@map$, "糧辅脋活: 緻ψ! 琵и稰谋玡┮ゼΤ哀緅! 痷稱沽沽菲菲硁硁ψ摆!!",bc_map,"0xff8888";
 	end;
 
 OnContinue:
-	areamonster instance_mapname("2@orcs"),117,61,129,73,"堕落的兽人怨魂",1983,1;
+	areamonster instance_mapname("2@orcs"),117,61,129,73,"糧辅脋活",1983,1;
 	donpcevent instance_npcname("#Boss Control")+"::OnEnable";
 	enablenpc instance_npcname("#Warp2-3");
 	initnpctimer;
 	end;
 
 OnTimer10:
-	mapannounce instance_mapname("2@orcs"), "女巫 柯莉戈拉魆: 啊哈哈哈哈哈哈哈哈哈哈!! 你们终于来啦. 你们送来暗杀我的刺客简直就像宾阳纸烧鸭一样不堪一击. 那些可怜的兽人早就被我送到阴曹地府去啦.",bc_map,"0xffff00";
+	mapannounce instance_mapname("2@orcs"), " 琠产む┰柝: 摆!! 沧ㄓ罢. 癳ㄓ穞炳и虏碞钩猾锭縉纍妓ぃ臭阑. êㄇ贪脋Ν碞砆и癳潮变┎罢.",bc_map,"0xffff00";
 	end;
 
 OnTimer6810:
-	mapannounce instance_mapname("2@orcs"), "女巫 柯莉戈拉魆: 我忠诚的奴隶们, 赶快给我把这些傻逼剁成肉酱!",bc_map,"0xffff00";
+	mapannounce instance_mapname("2@orcs"), " 琠产む┰柝: и┚港ィ刘, 鱼е倒ир硂ㄇ短笹Θψ骆!",bc_map,"0xffff00";
 	end;
 
 OnTimer10310:
-	mapannounce instance_mapname("2@orcs"), "堕落的兽人英雄: 遵旨, 女王陛下.",bc_map,"0xff7777";
+	mapannounce instance_mapname("2@orcs"), "糧辅脋璣动: 宽Ξ, 啊.",bc_map,"0xff7777";
 	end;
 
 OnTimer13110:
-	mapannounce instance_mapname("2@orcs"), "警告: 你已经被 女巫 柯莉戈拉魆 给发现了. 库鲁格的暗杀女巫计划已经失败. 你必须先打败柯莉戈拉魆, 然后寻找库鲁格的踪迹.",bc_map,"0x8888ff";
+	mapannounce instance_mapname("2@orcs"), "牡: 竒砆  琠产む┰柝 倒祇瞷. 畐緗穞炳璸竒ア毖. ゲ斗ゴ毖琠产む┰柝, 礛碝т畐緗萝格.",bc_map,"0x8888ff";
 	stopnpctimer;
 	end;
 
@@ -827,29 +827,29 @@ OnInstanceInit:
 
 OnEnable:
 	set .@map$, instance_mapname("2@orcs");
-	monster .@map$,185,8,"女巫 柯莉戈拉魆",1984,1,instance_npcname("#Boss Control")+"::OnMyMobDead";
-	monster .@map$,179,15,"堕落的兽人英雄",1087,1;
+	monster .@map$,185,8," 琠产む┰柝",1984,1,instance_npcname("#Boss Control")+"::OnMyMobDead";
+	monster .@map$,179,15,"糧辅脋璣动",1087,1;
 	enablenpc instance_npcname("#Boss Control");
 	end;
 
 OnMyMobDead:
-	donpcevent instance_npcname("库鲁格#")+"::OnEnable";
+	donpcevent instance_npcname("畐緗#")+"::OnEnable";
 	set .@map$, instance_mapname("2@orcs");
 	set .@mob_ran,rand(1,5);
 	if (.@mob_ran == 1) {
-		mapannounce .@map$, "女巫 柯莉戈拉魆: 怎... 怎么会这样... 就凭..你...你....你这个混蛋...!!",bc_map,"0xffff00";
+		mapannounce .@map$, " 琠产む┰柝: ... 穦硂妓... 碞咎.........硂睼矹...!!",bc_map,"0xffff00";
 	}
 	else if (.@mob_ran == 2) {
-		mapannounce .@map$, "女巫 柯莉戈拉魆: 像我这样尊贵的娇躯怎么能被你们这些肮脏的人类征服!",bc_map,"0xffff00";
+		mapannounce .@map$, " 琠产む┰柝: 钩и硂妓碙禥糱逻砆硂ㄇ同纽摸┖狝!",bc_map,"0xffff00";
 	}
 	else if (.@mob_ran == 3) {
-		mapannounce .@map$, "女巫 柯莉戈拉魆: 我... 我跟你们没完...",bc_map,"0xffff00";
+		mapannounce .@map$, " 琠产む┰柝: и... и蛤⊿Ч...",bc_map,"0xffff00";
 	}
 	else if (.@mob_ran == 4) {
-		mapannounce .@map$, "女巫 柯莉戈拉魆: 我...我不能死...不能死...!",bc_map,"0xffff00";
+		mapannounce .@map$, " 琠产む┰柝: и...иぃ...ぃ...!",bc_map,"0xffff00";
 	}
 	else {
-		mapannounce .@map$, "女巫 柯莉戈拉魆: 居然就这样被你们这些贱人推倒了... 不要啊...!",bc_map,"0xffff00";
+		mapannounce .@map$, " 琠产む┰柝: ﹡礛碞硂妓砆硂ㄇ解崩... ぃ璶摆...!",bc_map,"0xffff00";
 	}
 	donpcevent instance_npcname("#2Resurrect Monsters1")+"::OnDisable";
 	donpcevent instance_npcname("#2Resurrect Monsters3")+"::OnDisable";
@@ -871,46 +871,46 @@ OnTouch_:
 	end;
 }
 
-2@orcs,172,13,0	script	库鲁格#	434,{
+2@orcs,172,13,0	script	畐緗#	434,{
 	if (yong_odun < 2) {
-		mes "[库鲁格]";
-		mes "*咳咳咳咳咳*";
-		mes strcharinfo(0)+", 是你啊...";
+		mes "[畐緗]";
+		mes "*珁珁珁珁珁*";
+		mes strcharinfo(0)+", 琌摆...";
 		next;
 		mes "["+strcharinfo(0)+"] ";
-		mes "别动! 你受伤了!";
+		mes "笆! 端!";
 		next;
-		mes "[库鲁格]";
-		mes "没关系.. 我...我就要...走了...";
+		mes "[畐緗]";
+		mes "⊿闽╰.. и...и碞璶...ǐ...";
 		mes "....";
-		mes "女巫? 那女巫怎么样了?";
+		mes "? ê妓?";
 		next;
 		mes "["+strcharinfo(0)+"] ";
-		mes "那个女巫已经被我们消灭了呀, 到底那个女巫是谁?";
+		mes "ê竒砆и防, ┏ê琌街?";
 		next;
-		mes "库鲁格听到女巫被消灭的消息, 仿佛了却了一桩心事一般轻松了许多, 但是你注意到了他英俊的脸上, 那苦涩但仍令人痴迷的表情.";
+		mes "畐緗砆防, ラ︱玱嘉みㄆ淮猀砛, 琌猔種璣玊羪, ê璚肋ご扶癵薄.";
 		next;
-		mes "[库鲁格]";
-		mes "我...我只是...";
-		mes "无法对我自己的女儿...下手...";
-		mes "谢谢你, 我相信她终于...";
-		mes "从灵魂的梦魇中解脱了出来.";
+		mes "[畐緗]";
+		mes "и...и琌...";
+		mes "礚猭癸и...も...";
+		mes "谅谅, и獺沧...";
+		mes "眖艶活冠芁い秆叉ㄓ.";
 		next;
-		mes "库鲁格似乎还要说些什么, 但是终究没能说出口, 就咽气了...";
+		mes "畐緗临璶弧ㄇぐ, 琌沧╯⊿弧, 碞珅蒩...";
 		set yong_odun,2;
 		close;
 	}
 	else {
-		mes "你注视着库鲁格的身体, 只见他平静安详的地躺在地上.";
+		mes "猔跌帝畐緗ō蔨, ǎキ繰冈仅.";
 		close;
 	}
 
 OnInstanceInit:
-	disablenpc instance_npcname("库鲁格#");
+	disablenpc instance_npcname("畐緗#");
 	end;
 
 OnEnable:
-	enablenpc instance_npcname("库鲁格#");
+	enablenpc instance_npcname("畐緗#");
 	end;
 }
 

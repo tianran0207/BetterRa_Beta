@@ -16,27 +16,27 @@
 
 // Guild Flag (Outside Castle)
 //============================================================
--	script	纽蓝贝勒克#1::OutsideFlagsA3	722,{
+-	script	屡ī扒#1::OutsideFlagsA3	722,{
 
 	set .@GID, GetCastleData("aldeg_cas03",1);
 
 	if (.@GID == 0) {
-		mes "[ 神圣卢恩米德加兹王国条例 ]";
+		mes "[ 蒾縞μ紈瓣兵ㄒ ]";
 		mes " ";
-		mes "1. 按照神圣卢恩米德加兹王国的条例,";
-		mes "我们正式声明此城堡没有正式拥有者.";
+		mes "1. 酚蒾縞μ紈瓣兵ㄒ,";
+		mes "иタΑ羘躇⊿ΤタΑ局Τ.";
 		mes " ";
-		mes "2. 经过所有试炼,";
-		mes "并且破坏了华丽金属的勇士.";
-		mes "将会得到国王授予的城堡拥有权";
+		mes "2. 竒筁┮Τ刚芬,";
+		mes "瘆Д地腞妮玦.";
+		mes "盢穦眔瓣甭ぉ躇局Τ舦";
 		close;
 	}
 	if (getcharid(2) == .@GID) {
-		mes "[ 回声 ]";
-		mes "勇士们...";
-		mes "想要回到你们的勇气所在之地吗?";
+		mes "[ 羘 ]";
+		mes "玦...";
+		mes "稱璶玦蒩┮ぇ盾?";
 		next;
-		if(select("返回公会城堡.:取消.") == 1) {
+		if(select("そ穦躇.:.") == 1) {
 			close2;
 			if (getcharid(2) == GetCastleData("aldeg_cas03",1)) {
 				warp "aldeg_cas03",205,186;
@@ -46,14 +46,14 @@
 		}
 		close;
 	}
-	mes "[ 神圣卢恩米德加兹王国条例 ]";
+	mes "[ 蒾縞μ紈瓣兵ㄒ ]";
 	mes " ";
-	mes "1. 按照神圣卢恩米德加兹王国的条例,";
-	mes "我们批准该地区作为公会 ^ff0000"+GetGuildName(.@GID)+"^000000 的私有领地.";
+	mes "1. 酚蒾縞μ紈瓣兵ㄒ,";
+	mes "иу赣跋そ穦 ^ff0000"+GetGuildName(.@GID)+"^000000 ╬Τ烩.";
 	mes " ";
-	mes "2. ^ff0000"+GetGuildName(.@GID)+"^000000 公会的领袖为:";
+	mes "2. ^ff0000"+GetGuildName(.@GID)+"^000000 そ穦烩砈:";
 	mes "^ff0000"+GetGuildMaster(.@GID)+"^000000";
-	mes "对此结果有意见的人，请用你手中的武器说话，证明你的勇气，捍卫你的光荣！";
+	mes "癸挡狦Τ種ǎ叫ノもい猌竟弧杠谍玦蒩矫篴";
 	close;
 
 OnRecvCastleA03:
@@ -61,12 +61,12 @@ OnRecvCastleA03:
 	end;
 }
 
-alde_gld,146,82,8	duplicate(OutsideFlagsA3)	纽蓝贝勒克#1-2	722
-alde_gld,138,82,8	duplicate(OutsideFlagsA3)	纽蓝贝勒克#2	722
+alde_gld,146,82,8	duplicate(OutsideFlagsA3)	屡ī扒#1-2	722
+alde_gld,138,82,8	duplicate(OutsideFlagsA3)	屡ī扒#2	722
 
 // Guild Flag (Inside Castle)
 //============================================================
--	script	纽蓝贝勒克#3::InsideFlagsA3	722,{
+-	script	屡ī扒#3::InsideFlagsA3	722,{
 	end;
 
 OnRecvCastleA03:
@@ -74,43 +74,43 @@ OnRecvCastleA03:
 	end;
 }
 
-aldeg_cas03,176,175,2	duplicate(InsideFlagsA3)	纽蓝贝勒克#3-2	722
-aldeg_cas03,77,115,2	duplicate(InsideFlagsA3)	纽蓝贝勒克#4	722
-aldeg_cas03,77,215,2	duplicate(InsideFlagsA3)	纽蓝贝勒克#5	722
-aldeg_cas03,112,107,2	duplicate(InsideFlagsA3)	纽蓝贝勒克#6	722
-aldeg_cas03,112,117,2	duplicate(InsideFlagsA3)	纽蓝贝勒克#7	722
-aldeg_cas03,69,71,2	duplicate(InsideFlagsA3)	纽蓝贝勒克#8	722
-aldeg_cas03,91,69,2	duplicate(InsideFlagsA3)	纽蓝贝勒克#9	722
-aldeg_cas03,108,60,2	duplicate(InsideFlagsA3)	纽蓝贝勒克#10	722
-aldeg_cas03,121,73,2	duplicate(InsideFlagsA3)	纽蓝贝勒克#11	722
-aldeg_cas03,121,73,2	duplicate(InsideFlagsA3)	纽蓝贝勒克#12	722
-aldeg_cas03,75,102,2	duplicate(InsideFlagsA3)	纽蓝贝勒克#13	722
-aldeg_cas03,199,169,2	duplicate(InsideFlagsA3)	纽蓝贝勒克#14	722
-aldeg_cas03,181,179,2	duplicate(InsideFlagsA3)	纽蓝贝勒克#15	722
-aldeg_cas03,192,44,2	duplicate(InsideFlagsA3)	纽蓝贝勒克#16	722
-aldeg_cas03,208,145,2	duplicate(InsideFlagsA3)	纽蓝贝勒克#17	722
-aldeg_cas03,207,75,2	duplicate(InsideFlagsA3)	纽蓝贝勒克#18	722
-aldeg_cas03,96,62,2	duplicate(InsideFlagsA3)	纽蓝贝勒克#19	722
+aldeg_cas03,176,175,2	duplicate(InsideFlagsA3)	屡ī扒#3-2	722
+aldeg_cas03,77,115,2	duplicate(InsideFlagsA3)	屡ī扒#4	722
+aldeg_cas03,77,215,2	duplicate(InsideFlagsA3)	屡ī扒#5	722
+aldeg_cas03,112,107,2	duplicate(InsideFlagsA3)	屡ī扒#6	722
+aldeg_cas03,112,117,2	duplicate(InsideFlagsA3)	屡ī扒#7	722
+aldeg_cas03,69,71,2	duplicate(InsideFlagsA3)	屡ī扒#8	722
+aldeg_cas03,91,69,2	duplicate(InsideFlagsA3)	屡ī扒#9	722
+aldeg_cas03,108,60,2	duplicate(InsideFlagsA3)	屡ī扒#10	722
+aldeg_cas03,121,73,2	duplicate(InsideFlagsA3)	屡ī扒#11	722
+aldeg_cas03,121,73,2	duplicate(InsideFlagsA3)	屡ī扒#12	722
+aldeg_cas03,75,102,2	duplicate(InsideFlagsA3)	屡ī扒#13	722
+aldeg_cas03,199,169,2	duplicate(InsideFlagsA3)	屡ī扒#14	722
+aldeg_cas03,181,179,2	duplicate(InsideFlagsA3)	屡ī扒#15	722
+aldeg_cas03,192,44,2	duplicate(InsideFlagsA3)	屡ī扒#16	722
+aldeg_cas03,208,145,2	duplicate(InsideFlagsA3)	屡ī扒#17	722
+aldeg_cas03,207,75,2	duplicate(InsideFlagsA3)	屡ī扒#18	722
+aldeg_cas03,96,62,2	duplicate(InsideFlagsA3)	屡ī扒#19	722
 
 // Guild Flag (Town)
 //============================================================
-aldebaran,134,97,4	duplicate(InsideFlagsA3)	纽蓝贝勒克#20	722
+aldebaran,134,97,4	duplicate(InsideFlagsA3)	屡ī扒#20	722
 
 // Kafra Employee
 //============================================================
-aldeg_cas03,118,76,0	duplicate(guildkafra)	卡普拉 职员#aldeg_cas03	117
+aldeg_cas03,118,76,0	duplicate(guildkafra)	炊┰ 戮#aldeg_cas03	117
 
 // Steward
 //============================================================
-aldeg_cas03,110,118,0	duplicate(cm)	纳扎伏#aldeg_cas03	55
+aldeg_cas03,110,118,0	duplicate(cm)	ゃヱ#aldeg_cas03	55
 
 // Treasure Room Exit
 //============================================================
 aldeg_cas03,229,267,0	script	#lever_A03	111,{
 	mes " ";
-	mes "这里有一个小小的控制杆, 去拉一下吗?";
+	mes "硂ńΤ北, ┰盾?";
 	next;
-	if(select("上前拉杆.:算了.") == 1) {
+	if(select("玡┰.:衡.") == 1) {
 		close2;
 		warp "aldeg_cas03",110,119;
 		end;
@@ -124,7 +124,7 @@ aldeg_cas03,200,177,0	duplicate(gdlever)	#aldeg_cas03	111
 
 // Guild Treasure Spawns
 //============================================================
-aldeg_cas03,225,269,0	duplicate(Gld_Trea_Spawn)	公会宝箱#aldeg_cas03	-1
+aldeg_cas03,225,269,0	duplicate(Gld_Trea_Spawn)	そ穦腳絚#aldeg_cas03	-1
 
 // AGIT Manager
 //============================================================
@@ -132,4 +132,4 @@ aldeg_cas03,206,32,0	duplicate(Gld_Agit_Manager)	Agit#aldeg_cas03	-1
 
 // Guardians
 //============================================================
-aldeg_cas03,110,118,0	duplicate(Gld_Guard_Template)	城堡监护人#aldeg_cas03	-1
+aldeg_cas03,110,118,0	duplicate(Gld_Guard_Template)	躇菏臔#aldeg_cas03	-1

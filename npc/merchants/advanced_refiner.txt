@@ -18,12 +18,12 @@
 //= 1.7 Removed re-roll behavior. [Secret]
 //============================================================
 
-payon,157,146,6	script	龙先生#cash	85,{
+payon,157,146,6	script	纒ネ#cash	85,{
 	disable_items;
-	mes "[龙先生]";
-	mes "我是专门精炼武器与防具的铁匠.";
-	mes "能为你精炼穿在身上的装备.";
-	mes "你想精炼哪一项物品呢?";
+	mes "[纒ネ]";
+	mes "и琌盡弘芬猌竟蒓ňㄣ臟.";
+	mes "弘芬ō杆称.";
+	mes "稱弘芬兜珇㎡?";
 	next;
 
 	setarray .@indices[1], EQI_HEAD_TOP, EQI_ARMOR, EQI_HAND_L, EQI_HAND_R, EQI_GARMENT, EQI_SHOES, EQI_ACC_L, EQI_ACC_R, EQI_HEAD_MID, EQI_HEAD_LOW;
@@ -33,32 +33,32 @@ payon,157,146,6	script	龙先生#cash	85,{
 			set .@equipped,1;
 		}
 		else
-			set .@menu$, .@menu$ + F_getpositionname(.@indices[.@i]) + "-[没有装备]";
+			set .@menu$, .@menu$ + F_getpositionname(.@indices[.@i]) + "-[⊿Τ杆称]";
 		set .@menu$, .@menu$ + ":";
 	}
 	if (.@equipped == 0) {
-		mes "[龙先生]";
-		mes "你好歹倒是把装备穿上先...";
+		mes "[纒ネ]";
+		mes "わ琌р杆称...";
 		close;
 	}
 	set .@part, .@indices[ select(.@menu$) ];
 
 	if(!getequipisequiped(.@part)) { //custom check
-		mes "[龙先生]";
-		mes "要不要我把你的头脑精炼得";
-		mes "聪明一点啊?";
+		mes "[纒ネ]";
+		mes "璶ぃ璶ир繷福弘芬眔";
+		mes "羙翴摆?";
 		emotion ET_FRET;
 		close;
 	}
 	if (!getequipisenableref(.@part)) {
-		mes "[龙先生]";
-		mes "你选中的这个装备是无法精炼的道具喔!";
+		mes "[纒ネ]";
+		mes "匡い硂杆称琌礚猭弘芬笵ㄣ翅!";
 		close;
 	}
 	if (getequiprefinerycnt(.@part) >= 10) {
-		mes "[龙先生]";
-		mes "这件装备已经精炼到10级了.";
-		mes "以我的能力, 已经无法再继续锻造了..";
+		mes "[纒ネ]";
+		mes "硂ン杆称竒弘芬10.";
+		mes "и, 竒礚猭膥尿岭硑..";
 		close;
 	}
 
@@ -71,29 +71,29 @@ payon,157,146,6	script	龙先生#cash	85,{
 	// Determines chance of failure and verifies that you want to continue.
 	callsub S_RefineValidate,getequipweaponlv(.@part),.@material,.@price,.@part,.@refineitemid,.@refinerycnt;
 
-	mes "[龙先生]";
-	mes "锵! 锵! 锵!";
+	mes "[纒ネ]";
+	mes "抿! 抿! 抿!";
 	if (getequippercentrefinery(.@part, REFINE_COST_ENRICHED) > rand(100)) {
 		successrefitem .@part;
 		next;
 		emotion ET_BEST;
-		mes "[龙先生]";
-		mes "拿去吧! 已经做好了.";
-		mes "好久没精炼出这么优质的装备了,";
-		mes ((getequipweaponlv(.@part))?"武器":"防具") + "变强了你一定也很高兴吧!";
+		mes "[纒ネ]";
+		mes "! 竒暗.";
+		mes "⊿弘芬硂涩借杆称,";
+		mes ((getequipweaponlv(.@part))?"猌竟":"ňㄣ") + "跑眏﹚蔼砍!";
 		close;
 	}
 	failedrefitem .@part;
 	next;
 	emotion (!rand(5))?ET_MONEY:ET_HUK;
-	mes "[龙先生]";
-	mes "咳咳咳咳咳咳咳!!!!";
+	mes "[纒ネ]";
+	mes "珁珁珁珁珁珁珁!!!!";
 	next;
-	mes "[龙先生]";
-	mes "咳...咳咳...真...丢脸.";
-	mes "武器在精炼的过程中损坏了.";
-	mes "我...我...";
-	mes "我早就告诉过你会这样的嘛!";
+	mes "[纒ネ]";
+	mes "珁...珁珁...痷...メ羪.";
+	mes "猌竟弘芬筁祘い穕Д.";
+	mes "и...и...";
+	mes "иΝ碞禗筁穦硂妓估!";
 	close;
 
 S_RefineValidate:
@@ -114,50 +114,50 @@ S_RefineValidate:
 		}
 	}
 
-	mes "[龙先生]";
+	mes "[纒ネ]";
 	if (.@weapon_lvl)
-		mes "这把武器的等级为 ^ff0000" + .@weapon_lvl + " ^000000级!";
-	mes "精练这个物品我需要:";
+		mes "硂р猌竟单 ^ff0000" + .@weapon_lvl + " ^000000!";
+	mes "弘絤硂珇и惠璶:";
 	mes "- ^0000ff"+getitemname(.@item_req)+"^000000 x 1";
-	mes "- 精炼服务费 ^ff0000"+ .@price + "^000000 Zeny";
-	mes "你真的希望我继续吗?";
+	mes "- 弘芬狝叭禣 ^ff0000"+ .@price + "^000000 Zeny";
+	mes "痷辨и膥尿盾?";
 	next;
-	if( select("是的:不要") == 1 ) {
+	if( select("琌:ぃ璶") == 1 ) {
 		if (getequippercentrefinery(.@part,REFINE_COST_ENRICHED) < 100) {
 			if (.@weapon_lvl) {
-				mes "[龙先生]";
-				mes "呜哇!!";
-				mes "看来这武器已经精炼很多次了的样子...";
-				mes "要是再继续精炼的话, 可能会造成损坏喔!";
+				mes "[纒ネ]";
+				mes "躲珃!!";
+				mes "ㄓ硂猌竟竒弘芬Ω妓...";
+				mes "璶琌膥尿弘芬杠, 穦硑Θ穕Д翅!";
 				next;
-				mes "要是损坏的话可就不能继续使用了!!";
-				mes "插在里面的卡片和特征";
-				mes "^ff0000全部都会消失了!!^000000";
-				mes "再说一次, 损坏的话装备会消失!!";
-				mes "你确定还要继续精炼吗?";
+				mes "璶琌穕Д杠碞ぃ膥尿ㄏノ!!";
+				mes "础ń㎝疭┖";
+				mes "^ff0000场常穦ア!!^000000";
+				mes "弧Ω, 穕Д杠杆称穦ア!!";
+				mes "谔﹚临璶膥尿弘芬盾?";
 				next;
-				if(select("是:否") == 2) {
-					mes "[龙先生]";
-					mes "很好.";
-					mes "如果太过鲁莽得精炼, 而造成装备损坏, 我心情也会跟着变坏的.";
+				if(select("琌:") == 2) {
+					mes "[纒ネ]";
+					mes ".";
+					mes "狦び筁緗蝉眔弘芬, τ硑Θ杆称穕Д, иみ薄穦蛤帝跑Д.";
 					close;
 				}
 			} else {
-				mes "[龙先生]";
-				mes "咯咯咯~~ 噢, 你还真有胆量.";
-				mes "你这件防具已经精炼很多次了的样子...";
-				mes "要是再继续精炼的话, 可能会造成损坏喔!";
+				mes "[纒ネ]";
+				mes "~~ 揪, 临痷Τ義秖.";
+				mes "硂ンňㄣ竒弘芬Ω妓...";
+				mes "璶琌膥尿弘芬杠, 穦硑Θ穕Д翅!";
 				next;
-				mes "要是损坏的话可就不能继续使用了!!";
-				mes "插在里面的卡片和好不容易提升的精炼值";
-				mes "^ff0000全部都会消失了!!^000000";
-				mes "再说一次, 损坏的话装备会消失!!";
-				mes "你确定还要继续精炼吗?";
+				mes "璶琌穕Д杠碞ぃ膥尿ㄏノ!!";
+				mes "础ń㎝ぃ甧矗ど弘芬";
+				mes "^ff0000场常穦ア!!^000000";
+				mes "弧Ω, 穕Д杠杆称穦ア!!";
+				mes "谔﹚临璶膥尿弘芬盾?";
 				next;
-				if(select("是:否") == 2) {
-					mes "[龙先生]";
-					mes "你这是在浪费我宝贵的时间!!";
-					mes "从我眼前消失, 胆小鬼.";
+				if(select("琌:") == 2) {
+					mes "[纒ネ]";
+					mes "硂琌禣и腳禥丁!!";
+					mes "眖и泊玡ア, 義碍.";
 					close;
 				}
 			}
@@ -179,12 +179,12 @@ S_RefineValidate:
 
 			return;
 		}
-		mes "[龙先生]";
-		mes "这就是你带来的东西?";
-		mes "我很抱歉, 没有材料以及我的酬金, 我什么也做不了的.";
+		mes "[纒ネ]";
+		mes "硂碞琌盿ㄓ狥﹁?";
+		mes "и╆簆, ⊿Τのи筍, иぐ暗ぃ.";
 		close;
 	}
-	mes "[龙先生]";
-	mes "如果你不乐意的话, 那我也没办法...";
+	mes "[纒ネ]";
+	mes "狦ぃ贾種杠, êи⊿快猭...";
 	close;
 }

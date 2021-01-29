@@ -18,27 +18,27 @@
 
 // Guild Flags (Outside Castle)
 //============================================================
--	script	明亭#1::OutsideFlagsPA1	722,{
+-	script	獸#1::OutsideFlagsPA1	722,{
 
 	set .@GID, GetCastleData("payg_cas01",1);
 
 	if (.@GID == 0) {
-		mes "[ 神圣卢恩米德加兹王国条例 ]";
+		mes "[ 蒾縞μ紈瓣兵ㄒ ]";
 		mes " ";
-		mes "1. 按照神圣卢恩米德加兹王国的条例,";
-		mes "我们正式声明此城堡没有正式拥有者.";
+		mes "1. 酚蒾縞μ紈瓣兵ㄒ,";
+		mes "иタΑ羘躇⊿ΤタΑ局Τ.";
 		mes " ";
-		mes "2. 经过所有试炼,";
-		mes "并且破坏了华丽金属的勇士.";
-		mes "将会得到国王授予的城堡拥有权";
+		mes "2. 竒筁┮Τ刚芬,";
+		mes "瘆Д地腞妮玦.";
+		mes "盢穦眔瓣甭ぉ躇局Τ舦";
 		close;
 	}
 	if (getcharid(2) == .@GID) {
-		mes "[ 回声 ]";
-		mes "勇士们...";
-		mes "想要回到你们的勇气所在之地吗?";
+		mes "[ 羘 ]";
+		mes "玦...";
+		mes "稱璶玦蒩┮ぇ盾?";
 		next;
-		if(select("返回公会城堡.:取消.") == 1) {
+		if(select("そ穦躇.:.") == 1) {
 			close2;
 			if (getcharid(2) == GetCastleData("payg_cas01",1)) {
 					warp "payg_cas01",54,144;
@@ -48,14 +48,14 @@
 		}
 		close;
 	}
-	mes "[ 神圣卢恩米德加兹王国条例 ]";
+	mes "[ 蒾縞μ紈瓣兵ㄒ ]";
 	mes " ";
-	mes "1. 按照神圣卢恩米德加兹王国的条例,";
-	mes "我们批准该地区作为公会 ^ff0000"+GetGuildName(.@GID)+"^000000 的私有领地.";
+	mes "1. 酚蒾縞μ紈瓣兵ㄒ,";
+	mes "иу赣跋そ穦 ^ff0000"+GetGuildName(.@GID)+"^000000 ╬Τ烩.";
 	mes " ";
-	mes "2. ^ff0000"+GetGuildName(.@GID)+"^000000 公会的领袖为:";
+	mes "2. ^ff0000"+GetGuildName(.@GID)+"^000000 そ穦烩砈:";
 	mes "^ff0000"+GetGuildMaster(.@GID)+"^000000";
-	mes "对此结果有意见的人，请用你手中的武器说话，证明你的勇气，捍卫你的光荣！";
+	mes "癸挡狦Τ種ǎ叫ノもい猌竟弧杠谍玦蒩矫篴";
 	close;
 
 OnRecvCastlePy01:
@@ -63,14 +63,14 @@ OnRecvCastlePy01:
 	end;
 }
 
-pay_gld,125,236,4	duplicate(OutsideFlagsPA1)	明亭#1-2	722
-pay_gld,110,233,4	duplicate(OutsideFlagsPA1)	明亭#2	722
-pay_gld,116,233,4	duplicate(OutsideFlagsPA1)	明亭#3	722
-pay_gld,91,239,2	duplicate(OutsideFlagsPA1)	明亭#4	722
+pay_gld,125,236,4	duplicate(OutsideFlagsPA1)	獸#1-2	722
+pay_gld,110,233,4	duplicate(OutsideFlagsPA1)	獸#2	722
+pay_gld,116,233,4	duplicate(OutsideFlagsPA1)	獸#3	722
+pay_gld,91,239,2	duplicate(OutsideFlagsPA1)	獸#4	722
 
 // Guild Flags (Inside Castle)
 //============================================================
--	script	明亭#5::InsideFlagsPA1	722,{
+-	script	獸#5::InsideFlagsPA1	722,{
 	end;
 
 OnRecvCastlePy01:
@@ -78,33 +78,33 @@ OnRecvCastlePy01:
 	end;
 }
 
-payg_cas01,238,67,4	duplicate(InsideFlagsPA1)	明亭#5-2	722
-payg_cas01,233,67,4	duplicate(InsideFlagsPA1)	明亭#6	722
-payg_cas01,221,123,4	duplicate(InsideFlagsPA1)	明亭#7	722
-payg_cas01,221,116,4	duplicate(InsideFlagsPA1)	明亭#8	722
-payg_cas01,206,108,4	duplicate(InsideFlagsPA1)	明亭#9	722
-payg_cas01,212,108,4	duplicate(InsideFlagsPA1)	明亭#10	722
+payg_cas01,238,67,4	duplicate(InsideFlagsPA1)	獸#5-2	722
+payg_cas01,233,67,4	duplicate(InsideFlagsPA1)	獸#6	722
+payg_cas01,221,123,4	duplicate(InsideFlagsPA1)	獸#7	722
+payg_cas01,221,116,4	duplicate(InsideFlagsPA1)	獸#8	722
+payg_cas01,206,108,4	duplicate(InsideFlagsPA1)	獸#9	722
+payg_cas01,212,108,4	duplicate(InsideFlagsPA1)	獸#10	722
 
 // Guild Flag (Town)
 //============================================================
-payon,90,322,4	duplicate(InsideFlagsPA1)	明亭#11	722
-payon,166,177,3	duplicate(InsideFlagsPA1)	明亭#12	722
+payon,90,322,4	duplicate(InsideFlagsPA1)	獸#11	722
+payon,166,177,3	duplicate(InsideFlagsPA1)	獸#12	722
 
 // Kafra Employee
 //============================================================
-payg_cas01,128,58,3	duplicate(guildkafra)	卡普拉 职员#payg_cas01	117
+payg_cas01,128,58,3	duplicate(guildkafra)	炊┰ 戮#payg_cas01	117
 
 // Steward
 //============================================================
-payg_cas01,120,58,4	duplicate(cm)	克卢纳迪#payg_cas01	55
+payg_cas01,120,58,4	duplicate(cm)	縞瓆#payg_cas01	55
 
 // Treasure Room Exit
 //============================================================
 payg_cas01,295,8,0	script	#lever_PA01	111,{
 	mes " ";
-	mes "这里有一个小小的控制杆, 去拉一下吗?";
+	mes "硂ńΤ北, ┰盾?";
 	next;
-	if(select("上前拉杆.:算了.") == 1) {
+	if(select("玡┰.:衡.") == 1) {
 		close2;
 		warp "payg_cas01",120,59;
 		end;
@@ -118,7 +118,7 @@ payg_cas01,101,25,0	duplicate(gdlever)	#payg_cas01	111
 
 // Guild Treasure Spawns
 //============================================================
-payg_cas01,291,8,0	duplicate(Gld_Trea_Spawn)	公会宝箱#payg_cas01	-1
+payg_cas01,291,8,0	duplicate(Gld_Trea_Spawn)	そ穦腳絚#payg_cas01	-1
 
 // AGIT Manager
 //============================================================
@@ -126,4 +126,4 @@ payg_cas01,139,139,0	duplicate(Gld_Agit_Manager)	Agit#payg_cas01	-1
 
 // Guardians
 //============================================================
-payg_cas01,120,58,4	duplicate(Gld_Guard_Template)	城堡监护人#payg_cas01	-1
+payg_cas01,120,58,4	duplicate(Gld_Guard_Template)	躇菏臔#payg_cas01	-1

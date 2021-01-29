@@ -18,131 +18,131 @@
 // Kunlun Transportation
 //============================================================
 -	script	::Kunlun_Envoy_gonryun	-1,{
-	mes "[瓦百豪]";
-	mes "您好,我想邀请大家,";
-	mes "来到我的故乡昆仑,";
-	mes "和 卢恩-米德加兹王国,";
-	mes "完全不同的昆仑大陆,";
-	mes "为贵宾们服务,";
-	mes "是我的大荣幸";
+	mes "[ニκ花]";
+	mes "眤,и稱淋叫產,";
+	mes "ㄓи珿秏ㄚ,";
+	mes "㎝ 縞-μ紈瓣,";
+	mes "Чぃㄚ嘲,";
+	mes "禥猾狝叭,";
+	mes "琌и篴┋";
 	next;
-	switch(select("询问有关昆仑的事情:去昆仑:取消")) {
+	switch(select("高拜Τ闽ㄚㄆ薄:ㄚ:")) {
 	case 1:
-		mes "[瓦百豪]";
-		mes "昆仑是一个美丽的地方,";
-		mes "拥有丰富的历史,";
-		mes "和优良的传统．";
-		mes "我也觉得昆仑, ";
-		mes "是观光的好地方.";
+		mes "[ニκ花]";
+		mes "ㄚ琌腞よ,";
+		mes "局Τぅ碔菌,";
+		mes "㎝涩▆肚参";
+		mes "и谋眔ㄚ, ";
+		mes "琌芠よ.";
 		next;
-		mes "[瓦百豪]";
-		mes "当你到达昆仑港口, ";
-		mes "你能见到许多, ";
-		mes "艾尔贝塔, ";
-		mes "和普德拉的, ";
-		mes "微型建筑物复制品.";
+		mes "[ニκ花]";
+		mes "讽笷ㄚ翠, ";
+		mes "ǎ砛, ";
+		mes "︺焊ī娥, ";
+		mes "㎝炊紈┰, ";
+		mes "稬诞蝋珇.";
 		next;
-		mes "[瓦百豪]";
-		mes "我们昆仑是个可以,";
-		mes "让大陆的旅客享受最棒";
-		mes "的观光胜地,经过由小小的家组成的";
-		mes "小人过之后,再通过发着神秘";
-		mes "光彩的柱子就可以走向天空之路了．";
+		mes "[ニκ花]";
+		mes "иㄚ琌,";
+		mes "琵嘲ㄉ程次";
+		mes "芠衊,竒筁パ產舱Θ";
+		mes "筁ぇ,硄筁祇帝";
+		mes "眒琖碞ǐぱぇ隔";
 		next;
-		mes "[瓦百豪]";
-		mes "我听说";
-		mes "卢恩－米德加大陆上,";
-		mes "还有一另一个城市";
-		mes "被一股神秘、古老的力量";
-		mes "包覆使其漂浮在天空...";
+		mes "[ニκ花]";
+		mes "и弧";
+		mes "縞⌒μ紈嘲,";
+		mes "临Τカ";
+		mes "砆ρ秖";
+		mes "滦ㄏㄤ簘疊ぱ...";
 		next;
-		mes "[瓦百豪]";
-		mes "听说在这大陆上也有着";
-		mes "漂浮在空中的都市,";
-		mes "我们昆仑不具特别的动力";
-		mes "就可以漂浮在空中,多亏";
-		mes "可以欣赏到美丽的风景";
+		mes "[ニκ花]";
+		mes "弧硂嘲Τ帝";
+		mes "簘疊い常カ,";
+		mes "иㄚぃㄣ疭笆";
+		mes "碞簘疊い,莲";
+		mes "猋洁腞春";
 		next;
-		mes "[瓦百豪]";
-		mes "你在昆仑,";
-		mes "别忘了品尝特产品大包子";
-		mes "以及天道石番桃的口味跟更是一品.";
+		mes "[ニκ花]";
+		mes "ㄚ,";
+		mes "а珇沽疭玻珇";
+		mes "のぱ笵ホ礷蛤琌珇.";
 		next;
-		mes "[瓦百豪]";
-		mes "如果你正准备前往密穴, ";
-		mes "就要彻底的准备好再去, ";
-		mes "因为, ";
-		mes "这不是一个安全的地方.";
+		mes "[ニκ花]";
+		mes "狦タ称玡┕盞マ, ";
+		mes "碞璶过┏称, ";
+		mes ", ";
+		mes "硂ぃ琌よ.";
 		next;
-		mes "[瓦百豪]";
-		mes "那么,有兴趣的话,";
-		mes "跟我说一声吧,";
-		mes "能够为大陆的贵宾们服务,";
-		mes "是我最大的欢喜.";
+		mes "[ニκ花]";
+		mes "ê,Τ砍届杠,";
+		mes "蛤и弧羘,";
+		mes "镑嘲禥猾狝叭,";
+		mes "琌и程舧尺.";
 		close;
 	case 2:
-		mes "[瓦百豪]";
-		mes "很棒的决定, ";
-		mes "很高兴您去参观~";
-		mes "去昆仑, ";
-		mes "需要一点旅费.";
+		mes "[ニκ花]";
+		mes "次∕﹚, ";
+		mes "蔼砍眤把芠~";
+		mes "ㄚ, ";
+		mes "惠璶翴禣.";
 		next;
-		mes "[瓦百豪]";
-		mes "出发前需支付 10,000 zeny旅费, ";
-		mes "该费用还包含, ";
-		mes "返回艾尔贝塔的费用, ";
-		mes "已经准备好随时出发, ";
-		mes "为您服务..";
+		mes "[ニκ花]";
+		mes "祇玡惠や 10,000 zeny禣, ";
+		mes "赣禣ノ临, ";
+		mes "︺焊ī娥禣ノ, ";
+		mes "竒称繦祇, ";
+		mes "眤狝叭..";
 		next;
-		mes "[瓦百豪]";
-		mes "想出发了吗?";
+		mes "[ニκ花]";
+		mes "稱祇盾?";
 		next;
-		if (select("出发~!:取消.") == 1) {
+		if (select("祇~!:.") == 1) {
 			if (Zeny > 9999) {
-				mes "[瓦百豪]";
-				mes "准备好要出发啰.";
+				mes "[ニκ花]";
+				mes "称璶祇.";
 				close2;
 				set Zeny, Zeny - 10000;
 				warp "gon_fild01",258,82;
 				end;
 			}
-			mes "[瓦百豪]";
-			mes "很抱歉,您要准备好";
-			mes "旅行时所需要的";
-			mes "10,000 钱币,请再确认一下";
-			mes "您所携带的费用,";
-			mes "谢谢";
+			mes "[ニκ花]";
+			mes "╆簆,眤璶称";
+			mes "︽┮惠璶";
+			mes "10,000 窥刽,叫谔粄";
+			mes "眤┮拟盿禣ノ,";
+			mes "谅谅";
 			close;
 		}
-		mes "[瓦百豪]";
-		mes "我知道了.";
-		mes "如果以后想要过去的话";
-		mes "请来找我吧,";
-		mes "能够为大陆的贵宾们服务,";
-		mes "是我最大的欢喜";
+		mes "[ニκ花]";
+		mes "и笵.";
+		mes "狦稱璶筁杠";
+		mes "叫ㄓти,";
+		mes "镑嘲禥猾狝叭,";
+		mes "琌и程舧尺";
 		close;
 	case 3:
-		mes "[瓦百豪]";
-		mes "如果以后想要过去的话,";
-		mes "请来找我吧,能够为大陆的贵宾们服务,";
-		mes "是我最大的欢喜";
+		mes "[ニκ花]";
+		mes "狦稱璶筁杠,";
+		mes "叫ㄓти,镑嘲禥猾狝叭,";
+		mes "琌и程舧尺";
 		close;
 	}
 }
 
-gon_fild01,255,79,7	script	昆仑宣传使臣#gon2	4_M_TWMIDMAN,{
-	mes "[瓦百豪]";
-	mes "是否有个愉快的旅途了呢?那么";
-	mes "现在应该是要回去的时候了吧!";
-	mes "往返大陆的船现在已经准备好了";
+gon_fild01,255,79,7	script	ㄚ肚ㄏ#gon2	4_M_TWMIDMAN,{
+	mes "[ニκ花]";
+	mes "琌Τ磖е硚㎡?ê";
+	mes "瞷莱赣琌璶!";
+	mes "┕嘲差瞷竒称";
 	next;
-	if (select("回艾尔贝塔:取消") == 1) {
-		mes "[瓦百豪]";
-		mes "欢迎在来.";
-		mes "等你回去时, ";
-		mes "希望你能将昆仑的美让朋友知道, ";
-		mes "现在, ";
-		mes "带你返回艾尔贝塔.";
+	if (select("︺焊ī娥:") == 1) {
+		mes "[ニκ花]";
+		mes "舧ㄓ.";
+		mes "单, ";
+		mes "辨盢ㄚ琵狟ね笵, ";
+		mes "瞷, ";
+		mes "盿︺焊ī娥.";
 		close2;
 		if (checkre(0))
 			warp "alberta",244,60;
@@ -150,266 +150,266 @@ gon_fild01,255,79,7	script	昆仑宣传使臣#gon2	4_M_TWMIDMAN,{
 			warp "alberta",243,67;
 		end;
 	}
-	mes "[瓦百豪]";
-	mes "那么请你再慢慢的逛吧!";
-	mes "在昆仑还有很多";
-	mes "你没有去过的地方呢";
+	mes "[ニκ花]";
+	mes "ê叫篊篊硙!";
+	mes "ㄚ临Τ";
+	mes "⊿Τ筁よ㎡";
 	close;
 }
 
-gon_fild01,187,239,7	script	昆仑宣传使臣#gon3	4_M_TWMIDMAN,{
-	mes "[张澄龙]";
-	mes "请往上走过去就可以了";
-	mes "真希望你能够在昆仑";
-	mes "制造很多美好的回忆";
-	mes "再回去..";
+gon_fild01,187,239,7	script	ㄚ肚ㄏ#gon3	4_M_TWMIDMAN,{
+	mes "[眎坚纒]";
+	mes "叫┕ǐ筁碞";
+	mes "痷辨镑ㄚ";
+	mes "硑拘";
+	mes "..";
 	close;
 }
 
-gonryun,153,64,7	script	昆仑宣传使臣#gon4	4_M_TWMIDMAN,{
-	mes "[张澄龙]";
-	mes "希望在昆仑有个愉快的一天.";
-	mes "如果想回去了, ";
-	mes "我很乐意引导您到, ";
-	mes "返回艾尔贝塔的船.";
+gonryun,153,64,7	script	ㄚ肚ㄏ#gon4	4_M_TWMIDMAN,{
+	mes "[眎坚纒]";
+	mes "辨ㄚΤ磖еぱ.";
+	mes "狦稱, ";
+	mes "и贾種ま旧眤, ";
+	mes "︺焊ī娥差.";
 	next;
-	if (select("回到港口:取消") == 1) {
-		mes "[张澄龙]";
-		mes "希望旅程您很满意.";
-		mes "现在, ";
-		mes "出发到港口啰.";
+	if (select("翠:") == 1) {
+		mes "[眎坚纒]";
+		mes "辨祘眤骸種.";
+		mes "瞷, ";
+		mes "祇翠.";
 		close2;
 		warp "gon_fild01",258,82;
 		end;
 	}
-	mes "[张澄龙]";
-	mes "那么请你再慢慢的逛吧!";
-	mes "在昆仑还有很多";
-	mes "你没有去过的地方呢";
+	mes "[眎坚纒]";
+	mes "ê叫篊篊硙!";
+	mes "ㄚ临Τ";
+	mes "⊿Τ筁よ㎡";
 	close;
 }
 
 // Generic Kunlun NPCs
 //============================================================ 
-gonryun,200,82,3	script	成松 感#gon	4_M_TWBOY,{
-	mes "[成松 感]";
-	mes "庆祝活动真是快乐极了, ";
-	mes "所以我好喜欢好喜欢, ";
-	mes "总是有着庆祝活动";
-	mes "的这个村落, 嘿嘿";
+gonryun,200,82,3	script	Θ猀 稰#gon	4_M_TWBOY,{
+	mes "[Θ猀 稰]";
+	mes "紋笆痷琌е贾体, ";
+	mes "┮и尺舧尺舧, ";
+	mes "羆琌Τ帝紋笆";
+	mes "硂辅, 糑糑";
 	close;
 }
 
-gonryun,268,88,3	script	准坡 良#gon	4_M_TWMIDMAN,{
-	mes "[准坡 良]";
-	mes "我们是独立的民族, ";
-	mes "因羡慕这种被祝福的国土, ";
-	mes "没有被受略我们的恶群敌战败, ";
-	mes "反而战胜";
+gonryun,268,88,3	script	℡ ▆#gon	4_M_TWMIDMAN,{
+	mes "[℡ ▆]";
+	mes "и琌縒ミチ壁, ";
+	mes "跜紏硂销砆褐瓣, ";
+	mes "⊿Τ砆菠и碿竤寄驹毖, ";
+	mes "はτ驹衊";
 	next;
-	mes "[准坡 良]";
-	mes "每次邪恶的入侵, ";
-	mes "我们总能抵御战胜, ";
-	mes "只要我们相信自己,";
-	mes "我们永远不会忘记";
-	mes "胜利的凯歌帮助我们战胜一切.";
+	mes "[℡ ▆]";
+	mes "–Ωǜ碿獻, ";
+	mes "и羆╄眘驹衊, ";
+	mes "璶и獺,";
+	mes "иッ环ぃ穦а癘";
+	mes "衊惩簈腊и驹衊ち.";
 	close;
 }
 
-gonryun,118,111,5	script	员石 千#gon	4_M_ORIENT02,{
-	mes "[员石 千]";
-	mes "这里的村长, ";
-	mes "是个很开放的人.";
-	mes "不过就是因为他那开放的性格";
-	mes "也是有人不喜欢的..";
+gonryun,118,111,5	script	ホ #gon	4_M_ORIENT02,{
+	mes "[ホ ]";
+	mes "硂ń, ";
+	mes "琌秨.";
+	mes "ぃ筁碞琌ê秨┦";
+	mes "琌Τぃ尺舧..";
 	next;
-	mes "[员石 千]";
-	mes "不过因为他, 而使我们村落";
-	mes "变得开放是件不错的事啊..";
-	mes "不过希望不要有无厘头";
-	mes "的人出现";
+	mes "[ホ ]";
+	mes "ぃ筁, τㄏи辅";
+	mes "跑眔秨琌ンぃ岿ㄆ摆..";
+	mes "ぃ筁辨ぃ璶Τ礚往繷";
+	mes "瞷";
 	close;
 }
 
-gonryun,181,161,3	script	玟珍 郑#gon	4_F_TWMIDWOMAN,{
-	mes "[玟珍 郑]";
-	mes "我们昆仑的男生, ";
-	mes "全部都很有力而且精力旺盛, ";
-	mes "不过最近那些男生, ";
-	mes "都不能够娶个老婆";
+gonryun,181,161,3	script	 綠#gon	4_F_TWMIDWOMAN,{
+	mes "[ 綠]";
+	mes "иㄚ╧ネ, ";
+	mes "场常Ττ弘脖, ";
+	mes "ぃ筁程êㄇ╧ネ, ";
+	mes "常ぃ镑谤ρ盋";
 	next;
-	mes "[玟珍 郑]";
-	mes "这都是因为男生变多了";
-	mes "相对的女生, ";
-	mes "不足才会这样, ";
-	mes "不知道我这儿子能不能";
-	mes "娶得到老婆..呼鸣";
+	mes "[ 綠]";
+	mes "硂常琌╧ネ跑";
+	mes "癸ネ, ";
+	mes "ぃì穦硂妓, ";
+	mes "ぃ笵и硂ぃ";
+	mes "谤眔ρ盋..㊣伙";
 	close;
 }
 
-gonryun,113,135,6	script	守门人#gon	8_M_TWSOLDIER,{
-	mes "[昆仑守卫]";
-	mes "欢迎.";
-	mes "这是昆仑领袖的住所.";
+gonryun,113,135,6	script	#gon	8_M_TWSOLDIER,{
+	mes "[ㄚ矫]";
+	mes "舧.";
+	mes "硂琌ㄚ烩砈┮.";
 	next;
-	mes "[昆仑守卫]";
-	mes "希望你在昆仑有良好表现, ";
-	mes "如果我们发现有任何可疑, ";
-	mes "会马上予以逮捕.";
+	mes "[ㄚ矫]";
+	mes "辨ㄚΤ▆瞷, ";
+	mes "狦и祇瞷Τヴ好, ";
+	mes "穦皑ぉ秂.";
 	next;
-	mes "[昆仑守卫]";
-	mes "别紧张, ";
-	mes "你看上去像值得信赖的人.";
-	mes "我保证什么都不会发生. 祝您旅途愉快.";
+	mes "[ㄚ矫]";
+	mes "候眎, ";
+	mes "钩眔獺苦.";
+	mes "и玂谍ぐ常ぃ穦祇ネ. 眤硚磖е.";
 	close;
 }
 
-gonryun,113,127,6	script	守门人#gon2	8_M_TWSOLDIER,{
-	mes "[昆仑守卫]";
-	mes "欢迎.";
-	mes "这是昆仑领袖的住所.";
+gonryun,113,127,6	script	#gon2	8_M_TWSOLDIER,{
+	mes "[ㄚ矫]";
+	mes "舧.";
+	mes "硂琌ㄚ烩砈┮.";
 	next;
-	mes "[昆仑守卫]";
-	mes "希望你在昆仑有良好表现, ";
-	mes "如果我们发现有任何可疑, ";
-	mes "会马上予以逮捕.";
+	mes "[ㄚ矫]";
+	mes "辨ㄚΤ▆瞷, ";
+	mes "狦и祇瞷Τヴ好, ";
+	mes "穦皑ぉ秂.";
 	next;
-	mes "[昆仑守卫]";
-	mes "别紧张, ";
-	mes "你看上去像值得信赖的人.";
-	mes "我保证什么都不会发生. 祝您旅途愉快.";
+	mes "[ㄚ矫]";
+	mes "候眎, ";
+	mes "钩眔獺苦.";
+	mes "и玂谍ぐ常ぃ穦祇ネ. 眤硚磖е.";
 	close;
 }
 
-gon_in,73,82,5	script	成哲 基#gon	4_M_TWTEAMAN,{
+gon_in,73,82,5	script	Θ 膀#gon	4_M_TWTEAMAN,{
 	if (nakha >= 0 && nakha <= 2) {
-		mes "[成哲 基]";
+		mes "[Θ 膀]";
 		mes "............";
 		next;
-		mes "[成哲 基]";
-		mes "呼鸣.....";
-		mes "真令人担心啊, 担心";
+		mes "[Θ 膀]";
+		mes "㊣伙.....";
+		mes "痷踞み摆, 踞み";
 		close;
 	}
 	if (nakha == 3) {
 		set cha,1;
-		mes "[成哲 基]";
-		mes "我是著名啤酒茶酿造商的";
-		mes "我每天努力的, ";
-		mes "制作美味的啤酒茶.";
+		mes "[Θ 膀]";
+		mes "и琌帝班皊艭硑坝";
+		mes "и–ぱ, ";
+		mes "班皊.";
 		next;
-		mes "[成哲 基]";
-		mes "*叹气* 但是, ";
-		mes "近来制作出来的茶已经没那么好, ";
-		mes "如果能用一些特殊成分的话...";
+		mes "[Θ 膀]";
+		mes "*鼓蒩* 琌, ";
+		mes "ㄓㄓ竒⊿ê, ";
+		mes "狦ノㄇ疭Θだ杠...";
 		next;
-		mes "[成哲 基]";
-		mes "有人告诉我, ";
-		mes "如果参入蛇, ";
-		mes "能混合而制造成特别的饮料~";
-		mes "但是...";
-		mes "哪边能发现并且捕获呢?";
-		mes "呵...";
+		mes "[Θ 膀]";
+		mes "Τ禗и, ";
+		mes "狦把矰, ";
+		mes "睼τ硑Θ疭都~";
+		mes "琌...";
+		mes "娩祇瞷莉㎡?";
+		mes "...";
 		close;
 	}
 }
 
-gon_in,173,27,3	script	鸩侠 吴#gon	4_M_TWBOY,{
-	mes "[鸩侠 吴]";
-	mes "果然..我这年龄来到酒店, ";
-	mes "也不卖我酒啊, ";
-	mes "看大人都很会喝, ";
-	mes "真好奇是什么味道啊..唉";
+gon_in,173,27,3	script	緘獿 #gon	4_M_TWBOY,{
+	mes "[緘獿 ]";
+	mes "狦礛..и硂闹ㄓ皊┍, ";
+	mes "ぃ芥и皊摆, ";
+	mes "常穦耻, ";
+	mes "痷琌ぐ笵摆..";
 	next;
-	mes "[鸩侠 吴]";
-	mes "不过正在开发像我这样的小孩子, ";
-	mes "也可以饮用的美味茶, ";
-	mes "不知道..那是什么时候, ";
-	mes "想到要喝美味的茶时, ";
-	mes "真的好兴奋喔";
+	mes "[緘獿 ]";
+	mes "ぃ筁タ秨祇钩и硂妓, ";
+	mes "都ノ, ";
+	mes "ぃ笵..ê琌ぐ, ";
+	mes "稱璶耻, ";
+	mes "痷砍灸翅";
 	close;
 }
 
-gonryun,166,196,3	script	士兵#gon	8_M_TWSOLDIER,{
+gonryun,166,196,3	script	#gon	8_M_TWSOLDIER,{
 	if (b_sword < 7) {
-		mes "[士兵]";
-		mes "让我告诉你一些有趣的事情, ";
-		mes "这里很久以前~";
-		mes "整个地区是一个圣地.";
+		mes "[]";
+		mes "琵и禗ㄇΤ届ㄆ薄, ";
+		mes "硂ń玡~";
+		mes "俱跋琌蒾.";
 		next;
-		mes "[士兵]";
-		mes "那段时间, ";
-		mes "四方各地的道家与隐士, ";
-		mes "聚集于这里都想触及天空之城,";
-		mes "不幸的都失败了...怪物也慢慢的聚集过来...";
+		mes "[]";
+		mes "ê琿丁, ";
+		mes "よ笵產蒓留, ";
+		mes "籈栋硂ń常稱郉のぱぇ,";
+		mes "ぃ┋常ア毖...┣篊篊籈栋筁ㄓ...";
 		close;
 	}
 	else if ((b_sword > 6) && (b_sword < 10)) {
-		mes "[士兵]";
-		mes "你不觉得昨晚, ";
-		mes "相当吵闹吗?";
-		mes "全都是因为一名小偷";
-		mes "他在现场制造骚动...";
-		mes "声音大到我睡不着...";
+		mes "[]";
+		mes "ぃ谋眔琎边, ";
+		mes "讽緓盾?";
+		mes "常琌敖";
+		mes "瞷初硑奶笆...";
+		mes "羘и何ぃ帝...";
 		next;
-		mes "[士兵]";
-		mes "阿~~~~!";
-		mes "在骚动中, ";
-		mes "我看见什么东西, ";
-		mes "一溜烟的, ";
-		mes "就进入神社了.";
+		mes "[]";
+		mes "~~~~!";
+		mes "奶笆い, ";
+		mes "иǎぐ狥﹁, ";
+		mes "啡废, ";
+		mes "碞秈.";
 		next;
-		mes "[士兵]";
-		mes "发生的太快了, ";
-		mes "快到无法说出他是什么.";
-		mes "可以确认的是, ";
-		mes "它看起来像人, ";
-		mes "我还是不知道是什么...";
+		mes "[]";
+		mes "祇ネびе, ";
+		mes "е礚猭弧琌ぐ.";
+		mes "谔粄琌, ";
+		mes "ウ癬ㄓ钩, ";
+		mes "и临琌ぃ笵琌ぐ...";
 		next;
-		mes "[士兵]";
-		mes "可能是小偷吧";
-		mes "但是移动速度太快了, ";
-		mes "只能看到一个, ";
-		mes "模糊的影像.";
+		mes "[]";
+		mes "琌敖";
+		mes "琌簿笆硉びе, ";
+		mes ", ";
+		mes "家絢紇钩.";
 		close;
 	}
-	mes "[士兵]";
-		mes "让我告诉你一些有趣的事情, ";
-		mes "这里很久以前~";
-		mes "整个地区是一个圣地.";
+	mes "[]";
+		mes "琵и禗ㄇΤ届ㄆ薄, ";
+		mes "硂ń玡~";
+		mes "俱跋琌蒾.";
 	next;
-	mes "[士兵]";
-	mes "那段时间, ";
-	mes "四方各地的道家与隐士, ";
-	mes "聚集于这里都想触及天空之城,";
-	mes "不幸的都失败了...怪物也慢慢的聚集过来...";
+	mes "[]";
+	mes "ê琿丁, ";
+	mes "よ笵產蒓留, ";
+	mes "籈栋硂ń常稱郉のぱぇ,";
+	mes "ぃ┋常ア毖...┣篊篊籈栋筁ㄓ...";
 	next;
-	mes "[士兵]";
-	mes "城镇本来在为节日做准备, ";
-	mes "却因为某事而延后, ";
-	mes "以前从未发生过这种状况...";
+	mes "[]";
+	mes "马セㄓ竊ら暗称, ";
+	mes "玱琘ㄆτ┑, ";
+	mes "玡眖ゼ祇ネ筁硂销猵...";
 	close;
 }
 
-gonryun,169,71,3	script	介绍人员#gon	4_F_TWGIRL,{
-	mes "[李喜敏]";
-	mes "欢迎光临, ";
-	mes "进来村落之前, ";
-	mes "有好好的逛村落的下方吗?";
-	mes "村外的建筑物是我们, ";
-	mes "这次制造的精心之作";
+gonryun,169,71,3	script	ざ残#gon	4_F_TWGIRL,{
+	mes "[尺庇]";
+	mes "舧羬, ";
+	mes "秈ㄓ辅ぇ玡, ";
+	mes "Τ硙辅よ盾?";
+	mes "诞琌и, ";
+	mes "硂Ω硑弘みぇ";
 	next;
-	mes "[李喜敏]";
-	mes "为了使一眼看清, ";
-	mes "卢恩..米德加兹王国的都市";
-	mes "而制作的小模型..";
-	mes "因为我们很久没有与";
-	mes "外面交流, 虽然很累, 不过是很认真制作的．";
+	mes "[尺庇]";
+	mes "ㄏ泊睲, ";
+	mes "縞..μ紈瓣常カ";
+	mes "τ家..";
+	mes "и⊿Τ蒓";
+	mes "ユ瑈, 瘤礛仓, ぃ筁琌粄痷";
 	next;
-	mes "[李喜敏]";
-	mes "到处走走看看的话,";
-	mes "会发现很多很美的风景";
-	mes "在小镇的各个角落.";
+	mes "[尺庇]";
+	mes "矪ǐǐ杠,";
+	mes "穦祇瞷春";
+	mes "马à辅.";
 	close;
 }
 

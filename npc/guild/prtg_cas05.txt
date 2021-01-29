@@ -18,27 +18,27 @@
 
 // Guild Flags (Outside Castle)
 //============================================================
--	script	关德#1::OutsideFlagsPR5	722,{
+-	script	闽紈#1::OutsideFlagsPR5	722,{
 
 	set .@GID, GetCastleData("prtg_cas05",1);
 
 	if (.@GID == 0) {
-		mes "[ 神圣卢恩米德加兹王国条例 ]";
+		mes "[ 蒾縞μ紈瓣兵ㄒ ]";
 		mes " ";
-		mes "1. 按照神圣卢恩米德加兹王国的条例,";
-		mes "我们正式声明此城堡没有正式拥有者.";
+		mes "1. 酚蒾縞μ紈瓣兵ㄒ,";
+		mes "иタΑ羘躇⊿ΤタΑ局Τ.";
 		mes " ";
-		mes "2. 经过所有试炼,";
-		mes "并且破坏了华丽金属的勇士.";
-		mes "将会得到国王授予的城堡拥有权";
+		mes "2. 竒筁┮Τ刚芬,";
+		mes "瘆Д地腞妮玦.";
+		mes "盢穦眔瓣甭ぉ躇局Τ舦";
 		close;
 	}
 	if (getcharid(2) == .@GID) {
-		mes "[ 回声 ]";
-		mes "勇士们...";
-		mes "想要回到你们的勇气所在之地吗?";
+		mes "[ 羘 ]";
+		mes "玦...";
+		mes "稱璶玦蒩┮ぇ盾?";
 		next;
-		if(select("返回公会城堡.:取消.") == 1) {
+		if(select("そ穦躇.:.") == 1) {
 			close2;
 			if (getcharid(2) == GetCastleData("prtg_cas05",1)) {
 				warp "prtg_cas05",52,41;
@@ -48,14 +48,14 @@
 		}
 		close;
 	}
-	mes "[ 神圣卢恩米德加兹王国条例 ]";
+	mes "[ 蒾縞μ紈瓣兵ㄒ ]";
 	mes " ";
-	mes "1. 按照神圣卢恩米德加兹王国的条例,";
-	mes "我们批准该地区作为公会 ^ff0000"+GetGuildName(.@GID)+"^000000 的私有领地.";
+	mes "1. 酚蒾縞μ紈瓣兵ㄒ,";
+	mes "иу赣跋そ穦 ^ff0000"+GetGuildName(.@GID)+"^000000 ╬Τ烩.";
 	mes " ";
-	mes "2. ^ff0000"+GetGuildName(.@GID)+"^000000 公会的领袖为:";
+	mes "2. ^ff0000"+GetGuildName(.@GID)+"^000000 そ穦烩砈:";
 	mes "^ff0000"+GetGuildMaster(.@GID)+"^000000";
-	mes "对此结果有意见的人，请用你手中的武器说话，证明你的勇气，捍卫你的光荣！";
+	mes "癸挡狦Τ種ǎ叫ノもい猌竟弧杠谍玦蒩矫篴";
 	close;
 
 OnRecvCastlePt05:
@@ -63,14 +63,14 @@ OnRecvCastlePt05:
 	end;
 }
 
-prt_gld,199,243,2	duplicate(OutsideFlagsPR5)	关德#1-2	722
-prt_gld,199,236,2	duplicate(OutsideFlagsPR5)	关德#2	722
-prt_gld,197,243,2	duplicate(OutsideFlagsPR5)	关德#3	722
-prt_gld,197,236,2	duplicate(OutsideFlagsPR5)	关德#4	722
+prt_gld,199,243,2	duplicate(OutsideFlagsPR5)	闽紈#1-2	722
+prt_gld,199,236,2	duplicate(OutsideFlagsPR5)	闽紈#2	722
+prt_gld,197,243,2	duplicate(OutsideFlagsPR5)	闽紈#3	722
+prt_gld,197,236,2	duplicate(OutsideFlagsPR5)	闽紈#4	722
 
 // Guild Flags (Inside Castle)
 //============================================================
--	script	关德#5::InsideFlagsPR5	722,{
+-	script	闽紈#5::InsideFlagsPR5	722,{
 	end;
 
 OnRecvCastlePt05:
@@ -78,34 +78,34 @@ OnRecvCastlePt05:
 	end;
 }
 
-prtg_cas05,19,247,4	duplicate(InsideFlagsPR5)	关德#5-2	722
-prtg_cas05,19,243,4	duplicate(InsideFlagsPR5)	关德#6	722
-prtg_cas05,26,247,4	duplicate(InsideFlagsPR5)	关德#7	722
-prtg_cas05,26,243,4	duplicate(InsideFlagsPR5)	关德#8	722
-prtg_cas05,249,289,4	duplicate(InsideFlagsPR5)	关德#9	722
-prtg_cas05,256,289,4	duplicate(InsideFlagsPR5)	关德#10	722
-prtg_cas05,253,271,4	duplicate(InsideFlagsPR5)	关德#11	722
-prtg_cas05,273,257,4	duplicate(InsideFlagsPR5)	关德#12	722
+prtg_cas05,19,247,4	duplicate(InsideFlagsPR5)	闽紈#5-2	722
+prtg_cas05,19,243,4	duplicate(InsideFlagsPR5)	闽紈#6	722
+prtg_cas05,26,247,4	duplicate(InsideFlagsPR5)	闽紈#7	722
+prtg_cas05,26,243,4	duplicate(InsideFlagsPR5)	闽紈#8	722
+prtg_cas05,249,289,4	duplicate(InsideFlagsPR5)	闽紈#9	722
+prtg_cas05,256,289,4	duplicate(InsideFlagsPR5)	闽紈#10	722
+prtg_cas05,253,271,4	duplicate(InsideFlagsPR5)	闽紈#11	722
+prtg_cas05,273,257,4	duplicate(InsideFlagsPR5)	闽紈#12	722
 
 // Guild Flag (Town)
 //============================================================
-prontera,165,194,5	duplicate(InsideFlagsPR5)	关德#13	722
+prontera,165,194,5	duplicate(InsideFlagsPR5)	闽紈#13	722
 
 // Kafra Employee
 //============================================================
-prtg_cas05,52,41,4	duplicate(guildkafra)	卡普拉 职员#prtg_cas05	117
+prtg_cas05,52,41,4	duplicate(guildkafra)	炊┰ 戮#prtg_cas05	117
 
 // Steward
 //============================================================
-prtg_cas05,36,37,4	duplicate(cm)	雷诺#prtg_cas05	55
+prtg_cas05,36,37,4	duplicate(cm)	筽空#prtg_cas05	55
 
 // Treasure Room Exit
 //============================================================
 prtg_cas05,281,176,0	script	#Lever_PR05	111,{
 	mes " ";
-	mes "这里有一个小小的控制杆, 去拉一下吗?";
+	mes "硂ńΤ北, ┰盾?";
 	next;
-	if(select("上前拉杆.:算了.") == 1) {
+	if(select("玡┰.:衡.") == 1) {
 		close2;
 		warp "prtg_cas05",36,38;
 		end;
@@ -119,7 +119,7 @@ prtg_cas05,212,95,0	duplicate(gdlever)	#prtg_cas05	111
 
 // Guild Treasure Spawns
 //============================================================
-prtg_cas05,276,178,0	duplicate(Gld_Trea_Spawn)	公会宝箱#prtg_cas05	-1
+prtg_cas05,276,178,0	duplicate(Gld_Trea_Spawn)	そ穦腳絚#prtg_cas05	-1
 
 // AGIT Manager
 //============================================================
@@ -127,4 +127,4 @@ prtg_cas05,266,266,0	duplicate(Gld_Agit_Manager)	Agit#prtg_cas05	-1
 
 // Guardians
 //============================================================
-prtg_cas05,36,37,4	duplicate(Gld_Guard_Template)	城堡监护人#prtg_cas05	-1
+prtg_cas05,36,37,4	duplicate(Gld_Guard_Template)	躇菏臔#prtg_cas05	-1

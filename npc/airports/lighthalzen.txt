@@ -12,19 +12,19 @@
 //= 1.0 First version.
 //============================================================ 
 
-lhz_airport,143,43,5	script	机场 职员#lhz_air1a::lhz_airport1	90,{
-	mes "[机场 职员]";
-	mes "欢迎来到里希塔乐镇机场.";
-	mes "我们提供不间断的往返于艾音布罗克, 毁葛和朱诺的航班.";
+lhz_airport,143,43,5	script	审初 戮#lhz_air1a::lhz_airport1	90,{
+	mes "[审初 戮]";
+	mes "舧ㄓń娥贾马审初.";
+	mes "и矗ㄑぃ丁耞┕︺ガ霉, 反腐㎝Χ空痁.";
 	next;
-	if (select("我想搭乘飞空艇:取消") == 1) {
-		mes "[机场 职员]";
-		mes "搭乘飞空艇需要 1,200 金币.";
-		mes "但是如果您有飞空艇免费搭乘劵的话,";
-		mes "就可以免费搭乘飞空艇.";
-		mes "您是否还想要搭乘飞空艇呢?";
+	if (select("и稱穎弗:") == 1) {
+		mes "[审初 戮]";
+		mes "穎弗惠璶 1,200 刽.";
+		mes "琌狦眤Τ弗禣穎杠,";
+		mes "碞禣穎弗.";
+		mes "眤琌临稱璶穎弗㎡?";
 		next;
-		if (select("好的:不要") == 1) {
+		if (select(":ぃ璶") == 1) {
 			if (countitem(7311) > 0) {
 				delitem 7311,1; //Free_Flying_Ship_Ticket
 				warp "lhz_airport",148,51;
@@ -35,44 +35,44 @@ lhz_airport,143,43,5	script	机场 职员#lhz_air1a::lhz_airport1	90,{
 				warp "lhz_airport",148,51;
 				end;
 			}
-			mes "[机场 职员]";
-			mes "很抱歉, 您身上并没有 1,200 金币";
-			mes "可用于支付飞空艇的搭乘费用!";
+			mes "[审初 戮]";
+			mes "╆簆, 眤ō⊿Τ 1,200 刽";
+			mes "ノや弗穎禣ノ!";
 			close;
 		}
 	}
-	mes "[机场 职员]";
-	mes "感谢您对我们的支持, 欢迎再来.";
-	mes "祝您有个美好的一天~";
+	mes "[审初 戮]";
+	mes "稰谅眤癸иや, 舧ㄓ.";
+	mes "眤Τぱ~";
 	close;
 }
 
-lhz_airport,158,43,5	duplicate(lhz_airport1)	机场 职员#lhz_air1b	90
-lhz_airport,126,43,5	duplicate(lhz_airport1)	机场 职员#lhz_air1c	90
+lhz_airport,158,43,5	duplicate(lhz_airport1)	审初 戮#lhz_air1b	90
+lhz_airport,126,43,5	duplicate(lhz_airport1)	审初 戮#lhz_air1c	90
 
-lhz_airport,143,49,3	script	机场 职员#lhz_air2a::lhz_airport2	90,{
-	mes "[机场 职员]";
-	mes "欢迎来到里希塔乐镇机场.";
-	mes "如果这里是您旅行的目的地, 那么就由我来帮您办理离站手续.";
-	mes "如果不是, 那么请继续搭乘飞空艇, 去您想去的地方.";
+lhz_airport,143,49,3	script	审初 戮#lhz_air2a::lhz_airport2	90,{
+	mes "[审初 戮]";
+	mes "舧ㄓń娥贾马审初.";
+	mes "狦硂ń琌眤︽ヘ, ê碞パиㄓ腊眤快瞶置も尿.";
+	mes "狦ぃ琌, ê叫膥尿穎弗, 眤稱よ.";
 	next;
-	if (select("我要离开机场内部:取消") == 1) {
-		mes "[机场 职员]";
-		mes "当您离站以后, 若还想再次登机, 就要重新付钱了.";
-		mes "只有当您想去^ff0000里希塔乐镇^000000的时候,";
-		mes "才合适在这里离站.";
-		mes "请问您坚持要在这里离站吗?";
+	if (select("и璶置秨审初ず场:") == 1) {
+		mes "[审初 戮]";
+		mes "讽眤置, 璝临稱Ω祅审, 碞璶穝窥.";
+		mes "Τ讽眤稱^ff0000ń娥贾马^000000,";
+		mes "屿硂ń置.";
+		mes "叫拜眤绊璶硂ń置盾?";
 		next;
-		if (select("是的:不要") == 1) {
+		if (select("琌:ぃ璶") == 1) {
 			warp "lhz_airport",142,40;
 			end;
 		}
 	}
-	mes "[机场 职员]";
-	mes "好的, 感谢您选择了我们的服务.";
-	mes "祝您旅途愉快~";
+	mes "[审初 戮]";
+	mes ", 稰谅眤匡拒и狝叭.";
+	mes "眤硚磖е~";
 	close;
 }
 
-lhz_airport,126,51,3	duplicate(lhz_airport2)	机场 职员#lhz_air2b	90
-lhz_airport,158,50,3	duplicate(lhz_airport2)	机场 职员#lhz_air2c	90
+lhz_airport,126,51,3	duplicate(lhz_airport2)	审初 戮#lhz_air2b	90
+lhz_airport,158,50,3	duplicate(lhz_airport2)	审初 戮#lhz_air2c	90

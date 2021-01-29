@@ -15,96 +15,96 @@
 //= 1.2 Navigation system update. [Euphy]
 //============================================================ 
 
-hugel,98,56,3	script	毁葛导游奶奶#hugel	863,{
-	mes "[毁葛导游奶奶]";
-	mes "噢, 你好~ 精力充沛的冒险家.";
-	mes "欢迎光临 ^8B4513毁葛^000000. 我很荣幸能给你当导游来解说这个美丽的村庄.";
-	mes "如果这是你第一次使用导游服务, 你应该会问很多问题.";
-	F_Navi("[毁葛导游奶奶]");
+hugel,98,56,3	script	反腐旧村イイ#hugel	863,{
+	mes "[反腐旧村イイ]";
+	mes "揪, ~ 弘↘玙繧產.";
+	mes "舧羬 ^8B4513反腐^000000. и篴┋倒讽旧村ㄓ秆弧硂腞绍.";
+	mes "狦硂琌材Ωㄏノ旧村狝叭, 莱赣穦拜拜肈.";
+	F_Navi("[反腐旧村イイ]");
 	next;
-	set .@str$,"你想知道其他一些地方的位置吗?";
+	set .@str$,"稱笵ㄤㄇよ竚盾?";
 	while (1) {
-		switch(select("[ 主要设施 ]:[ 商店 & 小帮手 ]:删除小地图的标记:结束对话")) {
+		switch(select("[ 璶砞琁 ]:[ 坝┍ & 腊も ]:埃瓜夹癘:挡癸杠")) {
 		case 1:
 			set .@loop,1;
 			while (.@loop) {
-				switch(select("[ 教堂 ]:[ 旅馆 ]:[ 酒店 ]:[ 机场 ]:[ 武器店 ]:[ 道具店 ]:[ 宾果游戏场 ]:[ ^3131FF猎人工会^000000 ]:[ 节庆用品店 ]:[ ^3131FF神殿发掘探险队^000000 ]:返回上一选单")) {
+				switch(select("[ 毙绑 ]:[ 繻 ]:[ 皊┍ ]:[ 审初 ]:[ 猌竟┍ ]:[ 笵ㄣ┍ ]:[ 猾狦村栏初 ]:[ ^3131FF聐穦^000000 ]:[ 竊紋ノ珇┍ ]:[ ^3131FF返祇备贝繧钉^000000 ]:匡虫")) {
 				case 1:
-					mes "[毁葛导游奶奶]";
-					mes "'教堂'已成为老人们聚会的场所了...";
+					mes "[反腐旧村イイ]";
+					mes "'毙绑'Θρ籈穦初┮...";
 					mes .@str$;
 					viewpoint 1,159,113,0,0xFF0000;
 					next;
 					break;
 				case 2:
-					mes "[毁葛导游奶奶]";
-					mes "旅途劳顿是最好到旅馆休息一下,";
-					mes "'旅馆'就是右边那栋大楼";
+					mes "[反腐旧村イイ]";
+					mes "硚骋箉琌程繻ヰ,";
+					mes "'繻'碞琌娩ê瓷加";
 					mes .@str$;
 					viewpoint 1,101,77,1,0x8B4513;
 					next;
 					break;
 				case 3:
-					mes "[毁葛导游奶奶]";
-					mes "在酒店小酌一杯多惬意,";
-					mes "'酒店'就在右手边";
+					mes "[反腐旧村イイ]";
+					mes "皊┍皍狹磄種,";
+					mes "'皊┍'碞も娩";
 					mes .@str$;
 					viewpoint 1,126,65,2,0xDAA520;
 					next;
 					break;
 				case 4:
-					mes "[毁葛导游奶奶]";
-					mes "不久前有陌生人来过之后,就出现了那巨大的'飞空艇'...";
+					mes "[反腐旧村イイ]";
+					mes "ぃ玡Τネㄓ筁ぇ,碞瞷êエ'弗'...";
 					mes .@str$;
 					viewpoint 1,178,146,3,0xD7567F;
 					next;
 					break;
 				case 5:
-					mes "[毁葛导游奶奶]";
-					mes "'武器店'位于村落中央..只是乡下地方能";
-					mes "卖什么好东西吗?";
+					mes "[反腐旧村イイ]";
+					mes "'猌竟┍'辅いァ..琌秏よ";
+					mes "芥ぐ狥﹁盾?";
 					mes .@str$;
 					viewpoint 1,88,167,4,0xCD5C5C;
 					next;
 					break;
 				case 6:
-					mes "[毁葛导游奶奶]";
-					mes "我喜欢毁葛商标的红色药水,";
-					mes "'道具店'位于村子中央";
+					mes "[反腐旧村イイ]";
+					mes "и尺舧反腐坝夹︹媚,";
+					mes "'笵ㄣ┍'いァ";
 					mes .@str$;
 					viewpoint 1,92,163,5,0x000080;
 					next;
 					break;
 				case 7:
-					mes "[毁葛导游奶奶]";
-					mes "^800080宾果游戏场^000000";
-					mes "位置已经标记在";
-					mes "小地图上了,";
+					mes "[反腐旧村イイ]";
+					mes "^800080猾狦村栏初^000000";
+					mes "竚竒夹癘";
+					mes "瓜,";
 					mes .@str$;
 					viewpoint 1,58,206,6,0x800080;
 					next;
 					break;
 				case 8:
-					mes "[毁葛导游奶奶]";
-					mes "若想转职为'猎人'";
-					mes "请往东北末端沿着海岸方向过去吧!";
+					mes "[反腐旧村イイ]";
+					mes "璝稱锣戮'聐'";
+					mes "叫┕狥ソ狠猽帝─よ筁!";
 					mes .@str$;
 					viewpoint 1,209,224,7,0xFF1493;
 					next;
 					break;
 				case 9:
-					mes "[毁葛导游奶奶]";
-					mes "^483D8B节庆用品店^000000";
-					mes "位置已经标记在";
-					mes "小地图上了,";
+					mes "[反腐旧村イイ]";
+					mes "^483D8B竊紋ノ珇┍^000000";
+					mes "竚竒夹癘";
+					mes "瓜,";
 					mes .@str$;
 					viewpoint 1,95,103,8,0x483D8B;
 					next;
 					break;
 				case 10:
-					mes "[毁葛导游奶奶]";
-					mes "'神殿挖掘队'不久前落脚于村落西侧的房子,";
-					mes "村子中央有个牌子好像在征人的样子";
+					mes "[反腐旧村イイ]";
+					mes "'返备钉'ぃ玡辅竲辅﹁凹┬,";
+					mes "いァΤ礟钩┖妓";
 					mes .@str$;
 					viewpoint 1,52,95,9,0x834683;
 					next;
@@ -118,20 +118,20 @@ hugel,98,56,3	script	毁葛导游奶奶#hugel	863,{
 		case 2:
 			set .@loop,1;
 			while (.@loop) {
-				switch(select("[ 魔物赛跑竞技场 ]:[ 准它企划公司职员 ]:返回上一选单")) {
+				switch(select("[ 臸辽禲膙м初 ]:[ ウそ戮 ]:匡虫")) {
 				case 1:
-					mes "[毁葛导游奶奶]";
-					mes "我也偶尔参加'魔物赛跑'来打发时间,";
-					mes "很有意思呢!";
+					mes "[反腐旧村イイ]";
+					mes "и案焊把'臸辽禲'ㄓゴ祇丁,";
+					mes "Τ種㎡!";
 					mes .@str$;
 					viewpoint 1,60,71,10,0xFF1493;
 					next;
 					break;
 				case 2:
-					mes "[毁葛导游奶奶]";
-					mes "^DA70D6准它企划公司职员^000000";
-					mes "位置已经标记在";
-					mes "小地图上了,";
+					mes "[反腐旧村イイ]";
+					mes "^DA70D6ウそ戮^000000";
+					mes "竚竒夹癘";
+					mes "瓜,";
 					mes .@str$;
 					viewpoint 1,88,168,11,0xDA70D6;
 					next;
@@ -143,9 +143,9 @@ hugel,98,56,3	script	毁葛导游奶奶#hugel	863,{
 			}
 			break;
 		case 3:
-			mes "[毁葛导游奶奶]";
-			mes "标记已删除,";
-			mes "还需要其它服务吗?";
+			mes "[反腐旧村イイ]";
+			mes "夹癘埃,";
+			mes "临惠璶ㄤウ狝叭盾?";
 			viewpoint 2,159,113,0,0xFFFFFF;
 			viewpoint 2,101,77,1,0xFFFFFF;
 			viewpoint 2,126,65,2,0xFFFFFF;
@@ -161,79 +161,79 @@ hugel,98,56,3	script	毁葛导游奶奶#hugel	863,{
 			next;
 			break;
 		case 4:
-			mes "[毁葛导游奶奶]";
-			mes "呵呵!";
-			mes "导览服务感觉还挺有趣的.";
+			mes "[反腐旧村イイ]";
+			mes "!";
+			mes "旧凝狝叭稰谋临Τ届.";
 			close;
 		}
 	}
 }
 
-hugel,187,172,6	script	毁葛导游阿公#hugel	414,{
-	mes "[阿公]";
-	mes "你来这穷乡僻壤的";
-	mes "地方有什么事呢?";
+hugel,187,172,6	script	反腐旧村そ#hugel	414,{
+	mes "[そ]";
+	mes "ㄓ硂絘秏击腫";
+	mes "よΤぐㄆ㎡?";
 	next;
-	mes "[阿公]";
-	mes "这里是秀发兹发德的^8B4513毁葛^000000";
-	mes "^8B4513毁葛^000000,";
-	mes "在这乡下地方,";
-	mes "由我来负责解说,";
-	mes "你要感到荣幸.";
+	mes "[そ]";
+	mes "硂ń琌╭祇祇紈^8B4513反腐^000000";
+	mes "^8B4513反腐^000000,";
+	mes "硂秏よ,";
+	mes "パиㄓ璽砫秆弧,";
+	mes "璶稰篴┋.";
 	next;
 	while (1) {
-		switch(select("[ 主要设施 ]:[ 商店 & 小帮手 ]:删除小地图的标记:结束对话")) {
+		switch(select("[ 璶砞琁 ]:[ 坝┍ & 腊も ]:埃瓜夹癘:挡癸杠")) {
 		case 1:
 			set .@loop,1;
 			while (.@loop) {
-				switch(select("[ 教堂 ]:[ 旅馆 ]:[ 酒店 ]:[ 机场 ]:[ 武器店 ]:[ 道具店 ]:[ 宾果游戏场 ]:[ 猎人工会 ]:[ 节庆用品店 ]:[ 神殿挖掘队本部 ]:返回上一选单")) {
+				switch(select("[ 毙绑 ]:[ 繻 ]:[ 皊┍ ]:[ 审初 ]:[ 猌竟┍ ]:[ 笵ㄣ┍ ]:[ 猾狦村栏初 ]:[ 聐穦 ]:[ 竊紋ノ珇┍ ]:[ 返备钉セ场 ]:匡虫")) {
 				case 1:
-					callsub L_Mark, F_Navi("教堂","hugel,159,113","^FF0000");
+					callsub L_Mark, F_Navi("毙绑","hugel,159,113","^FF0000");
 					viewpoint 1,159,113,0,0xFF0000;
 					next;
 					break;
 				case 2:
-					callsub L_Mark, F_Navi("旅馆","hugel,101,77","^8B4513");
+					callsub L_Mark, F_Navi("繻","hugel,101,77","^8B4513");
 					viewpoint 1,101,77,1,0x8B4513;
 					next;
 					break;
 				case 3:
-					callsub L_Mark, F_Navi("酒店","hugel,126,65","^DAA520");
+					callsub L_Mark, F_Navi("皊┍","hugel,126,65","^DAA520");
 					viewpoint 1,126,65,2,0xDAA520;
 					next;
 					break;
 				case 4:
-					callsub L_Mark, F_Navi("机场","hugel,178,146","^D7567F");
+					callsub L_Mark, F_Navi("审初","hugel,178,146","^D7567F");
 					viewpoint 1,178,146,3,0xD7567F;
 					next;
 					break;
 				case 5:
-					callsub L_Mark, F_Navi("武器店","hugel,88,167","^CD5C5C");
+					callsub L_Mark, F_Navi("猌竟┍","hugel,88,167","^CD5C5C");
 					viewpoint 1,88,167,4,0xCD5C5C;
 					next;
 					break;
 				case 6:
-					callsub L_Mark, F_Navi("道具店","hugel,92,163","^000080");
+					callsub L_Mark, F_Navi("笵ㄣ┍","hugel,92,163","^000080");
 					viewpoint 1,92,163,5,0x000080;
 					next;
 					break;
 				case 7:
-					callsub L_Mark, F_Navi("宾果游戏场","hugel,58,206","^800080");
+					callsub L_Mark, F_Navi("猾狦村栏初","hugel,58,206","^800080");
 					viewpoint 1,58,206,6,0x800080;
 					next;
 					break;
 				case 8:
-					callsub L_Mark, F_Navi("猎人工会","hugel,209,224","^FF1493");
+					callsub L_Mark, F_Navi("聐穦","hugel,209,224","^FF1493");
 					viewpoint 1,209,224,7,0xFF1493;
 					next;
 					break;
 				case 9:
-					callsub L_Mark, F_Navi("节庆用品店","hugel,95,103","^483D8B");
+					callsub L_Mark, F_Navi("竊紋ノ珇┍","hugel,95,103","^483D8B");
 					viewpoint 1,95,103,8,0x483D8B;
 					next;
 					break;
 				case 10:
-					callsub L_Mark, F_Navi("神殿挖掘队本部","hugel,52,95","^834683");
+					callsub L_Mark, F_Navi("返备钉セ场","hugel,52,95","^834683");
 					viewpoint 1,52,95,9,0x834683;
 					next;
 					break;
@@ -246,14 +246,14 @@ hugel,187,172,6	script	毁葛导游阿公#hugel	414,{
 		case 2:
 			set .@loop,1;
 			while (.@loop) {
-				switch(select("[ 魔物赛跑竞技场 ]:[ 准它企划公司职员 ]:返回上一选单")) {
+				switch(select("[ 臸辽禲膙м初 ]:[ ウそ戮 ]:匡虫")) {
 				case 1:
-					callsub L_Mark,"^FF1493魔物赛跑竞技场";
+					callsub L_Mark,"^FF1493臸辽禲膙м初";
 					viewpoint 1,60,71,10,0xFF1493;
 					next;
 					break;
 				case 2:
-					callsub L_Mark,"^DA70D6准它企划公司职员";
+					callsub L_Mark,"^DA70D6ウそ戮";
 					viewpoint 1,88,168,11,0xDA70D6;
 					next;
 					break;
@@ -264,9 +264,9 @@ hugel,187,172,6	script	毁葛导游阿公#hugel	414,{
 			}
 			break;
 		case 3:
-			mes "[阿公]";
-			mes "标记已删除,";
-			mes "还需要其它服务吗?";
+			mes "[そ]";
+			mes "夹癘埃,";
+			mes "临惠璶ㄤウ狝叭盾?";
 			viewpoint 2,159,113,0,0xFFFFFF;
 			viewpoint 2,101,77,1,0xFFFFFF;
 			viewpoint 2,126,65,2,0xFFFFFF;
@@ -282,19 +282,19 @@ hugel,187,172,6	script	毁葛导游阿公#hugel	414,{
 			next;
 			break;
 		case 4:
-			mes "[阿公]";
-			mes "经过村落解说之后,";
-			mes "肚子开始有点饿了...";
-			mes "阿公的肚子饿了啦!";
+			mes "[そ]";
+			mes "竒筁辅秆弧ぇ,";
+			mes "▄秨﹍Τ翴緅...";
+			mes "そ▄緅罢!";
 			close;
 		}
 	}
 	end;
 L_Mark:
-	mes "[阿公]";
-	mes "让我在你的小地图上标记一下";
+	mes "[そ]";
+	mes "琵и瓜夹癘";
 	mes getarg(0)+"^000000";
-	mes "的位置.";
-	mes "你还需要确认其他建筑物的位置吗?";
+	mes "竚.";
+	mes "临惠璶谔粄ㄤ诞竚盾?";
 	return;
 }

@@ -22,79 +22,79 @@
 // Luoyang Transportation
 //============================================================
 -	script	::Girl_louyang	-1,{
-	mes "[姑娘]";
-	mes "啦啦啦啦~";
-	mes "今天天气真正好~";
-	mes "我要去野营~";
-	mes "啦啦啦啦~";
+	mes "[﹉甉]";
+	mes "罢罢罢罢~";
+	mes "さぱぱ蒩痷タ~";
+	mes "и璶偿犁~";
+	mes "罢罢罢罢~";
 	next;
-	switch(select("问问洛阳.:去洛阳.:取消.")) {
+	switch(select("拜拜锭.:锭.:.")) {
 	case 1:
-		mes "[姑娘]";
-		mes "啊, 嘻嘻, 对洛阳感兴趣吗?";
-		mes "洛阳对观光客们来说, 是个绝佳的地方呐.";
+		mes "[﹉甉]";
+		mes "摆, 糎糎, 癸锭稰砍届盾?";
+		mes "锭癸芠ㄓ弧, 琌荡ㄎよ.";
 		next;
-		mes "[姑娘]";
-		mes "洛阳有一个很长的历史, 这里有很多关于传奇法师和战士的故事.";
-		mes "也有传闻说洛阳地区有很多怪物在游荡.";
+		mes "[﹉甉]";
+		mes "锭Τ菌, 硂ńΤ闽肚猭畍㎝驹珿ㄆ.";
+		mes "Τ肚籇弧锭跋Τ┣村亢.";
 		next;
-		mes "[姑娘]";
-		mes "这里有很多关于治愈丹药, 神秘时空的故事,";
-		mes "还有武术宗师!";
+		mes "[﹉甉]";
+		mes "硂ńΤ闽獀稶う媚, 珿ㄆ,";
+		mes "临Τ猌砃﹙畍!";
 		next;
-		mes "[姑娘]";
-		mes "我在洛阳的时候可是天天都学武术的喔. 呵呵, 看不出来其实我很强壮吧!";
+		mes "[﹉甉]";
+		mes "и锭琌ぱぱ常厩猌砃翅. , ぃㄓㄤ龟и眏Ё!";
 		next;
-		mes "[姑娘]";
-		mes "想去洛阳的话, 就和我来说好了.";
-		mes "支付一些钱我就可以帮助你顺利进入洛阳城~";
+		mes "[﹉甉]";
+		mes "稱锭杠, 碞㎝иㄓ弧.";
+		mes "やㄇ窥и碞腊抖秈锭~";
 		close;
 	case 2:
-		mes "[姑娘]";
-		mes "马上就要去洛阳吧.";
-		mes "一次的费用为 10,000 Zeny.";
+		mes "[﹉甉]";
+		mes "皑碞璶锭.";
+		mes "Ω禣ノ 10,000 Zeny.";
 		next;
-		mes "[姑娘]";
-		mes "准备好了莫?";
+		mes "[﹉甉]";
+		mes "称馋?";
 		next;
-		if (select("是的, 准备好了!:还没拉.") == 1) {
+		if (select("琌, 称!:临⊿┰.") == 1) {
 			if (Zeny > 9999) {
-				mes "[姑娘]";
-				mes "好勒~";
-				mes "走起!";
-				mes "祝你玩得愉快!";
+				mes "[﹉甉]";
+				mes "扒~";
+				mes "ǐ癬!";
+				mes "眔磖е!";
 				close2;
 				set Zeny, Zeny - 10000;
 				warp "lou_fild01",190,101;
 				end;
 			}
-			mes "[姑娘]";
+			mes "[﹉甉]";
 			mes "...";
-			mes "貌似你身上么有 10,000 Zeny...";
-			mes "先去拿点钱再说吧!";
+			mes "华ōΤ 10,000 Zeny...";
+			mes "翴窥弧!";
 			close;
 		}
-		mes "[姑娘]";
-		mes "哦...";
-		mes "真失望啊.";
-		mes "那么, 再会咯!";
+		mes "[﹉甉]";
+		mes "瓳...";
+		mes "痷ア辨摆.";
+		mes "ê, 穦!";
 		close;
 	case 3:
-		mes "[姑娘]";
-		mes "哦...";
-		mes "再会咯!";
+		mes "[﹉甉]";
+		mes "瓳...";
+		mes "穦!";
 		close;
 	}
 }
 
-lou_fild01,190,100,7	script	姑娘#1lou	4_F_CHNDRESS1,{
-	mes "[姑娘]";
-	mes "像要返回艾尔贝塔吗?";
+lou_fild01,190,100,7	script	﹉甉#1lou	4_F_CHNDRESS1,{
+	mes "[﹉甉]";
+	mes "钩璶︺焊ī娥盾?";
 	next;
-	if (select("返回艾尔贝塔吧.:取消.") == 1) {
-		mes "[姑娘]";
-		mes "希望下次再见喔!";
-		mes "( ^_^ )/~~拜拜!";
+	if (select("︺焊ī娥.:.") == 1) {
+		mes "[﹉甉]";
+		mes "辨Ωǎ翅!";
+		mes "( ^_^ )/~~!";
 		close2;
 		if (checkre(0))
 			warp "alberta",236,40;
@@ -102,194 +102,194 @@ lou_fild01,190,100,7	script	姑娘#1lou	4_F_CHNDRESS1,{
 			warp "alberta",235,45;
 		end;
 	}
-	mes "[姑娘]";
-	mes "喜欢这个地方的话, 多多待一会吧, 试试看我们的吃食, 看看这儿美丽的风景!";
+	mes "[﹉甉]";
+	mes "尺舧硂よ杠, 穦, 刚刚и, 硂腞春!";
 	next;
 	if (Sex) {
-		mes "[姑娘]";
-		mes "哈哈, 说起风景...";
-		mes "我说的是那些姑凉们喇!";
-		mes "啼嘻嘻~";
+		mes "[﹉甉]";
+		mes ", 弧癬春...";
+		mes "и弧琌êㄇ﹉睤斥!";
+		mes "弛糎糎~";
 	}
 	else {
-		mes "[姑娘]";
-		mes "这里的帅锅不少喔~";
+		mes "[﹉甉]";
+		mes "硂ń羚ぃぶ翅~";
 	}
 	close;
 }
 
 // Generic Luoyang NPCs
 //============================================================
-louyang,297,167,2	script	肌肉发达的女人#lou	4_F_CHNDRESS1,{
+louyang,297,167,2	script	ψ祇笷#lou	4_F_CHNDRESS1,{
 	if (!Sex) {
-		mes "[李芷清]";
-		mes "俺们女王宫的人都是女的. 俺也是女的.";
+		mes "[睲]";
+		mes "甤常琌. 琌.";
 		next;
-		mes "[李芷清]";
-		mes "最近招不到新人咯, 所以俺回来看看有没有女淫们愿意加入俺们.";
+		mes "[睲]";
+		mes "程┷ぃ穝, ┮ㄓΤ⊿Τ瞉篅種.";
 		emotion ET_THINK;
 		close;
 	}
-	mes "[李芷清]";
+	mes "[睲]";
 	mes "...";
 	next;
-	mes "[李芷清]";
+	mes "[睲]";
 	mes "...";
 	mes "......";
 	next;
-	mes "[李芷清]";
-	mes "我忙着呢, 让我一个人待一会儿吧.";
+	mes "[睲]";
+	mes "иΓ帝㎡, 琵и穦.";
 	close;
 }
 
-louyang,274,136,4	script	看上去充满力量的男人#lou	4_M_CHN8GUEK,{
-	mes "[安克亚]";
-	mes "我在练习 '鹰爪功.' 不但要锻炼拳部力量, 还要学着去调和心态.";
+louyang,274,136,4	script	骸秖╧#lou	4_M_CHN8GUEK,{
+	mes "[ㄈ]";
+	mes "и絤策 '芅.' ぃ璶岭芬场秖, 临璶厩帝秸㎝み篈.";
 	next;
-	mes "[安克亚]";
-	mes "每一种武功都会要求去锻炼精神意志.";
-	mes "因为身体由意识操控的.";
-	mes "如果精神足够强大, 身体的哪一个关节不能熟练掌控呢!";
+	mes "[ㄈ]";
+	mes "–销猌常穦璶―岭芬弘種в.";
+	mes "ō蔨パ種醚巨北.";
+	mes "狦弘ì镑眏, ō蔨闽竊ぃ剪絤磝北㎡!";
 	next;
-	mes "[安克亚]";
-	mes "如果你想学习武术的话,";
-	mes "在盲目的投身于机体训练之前要先掌握一些相关的知识.";
+	mes "[ㄈ]";
+	mes "狦稱厩策猌砃杠,";
+	mes "ヘщō审蔨癡絤ぇ玡璶磝搐ㄇ闽醚.";
 	next;
-	mes "[安克亚]";
-	mes "习武, 而后格物致知.";
-	mes "在掌控身心之前, 要先达到不为外物所动的境界.";
+	mes "[ㄈ]";
+	mes "策猌, τ璓.";
+	mes "磝北ōみぇ玡, 璶笷ぃ┮笆挂.";
 	close;
 }
 
-louyang,276,136,4	script	拳师#lou	4_M_CHN8GUEK,{
-	mes "[江肖戟]";
-	mes "我终于...";
-	mes "练成了 '鹰爪功!'";
+louyang,276,136,4	script	畍#lou	4_M_CHN8GUEK,{
+	mes "[╲磚]";
+	mes "и沧...";
+	mes "絤Θ '芅!'";
 	next;
-	mes "[江肖戟]";
-	mes "这功法练成之前有一共八层, 之前我要花上三年的时间来学习这种艺术的历史, 并且通过冥想来提高我的精神力.";
+	mes "[╲磚]";
+	mes "硂猭絤Θぇ玡Τ糷, ぇ玡и璶丁ㄓ厩策硂销美砃菌, 硄筁稱ㄓ矗蔼и弘.";
 	next;
-	mes "[江肖戟]";
-	mes "然后, 我的导师才会给我鹰爪弓的秘籍. 说起来, 我已经浸淫此道三十余载了.";
+	mes "[╲磚]";
+	mes "礛, и旧畍穦倒и芅膟. 弧癬ㄓ, и竒瞉笵更.";
 	next;
-	mes "[江肖戟]";
-	mes "很骄傲...居然比预想的大圆满提早了十年.";
-	mes "现在, 就是我完善此道的时刻了...";
+	mes "[╲磚]";
+	mes "藕镀...﹡礛ゑ箇稱蛾骸矗Ν.";
+	mes "瞷, 碞琌иЧ到笵ㄨ...";
 	next;
-	mes "[江肖戟]";
-	mes "我想, 又会有一个十年会过去吧, 但是, 我还是充满希望呢...";
+	mes "[╲磚]";
+	mes "и稱, 穦Τ穦筁, 琌, и临琌骸辨㎡...";
 	next;
-	mes "[江肖戟]";
-	mes "当你在学习武术的时候,不要想着很快的可以就掌握所有东西... 这是不可能的! 再说了, 这么做也违反了你追求艺术的初衷以及艺术的本质...";
+	mes "[╲磚]";
+	mes "讽厩策猌砃,ぃ璶稱帝е碞磝搐┮Τ狥﹁... 硂琌ぃ! 弧, 硂暗笻は發―美砃癑の美砃セ借...";
 	close;
 }
 
-louyang,276,133,0	script	训练者#1lou::LouTrainee	4_M_CHN8GUEK,{
-	mes "[训练者]";
-	mes "呀呀呀呀~!";
-	mes "啊啊啊啊啊~~!!";
-	mes "霍霍霍~.";
+louyang,276,133,0	script	癡絤#1lou::LouTrainee	4_M_CHN8GUEK,{
+	mes "[癡絤]";
+	mes "~!";
+	mes "摆摆摆摆摆~~!!";
+	mes "繬繬繬~.";
 	close;
 }
 
-louyang,276,131,0	script	训练者#2lou	4_M_CHN8GUEK,{
-	mes "[训练者]";
-	mes "呔 呔 呔!";
-	mes "阿大大~~!!";
-	mes "嘘呼呼呼呼~";
+louyang,276,131,0	script	癡絤#2lou	4_M_CHN8GUEK,{
+	mes "[癡絤]";
+	mes "蕐 蕐 蕐!";
+	mes "~~!!";
+	mes "糔㊣㊣㊣㊣~";
 	close;
 }
 
-louyang,276,129,0	script	训练者#3lou	4_M_CHN8GUEK,{
-	mes "[训练者]";
-	mes "兮哈!";
-	mes "啊呀!!";
+louyang,276,129,0	script	癡絤#3lou	4_M_CHN8GUEK,{
+	mes "[癡絤]";
+	mes "ぜ!";
+	mes "摆!!";
 	close;
 }
 
-louyang,274,133,0	script	训练者#4lou	4_M_CHN8GUEK,{
-	mes "[训练者]";
-	mes "呔啊!";
-	mes "呔啊!";
-	mes "咕哇--!";
+louyang,274,133,0	script	癡絤#4lou	4_M_CHN8GUEK,{
+	mes "[癡絤]";
+	mes "蕐摆!";
+	mes "蕐摆!";
+	mes "〣珃--!";
 	close;
 }
 
-louyang,274,131,0	script	训练者#5lou	4_M_CHN8GUEK,{
-	mes "[训练者]";
-	mes "呀 呀 呀!";
-	mes "阿大大大大~~!!";
-	mes "哇嗒嗒嗒!";
+louyang,274,131,0	script	癡絤#5lou	4_M_CHN8GUEK,{
+	mes "[癡絤]";
+	mes "  !";
+	mes "~~!!";
+	mes "珃苤苤苤!";
 	close;
 }
 
-louyang,274,129,0	script	训练者#6lou	4_M_CHN8GUEK,{
-	mes "[训练者]";
-	mes "呀呀呀~!";
-	mes "呔啊啊啊~~!!";
-	mes "呼呼~";
+louyang,274,129,0	script	癡絤#6lou	4_M_CHN8GUEK,{
+	mes "[癡絤]";
+	mes "~!";
+	mes "蕐摆摆摆~~!!";
+	mes "㊣㊣~";
 	close;
 }
 
-louyang,278,133,0	duplicate(LouTrainee)	训练者#7lou	4_M_CHN8GUEK
-louyang,278,131,0	duplicate(LouTrainee)	训练者#8lou	4_M_CHN8GUEK
-louyang,278,129,0	duplicate(LouTrainee)	训练者#9lou	4_M_CHN8GUEK
-louyang,272,133,0	duplicate(LouTrainee)	训练者#10lou	4_M_CHN8GUEK
-louyang,272,131,0	duplicate(LouTrainee)	训练者#11lou	4_M_CHN8GUEK
-louyang,272,129,0	duplicate(LouTrainee)	训练者#12lou	4_M_CHN8GUEK
+louyang,278,133,0	duplicate(LouTrainee)	癡絤#7lou	4_M_CHN8GUEK
+louyang,278,131,0	duplicate(LouTrainee)	癡絤#8lou	4_M_CHN8GUEK
+louyang,278,129,0	duplicate(LouTrainee)	癡絤#9lou	4_M_CHN8GUEK
+louyang,272,133,0	duplicate(LouTrainee)	癡絤#10lou	4_M_CHN8GUEK
+louyang,272,131,0	duplicate(LouTrainee)	癡絤#11lou	4_M_CHN8GUEK
+louyang,272,129,0	duplicate(LouTrainee)	癡絤#12lou	4_M_CHN8GUEK
 
 // Luoyang Viewing Tower
 //============================================================
-lou_in01,25,23,5	script	很和气的女士#lo	4_F_CHNDRESS3,{
-	mes "[洪缈]";
-	mes "欢迎.";
+lou_in01,25,23,5	script	㎝蒩#lo	4_F_CHNDRESS3,{
+	mes "[瑇絲]";
+	mes "舧.";
 	next;
-	mes "[洪缈]";
-	mes "这是通往观光塔的电梯.";
-	mes "只要支付少量的费用, 您就可以使用我们安全快速的传送服务了. 想要试一试吗?";
+	mes "[瑇絲]";
+	mes "硂琌硄┕芠娥筿辫.";
+	mes "璶やぶ秖禣ノ, 眤碞ㄏノие硉肚癳狝叭. 稱璶刚刚盾?";
 	next;
-	switch(select("求细节.:好.:下次吧.")) {
+	switch(select("―灿竊.:.:Ω.")) {
 	case 1:
-		mes "[洪缈]";
-		mes "在向洛阳旅游开发部提出了多次申请之后, 这座观光塔终于建成了, 这样游客就可以享受洛阳的美景了.";
+		mes "[瑇絲]";
+		mes "锭村秨祇场矗Ωビ叫ぇ, 硂畒芠娥沧Θ, 硂妓村碞ㄉ锭春.";
 		next;
-		mes "[洪缈]";
-		mes "因为洛阳的地理特征,";
-		mes "所以要尽情享受我们洛阳的美景的话, 对游客来说还是蛮吃力的.";
+		mes "[瑇絲]";
+		mes "锭瞶疭┖,";
+		mes "┮璶荷薄ㄉи锭春杠, 癸村ㄓ弧临琌芞.";
 		next;
-		mes "[洪缈]";
-		mes "从这里的电梯上去您就可以到达观光塔了. 安全又快速, 一个人只要 500 Zeny.";
+		mes "[瑇絲]";
+		mes "眖硂ń筿辫眤碞笷芠娥. е硉, 璶 500 Zeny.";
 		close;
 	case 2:
 		if (Zeny < 500) {
-			mes "[洪缈]";
-			mes "抱歉啊, 但是您身上的 Zeny 不够呢. 请下次再来吧. 希望您在这边过的愉快喔.";
+			mes "[瑇絲]";
+			mes "╆簆摆, 琌眤ō Zeny ぃ镑㎡. 叫Ωㄓ. 辨眤硂娩筁磖е翅.";
 			close;
 		}
-		mes "[洪缈]";
-		mes "谢谢惠顾.";
-		mes "我们会努力做到最好的. 欢迎下次再来.";
+		mes "[瑇絲]";
+		mes "谅谅磃臮.";
+		mes "и穦暗程. 舧Ωㄓ.";
 		next;
 		set Zeny, Zeny - 500;
 		warp "lou_in01",17,19;
 		end;
 	case 3:
-		mes "[洪缈]";
-		mes "请下次再来吧.";
-		mes "祝您在这边过的愉快.";
+		mes "[瑇絲]";
+		mes "叫Ωㄓ.";
+		mes "眤硂娩筁磖е.";
 		close;
 	}
 }
 
-louyang,84,254,0	script	出口#lou	HIDDEN_NPC,{
-	mes "^3355FF这里有降落梯.";
-	mes "要不要使用呢?^000000";
+louyang,84,254,0	script	#lou	HIDDEN_NPC,{
+	mes "^3355FF硂ńΤ辅辫.";
+	mes "璶ぃ璶ㄏノ㎡?^000000";
 	next;
-	if (select("使用.:不了.") == 1) {
+	if (select("ㄏノ.:ぃ.") == 1) {
 		if (rand(1,100) == 34) {
 			percentheal -99,0;
 			warp "louyang",86,269;
-			mapannounce "louyang",""+strnpcinfo(0)+" : 天哪,我掉掉掉掉掉下来啦~~!!!!",bc_map;
+			mapannounce "louyang",""+strnpcinfo(0)+" : ぱ,и奔奔奔奔奔ㄓ罢~~!!!!",bc_map;
 		}
 		else {
 			warp "lou_in01",10,18;

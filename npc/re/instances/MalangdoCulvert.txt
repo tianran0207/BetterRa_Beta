@@ -21,100 +21,100 @@
 
 // Quest NPCs :: mal_yong
 //============================================================
-mal_in01,172,28,2	script	阿尔博#mal	561,{
+mal_in01,172,28,2	script	焊痴#mal	561,{
 	if (checkweight(1201,1) == 0) {
-		mes "你携带了太多种类的物品.尝试减少物品种类然后继续.";
+		mes "拟盿び销摸珇.沽刚搭ぶ珇销摸礛膥尿.";
 		close;
 	}
 	if (MaxWeight - Weight < 1000) {
-		mes "你的负重不够了.尝试降低负重然后继续.";
+		mes "璽ぃ镑.沽刚璽礛膥尿.";
 		close;
 	}
 	if (BaseLevel < 90) {
-		mes "[阿尔多]";
-		mes "你是谁?";
-		mes "我们不需要弱者!!";
+		mes "[焊]";
+		mes "琌街?";
+		mes "иぃ惠璶畓!!";
 		close;
 	}
 	setarray .@quests[0],12271,12272,12273,12274;
 	setarray .@names$[0],
-		"普通排水渠日常任务","^990000困难排水渠日常任务^000000",
-		"普通排水渠周任务","^990000困难排水渠周任务^000000";
-	set .@menu$,"想不想接受这个工作?:";
+		"炊硄逼措ら盽ヴ叭","^990000螟逼措ら盽ヴ叭^000000",
+		"炊硄逼措㏄ヴ叭","^990000螟逼措㏄ヴ叭^000000";
+	set .@menu$,"稱ぃ稱钡硂?:";
 	for(set .@i,0; .@i<4; set .@i,.@i+1) {
 		if (checkquest(.@quests[.@i],PLAYTIME) > -1) {
 			set .@status[.@i],2;
-			set .@menu$, .@menu$+"^aaaaaa- 没有新的任务 -^000000:";
+			set .@menu$, .@menu$+"^aaaaaa- ⊿Τ穝ヴ叭 -^000000:";
 		} else if (.@i%2 && BaseLevel < 140) {
 			set .@status[.@i],0;
-			set .@menu$, .@menu$+"^aaaaaa你不能接这个任务,因为你级别不够^000000:";
+			set .@menu$, .@menu$+"^aaaaaaぃ钡硂ヴ叭,ぃ镑^000000:";
 		} else {
 			set .@status[.@i],1;
 			set .@menu$, .@menu$+.@names$[.@i]+":";
 		}
 	}
-	mes "[阿尔博]";
-	mes "我们穿越了海洋! 我们伟大的英雄!";
-	mes "绝不原谅! 不能原谅那些该死的海洋生物!";
+	mes "[焊痴]";
+	mes "и禫瑅! и岸璣动!";
+	mes "荡ぃ教! ぃ教êㄇ赣瑅ネ!";
 	next;
 	set .@i, select(.@menu$)-1;
 	if (.@i == 0) {
-		mes "[阿尔博]";
-		mes "我们曾是先生的心腹手下. 先生是一位能够创造历史的人物. 如果他完成了自己的梦想. 那我们也能够成为能够见证历史的非凡人物了.";
+		mes "[焊痴]";
+		mes "и纯琌ネみ浮も. ネ琌镑承硑菌. 狦ЧΘ冠稱. êи镑Θ镑ǎ谍菌獶.";
 		next;
-		mes "[阿尔博]";
-		mes "但是,海水和海洋生物淹没了一切. 先生所有珍贵的资料全部被海水和海洋生物吞噬了. 我们的梦想... 梦想... ";
+		mes "[焊痴]";
+		mes "琌,㎝瑅ネ睺⊿ち. ネ┮Τ禥戈场砆㎝瑅ネ窘. и冠稱... 冠稱... ";
 		next;
-		mes "[阿尔博]";
-		mes "所以绝对不可原谅那些海洋生物!!! 我一定要把它们做成海鲜色拉,然后用辣椒糊在一起吃掉.";
+		mes "[焊痴]";
+		mes "┮荡癸ぃ教êㄇ瑅ネ!!! и﹚璶рウ暗Θ翧︹┰,礛ノ欢丛絢癬奔.";
 		next;
-		mes "^0000ff阿尔博的声音因为愤怒而颤抖,当他说到辣椒糊在一起吃掉的时候, 不小心砸到了自己的嘴唇.^000000";
+		mes "^0000ff焊痴羘极τ鸥л,讽弧欢丛絢癬奔, ぃみ瘂糒瓸.^000000";
 		close;
 	}
 	switch(.@status[.@i-1]) {
 	case 0:
-		mes "[阿尔博]";
-		mes "这项任务对你来说很难.我不能告诉你为什么.你考虑下接找另一个吧?";
+		mes "[焊痴]";
+		mes "硂兜ヴ叭癸ㄓ弧螟.иぃ禗ぐ.σ納钡т?";
 		close;
 	case 1:
 		break;
 	case 2:
-		mes "[阿尔博]";
-		mes "对不起,有没有新的任务!如果我有需要做的,我会告诉你的!";
+		mes "[焊痴]";
+		mes "癸ぃ癬,Τ⊿Τ穝ヴ叭!狦иΤ惠璶暗,и穦禗!";
 		close;
 	}
 	switch(.@i) {
 	case 1: // General Culvert Daily Service
 		switch(rand(1,6)) {
-			case 1: callsub L_GiveQuest,.@i,12255,12271,"深海蟹";
-			case 2: callsub L_GiveQuest,.@i,12256,12271,"深海章鱼";
-			case 3: callsub L_GiveQuest,.@i,12257,12271,"深海螃蟹";
-			case 4: callsub L_GiveQuest,.@i,12258,12271,"深海寄居蟹";
-			case 5: callsub L_GiveQuest,.@i,12259,12271,"深海库克雷";
-			case 6: callsub L_GiveQuest,.@i,12260,12271,"深海蟹蛛";
+			case 1: callsub L_GiveQuest,.@i,12255,12271,"瞏蒙";
+			case 2: callsub L_GiveQuest,.@i,12256,12271,"瞏彻辰";
+			case 3: callsub L_GiveQuest,.@i,12257,12271,"瞏坷蒙";
+			case 4: callsub L_GiveQuest,.@i,12258,12271,"瞏盚﹡蒙";
+			case 5: callsub L_GiveQuest,.@i,12259,12271,"瞏畐筽";
+			case 6: callsub L_GiveQuest,.@i,12260,12271,"瞏蒙碉";
 		}
 	case 2: // Hard Culvert Daily Service
 		switch(rand(1,6)) {
-			case 1: callsub L_GiveQuest,.@i,12261,12272,"深海海马";
-			case 2: callsub L_GiveQuest,.@i,12262,12272,"深海剑鱼";
-			case 3: callsub L_GiveQuest,.@i,12263,12272,"海神";
-			case 4: callsub L_GiveQuest,.@i,12264,12272,"深海鳄鱼";
-			case 5: callsub L_GiveQuest,.@i,12265,12272,"深海人鱼";
-			case 6: callsub L_GiveQuest,.@i,12266,12272,"深海河童";
+			case 1: callsub L_GiveQuest,.@i,12261,12272,"瞏皑";
+			case 2: callsub L_GiveQuest,.@i,12262,12272,"瞏糃辰";
+			case 3: callsub L_GiveQuest,.@i,12263,12272,"";
+			case 4: callsub L_GiveQuest,.@i,12264,12272,"瞏苨辰";
+			case 5: callsub L_GiveQuest,.@i,12265,12272,"瞏辰";
+			case 6: callsub L_GiveQuest,.@i,12266,12272,"瞏猠担";
 		}
 	case 3: // General Culvert Weekly Service
 		switch(rand(1,2)) {
-			case 1: callsub L_GiveQuest,.@i,12267,12273,"怪异腔棘鱼";
-			case 2: callsub L_GiveQuest,.@i,12268,12273,"黑暗腔棘鱼";
+			case 1: callsub L_GiveQuest,.@i,12267,12273,"┣奢的雌辰";
+			case 2: callsub L_GiveQuest,.@i,12268,12273,"堵穞的雌辰";
 		}
 	case 4: // Hard Culvert Weekly Service
 		switch(rand(1,2)) {
-			case 1: callsub L_GiveQuest,.@i,12269,12274,"凶暴腔棘鱼";
-			case 2: callsub L_GiveQuest,.@i,12270,12274,"突变腔棘鱼";
+			case 1: callsub L_GiveQuest,.@i,12269,12274,"た忌的雌辰";
+			case 2: callsub L_GiveQuest,.@i,12270,12274,"跑的雌辰";
 		}
 	default:
-		mes "[阿尔博]";
-		mes "呃!? 哪里的任务? 让我查查. 你最好问下马德卡.";
+		mes "[焊痴]";
+		mes "!? ńヴ叭? 琵и琩琩. 程拜皑紈.";
 		close;
 	}
 	end;
@@ -123,67 +123,67 @@ mal_in01,172,28,2	script	阿尔博#mal	561,{
 L_GiveQuest:
 	setquest getarg(1);
 	setquest getarg(2);
-	mes "[阿尔博]";
-	mes "今天的深海英雄!";
-	mes "让我们大声说出它们灭绝的日子 ^0000ff"+getarg(3)+"^000000!";
+	mes "[焊痴]";
+	mes "さぱ瞏璣动!";
+	mes "琵и羘弧ウ防荡ら ^0000ff"+getarg(3)+"^000000!";
 	next;
-	mes "[阿尔博]";
+	mes "[焊痴]";
 	switch(getarg(0)) {
 	case 1:
 	case 2:
-		mes "来吧,伙计! 不用担心,放手去做吧! 这是一个日常任务!";
+		mes "ㄓ,ル璸! ぃノ踞み,も暗! 硂琌ら盽ヴ叭!";
 		break;
 	case 3:
-		mes "我给你1周时间来完成这个任务,在副本里把它们全部杀死!(普通模式)";
+		mes "и倒1㏄丁ㄓЧΘ硂ヴ叭,捌セńрウ场炳!(炊硄家Α)";
 		break;
 	case 4:
-		mes "我给你1周时间来完成这个任务,在副本里把它们全部杀死!(困难模式)";
+		mes "и倒1㏄丁ㄓЧΘ硂ヴ叭,捌セńрウ场炳!(螟家Α)";
 		break;
 	}
 	next;
-	mes "给你的需求是击杀 ^005500"+getarg(3)+"^000000. 如果您需要了解更多详情,请在任务窗口查询.";
+	mes "倒惠―琌阑炳 ^005500"+getarg(3)+"^000000. 狦眤惠璶秆冈薄,叫ヴ叭怠琩高.";
 	close;
 }
 
-mal_in01,172,26,2	script	马德卡#mal	544,{
+mal_in01,172,26,2	script	皑紈#mal	544,{
 	if (checkweight(1201,1) == 0) {
-		mes "你携带了太多种类的物品.尝试减少物品种类然后继续.";
+		mes "拟盿び销摸珇.沽刚搭ぶ珇销摸礛膥尿.";
 		close;
 	}
 	if (MaxWeight - Weight < 1000) {
-		mes "你的负重不够了.尝试降低负重然后继续.";
+		mes "璽ぃ镑.沽刚璽礛膥尿.";
 		close;
 	}
 	if (BaseLevel < 90) {
-		mes "[马德卡]";
+		mes "[皑紈]";
 		mes "Karrrrrrr!!";
-		mes "让我们搞一些该死的海洋生物来烧烤!";
+		mes "琵и穌ㄇ赣瑅ネㄓ縉疦!";
 		next;
-		mes "[马德卡]";
-		mes "你是谁? 你这样的人连海藻都可以干掉你!";
+		mes "[皑紈]";
+		mes "琌街? 硂妓硈摩常奔!";
 		close;
 	}
-	mes "[马德卡]";
-	mes "噢?";
-	mes "你接受了我大哥阿尔博的任务. 这可是个苦差事!";
+	mes "[皑紈]";
+	mes "揪?";
+	mes "钡и焊痴ヴ叭. 硂琌璚畉ㄆ!";
 	next;
-	set .@i, select("- 你在这里做什么?:- 日常普通模式任务奖励:- 日常困难模式任务奖励:- 周常普通模式任务奖励:- 周常困难模式任务奖励")-1;
+	set .@i, select("- 硂ń暗ぐ?:- ら盽炊硄家Αヴ叭贱纘:- ら盽螟家Αヴ叭贱纘:- ㏄盽炊硄家Αヴ叭贱纘:- ㏄盽螟家Αヴ叭贱纘")-1;
 	if (.@i == 0) {
-		mes "[马德卡]";
-		mes "我在这里协助我大哥阿尔博!";
+		mes "[皑紈]";
+		mes "и硂ńи焊痴!";
 		next;
-		mes "[马德卡]";
-		mes "谁能把这些肮脏的海洋生物清理出海底,我们就会奖励给他宝贵的财富!";
+		mes "[皑紈]";
+		mes "街р硂ㄇ同纽瑅ネ睲瞶┏,и碞穦贱纘倒腳禥癩碔!";
 		next;
-		mes "[马德卡]";
-		mes "我们提供A和B级硬币作为日常任务的奖励,周任务奖励是最最宝贵的海神之怒.";
+		mes "[皑紈]";
+		mes "и矗ㄑA㎝B祑刽ら盽ヴ叭贱纘,㏄ヴ叭贱纘琌程程腳禥ぇ.";
 		next;
-		mes "[马德卡]";
-		mes "如果你接受了我大哥阿尔博的任务,我会非常乐意见到你.所以,让我们站的靠近点!";
+		mes "[皑紈]";
+		mes "狦钡и焊痴ヴ叭,и穦獶盽贾種ǎ.┮,琵и綼翴!";
 		close;
 	}
-	mes "[马德卡]";
-	mes "我可不会给过期任务发放奖励,所以先让我检查一下.";
+	mes "[皑紈]";
+	mes "иぃ穦倒筁戳ヴ叭祇贱纘,┮琵и浪琩.";
 	next;
 	specialeffect2 EF_SPHERE;
 	progressbar "0xFFFF00",3;
@@ -194,12 +194,12 @@ mal_in01,172,26,2	script	马德卡#mal	544,{
 			callsub L_EraseQuest,12255,12256,12257,12258,12259,12260,12271;
 		else {
 			// Reward: 2x B Grade Coin
-			callsub L_CheckQuest,12255,"深海蟹",6419,2;
-			callsub L_CheckQuest,12256,"深海章鱼",6419,2;
-			callsub L_CheckQuest,12257,"深海螃蟹",6419,2;
-			callsub L_CheckQuest,12258,"深海寄居蟹",6419,2;
-			callsub L_CheckQuest,12259,"深海库克雷",6419,2;
-			callsub L_CheckQuest,12260,"深海蟹蛛",6419,2;
+			callsub L_CheckQuest,12255,"瞏蒙",6419,2;
+			callsub L_CheckQuest,12256,"瞏彻辰",6419,2;
+			callsub L_CheckQuest,12257,"瞏坷蒙",6419,2;
+			callsub L_CheckQuest,12258,"瞏盚﹡蒙",6419,2;
+			callsub L_CheckQuest,12259,"瞏畐筽",6419,2;
+			callsub L_CheckQuest,12260,"瞏蒙碉",6419,2;
 		}
 		break;
 	case 2: // Hard Culvert Daily Service
@@ -207,12 +207,12 @@ mal_in01,172,26,2	script	马德卡#mal	544,{
 			callsub L_EraseQuest,12261,12262,12263,12264,12265,12266,12272;
 		else {
 			// Reward: 1x A Grade Coin
-			callsub L_CheckQuest,12261,"深海海马",6418,1;
-			callsub L_CheckQuest,12262,"深海剑鱼",6418,1;
-			callsub L_CheckQuest,12263,"海神",6418,1;
-			callsub L_CheckQuest,12264,"深海鳄鱼",6418,1;
-			callsub L_CheckQuest,12265,"深海人鱼",6418,1;
-			callsub L_CheckQuest,12266,"深海河童",6418,1;
+			callsub L_CheckQuest,12261,"瞏皑",6418,1;
+			callsub L_CheckQuest,12262,"瞏糃辰",6418,1;
+			callsub L_CheckQuest,12263,"",6418,1;
+			callsub L_CheckQuest,12264,"瞏苨辰",6418,1;
+			callsub L_CheckQuest,12265,"瞏辰",6418,1;
+			callsub L_CheckQuest,12266,"瞏猠担",6418,1;
 		}
 		break;
 	case 3: // General Culvert Weekly Service
@@ -220,8 +220,8 @@ mal_in01,172,26,2	script	马德卡#mal	544,{
 			callsub L_EraseQuest,12267,12268,12273;
 		else {
 			// Reward: 1x Sea God's Wrath
-			callsub L_CheckQuest,12267,"怪异腔棘鱼",6423,1;
-			callsub L_CheckQuest,12268,"黑暗腔棘鱼",6423,1;
+			callsub L_CheckQuest,12267,"┣奢的雌辰",6423,1;
+			callsub L_CheckQuest,12268,"堵穞的雌辰",6423,1;
 		}
 		break;
 	case 4: // Hard Culvert Weekly Service
@@ -229,17 +229,17 @@ mal_in01,172,26,2	script	马德卡#mal	544,{
 			callsub L_EraseQuest,12269,12270,12274;
 		else {
 			// Reward: 5x Sea God's Wrath
-			callsub L_CheckQuest,12269,"凶暴腔棘鱼",6423,5;
-			callsub L_CheckQuest,12270,"突变腔棘鱼",6423,5;
+			callsub L_CheckQuest,12269,"た忌的雌辰",6423,5;
+			callsub L_CheckQuest,12270,"跑的雌辰",6423,5;
 		}
 		break;
 	default:
-		mes "[马德卡]";
-		mes "有些错误. 请再检查一下!";
+		mes "[皑紈]";
+		mes "Τㄇ岿粇. 叫浪琩!";
 		close;
 	}
-	mes "[马德卡]";
-	mes "我没看到有任何一个任务已经完成!";
+	mes "[皑紈]";
+	mes "и⊿Τヴヴ叭竒ЧΘ!";
 	close;
 
 L_EraseQuest:
@@ -247,16 +247,16 @@ L_EraseQuest:
 		if (checkquest(getarg(.@j)) > -1)
 			erasequest getarg(.@j);
 	}
-	mes "[马德卡]";
-	mes "嗯,我很抱歉. 超过标准的任务期限, 所以我不能给你任何奖励.";
+	mes "[皑紈]";
+	mes "垛,и╆簆. 禬筁夹ヴ叭戳, ┮иぃ倒ヴ贱纘.";
 	close;
 
 // callsub L_CheckQuest,<quest ID>,<monster>,<reward item ID>,<reward item amount>;
 L_CheckQuest:
 	if (checkquest(getarg(0),HUNTING) == 2) {
-		mes "[马德卡]";
-		mes "你惩罚了 ^0000ff"+getarg(1)+"^000000!";
-		mes "这是你的奖励!";
+		mes "[皑紈]";
+		mes "胓籃 ^0000ff"+getarg(1)+"^000000!";
+		mes "硂琌贱纘!";
 		erasequest getarg(0);
 		specialeffect2 EF_STEAL;
 		getitem getarg(2),getarg(3);
@@ -267,172 +267,172 @@ L_CheckQuest:
 
 // Instance Creation :: pump
 //============================================================
-mal_in01,160,34,4	script	清洁工小林	545,{
+mal_in01,160,34,4	script	睲稀狶	545,{
 	if (BaseLevel < 90) {
-		mes "[清洁工小林]";
-		mes "你在和我说话么?!";
+		mes "[睲稀狶]";
+		mes "㎝и弧杠?!";
 		next;
-		mes "[清洁工小林]";
-		mes "我不知道你来到这里是什么原因,但你不能进入!";
-		mes "托马斯的命令...";
+		mes "[睲稀狶]";
+		mes "иぃ笵ㄓ硂ń琌ぐ,ぃ秈!";
+		mes "Λ皑吹㏑...";
 		next;
-		mes "^770099你的基本等级至少要90级以上才可以进去.^000000";
+		mes "^770099膀セ单ぶ璶90秈.^000000";
 		close;
 	}
 	if (in_canal_n == 0) {
-		mes "[清洁工小林]";
-		mes "(发抖)";
+		mes "[睲稀狶]";
+		mes "(祇л)";
 		next;
-		mes "^660066这猫看起来像状态不好,它微微颤抖.^000000";
+		mes "^660066硂窟癬ㄓ钩篈ぃ,ウ稬稬鸥л.^000000";
 		next;
-		if(select("捕捉这只猫:你还好吗?") == 1) {
-			mes "[清洁工小林]";
-			mes "你在和我说话么?!";
+		if(select("硂窟:临盾?") == 1) {
+			mes "[睲稀狶]";
+			mes "㎝и弧杠?!";
 			next;
-			mes "^660066颤抖的猫抬头看着你.^000000";
+			mes "^660066鸥л窟╋繷帝.^000000";
 			close;
 		}
-		mes "[清洁工小林]";
-		mes "打喷嚏!";
+		mes "[睲稀狶]";
+		mes "ゴ糛馈!";
 		next;
-		mes "[清洁工小林]";
-		mes "在清理海底这件事情上";
-		mes "我们曾经产生了很多问题.";
-		mes "但是作为一只猫必须这样做...";
+		mes "[睲稀狶]";
+		mes "睲瞶┏硂ンㄆ薄";
+		mes "и纯竒玻ネ拜肈.";
+		mes "琌窟ゲ斗硂妓暗...";
 		next;
-		select("什么海底清理?");
-		mes "[清洁工小林]";
-		mes "对一个外来者来说,这应该很陌生";
-		mes "但实际上这个地方";
-		mes "存放了很多纪念品和珍贵的财富.";
-		mes "这也许你很难理解.";
+		select("ぐ┏睲瞶?");
+		mes "[睲稀狶]";
+		mes "癸ㄓㄓ弧,硂莱赣ネ";
+		mes "龟悔硂よ";
+		mes "├珇㎝禥癩碔.";
+		mes "硂砛螟瞶秆.";
 		next;
-		mes "[清洁工小林]";
-		mes "在一次大地震后";
-		mes "我们的物资被大水冲走";
-		mes "虽然我曾经是一名经理人";
-		mes "但现在我却在做清洁工的事情";
-		mes "现实就是如此的残酷.";
+		mes "[睲稀狶]";
+		mes "Ω綺";
+		mes "и戈砆≧ǐ";
+		mes "瘤礛и纯竒琌竒瞶";
+		mes "瞷и玱暗睲稀ㄆ薄";
+		mes "瞷龟碞琌摧慌.";
 		next;
-		mes "^660066看上去那只猫开始哭了...^000000";
+		mes "^660066ê窟秨﹍...^000000";
 		next;
-		mes "[清洁工小林]";
-		mes "沿着这样的地下室有一个洞穴.";
-		mes "那里有许多坏人,伤害我的人";
-		mes "和它们战斗了很多次";
-		mes "而且每天和战斗它们战斗让";
-		mes "我非常疲倦!";
+		mes "[睲稀狶]";
+		mes "猽帝硂妓Τ瑌マ.";
+		mes "êńΤ砛Д,端甡и";
+		mes "㎝ウ驹ゆΩ";
+		mes "τ–ぱ㎝驹ゆウ驹ゆ琵";
+		mes "и獶盽痟!";
 		next;
-		mes "[清洁工小林]";
-		mes "Ohh! 你碰到我的头发了!";
-		mes "我的发质是下降了...这一切都";
-		mes "这些家伙的错~";
+		mes "[睲稀狶]";
+		mes "Ohh! 窱и繷祇!";
+		mes "и祇借琌...硂ち常";
+		mes "硂ㄇ產ル岿~";
 		next;
-		mes "^660066你才留意到,这只猫的一些皮毛开始脱落了.^000000";
+		mes "^660066痙種,硂窟ㄇブを秨﹍叉辅.^000000";
 		next;
-		select("你为什么不离开!");
-		mes "[清洁工小林]";
-		mes "我也需要谋生的,你说对么?";
+		select("ぐぃ置秨!");
+		mes "[睲稀狶]";
+		mes "и惠璶垦ネ,弧癸?";
 		next;
-		mes "[清洁工小林]";
-		mes "有时候我得到些幸运箱子,";
-		mes "甚至更好的是,我能得些食物罐头...";
+		mes "[睲稀狶]";
+		mes "Τи眔ㄇ┋笲絚,";
+		mes "琌,и眔ㄇ砒繷...";
 		next;
-		if(select("好吧,干杯!:如果可能的话, 我会帮你...") == 1) {
-			mes "[清洁工小林]";
-			mes "谢谢.我要回去抽水了!";
+		if(select(",狹!:狦杠, и穦腊...") == 1) {
+			mes "[睲稀狶]";
+			mes "谅谅.и璶┾!";
 			close;
 		}
-		mes "[清洁工小林]";
-		mes "(压低它的声音)";
-		mes "如果你真想帮忙,就靠我近点!";
+		mes "[睲稀狶]";
+		mes "(溃ウ羘)";
+		mes "狦痷稱腊Γ,碞綼и翴!";
 		next;
-		select("(靠近后)");
-		mes "[清洁工小林]";
-		mes "不是每个人都可以在这里当帮手.";
-		mes "那一刻";
-		mes "我不能帮任何人做选择...";
+		select("(綼)");
+		mes "[睲稀狶]";
+		mes "ぃ琌–常硂ń讽腊も.";
+		mes "êㄨ";
+		mes "иぃ腊ヴ暗匡拒...";
 		next;
-		mes "[清洁工小林]";
-		mes "如果你要从这里下去的话,拿着这个暗号.";
+		mes "[睲稀狶]";
+		mes "狦璶眖硂ń杠,帝硂穞腹.";
 		next;
-		mes "^660066这猫给了你一张写着暗号的便条^000000";
+		mes "^660066硂窟倒眎糶帝穞腹獽兵^000000";
 		next;
-		select("打开便条.");
-		mes "^660000一会大声的对我说'你竟敢侮辱我'.^000000";
+		select("ゴ秨獽兵.");
+		mes "^660000穦羘癸и弧'澈幢玍癲и'.^000000";
 		next;
-		mes "[清洁工小林]";
-		mes "你在这里需要朋友";
-		mes "你很难一个人面临挑战";
-		mes "这个纸条可以让你成为队长!";
-		mes "所以组织一支队伍吧!";
+		mes "[睲稀狶]";
+		mes "硂ń惠璶狟ね";
+		mes "螟羬珼驹";
+		mes "硂兵琵Θ钉!";
+		mes "┮舱麓や钉ヮ!";
 		next;
-		mes "[清洁工小林]";
-		mes "还有一个重点是";
-		mes "你和你的队友们必须每次带来一个海神的护身符.";
+		mes "[睲稀狶]";
+		mes "临Τ翴琌";
+		mes "㎝钉ねゲ斗–Ω盿ㄓ臔ō才.";
 		next;
-		mes "[清洁工小林]";
-		mes "不要忘记! ";
-		mes "如果没有海神的护身符,我是不会打开这扇门的!";
+		mes "[睲稀狶]";
+		mes "ぃ璶а癘! ";
+		mes "狦⊿Τ臔ō才,и琌ぃ穦ゴ秨硂!";
 		set in_canal_n,1;
 		close;
 	}
 	if (rentalcountitem(6436) == 0) {
-		mes "[清洁工小林]";
-		mes "你没有^FF0000海神的护身符^000000(id:6436), 我不能打开这扇门!";
+		mes "[睲稀狶]";
+		mes "⊿Τ^FF0000臔ō才^000000(id:6436), иぃゴ秨硂!";
 		close;
 	}
 	set .@party_id,getcharid(1);
-	set .@md_name$,"排水沟";
+	set .@md_name$,"逼肪";
 	if (!.@party_id) {
-		mes "^0000ff必须组队但不限制人数.^000000";
-		mes "因此快点召集自己的好友,";
-		mes "一起过来冒险吧.";
+		mes "^0000ffゲ斗舱钉ぃ计.^000000";
+		mes "е翴栋ね,";
+		mes "癬筁ㄓ玙繧.";
 		close;
 	}
 	set .@playtime, checkquest(12254,PLAYTIME);
 	if (.@playtime == -1) {
 		if (is_party_leader() == true) {
-			mes "[清洁工小林]";
-			mes "嗯? 什么情况? 如果你是队长的话就告诉我口令!";
+			mes "[睲稀狶]";
+			mes "垛? ぐ薄猵? 狦琌钉杠碞禗и!";
 			next;
-			switch(select("- 不,我不是队长.:- 你竟敢侮辱我.:- 进入排水渠副本.")) {
+			switch(select("- ぃ,иぃ琌钉.:- 澈幢玍癲и.:- 秈逼措捌セ.")) {
 			case 1:
-				mes "[清洁工小林]";
-				mes "竟然是个菜鸟.";
+				mes "[睲稀狶]";
+				mes "澈礛琌垫尘.";
 				close;
 			case 2:
 				if (instance_create(.@md_name$) < 0) {
-					mes "队伍名称: "+getpartyname(.@party_id);
-					mes "队    长: "+strcharinfo(0);
-					mes "^0000ff"+.@md_name$+"^000000 - 注册失败!";
+					mes "钉ヮ嘿: "+getpartyname(.@party_id);
+					mes "钉    : "+strcharinfo(0);
+					mes "^0000ff"+.@md_name$+"^000000 - 猔ア毖!";
 					close;
 				}
-				mes "^3333FF"+.@md_name$+"^000000 - 注册中";
-				mes "注册完成后, 你可以选择";
-				mes "进入排水沟.";
+				mes "^3333FF"+.@md_name$+"^000000 - 猔い";
+				mes "猔ЧΘ, 匡拒";
+				mes "秈逼肪.";
 				close;
 			case 3:
 				callsub L_Enter,0;
 			}
 		}
-		if(select("- 进入副本:- 取消") == 2)
+		if(select("- 秈捌セ:- ") == 2)
 			end;
 		callsub L_Enter,1;
 	} else if (.@playtime == 0 || .@playtime == 1) {
-		mes "如果入口的门打开的话, 你就可以进入副本了.";
+		mes "狦ゴ秨杠, 碞秈捌セ.";
 		next;
-		if(select("- 进入副本:- 取消") == 2)
+		if(select("- 秈捌セ:- ") == 2)
 			close;
 		callsub L_Enter,0;
 	} else if (.@playtime == 2) {
-		mes "^0000ff通向副本的大门再次打开.^000000";
+		mes "^0000ff硄捌セΩゴ秨.^000000";
 		erasequest 12254;
 		close;
 	}
 	end;
 L_Enter:
-	switch(instance_enter("排水沟")) {
+	switch(instance_enter("逼肪")) {
 	case IE_OTHER:
 		mes "An unknown error has occurred.";
 		close;
@@ -454,68 +454,68 @@ L_Enter:
 
 // Instance: Common Scripts
 //============================================================
-1@pump,63,100,4	script	清洁工小林#0	545,{
+1@pump,63,100,4	script	睲稀狶#0	545,{
 	if (is_party_leader() == false) {
-		mes "[清洁工小林]";
-		mes "我现在正在和你们的队长说话. 请你们耐心等待一会!";
+		mes "[睲稀狶]";
+		mes "и瞷タ㎝钉弧杠. 叫瑻み单穦!";
 		close;
 	}
-	mes "[清洁工小林]";
-	mes "这里是绵绵岛排水渠, 你将在这里带着你的队友一起战斗!";
+	mes "[睲稀狶]";
+	mes "硂ń琌壶壶畄逼措, 盢硂ń盿帝钉ね癬驹ゆ!";
 	next;
-	mes "[清洁工小林]";
-	mes "首先我会打开大门, 你们做好开战的准备了吗?";
+	mes "[睲稀狶]";
+	mes "и穦ゴ秨, 暗秨驹称盾?";
 	next;
-	switch(select("- 我非常喜欢那个面包的口味.:- 我懂如何去战斗.:- ^ffffff给我钻石.^000000")) {
+	switch(select("- и獶盽尺舧ê.:- и来驹ゆ.:- ^ffffff倒и苝ホ.^000000")) {
 	case 1:
-		mes "[清洁工小林]";
-		mes "那好吧, 我就让你在这里像往常一样清理排水渠! 我先预备在右上角开始, 请跟我来!";
+		mes "[睲稀狶]";
+		mes "ê, и碞琵硂ń钩┕盽妓睲瞶逼措! и箇称à秨﹍, 叫蛤иㄓ!";
 		next;
-		if(select("- 等等! 我改变了主意了!:- 如你所愿~") == 1) {
-			mes "[清洁工小林]";
-			mes "呃? 还没好? 准备好了请告诉我.";
+		if(select("- 单单! иэ跑種!:- ┮篅~") == 1) {
+			mes "[睲稀狶]";
+			mes "? 临⊿? 称叫禗и.";
 			close;
 		}
 		set 'party_id,getcharid(1);
-		mapannounce instance_mapname("1@pump"),"清洁工小林: 向着3点钟的方向走, 然后等我会在传送门的另一端给你下一个指令",bc_map,"0xff88ff",FW_NORMAL,15;
-		disablenpc instance_npcname("清洁工小林#0");
-		enablenpc instance_npcname("清洁工小林#n");
+		mapannounce instance_mapname("1@pump"),"睲稀狶: 帝3翴牧よǐ, 礛单и穦肚癳狠倒",bc_map,"0xff88ff",FW_NORMAL,15;
+		disablenpc instance_npcname("睲稀狶#0");
+		enablenpc instance_npcname("睲稀狶#n");
 		close;
 	case 2:
 		if (BaseLevel < 140) {
-			mes "[清洁工小林]";
-			mes "嗯... 我觉得你实力很弱! 告诉我真相吧!!";
+			mes "[睲稀狶]";
+			mes "垛... и谋眔龟畓! 禗и痷!!";
 			close;
 		}
-		mes "[清洁工小林]";
-		mes "呵呵? 你的战斗技术高超? 好吧, 那么, 有个地方, 我还没去清理过...你就去那里吧?!";
+		mes "[睲稀狶]";
+		mes "? 驹ゆм砃蔼禬? , ê, Τよ, и临⊿睲瞶筁...碞êń?!";
 		next;
-		mes "[清洁工小林]";
-		mes "我必须告诉你, 经过了长期的扫荡, 我们已经清理了不少地方, 剩余的地方都非常危险, 低于140级的人甚至不能进入! 你确定你还想去?";
+		mes "[睲稀狶]";
+		mes "иゲ斗禗, 竒筁戳苯亢, и竒睲瞶ぃぶよ, 逞よ常獶盽繧, 140ぃ秈! 谔﹚临稱?";
 		next;
-		if(select("- 等等! 我改变主意了!:- 当然, 都万事俱备~") == 1) {
-			mes "[清洁工小林]";
-			mes "嗯? 最后确认一次.";
+		if(select("- 单单! иэ跑種!:- 讽礛, 常蒃ㄆ称~") == 1) {
+			mes "[睲稀狶]";
+			mes "垛? 程谔粄Ω.";
 			close;
 		}
 		set 'party_id,getcharid(1);
-		mapannounce instance_mapname("1@pump"),"清洁工小林: 我会先进去, 然后你跟紧我! 我会打开3点钟方向的通道!",bc_map,"0xff88ff",FW_NORMAL,15;
-		disablenpc instance_npcname("清洁工小林#0");
-		enablenpc instance_npcname("洞穴入口#i");
+		mapannounce instance_mapname("1@pump"),"睲稀狶: и穦秈, 礛蛤候и! и穦ゴ秨3翴牧よ硄笵!",bc_map,"0xff88ff",FW_NORMAL,15;
+		disablenpc instance_npcname("睲稀狶#0");
+		enablenpc instance_npcname("瑌マ#i");
 		close;
 	case 3:
-		mes "[清洁工小林]";
-		mes "你小子玩我是不是~!";
+		mes "[睲稀狶]";
+		mes "и琌ぃ琌~!";
 		close;
 	}
 	end;
 }
 
-1@pump,84,105,0	script	洞穴入口#i	45,3,3,{
+1@pump,84,105,0	script	瑌マ#i	45,3,3,{
 	end;
 OnInstanceInit:
-	disablenpc instance_npcname("洞穴入口#i");
-	disablenpc instance_npcname("洞穴入口#n");	// disable warp out
+	disablenpc instance_npcname("瑌マ#i");
+	disablenpc instance_npcname("瑌マ#n");	// disable warp out
 	end;
 OnTouch:
 	if (BaseLevel >= 140)
@@ -526,77 +526,77 @@ OnTouch:
 }
 
 function	script	F_mal_missing	{
-	mes "[清洁工小林]";
-	mes "我会指点你应该怎么做, 你有没看到周围的排水渠?";
+	mes "[睲稀狶]";
+	mes "и穦翴莱赣暗, Τ⊿㏄瞅逼措?";
 	next;
-	if(select("- 什么排水渠??:- 是的, 我看见了.") == 1) {
-		mes "[清洁工小林]";
-		mes "嗯? 看样子你是第一次来这地方? 你会看到一些埋在泥土里的机器. 你必须在附近好好找找!";
+	if(select("- ぐ逼措??:- 琌, иǎ.") == 1) {
+		mes "[睲稀狶]";
+		mes "垛? 妓琌材Ωㄓ硂よ? 穦ㄇ甀猟ń审竟. ゲ斗тт!";
 		close;
 	}
-	mes "[清洁工小林]";
-	mes "很好! 这些排水渠对我们非常重要! 因此我们必须阻止那些海藻的繁殖. 这也是我, 清洁工的使命!";
+	mes "[睲稀狶]";
+	mes "! 硂ㄇ逼措癸и獶盽璶! иゲ斗ゎêㄇ摩羉崔. 硂琌и, 睲稀ㄏ㏑!";
 	next;
-	mes "[清洁工小林]";
-	mes "小心! 有些精明的怪物会偷偷跟着你! 绝对不能饶恕它们!";
+	mes "[睲稀狶]";
+	mes "み! Τㄇ弘┣穦敖敖蛤帝! 荡癸ぃ那ウ!";
 	next;
-	mes "[清洁工小林]";
-	mes "还有... 千万不能让那些受污染的海藻长出第6个分岔! 一定要控制在5条以下! 否则, 我会以玩忽职守罪把你从这里丢出去!!";
+	mes "[睲稀狶]";
+	mes "临Τ... 蒃ぃ琵êㄇγ琕摩材6だ! ﹚璶北5兵! 玥, и穦┛戮竜р眖硂ńメ!!";
 	next;
-	mes "[清洁工小林]";
-	mes "我不会介意你从自己的队友这里获得帮助. 我希望你能清理完整个洞穴! 不要忘记! 我也会在边上尽我所能给你各种提示和建议. !!";
+	mes "[睲稀狶]";
+	mes "иぃ穦ざ種眖钉ね硂ń莉眔腊. и辨睲瞶Ч俱瑌マ! ぃ璶а癘! и穦娩荷и┮倒销矗ボ㎝某. !!";
 	next;
 	if (is_party_leader() == false) {
-		mes "[清洁工小林]";
-		mes "一旦你们的队长完成准备工作, 副本就会开始, 所以请打起精神来!!";
+		mes "[睲稀狶]";
+		mes "ス钉ЧΘ称, 捌セ碞穦秨﹍, ┮叫ゴ癬弘ㄓ!!";
 		close;
 	}
-	mes "[清洁工小林]";
-	mes "那么, 你现在准备就绪了吗?";
+	mes "[睲稀狶]";
+	mes "ê, 瞷称碞狐盾?";
 	next;
-	switch(select("等等! 还没!:- 让我们开始吧!")) {
+	switch(select("单单! 临⊿!:- 琵и秨﹍!")) {
 	case 1:
-		mes "[清洁工小林]";
-		mes "嗯? 还没好? 准备好了就告诉我.";
+		mes "[睲稀狶]";
+		mes "垛? 临⊿? 称碞禗и.";
 		close;
 	case 2:
-		mes "[清洁工小林]";
-		mes "OK! 好戏开始了!";
+		mes "[睲稀狶]";
+		mes "OK! 栏秨﹍!";
 		return;
 	}
 }
 
 // Instance: Normal Mode :: in_pump1
 //============================================================
-1@pump,84,105,4	script	清洁工小林#nf	545,{
-	mes "[清洁工小林]";
-	mes "我在这里干了40年, 你们是我见过最差的队伍!!";
+1@pump,84,105,4	script	睲稀狶#nf	545,{
+	mes "[睲稀狶]";
+	mes "и硂ń40, 琌иǎ筁程畉钉ヮ!!";
 	next;
-	mes "[清洁工小林]";
-	mes "你们的疏忽导致这里长满了被污染的海藻! 所有的排水渠都收到堵塞的风险!";
+	mes "[睲稀狶]";
+	mes "波┛旧璓硂ń骸砆γ琕摩! ┮Τ逼措常Μ棒峨繧!";
 	next;
 	if (is_party_leader() == false) {
-		mes "[清洁工小林]";
-		mes "等你们的队长回过神来, 会告诉你们处罚决定. 现在你们可以做一下思想准备!!";
+		mes "[睲稀狶]";
+		mes "单钉筁ㄓ, 穦禗矪籃∕﹚. 瞷暗稱称!!";
 		close;
 	}
-	mes "[清洁工小林]";
-	mes "如果你有胆量再次挑战, 我再给你一次机会! 你的想法是!?";
+	mes "[睲稀狶]";
+	mes "狦Τ義秖Ω珼驹, и倒Ω审穦! 稱猭琌!?";
 	next;
-	switch(select("- 等等! 现在不行!:- 好的, 让我们再来一次!")) {
+	switch(select("- 单单! 瞷ぃ︽!:- , 琵иㄓΩ!")) {
 	case 1:
-		mes "[清洁工小林]";
-		mes "记住当断则断! 等你们准备好了就告诉我.";
+		mes "[睲稀狶]";
+		mes "癘讽耞玥耞! 单称碞禗и.";
 		close;
 	case 2:
-		mes "[清洁工小林]";
-		mes "好的! 让我们现在就开始!";
+		mes "[睲稀狶]";
+		mes "! 琵и瞷碞秨﹍!";
 		set .@i$, charat(strnpcinfo(2),0);
-		enablenpc instance_npcname("清洁工小林#"+.@i$);
-		donpcevent instance_npcname("清洁工小林#"+.@i$)+"::OnStart";
-		disablenpc instance_npcname("洞穴入口#"+.@i$);
-		disablenpc instance_npcname("清洁工小林#"+.@i$+"o");
-		donpcevent instance_npcname("怪物洞#"+.@i$)+"::OnClear";
+		enablenpc instance_npcname("睲稀狶#"+.@i$);
+		donpcevent instance_npcname("睲稀狶#"+.@i$)+"::OnStart";
+		disablenpc instance_npcname("瑌マ#"+.@i$);
+		disablenpc instance_npcname("睲稀狶#"+.@i$+"o");
+		donpcevent instance_npcname("┣瑌#"+.@i$)+"::OnClear";
 		disablenpc instance_npcname(strnpcinfo(0));
 		close;
 	}
@@ -606,44 +606,44 @@ OnInstanceInit:
 	end;
 }
 
-1@pump,84,105,4	script	清洁工小林#n	545,{
+1@pump,84,105,4	script	睲稀狶#n	545,{
 	callfunc "F_mal_missing";
-	donpcevent instance_npcname("清洁工小林#n")+"::OnStart";
+	donpcevent instance_npcname("睲稀狶#n")+"::OnStart";
 	close;
 OnInstanceInit:
-	disablenpc instance_npcname("清洁工小林#n");
+	disablenpc instance_npcname("睲稀狶#n");
 	end;
 OnStart:
-	killmonster instance_mapname("1@pump"),instance_npcname("清洁工小林#n")+"::OnMyMobDead";
-	disablenpc instance_npcname("清洁工小林#n");
+	killmonster instance_mapname("1@pump"),instance_npcname("睲稀狶#n")+"::OnMyMobDead";
+	disablenpc instance_npcname("睲稀狶#n");
 	initnpctimer;
 	end;
 OnAddSeaweed:
 	set .@map$, instance_mapname("1@pump");
-	areamonster .@map$,55,99,61,105,"受污染的海藻",2191,1,instance_npcname("清洁工小林#n")+"::OnMyMobDead";
-	set .@mob_dead_num, mobcount(.@map$,instance_npcname("清洁工小林#n")+"::OnMyMobDead");
+	areamonster .@map$,55,99,61,105,"γ琕摩",2191,1,instance_npcname("睲稀狶#n")+"::OnMyMobDead";
+	set .@mob_dead_num, mobcount(.@map$,instance_npcname("睲稀狶#n")+"::OnMyMobDead");
 	if (.@mob_dead_num >= 6)
-		donpcevent instance_npcname("清洁工小林#n")+"::OnFail";
+		donpcevent instance_npcname("睲稀狶#n")+"::OnFail";
 	else
-		mapannounce .@map$,"受污染的海藻: "+.@mob_dead_num+" stem",bc_map,"0xff3333",FW_NORMAL,20;
+		mapannounce .@map$,"γ琕摩: "+.@mob_dead_num+" stem",bc_map,"0xff3333",FW_NORMAL,20;
 	end;
 OnMyMobDead:
 	end;
 OnFail:
 	stopnpctimer;
-	donpcevent instance_npcname("怪物洞#n")+"::OnClear";
+	donpcevent instance_npcname("┣瑌#n")+"::OnClear";
 	set .@map$, instance_mapname("1@pump");
-	killmonster .@map$,instance_npcname("清洁工小林#n")+"::OnMyMobDead";
-	enablenpc instance_npcname("清洁工小林#nf");
-	mapannounce .@map$,"你们究竟在这里干什么!! 到处都是该死海藻! 放弃你的工作! 离开这里!!",bc_map,"0xff88ff",FW_NORMAL,15;
-	disablenpc instance_npcname("清洁工小林#n");
+	killmonster .@map$,instance_npcname("睲稀狶#n")+"::OnMyMobDead";
+	enablenpc instance_npcname("睲稀狶#nf");
+	mapannounce .@map$,"╯澈硂ńぐ!! 矪常琌赣摩! 斌! 置秨硂ń!!",bc_map,"0xff88ff",FW_NORMAL,15;
+	disablenpc instance_npcname("睲稀狶#n");
 	end;
 OnTimer100:
-	mapannounce instance_mapname("1@pump"),"第一个排水渠将在5秒钟内开启. 清理者们请到排水渠这里单击“开始清理”.",bc_map,"0x00ffcc",FW_NORMAL,15;
+	mapannounce instance_mapname("1@pump"),"材逼措盢5牧ず秨币. 睲瞶叫逼措硂ń虫阑¨秨﹍睲瞶〃.",bc_map,"0x00ffcc",FW_NORMAL,15;
 	end;
 OnTimer5500:
-	mapannounce instance_mapname("1@pump"),"排水渠副本建立时, 等候的玩家无法移动和攻击.",bc_map,"0x00ffcc",FW_NORMAL,15;
-	donpcevent instance_npcname("怪物洞#n")+"::OnSpawn";
+	mapannounce instance_mapname("1@pump"),"逼措捌セミ, 单產礚猭簿笆㎝ю阑.",bc_map,"0x00ffcc",FW_NORMAL,15;
+	donpcevent instance_npcname("┣瑌#n")+"::OnSpawn";
 	end;
 OnTimer45000:
 OnTimer95000:
@@ -654,12 +654,12 @@ OnTimer295000:
 OnTimer345000:
 OnTimer395000:
 OnTimer445000:
-	mapannounce instance_mapname("1@pump"),"下一个排水渠将在50秒内开启. 请尽快找到下一个排水渠的位置.",bc_map,"0x00ffcc",FW_NORMAL,15;
+	mapannounce instance_mapname("1@pump"),"逼措盢50ず秨币. 叫荷ет逼措竚.",bc_map,"0x00ffcc",FW_NORMAL,15;
 	end;
 OnTimer50000:
 OnTimer100000:
 OnTimer150000:
-	donpcevent instance_npcname("怪物洞#n")+"::OnSpawn";
+	donpcevent instance_npcname("┣瑌#n")+"::OnSpawn";
 	end;
 OnTimer200000:
 OnTimer250000:
@@ -667,28 +667,28 @@ OnTimer300000:
 OnTimer350000:
 OnTimer400000:
 OnTimer450000:
-	set .@mob_dead_num, mobcount(instance_mapname("1@pump"),instance_npcname("清洁工小林#n")+"::OnMyMobDead");
+	set .@mob_dead_num, mobcount(instance_mapname("1@pump"),instance_npcname("睲稀狶#n")+"::OnMyMobDead");
 	if (.@mob_dead_num >= 6)
-		donpcevent instance_npcname("清洁工小林#n")+"::OnFail";
+		donpcevent instance_npcname("睲稀狶#n")+"::OnFail";
 	else
-		donpcevent instance_npcname("怪物洞#n")+"::OnSpawn";
+		donpcevent instance_npcname("┣瑌#n")+"::OnSpawn";
 	end;
 OnTimer515000:
 	set .@map$, instance_mapname("1@pump");
-	set .@mob_dead_num, mobcount(.@map$,instance_npcname("清洁工小林#n")+"::OnMyMobDead");
-	mapannounce .@map$,"受污染的海藻: "+.@mob_dead_num+" 尽快完成清洁工作, 清洁工小林就快来检查了.",bc_map,"0xff3333",FW_NORMAL,20;
+	set .@mob_dead_num, mobcount(.@map$,instance_npcname("睲稀狶#n")+"::OnMyMobDead");
+	mapannounce .@map$,"γ琕摩: "+.@mob_dead_num+" 荷еЧΘ睲稀, 睲稀狶碞еㄓ浪琩.",bc_map,"0xff3333",FW_NORMAL,20;
 	end;
 OnTimer520000:
 	stopnpctimer;
-	set .@mob_dead_num, mobcount(instance_mapname("1@pump"),instance_npcname("清洁工小林#n")+"::OnMyMobDead");
+	set .@mob_dead_num, mobcount(instance_mapname("1@pump"),instance_npcname("睲稀狶#n")+"::OnMyMobDead");
 	if (.@mob_dead_num >= 6)
-		donpcevent instance_npcname("清洁工小林#n")+"::OnFail";
+		donpcevent instance_npcname("睲稀狶#n")+"::OnFail";
 	else
 		donpcevent instance_npcname("Boss Creation#n")+"::OnEnable";
 	end;
 }
 
-1@pump,1,1,4	script	怪物洞#n	-1,{
+1@pump,1,1,4	script	┣瑌#n	-1,{
 	end;
 OnSpawn:
 	set .@i$, charat(strnpcinfo(2),0);
@@ -730,12 +730,12 @@ OnEnable:
 		case 5: setarray .@c[0],71,76,79,84; break;
 		case 6: setarray .@c[0],54,97,62,105; break;
 	}
-	areamonster .@map$,.@c[0],.@c[1],.@c[2],.@c[3],"深海蟹",2176,rand(1,3),.@label$;
-	areamonster .@map$,.@c[0],.@c[1],.@c[2],.@c[3],"深海章鱼",2175,rand(1,3),.@label$;
-	areamonster .@map$,.@c[0],.@c[1],.@c[2],.@c[3],"深海螃蟹",2174,rand(1,3),.@label$;
-	areamonster .@map$,.@c[0],.@c[1],.@c[2],.@c[3],"深海寄居蟹",2178,rand(1,3),.@label$;
-	areamonster .@map$,.@c[0],.@c[1],.@c[2],.@c[3],"深海库克雷",2179,rand(1,3),.@label$;
-	areamonster .@map$,.@c[0],.@c[1],.@c[2],.@c[3],"深海蟹蛛",2177,rand(1,3),.@label$;
+	areamonster .@map$,.@c[0],.@c[1],.@c[2],.@c[3],"瞏蒙",2176,rand(1,3),.@label$;
+	areamonster .@map$,.@c[0],.@c[1],.@c[2],.@c[3],"瞏彻辰",2175,rand(1,3),.@label$;
+	areamonster .@map$,.@c[0],.@c[1],.@c[2],.@c[3],"瞏坷蒙",2174,rand(1,3),.@label$;
+	areamonster .@map$,.@c[0],.@c[1],.@c[2],.@c[3],"瞏盚﹡蒙",2178,rand(1,3),.@label$;
+	areamonster .@map$,.@c[0],.@c[1],.@c[2],.@c[3],"瞏畐筽",2179,rand(1,3),.@label$;
+	areamonster .@map$,.@c[0],.@c[1],.@c[2],.@c[3],"瞏蒙碉",2177,rand(1,3),.@label$;
 	specialeffect EF_MAPPILLAR2,ALL_SAMEMAP; //currently broken
 	getmapxy(.@map$,.@x,.@y,BL_NPC);
 	getpartymember 'party_id,2;
@@ -755,8 +755,8 @@ OnClear:
 	stopnpctimer;
 	killmonster instance_mapname("1@pump"),instance_npcname(strnpcinfo(0))+"::OnMyMobDead";
 	end;
-OnTimer49500:	//OnTimer50000 clashes with the timer in "清洁工小林#h".
-	donpcevent instance_npcname("清洁工小林#n")+"::OnAddSeaweed";
+OnTimer49500:	//OnTimer50000 clashes with the timer in "睲稀狶#h".
+	donpcevent instance_npcname("睲稀狶#n")+"::OnAddSeaweed";
 	donpcevent instance_npcname(strnpcinfo(0))+"::OnClear";
 	disablenpc instance_npcname(strnpcinfo(0));
 	end;
@@ -782,15 +782,15 @@ OnEnable:
 OnTimer100:
 	set .@i$, charat(strnpcinfo(2),0);
 	if (.@i$ == "n")
-		mapannounce instance_mapname("1@pump"),"嗯! 干的不赖!",bc_map,"0xff88ff",FW_NORMAL,15;
+		mapannounce instance_mapname("1@pump"),"垛! ぃ苦!",bc_map,"0xff88ff",FW_NORMAL,15;
 	else if (.@i$ == "h")
-		mapannounce instance_mapname("2@pump"),"嗯! 小子们还行!!",bc_map,"0xff88ff",FW_NORMAL,15;
+		mapannounce instance_mapname("2@pump"),"垛! 临︽!!",bc_map,"0xff88ff",FW_NORMAL,15;
 	end;
 OnTimer5000:
-	mapannounce strnpcinfo(4),"让我们打包带走...什么!!?",bc_map,"0xff88ff",FW_NORMAL,15;
+	mapannounce strnpcinfo(4),"琵иゴ盿ǐ...ぐ!!?",bc_map,"0xff88ff",FW_NORMAL,15;
 	end;
 OnTimer10000:
-	mapannounce strnpcinfo(4),"我感觉到了一丝危险的气息! 不要放松 - 准备战斗!!",bc_map,"0xff88ff",FW_NORMAL,15;
+	mapannounce strnpcinfo(4),"и稰谋捣繧蒩! ぃ璶猀 - 称驹ゆ!!",bc_map,"0xff88ff",FW_NORMAL,15;
 	end;
 OnTimer20000:
 	stopnpctimer;
@@ -798,25 +798,25 @@ OnTimer20000:
 	set .@label$, instance_npcname(strnpcinfo(0))+"::OnMyMobDead";
 	if (rand(1,100) > 50) {
 		if (.@i$ == "n")
-			monster instance_mapname("1@pump"),0,0,"怪异腔棘鱼",2188,1,.@label$;
+			monster instance_mapname("1@pump"),0,0,"┣奢的雌辰",2188,1,.@label$;
 		else if (.@i$ == "h")
-			monster instance_mapname("2@pump"),0,0,"突变腔棘鱼",2189,1,.@label$;
-		mapannounce strnpcinfo(4),"洞穴深处有一个巨大的生物发出惊人的声响.",bc_map,"0x00ffcc",FW_NORMAL,15;
+			monster instance_mapname("2@pump"),0,0,"跑的雌辰",2189,1,.@label$;
+		mapannounce strnpcinfo(4),"瑌マ瞏矪Τエネ祇誥羘臫.",bc_map,"0x00ffcc",FW_NORMAL,15;
 	} else {
 		if (.@i$ == "n")
-			monster instance_mapname("1@pump"),0,0,"黑暗腔棘鱼",2187,1,.@label$;
+			monster instance_mapname("1@pump"),0,0,"堵穞的雌辰",2187,1,.@label$;
 		else if (.@i$ == "h")
-			monster instance_mapname("2@pump"),0,0,"凶暴腔棘鱼",2190,1,.@label$;
-		mapannounce strnpcinfo(4),"洞穴深处传来巨大的声响.",bc_map,"0x00ffcc",FW_NORMAL,15;
+			monster instance_mapname("2@pump"),0,0,"た忌的雌辰",2190,1,.@label$;
+		mapannounce strnpcinfo(4),"瑌マ瞏矪肚ㄓエ羘臫.",bc_map,"0x00ffcc",FW_NORMAL,15;
 	}
 	end;
 OnMyMobDead:
 	if (mobcount(strnpcinfo(4),instance_npcname(strnpcinfo(0))+"::OnMyMobDead") < 1) {
-		mapannounce strnpcinfo(4),"你击杀了洞穴中所有的怪物. 地上有奖励物品, 请取走.",bc_map,"0xffff00",FW_NORMAL,15;
+		mapannounce strnpcinfo(4),"阑炳瑌マい┮Τ┣. Τ贱纘珇, 叫ǐ.",bc_map,"0xffff00",FW_NORMAL,15;
 		set .@i$, charat(strnpcinfo(2),0);
 		set .@map$, strnpcinfo(4);
-		enablenpc instance_npcname("洞穴入口#"+.@i$);
-		enablenpc instance_npcname("清洁工小林#"+.@i$+"o");
+		enablenpc instance_npcname("瑌マ#"+.@i$);
+		enablenpc instance_npcname("睲稀狶#"+.@i$+"o");
 		if (.@i$ == "n") {
 			for(set .@i,0; .@i<10; set .@i,.@i+1) {
 				set .@j, rand(1,6401);
@@ -841,92 +841,92 @@ OnMyMobDead:
 			}
 		}
 	} else
-		mapannounce strnpcinfo(4),"还有怪物活着.",bc_map,"0x00ff99",FW_NORMAL,20;
+		mapannounce strnpcinfo(4),"临Τ┣帝.",bc_map,"0x00ff99",FW_NORMAL,20;
 	end;
 }
 
-1@pump,84,105,4	script	清洁工小林#no	545,{
+1@pump,84,105,4	script	睲稀狶#no	545,{
 	set .@i$, charat(strnpcinfo(2),0);
 	if (.@i$ == "n") {
-		mes "[清洁工小林]";
-		mes "我太愚蠢了!!";
+		mes "[睲稀狶]";
+		mes "иび稭镍!!";
 		next;
-		mes "[清洁工小林]";
-		mes "这古怪的鱼, 似乎是一条生长在这里的腔棘鱼.这是我第一次看到它们独自来到这里!";
+		mes "[睲稀狶]";
+		mes "硂┣辰, 琌兵ネ硂ń的雌辰.硂琌и材Ωウ縒ㄓ硂ń!";
 		next;
-		mes "[清洁工小林]";
-		mes "我会清理这个尸体.打包后离开!入口位于另一侧, 快去找吧!";
+		mes "[睲稀狶]";
+		mes "и穦睲瞶硂蔨.ゴ置秨!凹, ет!";
 		next;
 	} else if (.@i$ == "h") {
-		mes "[清洁工小林]";
-		mes "你干掉了一个巨大的怪物!";
+		mes "[睲稀狶]";
+		mes "奔エ┣!";
 		next;
-		mes "[清洁工小林]";
-		mes "你干掉的是一种腔棘鱼.曾经也有人试图干掉他们, 但失败了.";
+		mes "[睲稀狶]";
+		mes "奔琌销的雌辰.纯竒Τ刚瓜奔, ア毖.";
 		next;
-		mes "[清洁工小林]";
-		mes "我会清理尸体.你带着奖励先走!";
+		mes "[睲稀狶]";
+		mes "и穦睲瞶蔨.盿帝贱纘ǐ!";
 		next;
 	}
-	mes "[清洁工小林]";
-  mes "还有一件事!不要和任何人说起在这里见到的情况!";
+	mes "[睲稀狶]";
+  mes "临Τンㄆ!ぃ璶㎝ヴ弧癬硂ńǎ薄猵!";
 	next;
-	mes "[清洁工小林]";
-	mes "如果托马斯把这里关了, 我们会失去我们的工作!";
+	mes "[睲稀狶]";
+	mes "狦Λ皑吹р硂ń闽, и穦アи!";
 	close;
 OnInstanceInit:
 	disablenpc instance_npcname(strnpcinfo(0));
 	end;
 }
 
-1@pump,32,100,0	warp2	洞穴入口#n	3,3,mal_in01,161,32
+1@pump,32,100,0	warp2	瑌マ#n	3,3,mal_in01,161,32
 
-//MD_Putmob "1@pump" 0 0 0 0 20 海德拉 0 0 2
-1@pump,1,1,4	script	海德拉#n	-1,{
+//MD_Putmob "1@pump" 0 0 0 0 20 紈┰ 0 0 2
+1@pump,1,1,4	script	紈┰#n	-1,{
 OnInstanceInit:
-	monster strnpcinfo(4),0,0,"海德拉",1068,20;
+	monster strnpcinfo(4),0,0,"紈┰",1068,20;
 	end;
 }
 
 // Instance: Hard Mode
 //============================================================
-2@pump,39,88,4	duplicate(清洁工小林#nf)	清洁工小林#hf	545
+2@pump,39,88,4	duplicate(睲稀狶#nf)	睲稀狶#hf	545
 
-2@pump,39,88,4	script	清洁工小林#h	545,{
+2@pump,39,88,4	script	睲稀狶#h	545,{
 	callfunc "F_mal_missing";
-	donpcevent instance_npcname("清洁工小林#h")+"::OnStart";
+	donpcevent instance_npcname("睲稀狶#h")+"::OnStart";
 	close;
 OnStart:
-	killmonster instance_mapname("2@pump"),instance_npcname("清洁工小林#h")+"::OnMyMobDead";
-	disablenpc instance_npcname("清洁工小林#h");
+	killmonster instance_mapname("2@pump"),instance_npcname("睲稀狶#h")+"::OnMyMobDead";
+	disablenpc instance_npcname("睲稀狶#h");
 	initnpctimer;
 	end;
 OnAddSeaweed:
 	set .@map$, instance_mapname("2@pump");
-	areamonster .@map$,75,78,85,88,"受污染的海藻",2191,1,instance_npcname("清洁工小林#h")+"::OnMyMobDead";
-	set .@mob_dead_num, mobcount(.@map$,instance_npcname("清洁工小林#h")+"::OnMyMobDead");
+	areamonster .@map$,75,78,85,88,"γ琕摩",2191,1,instance_npcname("睲稀狶#h")+"::OnMyMobDead";
+	set .@mob_dead_num, mobcount(.@map$,instance_npcname("睲稀狶#h")+"::OnMyMobDead");
 	if (.@mob_dead_num >= 6)
-		donpcevent instance_npcname("清洁工小林#h")+"::OnFail";
+		donpcevent instance_npcname("睲稀狶#h")+"::OnFail";
 	else
-		mapannounce .@map$,"受污染的海藻: "+.@mob_dead_num+"个受污染的海藻分岔",bc_map,"0xff3333",FW_NORMAL,20;
+		mapannounce .@map$,"γ琕摩: "+.@mob_dead_num+"γ琕摩だ",bc_map,"0xff3333",FW_NORMAL,20;
 	end;
 OnMyMobDead:
 	end;
 OnFail:
 	stopnpctimer;
-	donpcevent instance_npcname("怪物洞#h")+"::OnClear";
+	donpcevent instance_npcname("┣瑌#h")+"::OnClear";
 	set .@map$, instance_mapname("2@pump");
-	killmonster .@map$, instance_npcname("清洁工小林#h")+"::OnMyMobDead";
-	enablenpc instance_npcname("清洁工小林#hf");
-	mapannounce .@map$,"你们究竟在这里干什么!! 到处都是该死海藻! 放弃你的工作! 离开这里!!",bc_map,"0xff88ff",FW_NORMAL,15;
-	disablenpc instance_npcname("清洁工小林#h");
+	killmonster .@map$, instance_npcname("睲稀狶#h")+"::OnMyMobDead";
+	enablenpc instance_npcname("睲稀狶#hf");
+	mapannounce .@map$,"╯澈硂ńぐ!! 矪常琌赣摩! 斌! 置秨硂ń!!",bc_map,"0xff88ff",FW_NORMAL,15;
+	disablenpc instance_npcname("睲稀狶#h");
 	end;
 OnTimer100:
-	mapannounce instance_mapname("2@pump"),"第一个排水渠将在5秒内打开. 清理者们可以到排水渠洞口单击'开始清理'.",bc_map,"0x00ffcc",FW_NORMAL,15;
+	mapannounce instance_mapname("2@pump"),"材逼措盢5ずゴ秨. 睲瞶逼措瑌虫阑'秨﹍睲瞶'.",bc_map,"0x00ffcc",FW_NORMAL,15;
 	end;
 OnTimer5500:
-	mapannounce instance_mapname("2@pump"),"副本构建过程中, 所有参加副本的人员无法移动和攻击.",bc_map,"0x00ffcc",FW_NORMAL,15;
-	donpcevent instance_npcname("怪物洞#h")+"::OnSpawn";
+	mapannounce instance_mapname("2@pump"),"捌セ疼筁祘い, ┮Τ把捌セ礚猭簿笆㎝ю阑.",bc_map,"0x00ffcc",FW_NORMAL,15;
+	donpcevent instance_npcname("┣瑌#h")+"::OnSpawn";
 	end;
 OnTimer35000:
 OnTimer75000:
@@ -937,12 +937,12 @@ OnTimer235000:
 OnTimer275000:
 OnTimer315000:
 OnTimer355000:
-	mapannounce instance_mapname("2@pump"),"下一个排水渠将在5秒内打开. 请尽快到达下一个排水渠的位置.",bc_map,"0x00ffcc",FW_NORMAL,15;
+	mapannounce instance_mapname("2@pump"),"逼措盢5ずゴ秨. 叫荷е笷逼措竚.",bc_map,"0x00ffcc",FW_NORMAL,15;
 	end;
 OnTimer40000:
 OnTimer80000:
 OnTimer120000:
-	donpcevent instance_npcname("怪物洞#h")+"::OnSpawn";
+	donpcevent instance_npcname("┣瑌#h")+"::OnSpawn";
 	end;
 OnTimer160000:
 OnTimer200000:
@@ -950,20 +950,20 @@ OnTimer240000:
 OnTimer280000:
 OnTimer320000:
 OnTimer360000:
-	set .@mob_dead_num, mobcount(instance_mapname("2@pump"),instance_npcname("清洁工小林#h")+"::OnMyMobDead");
+	set .@mob_dead_num, mobcount(instance_mapname("2@pump"),instance_npcname("睲稀狶#h")+"::OnMyMobDead");
 	if (.@mob_dead_num >= 6)
-		donpcevent instance_npcname("清洁工小林#h")+"::OnFail";
+		donpcevent instance_npcname("睲稀狶#h")+"::OnFail";
 	else
-		donpcevent instance_npcname("怪物洞#h")+"::OnSpawn";
+		donpcevent instance_npcname("┣瑌#h")+"::OnSpawn";
 	end;
 OnTimer420000:
-	mapannounce instance_mapname("2@pump"),"看样子, 清洁工小林马上就要来检查我们的清理情况了. 我们能把这里的烂摊子清理干净么?",bc_map,"0xff3333",FW_NORMAL,20;
+	mapannounce instance_mapname("2@pump"),"妓, 睲稀狶皑碞璶ㄓ浪琩и睲瞶薄猵. ир硂ń年舥睲瞶瞓?",bc_map,"0xff3333",FW_NORMAL,20;
 	end;
 OnTimer425000:
 	stopnpctimer;
-	set .@mob_dead_num, mobcount(instance_mapname("2@pump"),instance_npcname("清洁工小林#h")+"::OnMyMobDead");
+	set .@mob_dead_num, mobcount(instance_mapname("2@pump"),instance_npcname("睲稀狶#h")+"::OnMyMobDead");
 	if (.@mob_dead_num >= 6)
-		donpcevent instance_npcname("清洁工小林#h")+"::OnFail";
+		donpcevent instance_npcname("睲稀狶#h")+"::OnFail";
 	else
 		donpcevent instance_npcname("Boss Creation#h")+"::OnEnable";
 	end;
@@ -994,12 +994,12 @@ OnEnable:
 		case 9: setarray .@c[0],96,70,104,78; break;
 		case 10: setarray .@c[0],111,46,119,54; break;
 	}
-	areamonster .@map$,.@c[0],.@c[1],.@c[2],.@c[3],"深海海马",2182,rand(2,3),.@label$;
-	areamonster .@map$,.@c[0],.@c[1],.@c[2],.@c[3],"深海剑鱼",2181,rand(2,3),.@label$;
-	areamonster .@map$,.@c[0],.@c[1],.@c[2],.@c[3],"深海海神",2180,rand(2,3),.@label$;
-	areamonster .@map$,.@c[0],.@c[1],.@c[2],.@c[3],"深海鳄鱼",2183,rand(2,3),.@label$;
-	areamonster .@map$,.@c[0],.@c[1],.@c[2],.@c[3],"深海人鱼",2184,rand(2,3),.@label$;
-	areamonster .@map$,.@c[0],.@c[1],.@c[2],.@c[3],"深海河童",2185,rand(2,3),.@label$;
+	areamonster .@map$,.@c[0],.@c[1],.@c[2],.@c[3],"瞏皑",2182,rand(2,3),.@label$;
+	areamonster .@map$,.@c[0],.@c[1],.@c[2],.@c[3],"瞏糃辰",2181,rand(2,3),.@label$;
+	areamonster .@map$,.@c[0],.@c[1],.@c[2],.@c[3],"瞏",2180,rand(2,3),.@label$;
+	areamonster .@map$,.@c[0],.@c[1],.@c[2],.@c[3],"瞏苨辰",2183,rand(2,3),.@label$;
+	areamonster .@map$,.@c[0],.@c[1],.@c[2],.@c[3],"瞏辰",2184,rand(2,3),.@label$;
+	areamonster .@map$,.@c[0],.@c[1],.@c[2],.@c[3],"瞏猠担",2185,rand(2,3),.@label$;
 	specialeffect EF_MAPPILLAR2,ALL_SAMEMAP; //currently broken
 	initnpctimer;
 	end;
@@ -1009,8 +1009,8 @@ OnClear:
 	stopnpctimer;
 	killmonster instance_mapname("2@pump"),instance_npcname(strnpcinfo(0))+"::OnMyMobDead";
 	end;
-OnTimer39500:	//OnTimer40000 clashes with the timer in "清洁工小林#h".
-	donpcevent instance_npcname("清洁工小林#h")+"::OnAddSeaweed";
+OnTimer39500:	//OnTimer40000 clashes with the timer in "睲稀狶#h".
+	donpcevent instance_npcname("睲稀狶#h")+"::OnAddSeaweed";
 	donpcevent instance_npcname(strnpcinfo(0))+"::OnClear";
 	disablenpc instance_npcname(strnpcinfo(0));
 	end;
@@ -1028,10 +1028,10 @@ OnTouch:
 2@pump,100,74,4	duplicate(#Culvert_h1)	#Culvert_h9	844,14,14
 2@pump,115,50,4	duplicate(#Culvert_h1)	#Culvert_h10	844,14,14
 
-2@pump,1,1,4	duplicate(怪物洞#n)	怪物洞#h	-1
+2@pump,1,1,4	duplicate(┣瑌#n)	┣瑌#h	-1
 2@pump,1,1,4	duplicate(Boss Creation#n)	Boss Creation#h	-1
-2@pump,39,88,4	duplicate(清洁工小林#no)	清洁工小林#ho	545
-2@pump,38,100,0	duplicate(洞穴入口#n)	洞穴入口#h	3,3
+2@pump,39,88,4	duplicate(睲稀狶#no)	睲稀狶#ho	545
+2@pump,38,100,0	duplicate(瑌マ#n)	瑌マ#h	3,3
 
-//MD_Putmob "2@pump" 0 0 0 0 20 海德拉 0 0 2
-2@pump,1,1,4	duplicate(海德拉#n)	海德拉#h	-1
+//MD_Putmob "2@pump" 0 0 0 0 20 紈┰ 0 0 2
+2@pump,1,1,4	duplicate(紈┰#n)	紈┰#h	-1

@@ -15,76 +15,76 @@
 //= 1.2 Navigation system update. [Euphy]
 //============================================================ 
 
-comodo,322,178,4	script	克魔岛 解说员#01comodo::GuideComodo	700,{
-	mes "[克魔岛 解说员]";
-	mes "你好!!";
-	mes "这里是卢恩 米德加兹王国的";
-	mes "海岸之都^8B4513克魔岛^000000，";
-	mes "诚挚地欢迎大家的莅临，";
-	mes "需要为您介绍吗?";
-	F_Navi("[克魔岛 解说员]");
+comodo,322,178,4	script	臸畄 秆弧#01comodo::GuideComodo	700,{
+	mes "[臸畄 秆弧]";
+	mes "!!";
+	mes "硂ń琌縞 μ紈瓣";
+	mes "─ぇ常^8B4513臸畄^000000";
+	mes "港及舧產籝羬";
+	mes "惠璶眤ざ残盾?";
+	F_Navi("[臸畄 秆弧]");
 	next;
 	while (1) {
-		switch(select("[ 主要设施 ]:[ 商人&小帮手 ]:删除小地图的标记:结束对话:有关^8B4513克魔岛^000000")) {
+		switch(select("[ 璶砞琁 ]:[ 坝&腊も ]:埃瓜夹癘:挡癸杠:Τ闽^8B4513臸畄^000000")) {
 		case 1:
 			set .@loop,1;
 			while (.@loop) {
-				switch(select("[ 酒店 ]:[ 赌场 ]:[ 武器、防具店 ]:[ 道具店 ]:[ 露营场 ]:[ 蛤蜊商店 ]:[ 东边洞窟马吾 ]:[ 西边洞窟加露 ]:[ 北边洞窟卢安达 ]:[ 草裙舞舞台 ]:[ 卡普拉西区分部 ]:返回上一选单")) {
+				switch(select("[ 皊┍ ]:[ 戒初 ]:[ 猌竟ňㄣ┍ ]:[ 笵ㄣ┍ ]:[ 臩犁初 ]:[ 叼改坝┍ ]:[ 狥娩瑌竇皑 ]:[ ﹁娩瑌竇臩 ]:[ 娩瑌竇縞笷 ]:[ 溉籖籖 ]:[ 炊┰﹁跋だ场 ]:匡虫")) {
 				case 1:
-					callsub L_Mark, F_Navi("酒店","comodo,161,315","^FF0000");
+					callsub L_Mark, F_Navi("皊┍","comodo,161,315","^FF0000");
 					viewpoint 1,166,298,0,0xFF0000;
 					next;
 					break;
 				case 2:
-					callsub L_Mark, F_Navi("赌场","comodo,140,111","^FFA500");
+					callsub L_Mark, F_Navi("戒初","comodo,140,111","^FFA500");
 					viewpoint 1,140,98,1,0xFFA500;
 					next;
 					break;
 				case 3:
-					callsub L_Mark, F_Navi("武器、防具店","comodo,266,74","^FF4500");
+					callsub L_Mark, F_Navi("猌竟ňㄣ┍","comodo,266,74","^FF4500");
 					viewpoint 1,266,70,2,0xFF4500;
 					next;
 					break;
 				case 4:
-					callsub L_Mark, F_Navi("道具店","comodo,92,128","^B8860B");
+					callsub L_Mark, F_Navi("笵ㄣ┍","comodo,92,128","^B8860B");
 					viewpoint 1,86,128,3,0xB8860B;
 					next;
 					break;
 				case 5:
-					callsub L_Mark, F_Navi("露营场","comodo,209,308","^32CD32");
+					callsub L_Mark, F_Navi("臩犁初","comodo,209,308","^32CD32");
 					viewpoint 1,210,308,4,0x32CD32;
 					next;
 					break;
 				case 6:
-					callsub L_Mark, F_Navi("蛤蜊商店","comodo,293,125","^6B8E23");
+					callsub L_Mark, F_Navi("叼改坝┍","comodo,293,125","^6B8E23");
 					viewpoint 1,298,124,5,0x6B8E23;
 					next;
 					break;
 				case 7:
-					callsub L_Mark, F_Navi("东边洞窟马吾","comodo,333,175","^008B8B");
+					callsub L_Mark, F_Navi("狥娩瑌竇皑","comodo,333,175","^008B8B");
 					viewpoint 1,333,175,6,0x008B8B;
 					next;
 					break;
 				case 8:
-					callsub L_Mark, F_Navi("西边洞窟加露","comodo,24,214","^1E90FF");
+					callsub L_Mark, F_Navi("﹁娩瑌竇臩","comodo,24,214","^1E90FF");
 					viewpoint 1,24,214,7,0x1E90FF;
 					next;
 					break;
 				case 9:
-					callsub L_Mark, F_Navi("北边洞窟卢安达","comodo,176,358","^0000CD");
+					callsub L_Mark, F_Navi("娩瑌竇縞笷","comodo,176,358","^0000CD");
 					viewpoint 1,176,358,8,0x0000CD;
 					next;
 					break;
 				case 10:
-					callsub L_Mark, F_Navi("草裙舞舞台","comodo,188,168","^C71585");
+					callsub L_Mark, F_Navi("溉籖籖","comodo,188,168","^C71585");
 					viewpoint 1,188,168,9,0xC71585;
 					next;
 					break;
 				case 11:
-					mes "[克魔岛 解说员]";
-					mes F_Navi("卡普拉西区分部","comodo,131,195","^DB7093");
-					mes "的位置已经标记在小地图上了，";
-					mes "还需要其它服务吗?";
+					mes "[臸畄 秆弧]";
+					mes F_Navi("炊┰﹁跋だ场","comodo,131,195","^DB7093");
+					mes "竚竒夹癘瓜";
+					mes "临惠璶ㄤウ狝叭盾?";
 					viewpoint 1,136,202,10,0xDB7093;
 					next;
 					break;
@@ -97,30 +97,30 @@ comodo,322,178,4	script	克魔岛 解说员#01comodo::GuideComodo	700,{
 		case 2:
 			set .@loop,1;
 			while (.@loop) {
-				switch(select("[ 村长的家 ]:[ 柏勒罗本 ]:[ 卡普拉职员 ]:[ 吟游诗人 ]:返回上一选单")) {
+				switch(select("[ 產 ]:[ 琭扒霉セ ]:[ 炊┰戮 ]:[ 村钢 ]:匡虫")) {
 				case 1:
-					callsub L_Mark, F_Navi("村长的家","comodo,115,290","^6495ED");
+					callsub L_Mark, F_Navi("產","comodo,115,290","^6495ED");
 					viewpoint 1,114,294,11,0x6495ED;
 					next;
 					break;
 				case 2:
-					mes "[克魔岛 解说员]";
-					mes F_Navi("柏勒罗本","comodo,193,151","^228B22");
-					mes "是负责^228B22舞者^000000的转职工作，";
-					mes "还需要其它服务吗?";
+					mes "[臸畄 秆弧]";
+					mes F_Navi("琭扒霉セ","comodo,193,151","^228B22");
+					mes "琌璽砫^228B22籖^000000锣戮";
+					mes "临惠璶ㄤウ狝叭盾?";
 					viewpoint 1,193,151,12,0x228B22;
 					next;
 					break;
 				case 3:
-					callsub L_Mark,"^1E90FF卡普拉职员^000000";
+					callsub L_Mark,"^1E90FF炊┰戮^000000";
 					viewpoint 1,195,149,13,0x1E90FF;
 					next;
 					break;
 				case 4:
-					mes "[克魔岛 解说员]";
-					mes F_Navi("吟游诗人 巴德","comodo,226,123","^DB7093");
-					mes "负责^DB7093吟游诗人^000000的转职业务，";
-					mes "还需要其它服务吗?";
+					mes "[臸畄 秆弧]";
+					mes F_Navi("村钢 ぺ紈","comodo,226,123","^DB7093");
+					mes "璽砫^DB7093村钢^000000锣戮穨叭";
+					mes "临惠璶ㄤウ狝叭盾?";
 					viewpoint 1,226,123,14,0xDB7093;
 					next;
 					break;
@@ -131,9 +131,9 @@ comodo,322,178,4	script	克魔岛 解说员#01comodo::GuideComodo	700,{
 			}
 			break;
 		case 3:
-			mes "[克魔岛 解说员]";
-			mes "已删除小地图上的标志了，";
-			mes "还需要其它服务吗?";
+			mes "[臸畄 秆弧]";
+			mes "埃瓜夹в";
+			mes "临惠璶ㄤウ狝叭盾?";
 			viewpoint 2,166,298,0,0xFFFFFF;
 			viewpoint 2,140,98,1,0xFFFFFF;
 			viewpoint 2,266,70,2,0xFFFFFF;
@@ -152,32 +152,32 @@ comodo,322,178,4	script	克魔岛 解说员#01comodo::GuideComodo	700,{
 			next;
 			break;
 		case 4:
-			mes "[克魔岛 解说员]";
-			mes "祝您旅途愉快!";
+			mes "[臸畄 秆弧]";
+			mes "眤硚磖е!";
 			close;
 		case 5:
-			mes "[克魔岛 解说员]";
-			mes "^8B4513克魔岛^000000是位於洞窟内，";
-			mes "几乎照不到阳光。";
+			mes "[臸畄 秆弧]";
+			mes "^8B4513臸畄^000000琌瑌竇ず";
+			mes "酚ぃ锭";
 			next;
-			mes "[克魔岛 解说员]";
-			mes "^8B4513克魔岛^000000的居民";
-			mes "利用大自然的特色，";
-			mes "开发成观光商品来贩售";
-			mes "用来维持生活家计，";
-			mes "还需要其它服务吗?";
+			mes "[臸畄 秆弧]";
+			mes "^8B4513臸畄^000000﹡チ";
+			mes "ノ礛疭︹";
+			mes "秨祇Θ芠坝珇ㄓ砪扳";
+			mes "ノㄓ蝴ネ產璸";
+			mes "临惠璶ㄤウ狝叭盾?";
 			next;
 			break;
 		}
 	}
 	end;
 L_Mark:
-	mes "[克魔岛 解说员]";
-	mes getarg(0)+"的位置";
-	mes "已经标记在小地图上了了，";
-	mes "还需要其它服务吗?";
+	mes "[臸畄 秆弧]";
+	mes getarg(0)+"竚";
+	mes "竒夹癘瓜";
+	mes "临惠璶ㄤウ狝叭盾?";
 	return;
 }
-comodo,181,347,4	duplicate(GuideComodo)	克魔岛 解说员#02comodo	700
-comodo,197,149,3	duplicate(GuideComodo)	克魔岛 解说员#03comodo	700
-comodo,37,219,4	duplicate(GuideComodo)	克魔岛 解说员#04comodo	700
+comodo,181,347,4	duplicate(GuideComodo)	臸畄 秆弧#02comodo	700
+comodo,197,149,3	duplicate(GuideComodo)	臸畄 秆弧#03comodo	700
+comodo,37,219,4	duplicate(GuideComodo)	臸畄 秆弧#04comodo	700

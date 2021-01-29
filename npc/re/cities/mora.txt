@@ -20,432 +20,432 @@
 
 // Set 1 :: mora_resident
 //============================================================
-mora,52,138,5	script	绿豆绿豆#p	516,{
-	mes "[绿豆绿豆]";
-	mes "我可不是旅店招待!";
-	mes "人们为什么一见到我就想付钱给我?";
+mora,52,138,5	script	厚ě厚ě#p	516,{
+	mes "[厚ě厚ě]";
+	mes "иぃ琌┍┷!";
+	mes "ぐǎи碞稱窥倒и?";
 	close;
 }
 
-mora,160,123,3	script	内姆内姆#p	517,{
-	mes "[内姆内姆]";
-	mes "我的烦恼是越来越大";
-	mes "自从石缝出现在彩虹桥.";
-	mes "你是不是要对这负责任, 年轻人?";
+mora,160,123,3	script	ず﹊ず﹊#p	517,{
+	mes "[ず﹊ず﹊]";
+	mes "и沸磑琌禫ㄓ禫";
+	mes "眖ホ羅瞷眒璱爵.";
+	mes "琌ぃ琌璶癸硂璽砫ヴ, 淮?";
 	next;
-	switch(select("- 当然我会!:- 这是一个不公平的指责!")) {
+	switch(select("- 讽礛и穦!:- 硂琌ぃそキ砫!")) {
 	case 1:
-		mes "[内姆内姆]";
+		mes "[ず﹊ず﹊]";
 		mes "Bra~vo!";
 		emotion ET_COOL;
 		close;
 	case 2:
-		mes "[内姆内姆]";
-		mes "如果不是这样, 请别介意!";
+		mes "[ず﹊ず﹊]";
+		mes "狦ぃ琌硂妓, 叫ざ種!";
 		emotion ET_PROFUSELY_SWEAT, playerattached();
 		close;
 	}
 }
 
-mora,105,104,3	script	安心的草精#podo	514,{
-	mes "[安心的草精]";
-	mes "所以";
-	mes "现在是最坏的情况了.";
+mora,105,104,3	script	み弘#podo	514,{
+	mes "[み弘]";
+	mes "┮";
+	mes "瞷琌程Д薄猵.";
 	next;
-	mes "[开心的草精]";
-	mes "噢~!";
+	mes "[秨み弘]";
+	mes "揪~!";
 	next;
-	mes "[安心的草精]";
-	mes "无聊死了, 我就开始哭泣.";
-	mes "然后我就睡了, 哭的太久很累了.";
-	mes "当我醒来时,";
-	mes "我比以前";
-	mes "更加无聊了!";
+	mes "[み弘]";
+	mes "礚册, и碞秨﹍猒.";
+	mes "礛и碞何, び仓.";
+	mes "讽и眶ㄓ,";
+	mes "иゑ玡";
+	mes "礚册!";
 	next;
-	mes "[开心的草精]";
-	mes "噢, 噢!";
-	mes "真糟糕, 真是太糟糕了.";
-	mes "怎么回事, 就成这样了?!";
+	mes "[秨み弘]";
+	mes "揪, 揪!";
+	mes "痷罺縷, 痷琌び罺縷.";
+	mes "ㄆ, 碞Θ硂妓?!";
 	next;
-	mes "[安心的草精]";
-	mes "所以情况变得";
-	mes "愈来愈严重...";
-	mes "现在, 给我更多的金币吧.";
+	mes "[み弘]";
+	mes "┮薄猵跑眔";
+	mes "稶ㄓ稶腨...";
+	mes "瞷, 倒и刽.";
 	emotion ET_PROFUSELY_SWEAT, playerattached();
 	close;
 }
 
-mora,105,100,1	script	攘攘#p	518,{
-	mes "[攘攘]";
-	mes "我从来没有听说过这样一个无聊的和悲伤的故事.";
-	mes "我觉得想哭!";
+mora,105,100,1	script	腸腸#p	518,{
+	mes "[腸腸]";
+	mes "и眖ㄓ⊿Τ弧筁硂妓礚册㎝磀端珿ㄆ.";
+	mes "и谋眔稱!";
 	close;
 }
 
 /*
 // Disabled due to overlapping with RangRang,
 // and is not clickable on official servers.
-mora,105,100,1	script	攘攘#p	516,{
-      mes "[攘攘]";
-      mes "他一直在哭, 哭累了就睡,睡醒了接着哭";
-      mes "就这样已经210次啦.";
-      mes "他也太有个性了吧?";
-      mes "我在想, 这什么时候才是个头啊.";
+mora,105,100,1	script	腸腸#p	516,{
+      mes "[腸腸]";
+      mes ", 仓碞何,何眶钡帝";
+      mes "碞硂妓竒210Ω罢.";
+      mes "びΤ┦?";
+      mes "и稱, 硂ぐ琌繷摆.";
       close;
 }
 */
 
-mora,99,100,7	script	捣蛋鬼#podo	515,{
-	mes "[捣蛋鬼]";
-	mes "噢~!";
-	mes "这真是太不可思议了";
-	mes "我太好奇了, 我给他一些金币吧!";
+mora,99,100,7	script	穙矹碍#podo	515,{
+	mes "[穙矹碍]";
+	mes "揪~!";
+	mes "硂痷琌びぃ某";
+	mes "иび, и倒ㄇ刽!";
 	close;
 }
 
-mora,98,104,5	script	感动的草精#podo	516,{
-	mes "[感动的草精]";
-	mes "这是可悲的, 太伤心了!";
-	mes "我不知道为什么,";
-	mes "但它肯定伤心";
-	mes "因为别人都这么说.";
+mora,98,104,5	script	稰笆弘#podo	516,{
+	mes "[稰笆弘]";
+	mes "硂琌磀, び端み!";
+	mes "иぃ笵ぐ,";
+	mes "ウ﹚端み";
+	mes "常硂弧.";
 	close;
 }
 
-mora,102,107,5	script	放松的草精#podo	517,{
-	mes "[放松的草精]";
+mora,102,107,5	script	猀弘#podo	517,{
+	mes "[猀弘]";
 	mes "Wow~!";
-	mes "这是令人兴奋的.";
-	mes "他醒来时再次安然无恙!";
-	mes "好吧, 我敢肯定, 他将在下一次!";
+	mes "硂琌砍灸.";
+	mes "眶ㄓΩ礛礚畘!";
+	mes ", и幢﹚, 盢Ω!";
 	mes "...";
 	next;
-	mes "[放松的草精]";
-	mes "呃?";
+	mes "[猀弘]";
+	mes "?";
 	close;
 }
 
-mora,101,107,5	script	兴奋的草精#podo	518,{
-	mes "[兴奋的草精]";
+mora,101,107,5	script	砍灸弘#podo	518,{
+	mes "[砍灸弘]";
 	mes "Wow~";
-	mes "这个故事是毫无乐趣可言.";
+	mes "硂珿ㄆ琌睝礚贾届ē.";
 	mes "Wow~!";
-	mes "就好像我们在合唱团唱歌 -";
-	mes "这真的很有趣.";
+	mes "碞钩и佰刮佰簈 -";
+	mes "硂痷Τ届.";
 	mes "Wow~!";
 	close;
 }
 
-mora,103,100,5	script	额外的草精#podo	518,{
-	mes "[额外的草精]";
-	mes "哇! 哇!";
+mora,103,100,5	script	肂弘#podo	518,{
+	mes "[肂弘]";
+	mes "珃! 珃!";
 	close;
 }
 
-mora,123,94,7	script	来到莫拉的游客#podo1	515,{
-	mes "[来到莫拉的游客]";
-	mes "我被无处不在的裂缝困在这里了.";
-	mes "哈......";
+mora,123,94,7	script	ㄓ馋┰村#podo1	515,{
+	mes "[ㄓ馋┰村]";
+	mes "и砆礚矪ぃ吊羅硂ń.";
+	mes "......";
 	close;
 }
 
-mora,155,72,3	script	来到莫拉的游客#podo2	513,{
-	mes "[来到莫拉的游客]";
-	mes "难道这不是一个充满欢乐的村庄吗?";
-	mes "有着那么漂亮的彩虹桥, 我准备长期定居在这里了.";
+mora,155,72,3	script	ㄓ馋┰村#podo2	513,{
+	mes "[ㄓ馋┰村]";
+	mes "螟笵硂ぃ琌骸舧贾绍盾?";
+	mes "Τ帝ê簘獹眒璱爵, и称戳﹚﹡硂ń.";
 	close;
 }
 
-mora,184,169,5	script	工人#mo1	516,{
-	mes "[工人]";
-	mes "我听说有人活着从迷雾森林里出来了.";
-	mes "不管他是谁, 我想亲自去见一见他.";
+mora,184,169,5	script	#mo1	516,{
+	mes "[]";
+	mes "и弧Τ帝眖癵铭此狶ńㄓ.";
+	mes "ぃ恨琌街, и稱克ǎǎ.";
 	close;
 }
 
-mora,179,155,1	script	新手工人#mo	516,{
-	mes "[新手工人]";
-	mes "我会活着从迷雾森林里出来, 成为一个英雄!";
+mora,179,155,1	script	穝も#mo	516,{
+	mes "[穝も]";
+	mes "и穦帝眖癵铭此狶ńㄓ, Θ璣动!";
 	next;
-	mes "[冷漠的工人]";
-	mes "我听说已经有人做到了.";
+	mes "[簔]";
+	mes "и弧竒Τ暗.";
 	next;
-	mes "[新手工人]";
-	mes "如果我说我会是那么一个人呢?";
+	mes "[穝も]";
+	mes "狦и弧и穦琌ê㎡?";
 	next;
-	mes "[冷漠的工人]";
-	mes "算了吧. 你不如说你就是那个人";
+	mes "[簔]";
+	mes "衡. ぃ弧碞琌ê";
 	next;
-	mes "[新手工人]";
-	mes "好吧, 呵呵.";
+	mes "[穝も]";
+	mes ", .";
 	close;
 }
 
-mora,177,157,5	script	冷漠的工人#mo	518,{
-	mes "[新手工人]";
-	mes "我会活着从迷雾森林里出来, 成为一个英雄!";
+mora,177,157,5	script	簔#mo	518,{
+	mes "[穝も]";
+	mes "и穦帝眖癵铭此狶ńㄓ, Θ璣动!";
 	next;
-	mes "[冷漠的工人]";
-	mes "我听说已经有人做到了.";
+	mes "[簔]";
+	mes "и弧竒Τ暗.";
 	next;
-	mes "[新手工人]";
-	mes "如果我说我会是那么一个人呢?";
+	mes "[穝も]";
+	mes "狦и弧и穦琌ê㎡?";
 	next;
-	mes "[冷漠的工人]";
-	mes "算了吧. 你不如说你就是那个人";
+	mes "[簔]";
+	mes "衡. ぃ弧碞琌ê";
 	next;
-	mes "[新手工人]";
-	mes "好吧, 呵呵.";
+	mes "[穝も]";
+	mes ", .";
 	close;
 }
 
-mora,108,182,5	script	工人#mo4	516,{
-	mes "[工人]";
-	mes "不要受迷雾森林的影响.";
-	mes "永远不要因为好奇而想着去偷看.";
-	mes "很多旅行者去那儿了以后, 再也没回来.";
+mora,108,182,5	script	#mo4	516,{
+	mes "[]";
+	mes "ぃ璶癵铭此狶紇臫.";
+	mes "ッ环ぃ璶τ稱帝敖.";
+	mes "︽ê, ⊿ㄓ.";
 	close;
 }
 
 // Set 2 :: npc
 //============================================================
-mora,122,97,6	script	放松的草精#ep14_1	517,{
-	mes "[放松的草精]";
-	mes "中间的公共浴池, 是莫拉村的一个标志.";
+mora,122,97,6	script	猀弘#ep14_1	517,{
+	mes "[猀弘]";
+	mes "い丁そ疍, 琌馋┰夹в.";
 	next;
-	mes "[放松的草精]";
-	mes "它可不是一个简单的水坑.";
-	mes "它有巨大的能量来治疗创伤.";
+	mes "[猀弘]";
+	mes "ウぃ琌虏虫.";
+	mes "ウΤエ秖ㄓ獀励承端.";
 	next;
-	mes "[放松的草精]";
-	mes "如果你想试试的话";
-	mes "那就在浴池的中间走一走吧.";
-	mes "它必定能慢慢恢复你的伤痕.";
+	mes "[猀弘]";
+	mes "狦稱刚刚杠";
+	mes "ê碞疍い丁ǐǐ.";
+	mes "ウゲ﹚篊篊蝋端勃.";
 	close;
 }
 
-mora,174,171,0	script	仓库工人#mo1	518,{
-	mes "[仓库工人]";
-	mes "我想爬上梯子,";
-	mes "但是我腿太短了, 做不到.";
+mora,174,171,0	script	畐#mo1	518,{
+	mes "[畐]";
+	mes "и稱辫,";
+	mes "琌и籐び祏, 暗ぃ.";
 	emotion ET_CRY;
 	next;
-	mes "[仓库工人]";
-	mes "我在想, 是谁把它带到这儿来了.";
+	mes "[畐]";
+	mes "и稱, 琌街рウ盿硂ㄓ.";
 	close;
 }
 
-mora,113,185,4	script	读书的草精#ep14_1	516,{
-	mes "你看到的, 是一位沉醉于阅读的草精";
+mora,113,185,4	script	弄弘#ep14_1	516,{
+	mes ", 琌↖綤綷弄弘";
 	next;
-	switch(select("看看他在读什么.:不管他.")) {
+	switch(select("弄ぐ.:ぃ恨.")) {
 	case 1:
-		mes "很好奇他在读什么,";
-		mes "你从后面慢慢的靠近他.";
-		mes "这位草精正在轻轻的读出声...";
+		mes "弄ぐ,";
+		mes "眖篊篊綼.";
+		mes "硂弘タ淮淮弄羘...";
 		next;
-		mes "[读书的草精]";
-		mes "赛依连准备去找艾勒梅斯.";
-		mes "他要去借她的参考书.";
+		mes "[弄弘]";
+		mes "辽ㄌ硈称т︺扒宾吹.";
+		mes "璶把σ.";
 		next;
-		mes "[读书的草精]";
-		mes "但是他也想去看看";
-		mes "他漂亮的妹妹.";
-		mes "赛依连敲响了艾勒梅斯家的门";
-		mes "他的心跳个不停.";
+		mes "[弄弘]";
+		mes "琌稱";
+		mes "簘獹ゝゝ.";
+		mes "辽ㄌ硈篤臫︺扒宾吹產";
+		mes "み铬ぃ氨.";
 		next;
-		mes "[读书的草精]";
-		mes "咚咚咚!";
-		mes "打扰了, 有人吗?";
+		mes "[弄弘]";
+		mes "㎞㎞㎞!";
+		mes "ゴ署, Τ盾?";
 		mes "... ... ...";
-		mes "他什么都没听到.";
+		mes "ぐ常⊿.";
 		next;
-		mes "[读书的草精]";
-		mes "家里有人吗?";
-		mes "他再一次敲了敲门,";
-		mes "害怕这次的到来";
-		mes "一无所获.";
+		mes "[弄弘]";
+		mes "產ńΤ盾?";
+		mes "Ω篤篤,";
+		mes "甡┤硂Ωㄓ";
+		mes "礚┮莉.";
 		next;
-		mes "[读书的草精]";
-		mes "咚咚咚!";
-		mes "还是没人回来啊.有人在家吗?";
-		mes "他知道那样做很粗鲁,";
-		mes "但是他还是以那种方式进去";
-		mes "等着艾勒梅斯回来.";
+		mes "[弄弘]";
+		mes "㎞㎞㎞!";
+		mes "临琌⊿ㄓ摆.Τ產盾?";
+		mes "笵ê妓暗彩緗,";
+		mes "琌临琌ê销よΑ秈";
+		mes "单帝︺扒宾吹ㄓ.";
 		next;
-		mes "[读书的草精]";
-		mes "赛依连打开了第一扇门";
-		mes "他的心脏剧烈的跳动.";
-		mes "*尖厉刺耳的噪音*";
-		mes "门并没有锁上.";
-		mes "艾勒梅斯好像离开有一会儿了.";
+		mes "[弄弘]";
+		mes "辽ㄌ硈ゴ秨材";
+		mes "み纽粿疨铬笆.";
+		mes "*糉φ靖*";
+		mes "⊿Τ玛.";
+		mes "︺扒宾吹钩置秨Τ穦.";
 		next;
-		mes "[读书的草精]";
-		mes "赛依连迟疑的走进了房子.";
-		mes "当他走进去的时候,";
-		mes "他听到了水流的声音.";
+		mes "[弄弘]";
+		mes "辽ㄌ硈筐好ǐ秈┬.";
+		mes "讽ǐ秈,";
+		mes "瑈羘.";
 		next;
-		mes "[读书的草精]";
-		mes "赛依连突然本能的转过身,";
-		mes "猛的向外跑去.";
-		mes "但是就在这时!!";
+		mes "[弄弘]";
+		mes "辽ㄌ硈礛セ锣筁ō,";
+		mes "瞨禲.";
+		mes "琌碞硂!!";
 		next;
-		mes "[读书的草精]";
-		mes "*砰的一声*";
-		mes "浴室的门打开了,";
-		mes "从白色的水雾中伸出来了一条腿.";
+		mes "[弄弘]";
+		mes "*痽羘*";
+		mes "疍ゴ秨,";
+		mes "眖フ︹铭いㄓ兵籐.";
 		next;
-		mes "[读书的草精]";
-		mes "赛依连的心脏几乎停止了跳动";
-		mes "过了一会儿,";
-		mes "有人从浴室中走了出来,";
-		mes "只有一条毛巾包裹着她的身体.";
+		mes "[弄弘]";
+		mes "辽ㄌ硈み纽氨ゎ铬笆";
+		mes "筁穦,";
+		mes "Τ眖疍いǐㄓ,";
+		mes "Τ兵を籷帝ō蔨.";
 		next;
-		mes "[读书的草精]";
-		mes "她的身体还是湿的";
-		mes "从喷淋下出来...";
+		mes "[弄弘]";
+		mes "ō蔨临琌楞";
+		mes "眖糛睴ㄓ...";
 		next;
-		mes "[读书的草精]";
-		mes "*喘气声* 你是谁?";
-		mes "你在这儿有多久了?真是下流!";
+		mes "[弄弘]";
+		mes "*齿蒩羘* 琌街?";
+		mes "硂Τ?痷琌瑈!";
 		emotion ET_HUK;
 		next;
-		mes "这位草精匆忙把书合上了.";
-		mes "你很好奇接下来会发生什么,";
-		mes "但是你已经很猥琐了,";
-		mes "所以, 你放弃了.";
+		mes "硂弘Γр.";
+		mes "钡ㄓ穦祇ネぐ,";
+		mes "琌竒礣壕,";
+		mes "┮, 斌.";
 		close;
 	case 2:
-		mes "你慢慢的走开";
-		mes "为了不打扰这位沉醉于阅读的草精";
+		mes "篊篊ǐ秨";
+		mes "ぃゴ署硂↖綤綷弄弘";
 		close;
 	}
 }
 
-mora,99,65,6	script	香蕉草精#ep14_1	516,{
-	mes "[香蕉草精]";
-	mes "想要一只香蕉吗?";
+mora,99,65,6	script	考弘#ep14_1	516,{
+	mes "[考弘]";
+	mes "稱璶考盾?";
 	next;
-	switch(select("是的, 来一只吧.:不了, 谢谢.")) {
+	switch(select("琌, ㄓ.:ぃ, 谅谅.")) {
 	case 1:
-		mes "[香蕉草精]";
-		mes "拿着吧.";
-		mes "看样子你是一位成功人士, 免费送你了.";
+		mes "[考弘]";
+		mes "帝.";
+		mes "妓琌Θ, 禣癳.";
 		emotion ET_OK;
 		close;
 	case 2:
-		mes "[香蕉草精]";
-		mes "好吧, 我准备免费送你的,";
-		mes "但是你并不想要, 好吧, 算了吧.";
+		mes "[考弘]";
+		mes ", и称禣癳,";
+		mes "琌ぃ稱璶, , 衡.";
 		emotion ET_HNG;
 		close;
 	}
 }
 
-mora,30,128,4	script	悠闲的旅行者#ep14_1	514,{
-	mes "[旅行者]";
-	mes "这些不同寻常的家具";
-	mes "是莫拉酒店一个亮点.";
-	mes "蘑菇壁橱和苹果梳妆台...";
-	mes "你不觉得很有新意吗?";
+mora,30,128,4	script	眣秪︽#ep14_1	514,{
+	mes "[︽]";
+	mes "硂ㄇぃ碝盽產ㄣ";
+	mes "琌馋┰皊┍獹翴.";
+	mes "抹郏纠胦㎝衜狦З...";
+	mes "ぃ谋眔Τ穝種盾?";
 	next;
 	select("... ... ...");
-	mes "[旅行者]";
-	mes "对不起...可能只有我觉得...";
+	mes "[︽]";
+	mes "癸ぃ癬...Τи谋眔...";
 	emotion ET_SORRY;
 	close;
 }
 
-mora,130,96,4	script	悠闲的旅行者#ep14_2	513,{
-	mes "[悠闲的旅行者]";
-	mes "莫拉村的草精看起来长的都一样, 太混乱了.";
-	mes "就像看着一地的黄豆...";
+mora,130,96,4	script	眣秪︽#ep14_2	513,{
+	mes "[眣秪︽]";
+	mes "馋┰弘癬ㄓ常妓, び睼睹.";
+	mes "碞钩帝独ě...";
 	next;
-	mes "[悠闲的旅行者]";
-	mes "然而.如果你离近了观察,";
-	mes "你会发现他们每个的特点.";
-	mes "去找出这些特点";
-	mes "也是你在这个村子里的乐趣之一.";
+	mes "[眣秪︽]";
+	mes "礛τ.狦置芠诡,";
+	mes "穦祇瞷–疭翴.";
+	mes "т硂ㄇ疭翴";
+	mes "琌硂ń贾届ぇ.";
 	close;
 }
 
-mora,43,113,4	script	受伤的草精#ep14_1	517,{
-	mes "[受伤的草精]";
-	mes "嗯...它是什么";
-	mes "在洗澡...嗯...";
-	mes "这样的突然攻击...当心...";
-	mes "不管是什么在那里, 总是非常有侵略性.";
+mora,43,113,4	script	端弘#ep14_1	517,{
+	mes "[端弘]";
+	mes "垛...ウ琌ぐ";
+	mes "瑍峻...垛...";
+	mes "硂妓礛ю阑...讽み...";
+	mes "ぃ恨琌ぐêń, 羆琌獶盽Τ獻菠┦.";
 	close;
 }
 
-mora,168,161,4	script	仓库工人#mo2	513,{
-	mes "[仓库工人]";
-	mes "旅馆在那边~";
-	mes "它不应该是我的~";
+mora,168,161,4	script	畐#mo2	513,{
+	mes "[畐]";
+	mes "繻ê娩~";
+	mes "ウぃ莱赣琌и~";
 	next;
-	mes "[仓库工人]";
-	mes "商店在那边~";
-	mes "它也不应该是我的~";
+	mes "[畐]";
+	mes "坝┍ê娩~";
+	mes "ウぃ莱赣琌и~";
 	next;
-	mes "[仓库工人]";
-	mes "仓库在这里~";
-	mes "这里所有的东西~";
-	mes "所有的所有, 都是我的~";
-	mes "所有的所有, 都是我的~";
+	mes "[畐]";
+	mes "畐硂ń~";
+	mes "硂ń┮Τ狥﹁~";
+	mes "┮Τ┮Τ, 常琌и~";
+	mes "┮Τ┮Τ, 常琌и~";
 	next;
-	mes "[仓库工人]";
-	mes "啊... 我想要赚钱...";
+	mes "[畐]";
+	mes "摆... и稱璶寥窥...";
 	emotion ET_CRY;
 	close;
 }
 
-mora,175,161,6	script	仓库工人#mo3	518,{
-	mes "[仓库工人]";
-	mes "噢...这只鸭子...";
+mora,175,161,6	script	畐#mo3	518,{
+	mes "[畐]";
+	mes "揪...硂纍...";
 	next;
-	mes "[仓库工人]";
-	mes "白毛浮绿水...";
-	mes "红掌拨清波...";
+	mes "[畐]";
+	mes "フを疊厚...";
+	mes "磝挤睲猧...";
 	emotion ET_SHY;
 	next;
-	mes "[仓库工人]";
-	mes "我非常想要这只鸭子...";
-	mes "如果我把它偷走呢?";
+	mes "[畐]";
+	mes "и獶盽稱璶硂纍...";
+	mes "狦ирウ敖ǐ㎡?";
 	emotion ET_HUNGRY;
 	close;
 }
 
-mora,140,186,3	script	草精哲学家	517,{
-	mes "[草精哲学家]";
-	mes "如果你给我一些赞助的话, 我会告诉你一些建议, 对你一生都会有帮助的.";
+mora,140,186,3	script	弘厩產	517,{
+	mes "[弘厩產]";
+	mes "狦倒иㄇ觅杠, и穦禗ㄇ某, 癸ネ常穦Τ腊.";
 	next;
-	if(select("- 赞助他.:- 你不能直接告诉我吗?") == 2) {
-		mes "[草精哲学家]";
-		mes "你什么都不会得到.";
+	if(select("- 觅.:- ぃ钡禗и盾?") == 2) {
+		mes "[弘厩產]";
+		mes "ぐ常ぃ穦眔.";
 		close;
 	}
-	mes "[草精哲学家]";
-	mes "你准备给我多少?";
-	mes "你可以按着下面的价目表来付给我.";
-	mes "输入你想要给我的钱的数目.如果你什么都不想给, 就输入 0 .";
+	mes "[弘厩產]";
+	mes "称倒иぶ?";
+	mes "帝刹ヘㄓ倒и.";
+	mes "块稱璶倒и窥计ヘ.狦ぐ常ぃ稱倒, 碞块 0 .";
 	next;
 	input .@input;
 	if (.@input == 0) {
-		mes "[草精哲学家]";
-		mes "你的意思是, 你什么都不想要听吗?";
+		mes "[弘厩產]";
+		mes "種琌, ぐ常ぃ稱璶盾?";
 		close;
 	} else if (.@input < 100 || .@input > 1000000) {
-		mes "[草精哲学家]";
-		mes "我只接受 ^FF0000100 ~ 1000000^000000 之间的诚意";
+		mes "[弘厩產]";
+		mes "и钡 ^FF0000100 ~ 1000000^000000 ぇ丁港種";
 		close;
 	} else if (Zeny < .@input) {
-		mes "[草精哲学家]";
-		mes "那么, 你这是在给我打白条吗?";
+		mes "[弘厩產]";
+		mes "ê, 硂琌倒иゴフ兵盾?";
 		close;
 	}
-	mes "[草精哲学家]";
-	mes "我准备告诉你的建议就是...";
-	mes "那就是 ... 等一下.";
+	mes "[弘厩產]";
+	mes "и称禗某碞琌...";
+	mes "ê碞琌 ... 单.";
 	set Zeny, Zeny-.@input;
 	next;
 	mes ". . . . . . . . .";
@@ -454,128 +454,128 @@ mora,140,186,3	script	草精哲学家	517,{
 	next;
 	mes ". . . . . . . . .";
 	next;
-	mes "[草精哲学家]";
-	mes "好吧, 我想, 到了该告诉你的时候了.";
+	mes "[弘厩產]";
+	mes ", и稱, 赣禗.";
 	next;
-	mes "[草精哲学家]";
-	mes strcharinfo(0)+", 我准备告诉你的建议就是...";
+	mes "[弘厩產]";
+	mes strcharinfo(0)+", и称禗某碞琌...";
 	switch(rand(1,70)) {
 	case 1:
-		mes "没有什么,";
-		mes "比做出一个正确的决定,";
-		mes "更加困难, 更加珍贵了.";
-		mes "- 拿破仑 波拿巴 -";
+		mes "⊿Τぐ,";
+		mes "ゑ暗タ谔∕﹚,";
+		mes "螟, 禥.";
+		mes "- 瘆ㄚ 猧ぺ -";
 		break;
 	case 2:
-		mes "有时候, 我们会专注于一扇关上了的门,";
-		mes "以至于发现真正的门早已打开时, 已经太晚了.";
-		mes "- 亚历山大·格拉汉姆·贝尔 -";
+		mes "Τ, и穦盡猔闽,";
+		mes "祇瞷痷タΝゴ秨, 竒び边.";
+		mes "- ㄈ菌┰簙﹊ī焊 -";
 		break;
 	case 3:
-		mes "如果这是一件痛苦的事情, 为什么你还要去做?";
-		mes "答案很简单.";
-		mes "因为它维持着我的生命,";
-		mes "因为它让我感觉到活着.";
-		mes "我的肉体在受苦, 但我的灵魂却充满欢乐";
-		mes "做着我一直向往的事情.";
-		mes "- 比亚 -";
+		mes "狦硂琌ン礹璚ㄆ薄, ぐ临璶暗?";
+		mes "氮虏虫.";
+		mes "ウ蝴帝иネ㏑,";
+		mes "ウ琵и稰谋帝.";
+		mes "иψ蔨璚, и艶活玱骸舧贾";
+		mes "暗帝и┕ㄆ薄.";
+		mes "- ゑㄈ -";
 		break;
 	case 4:
 		mes "You cannot persuade anybody";
 		mes "before you change yourself.";
-		mes "- 高宗哲 -";
+		mes "- 蔼﹙ -";
 		break;
 	case 5:
 		mes "Never regret what you have chosen.";
-		mes "- 高美英 -";
+		mes "- 蔼璣 -";
 		break;
 	case 6:
 		mes "A man is not finished when he is defeated.";
 		mes "He is finished when he quits.";
-		mes "- 理查德·尼克松 -";
+		mes "- 瞶琩紈ェ猀 -";
 		break;
 	case 7:
 		mes "Failure is instructive.";
 		mes "The person who really thinks";
 		mes "learns quite as much from his failures";
 		mes "as from his successes.";
-		mes "- 约翰·杜威 -";
+		mes "- 揩 -";
 		break;
 	case 8:
 		mes "We sow our thoughts, and we reap our actions;";
 		mes "we sow our actions, and we reap our habits;";
 		mes "we sow our habits, and we reap our characters;";
 		mes "we sow our characters, and we reap our destiny.";
-		mes "- 伊拉兹马斯 -";
+		mes "- レ┰皑吹 -";
 		break;
 	case 9:
 		mes "There is no greater folly";
 		mes "in the world";
 		mes "than for a man to despair.";
-		mes "- 塞万提斯 -";
+		mes "- 峨蒃矗吹 -";
 		break;
 	case 10:
 		mes "Humility is the most difficult";
 		mes "of all virtues to achieve,";
 		mes "nothing dies harder than the desire";
 		mes "to think well of oneself.";
-		mes "- 托马斯·斯特尔那斯·艾略特 -";
+		mes "- Λ皑吹吹疭焊ê吹︺菠疭 -";
 		break;
 	case 11:
 		mes "You have to assess your talent...";
 		mes "and ask yourself if this is going to be";
 		mes "an avocation or a job.";
-		mes "- 诺玛·克雷顿 -";
+		mes "- 空嚎筽箉 -";
 		break;
 	case 12:
 		mes "An eye for an eye";
 		mes "only ends up";
 		mes "making the whole world blind.";
-		mes "- 甘地 -";
+		mes "- ヌ -";
 		break;
 	case 13:
 		mes "A man of no talent";
 		mes "craves long life,";
 		mes "yet a fool, if offered eternity,";
 		mes "would not know what to do with it.";
-		mes "- 索尔仁尼琴 -";
+		mes "- 焊くェ礮 -";
 		break;
 	case 14:
 		mes "It is not because the truth is too difficult to see that we make mistakes...";
 		mes "we make mistakes because the easiest and most comfortable course for us";
 		mes "is to seek insight where it accords with our emotions - especially selfish ones.";
-		mes "- 索尔仁尼琴 -";
+		mes "- 焊くェ礮 -";
 		break;
 	case 15:
 		mes "Beware of a man";
 		mes "of one book.";
-		mes "- 英文 谚语 -";
+		mes "- 璣ゅ 课粂 -";
 		break;
 	case 16:
 		mes "Bees drink water to make honey,";
 		mes "and snakes drink water to make poison.";
-		mes "- 英文 谚语 -";
+		mes "- 璣ゅ 课粂 -";
 		break;
 	case 17:
 		mes "Despair is an illness leading to death.";
-		mes "- 克尔凯郭尔 -";
+		mes "- 焊惩尝焊 -";
 		break;
 	case 18:
 		mes "To eat bread without hope is";
 		mes "still slowly to starve to death.";
-		mes "- 珀尔·布克 -";
+		mes "- 焊ガ -";
 		break;
 	case 19:
 		mes "Optimism is the faith that leads to achievement.";
 		mes "Nothing can be done";
 		mes "without hope and confidence.";
-		mes "- 海伦·凯勒 -";
+		mes "- 惩扒 -";
 		break;
 	case 20:
 		mes "Look deep into nature,";
 		mes "and then you will understand";
 		mes "everything better.";
-		mes "- 阿尔伯特·爱因斯坦 -";
+		mes "- 焊疭稲吹㈱ -";
 		break;
 	case 21:
 		mes "Many of life's failures are";
@@ -583,7 +583,7 @@ mora,140,186,3	script	草精哲学家	517,{
 		mes "how close they were";
 		mes "to success";
 		mes "when they gave up.";
-		mes "- 托马斯·爱迪生 -";
+		mes "- Λ皑吹稲瓆ネ -";
 		break;
 	case 22:
 		mes "I have more fun and enjoy more financial success";
@@ -591,60 +591,60 @@ mora,140,186,3	script	草精哲学家	517,{
 		mes "to get what I want";
 		mes "and start helping other people ";
 		mes "get what they want.";
-		mes "- 斯宾塞·约翰逊, 拉里威尔逊 -";
+		mes "- 吹猾峨揩还, ┰ń焊还 -";
 		break;
 	case 23:
 		mes "Age is like love, it cannot be hid.";
-		mes "- 托马斯·戴克 -";
+		mes "- Λ皑吹拦 -";
 		break;
 	case 24:
 		mes "We can't become";
 		mes "what we need to be";
 		mes "by remaining what we are.";
-		mes "- 奥普拉·温弗瑞 -";
+		mes "- 而炊┰放ケ风 -";
 		break;
 	case 25:
 		mes "Turn your wounds.";
 		mes "into wisdom.";
-		mes "- 奥普拉·温弗瑞 -";
+		mes "- 而炊┰放ケ风 -";
 		break;
 	case 26:
 		mes "Pain is the great teacher of mankind.";
-		mes "- 玛丽 E. 埃申巴赫 -";
+		mes "- 嚎腞 E. 甁ビぺ划 -";
 		break;
 	case 27:
 		mes "The superior man thinks always";
 		mes "of virtue; the common man";
 		mes "thinks of comfort.";
-		mes "- 孔子 -";
+		mes "- ふ -";
 		break;
 	case 28:
 		mes "Pleasure is often spoiled by describing it.";
-		mes "- 司汤达（斯丹达尔） -";
+		mes "- 傣笷吹う笷焊 -";
 		break;
 	case 29:
 		mes "The end comes when we";
 		mes "no longer talk with ourselves.";
 		mes "It is the end of genuine thinking";
 		mes "and the beginning of the final loneliness.";
-		mes "- 爱德华·吉本 -";
+		mes "- 稲紈地セ -";
 		break;
 	case 30:
 		mes "They who have conquered doubt and fear";
 		mes "have conquered failure.";
-		mes "- 詹姆斯·爱伦 -";
+		mes "- 糕﹊吹稲 -";
 		break;
 	case 31:
 		mes "Our greatest pride was";
 		mes "not that we never fail, but rather";
 		mes "that we always stand up when we fall.";
-		mes "- 孔子 -";
+		mes "- ふ -";
 		break;
 	case 32:
 		mes "When you love a person";
 		mes "all fear disappears.";
 		mes "And when you are afraid all love disappears.";
-		mes "- 奥修 -";
+		mes "- 而 -";
 		break;
 	case 33:
 		mes "The power of our unconscious mind is enormous;";
@@ -652,7 +652,7 @@ mora,140,186,3	script	草精哲学家	517,{
 		mes "we can do with the help";
 		mes "of the unconscious mind";
 		mes "more sensible than the conscious.";
-		mes "- 奥修 -";
+		mes "- 而 -";
 		break;
 	case 34:
 		mes "Truth is simple. Very simple-";
@@ -661,167 +661,167 @@ mora,140,186,3	script	草精哲学家	517,{
 		mes "Unless you become a child again";
 		mes "you will not be able to understand it.";
 		mes "It is an experience, not speculation.";
-		mes "- 奥修 -";
+		mes "- 而 -";
 		break;
 	case 35:
 		mes "The best and most beautiful things in the world";
 		mes "cannot be seen or even touched -";
 		mes "they must be felt with the heart.";
-		mes "- 海伦·凯勒 -";
+		mes "- 惩扒 -";
 		break;
 	case 36:
 		mes "Never bend your head. Always hold it high.";
 		mes "Look the world straight in the eye.";
-		mes "- 海伦·凯勒 -";
+		mes "- 惩扒 -";
 		break;
 	case 37:
 		mes "Alone we can do so little;";
 		mes "together we can do so much.";
-		mes "- 海伦·凯勒 -";
+		mes "- 惩扒 -";
 		break;
 	case 38:
 		mes "The highest result of education is tolerance.";
-		mes "- 海伦·凯勒 -";
+		mes "- 惩扒 -";
 		break;
 	case 39:
 		mes "We are, each of us";
 		mes "angels with only one wing;";
 		mes "and we can only fly";
 		mes "by embracing one another.";
-		mes "- 卢西亚诺·克雷申佐 -";
+		mes "- 縞﹁ㄈ空筽ビ︴ -";
 		break;
 	case 40:
 		mes "He that feeds himself from waiting could die of hunger.";
-		mes "- 丹麦 谚语 -";
+		mes "- う沉 课粂 -";
 		break;
 	case 41:
 		mes "A bad peace is better";
 		mes "than a good war.";
-		mes "- 俄罗斯 谚语 -";
+		mes "- 玐霉吹 课粂 -";
 		break;
 	case 42:
 		mes "He who wants to warm himself";
 		mes "in old age must build";
 		mes "a fireplace in his youth.";
-		mes "- 德国 谚语 -";
+		mes "- 紈瓣 课粂 -";
 		break;
 	case 43:
 		mes "Those who are choosy often pick the worst.";
-		mes "- 伊洛卡诺 谚语 -";
+		mes "- レ空 课粂 -";
 		break;
 	case 44:
 		mes "Even a God will lose money";
 		mes "after three days of gambling.";
-		mes "- 中国 谚语 -";
+		mes "- い瓣 课粂 -";
 		break;
 	case 45:
 		mes "I fear not the man";
 		mes "who has practiced 10,000 kicks once,";
 		mes "but I fear the man";
 		mes "who has practiced one kick 10,000 times.";
-		mes "- 李小龙 -";
+		mes "- 纒 -";
 		break;
 	case 46:
 		mes "The best way to be remembered";
 		mes "is to have a life.";
 		mes "worth remembering.";
-		mes "- 李小龙 -";
+		mes "- 纒 -";
 		break;
 	case 47:
 		mes "To know oneself is to study oneself";
 		mes "in action with another person.";
-		mes "- 李小龙 -";
+		mes "- 纒 -";
 		break;
 	case 48:
 		mes "I'm not one of those,";
 		mes "who do not believe";
 		mes "in love at first sight,";
 		mes "but I believe in taking a second look.";
-		mes "- 李小龙 -";
+		mes "- 纒 -";
 		break;
 	case 49:
 		mes "One should never rush marriage.";
 		mes "Unlike fruit, marriage is";
 		mes "always in season.";
-		mes "- 托尔斯泰 -";
+		mes "- Λ焊吹 -";
 		break;
 	case 50:
 		mes "Those who want to succeed";
 		mes "will find a way, those who";
 		mes "don't will find an excuse.";
-		mes "- 利奥拉 -";
+		mes "- 而┰ -";
 		break;
 	case 51:
 		mes "Motivation is what gets you started.";
 		mes "Habit is what keeps you going.";
-		mes "- 吉姆·瑞恩 -";
+		mes "- ﹊风 -";
 		break;
 	case 52:
 		mes "He has achieved success who has lived well,";
 		mes "laughed often, and loved much.";
-		mes "- 贝茜斯坦利 -";
+		mes "- ī觹吹㈱ -";
 		break;
 	case 53:
 		mes "A poor person spends his money";
 		mes "and invests the rest.";
 		mes "A rich person invests his money";
 		mes "and spends what's left.";
-		mes "- 吉姆·瑞恩 -";
+		mes "- ﹊风 -";
 		break;
 	case 54:
 		mes "If you can't find the key to success,";
 		mes "pick the lock.";
 		mes "One of the most important principles of success is";
 		mes "developing the habit of going the extra mile.";
-		mes "- 拿破仑·希尔 -";
+		mes "- 瘆ㄚ焊 -";
 		break;
 	case 55:
 		mes "The human race has";
 		mes "one really effective weapon,";
 		mes "and that is laughter.";
-		mes "- 马克·吐温 -";
+		mes "- 皑放 -";
 		break;
 	case 56:
 		mes "A day without laughter is a day wasted.";
-		mes "- 查理·卓别林 -";
+		mes "- 琩瞶狶 -";
 		break;
 	case 57:
 		mes "He who laughs best today,";
 		mes "will also laugh last.";
-		mes "- 尼采 -";
+		mes "- ェ -";
 		break;
 	case 58:
 		mes "Laughter is the sun that";
 		mes "drives winter from the human face.";
-		mes "- 维克多·雨果 -";
+		mes "- 蝴獴狦 -";
 		break;
 	case 59:
 		mes "Laugh, and the world laughs";
 		mes "with you; weep, and";
 		mes "you weep alone.";
-		mes "- 埃拉·惠勒·威尔科克斯 -";
+		mes "- 甁┰磃扒焊吹 -";
 		break;
 	case 60:
 		mes "It is impossible for you to be angry";
 		mes "and laugh at the same time.";
 		mes "Anger and laughter are mutually exclusive";
 		mes "and you have the power to choose either.";
-		mes "- 韦恩·戴尔 -";
+		mes "- 拦焊 -";
 		break;
 	case 61:
 		mes "We don't laugh because we're happy";
 		mes "- we're happy because we laugh.";
-		mes "- 威廉·詹姆斯 -";
+		mes "- 稧糕﹊吹 -";
 		break;
 	case 62:
 		mes "The person who knows how to laugh at himself";
 		mes "will never cease to be amused.";
-		mes "- 雪莉·麦克雷恩 -";
+		mes "- 撤产沉筽 -";
 		break;
 	case 63:
 		mes "The young man who has not wept is a savage,";
 		mes "and the older man who will not laugh is a fool.";
-		mes "- 乔治·桑塔耶拿 -";
+		mes "- 踌獀娥瑿 -";
 		break;
 	case 64:
 		mes "I do not have much patience";
@@ -831,30 +831,30 @@ mora,140,186,3	script	草精哲学家	517,{
 		mes "If it does need additional interpretation";
 		mes "then I question";
 		mes "whether it has fulfilled its purpose.";
-		mes "- 查理·卓别林 -";
+		mes "- 琩瞶狶 -";
 		break;
 	case 65:
 		mes "Life is a tragedy";
 		mes "when seen in close-up,";
 		mes "but a comedy";
 		mes "in long-shot.";
-		mes "- 查理·卓别林 -";
+		mes "- 琩瞶狶 -";
 		break;
 	case 66:
 		mes "The clearest sign of wisdom is continued cheerfulness.";
-		mes "- 米歇尔·德·蒙泰涅 -";
+		mes "- μ凡焊紈籜疘 -";
 		break;
 	case 67:
 		mes "The time you enjoyed wasting";
 		mes "was not wasted.";
-		mes "- 约翰·列侬 -";
+		mes "- 揩机 -";
 		break;
 	case 68:
 		mes "True humor springs not more from the head than from the heart.";
 		mes "It is not contempt; its essence is love.";
 		mes "It issues not in laughter,";
 		mes "but in still smiles, which lie far deeper.";
-		mes "- 托马斯·卡莱尔 -";
+		mes "- Λ皑吹弟焊 -";
 		break;
 	case 69:
 		mes "Through humor, you can soften";
@@ -864,7 +864,7 @@ mora,140,186,3	script	草精哲学家	517,{
 		mes "no matter how painful";
 		mes "your situation might be,";
 		mes "you can survive it.";
-		mes "- 比尔·科斯比 -";
+		mes "- ゑ焊吹ゑ -";
 		break;
 	case 70:
 		mes "My great hope is to laugh";
@@ -873,144 +873,144 @@ mora,140,186,3	script	草精哲学家	517,{
 		mes "and try to love somebody";
 		mes "and have the courage";
 		mes "to accept the love in return.";
-		mes "- 玛雅.安吉罗 -";
+		mes "- 嚎懂.霉 -";
 		break;
 	}
 	next;
-	mes "[草精哲学家]";
-	mes "说者无意";
-	mes "听者有心.";
+	mes "[弘厩產]";
+	mes "弧礚種";
+	mes "Τみ.";
 	next;
-	mes "[草精哲学家]";
-	mes "我在想";
-	mes "你对我的建议有什么想法.";
+	mes "[弘厩產]";
+	mes "и稱";
+	mes "癸и某Τぐ稱猭.";
 	next;
 	input .@inputstr$;
-	mes "[草精哲学家]";
-	mes "所以你想着 "+.@inputstr$+".";
+	mes "[弘厩產]";
+	mes "┮稱帝 "+.@inputstr$+".";
 	next;
-	mes "[草精哲学家]";
+	mes "[弘厩產]";
 	mes "... ... ... ...";
 	next;
-	mes "[草精哲学家]";
-	mes "我不知道, 关于这个问题";
-	mes "并没有唯一的答案...";
-	mes "仁者见仁, 智者见智.";
+	mes "[弘厩產]";
+	mes "иぃ笵, 闽硂拜肈";
+	mes "⊿Τ斑氮...";
+	mes "くǎく, 醇ǎ醇.";
 	close;
 }
 
 -	script	#mora_traveler	-1,{
-	mes "[生气的旅客]";
-	mes "你... 你敢和我玩一个游戏吗?";
+	mes "[ネ蒩]";
+	mes "... 幢㎝и村栏盾?";
 	emotion ET_ANGER, getnpcid(0, "Traveler#ep14_1_1");
 	next;
-	mes "[提问的旅客]";
-	mes "什么...? 你能证明吗?";
-	mes "只问你, 你能证明吗?!!";
+	mes "[矗拜]";
+	mes "ぐ...? 谍盾?";
+	mes "拜, 谍盾?!!";
 	emotion ET_FRET, getnpcid(0, "Traveler#ep14_1_2");
 	next;
-	mes "[劝架的旅客]";
-	mes "别打了, 别打了!";
-	mes "不要把事儿愈搞愈大...";
+	mes "[腢琜]";
+	mes "ゴ, ゴ!";
+	mes "ぃ璶рㄆ稶穌稶...";
 	emotion ET_PROFUSELY_SWEAT, getnpcid(0, "Traveler#ep14_1_3");
 	next;
-	mes "[劝架的旅客]";
-	mes "噢! 为什么我们不问问那个人呢?";
+	mes "[腢琜]";
+	mes "揪! ぐиぃ拜拜ê㎡?";
 	next;
-	mes "[生气的旅客]";
-	mes "对啊, 好主意!";
-	mes "你好啊, 那边的骚年~";
-	mes "说你呢, 就是你啊, 骚年!";
+	mes "[ネ蒩]";
+	mes "癸摆, 種!";
+	mes "摆, ê娩奶~";
+	mes "弧㎡, 碞琌摆, 奶!";
 	emotion ET_AHA, getnpcid(0, "Traveler#ep14_1_1");
 	next;
-	mes "他们似乎在招呼你.";
+	mes "┷㊣.";
 	next;
-	if(select("看看什么情况.:懒的管闲事儿.") == 2) {
-		mes "过去瞅瞅.";
-		mes "远远的走开.";
+	if(select("ぐ薄猵.:胕恨秪ㄆ.") == 2) {
+		mes "筁怃怃.";
+		mes "环环ǐ秨.";
 		close;
 	}
 	mes "["+strcharinfo(0)+"]";
-	mes "什么情况啊, 这是?";
+	mes "ぐ薄猵摆, 硂琌?";
 	emotion ET_QUESTION, playerattached();
 	next;
-	mes "[生气的旅客]";
-	mes "我来说吧.";
-	mes "小明的妈妈有10个孩子.";
-	mes "最大的那个叫做小明1号,";
-	mes "稍小一点儿的叫做小明2号,";
-	mes "再小一点儿的叫做小明3号...";
-	mes "一直到小明9号...";
-	mes "你知道什么个意思了吧?";
+	mes "[ネ蒩]";
+	mes "иㄓ弧.";
+	mes "洱洱Τ10.";
+	mes "程ê暗1腹,";
+	mes "祔翴暗2腹,";
+	mes "翴暗3腹...";
+	mes "9腹...";
+	mes "笵ぐ種?";
 	emotion ET_ANGER, getnpcid(0, "Traveler#ep14_1_1");
 	next;
-	mes "[提问的旅客]";
-	mes "好啦, 你知道什么情况了.";
-	mes "所以当我问他最小的那个叫什么名字的时候,";
-	mes "并且告诉了他答案的时候,";
-	mes "他变的非常暴躁并开始诅咒我.";
+	mes "[矗拜]";
+	mes "罢, 笵ぐ薄猵.";
+	mes "┮讽и拜程êぐ,";
+	mes "禗氮,";
+	mes "跑獶盽忌募秨﹍禔〨и.";
 	emotion ET_FRET, getnpcid(0, "Traveler#ep14_1_2");
 	next;
-	mes "[生气的旅客]";
-	mes "你...你这个婊子养的!";
-	mes "那么, 关于这个问题";
-	mes "你的答案是什么?";
+	mes "[ネ蒩]";
+	mes "...硂盌緄!";
+	mes "ê, 闽硂拜肈";
+	mes "氮琌ぐ?";
 	emotion ET_ANGER, getnpcid(0, "Traveler#ep14_1_1");
 	next;
-	switch(select("小明10号.:小明.:你们是怎么想的?")) {
+	switch(select("10腹.:.:琌稱?")) {
 	case 1:
 		mes "["+strcharinfo(0)+"]";
-		mes "问题的答案就是小明10号.";
-		mes "为这点儿屁事儿你们就打起来了?";
+		mes "拜肈氮碞琌10腹.";
+		mes "硂翴Ьㄆ碞ゴ癬ㄓ?";
 		next;
-		mes "[生气的旅客]";
-		mes "看到没看到没? 连他也这么说";
-		mes "答案就是小明10号.";
-		mes "你TMD敢耍我?";
+		mes "[ネ蒩]";
+		mes "⊿⊿? 硈硂弧";
+		mes "氮碞琌10腹.";
+		mes "TMD幢瑼и?";
 		emotion ET_KIK, getnpcid(0, "Traveler#ep14_1_1");
 		next;
-		mes "[提问的旅客]";
-		mes "你这个傻X ... 你没有抓住最细小的线索!";
+		mes "[矗拜]";
+		mes "硂短X ... ⊿Τъ程灿絬!";
 		emotion ET_FRET, getnpcid(0, "Traveler#ep14_1_2");
 		break;
 	case 2:
 		mes "["+strcharinfo(0)+"]";
-		mes "问题的答案就是小明.";
-		mes "你说过小明的妈妈有10个孩子.";
-		mes "所以不管其它的孩子叫什么名字";
-		mes "小明1号...小明2号...还是小明9号,";
-		mes "剩下的一个, 肯定是小明,";
-		mes "否则她就不是小明的妈妈了.";
+		mes "拜肈氮碞琌.";
+		mes "弧筁洱洱Τ10.";
+		mes "┮ぃ恨ㄤウぐ";
+		mes "1腹...2腹...临琌9腹,";
+		mes "逞, ﹚琌,";
+		mes "玥碞ぃ琌洱洱.";
 		next;
-		mes "[提问的旅客]";
-		mes "我就是这个意思!";
-		mes "我简直不能容忍那个傻X.";
-		mes "我想我和他生活在两个世界里.";
+		mes "[矗拜]";
+		mes "и碞琌硂種!";
+		mes "и虏ぃ甧гê短X.";
+		mes "и稱и㎝ネㄢń.";
 		emotion ET_OK, getnpcid(0, "Traveler#ep14_1_2");
 		next;
-		mes "[生气的旅客]";
-		mes "你这个傻X ...你TMD是听他跟你说的吧?";
+		mes "[ネ蒩]";
+		mes "硂短X ...TMD琌蛤弧?";
 		emotion ET_ANGER, getnpcid(0, "Traveler#ep14_1_1");
 		break;
 	case 3:
 		mes "["+strcharinfo(0)+"]";
-		mes "我不知道.";
-		mes "你们自己搞定吧.";
+		mes "иぃ笵.";
+		mes "穌﹚.";
 		next;
-		mes "[劝架的旅客]";
-		mes "你这个无用的傻X,";
-		mes "我裤子都脱了, 你跟我说这?";
+		mes "[腢琜]";
+		mes "硂礚ノ短X,";
+		mes "и壳常叉, 蛤и弧硂?";
 		emotion ET_FRET, getnpcid(0, "Traveler#ep14_1_3");
 		break;
 	}
 	next;
-	mes "*砰的一声*";
-	mes "你感觉后脑勺子被重击.";
-	mes "你的视线开始模糊.";
+	mes "*痽羘*";
+	mes "稰谋福砆阑.";
+	mes "跌絬秨﹍家絢.";
 	specialeffect2 EF_HIT1;
 	sc_start SC_BLIND,20000,0;
 	next;
-	mes "在你迷迷糊糊的时候, 你感觉有人从你口袋里摸走了什么...";
+	mes "癵癵絢絢, 稰谋Τ眖砋ń篘ǐぐ...";
 	if (Zeny >= 5000)
 		set Zeny, Zeny-5000;
 	else
@@ -1020,158 +1020,158 @@ mora,140,186,3	script	草精哲学家	517,{
 	warp "mora",31,132;
 	end;
 }
-mora,140,72,4	duplicate(#mora_traveler)	生气的旅客#ep14_1_1	513	//Upset Traveler
-mora,138,72,6	duplicate(#mora_traveler)	提问的旅客#ep14_1_2	513	//Traveler That Posed the Question
-mora,139,73,4	duplicate(#mora_traveler)	劝架的旅客#ep14_1_3	513	//Traveler Trying to Stop the Fight
+mora,140,72,4	duplicate(#mora_traveler)	ネ蒩#ep14_1_1	513	//Upset Traveler
+mora,138,72,6	duplicate(#mora_traveler)	矗拜#ep14_1_2	513	//Traveler That Posed the Question
+mora,139,73,4	duplicate(#mora_traveler)	腢琜#ep14_1_3	513	//Traveler Trying to Stop the Fight
 
 // Set 3 :: tre
 //============================================================
-mora,132,185,5	script	莫拉村民#sleep5	518,{
-	mes "[莫拉村民]";
-	mes "哎呀!~ 哎呀!~";
+mora,132,185,5	script	馋┰チ#sleep5	518,{
+	mes "[馋┰チ]";
+	mes "玼!~ 玼!~";
 	close;
 }
 
-mora,133,185,5	script	莫拉村民#sleep2	524,{
-	mes "[莫拉村民]";
-	mes "呼噜...";
+mora,133,185,5	script	馋┰チ#sleep2	524,{
+	mes "[馋┰チ]";
+	mes "㊣翽...";
 	close;
 }
 
-mora,134,185,3	script	莫拉村民#sleep1	525,{
-	mes "[莫拉村民]";
-	mes "吧唧--";
+mora,134,185,3	script	馋┰チ#sleep1	525,{
+	mes "[馋┰チ]";
+	mes "瓵--";
 	close;
 }
 
-mora,132,184,5	script	莫拉村民#sleep6	522,{
-	mes "[莫拉村民]";
-	mes "吧唧--";
+mora,132,184,5	script	馋┰チ#sleep6	522,{
+	mes "[馋┰チ]";
+	mes "瓵--";
 	close;
 }
 
-mora,133,184,1	script	莫拉村民#sleep4	1790,{
-	mes "[莫拉村民]";
-	mes "呜咽...";
+mora,133,184,1	script	馋┰チ#sleep4	1790,{
+	mes "[馋┰チ]";
+	mes "躲珅...";
 	close;
 }
 
-mora,134,184,1	script	莫拉村民#sleep3	516,{
-	mes "[莫拉村民]";
-	mes "哎呀哎呀呀呀~";
+mora,134,184,1	script	馋┰チ#sleep3	516,{
+	mes "[馋┰チ]";
+	mes "玼玼~";
 	close;
 }
 
-mora,132,183,7	script	莫拉村民#sleep7	524,{
-	mes "[莫拉村民]";
+mora,132,183,7	script	馋┰チ#sleep7	524,{
+	mes "[馋┰チ]";
 	mes "ZzZzZz...";
 	close;
 }
 
-mora,133,183,7	script	莫拉村民#sleep8	518,{
-	mes "[莫拉村民]";
+mora,133,183,7	script	馋┰チ#sleep8	518,{
+	mes "[馋┰チ]";
 	mes "ZzZzZz...";
 	close;
 }
 
-mora,134,183,1	script	莫拉村民#sleep9	522,{
-	mes "[莫拉村民]";
+mora,134,183,1	script	馋┰チ#sleep9	522,{
+	mes "[馋┰チ]";
 	mes "ZzZzZz...";
 	close;
 }
 
-mora,43,127,3	script	旅店招待#mora_inn	522,{
-	mes "[旅店招待]";
-	mes "噢~ 看起来我们有了另一个冒险家了.";
-	mes "你从哪里来?";
+mora,43,127,3	script	┍┷#mora_inn	522,{
+	mes "[┍┷]";
+	mes "揪~ 癬ㄓиΤ玙繧產.";
+	mes "眖ńㄓ?";
 	next;
-	switch(select("- 仅仅来记录一下游戏.:- 我需要休息.:- 我以前住的地方被称为...:- 我如何使用仓库?")) {
+	switch(select("- 度度ㄓ癘魁村栏.:- и惠璶ヰ.:- и玡よ砆嘿...:- иㄏノ畐?")) {
 	case 1:
-		mes "[旅店招待]";
-		mes "哦, 呢么匆忙?";
-		mes "你刚刚来到这里, 就准备去别的地方?";
+		mes "[┍┷]";
+		mes "瓳, ㎡Γ?";
+		mes "ㄓ硂ń, 碞称よ?";
 		next;
-		mes "[旅店招待]";
-		mes "你要知道, 欲速则不达. 啧啧啧!.";
-		mes "好了, 游戏记录完成.";
+		mes "[┍┷]";
+		mes "璶笵, 饼硉玥ぃ笷. 股股股!.";
+		mes ", 村栏癘魁ЧΘ.";
 		savepoint "mora",56,143,1,1;
 		close;
 	case 2:
-		mes "[旅店招待]";
-		mes "唉唉, 我也需要休息.";
-		mes "休息费用 5000 Zeny. 要不要订下房间?";
+		mes "[┍┷]";
+		mes ", и惠璶ヰ.";
+		mes "ヰ禣ノ 5000 Zeny. 璶ぃ璶璹┬丁?";
 		next;
-		switch(select("- 是:- 否")) {
+		switch(select("- 琌:- ")) {
 		case 1:
 			if (Zeny < 5000) {
-				mes "[旅店招待]";
-				mes "需要 5000z.";
+				mes "[┍┷]";
+				mes "惠璶 5000z.";
 				close;
 			}
-			mes "[旅店招待]";
-			mes "请当自己家里一样.";
+			mes "[┍┷]";
+			mes "叫讽產ń妓.";
 			close2;
 			set Zeny, Zeny - 5000;
 			percentheal 100,100;
 			warp "mora",32,123;
 			end;
 		case 2:
-			mes "[旅店招待]";
-			mes "如果你没钱的话, 你可以去村子中心的水池子里面泡着.";
-			mes "它会温暖你.";
+			mes "[┍┷]";
+			mes "狦⊿窥杠, いみń獁帝.";
+			mes "ウ穦放穢.";
 			close;
 		}
 	case 3:
 		input .@inputstr$;
 		mes "["+strcharinfo(0)+"]";
-		mes "我来自一个叫做 "+.@inputstr$+" 的地方.";
+		mes "иㄓ暗 "+.@inputstr$+" よ.";
 		next;
-		mes "[旅店招待]";
-		mes "噢, 我想我原来听说过那个地方!";
+		mes "[┍┷]";
+		mes "揪, и稱иㄓ弧筁êよ!";
 		next;
 		if (.@inputstr$ == "Shinlim") {
-			mes "[旅店招待]";
-			mes "我听说那儿有一座塔, 塔上有可怕的女巫把凶猛的怪兽关在一个巨大的锅里, 并对它们施以邪恶的魔法, 有这回事儿吗?";
+			mes "[┍┷]";
+			mes "и弧êΤ畒娥, 娥Τ┤рた瞨┣脋闽エ羚ń, 癸ウ琁ǜ碿臸猭, Τ硂ㄆ盾?";
 			next;
-			mes "[旅店招待]";
-			mes "更糟糕的是, 附近只要有生病的人, 病人身上的气味就能把更多的怪兽引过来!";
-			mes "并且那个病人会无目的的朝着那座塔走去, 直到走进那口巨大的锅里!";
+			mes "[┍┷]";
+			mes "罺縷琌, 璶Τネ痜, 痜ō蒩碞р┣脋ま筁ㄓ!";
+			mes "ê痜穦礚ヘ绰帝ê畒娥ǐ, ǐ秈êエ羚ń!";
 			emotion ET_STARE_ABOUT, playerattached();
 			next;
 		} else {
-			mes "[旅店招待]";
-			mes "我听说那儿有一些怪物不论刮风下雨都不会醒来, 除非他们的爱人或父母来叫醒他们!";
-			mes "并且总是有乌云笼罩着头顶, 并最终形成风暴!";
+			mes "[┍┷]";
+			mes "и弧êΤㄇ┣ぃ阶獴常ぃ穦眶ㄓ, 埃獶稲┪ダㄓ眶!";
+			mes "羆琌Τ疩お泞竛帝繷郴, 程沧Θ忌!";
 			next;
 		}
-		mes "[旅店招待]";
-		mes "这是多么的可怕!";
+		mes "[┍┷]";
+		mes "硂琌┤!";
 		close;
 	case 4:
-		mes "[旅店招待]";
-		mes "在我右边蔬菜形状的抽屉.";
+		mes "[┍┷]";
+		mes "и娩江垫┾盤.";
 		close;
 	}
 }
 
-mora,48,128,0	script	抽屉#mora_warehouse	111,{
+mora,48,128,0	script	┾盤#mora_warehouse	111,{
 	if(!callfunc("F_CanOpenStorage")){
-		mes "- 你不记得如何打开仓库. -";
+		mes "- ぃ癘眔ゴ秨畐. -";
 		close;
 	}
-	mes "- 1 0 0 的数字是写在蔬菜形状的抽屉上的小字母. -";
+	mes "- 1 0 0 计琌糶江垫┾盤ダ. -";
 	next;
-	switch(select("- 投币 100 Zeny.:- 什么都不做.")) {
+	switch(select("- щ刽 100 Zeny.:- ぐ常ぃ暗.")) {
 	case 1:
 		if (Zeny < 100) {
-			mes "- 你看上去没有 100 Zeny. -";
+			mes "- ⊿Τ 100 Zeny. -";
 			close;
 		}
 		set Zeny, Zeny - 100;
 		openstorage;
 		close;
 	case 2:
-		mes "- 你放弃了使用仓库. -";
+		mes "- 斌ㄏノ畐. -";
 		close;
 	}
 }

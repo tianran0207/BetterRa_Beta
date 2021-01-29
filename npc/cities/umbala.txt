@@ -24,226 +24,226 @@
 //= 2.1 Updated to Aegis 10.3 standards. [L0ne_W0lf]
 //============================================================
 
-comodo,170,137,7	script	拉艾德#um	4_M_02,{
+comodo,170,137,7	script	┰︺紈#um	4_M_02,{
 	end;
 }
 
-comodo,171,137,1	script	黑伊司#um	4_F_03,{
-	mes "[拉艾德]";
-	mes "一定是藏有惊人的宝物啊!";
+comodo,171,137,1	script	堵レ#um	4_F_03,{
+	mes "[┰︺紈]";
+	mes "﹚琌旅Τ誥腳摆!";
 	next;
-	mes "[黑伊司]";
-	mes "找到宝物的话, 一直以来把我们当笨蛋二人组看待的那些人, 也会消失吧!!";
+	mes "[堵レ]";
+	mes "т腳杠, ㄓри讽猜矹舱êㄇ, 穦ア!!";
 	next;
-	mes "[拉艾德]";
-	mes "终于!";
+	mes "[┰︺紈]";
+	mes "沧!";
 	next;
-	mes "[黑伊司]";
-	mes "我们也来去寻找宝物吧!";
+	mes "[堵レ]";
+	mes "иㄓ碝т腳!";
 	next;
-	mes "[拉艾德]";
-	mes "说干就干~ !!";
+	mes "[┰︺紈]";
+	mes "弧碞~ !!";
 	emotion ET_KIK;
 	next;
-	mes "[拉艾德]";
+	mes "[┰︺紈]";
 	mes "............";
 	next;
-	mes "[拉艾德]";
-	mes "话说回来...你觉得他";
-	mes "会轻易的开口吗?";
-	mes "应该没呢么简单.";
+	mes "[┰︺紈]";
+	mes "杠弧ㄓ...谋眔";
+	mes "穦淮秨盾?";
+	mes "莱赣⊿㎡虏虫.";
 	emotion ET_SCRATCH;
-	emotion ET_SCRATCH, getnpcid(0, "拉艾德#um");
+	emotion ET_SCRATCH, getnpcid(0, "┰︺紈#um");
 	next;
-	select("唔? 宝物?");
-	mes "[拉艾德]";
-	mes "啊, 你从什么时候开始听的啊?!";
+	select("? 腳?");
+	mes "[┰︺紈]";
+	mes "摆, 眖ぐ秨﹍摆?!";
 	next;
-	mes "[黑伊司]";
-	mes "呵喔, 你也想要听有关宝物的事情啊?";
-	mes "当然你也是冒险家的话, 应该知道对重要的东西,";
-	mes "总是需要妥当的补偿吧?";
+	mes "[堵レ]";
+	mes "翅, 稱璶Τ闽腳ㄆ薄摆?";
+	mes "讽礛琌玙繧產杠, 莱赣笵癸璶狥﹁,";
+	mes "羆琌惠璶Т讽干纕?";
 	emotion ET_KIK;
 	next;
-	mes "[拉艾德]";
-	mes "看来, 我们需要小心";
-	mes "小心再小心一些";
-	mes "*日!* ^555555没有";
-	mes "可疑的人物了.^000000";
+	mes "[┰︺紈]";
+	mes "ㄓ, и惠璶み";
+	mes "みみㄇ";
+	mes "*ら!* ^555555⊿Τ";
+	mes "好.^000000";
 	next;
-	mes "[拉艾德, 黑伊司]";
-	mes "给我1000金币的话, 我会告诉你的!";
+	mes "[┰︺紈, 堵レ]";
+	mes "倒и1000刽杠, и穦禗!";
 	emotion ET_KIK;
-	emotion ET_KIK, getnpcid(0, "拉艾德#um");
+	emotion ET_KIK, getnpcid(0, "┰︺紈#um");
 	next;
-	if (select("付1000金币给他:不付给他") == 1) {
+	if (select("1000刽倒:ぃ倒") == 1) {
 		if(Zeny > 999) {
 			set Zeny, Zeny - 1000;
-			mes "[黑伊司]";
-			mes "呼呼 蛮懂事的家伙嘛!";
+			mes "[堵レ]";
+			mes "㊣㊣ 芞来ㄆ產ル估!";
 			next;
-			mes "[拉艾德]";
-			mes "..老实说, 不久前在这个地方, ";
-			mes "有位著名的冒险家尼尔斯结束旅行回来. ";
+			mes "[┰︺紈]";
+			mes "..ρ龟弧, ぃ玡硂よ, ";
+			mes "Τ帝玙繧產ェ焊吹挡︽ㄓ. ";
 			next;
-			mes "[黑伊司]";
-			mes "轻声细语";
-			mes "^555555两手抱着大箱子回来了.^000000 ";
+			mes "[堵レ]";
+			mes "淮羘灿粂";
+			mes "^555555ㄢも╆帝絚ㄓ.^000000 ";
 			next;
-			mes "[拉艾德]";
-			mes "在半夜偷偷回来,";
-			mes "一定是怕被别人发现吧?";
-			mes "肯定没好事!";
-			mes "你怎么看?";
+			mes "[┰︺紈]";
+			mes "敖敖ㄓ,";
+			mes "﹚琌┤砆祇瞷?";
+			mes "﹚⊿ㄆ!";
+			mes "?";
 			next;
-			mes "[黑伊司]";
-			mes "大箱子里所装的宝贵东西~...";
-			mes "除了宝物外还有别的吗?!!";
+			mes "[堵レ]";
+			mes "絚ń┮杆腳禥狥﹁~...";
+			mes "埃腳临Τ盾?!!";
 			next;
-			mes "[拉艾德]";
-			mes "所以说我们也要去寻找宝物-!!";
+			mes "[┰︺紈]";
+			mes "┮弧и璶碝т腳-!!";
 			next;
-			mes "[黑伊司]";
-			mes "可是问题是, ";
-			mes "尼尔斯真的会轻易的告诉我们, ";
-			mes "宝物的所在地点吗..";
-			mes "你怎么看?";
+			mes "[堵レ]";
+			mes "琌拜肈琌, ";
+			mes "ェ焊吹痷穦淮禗и, ";
+			mes "腳┮翴盾..";
+			mes "?";
 			emotion ET_SCRATCH;
 			next;
-			mes "[拉艾德]";
-			mes "尼尔斯平时都把我们当笨蛋看待!!";
-			mes "哼-!!";
+			mes "[┰︺紈]";
+			mes "ェ焊吹キ常ри讽猜矹!!";
+			mes "-!!";
 			next;
-			menu "那个叫尼尔斯的人在哪里呢?",-;
-			mes "[拉艾德]";
-			mes "他居住在村落的北边";
-			mes "就在这个村.";
+			menu "êェ焊吹ń㎡?",-;
+			mes "[┰︺紈]";
+			mes "﹡辅娩";
+			mes "碞硂.";
 			next;
-			mes "[黑伊司]";
-			mes "我告诉你有利的情报了, 如果你也得知了什么情报也得告诉我, ";
-			mes "这才是人之常情啊!";
+			mes "[堵レ]";
+			mes "и禗Τ薄厨, 狦眔ぐ薄厨眔禗и, ";
+			mes "硂琌ぇ盽薄摆!";
 			next;
-			mes "[拉艾德、黑伊司]";
-			mes "那么祝你好运了!";
+			mes "[┰︺紈堵レ]";
+			mes "ê笲!";
 			close;
 		}
-		mes "[拉艾德]";
-		mes "嗨, 你没钱啊";
+		mes "[┰︺紈]";
+		mes "顿, ⊿窥摆";
 		close;
 	}
 	mes "[Haith]";
-	mes "哼! 不要就算了~";
+	mes "! ぃ璶碞衡~";
 	emotion ET_SCRATCH;
 	emotion ET_SCRATCH;
 	close;
 }
 
-cmd_in01,175,120,3	script	伊立亚#um	1_F_04,{
-	mes "[伊立亚]";
-	mes "位在那角落桌的那位是, 冒险家尼尔斯, ";
-	mes "他会到处旅游而且会讲一些有趣的话";
+cmd_in01,175,120,3	script	レミㄈ#um	1_F_04,{
+	mes "[レミㄈ]";
+	mes "êà辅ê琌, 玙繧產ェ焊吹, ";
+	mes "穦矪村τ穦量ㄇΤ届杠";
 	next;
-	mes "[伊立亚]";
-	mes "这次到底去哪回来了呢, ";
-	mes "他只是呵呵的笑着说";
-	mes "- 我果然不适合当老师的样子 -";
+	mes "[レミㄈ]";
+	mes "硂Ω┏ㄓ㎡, ";
+	mes "琌帝弧";
+	mes "- и狦礛ぃ屿讽ρ畍妓 -";
 	next;
-	mes "[伊立亚]";
-	mes "人们又一直来找尼尔斯..";
-	mes "到底是去哪里回来了呢?";
+	mes "[レミㄈ]";
+	mes "ㄓтェ焊吹..";
+	mes "┏琌ńㄓ㎡?";
 	close;
 }
 
-cmd_in01,164,115,1	script	尼尔斯#um	4_M_JOB_BLACKSMITH,{
-	mes "[尼尔斯]";
-	mes "...呵呵? 什么";
-	mes "喔- 你也是听到谣言而跑来的笨蛋吗?";
-	mes "也不能太勉强吧. . .喀喀";
+cmd_in01,164,115,1	script	ェ焊吹#um	4_M_JOB_BLACKSMITH,{
+	mes "[ェ焊吹]";
+	mes "...? ぐ";
+	mes "翅- 琌亮ēτ禲ㄓ猜矹盾?";
+	mes "ぃび玧眏. . .池池";
 	next;
-	mes "[尼尔斯]";
-	mes "说什么世上最好的宝物那类的话, ";
-	mes "那只是从人们的误解而引起的, ";
-	mes "应该不是宝物而只是我的收集品吧~";
+	mes "[ェ焊吹]";
+	mes "弧ぐ程腳ê摸杠, ";
+	mes "ê琌眖粇秆τま癬, ";
+	mes "莱赣ぃ琌腳τ琌иΜ栋珇~";
 	next;
-	mes "[尼尔斯]";
-	mes "也对... '假如那个是'";
-	mes "实际上真的存在的事实, ";
-	mes "也许只要用我双眼确认而已, 就像是得到了值钱的宝石一样, ";
+	mes "[ェ焊吹]";
+	mes "癸... '安ê琌'";
+	mes "龟悔痷ㄆ龟, ";
+	mes "砛璶ノи蛮泊谔粄τ, 碞钩琌眔窥腳ホ妓, ";
 	next;
-	mes "[尼尔斯]";
-	mes "这里这克魔岛村落!";
-	mes "不觉得它的洞穴有点过份的小吗?";
+	mes "[ェ焊吹]";
+	mes "硂ń硂臸畄辅!";
+	mes "ぃ谋眔ウ瑌マΤ翴筁盾?";
 	next;
-	mes "[尼尔斯]";
-	mes "所以我想过了..";
-	mes "一定是有什么东西藏在里面..";
+	mes "[ェ焊吹]";
+	mes "┮и稱筁..";
+	mes "﹚琌Τぐ狥﹁旅ń..";
 	next;
-	mes "[尼尔斯]";
-	mes "然后呢 !";
-	mes "就终于找到了, ";
-	mes "直到目前还没找到的, 通往'那里'的路!";
+	mes "[ェ焊吹]";
+	mes "礛㎡ !";
+	mes "碞沧т, ";
+	mes "ヘ玡临⊿т, 硄┕'êń'隔!";
 	next;
-	mes "[尼尔斯]";
+	mes "[ェ焊吹]";
 	mes "............";
 	next;
-	mes "[尼尔斯]";
-	mes "......什么呢?";
+	mes "[ェ焊吹]";
+	mes "......ぐ㎡?";
 	next;
-	mes "[尼尔斯]";
-	mes "这时候应该要来点 '咚咚' 的效果音不是吗!";
-	mes "没意思..";
+	mes "[ェ焊吹]";
+	mes "硂莱赣璶ㄓ翴 '㎞㎞' 狦ぃ琌盾!";
+	mes "⊿種..";
 	emotion ET_SCRATCH;
 	next;
-	mes "[尼尔斯]";
-	mes "反正呢, 最好是不要问我 '那里' 怎么去, 还有 '那里' 有什么";
+	mes "[ェ焊吹]";
+	mes "はタ㎡, 程琌ぃ璶拜и 'êń' , 临Τ 'êń' Τぐ";
 	next;
-	mes "[尼尔斯]";
-	mes "如果是真正的探险家的话!!!";
-	mes "我讲到这里时!";
-	mes "应该要有着<啊啊啊啊! 想知道想到快疯了!>";
-	mes "的表情并把门踹开跑出去, 用动物般的感觉及本能去寻找那个地方!!";
+	mes "[ェ焊吹]";
+	mes "狦琌痷タ贝繧產杠!!!";
+	mes "и量硂ń!";
+	mes "莱赣璶Τ帝<摆摆摆摆! 稱笵稱е浩!>";
+	mes "薄р垮秨禲, ノ笆稰谋のセ碝тêよ!!";
 	next;
-	mes "[尼尔斯]";
-	mes "好! 快点!";
-	mes "出去吧 !!!!!!";
+	mes "[ェ焊吹]";
+	mes "! е翴!";
+	mes " !!!!!!";
 	next;
-	mes "[尼尔斯]";
-	mes "在我面前呈现的是发现耀眼的未知世界呢! 还是死亡的陷阱呢!";
-	mes "喀 哈 哈 哈 !!!!";
+	mes "[ェ焊吹]";
+	mes "и玡瞷琌祇瞷模泊ゼ㎡! 临琌炒ɡ㎡!";
+	mes "池    !!!!";
 	close;
 }
 
-umbala,70,106,3	script	雨檀族 小孩#um	4_F_UMGIRL,{
+umbala,70,106,3	script	獴廊壁 #um	4_F_UMGIRL,{
 	if (event_umbala >= 3) {
 		mes "[???]";
-		mes "哎呀?您..";
-		mes "不是我们汶巴拉的人啊?";
+		mes "玼?眤..";
+		mes "ぃ琌и╖ぺ┰摆?";
 		next;
 		mes "[???]";
-		mes "吓一跳!但是很高兴认识你";
-		mes "我叫哈坦";
+		mes "纞铬!琌蔼砍粄醚";
+		mes "и㈱";
 		emotion ET_SMILE;
 		next;
-		mes "[哈坦]";
-		mes "....但是, 现在很可惜的是";
-		mes "不能和您一起玩";
-		mes "最近, 突然在我家有雷落下后";
-		mes "把屋顶弄破了....";
+		mes "[㈱]";
+		mes "....琌, 瞷堡琌";
+		mes "ぃ㎝眤癬";
+		mes "程, 礛и產Τ筽辅";
+		mes "р郴瘆....";
 		emotion ET_CRY;
 		next;
-		mes "[哈坦]";
-		mes "对了!请等一下, ";
-		mes "可请求你吗?";
-		mes "你的日子好像过的还不错, ";
-		mes "有多余的钱可以借我吗?";
-		mes "拜托你!";
+		mes "[㈱]";
+		mes "癸!叫单, ";
+		mes "叫―盾?";
+		mes "ら钩筁临ぃ岿, ";
+		mes "Τ窥и盾?";
+		mes "Λ!";
 		emotion ET_SMILE;
 		next;
-		if (select("给他:不给他") == 1) {
-			mes "[哈坦]";
-			mes "给我吗!!";
-			mes "你真是个好人啊~";
-			mes "太好了!";
+		if (select("倒:ぃ倒") == 1) {
+			mes "[㈱]";
+			mes "倒и盾!!";
+			mes "痷琌摆~";
+			mes "び!";
 			if (Zeny > 1000) {
 				set Zeny, Zeny - 1000;
 				if (checkweight(517,1)) {
@@ -253,28 +253,28 @@ umbala,70,106,3	script	雨檀族 小孩#um	4_F_UMGIRL,{
 			}
 			else {
 				next;
-				mes "[哈坦]";
-				mes "什么!没有钱";
-				mes "却装作有钱....";
+				mes "[㈱]";
+				mes "ぐ!⊿Τ窥";
+				mes "玱杆Τ窥....";
 				emotion ET_HNG;
 				close;
 			}
 			next;
-			mes "[哈坦]";
-			mes "这是我的一点小意思, 谢谢你";
+			mes "[㈱]";
+			mes "硂琌и翴種, 谅谅";
 			emotion ET_SMILE;
 			close;
 		}
-		mes "[哈坦]";
-		mes "........这样啊";
+		mes "[㈱]";
+		mes "........硂妓摆";
 		emotion ET_CRY;
 		close;
 	}
 	else {
 		mes "[???]";
-		mes "汶巴汶巴!!";
-		mes "汶~巴汶巴~汶~巴汶巴~";
-		mes "拉~巴汶巴~汶~巴汶巴拉~";
+		mes "╖ぺ╖ぺ!!";
+		mes "╖~ぺ╖ぺ~╖~ぺ╖ぺ~";
+		mes "┰~ぺ╖ぺ~╖~ぺ╖ぺ┰~";
 		next;
 		mes "[???]";
 		mes "Umbah! Umbaumbah!";
@@ -332,20 +332,20 @@ umbala,70,106,3	script	雨檀族 小孩#um	4_F_UMGIRL,{
 	close;
 }
 
-umbala,59,243,5	script	雨檀族 小孩#1	4_M_UMKID,{
+umbala,59,243,5	script	獴廊壁 #1	4_M_UMKID,{
 	if (event_umbala >= 3) {
-		mes "[寇坦]";
+		mes "[盕㈱]";
 		mes ".........";
-		mes ".......嘻嘻";
-		mes "....肉好吃";
-		mes "...给我肉";
+		mes ".......糎糎";
+		mes "....ψ";
+		mes "...倒иψ";
 		emotion ET_ROCK;
 		next;
-		if (select("给他:不给他") == 1) {
+		if (select("倒:ぃ倒") == 1) {
 			if (countitem(517) > 0) {
-				mes "[寇坦]";
-				mes "真的要给我吗? 谢谢!";
-				mes "这没什么是我给你的谢礼";
+				mes "[盕㈱]";
+				mes "痷璶倒и盾? 谅谅!";
+				mes "硂⊿ぐ琌и倒谅搂";
 				delitem 517,1; //Meat
 				getitem 909,2; //Jellopy
 				getitem 914,2; //Fluff
@@ -353,19 +353,19 @@ umbala,59,243,5	script	雨檀族 小孩#1	4_M_UMKID,{
 				emotion ET_SCISSOR;
 				close;
 			}
-			mes "[寇坦]";
-			mes "什么嘛, 没有肉, ";
-			mes "还装作有!";
-			mes "雨檀族是非常";
-			mes "讨厌诈欺的!";
+			mes "[盕㈱]";
+			mes "ぐ估, ⊿Τψ, ";
+			mes "临杆Τ!";
+			mes "獴廊壁琌獶盽";
+			mes "癚菇禕篡!";
 			percentheal -20,0;
 			emotion ET_FRET;
 			close;
 		}
-		mes "[寇坦]";
+		mes "[盕㈱]";
 		mes ".......";
-		mes "....肚子饿";
-		mes "....想吃肉";
+		mes "....▄緅";
+		mes "....稱ψ";
 		percentheal -1,0;
 		emotion ET_CRY;
 		close;
@@ -373,12 +373,12 @@ umbala,59,243,5	script	雨檀族 小孩#1	4_M_UMKID,{
 	else {
 		mes "[???]";
 		mes ".........";
-		mes "......汶巴";
-		mes ".....汶巴巴";
-		mes ".....呼巴";
+		mes "......╖ぺ";
+		mes ".....╖ぺぺ";
+		mes ".....㊣ぺ";
 		emotion ET_ROCK;
 		next;
-		if (select("给他:不给他") == 1) {
+		if (select("倒:ぃ倒") == 1) {
 			if (countitem(517) > 0) {
 				mes "[???]";
 				mes "Umbaumbaumbabababah.";
@@ -407,125 +407,125 @@ umbala,59,243,5	script	雨檀族 小孩#1	4_M_UMKID,{
 	}
 }
 
-umbala,177,153,3	script	帕斯托#um	4W_M_01,{
-	mes "[帕斯托]";
+umbala,177,153,3	script	┈吹Λ#um	4W_M_01,{
+	mes "[┈吹Λ]";
 	emotion ET_SURPRISE;	
-	mes "呜哇-! 有人耶!?";
-	mes "没想到在这种偏僻的地方会发现人!";
-	mes "反正很高兴见到你, 我叫帕斯托";
+	mes "躲珃-! Τ瑿!?";
+	mes "⊿稱硂销熬击よ穦祇瞷!";
+	mes "はタ蔼砍ǎ, и┈吹Λ";
 	next;
-	mes "[帕斯托]";
-	mes "这里是叫做汶巴拉的村落, ";
-	mes "可能是位于这种深山丛林里, 所以与其他村落形成完全不同的文化圈";
+	mes "[┈吹Λ]";
+	mes "硂ń琌暗╖ぺ┰辅, ";
+	mes "琌硂销瞏翺狶ń, ┮蒓ㄤ辅ΘЧぃゅて伴";
 	next;
-	mes "[帕斯托]";
-	mes "肤色也不同, 语言也是跟我们用的语言完全不同啊, ";
-	mes "来到这里之后最荒唐的就是,  ";
-	mes "他们表达感情的方式与我们不同";
+	mes "[┈吹Λ]";
+	mes "涧︹ぃ, 粂ē琌蛤иノ粂ēЧぃ摆, ";
+	mes "ㄓ硂ńぇ程碞琌,  ";
+	mes "笷稰薄よΑ蒓иぃ";
 	next;
-	mes "[帕斯托]";
-	mes "当然也有相似的地方, ";
-	mes "不过有几项事情没有注意的话, 可能会很难堪喔, ";
-	mes "还会有包含着完全相反的意思";
+	mes "[┈吹Λ]";
+	mes "讽礛Τよ, ";
+	mes "ぃ筁Τ兜ㄆ薄⊿Τ猔種杠, 穦螟臭翅, ";
+	mes "临穦Τ帝Чは種";
 	next;
-	mes "[帕斯托]";
-	mes "不要以为他们的脸在笑,  ";
-	mes "就觉得他们的心里也在笑, ";
-	mes "懂了吗?";
+	mes "[┈吹Λ]";
+	mes "ぃ璶羪,  ";
+	mes "碞谋眔みń, ";
+	mes "来盾?";
 	next;
-	mes "[帕斯托]";
-	mes "倒不如语言相通的话...";
-	mes "不知道有没有人懂得我们的语言呢..";
-	mes "唉唷 真郁闷啊 - ! !";
+	mes "[┈吹Λ]";
+	mes "ぃ粂ē硄杠...";
+	mes "ぃ笵Τ⊿Τ来眔и粂ē㎡..";
+	mes " 痷磂摆 - ! !";
 	emotion ET_CRY;
 	close;
 }
 
-umbala,80,146,4	script	优武克#um	4_M_MONK,{
-	mes "[优武克]";
-	mes "不是...汶巴 汶巴 呜嘎呜, ";
-	mes "你也是别地方的人啊?";
-	mes "呀啊~ 很高兴见到你, 没想到";
-	mes "在这种地方还会见到";
-	mes "别的外地人啊, 哈哈哈";
+umbala,80,146,4	script	涩猌#um	4_M_MONK,{
+	mes "[涩猌]";
+	mes "ぃ琌...╖ぺ ╖ぺ 躲骨躲, ";
+	mes "琌よ摆?";
+	mes "摆~ 蔼砍ǎ, ⊿稱";
+	mes "硂销よ临穦ǎ";
+	mes "摆, ";
 	next;
-	mes "[优武克]";
-	mes "为了寻找强者而来到了";
-	mes "这里是还可以啦, 可是语言";
-	mes "都不通该怎么办呢...这本来";
-	mes "真是个令人抓狂的事, 不过";
-	mes "听久了变得熟悉了, 哈哈哈";
+	mes "[涩猌]";
+	mes "碝т眏τㄓ";
+	mes "硂ń琌临罢, 琌粂ē";
+	mes "常ぃ硄赣快㎡...硂セㄓ";
+	mes "痷琌ъ╣ㄆ, ぃ筁";
+	mes "跑眔剪眡, ";
 	next;
-	mes "[优武克]";
-	mes "在这村落语言不通是其次啦, ";
-	mes "真正暧昧的是这村落";
-	mes "男人们的种族保存之";
-	mes "需求很强烈, 真的";
-	mes "到处都像是风流鬼似的";
+	mes "[涩猌]";
+	mes "硂辅粂ēぃ硄琌ㄤΩ罢, ";
+	mes "痷タ狼琋琌硂辅";
+	mes "╧销壁玂ぇ";
+	mes "惠―眏疨, 痷";
+	mes "矪常钩琌瑈碍";
 	next;
-	mes "[优武克]";
-	mes "因为是比较接近原始的村落, ";
-	mes "好像不太适合以法律来阻挡... ";
-	mes "可是还是感觉到";
-	mes "很暧昧啊";
+	mes "[涩猌]";
+	mes "琌ゑ耕钡﹍辅, ";
+	mes "钩ぃび屿猭ㄓ咀... ";
+	mes "琌临琌稰谋";
+	mes "狼琋摆";
 	close;
 }
 
-umbala,140,157,6	script	雨檀族 青年#1	4_M_UMDANCEKID2,{
+umbala,140,157,6	script	獴廊壁 獵#1	4_M_UMDANCEKID2,{
 	if (event_umbala >= 3) {
-		mes "[且乐坦]";
-		mes "高空弹跳非常危险, ";
-		mes "因为是冒着生命危险的事情, ";
-		mes "所以成功的人, ";
-		mes "会被认定为是雨檀族里";
-		mes "的大人";
+		mes "[贾㈱]";
+		mes "蔼紆铬獶盽繧, ";
+		mes "琌玙帝ネ㏑繧ㄆ薄, ";
+		mes "┮Θ, ";
+		mes "穦砆粄﹚琌獴廊壁ń";
+		mes "";
 		close;
 	}
 	else {
 		mes "[???]";
-		mes "汶巴汶巴呼巴, ";
-		mes "呜汶巴汶巴汶巴巴呜呼巴";
-		mes "汶巴巴巴汶巴汶巴";
+		mes "╖ぺ╖ぺ㊣ぺ, ";
+		mes "躲╖ぺ╖ぺ╖ぺぺ躲㊣ぺ";
+		mes "╖ぺぺぺ╖ぺ╖ぺ";
 		close;
 	}
 }
 
-umbala,146,157,4	script	雨檀族 青年#2	4_M_UMDANCEKID,{
+umbala,146,157,4	script	獴廊壁 獵#2	4_M_UMDANCEKID,{
 	if (event_umbala >= 3) {
-		mes "[阿罗坦]";
-		mes "顺利的完成高空弹跳";
-		mes "是非常困难的, ";
-		mes "所以为了庆祝顺利完成的人, 而聚集在这里举行仪式的";
+		mes "[霉㈱]";
+		mes "抖ЧΘ蔼紆铬";
+		mes "琌獶盽螟, ";
+		mes "┮紋抖ЧΘ, τ籈栋硂ń羭︽祸Α";
 		close;
 	}
 	else {
 		mes "[????]";
-		mes "汶巴汶巴汶巴巴汶巴巴";
-		mes "汶巴汶巴巴汶巴巴巴汶呼巴巴";
+		mes "╖ぺ╖ぺ╖ぺぺ╖ぺぺ";
+		mes "╖ぺ╖ぺぺ╖ぺぺぺ╖㊣ぺぺ";
 		close;
 	}
 }
 
-umbala,149,165,4	script	雨檀族 小孩#3	4_F_UMGIRL,{
+umbala,149,165,4	script	獴廊壁 #3	4_F_UMGIRL,{
 	if (event_umbala >= 3) {
-		mes "[克露马坦]";
-		mes "从那么高的地方掉下来";
-		mes "真是太可怕了, ";
-		mes "不过呢在我们雨檀族, ";
-		mes "要表现出那种样子, ";
-		mes "才会被认定为有勇气的人";
+		mes "[臩皑㈱]";
+		mes "眖ê蔼よ奔ㄓ";
+		mes "痷琌び┤, ";
+		mes "ぃ筁㎡и獴廊壁, ";
+		mes "璶瞷ê销妓, ";
+		mes "穦砆粄﹚Τ玦蒩";
 		close;
 	}
 	else {
 		mes "[???]";
-		mes "汶巴汶巴汶巴巴巴, ";
-		mes "汶巴汶巴汶汶巴巴汶呼巴, ";
-		mes "汶巴汶巴汶汶巴呼巴, ";
+		mes "╖ぺ╖ぺ╖ぺぺぺ, ";
+		mes "╖ぺ╖ぺ╖╖ぺぺ╖㊣ぺ, ";
+		mes "╖ぺ╖ぺ╖╖ぺ㊣ぺ, ";
 		close;
 	}
 }
 
-umbala,92,159,4	script	卑乐坦#um	785,{
+umbala,92,159,4	script	贾㈱#um	785,{
 	if (event_umbala >= 3) {
 		mes "[Bertan]";
 		mes "What up, loser!";
@@ -706,43 +706,43 @@ umbala,92,159,4	script	卑乐坦#um	785,{
 	}
 	else {
 		mes "[????]";
-		mes "汶巴汶巴 汶巴汶巴";
-		mes "汶巴汶巴 汶巴汶巴";
-		mes "汶巴 汶巴 汶巴汶巴";
+		mes "╖ぺ╖ぺ ╖ぺ╖ぺ";
+		mes "╖ぺ╖ぺ ╖ぺ╖ぺ";
+		mes "╖ぺ ╖ぺ ╖ぺ╖ぺ";
 		next;
 		mes "[????]";
-		mes "汶巴 汶巴巴 恩哈";
+		mes "╖ぺ ╖ぺぺ ";
 		emotion ET_DELIGHT;
 		close;
 	}
 	close;
 }
 
-umbala,194,104,4	script	雨檀族 小孩#2	4_M_UMKID,{
+umbala,194,104,4	script	獴廊壁 #2	4_M_UMKID,{
 	if (event_umbala >= 3) {
-		mes "[布乐喀坦]";
-		mes "唉呀, 是外地人啊?";
-		mes "你有跳过高空弹跳吗?";
+		mes "[ガ贾池㈱]";
+		mes ", 琌摆?";
+		mes "Τ铬筁蔼紆铬盾?";
 		next;
-		if (select("有:没有") == 1) {
-			mes "[布乐喀坦]";
-			mes "哇啊, 外地人会跳这个真是了不起啊, ";
-			mes "我们赞许你有这样的勇气, 雨檀族欢迎你";
+		if (select("Τ:⊿Τ") == 1) {
+			mes "[ガ贾池㈱]";
+			mes "珃摆, 穦铬硂痷琌ぃ癬摆, ";
+			mes "и觅砛Τ硂妓玦蒩, 獴廊壁舧";
 			close;
 		}
-		mes "[布乐喀坦]";
-		mes "还没跳过啊...";
-		mes "想要被认定为大人的话, ";
-		mes "不管是谁都要经历过的仪式啊, ";
-		mes "等我长大, 一定要来这里挑战, 然后被大家认定是有勇气的人!";
+		mes "[ガ贾池㈱]";
+		mes "临⊿铬筁摆...";
+		mes "稱璶砆粄﹚杠, ";
+		mes "ぃ恨琌街常璶竒菌筁祸Α摆, ";
+		mes "单и, ﹚璶ㄓ硂ń珼驹, 礛砆產粄﹚琌Τ玦蒩!";
 		close;
 	}
 	else {
 		mes "[???]";
-		mes "汶巴汶巴巴巴汶呼巴, ";
-		mes "汶巴巴汶汶巴汶巴汶巴?";
+		mes "╖ぺ╖ぺぺぺ╖㊣ぺ, ";
+		mes "╖ぺぺ╖╖ぺ╖ぺ╖ぺ?";
 		next;
-		if (select("有:没有") == 1) {
+		if (select("Τ:⊿Τ") == 1) {
 			mes "[???]";
 			mes "Umba, Umumbah umbabah.";
 			mes "Umbaumbah umumbabah.";
@@ -758,59 +758,59 @@ umbala,194,104,4	script	雨檀族 小孩#2	4_M_UMKID,{
 
 umbala,193,208,6	script	Utan Man#3	789,{
 	if (event_umbala >= 3) {
-		mes "[辉宜坦]";
-		mes "我年轻时也跳过高空弹跳, ";
-		mes "虽然差点没命, 不过成功后的那种成就感是无法言喻的, ";
-		mes "也有人觉得很盲目, ";
-		mes "但我觉得那是年轻人的雄心啊";
+		mes "[谨﹜㈱]";
+		mes "и淮铬筁蔼紆铬, ";
+		mes "瘤礛畉翴⊿㏑, ぃ筁Θê销Θ碞稰琌礚猭ē畴, ";
+		mes "Τ谋眔ヘ, ";
+		mes "и谋眔ê琌淮动み摆";
 		close;
 	}
 	else {
 		mes "[???]";
-		mes "汶巴汶巴汶巴巴, ";
-		mes "汶巴汶巴呼巴汶汶巴巴汶, ";
-		mes "汶汶巴巴巴汶巴呼";
+		mes "╖ぺ╖ぺ╖ぺぺ, ";
+		mes "╖ぺ╖ぺ㊣ぺ╖╖ぺぺ╖, ";
+		mes "╖╖ぺぺぺ╖ぺ㊣";
 		close;
 	}
 }
 
-umbala,139,205,4	script	雨檀族 青年#5	4_M_UMDANCEKID2,{
+umbala,139,205,4	script	獴廊壁 獵#5	4_M_UMDANCEKID2,{
 	if (event_umbala >= 3) {
-		mes "[朱坦]";
-		mes "好久不见的外地人啊!";
-		mes "这里是人们玩高空弹跳";
-		mes "的地方, ";
-		mes "很多雨檀族的年轻人, ";
-		mes "为了证明自己的勇气, ";
-		mes "而在这跳下去";
+		mes "[Χ㈱]";
+		mes "ぃǎ摆!";
+		mes "硂ń琌蔼紆铬";
+		mes "よ, ";
+		mes "獴廊壁淮, ";
+		mes "谍玦蒩, ";
+		mes "τ硂铬";
 		next;
-		mes "[朱坦]";
-		mes "再往前面走的话会掉下去的, ";
-		mes "最好是先做好心理准备喔";
+		mes "[Χ㈱]";
+		mes "┕玡ǐ杠穦奔, ";
+		mes "程琌暗み瞶称翅";
 		next;
-		mes "[朱坦]";
-		mes "掉下去之后可以爬绳子上来, 不然在水里仔细找的话, ";
-		mes "有个可以通到对面的水中洞穴";
-		mes "对了, 偶而也有运气差的人会直接掉下去而死亡的";
+		mes "[Χ㈱]";
+		mes "奔ぇ梅ㄓ, ぃ礛ń灿т杠, ";
+		mes "Τ硄癸い瑌マ";
+		mes "癸, 案τΤ笲蒩畉穦钡奔τ";
 		next;
-		mes "[朱坦]";
-		mes "其中也有光看就吓死的人, 所以要小心点, ";
-		mes "在水里还有不明的怪物, 你待久的话也会死掉的";
+		mes "[Χ㈱]";
+		mes "ㄤいΤ碞纞, ┮璶み翴, ";
+		mes "ń临Τぃ┣, 杠穦奔";
 		close;
 	}
 	else {
 		mes "[???]";
-		mes "汶巴汶巴!";
-		mes "汶巴汶巴巴巴巴汶汶巴, ";
-		mes "巴巴汶呜坦汶巴汶巴巴, ";
-		mes "汶巴巴巴呼, ";
-		mes "汶汶呼巴巴汶巴汶巴汶巴巴";
+		mes "╖ぺ╖ぺ!";
+		mes "╖ぺ╖ぺぺぺぺ╖╖ぺ, ";
+		mes "ぺぺ╖躲㈱╖ぺ╖ぺぺ, ";
+		mes "╖ぺぺぺ㊣, ";
+		mes "╖╖㊣ぺぺ╖ぺ╖ぺ╖ぺぺ";
 		next;
 		mes "[???]";
-		mes "汶巴呼嘛巴巴汶巴, ";
-		mes "汶巴巴坦汶巴汶巴, ";
-		mes "巴, 汶巴汶巴汶汶巴巴汶, ";
-		mes "汶巴汶巴汶巴呼";
+		mes "╖ぺ㊣估ぺぺ╖ぺ, ";
+		mes "╖ぺぺ㈱╖ぺ╖ぺ, ";
+		mes "ぺ, ╖ぺ╖ぺ╖╖ぺぺ╖, ";
+		mes "╖ぺ╖ぺ╖ぺ㊣";
 		close;
 	}
 }
@@ -867,10 +867,10 @@ um_in,158,71,3	script	Utan villager#um	787,{
 	}
 	else {
 		mes "[??????]";
-		mes "汶巴汶巴 汶巴巴 汶哈!";
-		mes "汶巴 汶巴 汶巴巴巴 汶巴";
-		mes "汶巴 汶巴 汶巴";
-		mes "汶巴巴 汶巴 汶巴巴";
+		mes "╖ぺ╖ぺ ╖ぺぺ ╖!";
+		mes "╖ぺ ╖ぺ ╖ぺぺぺ ╖ぺ";
+		mes "╖ぺ ╖ぺ ╖ぺ";
+		mes "╖ぺぺ ╖ぺ ╖ぺぺ";
 	}
 	close;
 }
@@ -880,11 +880,11 @@ OnTouch_:
 	switch(rand(1,3)) {
 	case 1:
 		percentheal -100,0;
-		mapannounce "umbala","在高空弹跳台上: "+strcharinfo(0)+" : 嘎呀呀呀呀呀呀啊啊啊啊~~~~~~~",bc_map;
+		mapannounce "umbala","蔼紆铬: "+strcharinfo(0)+" : 骨摆摆摆摆~~~~~~~",bc_map;
 		end;
 	case 2:
 		percentheal -50,0;
-		mapannounce "umbala","在高空弹跳台上: "+strcharinfo(0)+" : 呼嘎啊啊啊啊啊啊~~~~~~!",bc_map;
+		mapannounce "umbala","蔼紆铬: "+strcharinfo(0)+" : ㊣骨摆摆摆摆摆摆~~~~~~!",bc_map;
 		end;
 	case 3:
 		if (rand(1,2) == 2) {

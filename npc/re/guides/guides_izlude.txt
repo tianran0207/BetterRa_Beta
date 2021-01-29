@@ -20,77 +20,77 @@
 
 -	script	::GuideIzlude	-1,{
 	cutin "prt_soldier",2;
-	mes "[依斯鲁得岛 解说员]";
-	mes "您好~!";
-	mes "卫星都市^8B4513依斯鲁得岛^000000，";
-	mes "诚挚地欢迎大家的莅临。";
-	F_Navi("[依斯鲁得岛 解说员]");
+	mes "[ㄌ吹緗眔畄 秆弧]";
+	mes "眤~!";
+	mes "矫琍常カ^8B4513ㄌ吹緗眔畄^000000";
+	mes "港及舧產籝羬";
+	F_Navi("[ㄌ吹緗眔畄 秆弧]");
 	next;
 	set .@map$, strnpcinfo(4);
 	while (1) {
-		switch(select("[ 主要设施 ]:[ 商人&小帮手 ]:删除小地图的标记:结束对话")) {
+		switch(select("[ 璶砞琁 ]:[ 坝&腊も ]:埃瓜夹癘:挡癸杠")) {
 		case 1:
 			set .@loop,1;
 			while (.@loop) {
-				switch(select("[ 克里图拉学院 ]:[ 码头 ]:[ 飞空艇 (国际线) ]:[ 竞技场 ]:[ 商店 ]:[ 剑士公会 ]:[ 强化协会 ]:[ 铁工厂 ]:返回上一选单")) {
+				switch(select("[ ń瓜┰厩皘 ]:[ 絏繷 ]:[ 弗 (瓣悔絬) ]:[ 膙м初 ]:[ 坝┍ ]:[ 糃そ穦 ]:[ 眏て穦 ]:[ 臟蒁 ]:匡虫")) {
 				case 1:
-					mes "[依斯鲁得岛 解说员]";
-					mes "新手冒险家可以透过"+F_Navi("克里图拉学院","iz_ac01,100,39")+"来取得更详尽的谘询和优惠喔!";
-					mes "还需要其它服务吗?";
+					mes "[ㄌ吹緗眔畄 秆弧]";
+					mes "穝も玙繧產硓筁"+F_Navi("ń瓜┰厩皘","iz_ac01,100,39")+"ㄓ眔冈荷吭高㎝涩磃翅!";
+					mes "临惠璶ㄤウ狝叭盾?";
 					viewpoint 1,128,260,0,0xD2691E;
 					next;
 					break;
 				case 2:
-					mes "[依斯鲁得岛 解说员]";
-					mes "可透过西北方的"+F_Navi("码头",.@map$+",197,205","^B9062F");
-					mes "到达^8B4513艾尔贝塔^000000或是^8B4513柏伊亚岚岛^000000等地。";
+					mes "[ㄌ吹緗眔畄 秆弧]";
+					mes "硓筁﹁よ"+F_Navi("絏繷",.@map$+",197,205","^B9062F");
+					mes "笷^8B4513︺焊ī娥^000000┪琌^8B4513琭レㄈ碢畄^000000单";
 					next;
-					mes "[依斯鲁得岛 解说员]";
-					mes "柏伊亚岚岛是^8B4513依斯鲁得岛迷宫^000000所在的恐怖地方。";
-					mes "还需要其它服务吗?";
+					mes "[ㄌ吹緗眔畄 秆弧]";
+					mes "琭レㄈ碢畄琌^8B4513ㄌ吹緗眔畄癵甤^000000┮┢よ";
+					mes "临惠璶ㄤウ狝叭盾?";
 					viewpoint 1,197,205,1,0xFF0000;
 					next;
 					break;
 				case 3:
-					mes "[依斯鲁得岛 解说员]";
-					mes "东南方的"+F_Navi("飞空艇国际线",.@map$+",202,75","^0000FF");
-					mes "可飞往秀发兹发德共和国的首都^8B4513朱诺^000000，和阿卢纳贝兹教国的首都^8B4513拉赫^000000等地。";
-					mes "还需要其它服务吗?";
+					mes "[ㄌ吹緗眔畄 秆弧]";
+					mes "狥玭よ"+F_Navi("弗瓣悔絬",.@map$+",202,75","^0000FF");
+					mes "┕╭祇祇紈㎝瓣常^8B4513Χ空^000000㎝縞ī毙瓣常^8B4513┰划^000000单";
+					mes "临惠璶ㄤウ狝叭盾?";
 					viewpoint 1,210,73,2,0x0A82FF;
 					next;
 					break;
 				case 4:
-					mes "[依斯鲁得岛 解说员]";
-					mes "位於东边的"+F_Navi("竞技场",.@map$+",213,161","^FF5400");
-					mes "则是测试自己战斗实力的";
-					mes "最佳场地，";
-					mes "位置已经标记在";
-					mes "小地图上了，";
-					mes "还需要其它服务吗?";
+					mes "[ㄌ吹緗眔畄 秆弧]";
+					mes "狥娩"+F_Navi("膙м初",.@map$+",213,161","^FF5400");
+					mes "玥琌代刚驹ゆ龟";
+					mes "程ㄎ初";
+					mes "竚竒夹癘";
+					mes "瓜";
+					mes "临惠璶ㄤウ狝叭盾?";
 					viewpoint 1,213,161,3,0xFF5400;
 					next;
 					break;
 				case 5:
-					callsub L_Mark, F_Navi("商店",.@map$+",110,182","^006400");
+					callsub L_Mark, F_Navi("坝┍",.@map$+",110,182","^006400");
 					viewpoint 1,108,179,4,0xAAFF00;
 					next;
 					break;
 				case 6:
-					mes "[依斯鲁得岛 解说员]";
-					mes F_Navi("剑士公会",.@map$+",51,172")+"是负责^800080剑士转职^000000的地方，";
-					mes "位置已经标记在";
-					mes "小地图上了，";
-					mes "还需要其它服务吗?";
+					mes "[ㄌ吹緗眔畄 秆弧]";
+					mes F_Navi("糃そ穦",.@map$+",51,172")+"琌璽砫^800080糃锣戮^000000よ";
+					mes "竚竒夹癘";
+					mes "瓜";
+					mes "临惠璶ㄤウ狝叭盾?";
 					viewpoint 1,52,172,5,0xDA70D6;
 					next;
 					break;
 				case 7:
-					callsub L_Mark, F_Navi("强化协会",.@map$+",97,125","^B9062F");
+					callsub L_Mark, F_Navi("眏て穦",.@map$+",97,125","^B9062F");
 					viewpoint 1,97,125,6,0xDA70D6;
 					next;
 					break;
 				case 8:
-					callsub L_Mark, F_Navi("铁工厂",.@map$+",153,126");
+					callsub L_Mark, F_Navi("臟蒁",.@map$+",153,126");
 					viewpoint 1,153,126,7,0xAAFF00;
 					next;
 					break;
@@ -103,42 +103,42 @@
 		case 2:
 			set .@loop,1;
 			while (.@loop) {
-				switch(select("[ 乐园团传送师 ]:[ 卡普拉职员 ]:[ 催眠师 ]:[ 新娘秘书 ]:[ 佣兵公会管理员 ]:[ 认养宠物商人 ]:返回上一选单")) {
+				switch(select("[ 贾堕刮肚癳畍 ]:[ 炊┰戮 ]:[ 妒痸畍 ]:[ 穝甉 ]:[ そ穦恨瞶 ]:[ 粄緄胐坝 ]:匡虫")) {
 				case 1:
-					mes "[依斯鲁得岛 解说员]";
-					mes F_Navi("乐园团传送师",.@map$+",131,148","^0000FF");
-					mes "目前的的位置在剑士公会内部，";
-					mes "已经把位置标记在小地图上了，";
-					mes "还需要其它服务吗?";
+					mes "[ㄌ吹緗眔畄 秆弧]";
+					mes F_Navi("贾堕刮肚癳畍",.@map$+",131,148","^0000FF");
+					mes "ヘ玡竚糃そ穦ず场";
+					mes "竒р竚夹癘瓜";
+					mes "临惠璶ㄤウ狝叭盾?";
 					viewpoint 1,131,148,8,0x0A82FF;
 					next;
 					break;
 				case 2:
-					callsub L_Mark, F_Navi("卡普拉职员",.@map$+",128,148","^FF5400"),1;
+					callsub L_Mark, F_Navi("炊┰戮",.@map$+",128,148","^FF5400"),1;
 					viewpoint 1,128,148,9,0xFF5400;
 					next;
 					break;
 				case 3:
-					callsub L_Mark, F_Navi("催眠师",.@map$+",127,175"),1;
+					callsub L_Mark, F_Navi("妒痸畍",.@map$+",127,175"),1;
 					viewpoint 1,127,175,10,0x006400;
 					next;
 					break;
 				case 4:
-					mes "[依斯鲁得岛 解说员]";
-					mes "想要到夫妇们的度假胜地";
-					mes "^8B4513爪哇咿^000000的话，";
-					mes "请向"+F_Navi("新娘秘书",.@map$+",180,224","^B9062F")+"谘询吧!";
-					mes "还需要其它服务吗?";
+					mes "[ㄌ吹緗眔畄 秆弧]";
+					mes "稱璶ひ包安衊";
+					mes "^8B4513珃^000000杠";
+					mes "叫"+F_Navi("穝甉",.@map$+",180,224","^B9062F")+"吭高!";
+					mes "临惠璶ㄤウ狝叭盾?";
 					viewpoint 1,180,224,11,0xFF0000;
 					next;
 					break;
 				case 5:
-					callsub L_Mark, F_Navi("佣兵公会管理员",.@map$+",47,170","^0000FF");
+					callsub L_Mark, F_Navi("そ穦恨瞶",.@map$+",47,170","^0000FF");
 					viewpoint 1,47,170,12,0xDA70D6;
 					next;
 					break;
 				case 6:
-					callsub L_Mark, F_Navi("认养宠物商人","izlude_in,72,98"),1;
+					callsub L_Mark, F_Navi("粄緄胐坝","izlude_in,72,98"),1;
 					viewpoint 1,108,179,13,0x006400;
 					next;
 					break;
@@ -149,9 +149,9 @@
 			}
 			break;
 		case 3:
-			mes "[依斯鲁得岛 解说员]";
-			mes "已删除小地图上的标志了，";
-			mes "还需要其它服务吗?";
+			mes "[ㄌ吹緗眔畄 秆弧]";
+			mes "埃瓜夹в";
+			mes "临惠璶ㄤウ狝叭盾?";
 			viewpoint 2,1,1,0,0xFFFF00;
 			viewpoint 2,1,1,1,0x000000;
 			viewpoint 2,1,1,2,0xFF0000;
@@ -169,8 +169,8 @@
 			next;
 			break;
 		case 4:
-			mes "[依斯鲁得岛 解说员]";
-			mes "祝您旅途愉快!";
+			mes "[ㄌ吹緗眔畄 秆弧]";
+			mes "眤硚磖е!";
 			mes "Bye~!";
 			close2;
 			cutin "prt_soldier",255;
@@ -179,28 +179,28 @@
 	}
 	end;
 L_Mark:
-	mes "[依斯鲁得岛 解说员]";
+	mes "[ㄌ吹緗眔畄 秆弧]";
 	if (getarg(1,0)) {
 		mes "Let me mark the location of the";
 		mes getarg(0);
 	} else
-	mes "的位置已经标记在";
-	mes "小地图上了，";
-	mes "还需要其它服务吗?";
+	mes "竚竒夹癘";
+	mes "瓜";
+	mes "临惠璶ㄤウ狝叭盾?";
 
 	return;
 }
 
-izlude,129,175,4	duplicate(GuideIzlude)	解说员#01izlude	105
-izlude_a,129,175,4	duplicate(GuideIzlude)	解说员#01izlude_a	105
-izlude_b,129,175,4	duplicate(GuideIzlude)	解说员#01izlude_b	105
-izlude_c,129,175,4	duplicate(GuideIzlude)	解说员#01izlude_c	105
-izlude_d,129,175,4	duplicate(GuideIzlude)	解说员#01izlude_d	105
+izlude,129,175,4	duplicate(GuideIzlude)	秆弧#01izlude	105
+izlude_a,129,175,4	duplicate(GuideIzlude)	秆弧#01izlude_a	105
+izlude_b,129,175,4	duplicate(GuideIzlude)	秆弧#01izlude_b	105
+izlude_c,129,175,4	duplicate(GuideIzlude)	秆弧#01izlude_c	105
+izlude_d,129,175,4	duplicate(GuideIzlude)	秆弧#01izlude_d	105
 
-izlude,133,113,4	duplicate(GuideIzlude)	解说员#02izlude	105
-izlude_a,133,113,4	duplicate(GuideIzlude)	解说员#02izlude_a	105
-izlude_b,133,113,4	duplicate(GuideIzlude)	解说员#02izlude_b	105
-izlude_c,133,113,4	duplicate(GuideIzlude)	解说员#02izlude_c	105
-izlude_d,133,113,4	duplicate(GuideIzlude)	解说员#02izlude_d	105
+izlude,133,113,4	duplicate(GuideIzlude)	秆弧#02izlude	105
+izlude_a,133,113,4	duplicate(GuideIzlude)	秆弧#02izlude_a	105
+izlude_b,133,113,4	duplicate(GuideIzlude)	秆弧#02izlude_b	105
+izlude_c,133,113,4	duplicate(GuideIzlude)	秆弧#02izlude_c	105
+izlude_d,133,113,4	duplicate(GuideIzlude)	秆弧#02izlude_d	105
 
-//izlude,120,206,4	duplicate(GuideIzlude)	解说员#03izlude	105
+//izlude,120,206,4	duplicate(GuideIzlude)	秆弧#03izlude	105
