@@ -1407,6 +1407,10 @@ IG_PRIVATE_AIRSHIP,25464,1 // 世界移動券(活動)
 IG_Token_Of_Siegfried,6293,1	// F_Token_Of_Siegfried
 IG_Token_Of_Siegfried,6316,1	// [非賣品]原地复活之証
 IG_Token_Of_Siegfried,7621,1	// 原地复活之証
+// Inventory Expand
+IG_Inventory_Expand,25791,1	// 背包擴充券[活動專用]
+IG_Inventory_Expand,25792,1	// 背包擴充券[限定]
+IG_Inventory_Expand,25793,1	// 背包擴充券
 
 // Costume_Enchant_Stone_Box5
 IG_Costume_Enchant_Stone_Box5,6908,2	// ASPD石(披肩)

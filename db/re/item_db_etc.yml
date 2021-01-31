@@ -36089,6 +36089,18 @@ Body:
     Name: Valkyrie Ingrid's Armor
     Type: Etc
     Weight: 100
+  - Id: 25791
+    AegisName: Inventory_Ex_Evt
+    Name: '­I¥]ÂX¥R¨é[¬¡°Ê±M¥Î]'
+    Type: Etc
+  - Id: 25792
+    AegisName: Inventory_Ex_Dis
+    Name: '­I¥]ÂX¥R¨é[­­©w]'
+    Type: Etc
+  - Id: 25793
+    AegisName: Inventory_Ex
+    Name: ­I¥]ÂX¥R¨é
+    Type: Etc
   - Id: 25797
     AegisName: SuraStone_Robe2
     Name: ­×Ã¹¥ÛII(©ÜªÓ)
