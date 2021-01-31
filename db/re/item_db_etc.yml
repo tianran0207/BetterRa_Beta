@@ -36089,6 +36089,18 @@ Body:
     Name: Valkyrie Ingrid's Armor
     Type: Etc
     Weight: 100
+  - Id: 25791
+    AegisName: Inventory_Ex_Evt
+    Name: '背包扩充券[活动专用]'
+    Type: Etc
+  - Id: 25792
+    AegisName: Inventory_Ex_Dis
+    Name: '背包扩充券[限定]'
+    Type: Etc
+  - Id: 25793
+    AegisName: Inventory_Ex
+    Name: 背包扩充券
+    Type: Etc
   - Id: 25797
     AegisName: SuraStone_Robe2
     Name: 修罗石II(披肩)
