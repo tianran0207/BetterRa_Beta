@@ -25056,6 +25056,8 @@ Body:
     MaxLevel: 10
     Type: Weapon
     TargetType: Attack
+    DamageFlags:
+      IgnoreLongCard: true
     Range: 7
     Hit: Multi_Hit
     HitCount: -7
@@ -32790,7 +32792,7 @@ Body:
         - Level: 5
           Amount: 24
       ItemCost:
-        - Item: Catnip_Fruit
+        - Item: Nepeta_Cataria
           Amount: 1
     Unit:
       Id: Catnippowder
@@ -33254,7 +33256,7 @@ Body:
     Duration2: 20000
     Requires:
       ItemCost:
-        - Item: Catnip_Fruit
+        - Item: Nepeta_Cataria
           Amount: 1
     Unit:
       Id: Dummyskill
