@@ -23133,6 +23133,8 @@ Body:
     CastCancel: true
     CastTime: 2000
     AfterCastActDelay: 1000
+    CastDelayFlags:
+      IgnoreFlase: true
     Duration1:
       - Level: 1
         Time: 10000
@@ -23167,6 +23169,8 @@ Body:
     CastCancel: true
     CastTime: 2000
     AfterCastActDelay: 1000
+    CastDelayFlags:
+      IgnoreFlase: true
     Duration1:
       - Level: 1
         Time: 10000
@@ -23201,6 +23205,8 @@ Body:
     CastCancel: true
     CastTime: 2000
     AfterCastActDelay: 1000
+    CastDelayFlags:
+      IgnoreFlase: true
     Duration1:
       - Level: 1
         Time: 10000
@@ -23235,6 +23241,8 @@ Body:
     CastCancel: true
     CastTime: 2000
     AfterCastActDelay: 1000
+    CastDelayFlags:
+      IgnoreFlase: true
     Duration1:
       - Level: 1
         Time: 10000
@@ -23269,6 +23277,8 @@ Body:
     CastCancel: true
     CastTime: 2000
     AfterCastActDelay: 1000
+    CastDelayFlags:
+      IgnoreFlase: true
     Duration1:
       - Level: 1
         Time: 10000
@@ -23303,6 +23313,8 @@ Body:
     CastCancel: true
     CastTime: 2000
     AfterCastActDelay: 1000
+    CastDelayFlags:
+      IgnoreFlase: true
     Duration1:
       - Level: 1
         Time: 10000
