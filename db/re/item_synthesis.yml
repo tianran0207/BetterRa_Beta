@@ -945,20 +945,20 @@ Body:
   - Item: Class_Shadow_Box_Weapon
     NeedRefineMin: 7
     SourceItem:
-      - Item: S_Super_Novice_Weapon
+      - Item: S_SuperNovice_Weapon
       - Item: S_Gunslinger_Weapon
-      - Item: S_Taekwondo_Weapon
+      - Item: S_Taekwon_Weapon
       - Item: S_Ninja_Weapon
       - Item: S_DoramMagical_Weapon
       - Item: S_DoramPhysical_Weapon
-      - Item: S_Rune_Knight_Weapon
-      - Item: S_Royal_Guard_Weapon
+      - Item: S_Runeknight_Weapon
+      - Item: S_Royalguard_Weapon
       - Item: S_Mechanic_Weapon
       - Item: S_Genetic_Weapon
-      - Item: S_Arcbishop_Weapon
+      - Item: S_Archbishop_Weapon
       - Item: S_Sura_Weapon
-      - Item: S_Guillotine_Cross_Weapon
-      - Item: S_Shadow_Chaser_Weapon
+      - Item: S_Guillotine_Weapon
+      - Item: S_Shadowchaser_Weapon
       - Item: S_Warlock_Weapon
       - Item: S_Sorcerer_Weapon
       - Item: S_Ranger_Weapon
@@ -985,9 +985,9 @@ Body:
       - Item: S_Hunter_Armor
       - Item: S_Bard_Armor
       - Item: S_Dancer_Armor
-      - Item: S_Super_Novice_Weapon
+      - Item: S_SuperNovice_Weapon
       - Item: S_Gunslinger_Weapon
-      - Item: S_Taekwondo_Weapon
+      - Item: S_Taekwon_Weapon
       - Item: S_DoramPhysical_Armor
       - Item: S_DoramMagical_Armor
       - Item: S_Star_Emperor_Armor
@@ -1028,14 +1028,14 @@ Body:
   - Item: Class_Shadow_Box_Shield
     NeedRefineMin: 7
     SourceItem:
-      - Item: S_Rune_Knight_Shield
-      - Item: S_Royal_Guard_Shield
+      - Item: S_Runeknight_Shield
+      - Item: S_Royalguard_Shield
       - Item: S_Mechanic_Shield
       - Item: S_Genetic_Shield
       - Item: S_Archbishop_Shield
       - Item: S_Sura_Shield
-      - Item: S_Guillotine_Cross_Shield
-      - Item: S_Shadow_Chaser_Shield
+      - Item: S_Guillotine_Shield
+      - Item: S_Shadowchaser_Shield
       - Item: S_Warlock_Shield
       - Item: S_Sorcerer_Shield
       - Item: S_Ranger_Shield
@@ -1045,7 +1045,7 @@ Body:
       - Item: S_Taekwon_Shield
       - Item: S_DoramPhysical_Shield
       - Item: S_DoramMagical_Shield
-      - Item: S_Super_Novice_Shield
+      - Item: S_SuperNovice_Shield
       - Item: S_Gunslinger_Shield
     Reward: |
       .@itemid = groupranditem(IG_Class_Shadow_Shield);
@@ -1354,33 +1354,33 @@ Body:
       - Item: S_Hunter_Armor
       - Item: S_Bard_Armor
       - Item: S_Dancer_Armor
-      - Item: S_Super_Novice_Weapon
+      - Item: S_SuperNovice_Weapon
       - Item: S_Gunslinger_Weapon
-      - Item: S_Taekwondo_Weapon
+      - Item: S_Taekwon_Weapon
       - Item: S_Ninja_Weapon
       - Item: S_DoramMagical_Weapon
       - Item: S_DoramPhysical_Weapon
-      - Item: S_Rune_Knight_Weapon
-      - Item: S_Royal_Guard_Weapon
+      - Item: S_Runeknight_Weapon
+      - Item: S_Royalguard_Weapon
       - Item: S_Mechanic_Weapon
       - Item: S_Genetic_Weapon
-      - Item: S_Arcbishop_Weapon
+      - Item: S_Archbishop_Weapon
       - Item: S_Sura_Weapon
-      - Item: S_Guillotine_Cross_Weapon
-      - Item: S_Shadow_Chaser_Weapon
+      - Item: S_Guillotine_Weapon
+      - Item: S_Shadowchaser_Weapon
       - Item: S_Warlock_Weapon
       - Item: S_Sorcerer_Weapon
       - Item: S_Ranger_Weapon
       - Item: S_Minstrel_Weapon
       - Item: S_Wanderer_Weapon
-      - Item: S_Rune_Knight_Shield
-      - Item: S_Royal_Guard_Shield
+      - Item: S_Runeknight_Shield
+      - Item: S_Royalguard_Shield
       - Item: S_Mechanic_Shield
       - Item: S_Genetic_Shield
       - Item: S_Archbishop_Shield
       - Item: S_Sura_Shield
-      - Item: S_Guillotine_Cross_Shield
-      - Item: S_Shadow_Chaser_Shield
+      - Item: S_Guillotine_Shield
+      - Item: S_Shadowchaser_Shield
       - Item: S_Warlock_Shield
       - Item: S_Sorcerer_Shield
       - Item: S_Ranger_Shield
@@ -1390,7 +1390,7 @@ Body:
       - Item: S_Taekwon_Shield
       - Item: S_DoramPhysical_Shield
       - Item: S_DoramMagical_Shield
-      - Item: S_Super_Novice_Shield
+      - Item: S_SuperNovice_Shield
       - Item: S_Gunslinger_Shield
       - Item: S_Thief_Earring
       - Item: S_Archer_Earring
@@ -1428,10 +1428,10 @@ Body:
       - Item: S_Uncursed_Pendant_II
       - Item: S_Tension_Weapon
       - Item: S_Tension_Earring
-      - Item: S_Tension_Pendant
+      - Item: S_Tension_Pendent
       - Item: S_Elegant_Weapon
       - Item: S_Elegant_Earring
-      - Item: S_Elegant_Pendant
+      - Item: S_Elegant_Pendent
       - Item: S_Healing_Shield
       - Item: S_Healing_Shoes
       - Item: S_Restore_Earring
@@ -1446,12 +1446,12 @@ Body:
       - Item: S_Vibration_Dragon_Killer_Armor
       - Item: S_Scissor_Hunting_Armor
       - Item: S_Fishing_Insect_Net_Armor
-      - Item: S_Sentimental_Weapon
-      - Item: S_Sentimental_Earring
-      - Item: S_Sentimental_Pendant
-      - Item: S_Enchanting_Weapon
-      - Item: S_Enchanting_Earring
-      - Item: S_Enchanting_Pendant
+      - Item: Sentimental_Weapone_S
+      - Item: Sentimental_Earring_S
+      - Item: Sentimental_Pendant_S
+      - Item: Enchanting_Weapone_S
+      - Item: Enchanting_Earring_S
+      - Item: Enchanting_Pendant_S
       - Item: S_Infinity_Weapon
       - Item: S_Physical_Shoes
       - Item: S_Physical_Shield
@@ -2241,7 +2241,7 @@ Body:
       - Item: Nine_Tail_Egg
       - Item: Teddy_Bear_Egg
       - Item: Roween_Egg
-      - Item: Willow_Egg
+      - Item: Wilow_Egg
       - Item: Gremlin_Egg
       - Item: Mummy_Egg
       - Item: Scatletoncarrier

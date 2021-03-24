@@ -17744,6 +17744,40 @@ Body:
     HitCount: 1
     Range: 14
     Duration1: 30000
+  - Id: 769
+    Name: NPC_RAINOFMETEOR
+    Description: Rain Of Meteor
+    MaxLevel: 10
+    Type: Magic
+    TargetType: ground
+    Flags:
+      IsNpc: true
+      ShowScale: true
+    Range: 9
+    Hit: Single
+    HitCount: 3
+    Element: Fire
+    SplashArea:
+      - Level: 1
+        Area: 1
+      - Level: 2
+        Area: 1
+      - Level: 3
+        Area: 2
+      - Level: 4
+        Area: 2
+      - Level: 5
+        Area: 3
+      - Level: 6
+        Area: 3
+      - Level: 7
+        Area: 4
+      - Level: 8
+        Area: 4
+      - Level: 9
+        Area: 5
+      - Level: 10
+        Area: 5
   - Id: 1001
     Name: KN_CHARGEATK
     Description: ¨R¾W§ðÀ»
@@ -23099,6 +23133,8 @@ Body:
     CastCancel: true
     CastTime: 2000
     AfterCastActDelay: 1000
+    CastDelayFlags:
+      IgnoreFlase: true
     Duration1:
       - Level: 1
         Time: 10000
@@ -23133,6 +23169,8 @@ Body:
     CastCancel: true
     CastTime: 2000
     AfterCastActDelay: 1000
+    CastDelayFlags:
+      IgnoreFlase: true
     Duration1:
       - Level: 1
         Time: 10000
@@ -23167,6 +23205,8 @@ Body:
     CastCancel: true
     CastTime: 2000
     AfterCastActDelay: 1000
+    CastDelayFlags:
+      IgnoreFlase: true
     Duration1:
       - Level: 1
         Time: 10000
@@ -23201,6 +23241,8 @@ Body:
     CastCancel: true
     CastTime: 2000
     AfterCastActDelay: 1000
+    CastDelayFlags:
+      IgnoreFlase: true
     Duration1:
       - Level: 1
         Time: 10000
@@ -23235,6 +23277,8 @@ Body:
     CastCancel: true
     CastTime: 2000
     AfterCastActDelay: 1000
+    CastDelayFlags:
+      IgnoreFlase: true
     Duration1:
       - Level: 1
         Time: 10000
@@ -23269,6 +23313,8 @@ Body:
     CastCancel: true
     CastTime: 2000
     AfterCastActDelay: 1000
+    CastDelayFlags:
+      IgnoreFlase: true
     Duration1:
       - Level: 1
         Time: 10000
@@ -25022,6 +25068,8 @@ Body:
     MaxLevel: 10
     Type: Weapon
     TargetType: Attack
+    DamageFlags:
+      IgnoreLongCard: true
     Range: 7
     Hit: Multi_Hit
     HitCount: -7
@@ -32756,7 +32804,7 @@ Body:
         - Level: 5
           Amount: 24
       ItemCost:
-        - Item: Catnip_Fruit
+        - Item: Nepeta_Cataria
           Amount: 1
     Unit:
       Id: Catnippowder
@@ -33220,7 +33268,7 @@ Body:
     Duration2: 20000
     Requires:
       ItemCost:
-        - Item: Catnip_Fruit
+        - Item: Nepeta_Cataria
           Amount: 1
     Unit:
       Id: Dummyskill
