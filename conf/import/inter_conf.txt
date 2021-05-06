@@ -1,0 +1,49 @@
+// 配置 MySQL的表的编码
+// 大陆为GBK，台湾为BIG5，也可以保持auto不动
+default_codepage: auto
+
+// 说明：假设*为通配符代表任意字符，*_ip相当于login_server_ip、ipban_db_ip、char_server_ip、map_server_ip、log_db_ip
+// *_ip为MySQL的IP
+// *_port为MySQL的端口
+// *_id为MySQL的账号
+// *_pw为MySQL的账号对应的密码
+// *_db为MySQL的数据库名称
+// *_codepage为MySQL的数据库对应的编码
+// 注：如果按照教程下来，一般只需要填入 *_pw 就可以了
+
+// 登录服务器的 MySQL 连接配置信息
+login_server_ip: 127.0.0.1
+login_server_port: 3311
+login_server_id: root
+login_server_pw: FFff19981027
+login_server_db: ro_main
+
+// IP封禁列表 MySQL 连接配置信息
+ipban_db_ip: 127.0.0.1
+ipban_db_port: 3311
+ipban_db_id: root
+ipban_db_pw: FFff19981027
+ipban_db_db: ro_main
+
+// 角色服务器的 MySQL 连接配置信息
+char_server_ip: 127.0.0.1
+char_server_port: 3311
+char_server_id: root
+char_server_pw: FFff19981027
+char_server_db: ro_main
+
+// 地图服务器的 MySQL 连接配置信息
+map_server_ip: 127.0.0.1
+map_server_port: 3311
+map_server_id: root
+map_server_pw: FFff19981027
+map_server_db: ro_main
+
+// 日志数据库的 MySQL 连接配置信息
+log_db_ip: 127.0.0.1
+log_db_port: 3311
+log_db_id: root
+log_db_pw: FFff19981027
+log_db_db: ro_logs
+log_codepage:
+log_login_db: loginlog

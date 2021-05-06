@@ -922,12 +922,6 @@ Body:
   - Command: reloadstatusdb
     Help: |
       重新加载状态配置文件.
-  - Command: reloadupgradedb
-    Help: |
-      重新加载物品词缀配置文件.
-  - Command: reloadsynthesisdb
-    Help: |
-      重新加载物品合成配置文件.
   - Command: reload
     Help: |
       指令参数: <要重载的数据类型>

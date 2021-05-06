@@ -1,0 +1,5 @@
+// 将 char_ip 后的IP地址改为外网IP, 其余保持不变
+login_ip: 127.0.0.1
+login_port: 6900
+char_ip: 42.193.148.44
+char_port: 6121
