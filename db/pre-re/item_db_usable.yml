@@ -1,5 +1,5 @@
 # This file is a part of rAthena.
-#   Copyright(C) 2019 rAthena Development Team
+#   Copyright(C) 2021 rAthena Development Team
 #   https://rathena.org - https://github.com/rathena
 #
 # This program is free software: you can redistribute it and/or modify
@@ -54,6 +54,16 @@
 #     DropAnnounce          If the item has a special announcement to self on drop. (Default: false)
 #     NoConsume             If the item is consumed on use. (Default: false)
 #     DropEffect            If the item has a special effect on the ground when dropped by a monster. (Default: None)
+#     ForceUseItem          ër¡@¡@ôe¸ö¡@¡@¡@ÓGùV§Ù¼b¡@£¸éL¡@¨ŞÕÚÄÁ²ë€Ãë¦·æãôù¸ö¡@ÒW¡@¼b¡@£¶¨jÃì¡@¡@Ãñ¡@¡@ôğ¡@éL¡@
+#     IgnoreNoFunc          ¡@¡@İµÃëËf¡@ mapflag ®ş­ noitemfunc ô\ºÀ¡@ôğäõ¡vöa®
+#     NoConsume2            ¡@¡@İµ®ş¹ñ²Ó¡@ÅÜò«Ú¡¡@¡@ôe¦·´IÁî£µ¼b¡@£¹€Œ®PØ¤€—ëæ¡@Ù¶ NoConsume ¡@£µ¼b¡@£·ÊºùVÂÇÎæîê¡@æw®ş¡@ÓGùV§Ù¼b¡@£¸ÕÚ¡@áÂ¡@ôğäõïâîâ³_¯Å
+#     NoSkillConsume        ¡@¡@İµ®ş¹ñ²Ó¡@ÅÜò«Ú¡¡@¡@Áî£·ÊºùVªã¡@îî€è¡@Æ_ÉÙÖÇÆ_—
+#     NoDropWithoutPlayer   ÆVÑÒéL¡@£·¯fÃìÌB¡@ôe¸ö¡@®şÎ¶¡@¡@€æ¡@Ãë¦·ÓGÒZ¡@¡@ùÀ­É¡@¡@¡@İµ
+#     DoDropEvent           ÆVÑÒéLÚ¡¡@¡@ôe¸öÂQ¡@€æ¡@, ÒZºr¡@îí‘ OnMOBDropItemFilter ¡@¡@Åw
+#     TurnIntoCostume       ¡@¡@Ùóæ¢¡@éL¡@¨ŞÕÚ·è¡@¡@îí¾ğ­tÃë´k¡@/ërÄ|¡@ (îã³ú¡@ BetterRA.conf ®ş­ è©¹òÃ¦ item_costume_card®şº yes ¼d€åØüæ¢¡@ÎoùV½)
+#     IgnoreScript          ¡@¡@Ùóæ¢¡@éL¡@¨ŞÕÚ·è¡@¡@ä±ËÁ¡@·è…/ërÄ|¡@ñS€æÙóÅôÏ´€§ÒZ¡@Ù¶¡@³úìÙ
+#     IgnoreAutoLoot        ¡@¡@İµÃëËf¡@Æh¡@ÎpñVÄß¡@, ÒZ¡@Ïr¡@¡@¡@îâªOÕä®şŠ
+#     IgnoreEquipView       ·è¡@¡@¿G¡@¡@®şá¦åæÖæ«¡¡@·è¡@¡@ÃñÉàê_îí¢ìµÆ
 #   Delay:                  Item use delay. (Default: null)
 #     Duration              Duration of delay in seconds.
 #     Status                Status Change used to track delay. (Default: None)
@@ -139,7 +149,6 @@ Body:
       sc_end SC_Poison;
       sc_end SC_Silence;
       sc_end SC_Blind;
-      sc_end SC_Confusion;
   - Id: 507
     AegisName: Red_Herb
     Name: ¬õ¦âÃÄ¯ó
@@ -1071,7 +1080,7 @@ Body:
       BuyingStore: true
       DeadBranch: true
     Script: |
-      monster "this",-1,-1,"--ja--",-1,1,"";
+      monster "this",-1,-1,"--ja--",-1-MOBG_BRANCH_OF_DEAD_TREE,1,"";
   - Id: 605
     AegisName: Anodyne
     Name: °Ò¯SÀø¶ËÃÄ
@@ -2725,7 +2734,7 @@ Body:
     Flags:
       DeadBranch: true
     Script: |
-      monster "this",-1,-1,"--ja--",-4,1,"";
+      monster "this",-1,-1,"--ja--",-1-MOBG_RED_POUCH_OF_SURPRISE,1,"";
   - Id: 12025
     AegisName: Egg_Boy
     Name: ³Qª½¥ßªºÂû³J
@@ -3585,7 +3594,7 @@ Body:
       BuyingStore: true
       DeadBranch: true
     Script: |
-      monster "this",-1,-1,"--ja--",-3,1,"";
+      monster "this",-1,-1,"--ja--",-1-MOBG_BLOODY_DEAD_BRANCH,1,"";
   - Id: 12104
     AegisName: Random_Quiver
     Name: ÀHÉó½b¥Úµ©
@@ -3657,7 +3666,7 @@ Body:
       BuyingStore: true
       DeadBranch: true
     Script: |
-      monster "this",-1,-1,"--ja--",-2,1,"";
+      monster "this",-1,-1,"--ja--",-1-MOBG_PORING_BOX,1,"";
   - Id: 12110
     AegisName: First_Aid_Kit
     Name: «æ±Ï½c
@@ -5103,7 +5112,7 @@ Body:
       NoMail: true
       NoAuction: true
     Script: |
-      set .@type,getiteminfo(getequipid(EQI_HAND_R),11);
+      set .@type,getiteminfo(getequipid(EQI_HAND_R), ITEMINFO_VIEW);
       if (.@type == W_1HAXE || .@type == W_2HAXE || .@type == W_MACE) {
          skilleffect "BS_ADRENALINE",0;
          sc_start SC_ADRENALINE,150000,5;

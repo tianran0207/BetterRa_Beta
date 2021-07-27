@@ -305,7 +305,47 @@ BetterRa 在官方的基礎上做了以下改進:
 
 *OnPCPetFeedEvent:
 
-當玩家給自己的寵物喂食后, 此事件會被触發 (關聯到寵物的主人)
+	當玩家給自己的寵物喂食后, 此事件會被触發 (關聯到寵物的主人)
+
+---------------------------------------
+
+*OnPCPetIncubateFilter:
+
+	當寵物孵化時触發該事件
+
+參數說明:
+	@pet_id    寵物對應的魔物ID
+	@pet_idx   寵物蛋在背包中的位置序號
+
+中斷說明: 
+	中斷后寵物孵化失敗
+
+---------------------------------------
+
+*OnPCPetEvolvesFilter:
+
+	當寵物進化時触發該事件, 當進化所需材料不足時, 仍可以触發該事件
+	
+參數說明:
+	@pet_id                  寵物對應的魔物ID
+	@pet_gid                 寵物的GID
+	@pet_target_id           進化后的寵物對應的魔物ID
+	@pet_require_itemid[]    進化所需物品ID
+	@pet_require_itemcount[] 進化所需物品數量
+	@pet_require_count       進化總共需要几种物品, 即數組成員數量
+
+中斷說明: 
+	中斷后本次進化失敗
+
+---------------------------------------
+
+*OnPCPetEvolvesEvent:
+
+	當寵物進化后触發該事件
+	
+參數說明:
+	@pet_id                  寵物對應的魔物ID
+	@pet_gid                 寵物的GID
 
 ---------------------------------------
 
@@ -1135,8 +1175,10 @@ BetterRa 在官方的基礎上做了以下改進:
 	
 參數說明:
 	@PetCatch_mob     所抓寵物對應的魔物ID
+	@PetCatch_gid     所抓寵物對應的魔物GID
 	@PetCatch_item    所抓寵物所使用的物品ID
-	@PetCatch_rate    修正后抓取寵物的概率
+	@PetCatch_rate    捕獲寵物的成功概率
+	@PetCatch_real    捕獲寵物的實際概率
 
 中斷說明: 
 	中斷后可通過對 @PetCatch_result(1: 成功 0: 失敗) 修改動畫播放結果
@@ -1150,8 +1192,9 @@ BetterRa 在官方的基礎上做了以下改進:
 	
 參數說明:
 	@PetCatch_mob     所抓寵物對應的魔物ID
+	@PetCatch_gid     所抓寵物對應的魔物GID
 	@PetCatch_item    所抓寵物所使用的物品ID
-	@PetCatch_rate    修正后抓取寵物的概率
+	@PetCatch_rate    捕獲寵物的成功概率
 	@PetCatch_result  是否抓取成功(1: 成功 0: 失敗)
 
 ---------------------------------------

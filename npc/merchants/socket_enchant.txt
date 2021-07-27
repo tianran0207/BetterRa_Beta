@@ -259,7 +259,7 @@ function	script	Func_Socket	{
 	mes "對了, 別忘記帶上要打孔的 " + getitemname(.@item_id) + "!";
 	next;
 	mes "[世雅布蓮]";
-	if (getiteminfo(.@item_id,5) & EQP_HAND_R) // weapon
+	if (getiteminfo(.@item_id, ITEMINFO_LOCATIONS) & EQP_HAND_R) // weapon
 	{
 		mes "如果您准備了我需要的物品和費用, 我會嘗試在您的武器上打孔.";
 		mes "在那之前, 我必須告訴您相關的風險.";

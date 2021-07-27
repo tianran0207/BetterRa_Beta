@@ -100,6 +100,7 @@ TargetManHole				- Target enemy with SC__MANHOLE.
 TargetHidden				- Target enemy with OPTION_HIDE.
 IncreaseDanceWithWugDamage	- Increase SC_DANCEWITHWUG damage.
 IgnoreWugBite				- Ignore RA_WUGBITE.
+IgnoreIgnorance				- Ignore SC_IGNORANCE
 IgnoreAutoGuard				- Not blocked by SC_AUTOGUARD (When TargetType is Weapon only).
 IgnoreCicada				- Not blocked by SC_UTSUSEMI or SC_BUNSINJYUTSU (When TargetType is Weapon only).
 ShowScale					- Shows AoE area while casting
@@ -469,7 +470,6 @@ CastTimeFlags: Effects of the skill's cast time.
 IgnoreDex		- Cast time not affected by DEX.
 IgnoreStatus	- Cast time not affected by statuses (Suffragium, etc).
 IgnoreItemBonus	- Cast time not affected by item bonuses.
-IgnoreFalse	- Cast time not affected skill fail.
 
 ---------------------------------------
 
@@ -478,7 +478,8 @@ CastDelayFlags: Effects of the skill's delay.
 IgnoreDex		- Delay not affected by DEX.
 IgnoreStatus	- Delay not affected by statuses (Suffragium, etc).
 IgnoreItemBonus	- Delay not affected by item bonuses.
-IgnoreFalse	- Delay not affected skill fail.
+IgnoreFalse	    - Delay not affected by skill use failure (¡@€è¡@ÒF¸óÙu¿GÄ|àDÁí¡@ÓGâYÒ]¡@¡@€è¡@¹í´kðm). 
+IgnoreAction    - Delay not affected by action (îíÑïÖÇ¡@€è¡@Áî£µßcÁíÎ·¡@, ËCÄßÑJ¿¨’7). 
 
 IgnoreDex only makes sense when battle_config::delay_dependon_dex is enabled.
 

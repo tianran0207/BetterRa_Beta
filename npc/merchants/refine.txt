@@ -16,100 +16,101 @@
 //= 3.2a Added 'disable_items' command. [Euphy]
 //= 3.3 Some official script updates. [Euphy]
 //= 3.4 Added VIP features. [Euphy]
+//= 3.5 Added Refine UI [Atemo, Lemongrass]
 //============================================================
 
 // Christopher: Geffen Blacksmith
 //============================================================
-geffen_in,110,172,0	script	îãìÒÕQóc¡@¡@²Ù#1	63,{
-	mes "[îãìÒÕQóc¡@¡@²ÙÃf";
-	mes "ÒF¡@¡@, îØÕoÃrôe¶!";
-	mes "¼c¡@¡@¡@¡@ÑJîãìÖéFóc¡@¡@²Ù¡@İµîÑ¡@áâ.";
+geffen_in,110,172,0	script	§J²z´µ¦hºÖ#1	63,{
+	mes "[§J²z´µ¦hºÖ]";
+	mes "§A¦n, «_ÀI®a!";
+	mes "Åwªï¨Ó¨ì§J¨½´µ¦hºÖÅK¦K¾Q.";
 	next;
-	mes "[îãìÒÕQóc¡@¡@²ÙÃf";
-	mes "âYø¬éFíi¡@ÔøñS€æÙóîã¥Rò«ºö¼@¡@¡@£¸ÕÚ¡@¡@İµ.";
-	mes "Âí£ºÚV·åË¼ÓM¯K³úé¡?";
+	mes "[§J²z´µ¦hºÖ]";
+	mes "³o¨½³c½æ©Ò¦³Ãö¤_ºë·Ò¥Îªºª««~.";
+	mes "±z»İ­n¤°¤\©O?";
 	next;
-	switch(select("ñi¡@¡@·åË¼«ıìH¨Ş¡@:ñi¡@¡@·åË¼«ıºö¼@¡@ôğ¡@éL¡@:ñi¡@¡@·åË¼«ı¡@¡@¡@:ñi¡@¡@·åË¼«ıîâ¦·ßcîÔ¡@¡@:îíÑïÖÇ")) {
+	switch(select("§Ú·Q­n¶RÅK¯z:§Ú·Q­n¶Rºë·Òªºª««~:§Ú·Q­n¶Rª÷Äİ:§Ú·Q­n¶R¨î§@­ì¥Û:¨ú®ø")) {
 	case 1:
-		mes "[îãìÒÕQóc¡@¡@²ÙÃf";
-		mes "¡@£·¡@îâ¦·ßcÎg¡t¡@ôğäõİµÅI§,";
-		mes "ër¡@¡@óq¡@ÖÄîê¡@¡üôğäõìÆÅô¡@ÖÄ¾ü½.";
-		mes "®şá¬Á^Âí£¶¡@æ¢¡@¡@¡@¡@¡@,";
-		mes "Âï³ú¡@¯Æ¡@ÕÚ¡@¡@¡@ÒW¾WÒ~®şÔí®òÂïØ¤§j.";
-		mes "Âí£¶¡@ÒW¡@¬»¡@¡@ï»®fÅGÕÚºıÉáŞöîÏ¡@Øvè§¡@á{ÁíØ¨€‚ôğ„.";
+		mes "[§J²z´µ¦hºÖ]";
+		mes "¥Î¨Ó¨î§@ªZ¾¹ªºÅK¯z,";
+		mes "·íµM¬O¶V°íµwªºª÷Äİ¶V¦n.";
+		mes "¤£¹L±zÀ³¸Ó¤]ª¾¹D,";
+		mes "·U°íµwªºª÷ÄİÉ²®æ¤W´N·U¶Q.";
+		mes "±z¥i¥H®ÚÕu¦Û¤vªº¸gÀÙ±¡ªp¿ï¾Ü¦XÓìªº.";
 		next;
-		switch(select("ìH¨Ş¡@ - 30,000z:²ØÏ²¡@¡@¡@¡@ìH¨Ş¡@ - 120,000z:ºdäõìÆìH¨Ş¡@ - 300,000z:óa§ø¡@ôğäõİµÅI§:îíÑïÖÇ")) {
+		switch(select("ÅK¯z - 30,000z:¯«¤§ª÷ÄİÅK¯z - 120,000z:¶Àª÷ÅK¯z - 300,000z:§ó¦nªºÅK¯z:¨ú®ø")) {
 		case 1:
 			if (Zeny < 30000) {
-				mes "[îãìÒÕQóc¡@¡@²ÙÃf";
-				mes "ñiİt¡@¾Èİäğo®ş¡@ÀôÃñ·Î¤ZºıÉáåÎÃì€äßXôğ¡@Â²ëæ¡@¡@®şÂEğo¯KØ©ßXôğ¡@ÀôìNåxÓQñS€ä¤¬¯K¡@ÓGîãËµ¡@ÂzÔíÓF";
+				mes "[§J²z´µ¦hºÖ]";
+				mes "§ÚÄ±±o³o­ÓÉ²®æ¤w¸g¬O³Ì§Cªº¤F¡A¦]¬°³o¤\§CªºÉ²¿ú¡A©Ò¥H¤]¤£¤¹³\»­±b";
 				close;
 			}
 			getitem 986,1; // Anvil
 			Zeny = Zeny-30000;
-			mes "[îãìÒÕQóc¡@¡@²ÙÃf";
-			mes "ÒF¡@€‰ñV¡@ÕÚâY¡@¡@¿¨á¦åÎ«»¡@½r²Z«±¡@ôğ¡@¡@¿¨.";
+			mes "[§J²z´µ¦hºÖ]";
+			mes "§A¿ï¾Üªº³o¤@Ïú¬O¤ñ¸û«K©yªº¤@Ïú.";
 			close;
 		case 2:
 			if (Zeny < 120000) {
-				mes "[îãìÒÕQóc¡@¡@²ÙÃf";
-				mes "ñiİt¡@¾Èİäğo®ş¡@ÀôÃñ·Î¤ZºıÉáåÎÃì€äßXôğ¡@Â²ëæ¡@¡@®şÂEğo¯KØ©ßXôğ¡@ÀôìNåxÓQñS€ä¤¬¯K¡@ÓGîãËµ¡@ÂzÔíÓF";
+				mes "[§J²z´µ¦hºÖ]";
+				mes "§ÚÄ±±o³o­ÓÉ²®æ¤w¸g¬O³Ì§Cªº¤F¡A¦]¬°³o¤\§CªºÉ²¿ú¡A©Ò¥H¤]¤£¤¹³\»­±b";
 				close;
 			}
 			getitem 987,1; // Oridecon_Anvil
 			Zeny = Zeny-120000;
-			mes "[îãìÒÕQóc¡@¡@²ÙÃf";
-			mes "îé¢!öf¡@¡@ÒF¡@åÎ®ş¡@¡@ôe¸ú€‚âY¡@¡@ôe¡@åÎ®ş€ä°yè§³ËÑ®ìHËÃÑiôğäõİµÅI¡@ÓQÒFËf¡@óq¡@¡@?";
+			mes "[§J²z´µ¦hºÖ]";
+			mes "¾¾!¬İ¨Ó§A¬O­Ó¦æ®a¡C³o¤@©w¬O¤@­ÓÓì¦XÅK¦KªºÅK¯z¡A§A»¡¬O¶Ü?";
 			close;
 		case 3:
 			if (Zeny < 300000) {
-				mes "[îãìÒÕQóc¡@¡@²ÙÃf";
-				mes "ñiİt¡@¾Èİäğo®ş¡@ÀôÃñ·Î¤ZºıÉáåÎÃì€äßXôğ¡@Â²ëæ¡@¡@®şÂEğo¯KØ©ßXôğ¡@ÀôìNåxÓQñS€ä¤¬¯K¡@ÓGîãËµ¡@ÂzÔíÓF";
+				mes "[§J²z´µ¦hºÖ]";
+				mes "§ÚÄ±±o³o­ÓÉ²®æ¤w¸g¬O³Ì§Cªº¤F¡A¦]¬°³o¤\§CªºÉ²¿ú¡A©Ò¥H¤]¤£¤¹³\»­±b";
 				close;
 			}
 			getitem 988,1; // Golden_Anvil
 			Zeny = Zeny-300000;
-			mes "[îãìÒÕQóc¡@¡@²ÙÃf";
-			mes "âY¡@¡@®ş¡@åÎ®f¡@ßcôe¡@¡@®ş¡@ÕÚÃì€å¡@ôğ¡@¡@¿¨¡@ÓQ¡@£¹ğo¿¨á«İµÅI¡@ÓQÒFÊD¡@ô\ºÀ¡@ÒW¡@¡@îîÀÁİµîÑÊD¡@";
+			mes "[§J²z´µ¦hºÖ]";
+			mes "³o¤@­Ó¬O¤u§@«Ç¤§¤¤ªº³Ì¦nªº¤@Ïú¡A¥Î³oÏúÅK¯z¡A§Aµ´¹ï¥i¥HºÙÅQÅK¦K¬É";
 			close;
 		case 4:
-			mes "[îãìÒÕQóc¡@¡@²ÙÃf";
-			mes "¾È¡@ÎqÎg‰!";
-			mes "ñiİtğo¡@ÉÙ¯fÃì¡@¡@ºdäõìÆìH¨Ş¡@óa§ø¡@ôğäõİµÅI¡@Â².";
+			mes "[§J²z´µ¦hºÖ]";
+			mes "«Ü©êºp!";
+			mes "§Ú³o¨½¨S¦³¤ñ¶Àª÷ÅK¯z§ó¦nªºÅK¯z¤F.";
 			next;
-			mes "[îãìÒÕQóc¡@¡@²ÙÃf";
-			mes "ñi¡@¡@ÒZËf¡@®ş¡@ÕÚ'Ringgel'Ãì¡@¡@âYÅÏÏr¾ü¬ÉÕÚìH¨Ş¡@, ÒF¡@åÎôe¡@Ñ{óq¡@¡@®ş¡@Öåæ¢½R€Œ®f².";
+			mes "[§J²z´µ¦hºÖ]";
+			mes "©Î³\¶Ç»¡¤¤ªº'Ringgel'¦³¤ñ³o§ó¦nªºÅK¯z, ¦ı¬O¥¦¥u¬O¤@­Ó¶Ç»¡¦Ó¤w.";
 			close;
 		case 5:
-			mes "[îãìÒÕQóc¡@¡@²ÙÃf";
-			mes "ÀáØQõ×Ãì¡@´«ÒF¡@ÚV·å¨ŞÕÚæ¢, ";
-			mes "¼c¡@¡@Âí£¶Ô©ºS¡tÔp®ş´.";
-			mes "æ¢¾W°ÑÂzæ»";
+			mes "[§J²z´µ¦hºÖ]";
+			mes "¦pªG¦³¥ô¦ó»İ­nªº¸Ü, ";
+			mes "Åwªï±z¦A«×¥úÁ{.";
+			mes "½ĞºC¨«~";
 			close;
 		}
 	case 2:
-		mes "[îãìÒÕQóc¡@¡@²ÙÃf";
-		mes "ÒZ¡@¡@ôğäõİµîÑ¡@¡@ôù¸öæí·å¨ŞÙuÒZ¡@¡@ôğäõ¡@îã·¬€‚";
-		mes "ÀáØQõ×¡@£¶¡@¡@ÉÙÏ_¿G¡@¡@ìHËÃÑiìHÂE³İ¯K¦ñ¡@îã­·ÕÚæ¢¡@ÓQ";
-		mes "Âí£µ¡@ôe´ã¡@ÒW¡@Î]®şÅF¡@Áí¹ñÖâ¿G¡@ÕÚìHËÃÑiôğáC€‚";
-		mes "è§¡@€‰öfìÖÔ\®ş€ç¡@è¦¼Ã¡@Ãì€äßZÂí£¸ÕÚî¿¡@¡@Áí§!";
+		mes "[§J²z´µ¦hºÖ]";
+		mes "°¶¤jªºÅK¦K·íµM±o­n¥Î°¶¤jªº¹D¨ã¡C";
+		mes "¦pªG¦b§J¨½´µ¦hºÖÅK¦K¾QÁÊ¶R¹D¨ãªº¸Ü¡A";
+		mes "±z¤@©w¥i¥H¦¨¬°¤@¦W°¶¤jªºÅK¦Kªº¡C";
+		mes "¿ï¿ï¬İ¨º¤@Ïú¹D¨ã³Ì¦ó±zªº¤ß·N§a!";
 		next;
-		switch(select("¡@«¡¨j¡@£¸Ôt¡@¸ó¡@ - 150z:ìN¡@İµìL¡@öò - 1000z:ºdäõìÆìL¡@öò - 3000z:²ØÏ²¡@¡@¡@¡@ìL¡@öò - 5000z:ºı¡@æU¡@¡@¡@")) {
+		switch(select("Äâ±a¥Îº²ÄqÄl - 150z:¿ûÅKÁè¤l - 1000z:¶Àª÷Áè¤l - 3000z:¯«¤§ª÷ÄİÁè¤l - 5000z:µ²§ô¥æ©ö")) {
 		case 1:
-			mes "[îãìÒÕQóc¡@¡@²ÙÃf";
-			mes "¾ü¬ÉÕÚëæ¡@¡@¡@¡@ÔV·åËµ³İ¯KªO¡@ø¯¡@áø¡@?";
-			mes "¼cÓ³Úé¡@¡@®óóq¡@ÕÚæ¢éô¡@¡@‰'0'ä±‚";
+			mes "[§J²z´µ¦hºÖ]";
+			mes "¦nªº¡A½Ğ°İ±z­nÁÊ¶R¦h¤Ö¼Æ¶q?";
+			mes "±ıµ²§ô¥æ©öªº¸Ü½Ğ«ö'0'¡C";
 			next;
 			while(1) {
 				input .@input;
 				if (.@input == 0) {
-					mes "[îãìÒÕQóc¡@¡@²ÙÃf";
-					mes "¡@¡@¡@®fÓ³Úêºı¡@æUä±ØZ¡@ñd¡@³Jä±‚";
+					mes "[§J²z´µ¦hºÖ]";
+					mes "¥æ©ö¤w¸gµ²§ô¡C½ĞºC¨«¡C";
 					close;
 				}
 				else if ((.@input < 0) || (.@input > 500)) {
-					mes "[îãìÒÕQóc¡@¡@²ÙÃf";
-					mes "æ¢®p¡@íi¡@«ı¡@¦ñ¡@îÙ¡@ÑJ500®ş¡@¤¬®şéY€‚";
+					mes "[§J²z´µ¦hºÖ]";
+					mes "½Ğ±NÁÊ¶R¼Æ¶q´î¨ì500­Ó¥H¤U¡C";
 					next;
 				}
 				else {
@@ -118,78 +119,78 @@ geffen_in,110,172,0	script	îãìÒÕQóc¡@¡@²Ù#1	63,{
 			}
 			.@sell = .@input * 150;
 			if (Zeny < .@sell) {
-				mes "[îãìÒÕQóc¡@¡@²ÙÃf";
-				mes "ñiİt¡@¾Èİäğo®ş¡@ÀôÃñ·Î¤ZºıÉáåÎÃì€äßXôğ¡@Â²ëæ¡@¡@®şÂEğo¯KØ©ßXôğ¡@ÀôìNåxÓQñS€ä¤¬¯K¡@ÓGîãËµ¡@ÂzÔíÓFÜd¡g€¦";
+				mes "[§J²z´µ¦hºÖ]";
+				mes "§ÚÄ±±o³o­ÓÉ²®æ¤w¸g¬O³Ì§Cªº¤F¡A¦]¬°³o¤\§CªºÉ²¿ú¡A©Ò¥H¤]¤£¤¹³\»­±b¡K¡K";
 				close;
 			}
 			if (checkweight(612,.@input) == 0) {
-				mes "[îãìÒÕQóc¡@¡@²ÙÃf";
-				mes "ÒF¡@¯fÁîÏ´¡@¡@«¡¨jâY¡@¡@¿G²BÖĞŞ¶«±å¾!";
+				mes "[§J²z´µ¦hºÖ]";
+				mes "§A¨S¿ìªkÄâ±a³o¤\¦hªF¦è­ò!";
 				close;
 			}
 			getitem 612,.@input; // Portable_Furnace
 			Zeny = Zeny-.@sell;
-			mes "[îãìÒÕQóc¡@¡@²ÙÃf";
-			mes "Âï¡@ªüÂí£¸ÕÚîã¡@Î`ëæÉÙ¡@âY¡@ÓB¼c¡@Ôp®ş´!";
+			mes "[§J²z´µ¦hºÖ]";
+			mes "·PÁÂ±zªº¥úÁ{¡AÅwªï¤U¦¸¥úÁ{!";
 			close;
 		case 2:
 			if (Zeny < 1000) {
-				mes "[îãìÒÕQóc¡@¡@²ÙÃf";
-				mes "ñiİt¡@¾Èİäğo®ş¡@ÀôÃñ·Î¤ZºıÉáåÎÃì€äßXôğ¡@Â²ëæ¡@¡@®şÂEğo¯KØ©ßXôğ¡@ÀôìNåxÓQñS€ä¤¬¯K¡@ÓGîãËµ¡@ÂzÔíÓFÜd¡g€¦";
+				mes "[§J²z´µ¦hºÖ]";
+				mes "§ÚÄ±±o³o­ÓÉ²®æ¤w¸g¬O³Ì§Cªº¤F¡A¦]¬°³o¤\§CªºÉ²¿ú¡A©Ò¥H¤]¤£¤¹³\»­±b¡K¡K";
 				close;
 			}
 			getitem 613,1; // Iron_Hammer
 			Zeny = Zeny-1000;
-			mes "[îãìÒÕQóc¡@¡@²ÙÃf";
-			mes "Âï¡@ªüÂí£¸ÕÚîã¡@Î`ëæÉÙ¡@âY¡@ÓB¼c¡@Ôp®ş´!";
+			mes "[§J²z´µ¦hºÖ]";
+			mes "·PÁÂ±zªº¥úÁ{¡AÅwªï¤U¦¸¥úÁ{!";
 			close;
 		case 3:
 			if (Zeny < 3000) {
-				mes "[îãìÒÕQóc¡@¡@²ÙÃf";
-				mes "ñiİt¡@¾Èİäğo®ş¡@ÀôÃñ·Î¤ZºıÉáåÎÃì€äßXôğ¡@Â²ëæ¡@¡@®şÂEğo¯KØ©ßXôğ¡@ÀôìNåxÓQñS€ä¤¬¯K¡@ÓGîãËµ¡@ÂzÔíÓFÜd¡g€¦";
+				mes "[§J²z´µ¦hºÖ]";
+				mes "§ÚÄ±±o³o­ÓÉ²®æ¤w¸g¬O³Ì§Cªº¤F¡A¦]¬°³o¤\§CªºÉ²¿ú¡A©Ò¥H¤]¤£¤¹³\»­±b¡K¡K";
 				close;
 			}
 			getitem 614,1; // Golden_Hammer
 			Zeny = Zeny-3000;
-			mes "[îãìÒÕQóc¡@¡@²ÙÃf";
-			mes "Âï¡@ªüÂí£¸ÕÚîã¡@Î`ëæÉÙ¡@âY¡@ÓB¼c¡@Ôp®ş´!";
+			mes "[§J²z´µ¦hºÖ]";
+			mes "·PÁÂ±zªº¥úÁ{¡AÅwªï¤U¦¸¥úÁ{!";
 			close;
 		case 4:
 			if (Zeny < 5000) {
-				mes "[îãìÒÕQóc¡@¡@²ÙÃf";
-				mes "ñiİt¡@¾Èİäğo®ş¡@ÀôÃñ·Î¤ZºıÉáåÎÃì€äßXôğ¡@Â²ëæ¡@¡@®şÂEğo¯KØ©ßXôğ¡@ÀôìNåxÓQñS€ä¤¬¯K¡@ÓGîãËµ¡@ÂzÔíÓFÜd¡g€¦";
+				mes "[§J²z´µ¦hºÖ]";
+				mes "§ÚÄ±±o³o­ÓÉ²®æ¤w¸g¬O³Ì§Cªº¤F¡A¦]¬°³o¤\§CªºÉ²¿ú¡A©Ò¥H¤]¤£¤¹³\»­±b¡K¡K";
 				close;
 			}
 			getitem 615,1; // Oridecon_Hammer
 			Zeny = Zeny-5000;
-			mes "[îãìÒÕQóc¡@¡@²ÙÃf";
-			mes "Âï¡@ªüÂí£¸ÕÚîã¡@Î`ëæÉÙ¡@âY¡@ÓB¼c¡@Ôp®ş´!";
+			mes "[§J²z´µ¦hºÖ]";
+			mes "·PÁÂ±zªº¥úÁ{¡AÅwªï¤U¦¸¥úÁ{!";
 			close;
 		case 5:
-			mes "[îãìÒÕQóc¡@¡@²ÙÃf";
-			mes "¼c¡@¡@¡@¡@ÑJ'îãìÒÕQóc¡@¡@²Ù'ôğáD¥ïÒFŞ[¡@";
+			mes "[§J²z´µ¦hºÖ]";
+			mes "Åwªï¨Ó¨ì'§J²z´µ¦hºÖ'ªº¤u§@«Ç";
 			close;
 		}
 	case 3:
-		mes "[îãìÒÕQóc¡@¡@²ÙÃf";
-		mes "ñi¡@¾¼¿G¡@Â²¾È³ú¡@İÓéÍ¤t¡@ÉàÕÚ¡@¡@¡@ä±Ø\¡@¡@£µ¡@îî€è¡@¡@¡@¡@¿¨¡@é¡?";
+		mes "[§J²z´µ¦hºÖ]";
+		mes "§Ú­ã³Æ¤F«Ü¦h°ª½è¶qªºª÷Äİ¡C²{¦b§A»İ­n­ş¤@Ïú©O?";
 		next;
-		switch(select("¼d«¡ìÙÎg¡t¡@¡@¡@¡@-ºí¡@áø®ş€ - 200z:¼d«¡ìÙÎg¡t¡@¡@¡@¡@-ºí¡@áø¡@Œ - 1000z:îíÑïÖÇ")) {
+		switch(select("±j¤ÆªZ¾¹ª÷Äİ-¯Å¼Æ¤@ - 200z:±j¤ÆªZ¾¹ª÷Äİ-¯Å¼Æ¤G - 1000z:¨ú®ø")) {
 		case 1:
-			mes "[îãìÒÕQóc¡@¡@²ÙÃf";
-			mes "¡@ªO¡@ÒF¡@ÚV·åË¼«ı¿G´ãÍuÁë¢?ÀáØQõ×ÒF¡@ÓGîÏ¥R«ıÒW¿ĞßZ®şŞN¡@ëæ¡@¡@ËC¼Ã¡@¡@ªO¡@'0'";
+			mes "[§J²z´µ¦hºÖ]";
+			mes "²{¦b§A»İ­n¶R¦h¤Ö©O?¦pªG§A¤£·Q¶R¥ô¦óªF¦è¡A½Ğ¿é¤J¼Æ¦r'0'";
 			next;
 			while(1) {
 				input .@input;
 				if (.@input == 0) {
-					mes "[îãìÒÕQóc¡@¡@²ÙÃf";
-					mes "¡@¡@¡@îíÑïÖÇ";
-					mes "îØá¬¡@!";
+					mes "[§J²z´µ¦hºÖ]";
+					mes "¥æ©ö¨ú®ø";
+					mes "¦A¨£!";
 					close;
 				}
 				else if ((.@input < 0) || (.@input > 500)) {
-					mes "[îãìÒÕQóc¡@¡@²ÙÃf";
-					mes "îí¡@¡@íi¡@«ı500®ş¡@¡@Æ_¡@Ïrø¯‘";
+					mes "[§J²z´µ¦hºÖ]";
+					mes "¥u¯àÁÊ¶R500­Ó©ÎªÌ§ó¤Ö";
 					next;
 				}
 				else {
@@ -198,35 +199,35 @@ geffen_in,110,172,0	script	îãìÒÕQóc¡@¡@²Ù#1	63,{
 			}
 			.@sell = .@input * 200;
 			if (Zeny < .@sell) {
-				mes "[îãìÒÕQóc¡@¡@²ÙÃf";
-				mes "ñiİt¡@¾Èİäğo®ş¡@ÀôÃñ·Î¤ZºıÉáåÎÃì€äßXôğ¡@Â²ëæ¡@¡@®şÂEğo¯KØ©ßXôğ¡@ÀôìNåxÓQñS€ä¤¬¯K¡@ÓGîãËµ¡@ÂzÔíÓFÜd¡g€¦";
+				mes "[§J²z´µ¦hºÖ]";
+				mes "§ÚÄ±±o³o­ÓÉ²®æ¤w¸g¬O³Ì§Cªº¤F¡A¦]¬°³o¤\§CªºÉ²¿ú¡A©Ò¥H¤]¤£¤¹³\»­±b¡K¡K";
 				close;
 			}
 			if (checkweight(1010,.@input) == 0) {
-				mes "[îãìÒÕQóc¡@¡@²ÙÃf";
-				mes "ÒF¡@¯fÁîÏ´¡@¡@«¡¨jâY¡@¡@¿G²BÖĞŞ¶«±å¾!";
+				mes "[§J²z´µ¦hºÖ]";
+				mes "§A¨S¿ìªkÄâ±a³o¤\¦hªF¦è­ò!";
 				close;
 			}
 			getitem 1010,.@input; // Phracon
 			Zeny = Zeny-.@sell;
-			mes "[îãìÒÕQóc¡@¡@²ÙÃf";
-			mes "Âï¡@ªüÂí£¸ÕÚîã¡@Î`ëæÉÙ¡@âY¡@ÓB¼c¡@Ôp®ş´!";
+			mes "[§J²z´µ¦hºÖ]";
+			mes "·PÁÂ±zªº¥úÁ{¡AÅwªï¤U¦¸¥úÁ{!";
 			close;
 		case 2:
-			mes "[îãìÒÕQóc¡@¡@²ÙÃf";
-			mes "¡@ªO¡@ÒF¡@ÚV·åË¼«ı¿G´ãÍuÁë¢?ÀáØQõ×ÒF¡@ÓGîÏ¥R«ıÒW¿ĞßZ®şŞN¡@ëæ¡@¡@ËC¼Ã¡@¡@ªO¡@'0'";
+			mes "[§J²z´µ¦hºÖ]";
+			mes "²{¦b§A»İ­n¶R¦h¤Ö©O?¦pªG§A¤£·Q¶R¥ô¦óªF¦è¡A½Ğ¿é¤J¼Æ¦r'0'";
 			next;
 			while(1) {
 				input .@input;
 				if (.@input == 0) {
-					mes "[îãìÒÕQóc¡@¡@²ÙÃf";
-					mes "¡@¡@¡@îíÑïÖÇ";
-					mes "îØá¬¡@!";
+					mes "[§J²z´µ¦hºÖ]";
+					mes "¥æ©ö¨ú®ø";
+					mes "¦A¨£!";
 					close;
 				}
 				else if ((.@input < 0) || (.@input > 500)) {
-					mes "[îãìÒÕQóc¡@¡@²ÙÃf";
-					mes "îí¡@¡@íi¡@«ı500®ş¡@¡@Æ_¡@Ïrø¯‘";
+					mes "[§J²z´µ¦hºÖ]";
+					mes "¥u¯àÁÊ¶R500­Ó©ÎªÌ§ó¤Ö";
 					next;
 				}
 				else {
@@ -235,64 +236,64 @@ geffen_in,110,172,0	script	îãìÒÕQóc¡@¡@²Ù#1	63,{
 			}
 			.@sell = .@input * 1000;
 			if (Zeny < .@sell) {
-				mes "[îãìÒÕQóc¡@¡@²ÙÃf";
-				mes "ñiİt¡@¾Èİäğo®ş¡@ÀôÃñ·Î¤ZºıÉáåÎÃì€äßXôğ¡@Â²ëæ¡@¡@®şÂEğo¯KØ©ßXôğ¡@ÀôìNåxÓQñS€ä¤¬¯K¡@ÓGîãËµ¡@ÂzÔíÓFÜd¡g€¦";
+				mes "[§J²z´µ¦hºÖ]";
+				mes "§ÚÄ±±o³o­ÓÉ²®æ¤w¸g¬O³Ì§Cªº¤F¡A¦]¬°³o¤\§CªºÉ²¿ú¡A©Ò¥H¤]¤£¤¹³\»­±b¡K¡K";
 				close;
 			}
 			if (checkweight(1011,.@input) == 0) {
-				mes "[îãìÒÕQóc¡@¡@²ÙÃf";
-				mes "ÒF¡@¯fÁîÏ´¡@¡@«¡¨jâY¡@¡@¿G²BÖĞŞ¶«±å¾!";
+				mes "[§J²z´µ¦hºÖ]";
+				mes "§A¨S¿ìªkÄâ±a³o¤\¦hªF¦è­ò!";
 				close;
 			}
 			getitem 1011,.@input; // Emveretarcon
 			Zeny = Zeny-.@sell;
-			mes "[îãìÒÕQóc¡@¡@²ÙÃf";
-			mes "Âï¡@ªüÂí£¸ÕÚîã¡@Î`ëæÉÙ¡@âY¡@ÓB¼c¡@Ôp®ş´!";
+			mes "[§J²z´µ¦hºÖ]";
+			mes "·PÁÂ±zªº¥úÁ{¡AÅwªï¤U¦¸¥úÁ{!";
 			close;
 		case 3:
-			mes "[îãìÒÕQóc¡@¡@²ÙÃf";
-			mes "¼c¡@¡@¡@¡@ÑJ'îãìÒÕQóc¡@¡@²Ù'ôğáD¥ïÒFŞ[¡@";
+			mes "[§J²z´µ¦hºÖ]";
+			mes "Åwªï¨Ó¨ì'§J²z´µ¦hºÖ'ªº¤u§@«Ç";
 			close;
 		}
 	case 4:
-		mes "[îãìÒÕQóc¡@¡@²ÙÃf";
-		mes "ñiİtğo¡@¡@¡@ÒW¡@¡@ÒFŞG¡@íi£¸ÕÚ¡@¡@¡@¡@¸ó¡@ëæŒ5®ş¡@¡@¯KìÖìÆÅô¡@®v¡@¨R¡@ÒW¡@¡@ÒF·ÉÎ]®ş€ä°y²ØÏ²¡@¡@¡@¡@ëæŒ5®ş¡@ºQîÔ¡@¡@îí¡@¤¬îâ¦·ßcñi¡@¡@®ş¡@ºQëæÉÖ¡@ñS¡@¡@Áç´ã¡@®ş€ç¡@Áë¢?";
+		mes "[§J²z´µ¦hºÖ]";
+		mes "§Ú³o¨½¥i¥H¨î§@É¬½èªºª÷ÄİÄq¥Û¡A5­Ó¯«¤§ª÷Äİ­ì¥Û¥i¥H¨î§@¦¨¤@­Ó¯«¤§ª÷Äİ¡A5­Ó¾T­ì¥Û¥i¥H¨î§@¦¨¤@­Ó¾T¡A§A¥´ºâ°µ­ş¤@Ïú©O?";
 		next;
-		switch(select("îâ¦·ßc²ØÏ²¡@¡@¡@¡@:îâ¦·ßcìH:îíÑïÖÇ")) {
+		switch(select("¨î§@¯«¤§ª÷Äİ:¨î§@¾T:¨ú®ø")) {
 		case 1:
 			if (countitem(756) < 5) {
-				mes "[îãìÒÕQóc¡@¡@²ÙÃf";
-				mes "ñi¡@å¨æ¢ÑYÁ^ÒF 5®ş¡@¡@¯KìÖìÆÅô¡@®v¡@¦äåMùVÂÇ¡@®ş€ä°y²ØÏ²¡@¡@¡@¡@";
+				mes "[§J²z´µ¦hºÖ]";
+				mes "§Ú§i¶D¹L§A5­Ó¯«¤§ª÷Äİ­ì¥Û¤~¯à°µ¤@­Ó¯«¤§ª÷Äİ";
 				close;
 			}
 			else {
 				delitem 756,5;  //Oridecon_Stone
 				getitem 984,1; // Oridecon
-				mes "[îãìÒÕQóc¡@¡@²ÙÃf";
-				mes "ºı¡@¡@®ş€ä°y²ØÏ²¡@¡@¡@¡@ëæÉÙ¡@âY¡@¡@®ş¡@¡@îØá¦¡@!";
+				mes "[§J²z´µ¦hºÖ]";
+				mes "µ¹§A¤@­Ó¯«¤§ª÷Äİ¡AÅwªï§A¤U¦¸¦A¨Ó!";
 				close;
 			}
 		case 2:
 			if (countitem(757) < 5) {
-				mes "[îãìÒÕQóc¡@¡@²ÙÃf";
-				mes "ñi¡@å¨æ¢ÑYÁ^ÒF 5®ş¡@ºQîÔ¡@¡@ñSá¬¡@¡@¡@¡@®ş¡@ºQ";
+				mes "[§J²z´µ¦hºÖ]";
+				mes "§Ú§i¶D¹L§A5­Ó¾T­ì¥Û¤~¯à´«¤@­Ó¾T";
 				close;
 			}
 			else {
 				delitem 757,5;  //Elunium_Stone
 				getitem 985,1; // Elunium
-				mes "[îãìÒÕQóc¡@¡@²ÙÃf";
-				mes "ºı¡@¡@®ş€ä°yìH¡@ÓQ¼c¡@¡@ÒF¡@ÓB¼c¡@Ô©¡@¥!";
+				mes "[§J²z´µ¦hºÖ]";
+				mes "µ¹§A¤@­Ó¾T¡AÅwªï§A¤U¦¸¦A¨Ó!";
 				close;
 			}
 		case 3:
-			mes "[îãìÒÕQóc¡@¡@²ÙÃf";
-			mes "ÒF¡@ÚV·å¨ŞÕÚÃë¸ö€™ëæÉÙ¡@âYÑuåóÃë¸öÔ©¡@¡@ÓQîØá¬¡@!";
+			mes "[§J²z´µ¦hºÖ]";
+			mes "§A»İ­nªº®É­Ô¡AÅwªïÀH®É¦A¨Ó¡A¦A¨£!";
 			close;
 		}
 	case 5:
-		mes "[îãìÒÕQóc¡@¡@²ÙÃf";
-		mes "¼c¡@¡@îòÉá¡@¡@¥'îãìÒÕQóc¡@¡@²Ù'ôğáD¥ïÒFŞ[¡@.";
+		mes "[§J²z´µ¦hºÖ]";
+		mes "ÅwªïÀH®É¨Ó'§J²z´µ¦hºÖ'ªº¤u§@«Ç.";
 		close;
 	}
 }
@@ -535,33 +536,102 @@ ein_in01,38,29,0	script	Paul Spanner	63,{
 
 // Weapon/Armor Refiners
 //============================================================
-prt_in,63,60,0	script	î¿ÂÇ¡@âY	85,{
-	callfunc "refinemain","î¿ÂÇ¡@âY",0;
-	end;
+prt_in,63,60,0	script	Hollgrehenn	4_M_03,{
+	if( getbattleflag( "feature.refineui" ) ){
+		mes "[Hollgrehenn]";
+		mes "I'm a blacksmith who can refine weapons and equipment.";
+		mes "Do you have any items that you'd like to refine?";
+		close2;
+		refineui();
+		end;
+	}else{
+		callfunc "refinemain","Hollgrehenn",0;
+		end;
+	}
 }
-morocc_in,73,38,6	script	¡@¡@Üö¡@˜	99,{
-	callfunc "refinemain","¡@¡@Üö¡@˜",0;
-	end;
+
+morocc_in,73,38,6	script	¨È©Ô¥Ì	4W_M_03,{
+	if( getbattleflag( "feature.refineui" ) ){
+		mes "[¨È©Ô¥Ì]";
+		mes "De~ sert~ Blacksmith~";
+		mes "Aragham Ssaleh~ who can refine anything Ssaleh~";
+		mes "Let me see what you'd like to refine~";
+		close2;
+		refineui();
+		end;
+	}else{
+		callfunc "refinemain","Aragham",0;
+		end;
+	}
 }
-payon,144,173,5	script	ôe¡@ÖĞø¯·Î¡@	88,{
-	callfunc "refinemain","ôe¡@ÖĞø¯·Î¡@",0;
-	end;
+
+payon,144,173,5	script	¦wªF¥§¶ø	4_M_ORIENT01,{
+	if( getbattleflag( "feature.refineui" ) ){
+		mes "[¦wªF¥§¶ø]";
+		mes "Stop nagging and get me the equipment you want to refine.";
+		close2;
+		refineui();
+		end;
+	}else{
+		callfunc "refinemain","Antonio",0;
+		end;
+	}
 }
-alberta_in,28,58,0	script	¼dİĞ¡@¾È®p¡@	85,{
-	callfunc "refinemain","¼dİĞ¡@¾È®p¡@",0;
-	end;
+
+alberta_in,28,58,0	script	¥±¹p¼w§Q	4_M_03,{
+	if( getbattleflag( "feature.refineui" ) ){
+		mes "[¥±¹p¼w§Q]";
+		mes "I am a blacksmith who can refine your weapon or equipment.";
+		mes "Do you have anything that you'd like to refine?";
+		close2;
+		refineui();
+		end;
+	}else{
+		callfunc "refinemain","Fredrik",0;
+		end;
+	}
 }
-yuno_in01,171,21,4	script	ø¯¡@€¡@¹	88,{
-	callfunc "refinemain","ø¯¡@€¡@¹",0;
-	end;
+
+yuno_in01,171,21,4	script	¤×«ä¯S	4_M_ORIENT01,{
+	if( getbattleflag( "feature.refineui" ) ){
+		mes "[¤×«ä¯S]";
+		mes "Wel...come... This is... the best... smithy... in Juno.";
+		close2;
+		refineui();
+		end;
+	}else{
+		callfunc "refinemain","Lambert",0;
+		end;
+	}
 }
-ein_in01,24,87,5	script	óa·Î¡@óc¡@¡@	826,{
-	callfunc "refinemain","óa·Î¡@óc¡@¡@",0;
-	end;
+
+ein_in01,24,87,5	script	°Ò¶ğ´µ°Ò	4_M_DWARF,{
+	if( getbattleflag( "feature.refineui" ) ){
+		mes "[°Ò¶ğ´µ°Ò]";
+		mes "Hahaha, you already knew it. So you'd like to refine something?";
+		mes "Let's try something risky today!";
+		close2;
+		refineui();
+		end;
+	}else{
+		callfunc "refinemain","°Ò¶ğ´µ°Ò",0;
+		end;
+	}
 }
-lhz_in02,282,20,7	script	²Ù¡@¡@	869,{
-	callfunc "refinemain","²Ù¡@¡@",0;
-	end;
+
+lhz_in02,282,20,7	script	ºÖ¼Ö	4_M_LGTMAN,{
+	if( getbattleflag( "feature.refineui" ) ){
+		mes "[ºÖ¼Ö]";
+		mes "Hehe... You wanna refine?";
+		mes "Hehe.. Consider it done..";
+		mes "Hehe....";
+		close2;
+		refineui();
+		end;
+	}else{
+		callfunc "refinemain","ºÖ¼Ö",0;
+		end;
+	}
 }
 
 //============================================================
@@ -570,7 +640,7 @@ lhz_in02,282,20,7	script	²Ù¡@¡@	869,{
 //= To allow auto safe refining/multiple refining set the
 //= second argument to '1' in the function call.
 //= If you enable this function, be sure to edit the value of
-//= .@safe to the max safe refine in refine_db.txt as well.
+//= .@safe to the max safe refine in refine.yml as well.
 //============================================================
 function	script	refinemain	{
 	.@npc_name$ = getarg(0);
@@ -600,34 +670,34 @@ function	script	refinemain	{
 			.@equipped = 1;
 		}
 		else
-			set .@menu$, .@menu$ + F_getpositionname(.@indices[.@i]) + "-[®[¢JÙó·è¡@¡@]";
+			set .@menu$, .@menu$ + F_getpositionname(.@indices[.@i]) + "-[¨S¦³¸Ë³Æ]";
 		.@menu$ = .@menu$ + ":";
 	}
 	if (.@equipped == 0) {
 		mes "[" + .@npc_name$ + "]";
-		mes "ÒF¡@¡@ÎgºÀ€’óq¡@¡@·è¡@¡@²Ò¦j¡@îãˆ...";
+		mes "§A¦n¤ï­Ë¬O§â¸Ë³Æ¬ï¤W¥ı...";
 		close;
 	}
 	.@part = .@indices[select(.@menu$)];
 
 	if(!getequipisequiped(.@part)) { //custom check
 		mes "[" + .@npc_name$ + "]";
-		mes "·åË¼ÓG·åËÁ¡@¡@°ú¡@ôğáD¡@ùrİrÃ¯ôï·Îæí";
-		mes "ùU¡@¡@®ş€çÔ`¡@Š?";
+		mes "­n¤£­n§Ú§â§AªºÀY¸£ºë·Ò±o";
+		mes "Áo©ú¤@ÂI°Ú?";
 		emotion ET_FRET;
 		close;
 	}
 	//Check if the item is refinable...
 	if(!getequipisenableref(.@part)) {
 		mes "[" + .@npc_name$ + "]";
-		mes "ÒF¡@€‰®ş¡@ÕÚâY¡@°y·è¡@¡@óq¡@Ù¶®\ÃmÃ¯ôïªÓÕÚè¦¼Ã¡@îÚ”!";
+		mes "§A¿ï¤¤ªº³o­Ó¸Ë³Æ¬OµLªkºë·Òªº¹D¨ã³á!";
 		close;
 	}
 	//Check to see if the items is already +10
 	if(getequiprefinerycnt(.@part) >= 10) {
 		mes "[" + .@npc_name$ + "]";
-		mes "âY¡@Åw·è¡@¡@®fÓ³ÚêìLÃ¸¤£îâ°10ºí¡@Â².";
-		mes "ÒW¡@¡@ôğ¡@¡@Áî›, Ãë¡@¡@îØá«¡@è§¡@Â²..";
+		mes "³o¥ó¸Ë³Æ¤w¸gÁëªv¨ì10¯Å¤F.";
+		mes "¥H§Úªº¯à¤O, µLªk¦AÁë³y¤F..";
 		close;
 	}
 	.@refineitemid = getequipid(.@part); // save id of the item
@@ -658,53 +728,53 @@ function	script	refinemain	{
 
 	if(.@features != 1) {
 		mes "[" + .@npc_name$ + "]";
-		mes "ºö¼@ÓLâY¡@°y¡@¡@İµñi¡@ÚV·å:";
+		mes "ºë½m³o­Óª««~§Ú»İ­n:";
 		mes "- ^0000ff"+getitemname(.@material)+"^000000 x 1";
-		mes "- ºö¼@¡@Ãì¡@¡@íi¹ ^ff0000"+ .@price + "^000000 Zeny";
-		mes "ÒFÊDÚBôğáD¡@Ãì¡@¡@ºı¡@µeÁí—?";
+		mes "- ºë·ÒªA°È¶O ^ff0000"+ .@price + "^000000 Zeny";
+		mes "§A¯uªº§Æ±æ§ÚÄ~Äò¶Ü?";
 		next;
-		if(select("óq¡@ÕÚ, ºı¡@µeÁí§:âYéÌåÎßX¡@Â²Áí§...") == 2){
+		if(select("¬Oªº, Ä~Äò§a:ÁÙ¬Oºâ¤F§a...") == 2){
 			mes "[" + .@npc_name$ + "]";
-			mes "Æ_¶...";
-			mes "¾[¢í¡@Áí§, ¼c¡@¡@®ş¡@¡@îØá¦¡@!";
+			mes "­C...";
+			mes "¨º¦n§a, Åwªï¤U¦¸¦A¨Ó!";
 			close;
 		}
 		if(getequippercentrefinery(.@part, REFINE_COST_NORMAL) < 100) {
 			mes "[" + .@npc_name$ + "]";
-			mes "¾[¢î¡@·å¨Ş¤áºı¡@Ã¯ôï·Î¡@¡@¡@áÜ?";
-			mes "âY÷àÚBóq¡@¡@®ş¡@ÙóîòÄß®`ôğ¡@¼gñi¾ì¡@¡@Ôí¡@!";
+			mes "¨º§Ú­nÄ~Äòºë·Ò¥¦¤F®@?";
+			mes "³o¯u¬O¤@­Ó¦³Ãø«×ªº¬D¾Ô°Ú°Ú°Ú!";
 			switch(.@material) {
 			case 985:
-				mes "^ff0000öf¡@¡@âY÷á¡@¿GÊ¨¤ZºıÉàÃ¯ôï·Î¡@¿G¡@¡@¡@ÜßÕÚÃñ®pöò...";
-				mes "·åËÁåÎîØ¹ò¤áºı¡@Ã¯ôïªÓÕÚæ¢,";
-				mes "ñi¡@€•¡@Ï²ÓG¾üÂÇ¡@ùV§Ù²Óè§¡@Î]·è¡@¡@¡@¡@¡@îÚ”!!!^000000";
+				mes "^ff0000¬İ¨Ó³o¸Ë³Æ¤w¸gºë·Ò«Ü¦h¦¸¤Fªº¼Ë¤l...";
+				mes "­n¬O¦AÄ~Äòºë·Òªº¸Ü,";
+				mes "§Ú©È·d¤£¦n¥i¯à·|³y¦¨¸Ë³Æ·l§¥³á!!!^000000";
 				break;
 			default:
-				mes "^ff0000·åËÁåÎ¡@¡@¡@ôğ¡@ênîí¡@®ò®şá¬¡@ºı¡@µeÒF¸óÙu¡@†!!";
-				mes "¡@Õ¤¡@¡@¡@¼ìôğáDØç¡@Ê¨Îæ¡@äõÒ½¯K¡@0000ffîã£ºñë®P³ú¡@^ff0000!!";
-				mes "·è¡@¡@¯K¡@²Ó®P³ú¡@¡@¡@áÜ, ÒFÊD¡¥ôeºr¡@ºı¡@µeÁí—?";
+				mes "^ff0000­n¬O·l§¥ªº¸Ü¥i´N¤£¯àÄ~Äò¨Ï¥Î¤F!!";
+				mes "´¡¦b¨½­±ªº¥d¤ù©MªşÅ]¤]^0000ff¥ş³¡®ø¥¢^ff0000!!";
+				mes "¸Ë³Æ¤]·|®ø¥¢±¼®@, §AÚÌ©w­nÄ~Äò¶Ü?";
 				break;
 			}
 			next;
 			mes "["+getarg(0)+"]";
-			mes "ñiİt¡@îØá¬¡@®ş€æ¡@, ®ş€æÙ°·è¡@¡@¡@¡@¡@¡@†,";	
-			mes "¾[¢ì¡@ôe¡@®ò«¹ºqÂº®P³ú¡@, ®şá¬¡@îØ¹ñ¼b¡@£µÂ².";
-			mes "¯K¡@®òóq¡@¡@, ÒF¡@¼ì®ş¤oâ­®ş€ä°yè§¡@á{";
-			mes "^FF0000ºı¡@µeôğ¡@ên, îí¡@¡@ÒZ¡@®×âYŞ[¡@îÔ©üğo®ş¡@¡@¿Gäù000000 .";
-			mes "ÒFÊDÚBôğ¡@¡¥ôeºr¡@ºı¡@µeÁí—?";
+			mes "§Ú­n¦A»¡¤@¦¸, ¤@¥¹¸Ë³Æ·l§¥¤F,";	
+			mes "¨º¤\¥¦´N¥Ã»·®ø¥¢, ¤£¯à¦A¨Ï¥Î¤F.";
+			mes "¤]´N¬O»¡, §A­±Á{µÛ¤@­Ó¿ï¾Ü";
+			mes "^FF0000Ä~Äòªº¸Ü, ¥i¯à·|¥Ã»·¥¢¥h³o­Ó¸Ë³Æ^000000 .";
+			mes "§A¯uªºÚÌ©w­nÄ~Äò¶Ü?";
 			next;
-			if(select("ºı¡@µeÁí§, îÏ¨RåvîÔ¡@¡@Âî©ü¡@ñSÎØİCÙÊÑuÃrôğ„!:ñi¡@¿E®şá¬·o, ßX¡@Â²...") == 2){
+			if(select("Ä~Äò§a, ·QÅÜ¼F®`Á`­n©Ó¾á­·ÀIªº!:§Ú¶Ë¤£°_, ºâ¤F...") == 2){
 				mes "[" + .@npc_name$ + "]";
-				mes "ñi¡@Ú®îã£¸ÕQ·ê¢ì¡@ósÄß¯ÂôğáD®vÁæ ...";
-				mes "¡@¡@€•ñi¡@®òóq¡@¡@®ş¡@¡@ôğ¡@Ã¯ôï·ÎĞB,";
-				mes "ÒFÜÙ¡@ÒZ¡@ÙóÁç¸öŞÖîÙ¬xÑÍôğ¡@¡@Áå™...";
+				mes "§Ú§¹¥ş²z¸Ñ§A©ñ±óªº­ì¦]...";
+				mes "­ş©È§Ú´N¬O¤@­Ó¦nªººë·Ò®v,";
+				mes "¦ı¤]·|¦³°¸º¸¥X¿ùªº®É­Ô...";
 				close;
 			}
 		}
 		if((countitem(.@material) < 1) || (Zeny < .@price)) {
 			mes "[" + .@npc_name$ + "]";
-			mes "ÒF¡@¯fÃìÑY­á¿G¡@ÕÚ¡@¡@Ñ·ñi¡@€… ^0000ff"+getitemname(.@material)+"^000000...";
-			mes "Áæ¡@á´ñV¦j¡@¡@¡@¡@, ñi¡@²Ó¡@£¹ğo¡@¡@¡@ÒFÊDÕÚ.";
+			mes "§A¨S¦³¨¬°÷ªºª÷¿ú©ÎªÌ ^0000ff"+getitemname(.@material)+"^000000...";
+			mes "¦^¥h®³¤@¨Ç¨Ó, §Ú·|¦b³o¨½µ¥§Aªº.";
 			close;
 		}
 		Zeny = Zeny-.@price;
@@ -715,9 +785,9 @@ function	script	refinemain	{
 		    callfunc("F_IsEquipRefineHack", .@part, .@refinerycnt)) {
 			mes "["+ .@npc_name$ +"]";
 			emotion ET_FRET;
-			mes "µ¼¡@¡@ÒZ´ã¡@..";
-			mes "ÒF¡@¤¬®ş¯M¡@óq¡@¡@¡@À§¡@?!";
-			mes "î¿¡@ññîÔ», ®ş¹ò¡@ñi¡@²Ó¡@£·¡@ôğäõİµìL¡@¼\ÒF ..";
+			mes "µ¥¤@·|¤I..";
+			mes "§A¥H¬°§Ú¬O²Â³J¶Ü?!";
+			mes "§Ö¥X¥h, ¤£µM§Ú·|¥Î§ÚªºÅKÁè¥´§A..";
 			close;
 		}
 
@@ -727,17 +797,17 @@ function	script	refinemain	{
 			emotion (!rand(5))?ET_MONEY:ET_HUK;
 			.@lose = rand(1,3);
 			if (.@lose == 1) {
-				mes "¡@¦! ñiİrÕÚ¿G©!! ôe¾­ÚBôğ¡@¡@îê¡@Â²...";
-				mes "ô\³W¡@ñiİrÚBôğáD¡@îâÜËæ`Ú¬§iÎqÎg‰,";
-				mes "®şá¬Á^¿G´ã¡@ºı¡@½dô\³W¡@Ãì¡@¡@¿G¡@ÓGóq¡@¡@?";
+				mes "®@! §Úªº¤Ñ!! ¥¦¯uªº·l§¥¤F...";
+				mes "¹ï¦¹§Ú¯uªº¤Q¤À«D±`©êºp,";
+				mes "¤£¹L¦h¦h½m²ß¹ï§Ú¦³¦n³B¤£¬O¤\?";
 			} else if(.@lose == 2) {
-				mes "îÕ¨RÑÉîÕ¨RÑÉîÕ¨RÑÉîÕ³!!!";
-				mes "·è¡@¡@¡@£¸Ã¯ôïªÓÕÚâY¡@¡¿®ş¡@¡@îê¡@Â².";
-				mes "ô\¹...ô\³}ÓGÂz·...";
+				mes "«y«y«y«y«y«y«y!!!";
+				mes "¸Ë³Æ¦bºë·Òªº¹Lµ{¤¤·l§¥¤F.";
+				mes "¹ï...¹ï¤£°_...";
 			} else {
-				mes "ÅI°! ¡@Ôí¡@¡@Ôí¡@~~ ";
-				mes "·è¡@¡@¡@£¸Ã¯ôïªÓÕÚâY¡@¡¿®ş¡@¡@îê¡@Â².";
-				mes "¾È¡@ÎqÎg‰, öf¡@ÕÚîàËÃ¡@¡@¿ë¡@...";
+				mes "¯y! °Ú°Ú°Ú°Ú~~ ";
+				mes "¸Ë³Æ¦bºë·Òªº¹Lµ{¤¤·l§¥¤F.";
+				mes "«Ü©êºp, ¯uªº¤Q¤À©êºp...";
 			}
 			close;
 		}
@@ -746,19 +816,19 @@ function	script	refinemain	{
 		emotion ET_SMILE;
 		.@win = rand(1,3);
 		if (.@win == 1) {
-			mes "¿G¡@¡@¡@†! ¡@³ú¡@!";
-			mes "·åË¼ÓG·åËÃÔ©¡@¡@¡@¼c¡@éx~~";
-			mes "¾ü§Ùã[®[¢CÃ¯ôï·ÎññâY¡@¡@ÒZéÍ¤tôğ¡@¡@¿G¡@Â²,";
-			mes "·è¡@¡@îí¾ì¤v¡@ÜÙ¡@®ş€åæ®¯K¡@¡@İÓ¾ì¡@Áí§?";
+			mes "¤Ó´Î¤F! «¢«¢!";
+			mes "­n¤£­n¦A¨Ó¤@¦¸§r~~";
+			mes "¦n¤[¨Sºë·Ò¥X³o¤\É¬½èªº¸Ë³Æ¤F,";
+			mes "¸Ë³ÆÅÜ±j¤F§A¤@©w¤]«Ü°ª¿³§a?";
 		} else if(.@win == 2) {
-			mes "Áò¡@¤÷¾ü½, ñiáÂÎo¡@†..!";
-			mes "âYÅÏåÎÒFÊDÕÚ·è¡@¡@, ñV«±á´Áí§!";
-			mes "¾ü§Ùã[®[¢CÃ¯ôï·ÎññâY¡@¡@ÒZéÍ¤tôğ¡@¡@¿G¡@Â².";
+			mes "«D±`¦n, ¦¨¥\¤F..!";
+			mes "³o¬O§Aªº¸Ë³Æ, ®³¥h§a!";
+			mes "¦n¤[¨Sºë·Ò¥X³o¤\É¬½èªº¸Ë³Æ¤F.";
 		} else {
-			mes "¡@³ú¡@! ñi¡@Ú®ñi¡@Â².";
-			mes "®şá¬¡@Âî€çÌÖñiİrÕÚ®f¡@ßcùVÂÇÌF.";
-			mes "Æ^¡@æ®îí¡@¤¬²NéôºÇÒF¡@©·Âï.";
-			mes "·è¡@¡@îí¾ì¤v¡@ÜÙ¡@®ş€åæ®¯K¡@¡@İÓ¾ì¡@Áí§?";
+			mes "«¢«¢! §Ú§¹¦¨¤F.";
+			mes "¤£­nÊäºÃ§Úªº¤u§@¯à¤O.";
+			mes "ªÖ©w¥i¥H«Oµı§Aº¡·N.";
+			mes "¸Ë³ÆÅÜ±j¤F§A¤@©w¤]«Ü°ª¿³§a?";
 		}
 		close;
 	}
@@ -766,9 +836,9 @@ function	script	refinemain	{
 // New Refining Functions ========================
 	if (.@refinerycnt < .@safe) {
 		mes "[" + .@npc_name$ + "]";
-		mes "ÒF¡@¡@ÒW¡@€‰ñV¡@Ïr¡@¡@¡@îØ¸öÑJôe¡@¡@ÁåÆPÓQñiÑïåÎ·åË¶¡@îØ¨ïÕÚ¼c¢Jáø... ñi¡@¡@®[¢J¡@·ê......";
+		mes "§A¥i¥H¿ï¾Üª½±µÁë§M¨ì¦w¥ş­È¡A©Î¬O­nÁë§Mªº¦¸¼Æ... §Ú³£¨S·N¨£......";
 		next;
-		.@menu2 = select("ìL»£Ü×îâªO¡@îã£¶€¼.","æ¦ùó¡@¡@¡@¡@ôeÉ¡¡@îØ¨ïÕÚ¼c¢Jáø.","ñi¡@é±îí¾ğ´IÂï¡@Â²...");
+		.@menu2 = select("Áë§M¨ì¦w¥ş­È.","Åı§Ú¨Ó«ü©wÁë§Mªº¦¸¼Æ.","§Ú§ïÅÜ¥D·N¤F...");
 	} else
 		.@menu2 = 2;
 	switch(.@menu2){
@@ -778,23 +848,23 @@ function	script	refinemain	{
 	case 2:
 		next;
 		mes "[" + .@npc_name$ + "]";
-		mes "¾[¢ì¡@ëæÉÖ¡@·åËÁ¡@Ú¬¡@¡@ìL»£Ü×¿G´ãÍu¼c¡@é¡?";
+		mes "¨º¤\¡A§A­n§ÚÀ°§AÁë§M¦h¤Ö¦¸©O?";
 		next;
 		input .@refinecnt;
 		.@refinecheck = .@refinecnt + .@refinerycnt;
 		if (.@refinecnt < 1 || .@refinecheck > 10) {
 			mes "[" + .@npc_name$ + "]";
-			mes "ñi¡@ÓGùVÂÇÔ©ºö¼@ÓLâY¡@°y¡@¡@İµ¡@¦.";
+			mes "§Ú¤£¯à¦Aºë½m³o­Óª««~°Õ.";
 			close;
 		}
 		if(.@refinecheck > .@safe) {
 			.@refinecheck = .@refinecheck - .@safe;
 			mes "[" + .@npc_name$ + "]";
-			mes "¾[¢ì¡@ëæÉÙ¡@·åËÃÓRÀäìÖ¡@îØ¶  + .@refinecheck +  ¼c¡¹ÓQâY÷â¡@ÅĞÎIÁ^ôe¡@æ®Áå¼. ÒFÊDÕÚ·è¡@¡@Ãì¡@¡@ùV§Ù²ÓîêÉá¡@... ·åË¶¡@îØ¸ö¡@?";
+			mes "¨º¤\¡A§Ú­n¶}©lÁë§M  + .@refinecheck +  ¦¸¡A³o±N¶W¹L¦w©w­È. §Aªº¸Ë³Æ¦³¥i¯à·|§¥±¼... ­nÁë§M¶Ü?";
 			next;
-			if(select("¾ü¬ÉÕÚ...","ßX¡@Â²...") == 2){
+			if(select("¦nªº...","ºâ¤F...") == 2){
 				mes "[" + .@npc_name$ + "]";
-				mes "âY÷â¡@óq¡@¡@æ¢¤oÕÚ¡@¦...";
+				mes "³o¥i¬O§A»¡ªº®@...";
 				close;
 			}
 		}
@@ -802,21 +872,21 @@ function	script	refinemain	{
 	case 3:
 		next;
 		mes "[" + .@npc_name$ + "]";
-		mes "âY÷â¡@óq¡@¡@æ¢¤oÕÚ¡@¦...";
+		mes "³o¥i¬O§A»¡ªº®@...";
 		close;
 	}
 	.@fullprice = .@price * .@refinecnt;
 	mes "[" + .@npc_name$ + "]";
-	mes "Âî»£èûîî€è¡@" + .@refinecnt + " " + getitemname(.@material) + " ÒW¡@±jíi¦cÙu " + .@fullprice + " Zeny... ·åË¶¡@îØ¸ö¡@?";
+	mes "Á`¦@»İ­n" + .@refinecnt + " " + getitemname(.@material) + " ¥H¤Î¶O¥Î " + .@fullprice + " Zeny... ­nÁë§M¶Ü?";
 	next;
-	if(select("¾ü¬ÉÕÚ","ßX¡@Â²...") == 2){
+	if(select("¦nªº","ºâ¤F...") == 2){
 		mes "[" + .@npc_name$ + "]";
-		mes "âY÷â¡@óq¡@¡@æ¢¤oÕÚ¡@¦...";
+		mes "³o¥i¬O§A»¡ªº®@...";
 		close;
 	}
 	if(countitem(.@material) < .@refinecnt || Zeny < .@fullprice) {
 		mes "[" + .@npc_name$ + "]";
-		mes "âY¡@¡@ø¯¿ëåÎÒF¡@¡@ñV¡@Ùóôğ¡@¡@ÃìÌBéL¡@ËÃ¡@?¡@¬É¡@¾È³ú¡@îÏŞfÓQÒF¡@åÎÒFÊDÕÚ¡@¡@¡@®şá¬­áëæÉÙ¡@¯K¡@ís¡@£¸¡@Æq¡@¡@ÁîùáÓQîØá¬¡@ëæÉÙ¡@ÒW¾ìññ¯K¡@¡@æ¢¡@æí·åËÁÙóñS€æå¿Æq®påÕ!";
+		mes "³o¨Ç´N¬O§A©Ò¾Ö¦³ªº©Ò¦³ª««~¶Ü?ÁöµM«Ü¥i±¤¡A¦ı¬O§Aªº§÷®Æ¤£¨¬¡A§Ú¤]¹ê¦b·R²ö¯à§U¡A¦A»¡¡A§Ú¥I¥X¤]À³¸Ó±o­n¦³©Ò¦¬Àò¹À!";
 		close;
 	}
 	Zeny = Zeny - .@fullprice;
@@ -824,27 +894,27 @@ function	script	refinemain	{
 	while(.@refinecnt){
 		if (getequipisequiped(.@part) == 0) {
 			mes "[" + .@npc_name$ + "]";
-			mes "ô\³}ÓGÂz·,¡@¡@¡@®ş¡@¡@ñi¡@¡@®şá¬¡@Ú¬¡@¡@.....";
+			mes "¹ï¤£°_,§÷®Æ¤£°÷§Ú¤]¤£¯àÀ°§A.....";
 			close;
 		}
 		// anti-hack
 		if (callfunc("F_IsEquipIDHack", .@part, .@refineitemid) || callfunc("F_IsEquipCardHack", .@part, .@card[0], .@card[1], .@card[2], .@card[3]) ||
 				callfunc("F_IsEquipRefineHack", .@part, .@refinerycnt) || (.@menu2 == 1 && getequippercentrefinery(.@part, REFINE_COST_NORMAL) < 100)) {
 			mes "[" + .@npc_name$ + "]";
-			mes "®şá¬¡@¼d€ç¡@Úû¡@Â²,ÒF¡@¤¬®ş¯M¡@óq¡@¡@¡@À§¡@ !! !?!";
-			mes "î¿¡@ññîÔ»...";
-			mes "®ş¹ò¡@ñi¡@²Ó¡@£·¡@ôğäõİµìL¡@¼\ÒF ..!!!";
+			mes "¤£­n¶}ª±¯º¤F,§A¥H¬°§Ú¬O²Â³J¶Ü !! !?!";
+			mes "§Ö¥X¥h...";
+			mes "¤£µM§Ú·|¥Î§ÚªºÅKÁè¥´§A..!!!";
 			close;
 		} 
-		mes "¡@áÂ¡@, ¡@áÂ¡@!!!";
+		mes "¡@¡@, ¡@¡@!!!";
 		if(.@menu2 == 2 && getequippercentrefinery(.@part, REFINE_COST_NORMAL) <= rand(100)) {
 			failedrefitem .@part;
 			emotion ET_HUK;
 			mes "[" + .@npc_name$ + "]";
-			mes "îÕ¨RÑÉîÕ¨RÑÉîÕ¨RÑÉîÕ³!!! Îg¡t¡@¡@£¸Ã¯ôïªÓÕÚâY¡@¡¿®ş¡@¡@îê¡@Â²...";
+			mes "«y«y«y«y«y«y«y!!! ªZ¾¹¦bºë·Òªº¹Lµ{¤¤·l§¥¤F...";
 			.@refinecnt = .@refinecnt - 1;
 			if(.@refinecnt == 0) close;
-			mes "âYÅÏåÎ¡@¡@ÓBôğäõÑ·îÕÉÙæOóc™...";
+			mes "³o¬O³Ñ¤Uªº¿ú©M§÷®Æ...";
 			getitem .@material,.@refinecnt;
 			.@fullprice = .@refinecnt * .@price;
 			Zeny = Zeny + .@fullprice;
@@ -857,38 +927,38 @@ function	script	refinemain	{
 		next;
 	}
 	mes "["+ .@npc_name$ +"]";
-	mes "ñS€æÙóôğäõ¡@ôeÉÙÎ]¡@¡@ÓQ¼c¡@¡@®ş¡@¡@îØá¦¡@.";
+	mes "©Ò¦³ªº³£§¹¦¨¤F¡AÅwªï¤U¦¸¦A¨Ó.";
 	close;
 }
 
 // Material Salesmen
 //============================================================
-prt_in,56,68,5	script	¡@¡@ÜşÅĞŠ	86,{
-	callfunc "phramain","¡@¡@ÜşÅĞŠ";
+prt_in,56,68,5	script	´¶°Ç¶V	86,{
+	callfunc "phramain","´¶°Ç¶V";
 	end;
 }
-payon,145,178,3	script	ÒZ¡@¡@ºí¨Rµj	88,{
-	callfunc "phramain","ÒZ¡@¡@ºí¨Rµj";
+payon,145,178,3	script	§B§J¯Ç¼w	88,{
+	callfunc "phramain","§B§J¯Ç¼w";
 	end;
 }
-morocc_in,63,32,6	script	®[÷âµj	99,{
-	callfunc "phramain","®[÷âµj";
+morocc_in,63,32,6	script	¨F¼w	99,{
+	callfunc "phramain","¨F¼w";
 	end;
 }
-alberta_in,13,71,3	script	îà¢JÜöóaÁ}¡@óc¯	86,{
-	callfunc "phramain","îà¢JÜöóaÁ}¡@óc¯";
+alberta_in,13,71,3	script	¥d©Ô°Ò²ú´µ	86,{
+	callfunc "phramain","¥d©Ô°Ò²ú´µ";
 	end;
 }
-yuno_in01,171,27,4	script	¾È²l¡@óa¼	88,{
-	callfunc "phramain","¾È²l¡@óa¼";
+yuno_in01,171,27,4	script	¼w¹p°Ò	88,{
+	callfunc "phramain","¼w¹p°Ò";
 	end;
 }
-ein_in01,15,87,3	script	âY¡@¡@Âï¡@¡@óc¯	86,{
-	callfunc "phramain","âY¡@¡@Âï¡@¡@óc¯";
+ein_in01,15,87,3	script	­}¼Ö·N«¢´µ	86,{
+	callfunc "phramain","­}¼Ö·N«¢´µ";
 	end;
 }
-lhz_in02,278,24,3	script	ôe¡@Üşóh¯	86,{
-	callfunc "phramain","ôe¡@Üşóh¯";
+lhz_in02,278,24,3	script	«È°Ç¬_	86,{
+	callfunc "phramain","«È°Ç¬_";
 	end;
 }
 
@@ -896,22 +966,22 @@ lhz_in02,278,24,3	script	ôe¡@Üşóh¯	86,{
 //============================================================
 function	script	phramain	{
 	if (checkweight(1201,1) == 0) {
-		mes "ÒFËfÁú®şÔí¨jÅO€å¡@¿G¡@¡@®şŞN¡@¡@†,";
-		mes "îÔÃ¸¡@¡@ÜÙ¡@®şÀ§Ñ«îØá¦¡@ñS¬²¡@Áí§!";
+		mes "§A¨­¤W±aµÛ¤Ó¦hÏúªF¦è¤F,";
+		mes "¥h¾ã²z¤@¤U¦Z¦A¨Ó§ä§Ú§a!";
 		close;
 	}
 	.@npc_name$ = getarg(0);
 	mes "[" + .@npc_name$ + "]";
-	mes "ÒF¡@¡@, îØÕoÃrôe¶!";
-	mes "ñiİtğo¡@ÉÙÙóîàÑî¡@¡@ŞeİµñiÑïåÎìN¡@İµîâ¨ïéL¡@ËÃ¡@ºö¼@¡@Ãë²ë¡@îî€è¡@ôğäõìÆÅô.";
+	mes "§A¦n, «_ÀI®a!";
+	mes "§Ú³o¨½¦³½æ¤@¨ÇÅK©Î¬O¿ûÅK¨îª««~¦bºë·Ò®É©Ò»İ­nªºª÷Äİ.";
 	next;
 	mes "[" + .@npc_name$ + "]";
-	mes "öa¡@åMíi¡@Ôøôğ¡@ÖĞŞ¶ÎØÙó:";
-	mes "ºö¼@¡@µ¼ÌBÀb1Îg¡t¡@ôğ¡@d78400¼d«¡ìÙÎg¡t¡@¡@¡@¡@-ºí¡@áø®ş€^000000.";
-	mes "ìL»£Ü×µ¼ÌBÀb2Îg¡t¡@ôğ¡@007777¼d«¡ìÙÎg¡t¡@¡@¡@¡@-ºí¡@áø¡@¡@000000.";
-	mes "æ¢²lÙ·ÒF¡@¡@·åËµ³İ¯KªO¡@¿¨?";
+	mes "¥Ø«e³c½æªºªF¦è¦³:";
+	mes "ºë·Òµ¥¯Å1ªZ¾¹ªº^d78400±j¤ÆªZ¾¹ª÷Äİ-¯Å¼Æ¤@^000000.";
+	mes "Áë§Mµ¥¯Å2ªZ¾¹ªº^007777±j¤ÆªZ¾¹ª÷Äİ-¯Å¼Æ¤G^000000.";
+	mes "½Ğ°İ§A·Q­nÁÊ¶R­şÏú?";
 	next;
-	switch(select("¼d«¡ìÙÎg¡t¡@¡@¡@¡@-ºí¡@áø®ş€ - ^f56925200 ¡@¡@¡@^000000:¼d«¡ìÙÎg¡t¡@¡@¡@¡@-ºí¡@áø¡@Œ - ^f569251000 ¡@¡@¡@^000000:æ¢¡@Ù·îã¦·¡@¡@¡@¡@")) {
+	switch(select("±j¤ÆªZ¾¹ª÷Äİ-¯Å¼Æ¤@ - ^f56925200 ª÷¹ô^000000:±j¤ÆªZ¾¹ª÷Äİ-¯Å¼Æ¤G - ^f569251000 ª÷¹ô^000000:¸ß°İ¨ä¥L§÷®Æ")) {
 	case 1:
 		.@material = 1010;
 		.@price = 200;
@@ -922,26 +992,26 @@ function	script	phramain	{
 		break;
 	case 3:
 		mes "[" + .@npc_name$ + "]";
-		mes "îã¦·¡@¡@¡@¡@?";
-		mes "ÒF¡@ÚV·å¨ŞÃ¯ôï¦l¯\µ¼ÌBÀbôğ¡@¡@îé¨?";
-		mes "ñi¡@¡@ìHåıÎæ²ØÏ²¡@¡@¡@¡@óq¡@¡@îò¬²ÂSîâ§êÕÚ¡@¦...";
+		mes "¨ä¥L§÷®Æ?";
+		mes "§A»İ­nºë·Ò°ªµ¥¯ÅªºªZ¾¹?";
+		mes "§Ú·Q¾T©M¯«¤§ª÷Äİ¬O«ÜÃø§ä¨ìªº°Õ...";
 		close;
 	}
 	mes "[" + .@npc_name$ + "]";
-	mes "ÒF¡@¡@·åËµ³İ¯KªO¡@ø¯¡@°y?";
-	mes "ÀáØQõ×ÒF¡@ÓGîÏÃd³İ¯K°, æ¢ºÆ¡@îã¡@áøÃs— 0 îà¨R¡@.";
+	mes "§A·Q­nÁÊ¶R¦h¤Ö­Ó?";
+	mes "¦pªG§A¤£·QÁÊ¶R, ½Ğ¿é¤J¼Æ¦r 0 §Y¥i.";
 	next;
 	while(1) {
 		input .@input;
 		if (.@input <= 0) {
 			mes "[" + .@npc_name$ + "]";
-			mes "¾ü¬ÉÕÚ, Ãì¡@¡@¡@¡@¡@, ®fÓ³Úêºı¡@æU.";
+			mes "¦nªº, ¥»¦¸¥æ©ö, ¤w¸gµ²§ô.";
 			close;
 		}
 		else if (.@input < 0 || .@input > 500) {
 			mes "[" + .@npc_name$ + "]";
-			mes "¾ü¬ÉÕÚ, îÕ¦....?";
-			mes "ÒF¡@ÓGîí¡@¤¬®ş€æ¡@íi¡@«ıÅĞÎIÁ^ 500 ®şª, OK?";
+			mes "¦nªº, «x....?";
+			mes "§A¤£¥i¥H¤@¦¸ÁÊ¶R¶W¹L 500 ­Ó, OK?";
 			next;
 		}
 		else {
@@ -951,55 +1021,55 @@ function	script	phramain	{
 	.@sell = .@input * .@price;
 	if (Zeny < .@sell) {
 		mes "[" + .@npc_name$ + "]";
-		mes "ôe¡@¡@ô\³}ÓGÂz®páÜ.";
-		mes "ÒFÊD¡@¡@£¸ÕÚ¡@¡@¡@®şá¬­áÒW¡@³İ¯K©Õğo¡@ÒXÖĞŞ¶«±¡@.";
-		mes "âYø¬éFîí¡@ÓGæ¦ºqÚÓÚ¬İlÕÚ.";
+		mes "¹ê¦b¹ï¤£°_®@.";
+		mes "§A²{¦bªºª÷¹ô¤£¨¬¥HÁÊ¶R³o¨ÇªF¦è°Ú.";
+		mes "³o¨½¥i¤£³\»­±bªº.";
 		mes ""+ .@input +" of them.";
 		close;
 	}
 	if (checkweight(.@material,.@input) == 0) {
 		mes "[" + .@npc_name$ + "]";
-		mes "¾È¡@ÎqÎg‰!";
-		mes "Âí£¸ÕÚíiêU¾·Ãë¡@¡@íi¡@«ı¾[¢ì¡@¿G²BÖĞŞ¶¿.";
-		mes "æ¢¾W¡@¡@ÜÙ¡@®şìÎèöîÑ¡@Ñ«îØá¦¡@Áí§.";
+		mes "«Ü©êºp!";
+		mes "±zªº­t­«µLªkÁÊ¶R¨º¤\¦hªF¦è.";
+		mes "½Ğ¾ã²z¤@¤U­I¥]¦Z¦A¨Ó§a.";
 		close;
 	}
 	getitem .@material,.@input;
 	Zeny = Zeny-.@sell;
 	mes "[" + .@npc_name$ + "]";
-	mes "¾üÂÇåÍ, âYÅÏåÎÒFËf¡@ôğ¡@ÖĞŞ¶¿, ºı¡@¡@!";
-	mes "Áò¡@¤÷Âï¡@ªüÒFÊDÕÚîã¡@¡i.";
+	mes "¦n¡@, ³o¬O§A­nªºªF¦è, µ¹§A!";
+	mes "«D±`·PÁÂ§Aªº¥úÅU.";
 	close;
 }
 
 // Ori/Elu Refiners
 //============================================================
-prt_in,63,69,3	script	Ú¬éïìÍ¡@ìÎ¡@	84,{
-	callfunc "orimain","Ú¬éïìÍ¡@ìÎ¡@";
+prt_in,63,69,3	script	«Ò¯S¥ß¦è	84,{
+	callfunc "orimain","«Ò¯S¥ß¦è";
 	end;
 }
-payon,137,178,5	script	¿G¡@ìÆ	88,{
-	callfunc "orimain","¿G¡@ìÆ";
+payon,137,178,5	script	®Lª÷	88,{
+	callfunc "orimain","®Lª÷";
 	end;
 }
-morocc_in,72,32,6	script	¡@´ã®`ñV‰	99,{
-	callfunc "orimain","¡@´ã®`ñV‰";
+morocc_in,72,32,6	script	¨È«×©Ô	99,{
+	callfunc "orimain","¨È«×©Ô";
 	end;
 }
-alberta_in,21,63,5	script	¡@ÂE¡@¡@®	84,{
-	callfunc "orimain","¡@ÂE¡@¡@®";
+alberta_in,21,63,5	script	´¼¿Õ´¶	84,{
+	callfunc "orimain","´¼¿Õ´¶";
 	end;
 }
-yuno_in01,164,27,4	script	¾È²l¡@ÒZŠ	88,{
-	callfunc "orimain","¾È²l¡@ÒZŠ";
+yuno_in01,164,27,4	script	¼w¹p¥ì	88,{
+	callfunc "orimain","¼w¹p¥ì";
 	end;
 }
-ein_in01,18,82,6	script	İÒ¡@Öİ²N¡@¡@Áï³	84,{
-	callfunc "orimain","İÒ¡@Öİ²N¡@¡@Áï³";
+ein_in01,18,82,6	script	°¨«Ò­×¶ğ­µ	84,{
+	callfunc "orimain","°¨«Ò­×¶ğ­µ";
 	end;
 }
-lhz_in02,281,24,5	script	ùÁ¢F¡@²Z	84,{
-	callfunc "orimain","ùÁ¢F¡@²Z";
+lhz_in02,281,24,5	script	¸²¾|¨Ì	84,{
+	callfunc "orimain","¸²¾|¨Ì";
 	end;
 }
 
@@ -1007,32 +1077,32 @@ lhz_in02,281,24,5	script	ùÁ¢F¡@²Z	84,{
 //============================================================
 function	script	orimain	{
 	if (checkweight(1201,1) == 0) {
-		mes "ÒFËfÁú®şÔí¨jÅO€å¡@¿G¡@¡@®şŞN¡@¡@†,";
-		mes "îÔÃ¸¡@¡@ÜÙ¡@®şÀ§Ñ«îØá¦¡@ñS¬²¡@Áí§!";
+		mes "§A¨­¤W±aµÛ¤Ó¦hÏúªF¦è¤F,";
+		mes "¥h¾ã²z¤@¤U¦Z¦A¨Ó§ä§Ú§a!";
 		close;
 	}
 	.@npc_name$ = getarg(0);
 	mes "[" + .@npc_name$ + "]";
-	mes "ÒF¡@¡@, îØÕoÃrôe¶!";
-	mes "îí¡@¡@ÒF¡@¡@^FF0000²ØÏ²¡@¡@¡@¡@îÔ¡@¡@^000000ñiÉñFF0000ìHåı®v¡@¯£000000ñVÎØ¡@.";
-	mes "ñi¡@¡@®şÔí®òîí¡@¤¬®şÅF¡@¡@İl¡@^0000ff²ØÏ²¡@¡@¡@¡@^000000îÕ¡@0000ffìH¡@000000.";
-	mes "ÒF¡@åÎæ¦¹{¡@, î¿Ëæ¡z·åËÁÙó 5 ®ş¡@®v¡@ÄwÓQ";
-	mes "ñi¡@åMÃì¡@¡@®\òK©²ÒF¡@¡@ôï¼.";
+	mes "§A¦n, «_ÀI®a!";
+	mes "¥u­n§A±N^FF0000¯«¤§ª÷Äİ­ì¥Û^000000©Î^FF0000¾T­ì¥Û^000000®³¨Ó.";
+	mes "§Ú°¨¤W´N¥i¥H¬°§A´£·Ò^0000ff¯«¤§ª÷Äİ^000000©M^0000ff¾T^000000.";
+	mes "¦ı¬O°O¦í, ¥²¶·­n¦³ 5 ­Ó­ì¥Û¡A";
+	mes "§Ú¤~¦³¿ìªkÀ°§A´£·Ò.";
 	next;
-	switch(select("ñi¡@¡@·åËÃ¡@ÒF¡@0000ff ²ØÏ²¡@¡@¡@¡@ ^000000!:æ¢®p©²ñi¡@¡@ôï·Îññ®ş€åæT^ff0000 ìH ^000000!:æ¢¡@Ù·îã¥Rò«ÅôÏ´€§¡@¸ó¡@...")) {
+	switch(select("§Ú·Q­n¨î§@^0000ff ¯«¤§ª÷Äİ ^000000!:½ĞÀ°§Ú´£·Ò¥X¤@¶ô^ff0000 ¾T ^000000!:¸ß°İÃö¤_Äİ©ÊÄq¥Û...")) {
 	case 1:
 		if (countitem(756) > 4) {
 			delitem 756,5;  //Oridecon_Stone
 			getitem 984,1; // Oridecon
 			mes "[" + .@npc_name$ + "]";
-			mes "âYÅÏåÎñi¡@¡@ø¯ÂÇ¡@ËC¡@¡@ôï·Îññ¡@¡@ÕÚ²ØÏ²¡@¡@¡@¡@.";
-			mes "¼c¡@¡@ÒF¡@ÓB¼c¡@Ô©¡@¥.";
+			mes "³o¬O§Ú¾úºÉ¤d¨¯´£·Ò¥X¨Óªº¯«¤§ª÷Äİ.";
+			mes "Åwªï§A¤U¦¸¦A¨Ó.";
 			close;
 		}
 		else {
 			mes "[" + .@npc_name$ + "]";
-			mes "¡@³ú¡@¡@ˆ...ÒFÊDÚBôø¤ËÓR¡@¡@âÓ.";
-			mes "ñi¡@ÓGóq¡@¡@ÒFËf¡@âY‡, ·åËÁåÎ®[¢JÙó5®ş¡@¡@¯KìÖìÆÅô¡@®v¡@±RÕÚæ¢, óq¡@Ù¶®\òK¡@ÒF·À¡@¯KìÖìÆÅôÏµÕÚÁí—?";
+			mes "«¢«¢«¢...§A¯u·R¶}ª±¯º.";
+			mes "§Ú¤£¬O¸ò§A»¡¹L, ­n¬O¨S¦³5­Ó¯«¤§ª÷Äİ­ì¥Ûªº¸Ü, ¬OµLªk¨î§@¯«¤§ª÷Äİªº¶Ü?";
 			close;
 		}
 	case 2:
@@ -1040,106 +1110,106 @@ function	script	orimain	{
 			delitem 757,5;  //Elunium_Stone
 			getitem 985,1; // Elunium
 			mes "[" + .@npc_name$ + "]";
-			mes "âYÅÏåÎñi¡@¡@ø¯ÂÇ¡@ËC¡@¡@ôï·Îññ¡@¡@ÕÚìH.";
-			mes "¼c¡@¡@ÒF¡@ÓB¼c¡@Ô©¡@¡@€‚";
+			mes "³o¬O§Ú¾úºÉ¤d¨¯´£·Ò¥X¨Óªº¾T.";
+			mes "Åwªï§A¤U¦¸¦A¨Ó¡C";
 			close;
 		}
 		else {
 			mes "[" + .@npc_name$ + "]";
-			mes "¡@³ú¡@¡@ˆ...ÒFÊDÚBôø¤ËÓR¡@¡@âÓ.";
-			mes "ñi¡@ÓGóq¡@¡@ÒFËf¡@âY‡, ·åËÁåÎ®[¢JÙó5®ş¡@ºQîÔ¡@¡@ôğ¡@ên, óq¡@Ù¶®\òK¡@ÒFŞEºQôğáD¡@?";
+			mes "«¢«¢«¢...§A¯u·R¶}ª±¯º.";
+			mes "§Ú¤£¬O¸ò§A»¡¹L, ­n¬O¨S¦³5­Ó¾T­ì¥Ûªº¸Ü, ¬OµLªk¨î§@¾Tªº¶Ü?";
 			close;
 		}
 	case 3:
 		mes "[" + .@npc_name$ + "]";
-		mes "îã¥Rò«ÅôÏ´€§¡@¸ó¡@...";
-		mes "ñi¡@¡@ìL»£Ü×¡@¡@¡@âY÷á¡@®fÓ³ÚêÁç²BÂ²¡@¡@¡@ÄÊ´, Áí¡@Á^¾È³ú¡@âY÷à³Qîâ¡@ÕÚÒZËf¡@...";
-		mes "ÒF¶ãÂµ®[¡@ís¡@ÎI¡@âYÊ¨é¡!";
+		mes "Ãö¤_Äİ©ÊÄq¥Û...";
+		mes "§Ú°µÁë§Mª÷Äİ³o¦æ¤w¸g°µ¤F¤G¤Q¦~, §v¹L«Ü¦h³oÃş§Oªº¶Ç»¡...";
+		mes "¦ıÁÙ¨S¹ê»Ú¨£¹L©O!";
 		next;
 		mes "[" + .@npc_name$ + "]";
-		mes "ñi¡@Øøæ¢¼¼ìÆÅô¬°¡@Áí¡@ï»ñV¡@Ùó®ş€ä¡@ºğ¿Ğ§Ş";
-		mes "«¹²f€¡@¯ë€ôë¡@€ÙÊÎ¹¡@ÅôÏ´€§.";
+		mes "§Ú§v»¡ª÷Äİ³£¦U¦Û¾Ö¦³¤@¨ÇÃş¦ü";
+		mes "¤ô¡B¦a¡B¤õ¡B­·µ¥Äİ©Ê.";
 		next;
 		mes "[" + .@npc_name$ + "]";
-		mes "¡@£º¡@îØ²ë¡@îé£·¡@Áî¡@¡@ÅôÏ´€§Ãë¨ïÕÚæ¢...";
-		mes "ñS€å¡@ÒFŞ[ññ¡@¡@ÕÚÎg¡t¡@, ø¯¡@átÃì¡@Ô\ÅôÏ´€§¡@¸ó¡@ôğ¡@¡@¼d«¡ÌF¡@.";
+		mes "¦bÁë§MªZ¾¹®É¥[¤JÄİ©Ê®Éªº¸Ü...";
+		mes "©Ò¨î§@¥X¨ÓªºªZ¾¹, ±N¾Ö¦³¨ºÄİ©ÊÄq¥Ûªº¶W±j¤O¶q.";
 		next;
 		mes "[" + .@npc_name$ + "]";
-		mes "¡@³ú¡@..®şá¬Á^æ¢éô¡@ÁæÏ´¡@, ";
-		mes "ùVÂÇ¡@îÙÂEğo¿¨á¦¡@îé£¸ÕÚ¡@¯M¡@î¿Ëå¡@ôe¡@átÃì¡@¡@İÓé×ÕÚìL»£Ü×¡@€æÙõ.";
+		mes "«¢«¢..¤£¹L¸Ü»¡¦^¨Ó, ";
+		mes "¯à°µ¥X³oÏúªZ¾¹ªº¤H·Q¥²¤@©w¾Ö¦³Ìå°ªªºÁë§M§Ş³N.";
 		close;
 	}
 }
 
 // Equipment Repairmen
 //============================================================
-alberta_in,31,65,4	script	²N¡@ÕQ®f¥#alb	86,{
-	callfunc "repairmain","²N¡@ÕQ®f¥";
+alberta_in,31,65,4	script	­×²z¤u#alb	86,{
+	callfunc "repairmain","­×²z¤u";
 	end;
 }
 
-moc_ruins,107,94,4	script	²N¡@ÕQ®f¥#moc	99,{
-	callfunc "repairmain","²N¡@ÕQ®f¥";
+moc_ruins,107,94,4	script	­×²z¤u#moc	99,{
+	callfunc "repairmain","­×²z¤u";
 	end;
 }
 
-payon,143,165,4	script	²N¡@ÕQ®f¥#pay	88,{
-	callfunc "repairmain","²N¡@ÕQ®f¥";
+payon,143,165,4	script	­×²z¤u#pay	88,{
+	callfunc "repairmain","­×²z¤u";
 	end;
 }
 
-prt_in,63,54,2	script	²N¡@ÕQ®f¥#prt	86,{
-	callfunc "repairmain","²N¡@ÕQ®f¥";
+prt_in,63,54,2	script	­×²z¤u#prt	86,{
+	callfunc "repairmain","­×²z¤u";
 	end;
 }
 
-yuno_in01,175,28,3	script	²N¡@ÕQ®f¥#juno	86,{
-	callfunc "repairmain","²N¡@ÕQ®f¥";
+yuno_in01,175,28,3	script	­×²z¤u#juno	86,{
+	callfunc "repairmain","­×²z¤u";
 	end;
 }
 
-geffen_in,34,166,3	script	²N¡@ÕQ®f¥#gef	99,{
-	callfunc "repairmain","²N¡@ÕQ®f¥";
+geffen_in,34,166,3	script	­×²z¤u#gef	99,{
+	callfunc "repairmain","­×²z¤u";
 	end;
 }
 
-aldeba_in,38,60,3	script	²N¡@ÕQ®f¥#alde	86,{
-	callfunc "repairmain","²N¡@ÕQ®f¥";
+aldeba_in,38,60,3	script	­×²z¤u#alde	86,{
+	callfunc "repairmain","­×²z¤u";
 	end;
 }
 
-lhz_in02,284,14,3	script	²N¡@ÕQ®f¥#lhz	86,{
-	callfunc "repairmain","²N¡@ÕQ®f¥";
+lhz_in02,284,14,3	script	­×²z¤u#lhz	86,{
+	callfunc "repairmain","­×²z¤u";
 	end;
 }
 
-prt_gld,139,117,4	script	²N¡@ÕQ®f¥#prt_gld	86,{
-	callfunc "repairmain","²N¡@ÕQ®f¥";
+prt_gld,139,117,4	script	­×²z¤u#prt_gld	86,{
+	callfunc "repairmain","­×²z¤u";
 	end;
 }
 
-gef_fild13,263,117,4	script	²N¡@ÕQ®f¥#gef_fild	86,{
-	callfunc "repairmain","²N¡@ÕQ®f¥";
+gef_fild13,263,117,4	script	­×²z¤u#gef_fild	86,{
+	callfunc "repairmain","­×²z¤u";
 	end;
 }
 
-pay_gld,295,183,4	script	²N¡@ÕQ®f¥#pay_gld	86,{
-	callfunc "repairmain","²N¡@ÕQ®f¥";
+pay_gld,295,183,4	script	­×²z¤u#pay_gld	86,{
+	callfunc "repairmain","­×²z¤u";
 	end;
 }
 
-alde_gld,220,152,4	script	²N¡@ÕQ®f¥#alde_gld	86,{
-	callfunc "repairmain","²N¡@ÕQ®f¥";
+alde_gld,220,152,4	script	­×²z¤u#alde_gld	86,{
+	callfunc "repairmain","­×²z¤u";
 	end;
 }
 
-aru_gld,189,336,4	script	²N¡@ÕQ®f¥#aru_gld	86,{
-	callfunc "repairmain","²N¡@ÕQ®f¥";
+aru_gld,189,336,4	script	­×²z¤u#aru_gld	86,{
+	callfunc "repairmain","­×²z¤u";
 	end;
 }
 
-sch_gld,340,80,7	script	²N¡@ÕQ®f¥#sch_gld	86,{
-	callfunc "repairmain","²N¡@ÕQ®f¥";
+sch_gld,340,80,7	script	­×²z¤u#sch_gld	86,{
+	callfunc "repairmain","­×²z¤u";
 	end;
 }
 
@@ -1149,13 +1219,13 @@ function	script	repairmain	{
 	.@repairprice = 5000;
 	.@npc_name$ = getarg(0);
 	mes "["+.@npc_name$+"]";
-	mes "ÒF¡@¡@, îØÕoÃrôe¶!";
-	mes "ÒF¡@¡@æ¦ùó¡@²N¡@ÕQ®şŞN¡@Áí—?";
+	mes "§A¦n, «_ÀI®a!";
+	mes "§A·QÅı§Ú­×²zªF¦è¶Ü?";
 	next;
 	mes "["+.@npc_name$+"]";
-	mes "ñi¡@¡@ÒW¡@©²ÒF¡@´n¡@¡@¡@¡@ÌBÕÚ·è¡@¡@îíÔİ¡@îé¨!";
+	mes "§Ú¥i¥HÀ°§A­×²z§¥±¼ªº¸Ë³Æ¤ÎªZ¾¹!";
 	next;
-	switch(select("¡@©...Ãì¡@ÖĞŞ¶¦j´n...:öa¡@åM®[¢JÙó·åË¼´n¡@ÜßÕÚ®şŞN¡@...")) {
+	switch(select("®¦...¦³ªF¦è­×...:¥Ø«e¨S¦³­n­×²zªºªF¦è...")) {
 	case 1:
 		.@checkitem = 1;
 		while (1) {
@@ -1167,31 +1237,31 @@ function	script	repairmain	{
 		.@checkitem = .@checkitem-1;
 		if (!.@checkitem) {
 			mes "["+.@npc_name$+"]";
-			mes "îé¢! âY÷àÚBóq¡@ÑıÒW¡@Ã¦²N¡.";
-			mes "ÒFËfÔfôeÉ¡æ`Ú¬½Z¡@î¿¡@¡@ôğ¡@éL¡@! ®[¢JÙóÒW¿ĞßZ¡@¡@¡@¡@¡@";
+			mes "¾¾! ³o¯u¬OÃø¥H¸m«H.";
+			mes "§AªÖ©w«D±`Ãö¤ß§Aªºª««~! ¨S¦³¥ô¦ó·l§¥®@~";
 			next;
 			mes "["+.@npc_name$+"]";
-			mes "ÀáØQõ×«»¡@°y¡@¬x¡@Áá¡@¡@âYÅÏ¡@ôø¿ë¡@¡@¡@İµôğ¡@ên, ñi¡@®òÒZºr¡@¿GÅÜ¡@¡@†!";
+			mes "¦pªG¨C­Ó¤H³£¹³§A³o¼Ë·RÅ@ª««~ªº¸Ü, §Ú´N·|­n¥¢·~¤F!";
 			close;
 		}
 		mes "["+.@npc_name$+"]";
-		mes "Áëƒ... æ¦ùó¡@öfìÒÙï...";
-		mes "ÒF¡@¡@îã¿ëÙó ^ff0000" + .@checkitem + "^000000 ÒW¨ïéL¡@ËÁ¡@îê¡@Â².";
-		mes "îÏ¥R´n¡@ÜÙ¡@ÒW¡@¡@?";
+		mes "§c... Åı§Ú¬İ¬İ...";
+		mes "§A¤@¦@¦³ ^ff0000" + .@checkitem + "^000000 ¥óª««~·l§¥¤F.";
+		mes "·Q­×²z¥L­Ì¶Ü?";
 		next;
 		.@totalcost = .@repairprice*.@checkitem;
 		mes "["+.@npc_name$+"]";
-		mes "²N¡@ÕQ®ş€äÅwîî€è¡@ " + .@repairprice + " ¡@¡@¡@.";
-		mes "îÏ¥R´n¾üÂÇ¡@è¨£¸éL¡@Ë¶ÚV·å " + .@totalcost + " ¡@¡@¡@!";
-		mes "ÒF¡@¡@²N¡@ÕQÒWÑî·ÆÁí—?";
+		mes "­×²z¤@¥ó»İ­n " + .@repairprice + " ª÷¹ô.";
+		mes "·Q­×¦n¥ş³¡ª««~»İ­n " + .@totalcost + " ª÷¹ô!";
+		mes "§A·Q­×²z¥L­Ì¶Ü?";
 		next;
-		switch(select("óq¡@ÕÚ, Ú¬¡@¡@¡@Ôí¡@ÒW¡@¡@²N¡@ÕQ¡@¡@¡@.:ßX¡@Â², ¡@ØQ¡@®ş¹ñ´n¡@ÜÙÂ²...")) {
+		switch(select("¬Oªº, À°§Ú§â¥¦­Ì³£­×²z¤F§a.:ºâ¤F, ¼È®É¤£­×²z¤F...")) {
 		case 1:
 			if (Zeny < .@totalcost) {
 				mes "["+.@npc_name$+"]";
-				mes "Áë¡@¡@..";
-				mes "ÒFÊDÕÚ¡@¡@Ñ·®şá¬­áÒW¡@¡@ÒWé×²a²N¡@««¡@£¶¡@.";
-				mes "îÙ¡@¡@ìN¤ËÔ©¡@¡@ÂSñi¡@¡@.";
+				mes "§c§c..";
+				mes "§Aªºª÷¿ú¤£¨¬¥H¤ä¥Iºû­×¶O¥Î°Ú.";
+				mes "´ê°÷¿ú¦A¨Ó§ä§Ú§a.";
 				close;
 			}
 			.@checkitem2 = 1;
@@ -1209,26 +1279,26 @@ function	script	repairmain	{
 					.@checkitem = .@checkitem-1;
 				}
 				mes "["+.@npc_name$+"]";
-				mes "Ok! îã£º¡@Ú¬¡@¡@²N¡@¡@¡@†.";
+				mes "Ok! ¥ş³£À°§A­×¦n¤F.";
 				close;
 			}
 			else {
 				mes "["+.@npc_name$+"]";
-				mes "öf¡@¡@ÒF¡@­e®[¢JÙóÒW¿ĞßZîêÉá¡@ôğ¡@ÖĞŞ¶¶ôÚV·åË¼´n¡@¡@å§...";
+				mes "¬İ¨Ó§A¦}¨S¦³¥ô¦ó§¥±¼ªºªF¦è»İ­n­×²z§o...";
 				close;
 			}
 		case 2:
 			mes "["+.@npc_name$+"]";
-			mes "ós´k««öf¡@ÕÚ®ş¹ò¡@íiµ,";
-			mes "ôe¡@¡@ÒF¡@ÑOÂzªO¡@...";
-			mes "ñiİt¡@Ú¬¡@¡@²N¡@ÕQîêÉá¡@ôğ¡@¡@¿GÊ¨±jÎg¡t¡@!";
+			mes "¦¬¶O¯uªº¤£ºâ¶Q,";
+			mes "«È©x§A§O¨«°Ú...";
+			mes "§Ú¯àÀ°§A­×²z§¥±¼ªº¸Ë³Æ¤ÎªZ¾¹!";
 			close;
 		}
 	case 2:
 		mes "["+.@npc_name$+"]";
-		mes "¡@¦, ¾ü¬ÉÕÚ.";
-		mes "µ¼¡@¡@îî€è¡@²N¡@ÕQ¡@¡@İµôğ¡@ên,";
-		mes "îí¡@¤¬¡@¡@ÂSñi‘.";
+		mes "®@, ¦nªº.";
+		mes "µ¥§A»İ­n­×²zª««~ªº¸Ü,";
+		mes "¥i¥H¨Ó§ä§Ú.";
 		close;
 	}
 }
