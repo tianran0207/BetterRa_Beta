@@ -54,16 +54,16 @@
 #     DropAnnounce          If the item has a special announcement to self on drop. (Default: false)
 #     NoConsume             If the item is consumed on use. (Default: false)
 #     DropEffect            If the item has a special effect on the ground when dropped by a monster. (Default: None)
-#     ForceUseItem          ër¡@¡@ôe¸ö¡@¡@¡@ÓGùV§Ù¼b¡@£¸éL¡@¨ŞÕÚÄÁ²ë€Ãë¦·æãôù¸ö¡@ÒW¡@¼b¡@£¶¨jÃì¡@¡@Ãñ¡@¡@ôğ¡@éL¡@
-#     IgnoreNoFunc          ¡@¡@İµÃëËf¡@ mapflag ®ş­ noitemfunc ô\ºÀ¡@ôğäõ¡vöa®
-#     NoConsume2            ¡@¡@İµ®ş¹ñ²Ó¡@ÅÜò«Ú¡¡@¡@ôe¦·´IÁî£µ¼b¡@£¹€Œ®PØ¤€—ëæ¡@Ù¶ NoConsume ¡@£µ¼b¡@£·ÊºùVÂÇÎæîê¡@æw®ş¡@ÓGùV§Ù¼b¡@£¸ÕÚ¡@áÂ¡@ôğäõïâîâ³_¯Å
-#     NoSkillConsume        ¡@¡@İµ®ş¹ñ²Ó¡@ÅÜò«Ú¡¡@¡@Áî£·ÊºùVªã¡@îî€è¡@Æ_ÉÙÖÇÆ_—
-#     NoDropWithoutPlayer   ÆVÑÒéL¡@£·¯fÃìÌB¡@ôe¸ö¡@®şÎ¶¡@¡@€æ¡@Ãë¦·ÓGÒZ¡@¡@ùÀ­É¡@¡@¡@İµ
-#     DoDropEvent           ÆVÑÒéLÚ¡¡@¡@ôe¸öÂQ¡@€æ¡@, ÒZºr¡@îí‘ OnMOBDropItemFilter ¡@¡@Åw
-#     TurnIntoCostume       ¡@¡@Ùóæ¢¡@éL¡@¨ŞÕÚ·è¡@¡@îí¾ğ­tÃë´k¡@/ërÄ|¡@ (îã³ú¡@ BetterRA.conf ®ş­ è©¹òÃ¦ item_costume_card®şº yes ¼d€åØüæ¢¡@ÎoùV½)
-#     IgnoreScript          ¡@¡@Ùóæ¢¡@éL¡@¨ŞÕÚ·è¡@¡@ä±ËÁ¡@·è…/ërÄ|¡@ñS€æÙóÅôÏ´€§ÒZ¡@Ù¶¡@³úìÙ
-#     IgnoreAutoLoot        ¡@¡@İµÃëËf¡@Æh¡@ÎpñVÄß¡@, ÒZ¡@Ïr¡@¡@¡@îâªOÕä®şŠ
-#     IgnoreEquipView       ·è¡@¡@¿G¡@¡@®şá¦åæÖæ«¡¡@·è¡@¡@ÃñÉàê_îí¢ìµÆ
+#     ForceUseItem          ·íª±®a³B¤_¤£¯à¨Ï¥Îª««~ªºª¬ºA®É¨ÌµM¥i¥H¨Ï¥Î±a¦³¦¹¼ĞÃ±ªºª««~
+#     IgnoreNoFunc          ª««~µLµø mapflag ¤¤ noitemfunc ¹ïÀ³ªº¶µ¥Ø
+#     NoConsume2            ª««~¤£·|¥Ñ¤_³Qª±®a¥D°Ê¨Ï¥Î¦Ó®ø¯Ó¡]µL NoConsume ¦b¨Ï¥Î§Ş¯à©M§¤ÃM¤U¤£¯à¨Ï¥Îªº­­¨îªº­­¨î¡^
+#     NoSkillConsume        ª««~¤£·|¥Ñ¤_³Qµo°Ê§Ş¯à©Ò»İ­n¦Ó®ø¯Ó
+#     NoDropWithoutPlayer   Å]ª«¦b¨S¦³ª±®a°ÑÉO³Q±ş¦º®É¤£·|±¼¸¨¸Óª««~
+#     DoDropEvent           Å]ª«³Qª±®aÀ»±ş®É, ·|àDµo OnMOBDropItemFilter ¨Æ¥ó
+#     TurnIntoCostume       ´¡¦³¸Óª««~ªº¸Ë³ÆÅÜ¬°®É¸Ë/¼v¸Ë (¥ı¦b BetterRA.conf ¤¤ °t¸m item_costume_card¬° yes ¶}±Ò¸Ó¥\¯à)
+#     IgnoreScript          ´¡¦³¸Óª««~ªº¸Ë³Æ¡B®É¸Ë/¼v¸Ë©Ò¦³Äİ©Ê·|µL®Ä¤Æ
+#     IgnoreAutoLoot        ª««~µLµø¦Û°Ê¬B¨ú, ·|ª½±µ±¼¨ì¦a¤W
+#     IgnoreEquipView       ¸Ë³Æ¥~Æ[¤£Åã¥Ü¦b¸Ë³ÆÄæµ¡¤f¤¤
 #   Delay:                  Item use delay. (Default: null)
 #     Duration              Duration of delay in seconds.
 #     Status                Status Change used to track delay. (Default: None)
