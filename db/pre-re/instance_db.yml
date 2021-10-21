@@ -34,6 +34,10 @@
 #     Y               Y Coordinate where players start.
 #   AdditionalMaps:   List of maps that are part of an instance. (Optional)
 ###########################################################################
+# BetterRA è©¹òÃ¦:
+#   TimeLimit   ®þº 0 îâ¡@ÓG¡@áÂ¡@¡@¡@¡@Ãë¼Z¡@
+#   IdleTimeOut ®þº 0 îâ¡@ÓG¡@áÂ¡@ÅÐ¡@¡@Ãë¼Z¡@
+###########################################################################
 
 Header:
   Type: INSTANCE_DB

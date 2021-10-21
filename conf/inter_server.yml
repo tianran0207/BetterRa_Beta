@@ -6,10 +6,12 @@
 #	  Type                     (字符串類型) 倉庫對應 STORAGE_DB, 背包對應 INVENTORY_DB, 省略默認為 STORAGE_DB
 #	  Max                      (數值類型) *可選* 用來設置倉庫能存放的物品种類上限. 若未設置的話, 則會采用源代碼中 MAX_STORAGE 宏定
 ###########################################################################
+#
 # 擴展倉庫通過 'openstorage2' 指令打開, 擴展背包通過 mapflag 標記切換, 具体請查看 doc/BetterRa_mapflags.txt
 # 使用之前必須确認 Table 對應的數据庫是否存在, 如果不存在可以通過复制 storage 和 inventory 的結构創建.
 # 擴展倉庫中的 'Max' 對 'vip_storage_increase' 無效, 背包大小固定為, MAX_INVENTORY, 在定制中更改.
 # 玩家默認讀入 ID 為 0 的背包, 默認表定義在 conf\inter_athena.conf 中的 inventory_db 配置
+#
 ###########################################################################
 
 Header:

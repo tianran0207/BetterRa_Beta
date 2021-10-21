@@ -34,6 +34,10 @@
 #     Y               Y Coordinate where players start.
 #   AdditionalMaps:   List of maps that are part of an instance. (Optional)
 ###########################################################################
+# BetterRA 配置:
+#   TimeLimit   為 0 則不限制副本時間
+#   IdleTimeOut 為 0 則不限制超時時間
+###########################################################################
 
 Header:
   Type: INSTANCE_DB

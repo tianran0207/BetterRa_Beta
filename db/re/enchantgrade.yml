@@ -1,0 +1,89 @@
+Header:
+  Type: ENCHANTGRADE_DB
+  Version: 1
+
+Body:
+  - Type: Weapon
+    Levels:
+      - Level: 5
+        Grades:
+          - Grade: 0
+            Refine: 11
+            Chance: 7000
+            Bonus: 10
+            Catalysator:
+                Item: Blessed_Etel_Dust
+                AmountPerStep: 1
+                MaximumSteps: 10
+                ChanceIncrease: 100
+            Options:
+              - Option: 0
+                Item: Etel_Skyblue_Jewel
+                Amount: 1
+                Zeny: 175000
+                Failure: Break
+              - Option: 1
+                Item: Etel_Skyblue_Jewel
+                Amount: 5
+                Zeny: 875000
+                Failure: Failed
+          - Grade: 1
+            Refine: 11
+            Chance: 6000
+            Bonus: 30
+            Catalysator:
+                Item: Blessed_Etel_Dust
+                AmountPerStep: 3
+                MaximumSteps: 10
+                ChanceIncrease: 100
+            Options:
+              - Option: 0
+                Item: Etel_Topaz
+                Amount: 1
+                Zeny: 175000
+                Failure: Break
+              - Option: 1
+                Item: Etel_Topaz
+                Amount: 5
+                Zeny: 875000
+                Failure: Failed
+          - Grade: 2
+            Refine: 11
+            Chance: 5000
+            Bonus: 50
+            Catalysator:
+                Item: Blessed_Etel_Dust
+                AmountPerStep: 5
+                MaximumSteps: 10
+                ChanceIncrease: 100
+            Options:
+              - Option: 0
+                Item: Etel_Violet_Jewel
+                Amount: 1
+                Zeny: 175000
+                Failure: Break
+              - Option: 1
+                Item: Etel_Violet_Jewel
+                Amount: 5
+                Zeny: 875000
+                Failure: Failed
+          - Grade: 3
+            Refine: 11
+            Chance: 4000
+            Bonus: 100
+            Catalysator:
+                Item: Blessed_Etel_Dust
+                AmountPerStep: 7
+                MaximumSteps: 10
+                ChanceIncrease: 100
+            Options:
+              - Option: 0
+                Item: Etel_Amber
+                Amount: 2
+                Zeny: 175000
+                Failure: Break
+              - Option: 1
+                Item: Etel_Amber
+                Amount: 10
+                Zeny: 875000
+                Failure: Failed

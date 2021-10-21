@@ -922,6 +922,12 @@ Body:
   - Command: reloadstatusdb
     Help: |
       穝更篈皌竚ゅン.
+  - Command: reloadpathdb
+    Help: |
+      穝更隔翴计誹畐.
+  - Command: reloadeffectdb
+    Help: |
+      穝更疭计誹畐.
   - Command: reloadupgradedb
     Help: |
       穝更珇迭后皌竚ゅン.
@@ -936,6 +942,7 @@ Body:
       atcommand        battleconf         statusdb
       pcdb                   motd           script
       questdb             msgconf         packetdb
+      pathdb             effectdb
   - Command: langtype
     Help: |
       把计: <粂ē絪腹>
@@ -1002,6 +1009,12 @@ Body:
   - Command: reloadnpcfile
     Aliases:
       - reloadnpc
+  - Command: enchantgradeui
+    Aliases:
+      - enchantui
+      - enchant
+    Help: |
+      Opens the enchantgrade UI.
 
 Footer:
   Imports:

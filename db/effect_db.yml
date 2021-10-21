@@ -1,0 +1,295 @@
+###########################################################################
+# °@≥W’©∫˝·D—Æ°@™©ÿ‹∫Sì
+###########################################################################
+#
+# °@£µÚ´Ûc™O°@Òi°@ÄÖÛs∫¿°@°@≥W’©°@°@ı◊ÙÑ
+#
+###########################################################################
+#
+# - Id                °@≥W’©Ωy°@©ª, ¿·ÿQı◊Æ˛°@§Z√ÏÃBÏÕ°@≥˙°@IDÓ‚°@≤”Ûs∫¿°@°@≥W’©°@°@ı◊
+#   List:             °@≥W’©Ó‚›‰°≤
+#     - EffectId:       °@≥W’©Ωy°@©ªÒi—ÂÏÕ°@≥˙§˜°@è
+#       Start:        °@≥W’©ºdÄÂ°@°@°@ÏÓ√ÎºZ°@(´ª°@°@), °@£µÚ´ÏL˜‚”R°@≥W’©°@°@ı◊, Ë¶´±ÿd°@≥W’©¡Ì…Ÿ°@Ûqº@°@ (∫dÈÕ°@: 0)
+#       Interval:     Ûq°@ŸIÆ˛ØMÿ”∫˝°@ÏÕ°@à, ¿·ÿQı◊°@≥W’©Æ˛·¶ÿ”∫˝≠, Ó‚ô unitaura Æ˛°@’⁄ <°@ººÈ·√ÎºZ°@> ÓÌ°@°@Œg°@ÏÕ°@ÿ®æ∑øG·¶°@Ûsæ (∫dÈÕ°@: false)
+#
+###########################################################################
+#
+# Œg°@·¯°@°@°@Æ˛°@’⁄ID ÓÌ°@Ÿu°@Œ∂‹…√Ï°@°@“W§ specialeffect specialeffect2 unitspecialeffect
+#                               misceffect removespecialeffect unitaura unitdelaura
+#
+###########################################################################
+
+Header:
+  Type: EFFECT_DB
+  Version: 1
+
+Body:
+  - Id: 10000
+    List:
+      - EffectId: 256
+        Start: 0
+        Interval: true
+      - EffectId: 257
+        Start: 1000
+        Interval: true
+      - EffectId: 258
+        Start: 2000
+        Interval: true
+    #≤Z¿ßˆÚ: unitaura getcharid(3),10000,3000,9000;
+  - Id: 10001
+    List:
+      - EffectId: 586
+      - EffectId: 362
+    #≤Z¿ßˆÚ: unitaura getcharid(3),10001;
+    #≤Z¿ßˆÚ: unitaura getcharid(3),10001,0,9000;
+  - Id: 10002
+    List:
+      - EffectId: 12
+        Start: 0
+        Interval: true
+      - EffectId: 33
+        Start: 1000
+        Interval: true
+    #≤Z¿ßˆÚ: specialeffect 10002;
+  - Id: 10003
+    List:
+      - EffectId: 586
+      - EffectId: 362
+      - EffectId: 240
+  - Id: 10004
+    List:
+      - EffectId: 239
+      - EffectId: 418
+  - Id: 10005
+    List:
+      - EffectId: 239
+      - EffectId: 486
+  - Id: 10006
+    List:
+      - EffectId: 239
+      - EffectId: 485
+  - Id: 10007
+    List:
+      - EffectId: 240
+      - EffectId: 418
+  - Id: 10008
+    List:
+      - EffectId: 240
+      - EffectId: 486
+  - Id: 10009
+    List:
+      - EffectId: 240
+      - EffectId: 485
+  - Id: 10010
+    List:
+      - EffectId: 241
+      - EffectId: 418
+  - Id: 10011
+    List:
+      - EffectId: 241
+      - EffectId: 486
+  - Id: 10012
+    List:
+      - EffectId: 241
+      - EffectId: 485
+  - Id: 10013
+    List:
+      - EffectId: 620
+      - EffectId: 418
+  - Id: 10014
+    List:
+      - EffectId: 620
+      - EffectId: 486
+  - Id: 10015
+    List:
+      - EffectId: 620
+      - EffectId: 485
+  - Id: 10016
+    List:
+      - EffectId: 239
+      - EffectId: 418
+      - EffectId: 202
+  - Id: 10017
+    List:
+      - EffectId: 239
+      - EffectId: 486
+      - EffectId: 202
+  - Id: 10018
+    List:
+      - EffectId: 239
+      - EffectId: 485
+      - EffectId: 202
+  - Id: 10019
+    List:
+      - EffectId: 240
+      - EffectId: 418
+      - EffectId: 202
+  - Id: 10020
+    List:
+      - EffectId: 240
+      - EffectId: 486
+      - EffectId: 202
+  - Id: 10021
+    List:
+      - EffectId: 240
+      - EffectId: 485
+      - EffectId: 202
+  - Id: 10022
+    List:
+      - EffectId: 241
+      - EffectId: 418
+      - EffectId: 202
+  - Id: 10023
+    List:
+      - EffectId: 241
+      - EffectId: 486
+      - EffectId: 202
+  - Id: 10024
+    List:
+      - EffectId: 241
+      - EffectId: 485
+      - EffectId: 202
+  - Id: 10025
+    List:
+      - EffectId: 620
+      - EffectId: 418
+      - EffectId: 202
+  - Id: 10026
+    List:
+      - EffectId: 620
+      - EffectId: 486
+      - EffectId: 202
+  - Id: 10027
+    List:
+      - EffectId: 620
+      - EffectId: 485
+      - EffectId: 202
+  - Id: 10028
+    List:
+      - EffectId: 239
+      - EffectId: 418
+      - EffectId: 362
+  - Id: 10029
+    List:
+      - EffectId: 239
+      - EffectId: 486
+      - EffectId: 362
+  - Id: 10030
+    List:
+      - EffectId: 239
+      - EffectId: 485
+      - EffectId: 362
+  - Id: 10031
+    List:
+      - EffectId: 240
+      - EffectId: 418
+      - EffectId: 362
+  - Id: 10032
+    List:
+      - EffectId: 240
+      - EffectId: 486
+      - EffectId: 362
+  - Id: 10033
+    List:
+      - EffectId: 240
+      - EffectId: 485
+      - EffectId: 362
+  - Id: 10034
+    List:
+      - EffectId: 241
+      - EffectId: 418
+      - EffectId: 362
+  - Id: 10035
+    List:
+      - EffectId: 241
+      - EffectId: 486
+      - EffectId: 362
+  - Id: 10036
+    List:
+      - EffectId: 241
+      - EffectId: 485
+      - EffectId: 362
+  - Id: 10037
+    List:
+      - EffectId: 620
+      - EffectId: 418
+      - EffectId: 362
+  - Id: 10038
+    List:
+      - EffectId: 620
+      - EffectId: 486
+      - EffectId: 362
+  - Id: 10039
+    List:
+      - EffectId: 620
+      - EffectId: 485
+      - EffectId: 362
+  - Id: 10040
+    List:
+      - EffectId: 239
+      - EffectId: 418
+      - EffectId: 678
+  - Id: 10041
+    List:
+      - EffectId: 239
+      - EffectId: 486
+      - EffectId: 678
+  - Id: 10042
+    List:
+      - EffectId: 239
+      - EffectId: 485
+      - EffectId: 678
+  - Id: 10043
+    List:
+      - EffectId: 240
+      - EffectId: 418
+      - EffectId: 678
+  - Id: 10044
+    List:
+      - EffectId: 240
+      - EffectId: 486
+      - EffectId: 678
+  - Id: 10045
+    List:
+      - EffectId: 240
+      - EffectId: 485
+      - EffectId: 678
+  - Id: 10046
+    List:
+      - EffectId: 241
+      - EffectId: 418
+      - EffectId: 678
+  - Id: 10047
+    List:
+      - EffectId: 241
+      - EffectId: 486
+      - EffectId: 678
+  - Id: 10048
+    List:
+      - EffectId: 241
+      - EffectId: 485
+      - EffectId: 678
+  - Id: 10049
+    List:
+      - EffectId: 620
+      - EffectId: 418
+      - EffectId: 678
+  - Id: 10050
+    List:
+      - EffectId: 620
+      - EffectId: 486
+      - EffectId: 678
+  - Id: 10051
+    List:
+      - EffectId: 620
+      - EffectId: 485
+      - EffectId: 678
+  - Id: 10052
+    List:
+      - EffectId: 680
+      - EffectId: 679
+      - EffectId: 678
+
+Footer:
+  Imports:
+  - Path: db/import/effect_db.yml

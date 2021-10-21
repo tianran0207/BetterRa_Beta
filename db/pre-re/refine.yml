@@ -38,6 +38,15 @@
 #               BreakingRate            Chance of item breaking out of 0~10000. (Default: 0)
 #               DowngradeAmount         Number of refine levels reduced on failure. (Default: 0)
 ###########################################################################
+#
+# 由于精煉UI有四种精煉材料, 目前只支持三种精煉材料, 增加新的精煉類型及消耗, Chances 中 type 增加 Event 類型
+#     Chances:
+#        - Type: Event
+#          Rate: 10000
+#          Price: 2000
+#          Material: Apple
+#
+###########################################################################
 
 Header:
   Type: REFINE_DB
