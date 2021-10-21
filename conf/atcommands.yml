@@ -1009,6 +1009,12 @@ Body:
   - Command: reloadnpcfile
     Aliases:
       - reloadnpc
+  - Command: enchantgradeui
+    Aliases:
+      - enchantui
+      - enchant
+    Help: |
+      Opens the enchantgrade UI.
 
 Footer:
   Imports:

@@ -39,7 +39,8 @@
 #   Classes                 Upper class types that can equip the item. (Map default is 'All: true')
 #   Gender                  Gender that can equip the item. (Default: Both)
 #   Locations               Equipment's placement. (Default: None)
-#   WeaponLevel             Weapon level. (Default: 0)
+#   WeaponLevel             Weapon level. (Default: 1 for Weapons)
+#   ArmorLevel              Armor level. (Default: 1 for Armors)
 #   EquipLevelMin           Minimum required level to equip. (Default: 0)
 #   EquipLevelMax           Maximum level that can equip. (Default: 0)
 #   Refineable              If the item can be refined. (Default: false)
@@ -73,6 +74,11 @@
 #     Cart                  If the stack is applied to the player's cart. (Default: false)
 #     Storage               If the stack is applied to the player's storage. (Default: false)
 #     GuildStorage          If the stack is applied to the player's guild storage. (Default: false)
+#   MaxAmount:              物品最大数量, 超过堆叠上限后, 将添加在另一个栏位, 可超过 30000
+#     Inventory             物品在背包中最大数量
+#     Cart                  物品在手推车中最大数量
+#     Storage               物品在仓库中最大数量
+#     GuildStorage          物品在公会仓库中最大数量
 #   NoUse:                  Conditions when the item is unusable. (Default: null)
 #     Override              Group level to override these conditions.
 #     Sitting               If the item can not be used while sitting. (Default: false)
@@ -94,7 +100,7 @@
 
 Header:
   Type: ITEM_DB
-  Version: 1
+  Version: 2
 
 Body:
   - Id: 670
@@ -6310,7 +6316,7 @@ Body:
       DropEffect: CLIENT
     Script: |
       bonus bIgnoreDefClass,Class_Normal;
-      bonus bHPrecovRate,-100;
+      bonus bNoRegen,1;
       bonus2 bHPLossRate,666,10000;
     UnEquipScript: |
       if ((Hp<=999) && !getmapflag(strcharinfo(3),mf_pvp) && !getmapflag(strcharinfo(3),mf_pvp_noparty) && !getmapflag(strcharinfo(3),mf_pvp_noguild)) {
@@ -9550,10 +9556,11 @@ Body:
       DropEffect: CLIENT
     Script: |
       .@rate = ((getrefine()>14)?7:5);
+      .@duration = ((getrefine()>14)?10000:5000);
       bonus bMaxHPrate,.@rate;
       bonus bMaxSPrate,.@rate;
-      bonus2 bHPRegenRate,50,10000;
-      bonus2 bSPRegenRate,10,10000;
+      bonus2 bHPRegenRate,50,.@duration;
+      bonus2 bSPRegenRate,10,.@duration;
   - Id: 4483
     AegisName: Sealed_Dracula_Card
     Name: 封印德古拉伯爵卡片
@@ -9628,7 +9635,7 @@ Body:
       bonus bBaseAtk,(JobLevel/20);
       bonus bCritical,(JobLevel/20);
       bonus bHit,(JobLevel/20);
-      bonus3 bAutoSpellWhenHit,"NPC_EARTHQUAKE",5,1;
+      bonus3 bAutoSpellWhenHit,"NPC_EARTHQUAKE",2,1;
   - Id: 4488
     AegisName: Sealed_D_Lord_Card
     Name: 封印黑暗之王卡片
@@ -9803,7 +9810,7 @@ Body:
       DropEffect: CLIENT
     Script: |
       bonus bIgnoreDefClass,Class_Normal;
-      bonus bHPrecovRate,-100;
+      bonus bNoRegen,1;
       if (getrefine()>14)
          bonus2 bHPLossRate,777,8000;
       else
@@ -9855,7 +9862,7 @@ Body:
     Script: |
       .@r = getrefine();
       bonus bBreakWeaponRate,(.@r>14?800:500);
-      bonus bBreakArmorRate,(.@r>14?600:500);
+      bonus bBreakArmorRate,(.@r>14?600:400);
   - Id: 4503
     AegisName: Sealed_Apocalips_H_Card
     Name: 封印贝思波卡片
@@ -9990,7 +9997,7 @@ Body:
       BuyingStore: true
       DropEffect: CLIENT
     Script: |
-      bonus3 bAddEff,Eff_Silence,500,ATF_MAGIC;
+      bonus3 bAddEff,Eff_Silence,1000,ATF_MAGIC;
   - Id: 4512
     AegisName: Parus_Card
     Name: 恶魔啄木鸟卡片
@@ -10097,7 +10104,7 @@ Body:
       BuyingStore: true
       DropEffect: CLIENT
     Script: |
-      bonus3 bAddEff,Eff_Burning,500,ATF_TARGET;
+      bonus3 bAddEff,Eff_Burning,300,ATF_TARGET;
   - Id: 4519
     AegisName: Butoijo_Card
     Name: 布托异竺卡片
@@ -10181,9 +10188,8 @@ Body:
       DropEffect: CLIENT
     Script: |
       bonus bStr,2;
-      if (BaseClass == Job_Swordman) {
-         bonus bStr,2+(getrefine()/3);
-      }
+      if (BaseClass == Job_Swordman)
+         bonus bStr,getrefine()/3;
   - Id: 4525
     AegisName: Kraken_Card
     Name: 魔鬼大乌贼卡片
@@ -10279,9 +10285,8 @@ Body:
       DropEffect: CLIENT
     Script: |
       bonus bLuk,2;
-      if (BaseClass == Job_Merchant) {
-         bonus bLuk,2+(getrefine()/3);
-      }
+      if (BaseClass == Job_Merchant)
+         bonus bLuk,getrefine()/3;
   - Id: 4531
     AegisName: Red_Eruma_Card
     Name: 红海星卡片
@@ -11041,7 +11046,7 @@ Body:
       BuyingStore: true
       DropEffect: CLIENT
     Script: |
-      autobonus "{ bonus bAgi,44; heal 0,-40; }",500,3000,0,"{ sc_start SC_SPEEDUP1,3000,50; }";
+      autobonus2 "{ bonus bAgi,44; bonus bNoWalkDelay; heal 0,-40; }",50,3000,0,"{ sc_start SC_SPEEDUP1,3000,50; }";
   - Id: 4582
     AegisName: Bungisngis_Card
     Name: 独眼怪卡片
@@ -11963,7 +11968,7 @@ Body:
       DropEffect: CLIENT
     Script: |
       /* Unofficial chance */
-      bonus3 bAutoSpellWhenHit,"NPC_WIDESLEEP",2,10;
+      bonus3 bAutoSpellWhenHit,"NPC_WIDESLEEP",2,30;
   - Id: 4657
     AegisName: Grave_A_Mummy_Card
     Name: 灭绝狂暴木乃伊卡片
@@ -12436,7 +12441,7 @@ Body:
     Script: |
       if (getrefine() > 9)
          .@b += 20;
-      if (getequipweaponlv(-1) == 4)
+      if (getequipweaponlv() == 4)
          .@b += 20;
       bonus2 bSkillAtk,"GC_CROSSIMPACT",20+.@b;
   - Id: 4685
@@ -12453,7 +12458,7 @@ Body:
     Script: |
       if (getrefine() > 9)
          .@b += 20;
-      if (getequipweaponlv(-1) == 4)
+      if (getequipweaponlv() == 4)
          .@b += 20;
       bonus2 bSkillAtk,"AB_ADORAMUS",20+.@b;
   - Id: 4686
@@ -12470,7 +12475,7 @@ Body:
     Script: |
       if (getrefine() > 9)
          .@b += 20;
-      if (getequipweaponlv(-1) == 4)
+      if (getequipweaponlv() == 4)
          .@b += 20;
       bonus2 bSkillAtk,"WL_CRIMSONROCK",20+.@b;
   - Id: 4687
@@ -12487,7 +12492,7 @@ Body:
     Script: |
       if (getrefine() > 9)
          .@b += 20;
-      if (getequipweaponlv(-1) == 4)
+      if (getequipweaponlv() == 4)
          .@b += 20;
       bonus2 bSkillAtk,"RA_CLUSTERBOMB",20+.@b;
   - Id: 4688
@@ -12504,7 +12509,7 @@ Body:
     Script: |
       if (getrefine() > 9)
          .@b += 20;
-      if (getequipweaponlv(-1) == 4)
+      if (getequipweaponlv() == 4)
          .@b += 20;
       bonus2 bSkillAtk,"NC_AXETORNADO",20+.@b;
   - Id: 4689
@@ -12521,7 +12526,7 @@ Body:
     Script: |
       if (getrefine() > 9)
          .@b += 20;
-      if (getequipweaponlv(-1) == 4)
+      if (getequipweaponlv() == 4)
          .@b += 20;
       bonus2 bSkillAtk,"RK_IGNITIONBREAK",20+.@b;
   - Id: 4690
@@ -12538,7 +12543,7 @@ Body:
     Script: |
       if (getrefine() > 9)
          .@b += 20;
-      if (getequipweaponlv(-1) == 4)
+      if (getequipweaponlv() == 4)
          .@b += 20;
       bonus2 bSkillAtk,"LG_EARTHDRIVE",20+.@b;
   - Id: 4691
@@ -12555,7 +12560,7 @@ Body:
     Script: |
       if (getrefine() > 9)
          .@b += 20;
-      if (getequipweaponlv(-1) == 4)
+      if (getequipweaponlv() == 4)
          .@b += 20;
       bonus2 bSkillAtk,"GN_CART_TORNADO",20+.@b;
   - Id: 4692
@@ -12572,7 +12577,7 @@ Body:
     Script: |
       if (getrefine() > 9)
          .@b += 20;
-      if (getequipweaponlv(-1) == 4)
+      if (getequipweaponlv() == 4)
          .@b += 20;
       bonus2 bSkillAtk,"SO_VARETYR_SPEAR",20+.@b;
   - Id: 4693
@@ -12589,7 +12594,7 @@ Body:
     Script: |
       if (getrefine() > 9)
          .@b += 20;
-      if (getequipweaponlv(-1) == 4)
+      if (getequipweaponlv() == 4)
          .@b += 20;
       bonus2 bSkillAtk,"SR_RAMPAGEBLASTER",20+.@b;
   - Id: 4694
@@ -12606,7 +12611,7 @@ Body:
     Script: |
       if (getrefine() > 9)
          .@b += 20;
-      if (getequipweaponlv(-1) == 4)
+      if (getequipweaponlv() == 4)
          .@b += 20;
       bonus2 bSkillAtk,"SC_FEINTBOMB",20+.@b;
   - Id: 4695
@@ -12623,7 +12628,7 @@ Body:
     Script: |
       if (getrefine() > 9)
          .@b += 20;
-      if (getequipweaponlv(-1) == 4)
+      if (getequipweaponlv() == 4)
          .@b += 20;
       bonus2 bSkillAtk,"WM_SEVERE_RAINSTORM",20+.@b;
   - Id: 4696
@@ -12640,7 +12645,7 @@ Body:
     Script: |
       if (getrefine() > 9)
          .@b += 20;
-      if (getequipweaponlv(-1) == 4)
+      if (getequipweaponlv() == 4)
          .@b += 20;
       bonus2 bSkillAtk,"WM_REVERBERATION",20+.@b;
   - Id: 4697
