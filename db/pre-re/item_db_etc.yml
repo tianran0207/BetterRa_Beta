@@ -26,7 +26,7 @@
 #   AegisName               Server name to reference the item in scripts and lookups, should use no spaces.
 #   Name                    Name in English for displaying as output.
 #   Type                    Item type. (Default: Etc)
-#   SubType                 Weapon or Ammo type. (Default: 0)
+#   SubType                 Weapon, Ammo or Card type. (Default: 0)
 #   Buy                     Buying price. When not specified, becomes double the sell price. (Default: 0)
 #   Sell                    Selling price. When not specified, becomes half the buy price. (Default: 0)
 #   Weight                  Item weight. Each 10 is 1 weight. (Default: 0)
@@ -8585,6 +8585,7 @@ Body:
     AegisName: Strength1
     Name: STR+1
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
     Script: |
@@ -8593,6 +8594,7 @@ Body:
     AegisName: Strength2
     Name: STR+2
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
     Script: |
@@ -8601,6 +8603,7 @@ Body:
     AegisName: Strength3
     Name: STR+3
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
     Script: |
@@ -8609,6 +8612,7 @@ Body:
     AegisName: Strength4
     Name: STR+4
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
     Script: |
@@ -8617,6 +8621,7 @@ Body:
     AegisName: Strength5
     Name: STR+5
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
     Script: |
@@ -8625,6 +8630,7 @@ Body:
     AegisName: Strength6
     Name: STR+6
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
     Script: |
@@ -8633,6 +8639,7 @@ Body:
     AegisName: Strength7
     Name: STR+7
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
     Script: |
@@ -8641,6 +8648,7 @@ Body:
     AegisName: Strength8
     Name: STR+8
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
     Script: |
@@ -8649,6 +8657,7 @@ Body:
     AegisName: Strength9
     Name: STR+9
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
     Script: |
@@ -8657,6 +8666,7 @@ Body:
     AegisName: Strength10
     Name: STR+10
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
     Script: |
@@ -8665,6 +8675,7 @@ Body:
     AegisName: Inteligence1
     Name: INT+1
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
     Script: |
@@ -8673,6 +8684,7 @@ Body:
     AegisName: Inteligence2
     Name: INT+2
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
     Script: |
@@ -8681,6 +8693,7 @@ Body:
     AegisName: Inteligence3
     Name: INT+3
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
     Script: |
@@ -8689,6 +8702,7 @@ Body:
     AegisName: Inteligence4
     Name: INT+4
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
     Script: |
@@ -8697,6 +8711,7 @@ Body:
     AegisName: Inteligence5
     Name: INT+5
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
     Script: |
@@ -8705,6 +8720,7 @@ Body:
     AegisName: Inteligence6
     Name: INT+6
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
     Script: |
@@ -8713,6 +8729,7 @@ Body:
     AegisName: Inteligence7
     Name: INT+7
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
     Script: |
@@ -8721,6 +8738,7 @@ Body:
     AegisName: Inteligence8
     Name: INT+8
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
     Script: |
@@ -8729,6 +8747,7 @@ Body:
     AegisName: Inteligence9
     Name: INT+9
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
     Script: |
@@ -8737,6 +8756,7 @@ Body:
     AegisName: Inteligence10
     Name: INT+10
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
     Script: |
@@ -8745,6 +8765,7 @@ Body:
     AegisName: Dexterity1
     Name: DEX+1
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
     Script: |
@@ -8753,6 +8774,7 @@ Body:
     AegisName: Dexterity2
     Name: DEX+2
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
     Script: |
@@ -8761,6 +8783,7 @@ Body:
     AegisName: Dexterity3
     Name: DEX+3
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
     Script: |
@@ -8769,6 +8792,7 @@ Body:
     AegisName: Dexterity4
     Name: DEX+4
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
     Script: |
@@ -8777,6 +8801,7 @@ Body:
     AegisName: Dexterity5
     Name: DEX+5
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
     Script: |
@@ -8785,6 +8810,7 @@ Body:
     AegisName: Dexterity6
     Name: DEX+6
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
     Script: |
@@ -8793,6 +8819,7 @@ Body:
     AegisName: Dexterity7
     Name: DEX+7
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
     Script: |
@@ -8801,6 +8828,7 @@ Body:
     AegisName: Dexterity8
     Name: DEX+8
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
     Script: |
@@ -8809,6 +8837,7 @@ Body:
     AegisName: Dexterity9
     Name: DEX+9
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
     Script: |
@@ -8817,6 +8846,7 @@ Body:
     AegisName: Dexterity10
     Name: DEX+10
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
     Script: |
@@ -8825,6 +8855,7 @@ Body:
     AegisName: Agility1
     Name: AGI+1
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
     Script: |
@@ -8833,6 +8864,7 @@ Body:
     AegisName: Agility2
     Name: AGI+2
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
     Script: |
@@ -8841,6 +8873,7 @@ Body:
     AegisName: Agility3
     Name: AGI+3
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
     Script: |
@@ -8849,6 +8882,7 @@ Body:
     AegisName: Agility4
     Name: AGI+4
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
     Script: |
@@ -8857,6 +8891,7 @@ Body:
     AegisName: Agility5
     Name: AGI+5
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
     Script: |
@@ -8865,6 +8900,7 @@ Body:
     AegisName: Agility6
     Name: AGI+6
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
     Script: |
@@ -8873,6 +8909,7 @@ Body:
     AegisName: Agility7
     Name: AGI+7
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
     Script: |
@@ -8881,6 +8918,7 @@ Body:
     AegisName: Agility8
     Name: AGI+8
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
     Script: |
@@ -8889,6 +8927,7 @@ Body:
     AegisName: Agility9
     Name: AGI+9
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
     Script: |
@@ -8897,6 +8936,7 @@ Body:
     AegisName: Agility10
     Name: AGI+10
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
     Script: |
@@ -8905,6 +8945,7 @@ Body:
     AegisName: Vitality1
     Name: VIT+1
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
     Script: |
@@ -8913,6 +8954,7 @@ Body:
     AegisName: Vitality2
     Name: VIT+2
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
     Script: |
@@ -8921,6 +8963,7 @@ Body:
     AegisName: Vitality3
     Name: VIT+3
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
     Script: |
@@ -8929,6 +8972,7 @@ Body:
     AegisName: Vitality4
     Name: VIT+4
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
     Script: |
@@ -8937,6 +8981,7 @@ Body:
     AegisName: Vitality5
     Name: VIT+5
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
     Script: |
@@ -8945,6 +8990,7 @@ Body:
     AegisName: Vitality6
     Name: VIT+6
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
     Script: |
@@ -8953,6 +8999,7 @@ Body:
     AegisName: Vitality7
     Name: VIT+7
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
     Script: |
@@ -8961,6 +9008,7 @@ Body:
     AegisName: Vitality8
     Name: VIT+8
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
     Script: |
@@ -8969,6 +9017,7 @@ Body:
     AegisName: Vitality9
     Name: VIT+9
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
     Script: |
@@ -8977,6 +9026,7 @@ Body:
     AegisName: Vitality10
     Name: VIT+10
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
     Script: |
@@ -8985,6 +9035,7 @@ Body:
     AegisName: Luck1
     Name: LUK+1
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
     Script: |
@@ -8993,6 +9044,7 @@ Body:
     AegisName: Luck2
     Name: LUK+2
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
     Script: |
@@ -9001,6 +9053,7 @@ Body:
     AegisName: Luck3
     Name: LUK+3
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
     Script: |
@@ -9009,6 +9062,7 @@ Body:
     AegisName: Luck4
     Name: LUK+4
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
     Script: |
@@ -9017,6 +9071,7 @@ Body:
     AegisName: Luck5
     Name: LUK+5
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
     Script: |
@@ -9025,6 +9080,7 @@ Body:
     AegisName: Luck6
     Name: LUK+6
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
     Script: |
@@ -9033,6 +9089,7 @@ Body:
     AegisName: Luck7
     Name: LUK+7
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
     Script: |
@@ -9041,6 +9098,7 @@ Body:
     AegisName: Luck8
     Name: LUK+8
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
     Script: |
@@ -9049,6 +9107,7 @@ Body:
     AegisName: Luck9
     Name: LUK+9
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
     Script: |
@@ -9057,6 +9116,7 @@ Body:
     AegisName: Luck10
     Name: LUK+10
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
     Script: |
@@ -9065,6 +9125,7 @@ Body:
     AegisName: Matk1
     Name: MATK+1%
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
     Script: |
@@ -9073,6 +9134,7 @@ Body:
     AegisName: Matk2
     Name: MATK+2%
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
     Script: |
@@ -9081,6 +9143,7 @@ Body:
     AegisName: Evasion6
     Name: FLEE+6
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
     Script: |
@@ -9089,6 +9152,7 @@ Body:
     AegisName: Evasion12
     Name: FLEE+12
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
     Script: |
@@ -9097,6 +9161,7 @@ Body:
     AegisName: Critical5
     Name: CRI+5
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
     Script: |
@@ -9105,6 +9170,7 @@ Body:
     AegisName: Critical7
     Name: CRI+7
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
     Script: |
@@ -9113,6 +9179,7 @@ Body:
     AegisName: Atk2
     Name: ATK+2%
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
     Script: |
@@ -9121,6 +9188,7 @@ Body:
     AegisName: Atk3
     Name: ATK+3%
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
     Script: |
@@ -9129,108 +9197,126 @@ Body:
     AegisName: Str1_J
     Name: STR+1
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
   - Id: 4769
     AegisName: Str2_J
     Name: Str+2
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
   - Id: 4770
     AegisName: Str3_J
     Name: Str+3
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
   - Id: 4771
     AegisName: Int1_J
     Name: INT+1
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
   - Id: 4772
     AegisName: Int2_J
     Name: Int+2
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
   - Id: 4773
     AegisName: Int3_J
     Name: Int+3
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
   - Id: 4774
     AegisName: Vit1_J
     Name: VIT+1
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
   - Id: 4775
     AegisName: Vit2_J
     Name: Vit+2
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
   - Id: 4776
     AegisName: Vit3_J
     Name: Vit+3
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
   - Id: 4777
     AegisName: Agi1_J
     Name: AGI+1
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
   - Id: 4778
     AegisName: Agi2_J
     Name: Agi+2
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
   - Id: 4779
     AegisName: Agi3_J
     Name: Agi+3
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
   - Id: 4780
     AegisName: Dex1_J
     Name: DEX+1
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
   - Id: 4781
     AegisName: Dex2_J
     Name: Dex+2
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
   - Id: 4782
     AegisName: Dex3_J
     Name: Dex+3
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
   - Id: 4783
     AegisName: Luk1_J
     Name: LUK+1
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
   - Id: 4784
     AegisName: Luk2_J
     Name: Luk+2
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
   - Id: 4785
     AegisName: Luk3_J
     Name: Luk+3
     Type: Card
+    SubType: Enchant
     Buy: 20
     Weight: 10
   - Id: 6000

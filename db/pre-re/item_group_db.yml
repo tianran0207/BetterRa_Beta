@@ -5482,6 +5482,16 @@ Body:
             Rate: 1
           - Item: Token_Of_Siegfried
             Rate: 1
+  - Group: INVENTORY_EXPAND
+    SubGroups:
+      - SubGroup: 1
+        List:
+          - Item: Inventory_Ex_Evt
+            Rate: 1
+          - Item: Inventory_Ex_Dis
+            Rate: 1
+          - Item: Inventory_Ex
+            Rate: 1
   - Group: TRESURE_BOX_WOE
     SubGroups:
       - SubGroup: 1

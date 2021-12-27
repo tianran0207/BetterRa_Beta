@@ -260,6 +260,9 @@ BetterRa 在官方的基础上做了以下改进:
 *OnPCGuildCreateFilter:
 
 	当玩家创建了一个公会后, 此事件会被触发 (关联到会长)
+	
+参数说明:
+	@create_guild_name$	创建公会的编号
 
 中断说明: 
 	中断后服务端会无视玩家本次创建公会的请求
@@ -269,6 +272,10 @@ BetterRa 在官方的基础上做了以下改进:
 *OnPCGuildJoinFilter:
 
 	当玩家加入了一个公会后, 此事件会被触发 (关联到加入公会的玩家)
+	
+参数说明:
+	@join_guild_id		加入公会的编号
+	@join_guild_name$	加入公会的名称
 
 中断说明: 
 	中断后服务端会无视玩家本次加入公会的请求
@@ -280,8 +287,8 @@ BetterRa 在官方的基础上做了以下改进:
 	当玩家离开了一个公会后, 此事件会被触发 (关联到离开公会的玩家)
 
 参数说明:
-	@left_guild_id		为已经离开的公会编号
-	@left_guild_name$	为已经离开的公会名称
+	@left_guild_id		离开公会的编号
+	@left_guild_name$	离开公会的名称
 
 中断说明: 
 	中断后服务端会无视玩家本次离开公会的请求
@@ -700,7 +707,7 @@ BetterRa 在官方的基础上做了以下改进:
 参数说明:
 	@refine_idx			精炼物品的在背包中的序列
 	@refine_nameid		精炼物品的物品ID
-	@refine_rate		精炼概率（可以通过修改这个数值更改精炼概率）
+	@refine_rate		精炼成功概率（可以通过修改这个数值更改成功概率）
 	@refine_zeny		精炼时消耗的zeny
 	@refine_cost		精炼时消耗的精炼道具ID
 	@refine_blessing	精炼是否使用祝福矿石
@@ -722,6 +729,36 @@ BetterRa 在官方的基础上做了以下改进:
 	@refine_nameid		精炼物品的物品ID
 	@refine_blessing	精炼是否使用祝福矿石
 	@refine_success     精炼成功返回 1 否则返回 0
+	
+---------------------------------------
+
+*OnPCEnchantUIFilter:
+
+	准备使用评级UI时触发事件, 可通过修改 @refine_rate 变量修改精炼成功率
+
+参数说明:
+	@enchant_idx			评级物品的在背包中的序列
+	@enchant_nameid			评级物品的物品ID
+	@enchant_rate			评级成功概率（可以通过修改这个数值更改成功概率）
+	@enchant_zeny			评级时消耗的zeny
+	@enchant_cost[]			评级时消耗的道具ID
+	@enchant_amount[]		评级时消耗的道具数量
+	@enchant_catalysator	评级是否使用催化剂
+	
+中断说明: 
+	中断后服务端会忽略本次评级请求
+	
+---------------------------------------
+
+*OnPCEnchantUIEvent:
+
+	使用评级UI评级完成后触发事件
+
+参数说明:
+	@enchant_idx			评级物品的在背包中的序列
+	@enchant_nameid			评级物品的物品ID
+	@enchant_success		评级成功返回 1 否则返回 0
+	@enchant_catalysator	评级是否使用催化剂
 	
 ---------------------------------------
 
@@ -1266,6 +1303,36 @@ BetterRa 在官方的基础上做了以下改进:
 	
 中断说明: 
 	中断后魔物生成失败, 不会触发魔物死亡事件
+		
+---------------------------------------
+
+*OnPCCaptcheFilter:
+
+	玩家开始验证时会触发该脚本事件, 本事件通过执行脚本或GM指令 captche 触发
+	图片验证说明请阅读 db/import/captche/readme.md
+	
+参数说明:
+	@captche_key$		图片上的文本(验证码)
+	
+中断说明: 
+	中断后本次验证码不发送给玩家
+	
+---------------------------------------
+
+*OnPCCaptcheEvent:
+
+	玩家输入图片上的内容并确认后触发该事件, 本事件通过执行脚本或GM指令 captche 触发
+	图片验证说明请阅读 db/import/captche/readme.md
+	
+参数说明:
+	@captche_key$		图片上的文本(验证码)
+	@captche_answer$	玩家输入答案
+	@captche_retry		剩余重试次数
+	@captche_tick		本次消耗时间
+	@captche_result		是否验证成功
+	
+中断说明: 
+	中断后本次验证码不发送给玩家
 	
 ---------------------------------------
 
