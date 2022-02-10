@@ -80,10 +80,10 @@
 #     Storage               物品在仓库中最大数量
 #     GuildStorage          物品在公会仓库中最大数量
 #   NoUse:                  Conditions when the item is unusable. (Default: null)
-#     Override              Group level to override these conditions.
+#     Override              Group level to override these conditions. (Default: 100)
 #     Sitting               If the item can not be used while sitting. (Default: false)
 #   Trade:                  Trade restrictions. (Default: null)
-#     Override              Group level to override these conditions.
+#     Override              Group level to override these conditions. (Default: 100)
 #     NoDrop                If the item can not be dropped. (Default: false)
 #     NoTrade               If the item can not be traded. (Default: false)
 #     TradePartner          If the item can not be traded to the player's partner. (Default: false)
@@ -1804,7 +1804,6 @@ Body:
     WeaponLevel: 4
     EquipLevelMin: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -1904,7 +1903,6 @@ Body:
       Both_Hand: true
     WeaponLevel: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -2058,7 +2056,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -2090,7 +2087,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -2177,7 +2173,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -2269,7 +2264,6 @@ Body:
     WeaponLevel: 3
     EquipLevelMin: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -4204,7 +4198,6 @@ Body:
     WeaponLevel: 4
     EquipLevelMin: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -4325,7 +4318,6 @@ Body:
       Both_Hand: true
     WeaponLevel: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -4466,7 +4458,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -4498,7 +4489,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -4530,7 +4520,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -4568,7 +4557,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -4604,7 +4592,6 @@ Body:
       Both_Hand: true
     WeaponLevel: 4
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -4681,7 +4668,6 @@ Body:
     WeaponLevel: 3
     EquipLevelMin: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -4937,7 +4923,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -5021,7 +5006,6 @@ Body:
     WeaponLevel: 3
     EquipLevelMin: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -5057,7 +5041,6 @@ Body:
     WeaponLevel: 1
     EquipLevelMin: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -5625,7 +5608,6 @@ Body:
     WeaponLevel: 4
     EquipLevelMin: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -5811,7 +5793,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -5846,7 +5827,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -5879,7 +5859,6 @@ Body:
     WeaponLevel: 1
     EquipLevelMin: 3
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -5908,7 +5887,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -5956,7 +5934,6 @@ Body:
     EquipLevelMin: 60
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -6055,7 +6032,6 @@ Body:
       Both_Hand: true
     WeaponLevel: 4
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -6121,7 +6097,6 @@ Body:
     WeaponLevel: 3
     EquipLevelMin: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -6546,7 +6521,6 @@ Body:
     WeaponLevel: 3
     EquipLevelMin: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -6653,7 +6627,6 @@ Body:
       Right_Hand: true
     WeaponLevel: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -6699,7 +6672,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -6733,7 +6705,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -6776,7 +6747,6 @@ Body:
       Right_Hand: true
     WeaponLevel: 3
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -6810,7 +6780,6 @@ Body:
     EquipLevelMin: 65
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -6845,7 +6814,6 @@ Body:
     EquipLevelMin: 60
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -6874,7 +6842,6 @@ Body:
     WeaponLevel: 1
     EquipLevelMin: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -7588,7 +7555,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -7690,7 +7656,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -7732,7 +7697,6 @@ Body:
     WeaponLevel: 3
     EquipLevelMin: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -8560,7 +8524,6 @@ Body:
     EquipLevelMin: 48
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -8644,7 +8607,6 @@ Body:
       Right_Hand: true
     WeaponLevel: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -8794,7 +8756,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -8835,7 +8796,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -8903,7 +8863,6 @@ Body:
     WeaponLevel: 1
     EquipLevelMin: 2
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -8937,7 +8896,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -8984,7 +8942,6 @@ Body:
       Right_Hand: true
     WeaponLevel: 3
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -9329,7 +9286,6 @@ Body:
     WeaponLevel: 3
     EquipLevelMin: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -9410,7 +9366,6 @@ Body:
       Right_Hand: true
     WeaponLevel: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -9585,7 +9540,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -9619,7 +9573,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -9651,7 +9604,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -9692,7 +9644,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -9731,7 +9682,6 @@ Body:
       Right_Hand: true
     WeaponLevel: 3
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -9764,7 +9714,6 @@ Body:
     EquipLevelMin: 85
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -9797,7 +9746,6 @@ Body:
       Right_Hand: true
     WeaponLevel: 3
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -10457,7 +10405,6 @@ Body:
     WeaponLevel: 3
     EquipLevelMin: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -10575,7 +10522,6 @@ Body:
       Right_Hand: true
     WeaponLevel: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -10705,7 +10651,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -10742,7 +10687,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -10779,7 +10723,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -10813,7 +10756,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -10907,7 +10849,6 @@ Body:
     EquipLevelMin: 1
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -10943,7 +10884,6 @@ Body:
     WeaponLevel: 1
     EquipLevelMin: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -10975,7 +10915,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -11016,7 +10955,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -11058,7 +10996,6 @@ Body:
       Right_Hand: true
     WeaponLevel: 2
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -11125,7 +11062,6 @@ Body:
     EquipLevelMin: 70
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -11163,7 +11099,6 @@ Body:
     EquipLevelMin: 70
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -11325,7 +11260,6 @@ Body:
     EquipLevelMin: 4
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -11824,7 +11758,6 @@ Body:
     WeaponLevel: 4
     EquipLevelMin: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -11981,7 +11914,6 @@ Body:
     WeaponLevel: 1
     EquipLevelMin: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -12053,7 +11985,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -12086,7 +12017,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -12164,7 +12094,6 @@ Body:
     WeaponLevel: 1
     EquipLevelMin: 4
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -12191,7 +12120,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -12232,7 +12160,6 @@ Body:
     WeaponLevel: 4
     EquipLevelMin: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -12588,7 +12515,6 @@ Body:
     WeaponLevel: 4
     EquipLevelMin: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -12724,7 +12650,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -12757,7 +12682,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -12812,7 +12736,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -12853,7 +12776,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -12892,7 +12814,6 @@ Body:
       Right_Hand: true
     WeaponLevel: 4
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -12919,7 +12840,6 @@ Body:
     WeaponLevel: 3
     EquipLevelMin: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -13331,7 +13251,6 @@ Body:
       Right_Hand: true
     WeaponLevel: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -13379,7 +13298,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -13410,7 +13328,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -13493,7 +13410,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -13531,7 +13447,6 @@ Body:
       Right_Hand: true
     WeaponLevel: 4
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -13560,7 +13475,6 @@ Body:
     WeaponLevel: 3
     EquipLevelMin: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -14073,7 +13987,6 @@ Body:
       Right_Hand: true
     WeaponLevel: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -14121,7 +14034,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -14152,7 +14064,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -14235,7 +14146,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -14272,7 +14182,6 @@ Body:
       Right_Hand: true
     WeaponLevel: 4
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -14299,7 +14208,6 @@ Body:
     WeaponLevel: 3
     EquipLevelMin: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -14380,7 +14288,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -14426,7 +14333,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -15048,7 +14954,6 @@ Body:
     ArmorLevel: 1
     View: 4
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -15154,7 +15059,6 @@ Body:
     ArmorLevel: 1
     View: 2
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -15349,6 +15253,7 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 1
     Refineable: true
+    View: 1
     Script: |
       bonus bAllStats,50;
       bonus bMdef,99;
@@ -17921,7 +17826,6 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -18072,7 +17976,6 @@ Body:
       Armor: true
     ArmorLevel: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -18095,7 +17998,6 @@ Body:
       Armor: true
     ArmorLevel: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -18117,7 +18019,6 @@ Body:
       Armor: true
     ArmorLevel: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -18267,7 +18168,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -18296,7 +18196,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -18326,7 +18225,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -18356,7 +18254,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -18385,7 +18282,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -18414,7 +18310,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -18441,7 +18336,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -18482,7 +18376,6 @@ Body:
       Armor: true
     ArmorLevel: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -18512,7 +18405,6 @@ Body:
       Armor: true
     ArmorLevel: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -18725,7 +18617,6 @@ Body:
       Armor: true
     ArmorLevel: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -18748,7 +18639,6 @@ Body:
     EquipLevelMin: 81
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -18775,7 +18665,6 @@ Body:
     EquipLevelMin: 61
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -18800,7 +18689,6 @@ Body:
     ArmorLevel: 1
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -18843,7 +18731,6 @@ Body:
     EquipLevelMin: 50
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -19365,7 +19252,6 @@ Body:
       Shoes: true
     ArmorLevel: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -19414,7 +19300,6 @@ Body:
     ArmorLevel: 1
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -19433,7 +19318,6 @@ Body:
     ArmorLevel: 1
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -19451,7 +19335,6 @@ Body:
       Shoes: true
     ArmorLevel: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -19560,7 +19443,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -19596,7 +19478,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -19623,7 +19504,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -19647,7 +19527,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -19667,7 +19546,6 @@ Body:
       Shoes: true
     ArmorLevel: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -19767,7 +19645,6 @@ Body:
     EquipLevelMin: 81
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -19795,7 +19672,6 @@ Body:
     EquipLevelMin: 61
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -19820,7 +19696,6 @@ Body:
     ArmorLevel: 1
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -19875,7 +19750,6 @@ Body:
     EquipLevelMin: 85
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -20543,7 +20417,6 @@ Body:
       Garment: true
     ArmorLevel: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -20652,7 +20525,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -20688,7 +20560,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -20715,7 +20586,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -20787,7 +20657,6 @@ Body:
       Garment: true
     ArmorLevel: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -20923,7 +20792,6 @@ Body:
     EquipLevelMin: 81
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -20965,7 +20833,6 @@ Body:
     EquipLevelMin: 55
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -21001,7 +20868,6 @@ Body:
     EquipLevelMin: 70
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -21524,7 +21390,6 @@ Body:
       Both_Accessory: true
     ArmorLevel: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -21546,7 +21411,6 @@ Body:
       Both_Accessory: true
     ArmorLevel: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -21650,7 +21514,6 @@ Body:
       Both_Accessory: true
     ArmorLevel: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -21677,7 +21540,6 @@ Body:
       Both_Accessory: true
     ArmorLevel: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -21728,7 +21590,6 @@ Body:
       Both_Accessory: true
     ArmorLevel: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -22126,7 +21987,6 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -22158,7 +22018,6 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 30
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -22212,7 +22071,6 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 48
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -22234,7 +22092,6 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -22265,7 +22122,6 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -22474,7 +22330,6 @@ Body:
     EquipLevelMin: 1
     View: 73
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -22501,7 +22356,6 @@ Body:
     EquipLevelMin: 1
     View: 56
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -22526,7 +22380,6 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -22551,7 +22404,6 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -22576,7 +22428,6 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -22601,7 +22452,6 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -22626,7 +22476,6 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -22651,7 +22500,6 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -22676,7 +22524,6 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -22703,7 +22550,6 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -22729,7 +22575,6 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -22757,7 +22602,6 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -22785,7 +22629,6 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -22813,7 +22656,6 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -22912,7 +22754,6 @@ Body:
       Both_Accessory: true
     ArmorLevel: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -22932,7 +22773,6 @@ Body:
       Both_Accessory: true
     ArmorLevel: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -22966,7 +22806,6 @@ Body:
       Both_Accessory: true
     ArmorLevel: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -23033,7 +22872,6 @@ Body:
       Both_Accessory: true
     ArmorLevel: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -23147,7 +22985,6 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 70
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -23178,7 +23015,6 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 70
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -23208,7 +23044,6 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 70
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -23238,7 +23073,6 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 70
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -23267,7 +23101,6 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 70
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -23297,7 +23130,6 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 70
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -23414,7 +23246,6 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 80
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -23440,7 +23271,6 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 80
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -23466,7 +23296,6 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 80
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -23488,7 +23317,6 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 70
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -23514,7 +23342,6 @@ Body:
       Both_Accessory: true
     ArmorLevel: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -23534,7 +23361,6 @@ Body:
       Both_Accessory: true
     ArmorLevel: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -23585,7 +23411,6 @@ Body:
       Both_Accessory: true
     ArmorLevel: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -23605,7 +23430,6 @@ Body:
       Both_Accessory: true
     ArmorLevel: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -23625,7 +23449,6 @@ Body:
       Both_Accessory: true
     ArmorLevel: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -23646,7 +23469,6 @@ Body:
       Both_Accessory: true
     ArmorLevel: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -23856,7 +23678,6 @@ Body:
       Both_Accessory: true
     ArmorLevel: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -23878,7 +23699,6 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -23899,7 +23719,6 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -23919,7 +23738,6 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -23939,7 +23757,6 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -23959,7 +23776,6 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -23979,7 +23795,6 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -23999,7 +23814,6 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -24019,7 +23833,6 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -24039,7 +23852,6 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -24059,7 +23871,6 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -24079,7 +23890,6 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -24211,7 +24021,6 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 81
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -24242,7 +24051,6 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 61
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -24265,7 +24073,6 @@ Body:
       Both_Accessory: true
     ArmorLevel: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -24309,7 +24116,6 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 30
     Trade:
-      Override: 100
       NoDrop: true
       NoGuildStorage: true
     Script: |
@@ -24325,7 +24131,6 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 30
     Trade:
-      Override: 100
       NoDrop: true
       NoGuildStorage: true
     Script: |
@@ -24342,7 +24147,6 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 30
     Trade:
-      Override: 100
       NoDrop: true
       NoGuildStorage: true
     Script: |
@@ -24360,7 +24164,6 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 80
     Trade:
-      Override: 100
       NoDrop: true
       NoGuildStorage: true
     Script: |
@@ -24377,7 +24180,6 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoGuildStorage: true
     Script: |
@@ -24393,7 +24195,6 @@ Body:
       Both_Accessory: true
     ArmorLevel: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -24448,7 +24249,6 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 90
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -24582,7 +24382,6 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 99
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -24606,7 +24405,6 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 99
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -24634,7 +24432,6 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 99
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -24662,7 +24459,6 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 99
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -24688,7 +24484,6 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 99
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -24887,7 +24682,6 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -24913,7 +24707,6 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -24941,7 +24734,6 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -24967,7 +24759,6 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -24992,7 +24783,6 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -25019,7 +24809,6 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -26582,7 +26371,6 @@ Body:
     EquipLevelMin: 50
     View: 181
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -26619,7 +26407,6 @@ Body:
     Refineable: true
     View: 183
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -26664,7 +26451,6 @@ Body:
     EquipLevelMin: 30
     View: 186
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -27147,7 +26933,6 @@ Body:
     ArmorLevel: 1
     View: 204
     Trade:
-      Override: 100
       NoSell: true
       NoCart: true
       NoGuildStorage: true
@@ -27172,7 +26957,6 @@ Body:
     ArmorLevel: 1
     View: 205
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -27510,7 +27294,6 @@ Body:
     ArmorLevel: 1
     View: 12
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -27529,7 +27312,6 @@ Body:
     ArmorLevel: 1
     View: 25
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -27550,7 +27332,6 @@ Body:
     ArmorLevel: 1
     View: 8
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -28339,7 +28120,6 @@ Body:
     Refineable: true
     View: 144
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -28419,7 +28199,6 @@ Body:
     ArmorLevel: 1
     View: 259
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -28486,7 +28265,6 @@ Body:
     Refineable: true
     View: 264
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -28587,7 +28365,6 @@ Body:
     Refineable: true
     View: 38
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -28613,7 +28390,6 @@ Body:
     Refineable: true
     View: 39
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -28644,7 +28420,6 @@ Body:
     Refineable: true
     View: 41
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -28663,7 +28438,6 @@ Body:
     Refineable: true
     View: 15
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -28686,7 +28460,6 @@ Body:
     Refineable: true
     View: 142
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -28708,7 +28481,6 @@ Body:
     ArmorLevel: 1
     View: 55
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -28729,7 +28501,6 @@ Body:
     EquipLevelMin: 45
     View: 169
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -28749,7 +28520,6 @@ Body:
     Refineable: true
     View: 149
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -28775,7 +28545,6 @@ Body:
     Refineable: true
     View: 175
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -28800,7 +28569,6 @@ Body:
     Refineable: true
     View: 178
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -28843,7 +28611,6 @@ Body:
     Refineable: true
     View: 270
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -28870,7 +28637,6 @@ Body:
     Refineable: true
     View: 271
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -28899,7 +28665,6 @@ Body:
     Refineable: true
     View: 272
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -28928,7 +28693,6 @@ Body:
     Refineable: true
     View: 273
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -28956,7 +28720,6 @@ Body:
     Refineable: true
     View: 274
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -28984,7 +28747,6 @@ Body:
     Refineable: true
     View: 275
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -29012,7 +28774,6 @@ Body:
     Refineable: true
     View: 276
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -29040,7 +28801,6 @@ Body:
     Refineable: true
     View: 277
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -29068,7 +28828,6 @@ Body:
     Refineable: true
     View: 278
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -29092,7 +28851,6 @@ Body:
     Refineable: true
     View: 279
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -29115,7 +28873,6 @@ Body:
     Refineable: true
     View: 280
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -29138,7 +28895,6 @@ Body:
     Refineable: true
     View: 281
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -29166,7 +28922,6 @@ Body:
     Refineable: true
     View: 282
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -29195,7 +28950,6 @@ Body:
     Refineable: true
     View: 283
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -29224,7 +28978,6 @@ Body:
     Refineable: true
     View: 284
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -29253,7 +29006,6 @@ Body:
     Refineable: true
     View: 285
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -29282,7 +29034,6 @@ Body:
     Refineable: true
     View: 286
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -29308,7 +29059,6 @@ Body:
     Refineable: true
     View: 287
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -29506,7 +29256,6 @@ Body:
     Refineable: true
     View: 300
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -29531,7 +29280,6 @@ Body:
     Refineable: true
     View: 301
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -29644,7 +29392,6 @@ Body:
     Refineable: true
     View: 303
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -29684,7 +29431,6 @@ Body:
     EquipLevelMin: 1
     View: 72
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -29707,7 +29453,6 @@ Body:
     EquipLevelMin: 1
     View: 15
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -29731,7 +29476,6 @@ Body:
     ArmorLevel: 1
     View: 67
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -29758,7 +29502,6 @@ Body:
     EquipLevelMin: 1
     View: 93
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -29930,7 +29673,6 @@ Body:
     Refineable: true
     View: 309
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -29956,7 +29698,6 @@ Body:
     Refineable: true
     View: 310
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -30035,7 +29776,6 @@ Body:
     EquipLevelMin: 10
     View: 311
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -30060,7 +29800,6 @@ Body:
     EquipLevelMin: 30
     View: 312
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -30083,7 +29822,6 @@ Body:
     EquipLevelMin: 30
     View: 313
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -30101,7 +29839,6 @@ Body:
     EquipLevelMin: 70
     View: 314
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -30123,7 +29860,6 @@ Body:
     EquipLevelMin: 30
     View: 315
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -30140,7 +29876,6 @@ Body:
     ArmorLevel: 1
     View: 316
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -30158,7 +29893,6 @@ Body:
     EquipLevelMin: 30
     View: 317
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -30197,7 +29931,6 @@ Body:
     Refineable: true
     View: 318
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -30218,7 +29951,6 @@ Body:
     Refineable: true
     View: 319
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -30235,7 +29967,6 @@ Body:
     ArmorLevel: 1
     View: 320
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -30254,7 +29985,6 @@ Body:
     ArmorLevel: 1
     View: 321
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -30274,7 +30004,6 @@ Body:
     ArmorLevel: 1
     View: 138
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -30367,7 +30096,6 @@ Body:
     Refineable: true
     View: 322
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -30427,7 +30155,6 @@ Body:
     Refineable: true
     View: 326
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -30445,7 +30172,6 @@ Body:
     ArmorLevel: 1
     View: 327
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -30470,7 +30196,6 @@ Body:
     ArmorLevel: 1
     View: 328
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -30495,7 +30220,6 @@ Body:
     Refineable: true
     View: 329
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -30516,7 +30240,6 @@ Body:
     Refineable: true
     View: 330
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -30552,7 +30275,6 @@ Body:
     Refineable: true
     View: 332
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -30575,7 +30297,6 @@ Body:
     Refineable: true
     View: 333
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -30605,7 +30326,6 @@ Body:
     Refineable: true
     View: 334
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -30628,7 +30348,6 @@ Body:
     Refineable: true
     View: 335
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -30650,7 +30369,6 @@ Body:
     EquipLevelMin: 50
     View: 336
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -30670,7 +30388,6 @@ Body:
     EquipLevelMin: 35
     View: 337
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -30718,7 +30435,6 @@ Body:
     Refineable: true
     View: 340
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -30763,7 +30479,6 @@ Body:
     Refineable: true
     View: 261
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -30800,7 +30515,6 @@ Body:
     Refineable: true
     View: 343
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -30822,7 +30536,6 @@ Body:
     ArmorLevel: 1
     View: 165
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -30846,7 +30559,6 @@ Body:
     Refineable: true
     View: 344
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -30986,7 +30698,6 @@ Body:
     Refineable: true
     View: 347
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -31036,7 +30747,6 @@ Body:
     Refineable: true
     View: 350
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -31052,7 +30762,6 @@ Body:
     Refineable: true
     View: 351
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -31068,7 +30777,6 @@ Body:
     Refineable: true
     View: 352
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -31089,7 +30797,6 @@ Body:
     Refineable: true
     View: 353
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -31209,7 +30916,6 @@ Body:
     Refineable: true
     View: 360
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -31322,7 +31028,6 @@ Body:
     Refineable: true
     View: 361
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -31395,7 +31100,6 @@ Body:
     Refineable: true
     View: 206
     Trade:
-      Override: 100
       NoMail: true
       NoAuction: true
     Script: |
@@ -31414,7 +31118,6 @@ Body:
     ArmorLevel: 1
     View: 365
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -31438,7 +31141,6 @@ Body:
     EquipLevelMin: 70
     View: 366
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -31461,7 +31163,6 @@ Body:
     Refineable: true
     View: 367
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -31483,7 +31184,6 @@ Body:
     Refineable: true
     View: 368
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -31505,7 +31205,6 @@ Body:
     EquipLevelMin: 60
     View: 369
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -31525,7 +31224,6 @@ Body:
     EquipLevelMin: 60
     View: 370
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -31623,7 +31321,6 @@ Body:
     EquipLevelMin: 10
     View: 375
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -31643,7 +31340,6 @@ Body:
     Refineable: true
     View: 38
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -31666,7 +31362,6 @@ Body:
     Refineable: true
     View: 39
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -31704,7 +31399,6 @@ Body:
     Refineable: true
     View: 377
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -31724,7 +31418,6 @@ Body:
     Refineable: true
     View: 378
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -31749,7 +31442,6 @@ Body:
     Refineable: true
     View: 379
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -31769,7 +31461,6 @@ Body:
     Refineable: true
     View: 380
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -31792,7 +31483,6 @@ Body:
     Refineable: true
     View: 381
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -31813,7 +31503,6 @@ Body:
     Refineable: true
     View: 382
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -31831,7 +31520,6 @@ Body:
     ArmorLevel: 1
     View: 383
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -31850,7 +31538,6 @@ Body:
     Refineable: true
     View: 384
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -31886,7 +31573,6 @@ Body:
     Refineable: true
     View: 386
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -31905,7 +31591,6 @@ Body:
     ArmorLevel: 1
     View: 387
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -31927,7 +31612,6 @@ Body:
     Refineable: true
     View: 388
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -31955,7 +31639,6 @@ Body:
     Refineable: true
     View: 389
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -31997,7 +31680,6 @@ Body:
     Refineable: true
     View: 391
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -32019,7 +31701,6 @@ Body:
     EquipLevelMin: 1
     View: 228
     Trade:
-      Override: 100
       NoMail: true
       NoAuction: true
     Script: |
@@ -32041,7 +31722,6 @@ Body:
     Refineable: true
     View: 392
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -32062,7 +31742,6 @@ Body:
     Refineable: true
     View: 393
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -32081,7 +31760,6 @@ Body:
     EquipLevelMin: 30
     View: 394
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -32112,7 +31790,6 @@ Body:
     ArmorLevel: 1
     View: 188
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -32161,7 +31838,6 @@ Body:
       Head_Low: true
     ArmorLevel: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -32185,7 +31861,6 @@ Body:
     Refineable: true
     View: 398
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -32219,7 +31894,6 @@ Body:
     ArmorLevel: 1
     View: 400
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -32314,7 +31988,6 @@ Body:
     EquipLevelMin: 70
     View: 404
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -32335,7 +32008,6 @@ Body:
     EquipLevelMin: 70
     View: 405
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -32354,7 +32026,6 @@ Body:
     EquipLevelMin: 30
     View: 406
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -32376,7 +32047,6 @@ Body:
     Refineable: true
     View: 407
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -32394,7 +32064,6 @@ Body:
     EquipLevelMin: 80
     View: 408
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -32412,7 +32081,6 @@ Body:
     Refineable: true
     View: 409
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -32435,7 +32103,6 @@ Body:
     Refineable: true
     View: 410
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -32651,7 +32318,6 @@ Body:
     EquipLevelMin: 70
     View: 421
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -32681,7 +32347,6 @@ Body:
     EquipLevelMin: 70
     View: 422
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -32722,7 +32387,6 @@ Body:
     ArmorLevel: 1
     View: 424
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -32799,7 +32463,6 @@ Body:
     Refineable: true
     View: 429
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -32824,7 +32487,6 @@ Body:
     Refineable: true
     View: 430
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -32842,7 +32504,6 @@ Body:
     ArmorLevel: 1
     View: 431
     Trade:
-      Override: 100
       NoDrop: true
       NoGuildStorage: true
     Script: |
@@ -33146,7 +32807,6 @@ Body:
     Refineable: true
     View: 451
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -33168,7 +32828,6 @@ Body:
     EquipLevelMin: 1
     View: 452
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -33195,7 +32854,6 @@ Body:
     EquipLevelMin: 1
     View: 453
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -33221,7 +32879,6 @@ Body:
     EquipLevelMin: 1
     View: 454
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -33300,7 +32957,6 @@ Body:
     Refineable: true
     View: 455
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -33355,7 +33011,6 @@ Body:
     Refineable: true
     View: 457
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -33382,7 +33037,6 @@ Body:
     Refineable: true
     View: 458
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -33406,7 +33060,6 @@ Body:
     EquipLevelMin: 90
     View: 459
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -33431,7 +33084,6 @@ Body:
     EquipLevelMin: 90
     View: 460
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -33452,7 +33104,6 @@ Body:
     ArmorLevel: 1
     View: 461
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -33479,7 +33130,6 @@ Body:
     Refineable: true
     View: 473
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -33516,7 +33166,6 @@ Body:
     Refineable: true
     View: 475
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -33539,7 +33188,6 @@ Body:
     Refineable: true
     View: 476
     Trade:
-      Override: 100
       NoDrop: true
       NoGuildStorage: true
     Script: |
@@ -33560,7 +33208,6 @@ Body:
     Refineable: true
     View: 477
     Trade:
-      Override: 100
       NoDrop: true
       NoGuildStorage: true
     Script: |
@@ -33581,7 +33228,6 @@ Body:
     Refineable: true
     View: 478
     Trade:
-      Override: 100
       NoDrop: true
       NoGuildStorage: true
     Script: |
@@ -33603,7 +33249,6 @@ Body:
     Refineable: true
     View: 479
     Trade:
-      Override: 100
       NoDrop: true
       NoGuildStorage: true
     Script: |
@@ -33622,7 +33267,6 @@ Body:
     EquipLevelMin: 50
     View: 480
     Trade:
-      Override: 100
       NoDrop: true
       NoGuildStorage: true
     Script: |
@@ -33719,7 +33363,6 @@ Body:
     EquipLevelMin: 70
     View: 485
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -33744,7 +33387,6 @@ Body:
     Refineable: true
     View: 486
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -33767,7 +33409,6 @@ Body:
     ArmorLevel: 1
     View: 102
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -33794,7 +33435,6 @@ Body:
     ArmorLevel: 1
     View: 254
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -33821,7 +33461,6 @@ Body:
     ArmorLevel: 1
     View: 137
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -33847,7 +33486,6 @@ Body:
     Refineable: true
     View: 493
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -33869,7 +33507,6 @@ Body:
     EquipLevelMin: 50
     View: 494
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -33896,7 +33533,6 @@ Body:
     Refineable: true
     View: 495
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -33923,7 +33559,6 @@ Body:
     Refineable: true
     View: 490
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -33941,7 +33576,6 @@ Body:
     ArmorLevel: 1
     View: 487
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -33960,7 +33594,6 @@ Body:
     Refineable: true
     View: 488
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -33979,7 +33612,6 @@ Body:
     EquipLevelMin: 10
     View: 496
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -34002,7 +33634,6 @@ Body:
     Refineable: true
     View: 491
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -34022,7 +33653,6 @@ Body:
     Refineable: true
     View: 497
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -34049,7 +33679,6 @@ Body:
     Refineable: true
     View: 489
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -34069,7 +33698,6 @@ Body:
     Refineable: true
     View: 492
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -34118,7 +33746,6 @@ Body:
     Refineable: true
     View: 503
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -34141,7 +33768,6 @@ Body:
     Refineable: true
     View: 504
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -34184,7 +33810,6 @@ Body:
     Refineable: true
     View: 508
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -34340,7 +33965,6 @@ Body:
     Refineable: true
     View: 514
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -34371,7 +33995,6 @@ Body:
     ArmorLevel: 1
     View: 194
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -34454,7 +34077,6 @@ Body:
     EquipLevelMin: 60
     View: 520
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -34477,7 +34099,6 @@ Body:
     Refineable: true
     View: 521
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -34504,7 +34125,6 @@ Body:
     EquipLevelMin: 30
     View: 522
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -34528,7 +34148,6 @@ Body:
     Refineable: true
     View: 523
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -34553,7 +34172,6 @@ Body:
     Refineable: true
     View: 524
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -34587,7 +34205,6 @@ Body:
     Refineable: true
     View: 327
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -34641,7 +34258,6 @@ Body:
     EquipLevelMin: 1
     View: 526
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -34666,7 +34282,6 @@ Body:
     EquipLevelMin: 45
     View: 527
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -34687,7 +34302,6 @@ Body:
     EquipLevelMin: 45
     View: 528
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -34710,7 +34324,6 @@ Body:
     Refineable: true
     View: 530
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -34794,7 +34407,6 @@ Body:
     Refineable: true
     View: 240
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -34818,7 +34430,6 @@ Body:
     Refineable: true
     View: 531
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -34843,7 +34454,6 @@ Body:
     Refineable: true
     View: 532
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -34868,7 +34478,6 @@ Body:
     Refineable: true
     View: 533
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -34891,7 +34500,6 @@ Body:
     Refineable: true
     View: 534
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -34911,7 +34519,6 @@ Body:
     Refineable: true
     View: 535
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -34937,7 +34544,6 @@ Body:
     Refineable: true
     View: 536
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -34989,7 +34595,6 @@ Body:
     Refineable: true
     View: 538
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -35009,7 +34614,6 @@ Body:
     Refineable: true
     View: 539
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -35053,7 +34657,6 @@ Body:
     Refineable: true
     View: 541
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -35159,7 +34762,6 @@ Body:
     Refineable: true
     View: 544
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -35178,7 +34780,6 @@ Body:
     EquipLevelMin: 1
     View: 545
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -35202,7 +34803,6 @@ Body:
     EquipLevelMin: 1
     View: 546
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -35229,7 +34829,6 @@ Body:
     Refineable: true
     View: 548
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -35267,7 +34866,6 @@ Body:
     Refineable: true
     View: 550
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -35293,7 +34891,6 @@ Body:
     Refineable: true
     View: 551
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -35348,7 +34945,6 @@ Body:
     EquipLevelMin: 10
     View: 555
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -35383,7 +34979,6 @@ Body:
     Refineable: true
     View: 479
     Trade:
-      Override: 100
       NoDrop: true
       NoGuildStorage: true
     Script: |
@@ -35418,7 +35013,6 @@ Body:
     Refineable: true
     View: 558
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -35438,7 +35032,6 @@ Body:
     Refineable: true
     View: 560
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -35464,7 +35057,6 @@ Body:
     Refineable: true
     View: 561
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -35488,7 +35080,6 @@ Body:
     Refineable: true
     View: 465
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -35509,7 +35100,6 @@ Body:
     Refineable: true
     View: 562
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -35559,7 +35149,6 @@ Body:
     Refineable: true
     View: 563
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -35641,7 +35230,6 @@ Body:
     EquipLevelMin: 1
     View: 571
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -35664,7 +35252,6 @@ Body:
     EquipLevelMin: 1
     View: 572
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -35705,7 +35292,6 @@ Body:
     Refineable: true
     View: 577
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -35729,7 +35315,6 @@ Body:
     Refineable: true
     View: 578
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -35753,7 +35338,6 @@ Body:
     Refineable: true
     View: 579
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -35792,7 +35376,6 @@ Body:
     Refineable: true
     View: 587
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -35918,7 +35501,6 @@ Body:
     Refineable: true
     View: 598
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -35935,7 +35517,6 @@ Body:
     Refineable: true
     View: 206
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -36128,7 +35709,6 @@ Body:
     Refineable: true
     View: 616
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -36158,7 +35738,6 @@ Body:
     Refineable: true
     View: 101
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -36196,7 +35775,6 @@ Body:
     Refineable: true
     View: 349
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -36255,7 +35833,6 @@ Body:
     EquipLevelMin: 1
     View: 665
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -36325,7 +35902,6 @@ Body:
     EquipLevelMin: 1
     View: 369
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -36344,7 +35920,6 @@ Body:
     EquipLevelMin: 1
     View: 369
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -36363,7 +35938,6 @@ Body:
     EquipLevelMin: 1
     View: 369
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -36382,7 +35956,6 @@ Body:
     EquipLevelMin: 1
     View: 369
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -36474,7 +36047,6 @@ Body:
     EquipLevelMin: 70
     View: 43
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -36497,7 +36069,6 @@ Body:
     ArmorLevel: 1
     View: 67
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -36610,7 +36181,6 @@ Body:
     Refineable: true
     View: 16
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -36660,7 +36230,6 @@ Body:
       Both_Accessory: true
     ArmorLevel: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -36683,7 +36252,6 @@ Body:
     Refineable: true
     View: 505
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -36705,7 +36273,6 @@ Body:
     Refineable: true
     View: 506
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -36729,7 +36296,6 @@ Body:
     Refineable: true
     View: 499
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -36753,7 +36319,6 @@ Body:
     Refineable: true
     View: 500
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -36873,7 +36438,6 @@ Body:
     Refineable: true
     View: 671
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -36900,7 +36464,6 @@ Body:
     Refineable: true
     View: 672
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -36927,7 +36490,6 @@ Body:
     Refineable: true
     View: 673
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -36954,7 +36516,6 @@ Body:
     Refineable: true
     View: 674
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -37106,7 +36667,6 @@ Body:
     Type: Petegg
     Buy: 20
     Trade:
-      Override: 100
       NoDrop: true
       NoCart: true
       NoGuildStorage: true
@@ -37972,7 +37532,6 @@ Body:
     EquipLevelMin: 48
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -38014,7 +37573,6 @@ Body:
     WeaponLevel: 4
     EquipLevelMin: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -38049,7 +37607,6 @@ Body:
     WeaponLevel: 4
     EquipLevelMin: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -38075,7 +37632,6 @@ Body:
     WeaponLevel: 1
     EquipLevelMin: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -38287,7 +37843,6 @@ Body:
       Right_Hand: true
     WeaponLevel: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -38499,7 +38054,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -38550,7 +38104,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -38664,7 +38217,6 @@ Body:
     WeaponLevel: 1
     EquipLevelMin: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -38705,7 +38257,6 @@ Body:
     WeaponLevel: 1
     EquipLevelMin: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -38747,7 +38298,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -38799,7 +38349,6 @@ Body:
       Right_Hand: true
     WeaponLevel: 4
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -38839,7 +38388,6 @@ Body:
       Right_Hand: true
     WeaponLevel: 4
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -38861,7 +38409,6 @@ Body:
       Right_Hand: true
     WeaponLevel: 4
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -38948,7 +38495,6 @@ Body:
     WeaponLevel: 3
     EquipLevelMin: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -39128,7 +38674,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -39177,7 +38722,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -39215,7 +38759,6 @@ Body:
     WeaponLevel: 1
     EquipLevelMin: 26
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -39239,7 +38782,6 @@ Body:
     WeaponLevel: 1
     EquipLevelMin: 40
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -39678,7 +39220,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -39710,7 +39251,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -39740,7 +39280,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -39771,7 +39310,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -39800,7 +39338,6 @@ Body:
       Both_Hand: true
     WeaponLevel: 3
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -39828,7 +39365,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -39868,7 +39404,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -39907,7 +39442,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -39948,7 +39482,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -40093,7 +39626,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -40124,7 +39656,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -40154,7 +39685,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -40193,7 +39723,6 @@ Body:
       Both_Hand: true
     WeaponLevel: 4
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -40220,7 +39749,6 @@ Body:
     WeaponLevel: 4
     EquipLevelMin: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -40283,7 +39811,6 @@ Body:
     WeaponLevel: 4
     EquipLevelMin: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -40423,7 +39950,6 @@ Body:
       Right_Hand: true
     WeaponLevel: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -40537,7 +40063,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -40578,7 +40103,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -40717,7 +40241,6 @@ Body:
     WeaponLevel: 1
     EquipLevelMin: 2
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -40751,7 +40274,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -40803,7 +40325,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -40840,7 +40361,6 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -40880,7 +40400,6 @@ Body:
       Right_Hand: true
     WeaponLevel: 3
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -40915,7 +40434,6 @@ Body:
     EquipLevelMin: 70
     Refineable: true
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -40964,7 +40482,6 @@ Body:
     WeaponLevel: 3
     EquipLevelMin: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -41022,7 +40539,6 @@ Body:
       Armor: true
     ArmorLevel: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -41117,7 +40633,6 @@ Body:
     WeaponLevel: 3
     EquipLevelMin: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -41267,7 +40782,6 @@ Body:
     EquipLevelMin: 1
     View: 369
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -41286,7 +40800,6 @@ Body:
     EquipLevelMin: 1
     View: 369
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -41305,7 +40818,6 @@ Body:
     EquipLevelMin: 1
     View: 369
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true

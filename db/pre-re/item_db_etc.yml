@@ -80,10 +80,10 @@
 #     Storage               物品在仓库中最大数量
 #     GuildStorage          物品在公会仓库中最大数量
 #   NoUse:                  Conditions when the item is unusable. (Default: null)
-#     Override              Group level to override these conditions.
+#     Override              Group level to override these conditions. (Default: 100)
 #     Sitting               If the item can not be used while sitting. (Default: false)
 #   Trade:                  Trade restrictions. (Default: null)
-#     Override              Group level to override these conditions.
+#     Override              Group level to override these conditions. (Default: 100)
 #     NoDrop                If the item can not be dropped. (Default: false)
 #     NoTrade               If the item can not be traded. (Default: false)
 #     TradePartner          If the item can not be traded to the player's partner. (Default: false)
@@ -9324,7 +9324,6 @@ Body:
     Name: 黑暗材料
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -9366,7 +9365,6 @@ Body:
     Type: Etc
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -9379,7 +9377,6 @@ Body:
     Type: Etc
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -9393,7 +9390,6 @@ Body:
     Type: Etc
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -9413,7 +9409,6 @@ Body:
     Name: 魔法扇子
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -9580,7 +9575,6 @@ Body:
     Type: Etc
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -9624,7 +9618,6 @@ Body:
     Type: Etc
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -9649,7 +9642,6 @@ Body:
     Type: Etc
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -9663,7 +9655,6 @@ Body:
     Type: Etc
     Buy: 1
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -9715,7 +9706,6 @@ Body:
     Buy: 10
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -9783,7 +9773,6 @@ Body:
     Type: Etc
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -9797,7 +9786,6 @@ Body:
     Type: Etc
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -9811,7 +9799,6 @@ Body:
     Type: Etc
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -9826,7 +9813,6 @@ Body:
     Flags:
       BuyingStore: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -9839,7 +9825,6 @@ Body:
     Name: 巴杰特的秘密记事本
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -9854,7 +9839,6 @@ Body:
     Flags:
       BuyingStore: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -9868,7 +9852,6 @@ Body:
     Name: 便携式工具箱
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -9882,7 +9865,6 @@ Body:
     Name: 未经精炼的矿石
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -9896,7 +9878,6 @@ Body:
     Name: 石块
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -9910,7 +9891,6 @@ Body:
     Name: 艾芙菲姆之花
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -9924,7 +9904,6 @@ Body:
     Name: 马努克金币
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -9938,7 +9917,6 @@ Body:
     Name: 辉煌领域金币
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -9952,7 +9930,6 @@ Body:
     Name: 艾芙菲姆之魂
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -9971,7 +9948,6 @@ Body:
     Name: 魔力之石碎片
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -9985,7 +9961,6 @@ Body:
     Name: 破旧的围巾
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -10052,7 +10027,6 @@ Body:
     Name: 飞龙蛋
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -10119,7 +10093,6 @@ Body:
     Name: 出席卡
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -10132,7 +10105,6 @@ Body:
     Name: 史波浪壮丽报告
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -10146,7 +10118,6 @@ Body:
     Name: 魔怒克报告
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -10256,7 +10227,6 @@ Body:
     Name: 恶魔女仆宠物蛋兑换券
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -10270,7 +10240,6 @@ Body:
     Name: 炙焰魔宠物蛋兑换券
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -10284,7 +10253,6 @@ Body:
     Name: 小青宠物蛋兑换券
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -10311,7 +10279,6 @@ Body:
     Type: Etc
     Buy: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -10326,7 +10293,6 @@ Body:
     Type: Etc
     Buy: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -10349,7 +10315,6 @@ Body:
     Type: Etc
     Buy: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -10364,7 +10329,6 @@ Body:
     Type: Etc
     Buy: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -10379,7 +10343,6 @@ Body:
     Type: Etc
     Buy: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -10393,7 +10356,6 @@ Body:
     Name: Purification Stone
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -10413,7 +10375,6 @@ Body:
     Name: Nightmare Terror Exchange Coupon
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -10427,7 +10388,6 @@ Body:
     Name: 银月魔女蛋兑换券
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -10441,7 +10401,6 @@ Body:
     Name: Goblin Leader Exchange Coupon
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -10455,7 +10414,6 @@ Body:
     Name: Incubus Exchange Coupon
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -10469,7 +10427,6 @@ Body:
     Name: Miyabi Ningyo Exchange Coupon
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -10483,7 +10440,6 @@ Body:
     Name: Giant Whisper Exchange Coupon
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -10497,7 +10453,6 @@ Body:
     Name: Evil Nymph Exchange Coupon
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -10511,7 +10466,6 @@ Body:
     Name: Medusa Exchange Coupon
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -10525,7 +10479,6 @@ Body:
     Name: Stone Shooter Exchange Coupon
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -10539,7 +10492,6 @@ Body:
     Name: Marionette Exchange Coupon
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -10553,7 +10505,6 @@ Body:
     Name: Leaf Cat Exchange Coupon
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -10567,7 +10518,6 @@ Body:
     Name: Dullahan Exchange Coupon
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -10581,7 +10531,6 @@ Body:
     Name: Shinobi Exchange Coupon
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -10595,7 +10544,6 @@ Body:
     Name: Golem Exchange Coupon
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -10609,7 +10557,6 @@ Body:
     Name: Civil Servant Exchange Coupon
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -10655,7 +10602,6 @@ Body:
     Name: Eternity Of Chocolate
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -10668,7 +10614,6 @@ Body:
     Name: Simple Chocolate
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -10681,7 +10626,6 @@ Body:
     Name: 华丽的钥匙
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -10695,7 +10639,6 @@ Body:
     Name: 巨大的魔力之石碎片
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -10708,7 +10651,6 @@ Body:
     Name: 发光的水晶
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -10721,7 +10663,6 @@ Body:
     Name: 特殊交换券
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -10736,7 +10677,6 @@ Body:
     Type: Etc
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -10754,7 +10694,6 @@ Body:
     Type: Etc
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -11005,7 +10944,6 @@ Body:
     Name: I Love You
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -11018,7 +10956,6 @@ Body:
     Name: Thank You
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -11031,7 +10968,6 @@ Body:
     Name: I Respect You
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -11112,7 +11048,6 @@ Body:
     Name: 戴希配送箱
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -11126,7 +11061,6 @@ Body:
     Name: 乐园团的证物
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -11171,7 +11105,6 @@ Body:
     Type: Etc
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -11185,7 +11118,6 @@ Body:
     Type: Etc
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -11198,7 +11130,6 @@ Body:
     Name: 武器精炼能力+9券
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -11211,7 +11142,6 @@ Body:
     Name: 武器精炼能力+8券
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -11224,7 +11154,6 @@ Body:
     Name: 武器精炼能力+7券
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -11237,7 +11166,6 @@ Body:
     Name: 武器精炼能力+6券
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -11250,7 +11178,6 @@ Body:
     Name: 防具精炼能力+9券
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -11263,7 +11190,6 @@ Body:
     Name: 防具精炼能力+8券
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -11276,7 +11202,6 @@ Body:
     Name: 防具精炼能力+7券
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -11289,7 +11214,6 @@ Body:
     Name: 防具精炼能力+6券
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -11302,7 +11226,6 @@ Body:
     Name: Blue Card 7
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -11315,7 +11238,6 @@ Body:
     Name: 瓜拉那果实
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -11329,7 +11251,6 @@ Body:
     Name: 武器精炼能力+11券
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -11342,7 +11263,6 @@ Body:
     Name: 防具精炼能力+11券
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -11357,7 +11277,6 @@ Body:
     Buy: 20
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -11372,7 +11291,6 @@ Body:
     Buy: 20
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -11387,7 +11305,6 @@ Body:
     Buy: 20
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -11578,7 +11495,6 @@ Body:
     Name: 欺骗之钥
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -11592,7 +11508,6 @@ Body:
     Name: 虚幻之钥
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -11606,7 +11521,6 @@ Body:
     Name: 欢喜之钥
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -11620,7 +11534,6 @@ Body:
     Name: 名匠之笔
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -11634,7 +11547,6 @@ Body:
     Name: 宫廷乐师宋的照片
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -11647,7 +11559,6 @@ Body:
     Name: 收据
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -11660,7 +11571,6 @@ Body:
     Name: 实验用种子
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -11674,7 +11584,6 @@ Body:
     Name: 实验用种子
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -11688,7 +11597,6 @@ Body:
     Name: 圣人的衣角
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -11702,7 +11610,6 @@ Body:
     Name: 国王之盾
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -11716,7 +11623,6 @@ Body:
     Name: 透明试剂
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -11730,7 +11636,6 @@ Body:
     Name: 红色试剂
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -11744,7 +11649,6 @@ Body:
     Name: 黑色试剂
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -11867,7 +11771,6 @@ Body:
     Buy: 20
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -11889,7 +11792,6 @@ Body:
     Type: Etc
     Buy: 20
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -11903,7 +11805,6 @@ Body:
     Type: Etc
     Buy: 20
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -12015,7 +11916,6 @@ Body:
     Type: Etc
     Buy: 20
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -12161,7 +12061,6 @@ Body:
     Name: 爱情结晶
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -12179,7 +12078,6 @@ Body:
     Type: Etc
     Buy: 4020
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -12193,7 +12091,6 @@ Body:
     Type: Etc
     Buy: 4020
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -12207,7 +12104,6 @@ Body:
     Type: Etc
     Buy: 4020
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -12221,7 +12117,6 @@ Body:
     Type: Etc
     Buy: 4020
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -12235,7 +12130,6 @@ Body:
     Type: Etc
     Buy: 4020
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -12249,7 +12143,6 @@ Body:
     Type: Etc
     Buy: 4020
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -12263,7 +12156,6 @@ Body:
     Type: Etc
     Buy: 4020
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -12277,7 +12169,6 @@ Body:
     Type: Etc
     Buy: 4020
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -12291,7 +12182,6 @@ Body:
     Type: Etc
     Buy: 4020
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -12305,7 +12195,6 @@ Body:
     Type: Etc
     Buy: 4020
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -12320,7 +12209,6 @@ Body:
     Buy: 4020
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -12333,7 +12221,6 @@ Body:
     Name: Free Cash Coupon
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -12347,7 +12234,6 @@ Body:
     Name: Guidebook Exchange
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -12427,7 +12313,6 @@ Body:
     Buy: 20
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -12550,7 +12435,6 @@ Body:
     Name: 武器精炼能力+5券
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -12563,7 +12447,6 @@ Body:
     Name: 防具精炼能力+5券
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -12818,7 +12701,6 @@ Body:
     Buy: 30000
     Weight: 50
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -13972,7 +13854,6 @@ Body:
     Name: 星泪石的碎片
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -13986,7 +13867,6 @@ Body:
     Name: 星泪石
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -14642,7 +14522,6 @@ Body:
     Type: Etc
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -14656,7 +14535,6 @@ Body:
     Name: 涂鸦信件
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -14857,7 +14735,6 @@ Body:
     Name: 魔女的咒文书
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -14871,7 +14748,6 @@ Body:
     Name: 九重世界的权威
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -14885,7 +14761,6 @@ Body:
     Name: 灵魂的碎片
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -14899,7 +14774,6 @@ Body:
     Name: 灵魂之耳语
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -14913,7 +14787,6 @@ Body:
     Name: 魔女药水
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -14927,7 +14800,6 @@ Body:
     Name: 乌鸦翅膀
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -14967,7 +14839,6 @@ Body:
     Type: Etc
     Buy: 2
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -15098,7 +14969,6 @@ Body:
     Name: 石板
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -15112,7 +14982,6 @@ Body:
     Name: 石板之碎片
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -15126,7 +14995,6 @@ Body:
     Name: 石板之碎片
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -15140,7 +15008,6 @@ Body:
     Name: 石板之碎片
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -15154,7 +15021,6 @@ Body:
     Name: 石板之碎片
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -15176,7 +15042,6 @@ Body:
     Name: RO纪念旅游卡
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -15199,7 +15064,6 @@ Body:
     Type: Etc
     Buy: 20
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -15214,7 +15078,6 @@ Body:
     Type: Etc
     Buy: 20
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -15229,7 +15092,6 @@ Body:
     Type: Etc
     Buy: 20
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -15244,7 +15106,6 @@ Body:
     Type: Etc
     Buy: 20
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -15267,7 +15128,6 @@ Body:
     Type: Etc
     Buy: 20
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -15296,7 +15156,6 @@ Body:
     Type: Etc
     Buy: 20
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -15317,7 +15176,6 @@ Body:
     Type: Etc
     Buy: 20
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -15692,7 +15550,6 @@ Body:
     Name: 推荐信
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -15705,7 +15562,6 @@ Body:
     Name: 委托书A
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -15718,7 +15574,6 @@ Body:
     Name: 委托书B
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -15739,7 +15594,6 @@ Body:
     Name: 死者的头颅
     Type: Etc
     Trade:
-      Override: 100
       NoTrade: true
       NoCart: true
       NoStorage: true
@@ -15751,7 +15605,6 @@ Body:
     Name: 红色钥匙
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -15764,7 +15617,6 @@ Body:
     Name: 黄色钥匙
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -15777,7 +15629,6 @@ Body:
     Name: 蓝色钥匙
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -15790,7 +15641,6 @@ Body:
     Name: 绿色钥匙
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -15803,7 +15653,6 @@ Body:
     Name: 黑色钥匙
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -15816,7 +15665,6 @@ Body:
     Name: 魔力红宝石
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -15829,7 +15677,6 @@ Body:
     Name: 魔力黄宝石
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -15842,7 +15689,6 @@ Body:
     Name: 魔力蓝宝石
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -15855,7 +15701,6 @@ Body:
     Name: 魔力绿宝石
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -15868,7 +15713,6 @@ Body:
     Name: 魔力黑宝石
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -15881,7 +15725,6 @@ Body:
     Name: 堆叠的书
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -15894,7 +15737,6 @@ Body:
     Name: 皮袋子
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -16274,7 +16116,6 @@ Body:
     Type: Etc
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -16289,7 +16130,6 @@ Body:
     Type: Etc
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -16304,7 +16144,6 @@ Body:
     Type: Etc
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -16318,7 +16157,6 @@ Body:
     Name: 酒店的酒
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -16332,7 +16170,6 @@ Body:
     Name: 送货用箱子
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -16346,7 +16183,6 @@ Body:
     Name: 别墅的辅助钥匙
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -16360,7 +16196,6 @@ Body:
     Name: 给艾丽的信
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -16374,7 +16209,6 @@ Body:
     Name: 铁箱子
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -16388,7 +16222,6 @@ Body:
     Name: 黄色钥匙卡片
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -16402,7 +16235,6 @@ Body:
     Name: 黄金色钥匙
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -16416,7 +16248,6 @@ Body:
     Name: 高级纽扣
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -16430,7 +16261,6 @@ Body:
     Name: 蓝色钥匙卡片
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -16444,7 +16274,6 @@ Body:
     Name: 红色钥匙卡片
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -16458,7 +16287,6 @@ Body:
     Name: 金属破片
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -16472,7 +16300,6 @@ Body:
     Name: 路史米埃尔加的钥匙
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -16486,7 +16313,6 @@ Body:
     Name: 某个家族的肖像画
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -16500,7 +16326,6 @@ Body:
     Name: 女人的肖像画
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -16514,7 +16339,6 @@ Body:
     Name: K.H的信
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -16528,7 +16352,6 @@ Body:
     Name: 詹姆士的纸条
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -16542,7 +16365,6 @@ Body:
     Name: 某个男子的肖像画
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -16556,7 +16378,6 @@ Body:
     Name: 动力装备
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -16570,7 +16391,6 @@ Body:
     Name: 玩具钥匙
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -16584,7 +16404,6 @@ Body:
     Name: 黑色钥匙卡片
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -16605,7 +16424,6 @@ Body:
     Name: 爱丽丝亚的戒指
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -16619,7 +16437,6 @@ Body:
     Name: 华丽的钥匙卡片
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -16670,7 +16487,6 @@ Body:
     Type: Etc
     Buy: 2
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -16683,7 +16499,6 @@ Body:
     Name: 绿色的钥匙卡片
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -16703,7 +16518,6 @@ Body:
     Type: Etc
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -16760,7 +16574,6 @@ Body:
     Buy: 10
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -16779,7 +16592,6 @@ Body:
     Type: Etc
     Weight: 100
     Trade:
-      Override: 100
       NoTrade: true
       NoSell: true
       NoCart: true
@@ -16800,7 +16612,6 @@ Body:
     Name: 天津旅游指南书
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -16814,7 +16625,6 @@ Body:
     Name: 昆仑旅游指南书
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -16828,7 +16638,6 @@ Body:
     Name: 龙之城旅游指南书
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -16842,7 +16651,6 @@ Body:
     Name: 哎哟泰雅旅游指南书
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -16856,7 +16664,6 @@ Body:
     Name: 天津影集
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -16870,7 +16677,6 @@ Body:
     Name: 昆仑影集
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -16884,7 +16690,6 @@ Body:
     Name: 龙之城影集
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -16898,7 +16703,6 @@ Body:
     Name: 哎哟泰雅影集
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -16912,7 +16716,6 @@ Body:
     Name: 工作用沙子
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -16925,7 +16728,6 @@ Body:
     Name: 波利代币
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -16975,7 +16777,6 @@ Body:
     Buy: 20
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -16990,7 +16791,6 @@ Body:
     Buy: 20
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -17005,7 +16805,6 @@ Body:
     Buy: 20
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -17020,7 +16819,6 @@ Body:
     Buy: 20
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -17035,7 +16833,6 @@ Body:
     Buy: 20
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -17050,7 +16847,6 @@ Body:
     Buy: 20
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -17063,7 +16859,6 @@ Body:
     Name: 莲花
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -17076,7 +16871,6 @@ Body:
     Name: Striped Candle
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -17089,7 +16883,6 @@ Body:
     Name: Green Incense
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -17102,7 +16895,6 @@ Body:
     Name: 思念的情怀
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -17115,7 +16907,6 @@ Body:
     Name: 邀请函
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -17128,7 +16919,6 @@ Body:
     Name: 招待卷
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -17141,7 +16931,6 @@ Body:
     Name: 秘密花园钥匙
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -17222,7 +17011,6 @@ Body:
     Name: 风之钢斧
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -17244,7 +17032,6 @@ Body:
     Name: 灰色的项链
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -17257,7 +17044,6 @@ Body:
     Name: 闪亮的项链
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -17277,7 +17063,6 @@ Body:
     Type: Etc
     Buy: 20
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -17292,7 +17077,6 @@ Body:
     Type: Etc
     Buy: 20
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -17308,7 +17092,6 @@ Body:
     Buy: 20
     Weight: 50
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -17329,7 +17112,6 @@ Body:
     Buy: 20
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -17344,7 +17126,6 @@ Body:
     Buy: 20
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -17371,7 +17152,6 @@ Body:
     Buy: 10
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -17386,7 +17166,6 @@ Body:
     Buy: 10
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -17401,7 +17180,6 @@ Body:
     Buy: 10
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -17416,7 +17194,6 @@ Body:
     Buy: 10
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -17431,7 +17208,6 @@ Body:
     Buy: 10
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -17446,7 +17222,6 @@ Body:
     Buy: 10
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -17514,7 +17289,6 @@ Body:
     Type: Etc
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -17583,7 +17357,6 @@ Body:
     Buy: 10
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -17616,7 +17389,6 @@ Body:
     Buy: 2
     Weight: 100
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -17631,7 +17403,6 @@ Body:
     Buy: 2
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -17646,7 +17417,6 @@ Body:
     Buy: 2
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -17661,7 +17431,6 @@ Body:
     Buy: 2
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -17675,7 +17444,6 @@ Body:
     Type: Etc
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -17685,7 +17453,6 @@ Body:
     Type: Etc
     Buy: 2
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -17701,7 +17468,6 @@ Body:
     Buy: 2
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -17732,7 +17498,6 @@ Body:
     Name: 粉色礼盒
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -18079,7 +17844,6 @@ Body:
     Type: Etc
     Buy: 20
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -18135,7 +17899,6 @@ Body:
     Buy: 20
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -18150,7 +17913,6 @@ Body:
     Buy: 20
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -18188,7 +17950,6 @@ Body:
     Name: 战斗徽章
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -18212,7 +17973,6 @@ Body:
     Type: Etc
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -18261,7 +18021,6 @@ Body:
     Type: Etc
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -18275,7 +18034,6 @@ Body:
     Type: Etc
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -18289,7 +18047,6 @@ Body:
     Type: Etc
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -18303,7 +18060,6 @@ Body:
     Type: Etc
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -18317,7 +18073,6 @@ Body:
     Type: Etc
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -18331,7 +18086,6 @@ Body:
     Type: Etc
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -18345,7 +18099,6 @@ Body:
     Type: Etc
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -18359,7 +18112,6 @@ Body:
     Type: Etc
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -18377,7 +18129,6 @@ Body:
     Name: Golden Apple
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -18390,7 +18141,6 @@ Body:
     Name: 命运的乌鸦
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -18433,7 +18183,6 @@ Body:
     Name: Golden Charm Apple
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -18446,7 +18195,6 @@ Body:
     Name: Girl's Letter
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -18459,7 +18207,6 @@ Body:
     Name: Signature Notebook
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -18552,7 +18299,6 @@ Body:
     Name: 梦罗克的皮肤碎片
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -18568,7 +18314,6 @@ Body:
     Buy: 20
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -18583,7 +18328,6 @@ Body:
     Buy: 20
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -18598,7 +18342,6 @@ Body:
     Buy: 20
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -18615,7 +18358,6 @@ Body:
     Flags:
       BuyingStore: true
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -18634,7 +18376,6 @@ Body:
     Name: 梦罗克皇家卫士证明书
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -18652,7 +18393,6 @@ Body:
     Name: 勇猛徽章
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -18664,7 +18404,6 @@ Body:
     Name: 英勇徽章
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -18748,7 +18487,6 @@ Body:
     Name: 水晶钥匙
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -18761,7 +18499,6 @@ Body:
     Name: 瓦尔基里的礼物
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -18775,7 +18512,6 @@ Body:
     Name: Stained Piece Of Paper
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -18788,7 +18524,6 @@ Body:
     Name: Torn Piece Of Paper
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -18801,7 +18536,6 @@ Body:
     Name: Old Piece Of Paper
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -18814,7 +18548,6 @@ Body:
     Name: Burnt Pieces Of Paper
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -18929,7 +18662,6 @@ Body:
     Buy: 20
     Weight: 200
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -18948,7 +18680,6 @@ Body:
     Type: Etc
     Buy: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -18962,7 +18693,6 @@ Body:
     Type: Etc
     Buy: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -19024,7 +18754,6 @@ Body:
     Type: Etc
     Buy: 300000
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -19037,7 +18766,6 @@ Body:
     Type: Etc
     Weight: 50
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -19051,7 +18779,6 @@ Body:
     Type: Etc
     Weight: 100
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -19065,7 +18792,6 @@ Body:
     Type: Etc
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -19079,7 +18805,6 @@ Body:
     Type: Etc
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -19093,7 +18818,6 @@ Body:
     Type: Etc
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -19107,7 +18831,6 @@ Body:
     Type: Etc
     Weight: 50
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -19120,7 +18843,6 @@ Body:
     Name: 尖尖的树枝
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -19133,7 +18855,6 @@ Body:
     Name: 尖尖的木笛
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -19146,7 +18867,6 @@ Body:
     Name: Jade Plate
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -19159,7 +18879,6 @@ Body:
     Name: Sacred Arrow
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -19216,7 +18935,6 @@ Body:
     Name: Rama5 Book
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -19229,7 +18947,6 @@ Body:
     Name: Loykrathong Book
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -19242,7 +18959,6 @@ Body:
     Name: Constitution Book
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -19255,7 +18971,6 @@ Body:
     Name: VV Strong Balmung
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -19268,7 +18983,6 @@ Body:
     Name: Dagger Of Psychic
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -19281,7 +18995,6 @@ Body:
     Name: Jonathan Family Ring
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -19295,7 +19008,6 @@ Body:
     Name: Jillberriel Family Ring
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -19309,7 +19021,6 @@ Body:
     Name: Jessur Family Ring
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -19323,7 +19034,6 @@ Body:
     Name: Jenoss Family Ring
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -19337,7 +19047,6 @@ Body:
     Name: Piano Key
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -19357,7 +19066,6 @@ Body:
     Name: Poppy Wreath
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -19373,7 +19081,6 @@ Body:
     Buy: 20
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -19406,7 +19113,6 @@ Body:
     Name: Portable Snowman Machine
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -19420,7 +19126,6 @@ Body:
     Name: Battle Test Certificate
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -19435,7 +19140,6 @@ Body:
     Type: Etc
     Buy: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -19489,7 +19193,6 @@ Body:
     Name: Krathong
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -19504,7 +19207,6 @@ Body:
     Buy: 10
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -19520,7 +19222,6 @@ Body:
     Buy: 10
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -19535,7 +19236,6 @@ Body:
     Type: Etc
     Weight: 1000
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -19644,7 +19344,6 @@ Body:
     Buy: 10
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -19654,7 +19353,6 @@ Body:
     Type: Etc
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoSell: true
       NoGuildStorage: true
@@ -19680,7 +19378,6 @@ Body:
     Type: Etc
     Buy: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -19694,7 +19391,6 @@ Body:
     Type: Etc
     Buy: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -19708,7 +19404,6 @@ Body:
     Type: Etc
     Buy: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -19722,7 +19417,6 @@ Body:
     Name: 罗米欧的礼物
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -19736,7 +19430,6 @@ Body:
     Name: 茱理叶的礼物
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
@@ -19752,7 +19445,6 @@ Body:
     Buy: 10
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -19785,7 +19477,6 @@ Body:
     Name: Ancient Gold Coin
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoGuildStorage: true
   - Id: 7960
@@ -19793,7 +19484,6 @@ Body:
     Name: Ancient Silver Coin
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoGuildStorage: true
   - Id: 7961
@@ -19801,7 +19491,6 @@ Body:
     Name: Weapon Exchange
     Type: Etc
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -19815,7 +19504,6 @@ Body:
     Type: Etc
     Buy: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -19829,7 +19517,6 @@ Body:
     Type: Etc
     Buy: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -19843,7 +19530,6 @@ Body:
     Type: Etc
     Buy: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -19857,7 +19543,6 @@ Body:
     Type: Etc
     Buy: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -19871,7 +19556,6 @@ Body:
     Type: Etc
     Buy: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -19885,7 +19569,6 @@ Body:
     Type: Etc
     Buy: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -19899,7 +19582,6 @@ Body:
     Type: Etc
     Buy: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -19913,7 +19595,6 @@ Body:
     Type: Etc
     Buy: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -19939,7 +19620,6 @@ Body:
     Type: Etc
     Buy: 20
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -19953,7 +19633,6 @@ Body:
     Type: Etc
     Buy: 20
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -19981,7 +19660,6 @@ Body:
     Buy: 2
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -19996,7 +19674,6 @@ Body:
     Buy: 2
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -20011,7 +19688,6 @@ Body:
     Buy: 2
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -20026,7 +19702,6 @@ Body:
     Buy: 2
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -20041,7 +19716,6 @@ Body:
     Buy: 2
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -20056,7 +19730,6 @@ Body:
     Buy: 2
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -20071,7 +19744,6 @@ Body:
     Buy: 2
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -20086,7 +19758,6 @@ Body:
     Buy: 2
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -20101,7 +19772,6 @@ Body:
     Buy: 2
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -20116,7 +19786,6 @@ Body:
     Buy: 2
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -20131,7 +19800,6 @@ Body:
     Buy: 2
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -20146,7 +19814,6 @@ Body:
     Buy: 2
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -20161,7 +19828,6 @@ Body:
     Buy: 2
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -20176,7 +19842,6 @@ Body:
     Buy: 2
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -20191,7 +19856,6 @@ Body:
     Buy: 2
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -20206,7 +19870,6 @@ Body:
     Buy: 2
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -20221,7 +19884,6 @@ Body:
     Buy: 2
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -20236,7 +19898,6 @@ Body:
     Buy: 2
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -20251,7 +19912,6 @@ Body:
     Buy: 2
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -20266,7 +19926,6 @@ Body:
     Buy: 2
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -20281,7 +19940,6 @@ Body:
     Buy: 2
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
@@ -20296,7 +19954,6 @@ Body:
     Buy: 2
     Weight: 10
     Trade:
-      Override: 100
       NoDrop: true
       NoTrade: true
       NoCart: true
