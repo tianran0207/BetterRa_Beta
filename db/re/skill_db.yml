@@ -115,7 +115,7 @@
 #         Amount              Ammo amount required at specific skill level.
 #     State                   Special state required to cast. (Default: None)
 #     Status:                 Status change required to cast. (Default: nullptr)
-#     SphereCost:             Spirit sphere required to cast. (Default: 0)
+#     SpiritSphereCost:       Spirit sphere required to cast. (Default: 0)
 #       - Level               Skill level.
 #         Amount              Spirit sphere required at specific skill level.
 #     ItemCost:               Item required to cast. (Default: 0)
@@ -17440,7 +17440,7 @@ Body:
       Splash: true
     Flags:
       IsNpc: true
-    Range: 1
+    Range: 2
     Hit: Single
     HitCount: 1
     SplashArea:
@@ -18686,6 +18686,7 @@ Body:
     TargetType: Ground
     DamageFlags:
       Splash: true
+      IgnoreAtkCard: true
       IgnoreFlee: true
     Flags:
       TargetTrap: true
@@ -19671,7 +19672,7 @@ Body:
         Time: 120000
       - Level: 5
         Time: 135000
-    Cooldown: 7000
+    Cooldown: 2500
     FixedCastTime: 2000
     Requires:
       SpCost:
@@ -22023,15 +22024,15 @@ Body:
     Element: Weapon
     CastTime:
       - Level: 1
-        Time: 100
+        Time: 40
       - Level: 2
-        Time: 200
+        Time: 80
       - Level: 3
-        Time: 300
+        Time: 120
       - Level: 4
-        Time: 400
+        Time: 160
       - Level: 5
-        Time: 500
+        Time: 200
     Requires:
       SpCost:
         - Level: 1
@@ -22212,7 +22213,7 @@ Body:
       - Level: 4
         Area: 2
       - Level: 5
-        Area: 2
+        Area: 3
     CastTime:
       - Level: 1
         Time: 1000
@@ -22224,18 +22225,18 @@ Body:
         Time: 1800
       - Level: 5
         Time: 2000
-    AfterCastActDelay: 1000
+    AfterCastActDelay: 500
     Cooldown:
       - Level: 1
-        Time: 100
+        Time: 40
       - Level: 2
-        Time: 150
+        Time: 45
       - Level: 3
-        Time: 200
+        Time: 50
       - Level: 4
-        Time: 250
+        Time: 55
       - Level: 5
-        Time: 300 
+        Time: 60 
     FixedCastTime:
       - Level: 1
         Time: 500
@@ -23013,7 +23014,7 @@ Body:
     TargetType: Attack
     DamageFlags:
       Splash: true
-    Range: 1
+    Range: 2
     Hit: Single
     HitCount: 1
     Element: Weapon
@@ -23961,9 +23962,9 @@ Body:
       - Level: 4
         Area: 2
       - Level: 5
-        Area: 2
+        Area: 3
     ActiveInstance: 11
-    Cooldown: 2000
+    Cooldown: 1700
     Requires:
       SpCost:
         - Level: 1
@@ -24404,25 +24405,25 @@ Body:
     Requires:
       SpCost:
         - Level: 1
-          Amount: 30
+          Amount: 45
         - Level: 2
-          Amount: 40
-        - Level: 3
           Amount: 50
+        - Level: 3
+          Amount: 55
         - Level: 4
           Amount: 60
         - Level: 5
-          Amount: 70
+          Amount: 65
         - Level: 6
-          Amount: 80
+          Amount: 70
         - Level: 7
-          Amount: 90
+          Amount: 75
         - Level: 8
-          Amount: 100
+          Amount: 80
         - Level: 9
-          Amount: 110
+          Amount: 85
         - Level: 10
-          Amount: 120
+          Amount: 90
   - Id: 2322
     Name: LG_PIETY
     Description: ò¯³Ï
@@ -24548,9 +24549,8 @@ Body:
     HitCount: 3
     Element: Weapon
     CastCancel: true
-    CastTime: 1000
-    AfterCastActDelay: 3000
-    Cooldown: 20000
+    AfterCastActDelay: 500
+    Cooldown: 200
     Requires:
       SpCost:
         - Level: 1
@@ -32475,6 +32475,7 @@ Body:
     TargetType: Ground
     DamageFlags:
       Splash: true
+      IgnoreAtkCard: true
       IgnoreFlee: true
     Flags:
       TargetTrap: true
@@ -34200,6 +34201,7 @@ Body:
     Description: ÆÍ´ÓÎäÆ÷
     MaxLevel: 5
     TargetType: Self
+    SplashArea: 4
     DamageFlags:
       NoDamage: true
     Hit: Single
@@ -34426,6 +34428,7 @@ Body:
     Hit: Single
     HitCount: 1
     Element: Weapon
+    SplashArea: 4
     CastCancel: true
     AfterCastActDelay: 500
     Requires:
@@ -34485,7 +34488,7 @@ Body:
       - Level: 9
         Area: 3
       - Level: 10
-        Area: 3
+        Area: 4
     Requires:
       SpCost: 1
   - Id: 5210
@@ -34531,7 +34534,7 @@ Body:
     GiveAp: 2
     CastCancel: true
     AfterCastActDelay: 500
-    Cooldown: 2000
+    Cooldown: 500
     FixedCastTime: 500
     Requires:
       SpCost:
@@ -34608,19 +34611,19 @@ Body:
     GiveAp: 1
     CastCancel: true
     AfterCastActDelay: 500
-    Cooldown: 1000
+    Cooldown: 500
     Requires:
       SpCost:
         - Level: 1
-          Amount: 30
-        - Level: 2
-          Amount: 35
-        - Level: 3
           Amount: 40
-        - Level: 4
+        - Level: 2
           Amount: 45
-        - Level: 5
+        - Level: 3
           Amount: 50
+        - Level: 4
+          Amount: 55
+        - Level: 5
+          Amount: 60
       Weapon:
         2hSword: true
         2hAxe: true
@@ -34760,6 +34763,7 @@ Body:
     HitCount: 1
     Element: Dark
     CastCancel: true
+    GiveAp: 4
     CastTime: 4000
     AfterCastActDelay: 1000
     Duration1: 4000
@@ -35357,12 +35361,12 @@ Body:
     Hit: Multi_Hit
     HitCount: -5
     Element: Earth
-    SplashArea: 1
-    GiveAp: 4
+    SplashArea: 3
+    GiveAp: 1
     CastCancel: true
     CastTime: 4000
-    AfterCastActDelay: 1000
-    Cooldown: 4000
+    AfterCastActDelay: 500
+    Cooldown: 300
     FixedCastTime: 1500
     Requires:
       SpCost:
@@ -35388,11 +35392,11 @@ Body:
     Element: Wind
     SplashArea: 1
     ActiveInstance: 14
-    GiveAp: 4
+    GiveAp: 1
     CastCancel: true
     CastTime: 4000
-    AfterCastActDelay: 1000
-    Cooldown: 4000
+    AfterCastActDelay: 500
+    Cooldown: 300
     FixedCastTime: 1500
     Requires:
       SpCost:
@@ -35414,15 +35418,15 @@ Body:
     TargetType: Attack
     Range: 9
     Hit: Single
-    HitCount: 1
+    HitCount: -2
     Element: Fire
-    SplashArea: 1
+    SplashArea: 3
     ActiveInstance: 14
-    GiveAp: 4
+    GiveAp: 1
     CastCancel: true
     CastTime: 4000
-    AfterCastActDelay: 1000
-    Cooldown: 4000
+    AfterCastActDelay: 500
+    Cooldown: 300
     FixedCastTime: 1500
     Requires:
       SpCost:
@@ -35446,6 +35450,7 @@ Body:
     Hit: Multi_Hit
     HitCount: -2
     Element: Fire
+    SplashArea: 4
     Requires:
       SpCost: 1
   - Id: 5237
@@ -35469,12 +35474,12 @@ Body:
       - Level: 4
         Area: 3
       - Level: 5
-        Area: 4
-    GiveAp: 4
+        Area: 6
+    GiveAp: 1
     CastCancel: true
     CastTime: 4000
-    AfterCastActDelay: 1000
-    Cooldown: 4000
+    AfterCastActDelay: 500
+    Cooldown: 300
     FixedCastTime: 1500
     Requires:
       SpCost:
@@ -35603,7 +35608,7 @@ Body:
         Time: 6000
       - Level: 5
         Time: 7000
-    Cooldown: 5000
+    Cooldown: 3000
     Requires:
       SpCost:
         - Level: 1
@@ -35664,6 +35669,7 @@ Body:
     TargetType: Self
     DamageFlags:
       Splash: true
+      Critical: true
     Range: 9
     Hit: Single
     HitCount: 1
@@ -35684,6 +35690,7 @@ Body:
     TargetType: Self
     DamageFlags:
       Splash: true
+      Critical: true
     Range: 9
     Hit: Single
     HitCount: 1
@@ -35699,10 +35706,9 @@ Body:
         Area: 3
       - Level: 5
         Area: 4
-    GiveAp: 5
+    GiveAp: 4
     CastCancel: true
-    AfterCastActDelay: 500
-    Cooldown: 5000
+    Cooldown: 4000
     Requires:
       SpCost:
         - Level: 1
@@ -35945,9 +35951,10 @@ Body:
     TargetType: Attack
     DamageFlags:
       Splash: true
+      Critical: true
     Range: 3
     Hit: Multi_Hit
-    HitCount: -2
+    HitCount: 2
     Element: Weapon
     SplashArea:
       - Level: 1
@@ -36022,7 +36029,7 @@ Body:
       Splash: true
     Range: 3
     Hit: Multi_Hit
-    HitCount: -3
+    HitCount: 5
     Element: Weapon
     SplashArea:
       - Level: 1
@@ -36098,6 +36105,7 @@ Body:
     Description: ÊØÎÀ¶Ü
     MaxLevel: 5
     TargetType: Self
+    GiveAp: 15
     DamageFlags:
       NoDamage: true
       Splash: true
@@ -36292,7 +36300,7 @@ Body:
     CastTime: 500
     AfterCastActDelay: 500
     Duration1: 10000
-    Cooldown: 2000
+    Cooldown: 1000
     FixedCastTime: 500
     Requires:
       SpCost:
@@ -36317,17 +36325,17 @@ Body:
     TargetType: Attack
     DamageFlags:
       Splash: true
-    Range: 1
+    Range: 3
     Hit: Multi_Hit
     HitCount: 2
     Element: Weapon
     SplashArea: 3
-    GiveAp: 3
+    GiveAp: 2
     CastCancel: true
     CastTime: 1000
     AfterCastActDelay: 500
-    Cooldown: 3000
-    FixedCastTime: 1000
+    Cooldown: 1000
+    FixedCastTime: 500
     Requires:
       SpCost:
         - Level: 1
@@ -36368,7 +36376,7 @@ Body:
     AfterCastActDelay: 500
     Duration1: 4500
     Cooldown: 5000
-    FixedCastTime: 1000
+    FixedCastTime: 1500
     Requires:
       SpCost:
         - Level: 1
@@ -36911,6 +36919,7 @@ Body:
     TargetType: Attack
     DamageFlags:
       Splash: true
+      Critical: true
     Range: 2
     Hit: Single
     HitCount: 1
@@ -36939,7 +36948,7 @@ Body:
     GiveAp: 2
     CastCancel: true
     AfterCastActDelay: 500
-    Cooldown: 2000
+    Cooldown: 1000
     Requires:
       SpCost:
         - Level: 1
@@ -36989,12 +36998,12 @@ Body:
         Area: 3
       - Level: 5
         Area: 3
-    GiveAp: 3
+    GiveAp: 1
     CastCancel: true
     CastTime: 2000
     AfterCastActDelay: 500
-    Cooldown: 3000
-    FixedCastTime: 1000
+    Cooldown: 300
+    FixedCastTime: 500
     Requires:
       SpCost:
         - Level: 1
@@ -37088,12 +37097,12 @@ Body:
       Critical: true
     Range: 7
     Hit: Multi_Hit
-    HitCount: -8
+    HitCount: 3
     Element: Weapon
     SplashArea: 1
     CastCancel: true
-    AfterCastActDelay: 500
-    Cooldown: 3000
+    AfterCastActDelay: 800
+    Cooldown: 1000
     Requires:
       SpCost:
         - Level: 1
@@ -37118,7 +37127,6 @@ Body:
           Amount: 55
       Weapon:
         Katar: true
-      State: Hidden
   - Id: 5288
     Name: SHC_SHADOW_SENSE
     Description: °µÓ°´¥¾õ
@@ -37138,7 +37146,7 @@ Body:
     CastCancel: true
     AfterCastActDelay: 500
     Duration1: 3000
-    Cooldown: 1500
+    Cooldown: 350
     Requires:
       SpCost: 40
       Status:
@@ -37212,10 +37220,10 @@ Body:
     Hit: Multi_Hit
     HitCount: 1
     Element: Weapon
-    GiveAp: 3
+    GiveAp: 1
     CastCancel: true
     AfterCastActDelay: 500
-    Cooldown: 3000
+    Cooldown: 1000
     Requires:
       SpCost:
         - Level: 1
@@ -37332,7 +37340,7 @@ Body:
     Flags:
       AllowOnMado: true
     Hit: Multi_Hit
-    HitCount: 1
+    HitCount: 3
     Element: Weapon
     SplashArea:
       - Level: 1
@@ -37345,11 +37353,11 @@ Body:
         Area: 2
       - Level: 5
         Area: 3
-    GiveAp: 2
+    GiveAp: 3
     CastCancel: true
     AfterCastActDelay: 500
-    Duration1: 5000
-    Cooldown: 2000
+    Duration1: 10000
+    Cooldown: 1000
     Requires:
       SpCost:
         - Level: 1
@@ -37402,6 +37410,28 @@ Body:
         Area: 3
     CastCancel: true
     AfterCastActDelay: 500
+    Duration1: 30000
+    Duration2:
+      - Level: 1
+        Time: 30000
+      - Level: 2
+        Time: 60000
+      - Level: 3
+        Time: 90000
+      - Level: 4
+        Time: 120000
+      - Level: 5
+        Time: 150000
+      - Level: 6
+        Time: 180000
+      - Level: 7
+        Time: 210000
+      - Level: 8
+        Time: 240000
+      - Level: 9
+        Time: 370000
+      - Level: 10
+        Time: 300000
     Cooldown: 60000
     Requires:
       SpCost: 150
@@ -37561,8 +37591,9 @@ Body:
         Time: 240000
       - Level: 4
         Time: 300000
-    Cooldown: 60000
-    FixedCastTime: 3000
+    Cooldown: 30000
+    CastTime: 1000
+    FixedCastTime: 1000
     Requires:
       SpCost:
         - Level: 1
@@ -37600,8 +37631,9 @@ Body:
         Time: 240000
       - Level: 4
         Time: 300000
-    Cooldown: 60000
-    FixedCastTime: 3000
+    Cooldown: 30000
+    CastTime: 1000
+    FixedCastTime: 1000
     Requires:
       SpCost:
         - Level: 1
@@ -37639,8 +37671,9 @@ Body:
         Time: 240000
       - Level: 4
         Time: 300000
-    Cooldown: 60000
-    FixedCastTime: 3000
+    Cooldown: 30000
+    CastTime: 1000
+    FixedCastTime: 1000
     Requires:
       SpCost:
         - Level: 1
@@ -37677,8 +37710,8 @@ Body:
         Time: 240000
       - Level: 4
         Time: 300000
-    Cooldown: 60000
-    FixedCastTime: 3000
+    CastTime: 1000
+    FixedCastTime: 1000
     Requires:
       SpCost:
         - Level: 1
@@ -37713,8 +37746,9 @@ Body:
     DamageFlags:
       IgnoreFlee: true
     Hit: Single
-    HitCount: 1
+    HitCount: -5
     Element: Water
+    Cooldown: 1000
     Requires:
       SpCost: 1
   - Id: 5308
@@ -37726,8 +37760,9 @@ Body:
     DamageFlags:
       IgnoreFlee: true
     Hit: Single
-    HitCount: 1
+    HitCount: -5
     Element: Earth
+    Cooldown: 1000
     Requires:
       SpCost: 1
   - Id: 5309
@@ -37739,8 +37774,9 @@ Body:
     DamageFlags:
       IgnoreFlee: true
     Hit: Single
-    HitCount: 1
+    HitCount: -5
     Element: Wind
+    Cooldown: 1000
     Requires:
       SpCost: 1
   - Id: 5310
@@ -37752,8 +37788,9 @@ Body:
     DamageFlags:
       IgnoreFlee: true
     Hit: Single
-    HitCount: 1
+    HitCount: -5
     Element: Fire
+    Cooldown: 1000
     Requires:
       SpCost: 1
   - Id: 5311
@@ -37809,23 +37846,23 @@ Body:
     DamageFlags:
       Splash: true
     Hit: Single
-    HitCount: 1
+    HitCount: 2
     Element: Weapon
-    SplashArea: 2
+    SplashArea: 3
     CastCancel: true
     AfterCastActDelay: 500
     Duration1:
       - Level: 1
-        Time: 2000
+        Time: 3000
       - Level: 2
-        Time: 4000
-      - Level: 3
         Time: 6000
+      - Level: 3
+        Time: 9000
       - Level: 4
-        Time: 8000
+        Time: 12000
       - Level: 5
-        Time: 10000
-    Cooldown: 3000
+        Time: 15000
+    Cooldown: 300
     Requires:
       SpCost:
         - Level: 1
@@ -37855,8 +37892,7 @@ Body:
     CastTime: 1000
     AfterCastActDelay: 500
     Duration1: 20000
-    Cooldown: 2000
-    FixedCastTime: 1000
+    Cooldown: 250
     Requires:
       SpCost:
         - Level: 1
@@ -37895,7 +37931,7 @@ Body:
     CastCancel: true
     CastTime: 1000
     AfterCastActDelay: 500
-    Cooldown: 3000
+    Cooldown: 1500
     FixedCastTime: 1000
     Requires:
       SpCost:
@@ -37922,6 +37958,8 @@ Body:
     DamageFlags:
       NoDamage: true
     Hit: Single
+    SplashArea: 4
+    GiveAp: 20
     HitCount: 1
     CastCancel: true
     Duration1:
@@ -37945,7 +37983,7 @@ Body:
       - Level: 4
         Time: 4000
       - Level: 5
-        Time: 2000
+        Time: 1000
     Cooldown: 60000
     Requires:
       SpCost:
@@ -37971,7 +38009,7 @@ Body:
     CastCancel: true
     CastTime: 2000
     AfterCastActDelay: 500
-    Duration1: 60000
+    Duration1: 300000
     Cooldown: 60000
     FixedCastTime: 1000
     Requires:
@@ -38038,7 +38076,7 @@ Body:
     GiveAp: 2
     CastCancel: true
     AfterCastActDelay: 500
-    Cooldown: 2000
+    Cooldown: 1000
     Requires:
       SpCost:
         - Level: 1
@@ -38074,9 +38112,9 @@ Body:
     CastCancel: true
     CastTime: 2000
     AfterCastActDelay: 500
-    Duration1: 4000
-    Cooldown: 4000
-    FixedCastTime: 1000
+    Duration1: 3000
+    Cooldown: 3000
+    FixedCastTime: 500
     Requires:
       SpCost:
         - Level: 1
@@ -38092,7 +38130,7 @@ Body:
     Unit:
       Id: Abyss_Square
       Range: 3
-      Interval: 700
+      Interval: 300
       Target: Enemy
       Flag:
         NoOverlap: true
@@ -38109,32 +38147,32 @@ Body:
     Hit: Multi_Hit
     HitCount: -10
     Element: Weapon
-    GiveAp: 2
+    GiveAp: 1
     CastCancel: true
     AfterCastActDelay: 500
-    Cooldown: 2000
+    Cooldown: 350
     Requires:
       SpCost:
         - Level: 1
-          Amount: 40
-        - Level: 2
-          Amount: 45
-        - Level: 3
-          Amount: 50
-        - Level: 4
-          Amount: 55
-        - Level: 5
-          Amount: 60
-        - Level: 6
-          Amount: 65
-        - Level: 7
-          Amount: 70
-        - Level: 8
-          Amount: 75
-        - Level: 9
           Amount: 80
-        - Level: 10
+        - Level: 2
           Amount: 85
+        - Level: 3
+          Amount: 90
+        - Level: 4
+          Amount: 95
+        - Level: 5
+          Amount: 100
+        - Level: 6
+          Amount: 105
+        - Level: 7
+          Amount: 110
+        - Level: 8
+          Amount: 115
+        - Level: 9
+          Amount: 120
+        - Level: 10
+          Amount: 125
       Weapon:
         Bow: true
       Ammo:
@@ -38257,11 +38295,10 @@ Body:
     CastCancel: true
     CastTime: 800
     AfterCastActDelay: 500
-    Cooldown: 30000
     FixedCastTime: 200
     Requires:
       SpCost: 120
-      ApCost: 50
+      ApCost: 15
       Weapon:
         Bow: true
       State: Falcon
@@ -38709,7 +38746,7 @@ Body:
       Splash: true
     Range: 7
     Hit: Multi_Hit
-    HitCount: -3
+    HitCount: -5
     Element: Water
     SplashArea:
       - Level: 1
@@ -38771,7 +38808,7 @@ Body:
       Splash: true
     Range: 7
     Hit: Multi_Hit
-    HitCount: -3
+    HitCount: -5
     Element: Earth
     SplashArea:
       - Level: 1
@@ -38799,7 +38836,7 @@ Body:
     CastTime: 1000
     AfterCastActDelay: 500
     Duration1: 10000
-    Cooldown: 2000
+    Cooldown: 1000
     FixedCastTime: 500
     Requires:
       SpCost:
@@ -38833,7 +38870,7 @@ Body:
       Splash: true
     Range: 7
     Hit: Multi_Hit
-    HitCount: -3
+    HitCount: -5
     Element: Wind
     SplashArea:
       - Level: 1
@@ -38895,7 +38932,7 @@ Body:
       Splash: true
     Range: 7
     Hit: Multi_Hit
-    HitCount: -3
+    HitCount: -5
     Element: Fire
     SplashArea:
       - Level: 1
@@ -38972,7 +39009,8 @@ Body:
       - Level: 5
         Time: 360000
     Cooldown: 30000
-    FixedCastTime: 4000
+    FixedCastTime: 1000
+    CastTime: 1000
     Requires:
       SpCost:
         - Level: 1
@@ -39013,7 +39051,8 @@ Body:
       - Level: 5
         Time: 360000
     Cooldown: 30000
-    FixedCastTime: 4000
+    FixedCastTime: 1000
+    CastTime: 1000
     Requires:
       SpCost:
         - Level: 1
@@ -39054,7 +39093,8 @@ Body:
       - Level: 5
         Time: 360000
     Cooldown: 30000
-    FixedCastTime: 4000
+    FixedCastTime: 1000
+    CastTime: 1000
     Requires:
       SpCost:
         - Level: 1
@@ -39112,10 +39152,11 @@ Body:
       - Level: 5
         Time: 180000
     Cooldown: 60000
-    FixedCastTime: 4000
+    FixedCastTime: 1000
+    CastTime: 1000
     Requires:
       SpCost: 100
-      ApCost: 100
+      ApCost: 60
       ItemCost:
         - Item: High_Plant_Bottle
           Amount: 3
@@ -39148,12 +39189,12 @@ Body:
     CastCancel: true
     CastTime: 2000
     AfterCastActDelay: 500
-    Duration1: 60000
-    Cooldown: 120000
+    Duration1: 150000
+    Cooldown: 60000
     FixedCastTime: 1000
     Requires:
       SpCost: 250
-      ApCost: 100
+      ApCost: 125
       Weapon:
         Bow: true
         Musical: true
@@ -39190,25 +39231,25 @@ Body:
     Hit: Multi_Hit
     HitCount: -2
     Element: Weapon
-    GiveAp: 5
+    GiveAp: 3
     CastCancel: true
     CastTime: 1000
     AfterCastActDelay: 500
     Duration1: 500
-    Cooldown: 3000
+    Cooldown: 1000
     FixedCastTime: 1000
     Requires:
       SpCost:
         - Level: 1
-          Amount: 215
+          Amount: 65
         - Level: 2
-          Amount: 230
+          Amount: 80
         - Level: 3
-          Amount: 245
+          Amount: 95
         - Level: 4
-          Amount: 260
+          Amount: 110
         - Level: 5
-          Amount: 275
+          Amount: 125
       Weapon:
         Bow: true
         Musical: true
@@ -39270,15 +39311,15 @@ Body:
     Requires:
       SpCost:
         - Level: 1
-          Amount: 80
+          Amount: 42
         - Level: 2
-          Amount: 92
+          Amount: 54
         - Level: 3
-          Amount: 104
+          Amount: 66
         - Level: 4
-          Amount: 116
+          Amount: 78
         - Level: 5
-          Amount: 128
+          Amount: 90
       Weapon:
         Bow: true
         Musical: true
@@ -39311,17 +39352,17 @@ Body:
         Area: 3
     GiveAp:
       - Level: 1
-        Amount: 4
+        Amount: 1
       - Level: 2
-        Amount: 4
+        Amount: 2
       - Level: 3
-        Amount: 4
+        Amount: 2
       - Level: 4
-        Amount: 5
+        Amount: 3
       - Level: 5
-        Amount: 5
+        Amount: 3
     CastCancel: true
-    Cooldown: 1000
+    Cooldown: 500
     Requires:
       SpCost:
         - Level: 1
@@ -39352,17 +39393,7 @@ Body:
     Hit: Single
     HitCount: 1
     Element: Weapon
-    GiveAp:
-      - Level: 1
-        Amount: 2
-      - Level: 2
-        Amount: 2
-      - Level: 3
-        Amount: 2
-      - Level: 4
-        Amount: 3
-      - Level: 5
-        Amount: 3
+    GiveAp: 2
     CastCancel: true
     CastTime: 1000
     Duration1:
@@ -39376,8 +39407,6 @@ Body:
         Time: 15000
       - Level: 5
         Time: 20000
-    Cooldown: 1000
-    FixedCastTime: 1000
     Requires:
       SpCost:
         - Level: 1
@@ -39798,11 +39827,12 @@ Body:
     Range: 9
     Hit: Single
     HitCount: 1
+    GiveAp: 50
     CastCancel: true
     CastTime: 2000
     AfterCastActDelay: 500
-    Cooldown: 5000
-    FixedCastTime: 1000
+    Cooldown: 2500
+    FixedCastTime: 500
     Requires:
       SpCost:
         - Level: 1
@@ -39815,7 +39845,6 @@ Body:
           Amount: 60
         - Level: 5
           Amount: 70
-      ApCost: 50
   - Id: 5369
     Name: EM_DIAMOND_STORM
     Description: ×êÊ¯·ç±©
@@ -39826,14 +39855,14 @@ Body:
     Hit: Multi_Hit
     HitCount: -5
     Element: Water
-    GiveAp: 4
+    GiveAp: 5
     CastCancel: true
     CastTime: 4000
     AfterCastActDelay: 500
     Duration1: 100
     Duration2: 10000
-    Cooldown: 4000
-    FixedCastTime: 1000
+    Cooldown: 2000
+    FixedCastTime: 500
     Requires:
       SpCost:
         - Level: 1
@@ -39863,14 +39892,14 @@ Body:
     Hit: Single
     HitCount: 1
     Element: Wind
-    GiveAp: 4
+    GiveAp: 5
     CastCancel: true
     CastTime: 4000
     AfterCastActDelay: 500
-    Duration1: 4000
+    Duration1: 3000
     Duration2: 10000
-    Cooldown: 4000
-    FixedCastTime: 1000
+    Cooldown: 2000
+    FixedCastTime: 500
     Requires:
       SpCost:
         - Level: 1
@@ -39886,7 +39915,7 @@ Body:
     Unit:
       Id: Lightning_Land
       Range: 4
-      Interval: 500
+      Interval: 300
       Target: Enemy
       Flag:
         NoOverlap: true
@@ -39901,14 +39930,14 @@ Body:
     Hit: Single
     HitCount: 1
     Element: Poison
-    GiveAp: 4
+    GiveAp: 5
     CastCancel: true
     CastTime: 4000
     AfterCastActDelay: 500
-    Duration1: 4000
+    Duration1: 3000
     Duration2: 20000
-    Cooldown: 4000
-    FixedCastTime: 1000
+    Cooldown: 2000
+    FixedCastTime: 500
     Requires:
       SpCost:
         - Level: 1
@@ -39924,7 +39953,7 @@ Body:
     Unit:
       Id: Venom_Swamp
       Range: 4
-      Interval: 500
+      Interval: 300
       Target: Enemy
       Flag:
         NoOverlap: true
@@ -39939,14 +39968,14 @@ Body:
     Hit: Single
     HitCount: 1
     Element: Fire
-    GiveAp: 4
+    GiveAp: 5
     CastCancel: true
     CastTime: 4000
     AfterCastActDelay: 500
-    Duration1: 4000
+    Duration1: 3000
     Duration2: 20000
-    Cooldown: 4000
-    FixedCastTime: 1000
+    Cooldown: 2000
+    FixedCastTime: 500
     Requires:
       SpCost:
         - Level: 1
@@ -39962,7 +39991,7 @@ Body:
     Unit:
       Id: Conflagration
       Range: 4
-      Interval: 500
+      Interval: 300
       Target: Enemy
       Flag:
         NoOverlap: true
@@ -39977,14 +40006,14 @@ Body:
     Hit: Multi_Hit
     HitCount: -5
     Element: Earth
-    GiveAp: 4
+    GiveAp: 5
     CastCancel: true
     CastTime: 4000
     AfterCastActDelay: 500
     Duration1: 100
     Duration2: 10000
-    Cooldown: 4000
-    FixedCastTime: 1000
+    Cooldown: 2000
+    FixedCastTime: 500
     Requires:
       SpCost:
         - Level: 1
@@ -40186,7 +40215,7 @@ Body:
     Range: 1
     Hit: Single
     HitCount: 1
-    SplashArea: 3
+    SplashArea: 4
     Requires:
       SpCost: 1
   - Id: 5384

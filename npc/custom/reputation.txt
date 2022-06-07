@@ -1,0 +1,85 @@
+//===== rAthena Script =======================================
+//= Reputation
+//===== Current Version: =====================================
+//= 1.0
+//===== Compatible With: =====================================
+//= rAthena Project
+//===== Description: =========================================
+//= Reputation sample on how to read reputation points
+//= set or open reputation UI with some cool features
+//===== Additional Comments: =================================
+//= 1.0 Initial script.
+//============================================================
+
+-	script	Reputation	-1,{
+OnTalk:
+	mes "[^0055FF ::: Reputation ::: ^000000]";
+	mes "You can test here the reputation features.";
+	next;
+	.@menu = select( "Get reputations points", "Set reputations points", "Open UI with or without colors", "No thanks" );
+	switch(.@menu){
+		case 1:
+			for(.@i = 0; .@i < .maxID; .@i++){
+				mes "Reputation [" + .@i + "] : " + getreputpoint(.@i+1) + " points.\n";
+			}
+			break;
+		case 2:
+			mes "Enter the reputation ID";
+			input .@reputID;
+			.@option = select( "Add points", "Remove points" );
+			mes "Enter the points";
+			input .@points;
+			next;
+			switch(.@option){
+				case 1:
+					if(getreputpoint(.@reputID) + .@points > .Reput_Max_Point[.@reputID-1]){
+						mes " You have reached the limit set for this reputation id : " + .Reput_Max_Point[.@reputID-1];
+						close;
+					} else {
+						mes " Before :";
+						mes " Reputation [" + .@reputID + "] : " + getreputpoint(.@reputID) + " points.";
+						setreputpoint(.@reputID,.@points);
+						mes " After :";
+						mes " Reputation [" + .@reputID + "] : " + getreputpoint(.@reputID) + " points.";
+					}
+					break;
+				case 2:
+					.@negative_number = .Reput_Max_Point[.@reputID-1]*-1;
+					if(getreputpoint(.@reputID) - .@points < .@negative_number){
+						mes " You have reached the limit set for this reputation id : " + .@negative_number;
+						close;
+					} else {
+						mes " Before :";
+						mes " Reputation [" + .@reputID + "] : " + getreputpoint(.@reputID) + " points.";
+						setreputpoint(.@reputID,.@points*-1);
+						mes " After :";
+						mes " Reputation [" + .@reputID + "] : " + getreputpoint(.@reputID) + " points.";
+					}
+					break;
+			}
+			break;
+		case 3:
+			mes "Enter the group reputation ID to open the menu to";
+			input .@groupID;
+			mes "Enter the reputation ID to color";
+			input .@reputID;
+			openreputui(.@groupID,.@reputID);
+			break;
+		default:
+			break;
+	}
+	close2;
+
+OnInit:
+	// Max reputation ID
+	.maxID = 4; // must be > 0
+
+	// Max points for each reputation ID
+	setarray .Reput_Max_Point[0],3000,3000,5000,3000;
+
+	end;
+}
+
+// Duplicates
+//============================================================
+prontera,156,182,4	duplicate(Reputation)	Reputation#prt	790

@@ -1,0 +1,36 @@
+Header:
+  Type: ITEM_ENCHANTMENT_DB
+  Version: 1
+
+Body:
+  - EnchantNum: 1
+    EnchantmentGroup: GRAY_WOLF_ARMORS
+    TargetItems:
+      - Item: Gray_W_Suits
+      - Item: Gray_W_Robe
+    SlotOrder:
+      - Slot: 3
+        Order: 1
+      - Slot: 2
+        Order: 2
+      - Slot: 1
+        Order: 3
+    MinRefine: 7
+    MinGrade: 0
+    RandomOptionsAllowed: true
+    Reset:
+      Rate: 100000
+      Zeny: 100000
+      Material:
+        - Item: Ep18_Amethyst_Fragment
+          Amount: 25
+  - EnchantNum: 15
+    EnchantmentGroup: MAD_BUNNY_LT
+    TargetItems:
+      - Item: Mad_Bunny_K_LT
+    SlotOrder:
+      - Slot: 3
+        Order: 1
+    Reset:
+      Rate: 100000
+      Zeny: 500000

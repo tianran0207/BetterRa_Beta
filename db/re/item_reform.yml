@@ -1,0 +1,190 @@
+Header:
+  Type: ITEM_REFORM_DB
+  Version: 1
+
+Body:
+  - ReformItem: Thanos_W_Reform_1
+    ReformList:
+      - BaseItem: Thanos_Sword
+        ResultItem: Thanos_Sword_AD
+        RefineMin: 9
+        RefineMax: 20
+        ChangeRefineValue: -5
+        RequiredRandomOptions: 0
+        Flags:
+          CardsAllowed: true
+          PreserveGrade: true
+          PreserveSockets: true
+        Material:
+          - Item: Shard_of_Gray
+            Amount: 100
+          - Item: Weapon_Stone_1
+            Amount: 100
+      - BaseItem: Thanos_Great_Sword
+        ResultItem: Thanos_TSword_AD
+        RefineMin: 9
+        RefineMax: 20
+        ChangeRefineValue: -5
+        RequiredRandomOptions: 0
+        Flags:
+          PreserveGrade: true
+          PreserveSockets: true
+        Material:
+          - Item: Shard_of_Gray
+            Amount: 100
+          - Item: Weapon_Stone_1
+            Amount: 100
+      - BaseItem: Thanos_Hammer
+        ResultItem: Thanos_Hammer_AD
+        RefineMin: 9
+        RefineMax: 20
+        ChangeRefineValue: -5
+        RequiredRandomOptions: 0
+        Flags:
+          PreserveGrade: true
+          PreserveSockets: true
+        Material:
+          - Item: Shard_of_Gray
+            Amount: 100
+          - Item: Weapon_Stone_1
+            Amount: 100
+      - BaseItem: Thanos_Dagger
+        ResultItem: Thanos_Dagger_AD
+        RefineMin: 9
+        RefineMax: 20
+        ChangeRefineValue: -5
+        RequiredRandomOptions: 0
+        Flags:
+          PreserveGrade: true
+          PreserveSockets: true
+        Material:
+          - Item: Shard_of_Gray
+            Amount: 100
+          - Item: Weapon_Stone_1
+            Amount: 100
+      - BaseItem: Thanos_Rod
+        ResultItem: Thanos_Rod_AD
+        RefineMin: 9
+        RefineMax: 20
+        ChangeRefineValue: -5
+        RequiredRandomOptions: 0
+        Flags:
+          PreserveGrade: true
+          PreserveSockets: true
+        Material:
+          - Item: Shard_of_Gray
+            Amount: 100
+          - Item: Weapon_Stone_1
+            Amount: 100
+      - BaseItem: Thanos_Whip
+        ResultItem: Thanos_Whip_AD
+        RefineMin: 9
+        RefineMax: 20
+        ChangeRefineValue: -5
+        RequiredRandomOptions: 0
+        Flags:
+          PreserveGrade: true
+          PreserveSockets: true
+        Material:
+          - Item: Shard_of_Gray
+            Amount: 100
+          - Item: Weapon_Stone_1
+            Amount: 100
+      - BaseItem: Thanos_Violin
+        ResultItem: Thanos_Violin_AD
+        RefineMin: 9
+        RefineMax: 20
+        ChangeRefineValue: -5
+        RequiredRandomOptions: 0
+        Flags:
+          PreserveGrade: true
+          PreserveSockets: true
+        Material:
+          - Item: Shard_of_Gray
+            Amount: 100
+          - Item: Weapon_Stone_1
+            Amount: 100
+      - BaseItem: Thanos_Staff
+        ResultItem: Thanos_Staff_AD
+        RefineMin: 9
+        RefineMax: 20
+        ChangeRefineValue: -5
+        RequiredRandomOptions: 0
+        Flags:
+          PreserveGrade: true
+          PreserveSockets: true
+        Material:
+          - Item: Shard_of_Gray
+            Amount: 100
+          - Item: Weapon_Stone_1
+            Amount: 100
+      - BaseItem: Thanos_Spear
+        ResultItem: Thanos_Spear_AD
+        RefineMin: 9
+        RefineMax: 20
+        ChangeRefineValue: -5
+        RequiredRandomOptions: 0
+        Flags:
+          PreserveGrade: true
+          PreserveSockets: true
+        Material:
+          - Item: Shard_of_Gray
+            Amount: 100
+          - Item: Weapon_Stone_1
+            Amount: 100
+      - BaseItem: Thanos_Katar
+        ResultItem: Thanos_Katar_AD
+        RefineMin: 9
+        RefineMax: 20
+        ChangeRefineValue: -5
+        RequiredRandomOptions: 0
+        Flags:
+          PreserveGrade: true
+          PreserveSockets: true
+        Material:
+          - Item: Shard_of_Gray
+            Amount: 100
+          - Item: Weapon_Stone_1
+            Amount: 100
+      - BaseItem: Thanos_Axe
+        ResultItem: Thanos_Axe_AD
+        RefineMin: 9
+        RefineMax: 20
+        ChangeRefineValue: -5
+        RequiredRandomOptions: 0
+        Flags:
+          PreserveGrade: true
+          PreserveSockets: true
+        Material:
+          - Item: Shard_of_Gray
+            Amount: 100
+          - Item: Weapon_Stone_1
+            Amount: 100
+      - BaseItem: Thanos_Bow
+        ResultItem: Thanos_Bow_AD
+        RefineMin: 9
+        RefineMax: 20
+        ChangeRefineValue: -5
+        RequiredRandomOptions: 0
+        Flags:
+          PreserveGrade: true
+          PreserveSockets: true
+        Material:
+          - Item: Shard_of_Gray
+            Amount: 100
+          - Item: Weapon_Stone_1
+            Amount: 100
+      - BaseItem: Thanos_Knuckle
+        ResultItem: Thanos_Knuckle_AD
+        RefineMin: 9
+        RefineMax: 20
+        ChangeRefineValue: -5
+        RequiredRandomOptions: 0
+        Flags:
+          PreserveGrade: true
+          PreserveSockets: true
+        Material:
+          - Item: Shard_of_Gray
+            Amount: 100
+          - Item: Weapon_Stone_1
+            Amount: 100
